@@ -1,0 +1,2355 @@
+{
+  "model": "/root/work/Open_Duck_Playground/cad/local_fix/open_duck_mini_spacers_lower_review.step",
+  "model_sha256": "82ebfdadf2d3f25d3dea833eb2354dfc9022db28a58a9fcdc4ce56b9dc3285e2",
+  "driver_diameter_mm": 4.98,
+  "driver_length_mm": 60,
+  "servos": [
+    {
+      "servo": "S01",
+      "holes": [
+        {
+          "kind": "case",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 4.618527782440775e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.13.3.2",
+              "part": "ZP10D_vendor_passive_horn",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.17.1",
+              "part": "right_roll_to_pitch",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.1",
+              "part": "trunk_top",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 4.618664423253291e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.13.3.2",
+              "part": "ZP10D_vendor_passive_horn",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.17.1",
+              "part": "right_roll_to_pitch",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.1",
+              "part": "trunk_top",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 3.9079850466803965e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.6",
+              "part": "body_middle_top",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.1",
+              "part": "trunk_top",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 3.9079850466803965e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.6",
+              "part": "body_middle_top",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.1",
+              "part": "trunk_top",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 5.844381339203855e-08,
+          "driver_blockers": [
+            {
+              "ref": "o1.13.2",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.13.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.15.2",
+              "part": "body_middle_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 5.845343183536829e-08,
+          "driver_blockers": [
+            {
+              "ref": "o1.13.2",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.13.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.15.2",
+              "part": "body_middle_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 5.8443455378261315e-08,
+          "driver_blockers": [
+            {
+              "ref": "o1.13.2",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.13.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.15.2",
+              "part": "body_middle_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 5.84531001514387e-08,
+          "driver_blockers": [
+            {
+              "ref": "o1.13.2",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.13.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.15.2",
+              "part": "body_middle_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        }
+      ],
+      "aligned": 8,
+      "total": 8,
+      "driver_clear": 0
+    },
+    {
+      "servo": "S02",
+      "holes": [
+        {
+          "kind": "case",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 3.4563084044344956e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.1",
+              "part": "body_front",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 3.462716864013817e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.1",
+              "part": "body_front",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 1.8882598004118553e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "case",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 1.8160240788048758e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 1.8551597556796275e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 2.1484695245987614e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 5.677273551461509e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 5.96016954392896e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 8.337574253060524e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.1",
+              "part": "body_front",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 5.818801459219389e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.1",
+              "part": "body_front",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 3.849722759515369e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.1",
+              "part": "body_front",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 1.295057962562669e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.1",
+              "part": "body_front",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        }
+      ],
+      "aligned": 12,
+      "total": 12,
+      "driver_clear": 6
+    },
+    {
+      "servo": "S03",
+      "holes": [
+        {
+          "kind": "case",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 5.562808132647325e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.17.2.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.6",
+              "part": "right_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 7.216458667588394e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.17.2.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.6",
+              "part": "right_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 1.3109268495233959e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.13.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.13.2",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.17.1",
+              "part": "right_roll_to_pitch",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.7",
+              "part": "trunk_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 1.2669486618558018e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.13.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.13.2",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.17.1",
+              "part": "right_roll_to_pitch",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.7",
+              "part": "trunk_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 2.7894722792325018e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.17.1",
+              "part": "right_roll_to_pitch",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.13.2",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.13.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.7",
+              "part": "trunk_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 2.943720432195105e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.13.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.13.2",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.17.1",
+              "part": "right_roll_to_pitch",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.7",
+              "part": "trunk_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 3.4030517413248015e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.13.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.13.2",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.17.1",
+              "part": "right_roll_to_pitch",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.7",
+              "part": "trunk_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 2.6444370411650995e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.13.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.13.2",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.17.1",
+              "part": "right_roll_to_pitch",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.7",
+              "part": "trunk_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 3.6048903666200402e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.6",
+              "part": "right_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 1.5156531168961793e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.6",
+              "part": "right_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 1.6423994116477414e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.6",
+              "part": "right_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 3.3269637041869705e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.6",
+              "part": "right_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        }
+      ],
+      "aligned": 12,
+      "total": 12,
+      "driver_clear": 0
+    },
+    {
+      "servo": "S04",
+      "holes": [
+        {
+          "kind": "case",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 7.184918763469982e-14,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "case",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 7.866272904338889e-14,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "case",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 6.394884621840902e-14,
+          "driver_blockers": [
+            {
+              "ref": "o1.6",
+              "part": "right_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 7.105427357601002e-14,
+          "driver_blockers": [
+            {
+              "ref": "o1.6",
+              "part": "right_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 7.385254051431168e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.6",
+              "part": "right_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 1.0268641433342073e-11,
+          "driver_blockers": [
+            {
+              "ref": "o1.6",
+              "part": "right_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 3.909208037888152e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 8.145975351080722e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.6",
+              "part": "right_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 3.563300658866893e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 9.122746268660232e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 6.917310865100533e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 1.0881972999716631e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        }
+      ],
+      "aligned": 12,
+      "total": 12,
+      "driver_clear": 7
+    },
+    {
+      "servo": "S05",
+      "holes": [
+        {
+          "kind": "case",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 8.592868015318674e-14,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "case",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 8.572647311676217e-14,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "case",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 5.684341886080802e-14,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "case",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 5.684341886080802e-14,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 5.2900390119867174e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 2.800916162308149e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 7.305808063732265e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 4.764732160781959e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 6.326522979067386e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 4.86339605543833e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 5.195104784368115e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 3.776247682144705e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        }
+      ],
+      "aligned": 12,
+      "total": 12,
+      "driver_clear": 12
+    },
+    {
+      "servo": "S06",
+      "holes": [
+        {
+          "kind": "case",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 4.619757404259719e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.26.1",
+              "part": "left_roll_to_pitch",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.3.2",
+              "part": "ZP10D_vendor_passive_horn",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.1",
+              "part": "trunk_top",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 4.619074321438303e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.26.1",
+              "part": "left_roll_to_pitch",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.3.2",
+              "part": "ZP10D_vendor_passive_horn",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.1",
+              "part": "trunk_top",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 3.9086309412466913e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.6",
+              "part": "body_middle_top",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.1",
+              "part": "trunk_top",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 3.9086309412466913e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.6",
+              "part": "body_middle_top",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.1",
+              "part": "trunk_top",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 3.2816813051068e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.2",
+              "part": "body_middle_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.1",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 8.524496006363186e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.2",
+              "part": "body_middle_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.1",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 1.5014154865748852e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.2",
+              "part": "body_middle_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.1",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 6.774048490402978e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.2",
+              "part": "body_middle_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.1",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        }
+      ],
+      "aligned": 8,
+      "total": 8,
+      "driver_clear": 0
+    },
+    {
+      "servo": "S07",
+      "holes": [
+        {
+          "kind": "case",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 1.541387535216835e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.1",
+              "part": "body_front",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 1.159927626121529e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.1",
+              "part": "body_front",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 3.292085281369657e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "case",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 3.4277077947799726e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 2.045168491631857e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 1.1544627167897208e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 2.2647729111526523e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 1.5022414696698175e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 4.805040709112605e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.1",
+              "part": "body_front",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 5.873727322219501e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.1",
+              "part": "body_front",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 4.588380125108382e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.1",
+              "part": "body_front",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 5.125134152953265e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.1",
+              "part": "body_front",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        }
+      ],
+      "aligned": 12,
+      "total": 12,
+      "driver_clear": 6
+    },
+    {
+      "servo": "S08",
+      "holes": [
+        {
+          "kind": "case",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 6.863728816015302e-14,
+          "driver_blockers": [
+            {
+              "ref": "o1.1",
+              "part": "left_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 6.863728816015302e-14,
+          "driver_blockers": [
+            {
+              "ref": "o1.1",
+              "part": "left_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 6.01068240828533e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.26.1",
+              "part": "left_roll_to_pitch",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.7",
+              "part": "trunk_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.1",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 6.01068240828533e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.26.1",
+              "part": "left_roll_to_pitch",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.7",
+              "part": "trunk_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.1",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 2.422857123286428e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.26.1",
+              "part": "left_roll_to_pitch",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.7",
+              "part": "trunk_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.1",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 7.039836637882148e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.26.1",
+              "part": "left_roll_to_pitch",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.7",
+              "part": "trunk_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.1",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 3.072379102794751e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.26.1",
+              "part": "left_roll_to_pitch",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.3.2",
+              "part": "ZP10D_vendor_passive_horn",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 7.7942263080375e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.26.1",
+              "part": "left_roll_to_pitch",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.7",
+              "part": "trunk_bottom",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.24.1",
+              "part": "roll_motor_bottom",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 3.2681335696788963e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.1",
+              "part": "left_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 8.519417495790618e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.1",
+              "part": "left_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 1.4779321889190932e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.1",
+              "part": "left_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 6.758193951746366e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.1",
+              "part": "left_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        }
+      ],
+      "aligned": 12,
+      "total": 12,
+      "driver_clear": 0
+    },
+    {
+      "servo": "S09",
+      "holes": [
+        {
+          "kind": "case",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 2.783013500516351e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "case",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 1.6923038330035786e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "case",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 4.551907477525062e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.1",
+              "part": "left_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 5.425176620648201e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.1",
+              "part": "left_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 9.160805363197914e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.1",
+              "part": "left_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 3.787942084446481e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.1",
+              "part": "left_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 1.0840211534891917e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 6.931032075780772e-12,
+          "driver_blockers": [
+            {
+              "ref": "o1.1",
+              "part": "left_cache",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 3.0775549221439303e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 3.079187594827283e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 3.083218903729086e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 3.0820323152021305e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        }
+      ],
+      "aligned": 12,
+      "total": 12,
+      "driver_clear": 7
+    },
+    {
+      "servo": "S10",
+      "holes": [
+        {
+          "kind": "case",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 3.14491725760238e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "case",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 1.917410803921609e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "case",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 4.942733089256282e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "case",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 5.9313990433670525e-12,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 4.899205493119365e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 7.371083959406156e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 2.8611506288443875e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 5.267612640699461e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 6.268617393041596e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 4.858709868926174e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 5.156748215379921e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 3.7374475795407915e-11,
+          "driver_blockers": [],
+          "driver_clear": true
+        }
+      ],
+      "aligned": 12,
+      "total": 12,
+      "driver_clear": 12
+    },
+    {
+      "servo": "S11",
+      "holes": [
+        {
+          "kind": "case",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 4.965449609099027e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.6",
+              "part": "body_middle_top",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 7.377470008429116e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.6",
+              "part": "body_middle_top",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 3.181613291365879e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.6",
+              "part": "body_middle_top",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 6.196405246505193e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.6",
+              "part": "body_middle_top",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 0.0018369964740460802,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.6",
+              "part": "body_middle_top",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.8.2",
+              "part": "ZP10D_vendor_passive_horn",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 0.0018369964740501561,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.6",
+              "part": "body_middle_top",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.8.2",
+              "part": "ZP10D_vendor_passive_horn",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 0.0018369964750466518,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.6",
+              "part": "body_middle_top",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.8.2",
+              "part": "ZP10D_vendor_passive_horn",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 0.0018369964739608387,
+          "driver_blockers": [
+            {
+              "ref": "o1.15.6",
+              "part": "body_middle_top",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.25.8.2",
+              "part": "ZP10D_vendor_passive_horn",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 5.844626297429164e-08,
+          "driver_blockers": [
+            {
+              "ref": "o1.25.8.3",
+              "part": "ZP10D_vendor_active_horn",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.15.6",
+              "part": "body_middle_top",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 5.844625887129949e-08,
+          "driver_blockers": [
+            {
+              "ref": "o1.25.8.3",
+              "part": "ZP10D_vendor_active_horn",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.15.6",
+              "part": "body_middle_top",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 5.84472588454997e-08,
+          "driver_blockers": [
+            {
+              "ref": "o1.25.8.3",
+              "part": "ZP10D_vendor_active_horn",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.15.6",
+              "part": "body_middle_top",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 5.844624605956347e-08,
+          "driver_blockers": [
+            {
+              "ref": "o1.25.8.3",
+              "part": "ZP10D_vendor_active_horn",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.15.6",
+              "part": "body_middle_top",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        }
+      ],
+      "aligned": 12,
+      "total": 12,
+      "driver_clear": 0
+    },
+    {
+      "servo": "S12",
+      "holes": [
+        {
+          "kind": "case",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 5.019300490456845e-13,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "case",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 7.448868113612106e-13,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "case",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 3.145907400503188e-13,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "case",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 6.085934375421489e-13,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 0.0018369964730421036,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 0.0018369964731547253,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 0.0018369964751466955,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 0.0018369964828976438,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 5.8453268899900515e-08,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 5.8446258721735634e-08,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 5.8447259029002183e-08,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "active",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 5.8443261790912346e-08,
+          "driver_blockers": [],
+          "driver_clear": true
+        }
+      ],
+      "aligned": 12,
+      "total": 12,
+      "driver_clear": 12
+    },
+    {
+      "servo": "S13",
+      "holes": [
+        {
+          "kind": "case",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 3.6601680730412094e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.22.5",
+              "part": "head",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 3.6601680730412094e-13,
+          "driver_blockers": [
+            {
+              "ref": "o1.22.5",
+              "part": "head",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 2.2033270321780614e-13,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "case",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 2.2033270321780614e-13,
+          "driver_blockers": [],
+          "driver_clear": true
+        },
+        {
+          "kind": "passive",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 0.001836996474793409,
+          "driver_blockers": [
+            {
+              "ref": "o1.7",
+              "part": "head_pitch_to_yaw",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.9.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 0.0018369964748317928,
+          "driver_blockers": [
+            {
+              "ref": "o1.9.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 0.0018369964747407734,
+          "driver_blockers": [
+            {
+              "ref": "o1.9.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "passive",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 0.0018369964738834225,
+          "driver_blockers": [
+            {
+              "ref": "o1.7",
+              "part": "head_pitch_to_yaw",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.9.3.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 5.844658426924426e-08,
+          "driver_blockers": [
+            {
+              "ref": "o1.22.5",
+              "part": "head",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 5.8446459468809254e-08,
+          "driver_blockers": [
+            {
+              "ref": "o1.22.5",
+              "part": "head",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 5.8446661527367605e-08,
+          "driver_blockers": [
+            {
+              "ref": "o1.22.5",
+              "part": "head",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 5.8447339331555085e-08,
+          "driver_blockers": [
+            {
+              "ref": "o1.22.5",
+              "part": "head",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        }
+      ],
+      "aligned": 12,
+      "total": 12,
+      "driver_clear": 2
+    },
+    {
+      "servo": "S14",
+      "holes": [
+        {
+          "kind": "case",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 1.2452783808851757e-10,
+          "driver_blockers": [
+            {
+              "ref": "o1.22.5",
+              "part": "head",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 7.657709470812712e-11,
+          "driver_blockers": [
+            {
+              "ref": "o1.22.5",
+              "part": "head",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 1.2199558173703475e-10,
+          "driver_blockers": [
+            {
+              "ref": "o1.16.1.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.7",
+              "part": "head_pitch_to_yaw",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.16.2",
+              "part": "head_yaw_to_roll",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "case",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 1.0308646476541315e-10,
+          "driver_blockers": [
+            {
+              "ref": "o1.16.1.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.7",
+              "part": "head_pitch_to_yaw",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.16.2",
+              "part": "head_yaw_to_roll",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 1,
+          "aligned": true,
+          "axis_error_mm": 0.0018369964727538491,
+          "driver_blockers": [
+            {
+              "ref": "o1.16.1.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.7",
+              "part": "head_pitch_to_yaw",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.16.2",
+              "part": "head_yaw_to_roll",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 2,
+          "aligned": true,
+          "axis_error_mm": 0.0018369964744281914,
+          "driver_blockers": [
+            {
+              "ref": "o1.16.1.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.7",
+              "part": "head_pitch_to_yaw",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.16.2",
+              "part": "head_yaw_to_roll",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 3,
+          "aligned": true,
+          "axis_error_mm": 0.0018369964745831337,
+          "driver_blockers": [
+            {
+              "ref": "o1.16.1.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.7",
+              "part": "head_pitch_to_yaw",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.16.2",
+              "part": "head_yaw_to_roll",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        },
+        {
+          "kind": "active",
+          "hole": 4,
+          "aligned": true,
+          "axis_error_mm": 0.00183699647300208,
+          "driver_blockers": [
+            {
+              "ref": "o1.16.1.1",
+              "part": "ZP10D_vendor_body",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.7",
+              "part": "head_pitch_to_yaw",
+              "method": "mesh screening"
+            },
+            {
+              "ref": "o1.16.2",
+              "part": "head_yaw_to_roll",
+              "method": "mesh screening"
+            }
+          ],
+          "driver_clear": false
+        }
+      ],
+      "aligned": 8,
+      "total": 8,
+      "driver_clear": 0
+    }
+  ]
+}

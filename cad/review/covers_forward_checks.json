@@ -1,0 +1,98 @@
+{
+  "forward_mm": 11.0,
+  "motions": [
+    {
+      "joint": "S03",
+      "offset_x_mm": 0.0,
+      "minimum_mesh_gap_mm": 1.4100891483493692,
+      "closest_angle_deg": 48,
+      "closest_parts": [
+        "o1.6",
+        "o1.17.2.1"
+      ],
+      "hits": [],
+      "exact_minimum_gap_mm": 1.4099587073992779,
+      "refined_closest_angle_deg": 47.75,
+      "overlap_mm3": 0.0,
+      "range_deg": [
+        -30,
+        70
+      ],
+      "step_deg": 1,
+      "closest_part_label": "ZP10D_vendor_body"
+    },
+    {
+      "joint": "S04",
+      "offset_x_mm": 0.0,
+      "minimum_mesh_gap_mm": 0.6319904163635343,
+      "closest_angle_deg": 90,
+      "closest_parts": [
+        "o1.6",
+        "o1.14.4"
+      ],
+      "hits": [],
+      "exact_minimum_gap_mm": 0.631990416361768,
+      "refined_closest_angle_deg": 90,
+      "overlap_mm3": 0.0,
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "closest_part_label": "left_knee_to_ankle_right_sheet"
+    },
+    {
+      "joint": "S08",
+      "offset_x_mm": 0.0,
+      "minimum_mesh_gap_mm": 1.41008914834497,
+      "closest_angle_deg": -48,
+      "closest_parts": [
+        "o1.1",
+        "o1.26.2.1"
+      ],
+      "hits": [],
+      "exact_minimum_gap_mm": 1.4099587073949027,
+      "refined_closest_angle_deg": -47.75,
+      "overlap_mm3": 0.0,
+      "range_deg": [
+        -70,
+        30
+      ],
+      "step_deg": 1,
+      "closest_part_label": "ZP10D_vendor_body"
+    },
+    {
+      "joint": "S09",
+      "offset_x_mm": 0.0,
+      "minimum_mesh_gap_mm": 0.6319904163541368,
+      "closest_angle_deg": -90,
+      "closest_parts": [
+        "o1.1",
+        "o1.21.1"
+      ],
+      "hits": [],
+      "exact_minimum_gap_mm": 0.631990416352872,
+      "refined_closest_angle_deg": -90,
+      "overlap_mm3": 0.0,
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "closest_part_label": "left_knee_to_ankle_right_sheet"
+    }
+  ],
+  "mounts": [
+    {
+      "side": "right",
+      "aligned_holes": 2,
+      "contact_gap_mm": 0.0
+    },
+    {
+      "side": "left",
+      "aligned_holes": 2,
+      "contact_gap_mm": 0.0
+    }
+  ],
+  "external_profile_trimmed": false
+}

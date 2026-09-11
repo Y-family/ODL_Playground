@@ -1,0 +1,1184 @@
+{
+  "ok": false,
+  "robot": "cad/local_fix/open_duck_mini_covers_forward_review.step",
+  "method": "FCL triangle collision broad-phase; BRep confirmation required",
+  "step_deg": 1.0,
+  "penetration_tolerance_mm": 0.05,
+  "joints": {
+    "right_hip_yaw": {
+      "range_deg": [
+        -30.0,
+        30.0
+      ],
+      "sample_count": 61,
+      "neutral_collision_pair_count": 2,
+      "collisions": [
+        {
+          "refs": [
+            "o1.6",
+            "o1.17"
+          ],
+          "labels": [
+            "right_cache",
+            "right_roll_to_pitch_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -30.0,
+              "end_deg": -5.0,
+              "max_depth_mm": 24.25155823025024,
+              "max_depth_angle_deg": -27.0
+            },
+            {
+              "start_deg": 4.0,
+              "end_deg": 30.0,
+              "max_depth_mm": 29.925938812366123,
+              "max_depth_angle_deg": 30.0
+            }
+          ]
+        },
+        {
+          "refs": [
+            "o1.6",
+            "o1.20"
+          ],
+          "labels": [
+            "right_cache",
+            "knee_and_ankle_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -30.0,
+              "end_deg": -1.0,
+              "max_depth_mm": 25.378770053355254,
+              "max_depth_angle_deg": -19.0
+            },
+            {
+              "start_deg": 1.0,
+              "end_deg": 29.0,
+              "max_depth_mm": 18.88487815789508,
+              "max_depth_angle_deg": 10.0
+            }
+          ]
+        },
+        {
+          "refs": [
+            "o1.13",
+            "o1.25"
+          ],
+          "labels": [
+            "hip_roll_assembly <1>",
+            "trunk_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -30.0,
+              "end_deg": -1.0,
+              "max_depth_mm": 3.6122454663203225,
+              "max_depth_angle_deg": -30.0
+            },
+            {
+              "start_deg": 1.0,
+              "end_deg": 30.0,
+              "max_depth_mm": 2.487245466320326,
+              "max_depth_angle_deg": 30.0
+            }
+          ]
+        },
+        {
+          "refs": [
+            "o1.15",
+            "o1.17"
+          ],
+          "labels": [
+            "body_assembly <1>",
+            "right_roll_to_pitch_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -30.0,
+              "end_deg": -9.0,
+              "max_depth_mm": 11.748431546704467,
+              "max_depth_angle_deg": -17.0
+            },
+            {
+              "start_deg": 12.0,
+              "end_deg": 30.0,
+              "max_depth_mm": 8.477879512941854,
+              "max_depth_angle_deg": 22.0
+            }
+          ]
+        },
+        {
+          "refs": [
+            "o1.15",
+            "o1.20"
+          ],
+          "labels": [
+            "body_assembly <1>",
+            "knee_and_ankle_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": 19.0,
+              "end_deg": 30.0,
+              "max_depth_mm": 12.859057239369925,
+              "max_depth_angle_deg": 24.0
+            }
+          ]
+        }
+      ]
+    },
+    "right_hip_roll": {
+      "range_deg": [
+        -25.0,
+        25.0
+      ],
+      "sample_count": 51,
+      "neutral_collision_pair_count": 2,
+      "collisions": [
+        {
+          "refs": [
+            "o1.6",
+            "o1.14"
+          ],
+          "labels": [
+            "right_cache",
+            "knee_and_ankle_assembly <3>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -25.0,
+              "end_deg": -21.0,
+              "max_depth_mm": 11.434137910543058,
+              "max_depth_angle_deg": -25.0
+            },
+            {
+              "start_deg": -13.0,
+              "end_deg": -5.0,
+              "max_depth_mm": 6.793920628831501,
+              "max_depth_angle_deg": -6.0
+            }
+          ]
+        },
+        {
+          "refs": [
+            "o1.6",
+            "o1.17"
+          ],
+          "labels": [
+            "right_cache",
+            "right_roll_to_pitch_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -25.0,
+              "end_deg": -9.0,
+              "max_depth_mm": 24.073531769429,
+              "max_depth_angle_deg": -25.0
+            },
+            {
+              "start_deg": 7.0,
+              "end_deg": 25.0,
+              "max_depth_mm": 18.73702383273752,
+              "max_depth_angle_deg": 11.0
+            }
+          ]
+        },
+        {
+          "refs": [
+            "o1.6",
+            "o1.20"
+          ],
+          "labels": [
+            "right_cache",
+            "knee_and_ankle_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -25.0,
+              "end_deg": -1.0,
+              "max_depth_mm": 23.9999998967833,
+              "max_depth_angle_deg": -23.0
+            },
+            {
+              "start_deg": 1.0,
+              "end_deg": 25.0,
+              "max_depth_mm": 21.290950907648686,
+              "max_depth_angle_deg": 21.0
+            }
+          ]
+        },
+        {
+          "refs": [
+            "o1.13",
+            "o1.17"
+          ],
+          "labels": [
+            "hip_roll_assembly <1>",
+            "right_roll_to_pitch_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -25.0,
+              "end_deg": -17.0,
+              "max_depth_mm": 0.5593421927345186,
+              "max_depth_angle_deg": -22.0
+            },
+            {
+              "start_deg": -15.0,
+              "end_deg": -11.0,
+              "max_depth_mm": 0.5554616739572569,
+              "max_depth_angle_deg": -11.0
+            },
+            {
+              "start_deg": -9.0,
+              "end_deg": -9.0,
+              "max_depth_mm": 0.08158989559710683,
+              "max_depth_angle_deg": -9.0
+            },
+            {
+              "start_deg": -7.0,
+              "end_deg": -7.0,
+              "max_depth_mm": 0.06550720970000423,
+              "max_depth_angle_deg": -7.0
+            },
+            {
+              "start_deg": -5.0,
+              "end_deg": -5.0,
+              "max_depth_mm": 0.0538024288904273,
+              "max_depth_angle_deg": -5.0
+            },
+            {
+              "start_deg": 7.0,
+              "end_deg": 7.0,
+              "max_depth_mm": 0.057690851993867476,
+              "max_depth_angle_deg": 7.0
+            },
+            {
+              "start_deg": 9.0,
+              "end_deg": 9.0,
+              "max_depth_mm": 0.07336011099760764,
+              "max_depth_angle_deg": 9.0
+            },
+            {
+              "start_deg": 11.0,
+              "end_deg": 25.0,
+              "max_depth_mm": 0.5708810500756485,
+              "max_depth_angle_deg": 19.0
+            }
+          ]
+        }
+      ]
+    },
+    "right_hip_pitch": {
+      "range_deg": [
+        -30.0,
+        70.0
+      ],
+      "sample_count": 101,
+      "neutral_collision_pair_count": 2,
+      "collisions": [
+        {
+          "refs": [
+            "o1.6",
+            "o1.20"
+          ],
+          "labels": [
+            "right_cache",
+            "knee_and_ankle_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -30.0,
+              "end_deg": -1.0,
+              "max_depth_mm": 28.699999896713294,
+              "max_depth_angle_deg": -28.0
+            },
+            {
+              "start_deg": 2.0,
+              "end_deg": 3.0,
+              "max_depth_mm": 1.0954720143732004,
+              "max_depth_angle_deg": 2.0
+            },
+            {
+              "start_deg": 7.0,
+              "end_deg": 20.0,
+              "max_depth_mm": 2.016885339931747,
+              "max_depth_angle_deg": 18.0
+            },
+            {
+              "start_deg": 22.0,
+              "end_deg": 22.0,
+              "max_depth_mm": 0.06520753821652647,
+              "max_depth_angle_deg": 22.0
+            },
+            {
+              "start_deg": 33.0,
+              "end_deg": 70.0,
+              "max_depth_mm": 28.699999896713294,
+              "max_depth_angle_deg": 39.0
+            }
+          ]
+        },
+        {
+          "refs": [
+            "o1.17",
+            "o1.20"
+          ],
+          "labels": [
+            "right_roll_to_pitch_assembly <1>",
+            "knee_and_ankle_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": 33.0,
+              "end_deg": 70.0,
+              "max_depth_mm": 21.100034433051633,
+              "max_depth_angle_deg": 53.0
+            }
+          ]
+        }
+      ]
+    },
+    "right_knee": {
+      "range_deg": [
+        -90.0,
+        90.0
+      ],
+      "sample_count": 181,
+      "neutral_collision_pair_count": 0,
+      "collisions": []
+    },
+    "right_ankle": {
+      "range_deg": [
+        -90.0,
+        90.0
+      ],
+      "sample_count": 181,
+      "neutral_collision_pair_count": 1,
+      "collisions": [
+        {
+          "refs": [
+            "o1.14",
+            "o1.18"
+          ],
+          "labels": [
+            "knee_and_ankle_assembly <3>",
+            "foot_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -90.0,
+              "end_deg": -41.0,
+              "max_depth_mm": 16.599364915837363,
+              "max_depth_angle_deg": -90.0
+            },
+            {
+              "start_deg": -38.0,
+              "end_deg": -37.0,
+              "max_depth_mm": 0.3543573961867956,
+              "max_depth_angle_deg": -38.0
+            },
+            {
+              "start_deg": -33.0,
+              "end_deg": -32.0,
+              "max_depth_mm": 0.3602044432595335,
+              "max_depth_angle_deg": -32.0
+            },
+            {
+              "start_deg": -29.0,
+              "end_deg": -28.0,
+              "max_depth_mm": 0.31555675373485315,
+              "max_depth_angle_deg": -28.0
+            },
+            {
+              "start_deg": -25.0,
+              "end_deg": -24.0,
+              "max_depth_mm": 0.33204012193703747,
+              "max_depth_angle_deg": -25.0
+            },
+            {
+              "start_deg": -21.0,
+              "end_deg": -19.0,
+              "max_depth_mm": 0.22593190456760937,
+              "max_depth_angle_deg": -20.0
+            },
+            {
+              "start_deg": -16.0,
+              "end_deg": -15.0,
+              "max_depth_mm": 0.33789444234393073,
+              "max_depth_angle_deg": -15.0
+            },
+            {
+              "start_deg": -12.0,
+              "end_deg": -11.0,
+              "max_depth_mm": 0.3096951965722887,
+              "max_depth_angle_deg": -12.0
+            },
+            {
+              "start_deg": -8.0,
+              "end_deg": -7.0,
+              "max_depth_mm": 0.3543573959962032,
+              "max_depth_angle_deg": -8.0
+            },
+            {
+              "start_deg": -3.0,
+              "end_deg": -2.0,
+              "max_depth_mm": 0.36020444345756886,
+              "max_depth_angle_deg": -2.0
+            },
+            {
+              "start_deg": 1.0,
+              "end_deg": 2.0,
+              "max_depth_mm": 0.31555675393661176,
+              "max_depth_angle_deg": 2.0
+            },
+            {
+              "start_deg": 5.0,
+              "end_deg": 6.0,
+              "max_depth_mm": 0.332040121733133,
+              "max_depth_angle_deg": 5.0
+            },
+            {
+              "start_deg": 9.0,
+              "end_deg": 11.0,
+              "max_depth_mm": 0.2259319047738586,
+              "max_depth_angle_deg": 10.0
+            },
+            {
+              "start_deg": 14.0,
+              "end_deg": 15.0,
+              "max_depth_mm": 0.3378944425509829,
+              "max_depth_angle_deg": 15.0
+            },
+            {
+              "start_deg": 18.0,
+              "end_deg": 19.0,
+              "max_depth_mm": 0.30969519636554566,
+              "max_depth_angle_deg": 18.0
+            },
+            {
+              "start_deg": 22.0,
+              "end_deg": 23.0,
+              "max_depth_mm": 0.3543573957907107,
+              "max_depth_angle_deg": 22.0
+            },
+            {
+              "start_deg": 27.0,
+              "end_deg": 28.0,
+              "max_depth_mm": 0.36020444365929905,
+              "max_depth_angle_deg": 28.0
+            },
+            {
+              "start_deg": 31.0,
+              "end_deg": 32.0,
+              "max_depth_mm": 0.3155567541346187,
+              "max_depth_angle_deg": 32.0
+            },
+            {
+              "start_deg": 35.0,
+              "end_deg": 36.0,
+              "max_depth_mm": 0.3320401215385793,
+              "max_depth_angle_deg": 35.0
+            },
+            {
+              "start_deg": 39.0,
+              "end_deg": 41.0,
+              "max_depth_mm": 0.2259319049614703,
+              "max_depth_angle_deg": 40.0
+            },
+            {
+              "start_deg": 44.0,
+              "end_deg": 45.0,
+              "max_depth_mm": 0.33789444273027414,
+              "max_depth_angle_deg": 45.0
+            },
+            {
+              "start_deg": 48.0,
+              "end_deg": 49.0,
+              "max_depth_mm": 0.3096951961919068,
+              "max_depth_angle_deg": 48.0
+            },
+            {
+              "start_deg": 52.0,
+              "end_deg": 53.0,
+              "max_depth_mm": 0.3543573956253532,
+              "max_depth_angle_deg": 52.0
+            },
+            {
+              "start_deg": 57.0,
+              "end_deg": 58.0,
+              "max_depth_mm": 0.36020444381075833,
+              "max_depth_angle_deg": 58.0
+            },
+            {
+              "start_deg": 61.0,
+              "end_deg": 62.0,
+              "max_depth_mm": 0.3155567542758462,
+              "max_depth_angle_deg": 62.0
+            },
+            {
+              "start_deg": 65.0,
+              "end_deg": 90.0,
+              "max_depth_mm": 9.61984454075347,
+              "max_depth_angle_deg": 90.0
+            }
+          ]
+        }
+      ]
+    },
+    "left_hip_yaw": {
+      "range_deg": [
+        -30.0,
+        30.0
+      ],
+      "sample_count": 61,
+      "neutral_collision_pair_count": 2,
+      "collisions": [
+        {
+          "refs": [
+            "o1.1",
+            "o1.26"
+          ],
+          "labels": [
+            "left_cache",
+            "left_roll_to_pitch_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -30.0,
+              "end_deg": -4.0,
+              "max_depth_mm": 29.925938812372006,
+              "max_depth_angle_deg": -7.0
+            },
+            {
+              "start_deg": 5.0,
+              "end_deg": 30.0,
+              "max_depth_mm": 24.251558230250254,
+              "max_depth_angle_deg": 27.0
+            }
+          ]
+        },
+        {
+          "refs": [
+            "o1.1",
+            "o1.27"
+          ],
+          "labels": [
+            "left_cache",
+            "knee_and_ankle_assembly <2>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -29.0,
+              "end_deg": -1.0,
+              "max_depth_mm": 18.884878157985966,
+              "max_depth_angle_deg": -10.0
+            },
+            {
+              "start_deg": 1.0,
+              "end_deg": 30.0,
+              "max_depth_mm": 25.378770053446033,
+              "max_depth_angle_deg": 19.0
+            }
+          ]
+        },
+        {
+          "refs": [
+            "o1.15",
+            "o1.26"
+          ],
+          "labels": [
+            "body_assembly <1>",
+            "left_roll_to_pitch_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -30.0,
+              "end_deg": -12.0,
+              "max_depth_mm": 8.477879512948029,
+              "max_depth_angle_deg": -22.0
+            },
+            {
+              "start_deg": 9.0,
+              "end_deg": 30.0,
+              "max_depth_mm": 11.748431546704467,
+              "max_depth_angle_deg": 17.0
+            }
+          ]
+        },
+        {
+          "refs": [
+            "o1.15",
+            "o1.27"
+          ],
+          "labels": [
+            "body_assembly <1>",
+            "knee_and_ankle_assembly <2>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -30.0,
+              "end_deg": -19.0,
+              "max_depth_mm": 12.859057239373008,
+              "max_depth_angle_deg": -24.0
+            }
+          ]
+        },
+        {
+          "refs": [
+            "o1.24",
+            "o1.25"
+          ],
+          "labels": [
+            "hip_roll_assembly <2>",
+            "trunk_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -30.0,
+              "end_deg": -1.0,
+              "max_depth_mm": 2.487245466325552,
+              "max_depth_angle_deg": -30.0
+            },
+            {
+              "start_deg": 1.0,
+              "end_deg": 30.0,
+              "max_depth_mm": 3.6122454663255485,
+              "max_depth_angle_deg": 30.0
+            }
+          ]
+        }
+      ]
+    },
+    "left_hip_roll": {
+      "range_deg": [
+        -25.0,
+        25.0
+      ],
+      "sample_count": 51,
+      "neutral_collision_pair_count": 2,
+      "collisions": [
+        {
+          "refs": [
+            "o1.1",
+            "o1.21"
+          ],
+          "labels": [
+            "left_cache",
+            "knee_and_ankle_assembly <4>"
+          ],
+          "intervals": [
+            {
+              "start_deg": 5.0,
+              "end_deg": 13.0,
+              "max_depth_mm": 6.793920628831501,
+              "max_depth_angle_deg": 6.0
+            },
+            {
+              "start_deg": 21.0,
+              "end_deg": 25.0,
+              "max_depth_mm": 11.434137910543058,
+              "max_depth_angle_deg": 25.0
+            }
+          ]
+        },
+        {
+          "refs": [
+            "o1.1",
+            "o1.26"
+          ],
+          "labels": [
+            "left_cache",
+            "left_roll_to_pitch_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -25.0,
+              "end_deg": -7.0,
+              "max_depth_mm": 18.737023832738316,
+              "max_depth_angle_deg": -11.0
+            },
+            {
+              "start_deg": 9.0,
+              "end_deg": 25.0,
+              "max_depth_mm": 25.379032776371602,
+              "max_depth_angle_deg": 21.0
+            }
+          ]
+        },
+        {
+          "refs": [
+            "o1.1",
+            "o1.27"
+          ],
+          "labels": [
+            "left_cache",
+            "knee_and_ankle_assembly <2>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -25.0,
+              "end_deg": -1.0,
+              "max_depth_mm": 21.29095090773678,
+              "max_depth_angle_deg": -21.0
+            },
+            {
+              "start_deg": 1.0,
+              "end_deg": 25.0,
+              "max_depth_mm": 23.99999989687153,
+              "max_depth_angle_deg": 25.0
+            }
+          ]
+        },
+        {
+          "refs": [
+            "o1.24",
+            "o1.26"
+          ],
+          "labels": [
+            "hip_roll_assembly <2>",
+            "left_roll_to_pitch_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -25.0,
+              "end_deg": -17.0,
+              "max_depth_mm": 0.5593421926684776,
+              "max_depth_angle_deg": -22.0
+            },
+            {
+              "start_deg": -15.0,
+              "end_deg": -11.0,
+              "max_depth_mm": 0.5554616739352305,
+              "max_depth_angle_deg": -11.0
+            },
+            {
+              "start_deg": -9.0,
+              "end_deg": -9.0,
+              "max_depth_mm": 0.08271964443019897,
+              "max_depth_angle_deg": -9.0
+            },
+            {
+              "start_deg": -7.0,
+              "end_deg": -7.0,
+              "max_depth_mm": 0.06648653630234502,
+              "max_depth_angle_deg": -7.0
+            },
+            {
+              "start_deg": -5.0,
+              "end_deg": -5.0,
+              "max_depth_mm": 0.05467228004512137,
+              "max_depth_angle_deg": -5.0
+            },
+            {
+              "start_deg": 7.0,
+              "end_deg": 7.0,
+              "max_depth_mm": 0.05679302957482513,
+              "max_depth_angle_deg": 7.0
+            },
+            {
+              "start_deg": 9.0,
+              "end_deg": 9.0,
+              "max_depth_mm": 0.07231709119032814,
+              "max_depth_angle_deg": 9.0
+            },
+            {
+              "start_deg": 11.0,
+              "end_deg": 25.0,
+              "max_depth_mm": 0.5708810500973622,
+              "max_depth_angle_deg": 19.0
+            }
+          ]
+        }
+      ]
+    },
+    "left_hip_pitch": {
+      "range_deg": [
+        -70.0,
+        30.0
+      ],
+      "sample_count": 101,
+      "neutral_collision_pair_count": 2,
+      "collisions": [
+        {
+          "refs": [
+            "o1.1",
+            "o1.27"
+          ],
+          "labels": [
+            "left_cache",
+            "knee_and_ankle_assembly <2>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -70.0,
+              "end_deg": -33.0,
+              "max_depth_mm": 28.699999896808137,
+              "max_depth_angle_deg": -39.0
+            },
+            {
+              "start_deg": -22.0,
+              "end_deg": -22.0,
+              "max_depth_mm": 0.06520753830460535,
+              "max_depth_angle_deg": -22.0
+            },
+            {
+              "start_deg": -20.0,
+              "end_deg": -7.0,
+              "max_depth_mm": 2.0168853399774065,
+              "max_depth_angle_deg": -18.0
+            },
+            {
+              "start_deg": -3.0,
+              "end_deg": -2.0,
+              "max_depth_mm": 1.0954720144613077,
+              "max_depth_angle_deg": -2.0
+            },
+            {
+              "start_deg": 1.0,
+              "end_deg": 30.0,
+              "max_depth_mm": 28.699999896804798,
+              "max_depth_angle_deg": 28.0
+            }
+          ]
+        },
+        {
+          "refs": [
+            "o1.26",
+            "o1.27"
+          ],
+          "labels": [
+            "left_roll_to_pitch_assembly <1>",
+            "knee_and_ankle_assembly <2>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -70.0,
+              "end_deg": -33.0,
+              "max_depth_mm": 21.10003443256467,
+              "max_depth_angle_deg": -53.0
+            }
+          ]
+        }
+      ]
+    },
+    "left_knee": {
+      "range_deg": [
+        -90.0,
+        90.0
+      ],
+      "sample_count": 181,
+      "neutral_collision_pair_count": 1,
+      "collisions": []
+    },
+    "left_ankle": {
+      "range_deg": [
+        -90.0,
+        90.0
+      ],
+      "sample_count": 181,
+      "neutral_collision_pair_count": 1,
+      "collisions": [
+        {
+          "refs": [
+            "o1.21",
+            "o1.23"
+          ],
+          "labels": [
+            "knee_and_ankle_assembly <4>",
+            "foot_assembly <2>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -90.0,
+              "end_deg": -65.0,
+              "max_depth_mm": 9.619844540792482,
+              "max_depth_angle_deg": -90.0
+            },
+            {
+              "start_deg": -63.0,
+              "end_deg": -62.0,
+              "max_depth_mm": 0.36020444302999977,
+              "max_depth_angle_deg": -62.0
+            },
+            {
+              "start_deg": -59.0,
+              "end_deg": -58.0,
+              "max_depth_mm": 0.3155567534985977,
+              "max_depth_angle_deg": -58.0
+            },
+            {
+              "start_deg": -55.0,
+              "end_deg": -54.0,
+              "max_depth_mm": 0.3320401222556235,
+              "max_depth_angle_deg": -55.0
+            },
+            {
+              "start_deg": -51.0,
+              "end_deg": -49.0,
+              "max_depth_mm": 0.22593190432145605,
+              "max_depth_angle_deg": -50.0
+            },
+            {
+              "start_deg": -46.0,
+              "end_deg": -45.0,
+              "max_depth_mm": 0.33789444209388364,
+              "max_depth_angle_deg": -45.0
+            },
+            {
+              "start_deg": -42.0,
+              "end_deg": -41.0,
+              "max_depth_mm": 0.3096951969017461,
+              "max_depth_angle_deg": -42.0
+            },
+            {
+              "start_deg": -38.0,
+              "end_deg": -37.0,
+              "max_depth_mm": 0.35435739632641017,
+              "max_depth_angle_deg": -38.0
+            },
+            {
+              "start_deg": -33.0,
+              "end_deg": -32.0,
+              "max_depth_mm": 0.3602044432065199,
+              "max_depth_angle_deg": -32.0
+            },
+            {
+              "start_deg": -29.0,
+              "end_deg": -28.0,
+              "max_depth_mm": 0.31555675368787206,
+              "max_depth_angle_deg": -28.0
+            },
+            {
+              "start_deg": -25.0,
+              "end_deg": -24.0,
+              "max_depth_mm": 0.3320401220573821,
+              "max_depth_angle_deg": -25.0
+            },
+            {
+              "start_deg": -21.0,
+              "end_deg": -19.0,
+              "max_depth_mm": 0.22593190453339318,
+              "max_depth_angle_deg": -20.0
+            },
+            {
+              "start_deg": -16.0,
+              "end_deg": -15.0,
+              "max_depth_mm": 0.33789444231803856,
+              "max_depth_angle_deg": -15.0
+            },
+            {
+              "start_deg": -12.0,
+              "end_deg": -11.0,
+              "max_depth_mm": 0.3096951966712602,
+              "max_depth_angle_deg": -12.0
+            },
+            {
+              "start_deg": -8.0,
+              "end_deg": -7.0,
+              "max_depth_mm": 0.354357396088151,
+              "max_depth_angle_deg": -8.0
+            },
+            {
+              "start_deg": -3.0,
+              "end_deg": -2.0,
+              "max_depth_mm": 0.3602044434540552,
+              "max_depth_angle_deg": -2.0
+            },
+            {
+              "start_deg": 1.0,
+              "end_deg": 2.0,
+              "max_depth_mm": 0.3155567539400863,
+              "max_depth_angle_deg": 2.0
+            },
+            {
+              "start_deg": 5.0,
+              "end_deg": 6.0,
+              "max_depth_mm": 0.33204012180266673,
+              "max_depth_angle_deg": 5.0
+            },
+            {
+              "start_deg": 9.0,
+              "end_deg": 11.0,
+              "max_depth_mm": 0.22593190479122072,
+              "max_depth_angle_deg": 10.0
+            },
+            {
+              "start_deg": 14.0,
+              "end_deg": 15.0,
+              "max_depth_mm": 0.33789444257686085,
+              "max_depth_angle_deg": 15.0
+            },
+            {
+              "start_deg": 18.0,
+              "end_deg": 19.0,
+              "max_depth_mm": 0.3096951964129424,
+              "max_depth_angle_deg": 18.0
+            },
+            {
+              "start_deg": 22.0,
+              "end_deg": 23.0,
+              "max_depth_mm": 0.3543573958312969,
+              "max_depth_angle_deg": 22.0
+            },
+            {
+              "start_deg": 27.0,
+              "end_deg": 28.0,
+              "max_depth_mm": 0.3602044437062517,
+              "max_depth_angle_deg": 28.0
+            },
+            {
+              "start_deg": 31.0,
+              "end_deg": 32.0,
+              "max_depth_mm": 0.31555675418759677,
+              "max_depth_angle_deg": 32.0
+            },
+            {
+              "start_deg": 35.0,
+              "end_deg": 36.0,
+              "max_depth_mm": 0.33204012155956164,
+              "max_depth_angle_deg": 35.0
+            },
+            {
+              "start_deg": 39.0,
+              "end_deg": 41.0,
+              "max_depth_mm": 0.22593190502580285,
+              "max_depth_angle_deg": 40.0
+            },
+            {
+              "start_deg": 43.0,
+              "end_deg": 90.0,
+              "max_depth_mm": 16.599364915876375,
+              "max_depth_angle_deg": 90.0
+            }
+          ]
+        }
+      ]
+    },
+    "neck_pitch": {
+      "range_deg": [
+        -20.0,
+        65.0
+      ],
+      "sample_count": 86,
+      "neutral_collision_pair_count": 1,
+      "collisions": [
+        {
+          "refs": [
+            "o1.9",
+            "o1.15"
+          ],
+          "labels": [
+            "neck_pitch_assembly <1>",
+            "body_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": 26.0,
+              "end_deg": 65.0,
+              "max_depth_mm": 32.58174370763092,
+              "max_depth_angle_deg": 55.0
+            }
+          ]
+        }
+      ]
+    },
+    "head_pitch": {
+      "range_deg": [
+        -45.0,
+        45.0
+      ],
+      "sample_count": 91,
+      "neutral_collision_pair_count": 0,
+      "collisions": [
+        {
+          "refs": [
+            "o1.7",
+            "o1.9"
+          ],
+          "labels": [
+            "head_pitch_to_yaw",
+            "neck_pitch_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -45.0,
+              "end_deg": -2.0,
+              "max_depth_mm": 14.750000000043999,
+              "max_depth_angle_deg": -45.0
+            },
+            {
+              "start_deg": 2.0,
+              "end_deg": 45.0,
+              "max_depth_mm": 14.750000000043999,
+              "max_depth_angle_deg": 9.0
+            }
+          ]
+        },
+        {
+          "refs": [
+            "o1.15",
+            "o1.22"
+          ],
+          "labels": [
+            "body_assembly <1>",
+            "head_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -45.0,
+              "end_deg": -41.0,
+              "max_depth_mm": 66.49891043215412,
+              "max_depth_angle_deg": -45.0
+            }
+          ]
+        }
+      ]
+    },
+    "head_yaw": {
+      "range_deg": [
+        -135.0,
+        135.0
+      ],
+      "sample_count": 271,
+      "neutral_collision_pair_count": 1,
+      "collisions": [
+        {
+          "refs": [
+            "o1.7",
+            "o1.16"
+          ],
+          "labels": [
+            "head_pitch_to_yaw",
+            "neck_yaw_assembly <1>"
+          ],
+          "intervals": [
+            {
+              "start_deg": -135.0,
+              "end_deg": -2.0,
+              "max_depth_mm": 17.83038333691234,
+              "max_depth_angle_deg": -89.0
+            },
+            {
+              "start_deg": 2.0,
+              "end_deg": 135.0,
+              "max_depth_mm": 18.34373579463847,
+              "max_depth_angle_deg": 95.0
+            }
+          ]
+        }
+      ]
+    },
+    "head_roll": {
+      "range_deg": [
+        -30.0,
+        30.0
+      ],
+      "sample_count": 61,
+      "neutral_collision_pair_count": 1,
+      "collisions": []
+    }
+  }
+}

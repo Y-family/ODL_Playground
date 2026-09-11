@@ -1,0 +1,45 @@
+{
+    "url": "https://cad.onshape.com/documents/2b9c1a0eb9b7da6426df90e5/w/126224a19cf9e463c24ad750/e/e492fe1531afa9374de3c1b8",
+    "outputFormat": "mujoco",
+    "robotName": "open_duck_mini_zp10d",
+    "outputFilename": "open_duck_mini_zp10d",
+    "simplifyStls": true,
+    "maxStlSize": 0.005,
+    "ignore": {
+        "wj*": "visual",
+        "drive_palonier": "visual",
+        "passive_palonier": "visual",
+        "zp10d*": "visual",
+        "bulb": "visual",
+        "cam": "visual",
+        "sg90": "visual",
+        "head_roll_mount": "visual",
+        "raspberrypizerow": "visual",
+        "speaker_stand": "visual",
+        "speaker_interface": "visual",
+        "holder": "visual",
+        "cell": "visual",
+        "bms": "visual",
+        "usb_c_charger": "visual",
+        "battery_pack_lid": "visual",
+        "right_eye": "visual",
+        "left_eye": "visual",
+        "glass": "visual",
+        "full_speaker": "visual",
+        "roll_bearing": "visual",
+        "power_switch": "visual",
+        "board": "visual",
+        "bno055": "visual",
+        "*": "collision",
+        "!foot_bottom_tpu": "collision"
+    },
+    "jointProperties": {
+        "default": {
+            "class": "zp10d_draft"
+        }
+    },
+    "additionalXml": [
+        "sensors.xml",
+        "joints_properties.xml"
+    ]
+}

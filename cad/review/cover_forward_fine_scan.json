@@ -1,0 +1,68 @@
+[
+  {
+    "joint": "S03",
+    "offset_x_mm": 9.0,
+    "minimum_mesh_gap_mm": 1.135965834124162,
+    "closest_angle_deg": 20,
+    "closest_parts": [
+      "o1.6",
+      "o1.17.1"
+    ],
+    "hits": []
+  },
+  {
+    "joint": "S03",
+    "offset_x_mm": 10.0,
+    "minimum_mesh_gap_mm": 1.9274974724473415,
+    "closest_angle_deg": 20,
+    "closest_parts": [
+      "o1.6",
+      "o1.17.1"
+    ],
+    "hits": []
+  },
+  {
+    "joint": "S03",
+    "offset_x_mm": 11.0,
+    "minimum_mesh_gap_mm": 1.4100891483493623,
+    "closest_angle_deg": 48,
+    "closest_parts": [
+      "o1.6",
+      "o1.17.2.1"
+    ],
+    "hits": []
+  },
+  {
+    "joint": "S04",
+    "offset_x_mm": 9.0,
+    "minimum_mesh_gap_mm": 0.3798988859753594,
+    "closest_angle_deg": 90,
+    "closest_parts": [
+      "o1.6",
+      "o1.14.4"
+    ],
+    "hits": []
+  },
+  {
+    "joint": "S04",
+    "offset_x_mm": 10.0,
+    "minimum_mesh_gap_mm": 0.5059446511694469,
+    "closest_angle_deg": 90,
+    "closest_parts": [
+      "o1.6",
+      "o1.14.4"
+    ],
+    "hits": []
+  },
+  {
+    "joint": "S04",
+    "offset_x_mm": 11.0,
+    "minimum_mesh_gap_mm": 0.6319904163635343,
+    "closest_angle_deg": 90,
+    "closest_parts": [
+      "o1.6",
+      "o1.14.4"
+    ],
+    "hits": []
+  }
+]

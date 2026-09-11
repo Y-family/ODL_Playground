@@ -1,0 +1,9 @@
+<default>
+    <default class="zp10d_draft">
+        <geom contype="0" conaffinity="0"/>
+        <!-- Mechanical response values are provisional STS3215 placeholders. -->
+        <joint damping="0.56" frictionloss="0.068" armature="0.027"/>
+        <!-- Published ZP10D stall torque: 10 kg.cm = 0.980665 N.m. -->
+        <position kp="13.37" kv="0.0" forcerange="-0.980665 0.980665"/>
+    </default>
+</default>

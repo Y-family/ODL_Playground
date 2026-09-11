@@ -1,0 +1,18 @@
+[
+  {
+    "input": "cad/local_fix/open_duck_mini_covers_forward_review.step",
+    "mode": "view",
+    "outputs": [
+      {"path": "cad/review/covers_forward_iso.png", "camera": "iso"},
+      {"path": "cad/review/covers_forward_side.png", "camera": "front"}
+    ],
+    "render": {"viewLabels": true, "padding": 0.12, "sizeProfile": "diagnostic"}
+  },
+  {
+    "input": "cad/local_fix/open_duck_mini_covers_forward_review.step",
+    "mode": "view",
+    "animation": {"clip": "S04", "time": 0.75},
+    "outputs": [{"path": "cad/review/covers_forward_knee_90.png", "camera": "iso"}],
+    "render": {"viewLabels": true, "padding": 0.12, "sizeProfile": "diagnostic"}
+  }
+]
