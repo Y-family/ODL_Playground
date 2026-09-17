@@ -20,7 +20,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-TARGET = ROOT/'cad/local_fix/open_duck_mini_covers_forward_review.step'
+TARGET = ROOT/'cad/local_fix/open_duck_mini_upper_refit.step'
 SHELL = {'body_front','body_back','body_middle_top','body_middle_bottom',
          'head','left_cache','right_cache'}
 WHITE = '0.917647078693'

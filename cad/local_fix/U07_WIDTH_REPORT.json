@@ -1,0 +1,1000 @@
+{
+  "parts": [
+    {
+      "part": [
+        "knee_and_ankle_assembly <3>",
+        "left_knee_to_ankle_left_sheet"
+      ],
+      "servo": "S05_RIGHT_ANKLE_ZP10D",
+      "old_width_mm": 30.70000000000129,
+      "new_width_mm": 23.400000000000002,
+      "servo_width_mm": 20.000000200000013,
+      "case_end_width_mm": 23.4,
+      "case_mount_face": "continuous planar face with two screw holes",
+      "side_profile": "straight and parallel",
+      "spacer_hole_pitch_mm": 13.0,
+      "flush_region": {
+        "bottom": -138.37406118762001,
+        "top": -122.26406108764002,
+        "front": -73.4,
+        "back": -69.84999999994
+      },
+      "leg_cover_clearance": null,
+      "relocated_spacer_holes": [
+        {
+          "centre_x": -41.56,
+          "centre_z": -115.5490611876,
+          "radius": 3.25,
+          "axial_min": -65.90000009994,
+          "axial_max": -63.89999989994
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -115.5490611876,
+          "radius": 3.25,
+          "axial_min": -65.90000009994,
+          "axial_max": -63.89999989994
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -115.5490611876,
+          "radius": 1.6,
+          "axial_min": -67.79999999994,
+          "axial_max": -65.90000009994
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -115.5490611876,
+          "radius": 1.6,
+          "axial_min": -67.79999999994,
+          "axial_max": -65.90000009994
+        }
+      ],
+      "retained_cylindrical_faces": 12,
+      "open_bores_verified": 10,
+      "added_volume_mm3": 915.0633748779954,
+      "old_servo_overlap_mm3": 0,
+      "new_servo_overlap_mm3": 0.0,
+      "removed_volume_mm3": 8906.310137333981,
+      "checked_added_material_neighbours": [
+        [
+          "knee_and_ankle_assembly <3>",
+          "leg_spacer"
+        ],
+        [
+          "knee_and_ankle_assembly <3>",
+          "S05_RIGHT_ANKLE_ZP10D",
+          "ZP10D_vendor_body"
+        ]
+      ],
+      "status": "local candidate only; not installed",
+      "flush_face_area_mm2": 370.6908170328206
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <3>",
+        "left_knee_to_ankle_right_sheet"
+      ],
+      "servo": "S05_RIGHT_ANKLE_ZP10D",
+      "old_width_mm": 30.70000000002636,
+      "new_width_mm": 23.400000000000006,
+      "servo_width_mm": 20.000000200000013,
+      "case_end_width_mm": 23.4,
+      "case_mount_face": "continuous planar face with two screw holes",
+      "side_profile": "straight and parallel",
+      "spacer_hole_pitch_mm": 13.0,
+      "flush_region": {
+        "bottom": -141.3740611876,
+        "top": -122.26406108764002,
+        "front": -123.8500000999,
+        "back": -113.4
+      },
+      "leg_cover_clearance": null,
+      "relocated_spacer_holes": [
+        {
+          "centre_x": -41.56,
+          "centre_z": -115.5490611876,
+          "radius": 1.6,
+          "axial_min": -121.8499998999,
+          "axial_max": -119.9999999999
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -115.5490611876,
+          "radius": 1.6,
+          "axial_min": -121.8499998999,
+          "axial_max": -119.9999999999
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -115.5490611876,
+          "radius": 3.25,
+          "axial_min": -123.8500000999,
+          "axial_max": -121.8499998999
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -115.5490611876,
+          "radius": 3.25,
+          "axial_min": -123.8500000999,
+          "axial_max": -121.8499998999
+        }
+      ],
+      "retained_cylindrical_faces": 12,
+      "open_bores_verified": 10,
+      "added_volume_mm3": 2669.1178481658344,
+      "old_servo_overlap_mm3": 0,
+      "new_servo_overlap_mm3": 0.0,
+      "removed_volume_mm3": 8151.998680542025,
+      "checked_added_material_neighbours": [
+        [
+          "knee_and_ankle_assembly <3>",
+          "leg_spacer"
+        ],
+        [
+          "knee_and_ankle_assembly <3>",
+          "S05_RIGHT_ANKLE_ZP10D",
+          "ZP10D_vendor_body"
+        ]
+      ],
+      "status": "local candidate only; not installed",
+      "flush_face_area_mm2": 440.8908170328205
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <1>",
+        "left_knee_to_ankle_left_sheet"
+      ],
+      "servo": "S04_RIGHT_KNEE_ZP10D",
+      "old_width_mm": 30.700000000004845,
+      "new_width_mm": 23.400000000000002,
+      "servo_width_mm": 20.000000200000013,
+      "case_end_width_mm": 23.4,
+      "case_mount_face": "continuous planar face with two screw holes",
+      "side_profile": "straight and parallel",
+      "spacer_hole_pitch_mm": 13.0,
+      "flush_region": {
+        "bottom": -59.72406118764,
+        "top": -43.614061187647906,
+        "front": -73.3,
+        "back": -69.74999999994
+      },
+      "leg_cover_clearance": null,
+      "relocated_spacer_holes": [
+        {
+          "centre_x": -41.56,
+          "centre_z": -36.89906118764,
+          "radius": 3.25,
+          "axial_min": -65.80000009994,
+          "axial_max": -65.30007414046
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -36.89906118764,
+          "radius": 3.25,
+          "axial_min": -65.80000009994,
+          "axial_max": -65.30007414046
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -36.89906118764,
+          "radius": 1.6,
+          "axial_min": -67.69999999994,
+          "axial_max": -65.80000009994
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -36.89906118764,
+          "radius": 1.6,
+          "axial_min": -67.69999999994,
+          "axial_max": -65.80000009994
+        }
+      ],
+      "retained_cylindrical_faces": 8,
+      "open_bores_verified": 6,
+      "added_volume_mm3": 874.3736654021415,
+      "old_servo_overlap_mm3": 0,
+      "new_servo_overlap_mm3": 0.0,
+      "removed_volume_mm3": 6495.198338529787,
+      "checked_added_material_neighbours": [
+        [
+          "knee_and_ankle_assembly <1>",
+          "S04_RIGHT_KNEE_ZP10D",
+          "ZP10D_vendor_body"
+        ],
+        [
+          "knee_and_ankle_assembly <1>",
+          "leg_spacer"
+        ]
+      ],
+      "status": "local candidate only; not installed",
+      "flush_face_area_mm2": 370.6908146928204
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <1>",
+        "left_knee_to_ankle_right_sheet"
+      ],
+      "servo": "S04_RIGHT_KNEE_ZP10D",
+      "old_width_mm": 30.70000000002511,
+      "new_width_mm": 23.400000000000006,
+      "servo_width_mm": 20.000000200000013,
+      "case_end_width_mm": 23.4,
+      "case_mount_face": "continuous planar face with two screw holes",
+      "side_profile": "straight and parallel",
+      "spacer_hole_pitch_mm": 13.0,
+      "flush_region": {
+        "bottom": -62.7240611876,
+        "top": -43.61406108764791,
+        "front": -123.7500000999,
+        "back": -113.3
+      },
+      "leg_cover_clearance": {
+        "part": "right_cache",
+        "lower_rear_chamfer_mm": 3.5,
+        "clearance_mm": 0.0,
+        "old_clearance_mm": 0.0
+      },
+      "relocated_spacer_holes": [
+        {
+          "centre_x": -41.56,
+          "centre_z": -36.89906118764,
+          "radius": 1.6,
+          "axial_min": -121.7499998999,
+          "axial_max": -119.8999999999
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -36.89906118764,
+          "radius": 1.6,
+          "axial_min": -121.7499998999,
+          "axial_max": -119.8999999999
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -36.89906118764,
+          "radius": 3.25,
+          "axial_min": -123.7500000999,
+          "axial_max": -121.7499998999
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -36.89906118764,
+          "radius": 3.25,
+          "axial_min": -123.7500000999,
+          "axial_max": -121.7499998999
+        }
+      ],
+      "retained_cylindrical_faces": 12,
+      "open_bores_verified": 10,
+      "added_volume_mm3": 2612.8800421348265,
+      "old_servo_overlap_mm3": 0,
+      "new_servo_overlap_mm3": 0.0,
+      "removed_volume_mm3": 8147.126355559032,
+      "checked_added_material_neighbours": [
+        [
+          "right_cache"
+        ],
+        [
+          "knee_and_ankle_assembly <1>",
+          "S04_RIGHT_KNEE_ZP10D",
+          "ZP10D_vendor_body"
+        ],
+        [
+          "knee_and_ankle_assembly <1>",
+          "leg_spacer"
+        ]
+      ],
+      "status": "local candidate only; not installed",
+      "flush_face_area_mm2": 434.76581703188435
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <4>",
+        "left_knee_to_ankle_right_sheet"
+      ],
+      "servo": "S10_LEFT_ANKLE_ZP10D",
+      "old_width_mm": 30.70000000002636,
+      "new_width_mm": 23.400000000000006,
+      "servo_width_mm": 20.00000020001011,
+      "case_end_width_mm": 23.4,
+      "case_mount_face": "continuous planar face with two screw holes",
+      "side_profile": "straight and parallel",
+      "spacer_hole_pitch_mm": 13.0,
+      "flush_region": {
+        "bottom": -141.3740611876,
+        "top": -122.26406108764002,
+        "front": 113.4,
+        "back": 123.8500000999
+      },
+      "leg_cover_clearance": null,
+      "relocated_spacer_holes": [
+        {
+          "centre_x": -41.56,
+          "centre_z": -115.5490611876,
+          "radius": 1.6,
+          "axial_min": 119.9999999999,
+          "axial_max": 121.8499998999
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -115.5490611876,
+          "radius": 1.6,
+          "axial_min": 119.9999999999,
+          "axial_max": 121.8499998999
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -115.5490611876,
+          "radius": 3.25,
+          "axial_min": 121.8499998999,
+          "axial_max": 123.8500000999
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -115.5490611876,
+          "radius": 3.25,
+          "axial_min": 121.8499998999,
+          "axial_max": 123.8500000999
+        }
+      ],
+      "retained_cylindrical_faces": 15,
+      "open_bores_verified": 10,
+      "added_volume_mm3": 2669.1179178776065,
+      "old_servo_overlap_mm3": 0,
+      "new_servo_overlap_mm3": 0.0,
+      "removed_volume_mm3": 8152.043900365686,
+      "checked_added_material_neighbours": [
+        [
+          "knee_and_ankle_assembly <4>",
+          "leg_spacer"
+        ],
+        [
+          "knee_and_ankle_assembly <4>",
+          "S10_LEFT_ANKLE_ZP10D",
+          "ZP10D_vendor_body"
+        ]
+      ],
+      "status": "local candidate only; not installed",
+      "flush_face_area_mm2": 440.8908170328205
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <4>",
+        "left_knee_to_ankle_left_sheet"
+      ],
+      "servo": "S10_LEFT_ANKLE_ZP10D",
+      "old_width_mm": 30.70000000000129,
+      "new_width_mm": 23.400000000000006,
+      "servo_width_mm": 20.00000020001011,
+      "case_end_width_mm": 23.4,
+      "case_mount_face": "continuous planar face with two screw holes",
+      "side_profile": "straight and parallel",
+      "spacer_hole_pitch_mm": 13.0,
+      "flush_region": {
+        "bottom": -138.37406118762001,
+        "top": -122.26406108764002,
+        "front": 69.84999999994,
+        "back": 73.4
+      },
+      "leg_cover_clearance": null,
+      "relocated_spacer_holes": [
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -115.5490611876,
+          "radius": 3.25,
+          "axial_min": 63.89999989994,
+          "axial_max": 65.90000009994
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -115.5490611876,
+          "radius": 3.25,
+          "axial_min": 63.89999989994,
+          "axial_max": 65.90000009994
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -115.5490611876,
+          "radius": 1.6,
+          "axial_min": 65.90000009994,
+          "axial_max": 67.79999999994
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -115.5490611876,
+          "radius": 1.6,
+          "axial_min": 65.90000009994,
+          "axial_max": 67.79999999994
+        }
+      ],
+      "retained_cylindrical_faces": 12,
+      "open_bores_verified": 10,
+      "added_volume_mm3": 915.0633775435782,
+      "old_servo_overlap_mm3": 0,
+      "new_servo_overlap_mm3": 0.0,
+      "removed_volume_mm3": 8906.31009853381,
+      "checked_added_material_neighbours": [
+        [
+          "knee_and_ankle_assembly <4>",
+          "leg_spacer"
+        ],
+        [
+          "knee_and_ankle_assembly <4>",
+          "S10_LEFT_ANKLE_ZP10D",
+          "ZP10D_vendor_body"
+        ]
+      ],
+      "status": "local candidate only; not installed",
+      "flush_face_area_mm2": 370.6908170328206
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <2>",
+        "left_knee_to_ankle_left_sheet"
+      ],
+      "servo": "S09_LEFT_KNEE_ZP10D",
+      "old_width_mm": 30.700000000004845,
+      "new_width_mm": 23.400000000000002,
+      "servo_width_mm": 20.00000020001011,
+      "case_end_width_mm": 23.4,
+      "case_mount_face": "continuous planar face with two screw holes",
+      "side_profile": "straight and parallel",
+      "spacer_hole_pitch_mm": 13.0,
+      "flush_region": {
+        "bottom": -59.72406118764,
+        "top": -43.614061187647906,
+        "front": 69.74999999994,
+        "back": 73.3
+      },
+      "leg_cover_clearance": null,
+      "relocated_spacer_holes": [
+        {
+          "centre_x": -41.56,
+          "centre_z": -36.89906118764,
+          "radius": 3.25,
+          "axial_min": 65.300074140462,
+          "axial_max": 65.80000009994
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -36.89906118764,
+          "radius": 3.25,
+          "axial_min": 65.300074140462,
+          "axial_max": 65.80000009994
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -36.89906118764,
+          "radius": 1.6,
+          "axial_min": 65.80000009994,
+          "axial_max": 67.69999999994
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -36.89906118764,
+          "radius": 1.6,
+          "axial_min": 65.80000009994,
+          "axial_max": 67.69999999994
+        }
+      ],
+      "retained_cylindrical_faces": 8,
+      "open_bores_verified": 6,
+      "added_volume_mm3": 874.373665402275,
+      "old_servo_overlap_mm3": 0,
+      "new_servo_overlap_mm3": 0.0,
+      "removed_volume_mm3": 6495.198339061771,
+      "checked_added_material_neighbours": [
+        [
+          "knee_and_ankle_assembly <2>",
+          "leg_spacer"
+        ],
+        [
+          "knee_and_ankle_assembly <2>",
+          "S09_LEFT_KNEE_ZP10D",
+          "ZP10D_vendor_body"
+        ]
+      ],
+      "status": "local candidate only; not installed",
+      "flush_face_area_mm2": 370.6908146928204
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <2>",
+        "left_knee_to_ankle_right_sheet"
+      ],
+      "servo": "S09_LEFT_KNEE_ZP10D",
+      "old_width_mm": 30.70000000002511,
+      "new_width_mm": 23.400000000000006,
+      "servo_width_mm": 20.00000020001011,
+      "case_end_width_mm": 23.4,
+      "case_mount_face": "continuous planar face with two screw holes",
+      "side_profile": "straight and parallel",
+      "spacer_hole_pitch_mm": 13.0,
+      "flush_region": {
+        "bottom": -62.7240611876,
+        "top": -43.61406108764791,
+        "front": 113.3,
+        "back": 123.7500000999
+      },
+      "leg_cover_clearance": {
+        "part": "left_cache",
+        "lower_rear_chamfer_mm": 3.5,
+        "clearance_mm": 0.0,
+        "old_clearance_mm": 0.0
+      },
+      "relocated_spacer_holes": [
+        {
+          "centre_x": -41.56,
+          "centre_z": -36.89906118764,
+          "radius": 1.6,
+          "axial_min": 119.8999999999,
+          "axial_max": 121.7499998999
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -36.89906118764,
+          "radius": 1.6,
+          "axial_min": 119.8999999999,
+          "axial_max": 121.7499998999
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -36.89906118764,
+          "radius": 3.25,
+          "axial_min": 121.7499998999,
+          "axial_max": 123.7500000999
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -36.89906118764,
+          "radius": 3.25,
+          "axial_min": 121.7499998999,
+          "axial_max": 123.7500000999
+        }
+      ],
+      "retained_cylindrical_faces": 12,
+      "open_bores_verified": 10,
+      "added_volume_mm3": 2612.8801064270565,
+      "old_servo_overlap_mm3": 0,
+      "new_servo_overlap_mm3": 0.0,
+      "removed_volume_mm3": 8147.126351776525,
+      "checked_added_material_neighbours": [
+        [
+          "left_cache"
+        ],
+        [
+          "knee_and_ankle_assembly <2>",
+          "leg_spacer"
+        ],
+        [
+          "knee_and_ankle_assembly <2>",
+          "S09_LEFT_KNEE_ZP10D",
+          "ZP10D_vendor_body"
+        ]
+      ],
+      "status": "local candidate only; not installed",
+      "flush_face_area_mm2": 434.76581703188435
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <3>",
+        "leg_spacer"
+      ],
+      "old_width_mm": 28.072023107920003,
+      "new_width_mm": 23.400000000000013,
+      "relocated_spacer_holes": [
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -115.5490611876,
+          "radius": 2.0,
+          "axial_min": -119.9999999999,
+          "axial_max": -106.6499999999
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -115.5490611876,
+          "radius": 1.0,
+          "axial_min": -106.6500000999,
+          "axial_max": -81.34999989994
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -115.5490611876,
+          "radius": 2.0,
+          "axial_min": -81.34999999994,
+          "axial_max": -67.99999999994
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -115.5490611876,
+          "radius": 2.0,
+          "axial_min": -119.9999999999,
+          "axial_max": -106.6499999999
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -115.5490611876,
+          "radius": 1.0,
+          "axial_min": -106.6500000999,
+          "axial_max": -81.34999989994
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -115.5490611876,
+          "radius": 2.0,
+          "axial_min": -81.34999999994,
+          "axial_max": -67.99999999994
+        }
+      ],
+      "spacer_hole_pitch_mm": 13
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <1>",
+        "leg_spacer"
+      ],
+      "old_width_mm": 28.072023107920003,
+      "new_width_mm": 23.400000000000013,
+      "relocated_spacer_holes": [
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -36.89906118764,
+          "radius": 2.0,
+          "axial_min": -119.8999999999,
+          "axial_max": -106.5499999999
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -36.89906118764,
+          "radius": 1.0,
+          "axial_min": -106.55000009989999,
+          "axial_max": -81.24999989994001
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -36.89906118764,
+          "radius": 2.0,
+          "axial_min": -81.24999999994,
+          "axial_max": -67.89999999994
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -36.89906118764,
+          "radius": 2.0,
+          "axial_min": -119.8999999999,
+          "axial_max": -106.5499999999
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -36.89906118764,
+          "radius": 1.0,
+          "axial_min": -106.55000009989999,
+          "axial_max": -81.24999989994001
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -36.89906118764,
+          "radius": 2.0,
+          "axial_min": -81.24999999994,
+          "axial_max": -67.89999999994
+        }
+      ],
+      "spacer_hole_pitch_mm": 13
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <4>",
+        "leg_spacer"
+      ],
+      "old_width_mm": 28.072023107920003,
+      "new_width_mm": 23.400000000000013,
+      "relocated_spacer_holes": [
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -115.5490611876,
+          "radius": 2.0,
+          "axial_min": 67.99999999994,
+          "axial_max": 81.34999999994
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -115.5490611876,
+          "radius": 2.0,
+          "axial_min": 67.99999999994,
+          "axial_max": 81.34999999994
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -115.5490611876,
+          "radius": 2.0,
+          "axial_min": 106.6499999999,
+          "axial_max": 119.9999999999
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -115.5490611876,
+          "radius": 2.0,
+          "axial_min": 106.6499999999,
+          "axial_max": 119.9999999999
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -115.5490611876,
+          "radius": 1.0,
+          "axial_min": 81.34999989994,
+          "axial_max": 106.6500000999
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -115.5490611876,
+          "radius": 1.0,
+          "axial_min": 81.34999989994,
+          "axial_max": 106.6500000999
+        }
+      ],
+      "spacer_hole_pitch_mm": 13
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <2>",
+        "leg_spacer"
+      ],
+      "old_width_mm": 28.072023107920003,
+      "new_width_mm": 23.400000000000013,
+      "relocated_spacer_holes": [
+        {
+          "centre_x": -41.56,
+          "centre_z": -36.89906118764,
+          "radius": 2.0,
+          "axial_min": 106.5499999999,
+          "axial_max": 119.8999999999
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -36.89906118764,
+          "radius": 1.0,
+          "axial_min": 81.24999989994001,
+          "axial_max": 106.55000009989999
+        },
+        {
+          "centre_x": -41.56,
+          "centre_z": -36.89906118764,
+          "radius": 2.0,
+          "axial_min": 67.89999999994,
+          "axial_max": 81.24999999994
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -36.89906118764,
+          "radius": 2.0,
+          "axial_min": 106.5499999999,
+          "axial_max": 119.8999999999
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -36.89906118764,
+          "radius": 1.0,
+          "axial_min": 81.24999989994001,
+          "axial_max": 106.55000009989999
+        },
+        {
+          "centre_x": -28.560000000000002,
+          "centre_z": -36.89906118764,
+          "radius": 2.0,
+          "axial_min": 67.89999999994,
+          "axial_max": 81.24999999994
+        }
+      ],
+      "spacer_hole_pitch_mm": 13
+    }
+  ],
+  "paired_spacer_axes": [
+    {
+      "assembly": "knee_and_ankle_assembly <1>",
+      "centre_x": -41.56,
+      "centre_z": -36.899061187647916
+    },
+    {
+      "assembly": "knee_and_ankle_assembly <1>",
+      "centre_x": -28.560000000000002,
+      "centre_z": -36.899061187647916
+    },
+    {
+      "assembly": "knee_and_ankle_assembly <2>",
+      "centre_x": -41.56,
+      "centre_z": -36.899061187647916
+    },
+    {
+      "assembly": "knee_and_ankle_assembly <2>",
+      "centre_x": -28.560000000000002,
+      "centre_z": -36.899061187647916
+    },
+    {
+      "assembly": "knee_and_ankle_assembly <3>",
+      "centre_x": -41.56,
+      "centre_z": -115.54906108764001
+    },
+    {
+      "assembly": "knee_and_ankle_assembly <3>",
+      "centre_x": -28.560000000000002,
+      "centre_z": -115.54906108764001
+    },
+    {
+      "assembly": "knee_and_ankle_assembly <4>",
+      "centre_x": -41.56,
+      "centre_z": -115.54906108764001
+    },
+    {
+      "assembly": "knee_and_ankle_assembly <4>",
+      "centre_x": -28.560000000000002,
+      "centre_z": -115.54906108764001
+    }
+  ],
+  "modified_parts_interference": "passed",
+  "full_joint_motion_sweep": "not performed",
+  "candidate_fingerprints": {
+    "/tmp/u07/leaf_34_candidate.step": "d26488a84038125c78d856a499940ad51e8b1dc9cc46390b780672e64f746e60",
+    "/tmp/u07/leaf_38_candidate.step": "0ce5b30419aa29e015e93012b8e95be191ab6491ed15d27cf6d1194cc3e85177",
+    "/tmp/u07/leaf_66_candidate.step": "7156f7f1334564112a6039956df7af04bdf70b654ff213a5e8dc552f86d44c74",
+    "/tmp/u07/leaf_67_candidate.step": "0d285b3ba11dcb5a4bb31b2e1aff8e10bf706341785b9c39e4c1a6cd5a3d15a5",
+    "/tmp/u07/leaf_72_candidate.step": "81aadbabee965c1cc89dbff87613ee6173485c36c4ba4b58f06b496b1eb136bc",
+    "/tmp/u07/leaf_73_candidate.step": "48abba3214c3b95efd8692b3e23617f1000712d584df324dd56ea8cacd2a7e9d",
+    "/tmp/u07/leaf_131_candidate.step": "c9c0ae4843eaf424562519223b74c5703bd096fd3160e60ef5ac873106d62dac",
+    "/tmp/u07/leaf_132_candidate.step": "f320ea0ce45d16a85079359767840a52f1b980829d413c858c71e829f559ee06",
+    "/tmp/u07/leaf_33_candidate.step": "faa945be78f0e8aacadaa21bb3048a1c047f0f749eb61d6747a55ed7d468d0aa",
+    "/tmp/u07/leaf_71_candidate.step": "5ccb7a57b79af752bb30216b6f7749333a15bc0f9f6581d260b06a77f8af5a4d",
+    "/tmp/u07/leaf_74_candidate.step": "0944ade057f1c8f47505672743ce64ab91070908dc21be97a60bb3f2c6e58cf5",
+    "/tmp/u07/leaf_133_candidate.step": "6f26aa14b4d7b85c18496180c01987ef3db4c566b999d70eafc0557f172656f8"
+  },
+  "status": "installed; U07 straight sides and U08 flush faces; awaiting visual acceptance",
+  "unchanged_leaves": 125,
+  "all_colours_retained": true,
+  "export_checks": [
+    {
+      "part": [
+        "knee_and_ankle_assembly <3>",
+        "leg_spacer"
+      ],
+      "valid_single_solid": true,
+      "volume_delta_mm3": -1.9099388737231493e-11,
+      "bidirectional_difference_mm3": [
+        0,
+        0
+      ]
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <3>",
+        "left_knee_to_ankle_left_sheet"
+      ],
+      "valid_single_solid": true,
+      "volume_delta_mm3": 0.0,
+      "bidirectional_difference_mm3": [
+        0,
+        0
+      ]
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <3>",
+        "left_knee_to_ankle_right_sheet"
+      ],
+      "valid_single_solid": true,
+      "volume_delta_mm3": -5.4569682106375694e-12,
+      "bidirectional_difference_mm3": [
+        0,
+        0
+      ]
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <1>",
+        "left_knee_to_ankle_left_sheet"
+      ],
+      "valid_single_solid": true,
+      "volume_delta_mm3": 0.0,
+      "bidirectional_difference_mm3": [
+        0,
+        0
+      ]
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <1>",
+        "left_knee_to_ankle_right_sheet"
+      ],
+      "valid_single_solid": true,
+      "volume_delta_mm3": -9.094947017729282e-12,
+      "bidirectional_difference_mm3": [
+        0,
+        0
+      ]
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <1>",
+        "leg_spacer"
+      ],
+      "valid_single_solid": true,
+      "volume_delta_mm3": -1.8189894035458565e-11,
+      "bidirectional_difference_mm3": [
+        0,
+        0
+      ]
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <4>",
+        "left_knee_to_ankle_right_sheet"
+      ],
+      "valid_single_solid": true,
+      "volume_delta_mm3": 7.327616913244128e-07,
+      "bidirectional_difference_mm3": [
+        0,
+        0
+      ]
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <4>",
+        "left_knee_to_ankle_left_sheet"
+      ],
+      "valid_single_solid": true,
+      "volume_delta_mm3": -3.637978807091713e-12,
+      "bidirectional_difference_mm3": [
+        0,
+        0
+      ]
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <4>",
+        "leg_spacer"
+      ],
+      "valid_single_solid": true,
+      "volume_delta_mm3": -1.3642420526593924e-11,
+      "bidirectional_difference_mm3": [
+        0,
+        0
+      ]
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <2>",
+        "left_knee_to_ankle_left_sheet"
+      ],
+      "valid_single_solid": true,
+      "volume_delta_mm3": -9.094947017729282e-13,
+      "bidirectional_difference_mm3": [
+        0,
+        0
+      ]
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <2>",
+        "left_knee_to_ankle_right_sheet"
+      ],
+      "valid_single_solid": true,
+      "volume_delta_mm3": -1.8189894035458565e-12,
+      "bidirectional_difference_mm3": [
+        0,
+        0
+      ]
+    },
+    {
+      "part": [
+        "knee_and_ankle_assembly <2>",
+        "leg_spacer"
+      ],
+      "valid_single_solid": true,
+      "volume_delta_mm3": -1.9099388737231493e-11,
+      "bidirectional_difference_mm3": [
+        0,
+        0
+      ]
+    }
+  ],
+  "export_comparison_tolerance_mm": 1e-05
+}

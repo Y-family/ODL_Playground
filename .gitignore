@@ -10,3 +10,4 @@ checkpoints/
 *.onnx
 *.TXT
 .env
+*.swp

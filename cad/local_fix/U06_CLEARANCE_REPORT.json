@@ -1,0 +1,240 @@
+{
+  "document": "cad/local_fix/open_duck_mini_upper_refit.step",
+  "sha256": "f1d1d31ebf8021021db546abaf76ee0b46513b9cacd6a233f2b33e5eec9c48da",
+  "status": "Rear opening reverted at user request; backward 45-degree clearance unresolved",
+  "restored_parts": [
+    "body_back",
+    "body_middle_top rear region and mating screw holes"
+  ],
+  "unchanged_leaves_compared_with_previous_delivery": 135,
+  "all_leaf_colors_and_transparency_retained": true,
+  "restored_parts_valid_single_solids": true,
+  "memory_sampled_host_peak_mib": 1591,
+  "previous_motion_results_apply_to_current_file": false,
+  "superseded_candidate_report": {
+    "document": "cad/local_fix/open_duck_mini_upper_refit.step",
+    "sha256": "86690b568a2dd6b20911c5df1eee0bcb2564bb2910d967174d090ad835ebbf18",
+    "changed_parts": [
+      "body_front",
+      "body_middle_top",
+      "body_back",
+      "neck_left_sheet",
+      "neck_right_sheet"
+    ],
+    "s11_axis": {
+      "origin_mm": [
+        9,
+        0.725,
+        90.000938812376
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ]
+    },
+    "motion": {
+      "range_degrees": [
+        -45,
+        45
+      ],
+      "step_degrees": 2.5,
+      "sampled_positions": 37,
+      "moving_leaves": 41,
+      "scope": "S11 alone, other joints at their exported positions; discrete sampling, not continuous or multi-axis certification"
+    },
+    "motion_reports": {
+      "body_front": {
+        "fixed": "body_front",
+        "checks": 11,
+        "min_gap": 0.19999999995600248,
+        "issues": [],
+        "fingerprints": {
+          "body_front": "b5fdabd8df3a93bfffde2caa5b42711c22d5afba9505f479a6222edabdf4b113",
+          "body_middle_top": "69ea730eddba92885bbbe788589805e523e5c80862de3e521b67bc0a0ae7e27a",
+          "body_back": "accbdb2c9783110f45493e94556188f71e655acedb07999eb14b7e96f52b07a3",
+          "neck_left_sheet": "382574e9a56a1b34af07b1eb68778fb1716215c8c8ed3955a8d8c3025241c424",
+          "neck_right_sheet": "f2e760a8d499a2089d8dcf23ce6a03369ccd6ee1c1486797a451feeb618a0bfa"
+        },
+        "step_degrees": 2.5,
+        "angles_degrees": [
+          -45,
+          45
+        ],
+        "moving_leaves": 41,
+        "peak_rss_mib": 475.4765625,
+        "screw_seats": [
+          {
+            "y": -45,
+            "z": 65,
+            "support_ratio": 1.0000000000000073
+          },
+          {
+            "y": 45,
+            "z": 65,
+            "support_ratio": 1.0000000000000075
+          }
+        ]
+      },
+      "body_middle_top": {
+        "fixed": "body_middle_top",
+        "checks": 165,
+        "min_gap": 0.6364407218430244,
+        "issues": [],
+        "fingerprints": {
+          "body_front": "b5fdabd8df3a93bfffde2caa5b42711c22d5afba9505f479a6222edabdf4b113",
+          "body_middle_top": "69ea730eddba92885bbbe788589805e523e5c80862de3e521b67bc0a0ae7e27a",
+          "body_back": "accbdb2c9783110f45493e94556188f71e655acedb07999eb14b7e96f52b07a3",
+          "neck_left_sheet": "382574e9a56a1b34af07b1eb68778fb1716215c8c8ed3955a8d8c3025241c424",
+          "neck_right_sheet": "f2e760a8d499a2089d8dcf23ce6a03369ccd6ee1c1486797a451feeb618a0bfa"
+        },
+        "step_degrees": 2.5,
+        "angles_degrees": [
+          -45,
+          45
+        ],
+        "moving_leaves": 41,
+        "peak_rss_mib": 481.23828125
+      },
+      "body_middle_bottom": {
+        "fixed": "body_middle_bottom",
+        "checks": 0,
+        "min_gap": null,
+        "issues": [],
+        "fingerprints": {
+          "body_front": "b5fdabd8df3a93bfffde2caa5b42711c22d5afba9505f479a6222edabdf4b113",
+          "body_middle_top": "69ea730eddba92885bbbe788589805e523e5c80862de3e521b67bc0a0ae7e27a",
+          "body_back": "accbdb2c9783110f45493e94556188f71e655acedb07999eb14b7e96f52b07a3",
+          "neck_left_sheet": "382574e9a56a1b34af07b1eb68778fb1716215c8c8ed3955a8d8c3025241c424",
+          "neck_right_sheet": "f2e760a8d499a2089d8dcf23ce6a03369ccd6ee1c1486797a451feeb618a0bfa"
+        },
+        "step_degrees": 2.5,
+        "angles_degrees": [
+          -45,
+          45
+        ],
+        "moving_leaves": 41,
+        "peak_rss_mib": 469.42578125
+      },
+      "body_back": {
+        "fixed": "body_back",
+        "checks": 4,
+        "min_gap": 0.842490459502713,
+        "issues": [],
+        "fingerprints": {
+          "body_front": "4ced99adfee1137fcf78ab2bdcbeba25c20a4f9f736851248539e42ab6d7bf21",
+          "body_middle_top": "69ea730eddba92885bbbe788589805e523e5c80862de3e521b67bc0a0ae7e27a",
+          "body_back": "accbdb2c9783110f45493e94556188f71e655acedb07999eb14b7e96f52b07a3",
+          "neck_left_sheet": "382574e9a56a1b34af07b1eb68778fb1716215c8c8ed3955a8d8c3025241c424",
+          "neck_right_sheet": "f2e760a8d499a2089d8dcf23ce6a03369ccd6ee1c1486797a451feeb618a0bfa"
+        }
+      },
+      "trunk_top": {
+        "fixed": "trunk_top",
+        "checks": 150,
+        "min_gap": 0.29999999999435545,
+        "issues": [],
+        "fingerprints": {
+          "body_front": "b5fdabd8df3a93bfffde2caa5b42711c22d5afba9505f479a6222edabdf4b113",
+          "body_middle_top": "69ea730eddba92885bbbe788589805e523e5c80862de3e521b67bc0a0ae7e27a",
+          "body_back": "accbdb2c9783110f45493e94556188f71e655acedb07999eb14b7e96f52b07a3",
+          "neck_left_sheet": "382574e9a56a1b34af07b1eb68778fb1716215c8c8ed3955a8d8c3025241c424",
+          "neck_right_sheet": "f2e760a8d499a2089d8dcf23ce6a03369ccd6ee1c1486797a451feeb618a0bfa"
+        },
+        "step_degrees": 2.5,
+        "angles_degrees": [
+          -45,
+          45
+        ],
+        "moving_leaves": 41
+      }
+    },
+    "fastening_seats": {
+      "body_front": [
+        {
+          "y": -45,
+          "z": 65,
+          "support_ratio": 1.0000000000000073
+        },
+        {
+          "y": 45,
+          "z": 65,
+          "support_ratio": 1.0000000000000075
+        }
+      ],
+      "body_middle_top": [
+        {
+          "y": -45,
+          "z": 65,
+          "support_ratio": 1.000000000000008
+        },
+        {
+          "y": -45,
+          "z": 60,
+          "support_ratio": 0.9999999999999919
+        },
+        {
+          "y": -45,
+          "z": 70,
+          "support_ratio": 0.999999999999992
+        },
+        {
+          "y": 45,
+          "z": 65,
+          "support_ratio": 1.000000000000008
+        },
+        {
+          "y": 45,
+          "z": 60,
+          "support_ratio": 0.9999999999999922
+        },
+        {
+          "y": 45,
+          "z": 70,
+          "support_ratio": 0.999999999999992
+        }
+      ],
+      "body_back": [
+        {
+          "y": -45,
+          "z": 60,
+          "support_ratio": 0.9999999999999928
+        },
+        {
+          "y": -45,
+          "z": 70,
+          "support_ratio": 0.9999999999999926
+        },
+        {
+          "y": 45,
+          "z": 60,
+          "support_ratio": 0.9999999999999928
+        },
+        {
+          "y": 45,
+          "z": 70,
+          "support_ratio": 0.9999999999999928
+        }
+      ]
+    },
+    "new_static_interferences_in_shell_additions": 0,
+    "unchanged_leaves_checked": 132,
+    "unchanged_checks": [
+      "label",
+      "volume",
+      "bounding_box",
+      "color"
+    ],
+    "all_137_leaf_colors_retained": true,
+    "modified_parts_valid_single_solids": true,
+    "outer_bounds_enlarged": false,
+    "servo_and_leg_positions_changed": false,
+    "trunk_top_changed": false,
+    "assembly_host_used_memory_sampled_peak_mib": 1567,
+    "snapshot_host_used_memory_sampled_peak_mib": 2884,
+    "snapshot": "cad/local_fix/U06_review.png"
+  },
+  "snapshot": "cad/local_fix/U06_review.png",
+  "snapshot_scope": "Restored body_back only; whole-assembly snapshot stopped at 4315 MiB host usage",
+  "snapshot_host_used_memory_sampled_peak_mib": 1486
+}

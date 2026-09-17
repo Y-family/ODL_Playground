@@ -1,0 +1,2235 @@
+{
+  "ok": true,
+  "source_step": "/root/work/Open_Duck_Playground/cad/local_fix/open_duck_mini_covers_forward_review.step",
+  "baseline_step": "/root/work/Open_Duck_Playground/cad/source_exports/open_duck_original_isolated_branch.step",
+  "mjcf": "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/xmls/open_duck_mini_zp10d.xml",
+  "assumptions": {
+    "zp10d_mass_kg_each": 0.056,
+    "zp10d_internal_distribution": "uniform effective density over the supplied vendor STEP solids",
+    "modified_printed_parts": "original slicer-calibrated mass divided by original BRep volume is retained as an effective uniform density",
+    "head_chain_rise_m": 0.003,
+    "actuator_response": "damping, frictionloss, armature and kp remain inherited provisional values pending ZP10D hardware identification"
+  },
+  "servo_count": 14,
+  "servo_total_mass_kg": 0.784,
+  "original_total_mass_kg": 2.107141114886593,
+  "updated_total_mass_kg": 2.2337697588308343,
+  "servos": [
+    {
+      "servo": "S01_RIGHT_HIP_YAW_ZP10D",
+      "link": "trunk_assembly",
+      "mass_kg": 0.056,
+      "com_world_m": [
+        -0.028925195566053444,
+        -0.030250075663772216,
+        0.06402182809331063
+      ],
+      "inertia_world_kg_m2": [
+        [
+          1.0714773329649542e-05,
+          -4.554130463300273e-12,
+          -7.58896372174672e-08
+        ],
+        [
+          -4.554130463300273e-12,
+          1.6382566235448327e-05,
+          -7.481102620359169e-11
+        ],
+        [
+          -7.58896372174672e-08,
+          -7.481102620359169e-11,
+          9.237425257383972e-06
+        ]
+      ],
+      "brep_volume_mm3": 33248.33242272959,
+      "effective_density_kg_m3": 1684.2949982573161
+    },
+    {
+      "servo": "S02_RIGHT_HIP_ROLL_ZP10D",
+      "link": "hip_roll_assembly_2",
+      "mass_kg": 0.056,
+      "com_world_m": [
+        -0.018030889280909634,
+        -0.030249924336157943,
+        0.009851134378426331
+      ],
+      "inertia_world_kg_m2": [
+        [
+          9.237425257383845e-06,
+          -7.48110250051645e-11,
+          -7.588963721741386e-08
+        ],
+        [
+          -7.48110250051645e-11,
+          1.638256623544685e-05,
+          -4.5541299268315645e-12
+        ],
+        [
+          -7.588963721741386e-08,
+          -4.5541299268315645e-12,
+          1.0714773329648776e-05
+        ]
+      ],
+      "brep_volume_mm3": 33248.332422729596,
+      "effective_density_kg_m3": 1684.294998257316
+    },
+    {
+      "servo": "S03_RIGHT_HIP_PITCH_ZP10D",
+      "link": "right_roll_to_pitch_assembly",
+      "mass_kg": 0.056,
+      "com_world_m": [
+        -0.025134804433926745,
+        -0.09426911071900158,
+        -7.413685140247949e-05
+      ],
+      "inertia_world_kg_m2": [
+        [
+          1.0714773329646489e-05,
+          7.58896372180947e-08,
+          4.554130175678736e-12
+        ],
+        [
+          7.58896372180947e-08,
+          9.237425257383898e-06,
+          -7.481102714956881e-11
+        ],
+        [
+          4.554130175678736e-12,
+          -7.481102714956881e-11,
+          1.6382566235443018e-05
+        ]
+      ],
+      "brep_volume_mm3": 33248.33242272957,
+      "effective_density_kg_m3": 1684.2949982573173
+    },
+    {
+      "servo": "S04_RIGHT_KNEE_ZP10D",
+      "link": "knee_and_ankle_assembly_3",
+      "mass_kg": 0.056,
+      "com_world_m": [
+        -0.035060075663772144,
+        -0.09345588928092632,
+        -0.06879886562154663
+      ],
+      "inertia_world_kg_m2": [
+        [
+          1.63825662354457e-05,
+          7.481102573927952e-11,
+          4.554130275065634e-12
+        ],
+        [
+          7.481102573927952e-11,
+          9.237425257383034e-06,
+          -7.588963721704046e-08
+        ],
+        [
+          4.554130275065634e-12,
+          -7.588963721704046e-08,
+          1.0714773329647775e-05
+        ]
+      ],
+      "brep_volume_mm3": 33248.332422729625,
+      "effective_density_kg_m3": 1684.2949982573143
+    },
+    {
+      "servo": "S05_RIGHT_ANKLE_ZP10D",
+      "link": "knee_and_ankle_assembly_4",
+      "mass_kg": 0.056,
+      "com_world_m": [
+        -0.035060075663772186,
+        -0.0935558892809264,
+        -0.14744886562154616
+      ],
+      "inertia_world_kg_m2": [
+        [
+          1.638256623544975e-05,
+          7.481102619104279e-11,
+          4.554129773106619e-12
+        ],
+        [
+          7.481102619104279e-11,
+          9.237425257386918e-06,
+          -7.588963721904846e-08
+        ],
+        [
+          4.554129773106619e-12,
+          -7.588963721904846e-08,
+          1.0714773329646494e-05
+        ]
+      ],
+      "brep_volume_mm3": 33248.33242272955,
+      "effective_density_kg_m3": 1684.294998257318
+    },
+    {
+      "servo": "S06_LEFT_HIP_YAW_ZP10D",
+      "link": "trunk_assembly",
+      "mass_kg": 0.056,
+      "com_world_m": [
+        -0.028925195566053233,
+        0.030249924336227793,
+        0.06402182809331063
+      ],
+      "inertia_world_kg_m2": [
+        [
+          1.0714773329649393e-05,
+          -4.554130526045152e-12,
+          -7.588963721719111e-08
+        ],
+        [
+          -4.554130526045152e-12,
+          1.6382566235448178e-05,
+          -7.481102640437529e-11
+        ],
+        [
+          -7.588963721719111e-08,
+          -7.481102640437529e-11,
+          9.237425257384011e-06
+        ]
+      ],
+      "brep_volume_mm3": 33248.33242272959,
+      "effective_density_kg_m3": 1684.2949982573161
+    },
+    {
+      "servo": "S07_LEFT_HIP_ROLL_ZP10D",
+      "link": "hip_roll_assembly",
+      "mass_kg": 0.056,
+      "com_world_m": [
+        -0.018030889280908378,
+        0.030250075663697234,
+        0.009851134378430363
+      ],
+      "inertia_world_kg_m2": [
+        [
+          9.237425257383796e-06,
+          -7.481102594633769e-11,
+          -7.588963721774485e-08
+        ],
+        [
+          -7.481102594633769e-11,
+          1.6382566235447012e-05,
+          -4.554130940161348e-12
+        ],
+        [
+          -7.588963721774485e-08,
+          -4.554130940161348e-12,
+          1.0714773329648791e-05
+        ]
+      ],
+      "brep_volume_mm3": 33248.33242272959,
+      "effective_density_kg_m3": 1684.2949982573161
+    },
+    {
+      "servo": "S08_LEFT_HIP_PITCH_ZP10D",
+      "link": "left_roll_to_pitch_assembly",
+      "mass_kg": 0.056,
+      "com_world_m": [
+        -0.025134804433926586,
+        0.09426911071900325,
+        -7.398552385576835e-05
+      ],
+      "inertia_world_kg_m2": [
+        [
+          1.0714773329650707e-05,
+          -7.588963721741706e-08,
+          -4.554130427650893e-12
+        ],
+        [
+          -7.588963721741706e-08,
+          9.237425257383705e-06,
+          -7.481102635265987e-11
+        ],
+        [
+          -4.554130427650893e-12,
+          -7.481102635265987e-11,
+          1.6382566235447436e-05
+        ]
+      ],
+      "brep_volume_mm3": 33248.33242272956,
+      "effective_density_kg_m3": 1684.2949982573175
+    },
+    {
+      "servo": "S09_LEFT_KNEE_ZP10D",
+      "link": "knee_and_ankle_assembly",
+      "mass_kg": 0.056,
+      "com_world_m": [
+        -0.03505992433622774,
+        0.09345588928092638,
+        -0.06879886562154562
+      ],
+      "inertia_world_kg_m2": [
+        [
+          1.638256623544653e-05,
+          7.481102601535711e-11,
+          -4.554130877416473e-12
+        ],
+        [
+          7.481102601535711e-11,
+          9.237425257383354e-06,
+          7.588963721729158e-08
+        ],
+        [
+          -4.554130877416473e-12,
+          7.588963721729158e-08,
+          1.0714773329650306e-05
+        ]
+      ],
+      "brep_volume_mm3": 33248.33242272956,
+      "effective_density_kg_m3": 1684.2949982573175
+    },
+    {
+      "servo": "S10_LEFT_ANKLE_ZP10D",
+      "link": "knee_and_ankle_assembly_2",
+      "mass_kg": 0.056,
+      "com_world_m": [
+        -0.03505992433622778,
+        0.0935558892809263,
+        -0.14744886562154366
+      ],
+      "inertia_world_kg_m2": [
+        [
+          1.638256623544251e-05,
+          7.481102619104275e-11,
+          -4.5541306264369586e-12
+        ],
+        [
+          7.481102619104275e-11,
+          9.237425257379685e-06,
+          7.588963721443038e-08
+        ],
+        [
+          -4.5541306264369586e-12,
+          7.588963721443038e-08,
+          1.07147733296499e-05
+        ]
+      ],
+      "brep_volume_mm3": 33248.332422729574,
+      "effective_density_kg_m3": 1684.294998257317
+    },
+    {
+      "servo": "S11_NECK_PITCH_ZP10D",
+      "link": "trunk_assembly",
+      "mass_kg": 0.056,
+      "com_world_m": [
+        0.0010000756637721772,
+        0.001069110719066489,
+        0.08007574324632212
+      ],
+      "inertia_world_kg_m2": [
+        [
+          1.638256623544874e-05,
+          -7.481102635817455e-11,
+          4.554130591927278e-12
+        ],
+        [
+          -7.481102635817455e-11,
+          9.23742525738541e-06,
+          7.588963721747902e-08
+        ],
+        [
+          4.554130591927278e-12,
+          7.588963721747902e-08,
+          1.0714773329648859e-05
+        ]
+      ],
+      "brep_volume_mm3": 33248.33242272956,
+      "effective_density_kg_m3": 1684.2949982573175
+    },
+    {
+      "servo": "S12_HEAD_PITCH_ZP10D",
+      "link": "neck_pitch_assembly",
+      "mass_kg": 0.056,
+      "com_world_m": [
+        0.0010000756637701777,
+        0.0010691107190664891,
+        0.14607574324631614
+      ],
+      "inertia_world_kg_m2": [
+        [
+          1.638256623544995e-05,
+          -7.481102635821134e-11,
+          4.554130580946926e-12
+        ],
+        [
+          -7.481102635821134e-11,
+          9.237425257387521e-06,
+          7.588963721747356e-08
+        ],
+        [
+          4.554130580946926e-12,
+          7.588963721747356e-08,
+          1.071477332964887e-05
+        ]
+      ],
+      "brep_volume_mm3": 33248.33242272955,
+      "effective_density_kg_m3": 1684.294998257318
+    },
+    {
+      "servo": "S13_HEAD_YAW_ZP10D",
+      "link": "neck_yaw_assembly",
+      "mass_kg": 0.056,
+      "com_world_m": [
+        0.010925195566049439,
+        9.992433622777361e-05,
+        0.19792004953143263
+      ],
+      "inertia_world_kg_m2": [
+        [
+          1.0714773329642469e-05,
+          4.554130430886172e-12,
+          -7.58896372176178e-08
+        ],
+        [
+          4.554130430886172e-12,
+          1.6382566235441906e-05,
+          7.481102635476765e-11
+        ],
+        [
+          -7.58896372176178e-08,
+          7.481102635476765e-11,
+          9.237425257383876e-06
+        ]
+      ],
+      "brep_volume_mm3": 33248.33242272958,
+      "effective_density_kg_m3": 1684.2949982573166
+    },
+    {
+      "servo": "S14_HEAD_ROLL_ZP10D",
+      "link": "head_assembly",
+      "mass_kg": 0.056,
+      "com_world_m": [
+        0.06829411071995209,
+        0.00010007566365654138,
+        0.20677613437808906
+      ],
+      "inertia_world_kg_m2": [
+        [
+          9.237425257681897e-06,
+          -7.481105744782746e-11,
+          -7.588963757285068e-08
+        ],
+        [
+          -7.481105744782746e-11,
+          1.638256623535499e-05,
+          -4.554158695352915e-12
+        ],
+        [
+          -7.588963757285068e-08,
+          -4.554158695352915e-12,
+          1.0714773329557529e-05
+        ]
+      ],
+      "brep_volume_mm3": 33248.332419905215,
+      "effective_density_kg_m3": 1684.2949984003933
+    }
+  ],
+  "joints": [
+    {
+      "joint": "left_hip_yaw",
+      "old_origin_world_m": [
+        -0.018999999999999073,
+        0.03500000000000118,
+        0.0459409388123774
+      ],
+      "zp10d_origin_world_m": [
+        -0.018999999999994997,
+        0.03025,
+        0.064365938812333
+      ],
+      "sidecar_direction_world": [
+        2.0942312211876586e-13,
+        0.0,
+        -1.0
+      ],
+      "policy_axis_alignment": -1.0
+    },
+    {
+      "joint": "left_hip_roll",
+      "old_origin_world_m": [
+        5.0000000009077505e-05,
+        0.03500000000001811,
+        -7.40611876250824e-05
+      ],
+      "zp10d_origin_world_m": [
+        -0.0183749999999315,
+        0.0302499999999245,
+        -7.40611876234758e-05
+      ],
+      "sidecar_direction_world": [
+        1.0,
+        -5.968558980385145e-14,
+        8.520903281207739e-14
+      ],
+      "policy_axis_alignment": -1.0
+    },
+    {
+      "joint": "left_hip_pitch",
+      "old_origin_world_m": [
+        -0.035059999999985936,
+        0.10915000000002079,
+        -7.406118763544911e-05
+      ],
+      "zp10d_origin_world_m": [
+        -0.03505999999998,
+        0.0939249999999805,
+        -7.406118762785497e-05
+      ],
+      "sidecar_direction_world": [
+        0.0,
+        1.0,
+        2.243819165558258e-16
+      ],
+      "policy_axis_alignment": -1.0
+    },
+    {
+      "joint": "left_knee",
+      "old_origin_world_m": [
+        -0.03505999999998009,
+        0.10905000000001183,
+        -0.07872406118763559
+      ],
+      "zp10d_origin_world_m": [
+        -0.03506,
+        0.09379999999995,
+        -0.07872406118759499
+      ],
+      "sidecar_direction_world": [
+        3.590110664893086e-15,
+        -1.0,
+        -2.052346596763881e-13
+      ],
+      "policy_axis_alignment": 1.0
+    },
+    {
+      "joint": "left_ankle",
+      "old_origin_world_m": [
+        -0.03505999999997378,
+        0.10895000000000384,
+        -0.15737406118763564
+      ],
+      "zp10d_origin_world_m": [
+        -0.03506,
+        0.09389999999995,
+        -0.15737406118755
+      ],
+      "sidecar_direction_world": [
+        3.590110664893082e-15,
+        -1.0,
+        -2.099616387184971e-12
+      ],
+      "policy_axis_alignment": 1.0
+    },
+    {
+      "joint": "neck_pitch",
+      "old_origin_world_m": [
+        0.00099999999999896,
+        0.019150000000000326,
+        0.09000093881237622
+      ],
+      "zp10d_origin_world_m": [
+        0.000999999999999,
+        0.0007250000000469985,
+        0.090000938812376
+      ],
+      "sidecar_direction_world": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "policy_axis_alignment": -1.0
+    },
+    {
+      "joint": "head_pitch",
+      "old_origin_world_m": [
+        0.0009999999999974751,
+        0.019150000000000264,
+        0.15600093881237623
+      ],
+      "zp10d_origin_world_m": [
+        0.0009999999999969998,
+        0.0007250000000469985,
+        0.15600093881237
+      ],
+      "sidecar_direction_world": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "policy_axis_alignment": -1.0
+    },
+    {
+      "joint": "head_yaw",
+      "old_origin_world_m": [
+        0.0009999999999961914,
+        0.0001000000000003081,
+        0.21600093881237617
+      ],
+      "zp10d_origin_world_m": [
+        0.0009999999999964993,
+        9.999999999999965e-05,
+        0.19757593881240998
+      ],
+      "sidecar_direction_world": [
+        -1.9913895094329052e-14,
+        0.0,
+        1.0
+      ],
+      "policy_axis_alignment": 1.0
+    },
+    {
+      "joint": "head_roll",
+      "old_origin_world_m": [
+        0.041949999999996684,
+        0.00010000000000030964,
+        0.19685093881237714
+      ],
+      "zp10d_origin_world_m": [
+        0.0679500000000095,
+        9.999999991193053e-05,
+        0.19685093881236
+      ],
+      "sidecar_direction_world": [
+        -1.0,
+        2.1914633850284632e-14,
+        -1.7950553324465228e-15
+      ],
+      "policy_axis_alignment": 1.0
+    },
+    {
+      "joint": "right_hip_yaw",
+      "old_origin_world_m": [
+        -0.018999999999999073,
+        -0.035000000000001336,
+        0.0459409388123774
+      ],
+      "zp10d_origin_world_m": [
+        -0.019,
+        -0.03025,
+        0.06436593881233399
+      ],
+      "sidecar_direction_world": [
+        -1.1967035549643765e-15,
+        0.0,
+        -1.0
+      ],
+      "policy_axis_alignment": -1.0
+    },
+    {
+      "joint": "right_hip_roll",
+      "old_origin_world_m": [
+        5.000000001575619e-05,
+        -0.034999999999938386,
+        -7.406118762919023e-05
+      ],
+      "zp10d_origin_world_m": [
+        -0.0183749999999335,
+        -0.030249999999935,
+        -7.406118762711955e-05
+      ],
+      "sidecar_direction_world": [
+        1.0,
+        -2.005226394287431e-13,
+        -1.222507475368447e-13
+      ],
+      "policy_axis_alignment": -1.0
+    },
+    {
+      "joint": "right_hip_pitch",
+      "old_origin_world_m": [
+        -0.035059999999985166,
+        -0.10914999999993798,
+        -7.406118763808589e-05
+      ],
+      "zp10d_origin_world_m": [
+        -0.03505999999998,
+        -0.09392499999993999,
+        -7.406118763605462e-05
+      ],
+      "sidecar_direction_world": [
+        5.983517774831894e-16,
+        -1.0,
+        -1.188476218025985e-13
+      ],
+      "policy_axis_alignment": -1.0
+    },
+    {
+      "joint": "right_knee",
+      "old_origin_world_m": [
+        -0.03505999999999674,
+        -0.07214999999992924,
+        -0.07872406118763435
+      ],
+      "zp10d_origin_world_m": [
+        -0.03506,
+        -0.09379999999992501,
+        -0.0787240611876
+      ],
+      "sidecar_direction_world": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "policy_axis_alignment": -1.0
+    },
+    {
+      "joint": "right_ankle",
+      "old_origin_world_m": [
+        -0.035060000000004414,
+        -0.07224999999992063,
+        -0.15737406118763442
+      ],
+      "zp10d_origin_world_m": [
+        -0.03506,
+        -0.093899999999925,
+        -0.1573740611876
+      ],
+      "sidecar_direction_world": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "policy_axis_alignment": -1.0
+    }
+  ],
+  "modified_printed_parts": [
+    {
+      "link": "trunk_assembly",
+      "part": "trunk_top",
+      "original_mass_kg": 0.05103999999999999,
+      "updated_mass_kg": 0.04250086384790786,
+      "original_volume_mm3": 144675.4990930497,
+      "updated_volume_mm3": 120470.87948828025,
+      "effective_density_kg_m3": 352.78952082393045,
+      "com_part_m": [
+        -0.021917087561526702,
+        2.7747671005620974e-05,
+        -0.0032820949299919413
+      ],
+      "inertia_part_kg_m2": [
+        [
+          1.959368831123461e-05,
+          -5.2520432451873755e-08,
+          -1.3859294159844721e-06
+        ],
+        [
+          -5.2520432451873755e-08,
+          3.546190371378412e-05,
+          7.061591482525595e-08
+        ],
+        [
+          -1.3859294159844721e-06,
+          7.061591482525595e-08,
+          4.1218661759902624e-05
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/trunk_assembly__trunk_top_zp10d.stl"
+    },
+    {
+      "link": "trunk_assembly",
+      "part": "trunk_bottom",
+      "original_mass_kg": 0.034310000000000014,
+      "updated_mass_kg": 0.021254684935448052,
+      "original_volume_mm3": 82553.13825397323,
+      "updated_volume_mm3": 51140.80279862094,
+      "effective_density_kg_m3": 415.61109275392926,
+      "com_part_m": [
+        0.0005284843586185542,
+        -2.057450173579713e-14,
+        -0.06249896758058601
+      ],
+      "inertia_part_kg_m2": [
+        [
+          1.4406867248594076e-05,
+          -4.47143970796536e-19,
+          -4.3992673926835674e-07
+        ],
+        [
+          -4.47143970796536e-19,
+          1.3119493837273708e-05,
+          -1.7919655217533788e-18
+        ],
+        [
+          -4.3992673926835674e-07,
+          -1.7919655217533788e-18,
+          6.547545349867301e-06
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/trunk_assembly__trunk_bottom_zp10d.stl"
+    },
+    {
+      "link": "hip_roll_assembly",
+      "part": "roll_motor_bottom",
+      "original_mass_kg": 0.004739999999999999,
+      "updated_mass_kg": 0.004647606271965538,
+      "original_volume_mm3": 8500.163698109758,
+      "updated_volume_mm3": 8334.475551913227,
+      "effective_density_kg_m3": 557.636319528066,
+      "com_part_m": [
+        -0.00037653612312632594,
+        0.030356319187906038,
+        -0.0738075768634883
+      ],
+      "inertia_part_kg_m2": [
+        [
+          6.441509720459428e-07,
+          -2.6645678121072844e-09,
+          2.1273340972481277e-08
+        ],
+        [
+          -2.6645678121072844e-09,
+          5.055671302029103e-07,
+          2.1536180778596857e-08
+        ],
+        [
+          2.1273340972481277e-08,
+          2.1536180778596857e-08,
+          6.580910821267266e-07
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/hip_roll_assembly__roll_motor_bottom_zp10d.stl"
+    },
+    {
+      "link": "hip_roll_assembly",
+      "part": "roll_motor_top",
+      "original_mass_kg": 0.006739999999999998,
+      "updated_mass_kg": 0.004362836553186203,
+      "original_volume_mm3": 9174.641713713296,
+      "updated_volume_mm3": 5938.792615871705,
+      "effective_density_kg_m3": 734.6335922770422,
+      "com_part_m": [
+        -0.0004536674751998862,
+        0.029274579507798493,
+        -0.03148890698232493
+      ],
+      "inertia_part_kg_m2": [
+        [
+          3.974386300696796e-07,
+          -1.9655132465132707e-08,
+          -9.697012305842919e-08
+        ],
+        [
+          -1.9655132465132707e-08,
+          1.3288014529674646e-06,
+          -2.0309186341058858e-08
+        ],
+        [
+          -9.697012305842919e-08,
+          -2.0309186341058858e-08,
+          1.476727251571632e-06
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/hip_roll_assembly__roll_motor_top_zp10d.stl"
+    },
+    {
+      "link": "hip_roll_assembly_2",
+      "part": "roll_motor_bottom_2",
+      "original_mass_kg": 0.004739999999999999,
+      "updated_mass_kg": 0.004647606271964495,
+      "original_volume_mm3": 8500.163698109758,
+      "updated_volume_mm3": 8334.475551911355,
+      "effective_density_kg_m3": 557.636319528066,
+      "com_part_m": [
+        -0.00037653612312620846,
+        0.039643680812092796,
+        -0.0738075768634883
+      ],
+      "inertia_part_kg_m2": [
+        [
+          6.441509720458633e-07,
+          2.6645678120923682e-09,
+          2.1273340972500242e-08
+        ],
+        [
+          2.6645678120923682e-09,
+          5.055671302027896e-07,
+          -2.1536180778601555e-08
+        ],
+        [
+          2.1273340972500242e-08,
+          -2.1536180778601555e-08,
+          6.580910821265403e-07
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/hip_roll_assembly_2__roll_motor_bottom_2_zp10d.stl"
+    },
+    {
+      "link": "hip_roll_assembly_2",
+      "part": "roll_motor_top_2",
+      "original_mass_kg": 0.006739999999999998,
+      "updated_mass_kg": 0.004362836553186452,
+      "original_volume_mm3": 9174.64171371329,
+      "updated_volume_mm3": 5938.792615872039,
+      "effective_density_kg_m3": 734.6335922770427,
+      "com_part_m": [
+        -0.0004536674751993037,
+        0.04072569198949628,
+        -0.03148890698232459
+      ],
+      "inertia_part_kg_m2": [
+        [
+          3.9743631898022134e-07,
+          1.96277958223161e-08,
+          -9.697012305842963e-08
+        ],
+        [
+          1.96277958223161e-08,
+          1.3288014529674807e-06,
+          2.031697571220395e-08
+        ],
+        [
+          -9.697012305842963e-08,
+          2.031697571220395e-08,
+          1.4767249404822013e-06
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/hip_roll_assembly_2__roll_motor_top_2_zp10d.stl"
+    },
+    {
+      "link": "left_roll_to_pitch_assembly",
+      "part": "left_roll_to_pitch",
+      "original_mass_kg": 0.020160000000000015,
+      "updated_mass_kg": 0.025531188347261858,
+      "original_volume_mm3": 29634.10660560473,
+      "updated_volume_mm3": 37529.46216520489,
+      "effective_density_kg_m3": 680.297208493781,
+      "com_part_m": [
+        0.012481726017411019,
+        0.07200661561486565,
+        -0.06411588221614177
+      ],
+      "inertia_part_kg_m2": [
+        [
+          1.6484700508448364e-05,
+          -4.545360234242395e-06,
+          4.2051412793027856e-08
+        ],
+        [
+          -4.545360234242395e-06,
+          1.2108326652400207e-05,
+          -5.018932703953172e-07
+        ],
+        [
+          4.2051412793027856e-08,
+          -5.018932703953172e-07,
+          2.4198414045373997e-05
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/left_roll_to_pitch_assembly__left_roll_to_pitch_zp10d.stl"
+    },
+    {
+      "link": "right_roll_to_pitch_assembly",
+      "part": "right_roll_to_pitch",
+      "original_mass_kg": 0.020159999999999997,
+      "updated_mass_kg": 0.02553093786247466,
+      "original_volume_mm3": 29634.109325236896,
+      "updated_volume_mm3": 37529.09741033751,
+      "effective_density_kg_m3": 680.2971460603815,
+      "com_part_m": [
+        0.012481665889864744,
+        -0.07200665017039287,
+        -0.06411543576538205
+      ],
+      "inertia_part_kg_m2": [
+        [
+          1.6484601464507997e-05,
+          4.545377448703674e-06,
+          4.252188762181699e-08
+        ],
+        [
+          4.545377448703674e-06,
+          1.2108286263126877e-05,
+          5.012760382933549e-07
+        ],
+        [
+          4.252188762181699e-08,
+          5.012760382933549e-07,
+          2.4198342779291423e-05
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/right_roll_to_pitch_assembly__right_roll_to_pitch_zp10d.stl"
+    },
+    {
+      "link": "knee_and_ankle_assembly",
+      "part": "leg_spacer",
+      "original_mass_kg": 0.00527,
+      "updated_mass_kg": 0.007248611023140327,
+      "original_volume_mm3": 7051.7261241575825,
+      "updated_volume_mm3": 9699.28267850764,
+      "effective_density_kg_m3": 747.3347528268574,
+      "com_part_m": [
+        -0.016059999996663774,
+        0.09394702076203375,
+        -0.18049461926927401
+      ],
+      "inertia_part_kg_m2": [
+        [
+          1.6050778917600309e-06,
+          -1.0729161080500948e-15,
+          1.4511664938270657e-17
+        ],
+        [
+          -1.0729161080500948e-15,
+          5.876748396482411e-07,
+          -1.0708937042056569e-09
+        ],
+        [
+          1.4511664938270657e-17,
+          -1.0708937042056569e-09,
+          2.1047669727024476e-06
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/knee_and_ankle_assembly__leg_spacer_zp10d.stl"
+    },
+    {
+      "link": "knee_and_ankle_assembly",
+      "part": "left_knee_to_ankle_right_sheet",
+      "original_mass_kg": 0.0058299999999999975,
+      "updated_mass_kg": 0.007261041918078125,
+      "original_volume_mm3": 6541.450547558548,
+      "updated_volume_mm3": 8147.126351776628,
+      "effective_density_kg_m3": 891.2396352481662,
+      "com_part_m": [
+        -0.016060026816397562,
+        0.12054688765221669,
+        -0.17785112892680938
+      ],
+      "inertia_part_kg_m2": [
+        [
+          2.7300301012722977e-06,
+          3.69657509313288e-14,
+          7.966608726810536e-12
+        ],
+        [
+          3.69657509313288e-14,
+          3.289696005341078e-06,
+          -1.5245623502718076e-07
+        ],
+        [
+          7.966608726810536e-12,
+          -1.5245623502718076e-07,
+          6.547727572207804e-07
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/knee_and_ankle_assembly__left_knee_to_ankle_right_sheet_zp10d.stl"
+    },
+    {
+      "link": "knee_and_ankle_assembly",
+      "part": "left_knee_to_ankle_left_sheet",
+      "original_mass_kg": 0.006489999999999998,
+      "updated_mass_kg": 0.005103263494579591,
+      "original_volume_mm3": 8260.17258667602,
+      "updated_volume_mm3": 6495.19833906176,
+      "effective_density_kg_m3": 785.6978691303159,
+      "com_part_m": [
+        -0.016058820407508143,
+        0.06774527278245031,
+        -0.18018108005185618
+      ],
+      "inertia_part_kg_m2": [
+        [
+          1.681376890741365e-06,
+          4.352877747060851e-12,
+          -2.5781967979969797e-10
+        ],
+        [
+          4.352877747060851e-12,
+          2.0556669950135766e-06,
+          8.248396920446555e-08
+        ],
+        [
+          -2.5781967979969797e-10,
+          8.248396920446555e-08,
+          4.14752699385036e-07
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/knee_and_ankle_assembly__left_knee_to_ankle_left_sheet_zp10d.stl"
+    },
+    {
+      "link": "knee_and_ankle_assembly_2",
+      "part": "leg_spacer_2",
+      "original_mass_kg": 0.00527,
+      "updated_mass_kg": 0.007248611023157994,
+      "original_volume_mm3": 7051.726124157584,
+      "updated_volume_mm3": 9699.282678531283,
+      "effective_density_kg_m3": 747.3347528268572,
+      "com_part_m": [
+        -0.01605999999666969,
+        0.09414702076204115,
+        -0.1804946192692584
+      ],
+      "inertia_part_kg_m2": [
+        [
+          1.6050778917627367e-06,
+          -1.072938386574968e-15,
+          1.450621216379064e-17
+        ],
+        [
+          -1.072938386574968e-15,
+          5.876748396494436e-07,
+          -1.0708937041973286e-09
+        ],
+        [
+          1.450621216379064e-17,
+          -1.0708937041973286e-09,
+          2.1047669727058993e-06
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/knee_and_ankle_assembly_2__leg_spacer_2_zp10d.stl"
+    },
+    {
+      "link": "knee_and_ankle_assembly_2",
+      "part": "left_knee_to_ankle_right_sheet_2",
+      "original_mass_kg": 0.0058299999999999975,
+      "updated_mass_kg": 0.007265424632548706,
+      "original_volume_mm3": 6541.450547558549,
+      "updated_volume_mm3": 8152.043900657139,
+      "effective_density_kg_m3": 891.2396352481661,
+      "com_part_m": [
+        -0.0160609595020644,
+        0.12074654548161157,
+        -0.17783130847467288
+      ],
+      "inertia_part_kg_m2": [
+        [
+          2.734864143019769e-06,
+          3.725850333260253e-13,
+          2.868415767838763e-10
+        ],
+        [
+          3.725850333260253e-13,
+          3.2946838805736276e-06,
+          -1.5237646135027583e-07
+        ],
+        [
+          2.868415767838763e-10,
+          -1.5237646135027583e-07,
+          6.549315834081547e-07
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/knee_and_ankle_assembly_2__left_knee_to_ankle_right_sheet_2_zp10d.stl"
+    },
+    {
+      "link": "knee_and_ankle_assembly_2",
+      "part": "left_knee_to_ankle_left_sheet_2",
+      "original_mass_kg": 0.006489999999999998,
+      "updated_mass_kg": 0.006997668866231879,
+      "original_volume_mm3": 8260.172586676026,
+      "updated_volume_mm3": 8906.31009853388,
+      "effective_density_kg_m3": 785.6978691303153,
+      "com_part_m": [
+        -0.016059948770788885,
+        0.06708733489659696,
+        -0.17832017655729604
+      ],
+      "inertia_part_kg_m2": [
+        [
+          2.4033996321646286e-06,
+          6.021589721732181e-13,
+          7.652915429455175e-12
+        ],
+        [
+          6.021589721732181e-13,
+          2.887333636019917e-06,
+          1.1194080311342648e-07
+        ],
+        [
+          7.652915429455175e-12,
+          1.1194080311342648e-07,
+          5.528557187625895e-07
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/knee_and_ankle_assembly_2__left_knee_to_ankle_left_sheet_2_zp10d.stl"
+    },
+    {
+      "link": "knee_and_ankle_assembly_3",
+      "part": "leg_spacer_3",
+      "original_mass_kg": 0.00527,
+      "updated_mass_kg": 0.007248611023138742,
+      "original_volume_mm3": 7051.7261241575825,
+      "updated_volume_mm3": 9699.282678505519,
+      "effective_density_kg_m3": 747.3347528268574,
+      "com_part_m": [
+        -0.016059999996658792,
+        0.08745297923622183,
+        -0.1804946192674436
+      ],
+      "inertia_part_kg_m2": [
+        [
+          1.6050778917673602e-06,
+          1.0731309153436292e-15,
+          1.4285180142372527e-17
+        ],
+        [
+          1.0731309153436292e-15,
+          5.876748396433355e-07,
+          1.0708937231144672e-09
+        ],
+        [
+          1.4285180142372524e-17,
+          1.0708937231144672e-09,
+          2.1047669727145348e-06
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/knee_and_ankle_assembly_3__leg_spacer_3_zp10d.stl"
+    },
+    {
+      "link": "knee_and_ankle_assembly_3",
+      "part": "left_knee_to_ankle_right_sheet_3",
+      "original_mass_kg": 0.0058299999999999975,
+      "updated_mass_kg": 0.007261041921449235,
+      "original_volume_mm3": 6541.4505475585465,
+      "updated_volume_mm3": 8147.126355559121,
+      "effective_density_kg_m3": 891.2396352481663,
+      "com_part_m": [
+        -0.016059975374102493,
+        0.06065311234667884,
+        -0.17785112891961746
+      ],
+      "inertia_part_kg_m2": [
+        [
+          2.730030102631704e-06,
+          -1.2394997956317691e-14,
+          -7.421263488473706e-12
+        ],
+        [
+          -1.2394997956317691e-14,
+          3.289696006839164e-06,
+          1.5245623514457378e-07
+        ],
+        [
+          -7.421263488473706e-12,
+          1.5245623514457378e-07,
+          6.547727573954126e-07
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/knee_and_ankle_assembly_3__left_knee_to_ankle_right_sheet_3_zp10d.stl"
+    },
+    {
+      "link": "knee_and_ankle_assembly_3",
+      "part": "left_knee_to_ankle_left_sheet_3",
+      "original_mass_kg": 0.006489999999999998,
+      "updated_mass_kg": 0.005103263494161624,
+      "original_volume_mm3": 8260.172586676026,
+      "updated_volume_mm3": 6495.1983385297945,
+      "effective_density_kg_m3": 785.6978691303153,
+      "com_part_m": [
+        -0.016061890901096793,
+        0.11345472721740606,
+        -0.18018108005589906
+      ],
+      "inertia_part_kg_m2": [
+        [
+          1.6813768897912955e-06,
+          -4.447582238422869e-13,
+          2.2573669483447932e-10
+        ],
+        [
+          -4.447582238422869e-13,
+          2.055666982917678e-06,
+          -8.248396918601393e-08
+        ],
+        [
+          2.2573669483447932e-10,
+          -8.248396918601393e-08,
+          4.1475268823849286e-07
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/knee_and_ankle_assembly_3__left_knee_to_ankle_left_sheet_3_zp10d.stl"
+    },
+    {
+      "link": "knee_and_ankle_assembly_4",
+      "part": "leg_spacer_4",
+      "original_mass_kg": 0.00527,
+      "updated_mass_kg": 0.007248611023154986,
+      "original_volume_mm3": 7051.726124157585,
+      "updated_volume_mm3": 9699.28267852726,
+      "effective_density_kg_m3": 747.3347528268571,
+      "com_part_m": [
+        -0.016059999996647582,
+        0.08745297923621594,
+        -0.1804946192674226
+      ],
+      "inertia_part_kg_m2": [
+        [
+          1.6050778917695072e-06,
+          1.0731448589634135e-15,
+          1.4314091294430752e-17
+        ],
+        [
+          1.0731448589634135e-15,
+          5.876748396444544e-07,
+          1.070893723150822e-09
+        ],
+        [
+          1.4314091294430755e-17,
+          1.070893723150822e-09,
+          2.104766972717425e-06
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/knee_and_ankle_assembly_4__leg_spacer_4_zp10d.stl"
+    },
+    {
+      "link": "knee_and_ankle_assembly_4",
+      "part": "left_knee_to_ankle_right_sheet_4",
+      "original_mass_kg": 0.0058299999999999975,
+      "updated_mass_kg": 0.007265384330589874,
+      "original_volume_mm3": 6541.450547558551,
+      "updated_volume_mm3": 8151.998680542105,
+      "effective_density_kg_m3": 891.2396352481658,
+      "com_part_m": [
+        -0.016059064099196177,
+        0.06065347185179795,
+        -0.1778315301127703
+      ],
+      "inertia_part_kg_m2": [
+        [
+          2.734798670860048e-06,
+          -1.6296260409385875e-13,
+          -2.8098064017029245e-10
+        ],
+        [
+          -1.6296260409385875e-13,
+          3.294616723873359e-06,
+          1.523714297892944e-07
+        ],
+        [
+          -2.8098064017029245e-10,
+          1.523714297892944e-07,
+          6.549291116358928e-07
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/knee_and_ankle_assembly_4__left_knee_to_ankle_right_sheet_4_zp10d.stl"
+    },
+    {
+      "link": "knee_and_ankle_assembly_4",
+      "part": "left_knee_to_ankle_left_sheet_4",
+      "original_mass_kg": 0.006489999999999998,
+      "updated_mass_kg": 0.006997668896717092,
+      "original_volume_mm3": 8260.172586676023,
+      "updated_volume_mm3": 8906.31013733405,
+      "effective_density_kg_m3": 785.6978691303157,
+      "com_part_m": [
+        -0.016060569961033725,
+        0.11431266511164037,
+        -0.17832017641164846
+      ],
+      "inertia_part_kg_m2": [
+        [
+          2.403399667711392e-06,
+          -7.309953618388996e-12,
+          -4.6493701003407263e-11
+        ],
+        [
+          -7.309953618388996e-12,
+          2.887333669893996e-06,
+          -1.1194080523668402e-07
+        ],
+        [
+          -4.6493701003407263e-11,
+          -1.1194080523668402e-07,
+          5.528557173474216e-07
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/knee_and_ankle_assembly_4__left_knee_to_ankle_left_sheet_4_zp10d.stl"
+    },
+    {
+      "link": "foot_assembly",
+      "part": "foot_side",
+      "original_mass_kg": 0.01386,
+      "updated_mass_kg": 0.016245521749490028,
+      "original_volume_mm3": 21452.037371552655,
+      "updated_volume_mm3": 25144.26693293157,
+      "effective_density_kg_m3": 646.0924787675233,
+      "com_part_m": [
+        -0.006328217128764689,
+        0.11905947444525553,
+        -0.2410332294502716
+      ],
+      "inertia_part_kg_m2": [
+        [
+          1.696535260930419e-06,
+          8.248321423054455e-08,
+          3.93712504216179e-07
+        ],
+        [
+          8.248321423054455e-08,
+          1.250311086473738e-05,
+          -2.269408822684469e-07
+        ],
+        [
+          3.93712504216179e-07,
+          -2.269408822684469e-07,
+          1.1335648344702728e-05
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/foot_assembly__foot_side_zp10d.stl"
+    },
+    {
+      "link": "foot_assembly",
+      "part": "foot_bottom_tpu",
+      "original_mass_kg": 0.019,
+      "updated_mass_kg": 0.026769847973588463,
+      "original_volume_mm3": 23604.251490539715,
+      "updated_volume_mm3": 33256.959154320895,
+      "effective_density_kg_m3": 804.9397375559636,
+      "com_part_m": [
+        -0.0026546078321494386,
+        0.0956526586456565,
+        -0.25703001123951763
+      ],
+      "inertia_part_kg_m2": [
+        [
+          4.937731787330935e-06,
+          -2.8672616109764766e-09,
+          2.891446402851507e-08
+        ],
+        [
+          -2.8672616109764766e-09,
+          2.1952957931082038e-05,
+          9.912889008098401e-09
+        ],
+        [
+          2.891446402851507e-08,
+          9.912889008098401e-09,
+          2.662865159384031e-05
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/foot_assembly__foot_bottom_tpu_zp10d.stl"
+    },
+    {
+      "link": "foot_assembly",
+      "part": "foot_bottom_pla",
+      "original_mass_kg": 0.018999999999999993,
+      "updated_mass_kg": 0.026775891439464065,
+      "original_volume_mm3": 15884.218541649685,
+      "updated_volume_mm3": 22384.95322483865,
+      "effective_density_kg_m3": 1196.1557913711954,
+      "com_part_m": [
+        -0.006761961831343337,
+        0.0960501355012352,
+        -0.24920432732371617
+      ],
+      "inertia_part_kg_m2": [
+        [
+          2.9737455109433627e-06,
+          -2.350961548707887e-18,
+          -5.256165611681833e-11
+        ],
+        [
+          -2.3509615487078865e-18,
+          1.576538573267798e-05,
+          1.149278633233954e-18
+        ],
+        [
+          -5.256165611681833e-11,
+          1.1492786332339546e-18,
+          1.8467269630890563e-05
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/foot_assembly__foot_bottom_pla_zp10d.stl"
+    },
+    {
+      "link": "foot_assembly",
+      "part": "foot_top",
+      "original_mass_kg": 0.023380000000000012,
+      "updated_mass_kg": 0.029892135307003194,
+      "original_volume_mm3": 39660.32363625746,
+      "updated_volume_mm3": 50707.08983980087,
+      "effective_density_kg_m3": 589.5060316307156,
+      "com_part_m": [
+        -0.005150660143539258,
+        0.08077245573234865,
+        -0.24209300907581197
+      ],
+      "inertia_part_kg_m2": [
+        [
+          7.618091350615963e-06,
+          -5.560639115671704e-07,
+          6.886844723455509e-07
+        ],
+        [
+          -5.560639115671704e-07,
+          2.6123283595396665e-05,
+          5.231615868150962e-07
+        ],
+        [
+          6.886844723455509e-07,
+          5.231615868150962e-07,
+          3.055844564415011e-05
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/foot_assembly__foot_top_zp10d.stl"
+    },
+    {
+      "link": "foot_assembly_2",
+      "part": "foot_side_2",
+      "original_mass_kg": 0.01386,
+      "updated_mass_kg": 0.016245537445181323,
+      "original_volume_mm3": 21452.037371552648,
+      "updated_volume_mm3": 25144.291226189584,
+      "effective_density_kg_m3": 646.0924787675235,
+      "com_part_m": [
+        -0.006327363148023307,
+        0.06234049875400739,
+        -0.24103335702889786
+      ],
+      "inertia_part_kg_m2": [
+        [
+          1.6965366599908103e-06,
+          -8.246007237859441e-08,
+          3.9344900646469616e-07
+        ],
+        [
+          -8.246007237859441e-08,
+          1.2502940383030733e-05,
+          2.2694202789431916e-07
+        ],
+        [
+          3.9344900646469616e-07,
+          2.2694202789431916e-07,
+          1.1335475418783106e-05
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/foot_assembly_2__foot_side_2_zp10d.stl"
+    },
+    {
+      "link": "foot_assembly_2",
+      "part": "foot_bottom_tpu_2",
+      "original_mass_kg": 0.019,
+      "updated_mass_kg": 0.02676984797359665,
+      "original_volume_mm3": 23604.251490539722,
+      "updated_volume_mm3": 33256.95915433108,
+      "effective_density_kg_m3": 804.9397375559632,
+      "com_part_m": [
+        -0.0026546078321047126,
+        0.08674734135424914,
+        -0.2570300112395115
+      ],
+      "inertia_part_kg_m2": [
+        [
+          4.937731787336295e-06,
+          2.8672616211703754e-09,
+          2.8914464023828694e-08
+        ],
+        [
+          2.8672616211703754e-09,
+          2.1952957931094693e-05,
+          -9.912889007006438e-09
+        ],
+        [
+          2.8914464023828694e-08,
+          -9.912889007006438e-09,
+          2.662865159385321e-05
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/foot_assembly_2__foot_bottom_tpu_2_zp10d.stl"
+    },
+    {
+      "link": "foot_assembly_2",
+      "part": "foot_bottom_pla_2",
+      "original_mass_kg": 0.018999999999999993,
+      "updated_mass_kg": 0.02677589143946653,
+      "original_volume_mm3": 15884.218541649687,
+      "updated_volume_mm3": 22384.953224840712,
+      "effective_density_kg_m3": 1196.1557913711952,
+      "com_part_m": [
+        -0.006761961831308271,
+        0.08634986449868118,
+        -0.24920432732371126
+      ],
+      "inertia_part_kg_m2": [
+        [
+          2.973745510941651e-06,
+          1.4043180905035233e-18,
+          -5.256165916703303e-11
+        ],
+        [
+          1.4043180905035233e-18,
+          1.5765385732680256e-05,
+          8.664578296495871e-19
+        ],
+        [
+          -5.256165916703303e-11,
+          8.66457829649587e-19,
+          1.846726963088999e-05
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/foot_assembly_2__foot_bottom_pla_2_zp10d.stl"
+    },
+    {
+      "link": "foot_assembly_2",
+      "part": "foot_top_2",
+      "original_mass_kg": 0.023380000000000012,
+      "updated_mass_kg": 0.029892673757023012,
+      "original_volume_mm3": 39660.32363625746,
+      "updated_volume_mm3": 50708.00323167632,
+      "effective_density_kg_m3": 589.5060316307156,
+      "com_part_m": [
+        -0.005150466736353867,
+        0.10062787231261994,
+        -0.24209323829983145
+      ],
+      "inertia_part_kg_m2": [
+        [
+          7.618186537430862e-06,
+          5.560032573398054e-07,
+          6.887166685092719e-07
+        ],
+        [
+          5.560032573398054e-07,
+          2.6123678508580457e-05,
+          -5.231302551219739e-07
+        ],
+        [
+          6.887166685092719e-07,
+          -5.231302551219739e-07,
+          3.055887260812032e-05
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/foot_assembly_2__foot_top_2_zp10d.stl"
+    },
+    {
+      "link": "neck_pitch_assembly",
+      "part": "neck_left_sheet",
+      "original_mass_kg": 0.0055899999999999995,
+      "updated_mass_kg": 0.0057100006430677065,
+      "original_volume_mm3": 8059.973108907402,
+      "updated_volume_mm3": 8232.99671466363,
+      "effective_density_kg_m3": 693.5507010342584,
+      "com_part_m": [
+        0.019987221281910675,
+        0.020576601324875068,
+        0.05023535409160841
+      ],
+      "inertia_part_kg_m2": [
+        [
+          1.0921335466454681e-06,
+          -4.9002468927475404e-11,
+          8.454311388777684e-10
+        ],
+        [
+          -4.9002468927475404e-11,
+          1.4251332215343582e-06,
+          -8.038170152503635e-08
+        ],
+        [
+          8.454311388777684e-10,
+          -8.038170152503635e-08,
+          5.066935876781859e-07
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/neck_pitch_assembly__neck_left_sheet_zp10d.stl"
+    },
+    {
+      "link": "neck_pitch_assembly",
+      "part": "neck_right_sheet",
+      "original_mass_kg": 0.005590000000000002,
+      "updated_mass_kg": 0.006570535311929145,
+      "original_volume_mm3": 6161.459599404516,
+      "updated_volume_mm3": 7242.23396617391,
+      "effective_density_kg_m3": 907.2525608283233,
+      "com_part_m": [
+        0.02000713360797254,
+        -0.019990238334319347,
+        0.05045632975275015
+      ],
+      "inertia_part_kg_m2": [
+        [
+          1.6721934415210708e-06,
+          -4.227924787177827e-10,
+          1.3295596680435227e-09
+        ],
+        [
+          -4.227924787177827e-10,
+          2.069622719672252e-06,
+          1.0610308943040326e-07
+        ],
+        [
+          1.3295596680435227e-09,
+          1.0610308943040326e-07,
+          5.423561664891476e-07
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/neck_pitch_assembly__neck_right_sheet_zp10d.stl"
+    },
+    {
+      "link": "head_pitch_to_yaw",
+      "part": "head_pitch_to_yaw",
+      "original_mass_kg": 0.016937787992336,
+      "updated_mass_kg": 0.04788460314551651,
+      "original_volume_mm3": 13550.272244519738,
+      "updated_volume_mm3": 38307.80083185159,
+      "effective_density_kg_m3": 1249.9961393164117,
+      "com_part_m": [
+        0.01677065359259593,
+        0.00028893283017147404,
+        0.11128252456824879
+      ],
+      "inertia_part_kg_m2": [
+        [
+          4.844114568105489e-05,
+          -2.5739890020903e-08,
+          3.0228615991323697e-06
+        ],
+        [
+          -2.5739890020903e-08,
+          3.219231178823804e-05,
+          1.3405201066684805e-07
+        ],
+        [
+          3.0228615991323697e-06,
+          1.3405201066684805e-07,
+          2.5286781515436917e-05
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/head_pitch_to_yaw__head_pitch_to_yaw_zp10d.stl"
+    },
+    {
+      "link": "neck_yaw_assembly",
+      "part": "head_yaw_to_roll",
+      "original_mass_kg": 0.03680988857925037,
+      "updated_mass_kg": 0.05065334393478883,
+      "original_volume_mm3": 29447.728961328827,
+      "updated_volume_mm3": 40522.42483606583,
+      "effective_density_kg_m3": 1250.007721396432,
+      "com_part_m": [
+        0.0213433319206298,
+        6.1815652189832605e-06,
+        0.12060911270915099
+      ],
+      "inertia_part_kg_m2": [
+        [
+          2.469804044753204e-05,
+          -7.975378061110181e-09,
+          -1.7969818623390545e-06
+        ],
+        [
+          -7.975378061110181e-09,
+          5.6174131176142764e-05,
+          -9.377567620162551e-09
+        ],
+        [
+          -1.7969818623390545e-06,
+          -9.377567620162551e-09,
+          5.732695136665898e-05
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/neck_yaw_assembly__head_yaw_to_roll_zp10d.stl"
+    },
+    {
+      "link": "head_assembly",
+      "part": "head_bot_sheet",
+      "original_mass_kg": 0.07108999999999999,
+      "updated_mass_kg": 0.06916941682215676,
+      "original_volume_mm3": 65859.22218302765,
+      "updated_volume_mm3": 64079.954856672855,
+      "effective_density_kg_m3": 1079.423619708651,
+      "com_part_m": [
+        0.03485671845962147,
+        -0.00011461350630643036,
+        0.11118215686084774
+      ],
+      "inertia_part_kg_m2": [
+        [
+          0.00019297395289529737,
+          -1.1708167950190138e-07,
+          -2.5521813561940982e-08
+        ],
+        [
+          -1.1708167950190138e-07,
+          0.0002638458740706277,
+          2.710635339021247e-10
+        ],
+        [
+          -2.5521813561940982e-08,
+          2.710635339021247e-10,
+          0.00045671642791623215
+        ]
+      ],
+      "mesh": "playground/open_duck_mini_zp10d/xmls/assets/head_assembly__head_bot_sheet_zp10d.stl"
+    },
+    {
+      "link": "head_assembly",
+      "part": "head_roll_mount",
+      "original_mass_kg": 0.01671005946776145,
+      "updated_mass_kg": 0.04038337075097357,
+      "original_volume_mm3": 13368.047574209175,
+      "updated_volume_mm3": 32306.696600778894,
+      "effective_density_kg_m3": 1249.9999999999986,
+      "com_part_m": [
+        0.08409759055689667,
+        -1.6753854286072633e-06,
+        0.14859861583997253
+      ],
+      "inertia_part_kg_m2": [
+        [
+          1.7476627712020238e-05,
+          1.8821819833488808e-09,
+          1.2837790984190364e-06
+        ],
+        [
+          1.8821819833488808e-09,
+          1.8860391104643323e-05,
+          5.106011064688494e-10
+        ],
+        [
+          1.2837790984190364e-06,
+          5.106011064688494e-10,
+          1.55444841735363e-05
+        ]
+      ],
+      "mesh": null
+    }
+  ],
+  "links": {
+    "trunk_assembly": {
+      "mass_kg": 0.6799319681033171,
+      "com_link_m": [
+        -0.04864198481933332,
+        -0.00010355806984115276,
+        0.03886949724129767
+      ],
+      "inertia_link_kg_m2": [
+        [
+          0.001622573768831076,
+          -1.3123958375256936e-05,
+          -5.023719880899287e-05
+        ],
+        [
+          -1.3123958375256936e-05,
+          0.00341224196055918,
+          -2.56567577715168e-06
+        ],
+        [
+          -5.023719880899287e-05,
+          -2.56567577715168e-06,
+          0.002858295488124646
+        ]
+      ],
+      "inertia_eigenvalues_kg_m2": [
+        0.0016204372866645029,
+        0.0028603269991422423,
+        0.0034123469317081556
+      ]
+    },
+    "hip_roll_assembly": {
+      "mass_kg": 0.06501044282515174,
+      "com_link_m": [
+        0.0007774278928297497,
+        -5.77943038568617e-05,
+        -0.05426215973596376
+      ],
+      "inertia_link_kg_m2": [
+        [
+          1.433889397867822e-05,
+          -2.7064165240884507e-08,
+          -1.2467428834901064e-07
+        ],
+        [
+          -2.7064165240884507e-08,
+          2.2287686320625554e-05,
+          1.101462598937635e-07
+        ],
+        [
+          -1.2467428834901064e-07,
+          1.101462598937635e-07,
+          1.2868436823635999e-05
+        ]
+      ],
+      "inertia_eigenvalues_kg_m2": [
+        1.285671591248628e-05,
+        1.4349224712623935e-05,
+        2.2289076497829524e-05
+      ]
+    },
+    "left_roll_to_pitch_assembly": {
+      "mass_kg": 0.08153118834726186,
+      "com_link_m": [
+        0.05704769319033659,
+        -0.00027691016517517606,
+        0.0009301071738351403
+      ],
+      "inertia_link_kg_m2": [
+        [
+          2.743706622561363e-05,
+          1.568385844260477e-07,
+          -2.64663210446235e-06
+        ],
+        [
+          1.568385844260477e-07,
+          5.5349853850250034e-05,
+          -2.4656022515404525e-07
+        ],
+        [
+          -2.64663210446235e-06,
+          -2.4656022515404525e-07,
+          3.590444322796509e-05
+        ]
+      ],
+      "inertia_eigenvalues_kg_m2": [
+        2.6677642793064428e-05,
+        3.665942570687704e-05,
+        5.535429480388729e-05
+      ]
+    },
+    "knee_and_ankle_assembly": {
+      "mass_kg": 0.12709291643579804,
+      "com_link_m": [
+        0.002470641855998979,
+        -0.04095610147102329,
+        -0.006738193198986982
+      ],
+      "inertia_link_kg_m2": [
+        [
+          0.00021288028624391869,
+          -2.7482141410270753e-05,
+          3.2570755093104627e-06
+        ],
+        [
+          -2.7482141410270753e-05,
+          7.887528526069807e-05,
+          1.979073257125348e-05
+        ],
+        [
+          3.2570755093104627e-06,
+          1.979073257125348e-05,
+          0.00022213267877220283
+        ]
+      ],
+      "inertia_eigenvalues_kg_m2": [
+        7.080244054157021e-05,
+        0.00021823757887014792,
+        0.00022484823086510144
+      ]
+    },
+    "knee_and_ankle_assembly_2": {
+      "mass_kg": 0.07751170452193858,
+      "com_link_m": [
+        -3.0647105627612484e-08,
+        -0.05943119849756012,
+        6.68170433488368e-05
+      ],
+      "inertia_link_kg_m2": [
+        [
+          5.085341024686794e-05,
+          4.964637403090943e-10,
+          -2.7374206473419567e-10
+        ],
+        [
+          4.964637403090943e-10,
+          2.4297692838891908e-05,
+          3.959477997491882e-07
+        ],
+        [
+          -2.7374206473419567e-10,
+          3.959477997491882e-07,
+          3.346425473764567e-05
+        ]
+      ],
+      "inertia_eigenvalues_kg_m2": [
+        2.428062173540063e-05,
+        3.3481325827774714e-05,
+        5.0853410260230176e-05
+      ]
+    },
+    "foot_assembly": {
+      "mass_kg": 0.09968339646954574,
+      "com_link_m": [
+        0.011223511975837012,
+        -0.025273195738726054,
+        -0.0008433445658265277
+      ],
+      "inertia_link_kg_m2": [
+        [
+          3.646152782309399e-05,
+          1.9210817779325244e-06,
+          1.696957325294655e-08
+        ],
+        [
+          1.9210817779325244e-06,
+          0.00010273705841355126,
+          -1.3387389863648266e-07
+        ],
+        [
+          1.696957325294655e-08,
+          -1.3387389863648266e-07,
+          8.040521985165675e-05
+        ]
+      ],
+      "inertia_eigenvalues_kg_m2": [
+        3.6405879628154496e-05,
+        8.040443573495835e-05,
+        0.00010279349072518927
+      ]
+    },
+    "neck_pitch_assembly": {
+      "mass_kg": 0.06828053595499685,
+      "com_link_m": [
+        -3.2011603103675243e-07,
+        0.05052968232796648,
+        3.3088416019225964e-05
+      ],
+      "inertia_link_kg_m2": [
+        [
+          3.3792878449724004e-05,
+          1.4827692909988909e-09,
+          -1.874727176229292e-09
+        ],
+        [
+          1.4827692909988909e-09,
+          1.6835739043837057e-05,
+          5.222550975412982e-07
+        ],
+        [
+          -1.874727176229292e-09,
+          5.222550975412982e-07,
+          2.2306252984891926e-05
+        ]
+      ],
+      "inertia_eigenvalues_kg_m2": [
+        1.6786326917993614e-05,
+        2.2355664689422042e-05,
+        3.3792878871037325e-05
+      ]
+    },
+    "head_pitch_to_yaw": {
+      "mass_kg": 0.04788460314551651,
+      "com_link_m": [
+        -0.0032293464074036084,
+        0.020172524568254982,
+        0.00033606716987520424
+      ],
+      "inertia_link_kg_m2": [
+        [
+          4.844114568105489e-05,
+          3.0228615991323697e-06,
+          2.5739890020903e-08
+        ],
+        [
+          3.0228615991323697e-06,
+          2.5286781515436917e-05,
+          -1.3405201066684805e-07
+        ],
+        [
+          2.5739890020903e-08,
+          -1.3405201066684805e-07,
+          3.219231178823804e-05
+        ]
+      ],
+      "inertia_eigenvalues_kg_m2": [
+        2.4896101581907308e-05,
+        3.219485140464079e-05,
+        4.8829285998181764e-05
+      ]
+    },
+    "neck_yaw_assembly": {
+      "mass_kg": 0.10665334393478884,
+      "com_link_m": [
+        0.005849373141780345,
+        2.8961096433376773e-06,
+        -0.004177264004578147
+      ],
+      "inertia_link_kg_m2": [
+        [
+          3.782324960725818e-05,
+          -6.54263609338235e-09,
+          -4.045773496153628e-06
+        ],
+        [
+          -6.54263609338235e-09,
+          7.692590872847624e-05,
+          -7.718445081692665e-09
+        ],
+        [
+          -4.045773496153628e-06,
+          -7.718445081692665e-09,
+          6.852315419349823e-05
+        ]
+      ],
+      "inertia_eigenvalues_kg_m2": [
+        3.7299029058554496e-05,
+        6.90473674373436e-05,
+        7.692591603333457e-05
+      ]
+    },
+    "head_assembly": {
+      "mass_kg": 0.42935974710041425,
+      "com_link_m": [
+        0.008243317729540933,
+        -0.0037451703654172155,
+        0.04483738806572261
+      ],
+      "inertia_link_kg_m2": [
+        [
+          0.0025391020098992395,
+          -2.351060460145399e-06,
+          9.283701112194255e-05
+        ],
+        [
+          -2.351060460145399e-06,
+          0.0017850605395445293,
+          -1.2592312346164452e-05
+        ],
+        [
+          9.283701112194255e-05,
+          -1.2592312346164452e-05,
+          0.0010739550509046313
+        ]
+      ],
+      "inertia_eigenvalues_kg_m2": [
+        0.0010678809294653202,
+        0.0017852626297255013,
+        0.002544974041157579
+      ]
+    },
+    "hip_roll_assembly_2": {
+      "mass_kg": 0.06501044282515095,
+      "com_link_m": [
+        0.0007774278928336921,
+        5.7942877533646594e-05,
+        -0.05426215973596782
+      ],
+      "inertia_link_kg_m2": [
+        [
+          1.4338892860791152e-05,
+          2.6887040392109872e-08,
+          -1.246742883486466e-07
+        ],
+        [
+          2.6887040392109872e-08,
+          2.228768632062519e-05,
+          -1.1017315297695978e-07
+        ],
+        [
+          -1.246742883486466e-07,
+          -1.1017315297695978e-07,
+          1.2868435705748818e-05
+        ]
+      ],
+      "inertia_eigenvalues_kg_m2": [
+        1.2856713846136569e-05,
+        1.4349225179001568e-05,
+        2.228907586202703e-05
+      ]
+    },
+    "right_roll_to_pitch_assembly": {
+      "mass_kg": 0.08153093786247466,
+      "com_link_m": [
+        -0.057047750989430754,
+        -0.0002769441629190628,
+        0.0009301652869801857
+      ],
+      "inertia_link_kg_m2": [
+        [
+          2.7436964070841184e-05,
+          -1.5584122134879587e-07,
+          2.646531159385636e-06
+        ],
+        [
+          -1.5584122134879587e-07,
+          5.534961682204052e-05,
+          -2.4627291567514194e-07
+        ],
+        [
+          2.646531159385636e-06,
+          -2.4627291567514194e-07,
+          3.590427708375923e-05
+        ]
+      ],
+      "inertia_eigenvalues_kg_m2": [
+        2.6677594322221417e-05,
+        3.6659227435761016e-05,
+        5.535403621865849e-05
+      ]
+    },
+    "knee_and_ankle_assembly_3": {
+      "mass_kg": 0.12709291643874968,
+      "com_link_m": [
+        0.0024704548246319196,
+        0.04095610147049938,
+        -0.006717940300787338
+      ],
+      "inertia_link_kg_m2": [
+        [
+          0.00021283269988657712,
+          2.748183263992837e-05,
+          3.2484727764788945e-06
+        ],
+        [
+          2.748183263992837e-05,
+          7.882781635399497e-05,
+          -1.971805184144742e-05
+        ],
+        [
+          3.2484727764788945e-06,
+          -1.971805184144742e-05,
+          0.00022213279622515335
+        ]
+      ],
+      "inertia_eigenvalues_kg_m2": [
+        7.077486603041926e-05,
+        0.00021819117661945028,
+        0.00022482726981585584
+      ]
+    },
+    "knee_and_ankle_assembly_4": {
+      "mass_kg": 0.07751166425046195,
+      "com_link_m": [
+        -1.8395503161563562e-08,
+        -0.05943123237786119,
+        -6.683267267753971e-05
+      ],
+      "inertia_link_kg_m2": [
+        [
+          5.085320192080738e-05,
+          -4.352321099629959e-10,
+          -3.5776560174800437e-10
+        ],
+        [
+          -4.352321099629959e-10,
+          2.4297654422077395e-05,
+          -3.9586881183238683e-07
+        ],
+        [
+          -3.5776560174800437e-10,
+          -3.9586881183238683e-07,
+          3.34640806729481e-05
+        ]
+      ],
+      "inertia_eigenvalues_kg_m2": [
+        2.428058986681433e-05,
+        3.348114521397937e-05,
+        5.0853201935039175e-05
+      ]
+    },
+    "foot_assembly_2": {
+      "mass_kg": 0.09968395061526751,
+      "com_link_m": [
+        0.011223707215425378,
+        -0.02527325463728803,
+        0.0008431783692502833
+      ],
+      "inertia_link_kg_m2": [
+        [
+          3.646195190343992e-05,
+          1.9207238991256697e-06,
+          -1.7190916482452812e-08
+        ],
+        [
+          1.9207238991256697e-06,
+          0.00010273768038719173,
+          1.338851214046194e-07
+        ],
+        [
+          -1.7190916482452812e-08,
+          1.338851214046194e-07,
+          8.040531398975896e-05
+        ]
+      ],
+      "inertia_eigenvalues_kg_m2": [
+        3.6406324374374756e-05,
+        8.04045300427485e-05,
+        0.00010279409186326731
+      ]
+    }
+  }
+}
