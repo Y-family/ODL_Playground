@@ -1,127 +1,21 @@
 {
   "status": "installed; re-verified from the exported STEP; awaiting visual acceptance",
-  "target_sha256": "2fb7655873ca6501ec35a765dd53eb264a6a093d84ef9f6194d3c48e3c3cc55c",
+  "target_sha256": "85c577e5148e9081dbe3563c819a77b162bdd65f5733cae6d1991a4af80d4d5a",
   "parts": [
     {
       "index": 28,
       "kind": "top",
       "path": "hip_roll_assembly <1>/roll_motor_top",
       "file": "/tmp/u11/cand_28.step",
-      "before_volume_mm3": 5938.793,
-      "after_volume_mm3": 6286.288,
-      "volume_delta_mm3": 347.495,
+      "before_volume_mm3": 6286.288,
+      "after_volume_mm3": 5156.901,
+      "volume_delta_mm3": -1129.387,
       "before_slants": {
-        "slanted_faces": 8,
-        "slanted_face_area_mm2": 50.18,
-        "largest_faces": [
-          {
-            "area_mm2": 11.69,
-            "normal": [
-              -0.5,
-              0.866,
-              0.0
-            ],
-            "centre": [
-              -34.73,
-              -16.81,
-              36.78
-            ]
-          },
-          {
-            "area_mm2": 11.69,
-            "normal": [
-              0.5,
-              0.866,
-              0.0
-            ],
-            "centre": [
-              -3.27,
-              -16.81,
-              36.78
-            ]
-          },
-          {
-            "area_mm2": 5.84,
-            "normal": [
-              0.866,
-              0.5,
-              0.0
-            ],
-            "centre": [
-              -36.79,
-              -16.94,
-              36.78
-            ]
-          },
-          {
-            "area_mm2": 5.84,
-            "normal": [
-              0.866,
-              -0.5,
-              0.0
-            ],
-            "centre": [
-              -1.21,
-              -16.94,
-              36.78
-            ]
-          }
-        ],
-        "slanted_edges": 28,
-        "longest_edges": [
-          {
-            "length_mm": 3.7,
-            "direction": [
-              -0.866,
-              0.5,
-              0.0
-            ],
-            "centre": [
-              -3.27,
-              -16.81,
-              35.2
-            ]
-          },
-          {
-            "length_mm": 3.7,
-            "direction": [
-              -0.866,
-              -0.5,
-              0.0
-            ],
-            "centre": [
-              -34.73,
-              -16.81,
-              35.2
-            ]
-          },
-          {
-            "length_mm": 3.7,
-            "direction": [
-              -0.866,
-              -0.5,
-              0.0
-            ],
-            "centre": [
-              -34.73,
-              -16.81,
-              35.2
-            ]
-          },
-          {
-            "length_mm": 3.7,
-            "direction": [
-              -0.866,
-              -0.5,
-              0.0
-            ],
-            "centre": [
-              -34.73,
-              -16.81,
-              38.37
-            ]
-          }
-        ]
+        "slanted_faces": 0,
+        "slanted_face_area_mm2": 0,
+        "largest_faces": [],
+        "slanted_edges": 0,
+        "longest_edges": []
       },
       "after_slants": {
         "slanted_faces": 0,
@@ -157,7 +51,7 @@
               "part": "hip_roll_assembly <1>/S02_RIGHT_HIP_ROLL_ZP10D/ZP10D_vendor_passive_horn",
               "min_clearance_at_clear_samples_mm": 7.070827708938521,
               "closest_angle_deg": 24,
-              "exact_closest_clearance_mm": 7.070720232779049,
+              "exact_closest_clearance_mm": 7.07072023277905,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -217,7 +111,7 @@
               "part": "hip_roll_assembly <1>/S02_RIGHT_HIP_ROLL_ZP10D/ZP10D_vendor_active_horn",
               "min_clearance_at_clear_samples_mm": 13.999674878110289,
               "closest_angle_deg": 24,
-              "exact_closest_clearance_mm": 13.999648891936312,
+              "exact_closest_clearance_mm": 13.999648891936314,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -335,9 +229,9 @@
             },
             {
               "part": "right_roll_to_pitch_assembly <1>/S03_RIGHT_HIP_PITCH_ZP10D/ZP10D_vendor_body",
-              "min_clearance_at_clear_samples_mm": 22.73901936095317,
+              "min_clearance_at_clear_samples_mm": 24.154621635505457,
               "closest_angle_deg": 25,
-              "exact_closest_clearance_mm": 22.739019360953172,
+              "exact_closest_clearance_mm": 24.154424009361396,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -395,9 +289,9 @@
             },
             {
               "part": "right_roll_to_pitch_assembly <1>/S03_RIGHT_HIP_PITCH_ZP10D/ZP10D_vendor_passive_horn",
-              "min_clearance_at_clear_samples_mm": 18.654965810775575,
+              "min_clearance_at_clear_samples_mm": 20.810081256971046,
               "closest_angle_deg": 25,
-              "exact_closest_clearance_mm": 18.65496535537956,
+              "exact_closest_clearance_mm": 20.810080481706017,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -455,9 +349,9 @@
             },
             {
               "part": "right_roll_to_pitch_assembly <1>/S03_RIGHT_HIP_PITCH_ZP10D/ZP10D_vendor_active_horn",
-              "min_clearance_at_clear_samples_mm": 60.88234004360003,
+              "min_clearance_at_clear_samples_mm": 65.21163150413484,
               "closest_angle_deg": 25,
-              "exact_closest_clearance_mm": 60.882328748450284,
+              "exact_closest_clearance_mm": 65.21161992364466,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -515,9 +409,9 @@
             },
             {
               "part": "knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
-              "min_clearance_at_clear_samples_mm": 15.947217983064585,
+              "min_clearance_at_clear_samples_mm": 16.698290467034784,
               "closest_angle_deg": 25,
-              "exact_closest_clearance_mm": 15.94721798306459,
+              "exact_closest_clearance_mm": 16.69804150490585,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -575,9 +469,9 @@
             },
             {
               "part": "knee_and_ankle_assembly <1>/left_knee_to_ankle_right_sheet",
-              "min_clearance_at_clear_samples_mm": 63.30922536938789,
+              "min_clearance_at_clear_samples_mm": 67.63396517853016,
               "closest_angle_deg": 25,
-              "exact_closest_clearance_mm": 63.309211834421575,
+              "exact_closest_clearance_mm": 67.63395128018112,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -755,7 +649,7 @@
             },
             {
               "part": "knee_and_ankle_assembly <1>/S04_RIGHT_KNEE_ZP10D/ZP10D_vendor_passive_horn",
-              "min_clearance_at_clear_samples_mm": 107.47396445005646,
+              "min_clearance_at_clear_samples_mm": 107.47396445005647,
               "closest_angle_deg": 25,
               "exact_closest_clearance_mm": 107.47381593213461,
               "existing_collision_angles_deg": [],
@@ -885,9 +779,9 @@
           "moving_parts": [
             {
               "part": "hip_roll_assembly <1>/S02_RIGHT_HIP_ROLL_ZP10D/ZP10D_vendor_passive_horn",
-              "min_clearance_at_clear_samples_mm": 3.5691629621771557,
+              "min_clearance_at_clear_samples_mm": 3.5691629621771592,
               "closest_angle_deg": 34,
-              "exact_closest_clearance_mm": 3.5670240894224308,
+              "exact_closest_clearance_mm": 3.567024089422423,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -30,
@@ -995,7 +889,7 @@
             },
             {
               "part": "hip_roll_assembly <1>/S02_RIGHT_HIP_ROLL_ZP10D/ZP10D_vendor_active_horn",
-              "min_clearance_at_clear_samples_mm": 0.46595354368642394,
+              "min_clearance_at_clear_samples_mm": 0.4659535436864245,
               "closest_angle_deg": -20,
               "exact_closest_clearance_mm": 0.4659535436864246,
               "existing_collision_angles_deg": [],
@@ -1107,7 +1001,7 @@
               "part": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
               "min_clearance_at_clear_samples_mm": 0.03634392496991242,
               "closest_angle_deg": 21,
-              "exact_closest_clearance_mm": 0.03634392498145517,
+              "exact_closest_clearance_mm": 0.036343924981453446,
               "existing_collision_angles_deg": [
                 -30,
                 -29,
@@ -1656,9 +1550,9 @@
             },
             {
               "part": "knee_and_ankle_assembly <1>/left_knee_to_ankle_right_sheet",
-              "min_clearance_at_clear_samples_mm": 79.10665396866762,
-              "closest_angle_deg": 60,
-              "exact_closest_clearance_mm": 79.10665392777575,
+              "min_clearance_at_clear_samples_mm": 80.69097839953992,
+              "closest_angle_deg": 25,
+              "exact_closest_clearance_mm": 80.690978178632,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -30,
@@ -1876,7 +1770,7 @@
             },
             {
               "part": "knee_and_ankle_assembly <1>/S04_RIGHT_KNEE_ZP10D/ZP10D_vendor_active_horn",
-              "min_clearance_at_clear_samples_mm": 76.46630698910167,
+              "min_clearance_at_clear_samples_mm": 76.4663069891017,
               "closest_angle_deg": 70,
               "exact_closest_clearance_mm": 76.46624132730342,
               "existing_collision_angles_deg": [],
@@ -2213,121 +2107,15 @@
       "kind": "top",
       "path": "hip_roll_assembly <2>/roll_motor_top",
       "file": "/tmp/u11/cand_108.step",
-      "before_volume_mm3": 5938.793,
-      "after_volume_mm3": 6286.288,
-      "volume_delta_mm3": 347.495,
+      "before_volume_mm3": 6286.288,
+      "after_volume_mm3": 5156.901,
+      "volume_delta_mm3": -1129.387,
       "before_slants": {
-        "slanted_faces": 8,
-        "slanted_face_area_mm2": 50.18,
-        "largest_faces": [
-          {
-            "area_mm2": 11.69,
-            "normal": [
-              0.5,
-              0.866,
-              0.0
-            ],
-            "centre": [
-              -34.73,
-              16.81,
-              36.78
-            ]
-          },
-          {
-            "area_mm2": 11.69,
-            "normal": [
-              -0.5,
-              0.866,
-              0.0
-            ],
-            "centre": [
-              -3.27,
-              16.81,
-              36.78
-            ]
-          },
-          {
-            "area_mm2": 5.84,
-            "normal": [
-              0.866,
-              -0.5,
-              0.0
-            ],
-            "centre": [
-              -36.79,
-              16.94,
-              36.78
-            ]
-          },
-          {
-            "area_mm2": 5.84,
-            "normal": [
-              0.866,
-              0.5,
-              0.0
-            ],
-            "centre": [
-              -1.21,
-              16.94,
-              36.78
-            ]
-          }
-        ],
-        "slanted_edges": 28,
-        "longest_edges": [
-          {
-            "length_mm": 3.7,
-            "direction": [
-              0.866,
-              0.5,
-              0.0
-            ],
-            "centre": [
-              -3.27,
-              16.81,
-              35.2
-            ]
-          },
-          {
-            "length_mm": 3.7,
-            "direction": [
-              0.866,
-              -0.5,
-              0.0
-            ],
-            "centre": [
-              -34.73,
-              16.81,
-              35.2
-            ]
-          },
-          {
-            "length_mm": 3.7,
-            "direction": [
-              0.866,
-              -0.5,
-              0.0
-            ],
-            "centre": [
-              -34.73,
-              16.81,
-              35.2
-            ]
-          },
-          {
-            "length_mm": 3.7,
-            "direction": [
-              0.866,
-              -0.5,
-              0.0
-            ],
-            "centre": [
-              -34.73,
-              16.81,
-              38.37
-            ]
-          }
-        ]
+        "slanted_faces": 0,
+        "slanted_face_area_mm2": 0,
+        "largest_faces": [],
+        "slanted_edges": 0,
+        "longest_edges": []
       },
       "after_slants": {
         "slanted_faces": 0,
@@ -2361,9 +2149,9 @@
           "moving_parts": [
             {
               "part": "hip_roll_assembly <2>/S07_LEFT_HIP_ROLL_ZP10D/ZP10D_vendor_passive_horn",
-              "min_clearance_at_clear_samples_mm": 7.0708277088816525,
+              "min_clearance_at_clear_samples_mm": 7.070827708881654,
               "closest_angle_deg": 24,
-              "exact_closest_clearance_mm": 7.070720232722197,
+              "exact_closest_clearance_mm": 7.070720232722195,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -2423,7 +2211,7 @@
               "part": "hip_roll_assembly <2>/S07_LEFT_HIP_ROLL_ZP10D/ZP10D_vendor_active_horn",
               "min_clearance_at_clear_samples_mm": 13.99967487804695,
               "closest_angle_deg": 24,
-              "exact_closest_clearance_mm": 13.99964889187297,
+              "exact_closest_clearance_mm": 13.999648891872972,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -2541,9 +2329,9 @@
             },
             {
               "part": "left_roll_to_pitch_assembly <1>/S08_LEFT_HIP_PITCH_ZP10D/ZP10D_vendor_body",
-              "min_clearance_at_clear_samples_mm": 22.73901936095459,
+              "min_clearance_at_clear_samples_mm": 24.154621635506732,
               "closest_angle_deg": -25,
-              "exact_closest_clearance_mm": 22.739019360954586,
+              "exact_closest_clearance_mm": 24.15442400936266,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -2601,9 +2389,9 @@
             },
             {
               "part": "left_roll_to_pitch_assembly <1>/S08_LEFT_HIP_PITCH_ZP10D/ZP10D_vendor_passive_horn",
-              "min_clearance_at_clear_samples_mm": 18.654965810771046,
+              "min_clearance_at_clear_samples_mm": 20.810080736753836,
               "closest_angle_deg": -25,
-              "exact_closest_clearance_mm": 18.65496535537503,
+              "exact_closest_clearance_mm": 20.810080481703707,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -2661,9 +2449,9 @@
             },
             {
               "part": "left_roll_to_pitch_assembly <1>/S08_LEFT_HIP_PITCH_ZP10D/ZP10D_vendor_active_horn",
-              "min_clearance_at_clear_samples_mm": 60.88234004367276,
+              "min_clearance_at_clear_samples_mm": 65.21163150420729,
               "closest_angle_deg": -25,
-              "exact_closest_clearance_mm": 60.88232874852196,
+              "exact_closest_clearance_mm": 65.21161992371606,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -2721,9 +2509,9 @@
             },
             {
               "part": "knee_and_ankle_assembly <2>/left_knee_to_ankle_left_sheet",
-              "min_clearance_at_clear_samples_mm": 15.9472179830653,
+              "min_clearance_at_clear_samples_mm": 16.698290467036593,
               "closest_angle_deg": -25,
-              "exact_closest_clearance_mm": 15.9472179830653,
+              "exact_closest_clearance_mm": 16.698041504907653,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -2781,9 +2569,9 @@
             },
             {
               "part": "knee_and_ankle_assembly <2>/left_knee_to_ankle_right_sheet",
-              "min_clearance_at_clear_samples_mm": 63.30922536938789,
+              "min_clearance_at_clear_samples_mm": 67.63396517853016,
               "closest_angle_deg": -25,
-              "exact_closest_clearance_mm": 63.309211834421575,
+              "exact_closest_clearance_mm": 67.63395128018112,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -3091,7 +2879,7 @@
           "moving_parts": [
             {
               "part": "hip_roll_assembly <2>/S07_LEFT_HIP_ROLL_ZP10D/ZP10D_vendor_passive_horn",
-              "min_clearance_at_clear_samples_mm": 3.5691629621766436,
+              "min_clearance_at_clear_samples_mm": 3.569162962176649,
               "closest_angle_deg": -34,
               "exact_closest_clearance_mm": 3.567024089421938,
               "existing_collision_angles_deg": [],
@@ -3201,7 +2989,7 @@
             },
             {
               "part": "hip_roll_assembly <2>/S07_LEFT_HIP_ROLL_ZP10D/ZP10D_vendor_active_horn",
-              "min_clearance_at_clear_samples_mm": 0.4659535436844743,
+              "min_clearance_at_clear_samples_mm": 0.46595354368447456,
               "closest_angle_deg": 20,
               "exact_closest_clearance_mm": 0.46595354368447417,
               "existing_collision_angles_deg": [],
@@ -3862,9 +3650,9 @@
             },
             {
               "part": "knee_and_ankle_assembly <2>/left_knee_to_ankle_right_sheet",
-              "min_clearance_at_clear_samples_mm": 79.10665396866527,
-              "closest_angle_deg": -60,
-              "exact_closest_clearance_mm": 79.10665392777338,
+              "min_clearance_at_clear_samples_mm": 80.69097839953956,
+              "closest_angle_deg": -25,
+              "exact_closest_clearance_mm": 80.69097817863162,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -70,
@@ -4419,82 +4207,15 @@
       "kind": "bottom",
       "path": "hip_roll_assembly <1>/roll_motor_bottom",
       "file": "/tmp/u11/cand_29.step",
-      "before_volume_mm3": 8334.476,
+      "before_volume_mm3": 7684.399,
       "after_volume_mm3": 7684.399,
-      "volume_delta_mm3": -650.076,
+      "volume_delta_mm3": 0.0,
       "before_slants": {
-        "slanted_faces": 1,
-        "slanted_face_area_mm2": 376.65,
-        "largest_faces": [
-          {
-            "area_mm2": 376.65,
-            "normal": [
-              0.0,
-              0.967,
-              0.256
-            ],
-            "centre": [
-              -19.58,
-              -44.94,
-              -3.84
-            ]
-          }
-        ],
-        "slanted_edges": 8,
-        "longest_edges": [
-          {
-            "length_mm": 13.64,
-            "direction": [
-              0.0,
-              0.256,
-              -0.967
-            ],
-            "centre": [
-              -4.5,
-              -45.0,
-              -3.59
-            ]
-          },
-          {
-            "length_mm": 13.64,
-            "direction": [
-              0.0,
-              0.256,
-              -0.967
-            ],
-            "centre": [
-              -33.5,
-              -45.0,
-              -3.59
-            ]
-          },
-          {
-            "length_mm": 13.64,
-            "direction": [
-              0.0,
-              0.256,
-              -0.967
-            ],
-            "centre": [
-              -33.5,
-              -45.0,
-              -3.59
-            ]
-          },
-          {
-            "length_mm": 13.64,
-            "direction": [
-              0.0,
-              0.256,
-              -0.967
-            ],
-            "centre": [
-              -4.5,
-              -45.0,
-              -3.59
-            ]
-          }
-        ]
+        "slanted_faces": 0,
+        "slanted_face_area_mm2": 0,
+        "largest_faces": [],
+        "slanted_edges": 0,
+        "longest_edges": []
       },
       "after_slants": {
         "slanted_faces": 0,
@@ -4526,7 +4247,7 @@
               "part": "hip_roll_assembly <1>/S02_RIGHT_HIP_ROLL_ZP10D/ZP10D_vendor_passive_horn",
               "min_clearance_at_clear_samples_mm": 8.164008763585915,
               "closest_angle_deg": 7,
-              "exact_closest_clearance_mm": 8.164002313143685,
+              "exact_closest_clearance_mm": 8.164002313143687,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -4586,7 +4307,7 @@
               "part": "hip_roll_assembly <1>/S02_RIGHT_HIP_ROLL_ZP10D/ZP10D_vendor_active_horn",
               "min_clearance_at_clear_samples_mm": 9.17337683377067,
               "closest_angle_deg": 4,
-              "exact_closest_clearance_mm": 9.173370476986715,
+              "exact_closest_clearance_mm": 9.173370476986717,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -5064,9 +4785,9 @@
             },
             {
               "part": "knee_and_ankle_assembly <1>/S04_RIGHT_KNEE_ZP10D/ZP10D_vendor_active_horn",
-              "min_clearance_at_clear_samples_mm": 57.24258330521577,
+              "min_clearance_at_clear_samples_mm": 57.242583305215774,
               "closest_angle_deg": -4,
-              "exact_closest_clearance_mm": 57.23927383773565,
+              "exact_closest_clearance_mm": 57.239273837735645,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -5254,9 +4975,9 @@
           "moving_parts": [
             {
               "part": "hip_roll_assembly <1>/S02_RIGHT_HIP_ROLL_ZP10D/ZP10D_vendor_passive_horn",
-              "min_clearance_at_clear_samples_mm": 0.8173188435186356,
+              "min_clearance_at_clear_samples_mm": 0.8173188435186417,
               "closest_angle_deg": 70,
-              "exact_closest_clearance_mm": 0.8155226062351271,
+              "exact_closest_clearance_mm": 0.8155226062351275,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -30,
@@ -5366,7 +5087,7 @@
               "part": "hip_roll_assembly <1>/S02_RIGHT_HIP_ROLL_ZP10D/ZP10D_vendor_active_horn",
               "min_clearance_at_clear_samples_mm": 4.931886584063062,
               "closest_angle_deg": 23,
-              "exact_closest_clearance_mm": 4.931886584063126,
+              "exact_closest_clearance_mm": 4.931886584063127,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -30,
@@ -6244,7 +5965,7 @@
             },
             {
               "part": "knee_and_ankle_assembly <1>/S04_RIGHT_KNEE_ZP10D/ZP10D_vendor_active_horn",
-              "min_clearance_at_clear_samples_mm": 50.47838111443159,
+              "min_clearance_at_clear_samples_mm": 50.4783811144316,
               "closest_angle_deg": -30,
               "exact_closest_clearance_mm": 50.47603115973446,
               "existing_collision_angles_deg": [],
@@ -6581,82 +6302,15 @@
       "kind": "bottom",
       "path": "hip_roll_assembly <2>/roll_motor_bottom",
       "file": "/tmp/u11/cand_107.step",
-      "before_volume_mm3": 8334.476,
+      "before_volume_mm3": 7684.399,
       "after_volume_mm3": 7684.399,
-      "volume_delta_mm3": -650.076,
+      "volume_delta_mm3": 0.0,
       "before_slants": {
-        "slanted_faces": 1,
-        "slanted_face_area_mm2": 376.65,
-        "largest_faces": [
-          {
-            "area_mm2": 376.65,
-            "normal": [
-              0.0,
-              -0.967,
-              0.256
-            ],
-            "centre": [
-              -19.58,
-              44.94,
-              -3.84
-            ]
-          }
-        ],
-        "slanted_edges": 8,
-        "longest_edges": [
-          {
-            "length_mm": 13.64,
-            "direction": [
-              0.0,
-              -0.256,
-              -0.967
-            ],
-            "centre": [
-              -4.5,
-              45.0,
-              -3.59
-            ]
-          },
-          {
-            "length_mm": 13.64,
-            "direction": [
-              0.0,
-              -0.256,
-              -0.967
-            ],
-            "centre": [
-              -33.5,
-              45.0,
-              -3.59
-            ]
-          },
-          {
-            "length_mm": 13.64,
-            "direction": [
-              0.0,
-              -0.256,
-              -0.967
-            ],
-            "centre": [
-              -33.5,
-              45.0,
-              -3.59
-            ]
-          },
-          {
-            "length_mm": 13.64,
-            "direction": [
-              0.0,
-              -0.256,
-              -0.967
-            ],
-            "centre": [
-              -4.5,
-              45.0,
-              -3.59
-            ]
-          }
-        ]
+        "slanted_faces": 0,
+        "slanted_face_area_mm2": 0,
+        "largest_faces": [],
+        "slanted_edges": 0,
+        "longest_edges": []
       },
       "after_slants": {
         "slanted_faces": 0,
@@ -6688,7 +6342,7 @@
               "part": "hip_roll_assembly <2>/S07_LEFT_HIP_ROLL_ZP10D/ZP10D_vendor_passive_horn",
               "min_clearance_at_clear_samples_mm": 8.164008763595866,
               "closest_angle_deg": 7,
-              "exact_closest_clearance_mm": 8.164002313153631,
+              "exact_closest_clearance_mm": 8.164002313153633,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -25,
@@ -7286,7 +6940,7 @@
             },
             {
               "part": "knee_and_ankle_assembly <2>/S09_LEFT_KNEE_ZP10D/ZP10D_vendor_passive_horn",
-              "min_clearance_at_clear_samples_mm": 89.44476219019353,
+              "min_clearance_at_clear_samples_mm": 89.44476219019356,
               "closest_angle_deg": 25,
               "exact_closest_clearance_mm": 89.44324181323441,
               "existing_collision_angles_deg": [],
@@ -7346,7 +7000,7 @@
             },
             {
               "part": "knee_and_ankle_assembly <2>/S09_LEFT_KNEE_ZP10D/ZP10D_vendor_active_horn",
-              "min_clearance_at_clear_samples_mm": 57.242712778045835,
+              "min_clearance_at_clear_samples_mm": 57.242712778045856,
               "closest_angle_deg": 4,
               "exact_closest_clearance_mm": 57.23927383773512,
               "existing_collision_angles_deg": [],
@@ -7416,9 +7070,9 @@
           "moving_parts": [
             {
               "part": "hip_roll_assembly <2>/S07_LEFT_HIP_ROLL_ZP10D/ZP10D_vendor_passive_horn",
-              "min_clearance_at_clear_samples_mm": 0.8174254080758091,
+              "min_clearance_at_clear_samples_mm": 0.8174254080758013,
               "closest_angle_deg": -70,
-              "exact_closest_clearance_mm": 0.8155226062316805,
+              "exact_closest_clearance_mm": 0.8155226062316827,
               "existing_collision_angles_deg": [],
               "clear_angles_deg": [
                 -70,
@@ -7526,7 +7180,7 @@
             },
             {
               "part": "hip_roll_assembly <2>/S07_LEFT_HIP_ROLL_ZP10D/ZP10D_vendor_active_horn",
-              "min_clearance_at_clear_samples_mm": 4.931886584067349,
+              "min_clearance_at_clear_samples_mm": 4.931886584067348,
               "closest_angle_deg": -23,
               "exact_closest_clearance_mm": 4.931886584067249,
               "existing_collision_angles_deg": [],
@@ -8626,7 +8280,7 @@
             },
             {
               "part": "knee_and_ankle_assembly <2>/S09_LEFT_KNEE_ZP10D/ZP10D_vendor_active_horn",
-              "min_clearance_at_clear_samples_mm": 50.478853953445736,
+              "min_clearance_at_clear_samples_mm": 50.47885395344575,
               "closest_angle_deg": 30,
               "exact_closest_clearance_mm": 50.476031159733395,
               "existing_collision_angles_deg": [],
@@ -8778,7 +8432,7 @@
     "brackets": {
       "28": {
         "path": "hip_roll_assembly <1>/roll_motor_top",
-        "volume_delta_mm3": 347.495,
+        "volume_delta_mm3": -1129.387,
         "slants": {
           "slanted_faces": 0,
           "slanted_face_area_mm2": 0,
@@ -8803,7 +8457,7 @@
       },
       "29": {
         "path": "hip_roll_assembly <1>/roll_motor_bottom",
-        "volume_delta_mm3": -650.076,
+        "volume_delta_mm3": 0.0,
         "slants": {
           "slanted_faces": 0,
           "slanted_face_area_mm2": 0,
@@ -8818,7 +8472,7 @@
       },
       "107": {
         "path": "hip_roll_assembly <2>/roll_motor_bottom",
-        "volume_delta_mm3": -650.076,
+        "volume_delta_mm3": 0.0,
         "slants": {
           "slanted_faces": 0,
           "slanted_face_area_mm2": 0,
@@ -8833,7 +8487,7 @@
       },
       "108": {
         "path": "hip_roll_assembly <2>/roll_motor_top",
-        "volume_delta_mm3": 347.495,
+        "volume_delta_mm3": -1129.387,
         "slants": {
           "slanted_faces": 0,
           "slanted_face_area_mm2": 0,

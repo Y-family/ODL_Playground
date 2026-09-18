@@ -49,6 +49,7 @@ REPORT = refit.ROOT / 'cad/local_fix/U11_OUTLINE_REPORT.json'
 PLATE_X = (-40.875, 5.125)
 PLATE_Y = (15.89, 44.61)
 PLATE_Z = (35.201, 38.36593881233405)
+SERVO_Y = (20.25, 40.25)
 WALL_Y = 43.15
 WALL_Z = (-10.1840611876, 3.0)
 TOPS = (28, 108)
@@ -136,7 +137,21 @@ def square_top(part, sign):
     box = bd.Box(x1 - x0, y1 - y0, PLATE_Z[1] - PLATE_Z[0]).moved(
         bd.Pos((x0 + x1) / 2, (y0 + y1) / 2, sum(PLATE_Z) / 2))
     added = bd.Compound(box.cut(part).solids())
-    return bd.Compound(part.fuse(added).solids()), added
+    squared = bd.Compound(part.fuse(added).solids())
+    outer_y = max(PLATE_Y)
+    inner_y = min(PLATE_Y)
+    body_y0, body_y1 = SERVO_Y
+    if sign < 0:
+        cuts = ((-outer_y, -body_y1), (-body_y0, -inner_y))
+    else:
+        cuts = ((inner_y, body_y0), (body_y1, outer_y))
+    for y0, y1 in cuts:
+        if y1 <= y0:
+            continue
+        excess = bd.Box(100.0, y1 - y0, PLATE_Z[1] - PLATE_Z[0] + .2).moved(
+            bd.Pos(-50.0, (y0 + y1) / 2, sum(PLATE_Z) / 2))
+        squared = bd.Compound(squared.cut(excess).solids())
+    return squared, added
 
 
 def square_bottom(part, sign):
