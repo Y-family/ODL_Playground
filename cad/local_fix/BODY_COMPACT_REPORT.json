@@ -1,0 +1,292 @@
+{
+  "status": "body review candidate; not installed as official STEP",
+  "input_sha256": "77b0ae5eee5d3c43a0eaf52a4113de994c61ac57de67b488ad34745a8ee1c0ee",
+  "output_sha256": "7a98135bef434052fc506fd699d5d8b264d819e87876664c8a0c65b4f4b0e781",
+  "changed_leaves": [
+    112,
+    114
+  ],
+  "body_x_before_mm": 190,
+  "body_x_after_mm": 190,
+  "body_external_dimensions_mm": [
+    190,
+    110,
+    143
+  ],
+  "board_rotation_y_deg": 0,
+  "board_rotation_z_deg": 90,
+  "bno055_rotation_deg": 0,
+  "mount_checks": "four board seats and bores passed; original servo-interface geometry signature retained",
+  "static_checks": [
+    {
+      "parts": [
+        112,
+        40
+      ],
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0,
+      "gap_mm": 6.3899999999999935
+    },
+    {
+      "parts": [
+        112,
+        44
+      ],
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0,
+      "gap_mm": 1.1188970004408383
+    },
+    {
+      "parts": [
+        112,
+        113
+      ],
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0,
+      "gap_mm": 0.0
+    },
+    {
+      "parts": [
+        112,
+        114
+      ],
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0,
+      "gap_mm": 0.0
+    },
+    {
+      "parts": [
+        112,
+        117
+      ],
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0,
+      "gap_mm": 0.0
+    },
+    {
+      "parts": [
+        112,
+        118
+      ],
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0,
+      "gap_mm": 0.000999999999791612
+    },
+    {
+      "parts": [
+        112,
+        119
+      ],
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0,
+      "gap_mm": 1.0103477124633296
+    },
+    {
+      "parts": [
+        112,
+        120
+      ],
+      "overlap_mm3": 238.9191295488574,
+      "baseline_overlap_mm3": 238.91912954885692,
+      "gap_mm": 0.0
+    },
+    {
+      "parts": [
+        112,
+        121
+      ],
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0,
+      "gap_mm": 0.0
+    },
+    {
+      "parts": [
+        112,
+        122
+      ],
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0,
+      "gap_mm": 2.000938812376006
+    },
+    {
+      "parts": [
+        112,
+        123
+      ],
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0,
+      "gap_mm": 2.000938812376006
+    },
+    {
+      "parts": [
+        112,
+        124
+      ],
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0,
+      "gap_mm": 3.552713678800501e-15
+    },
+    {
+      "parts": [
+        112,
+        125
+      ],
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0,
+      "gap_mm": 0.000999999999791612
+    },
+    {
+      "parts": [
+        112,
+        126
+      ],
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0,
+      "gap_mm": 1.0103477124561837
+    },
+    {
+      "parts": [
+        114,
+        44
+      ],
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0,
+      "gap_mm": 28.55664874064732
+    }
+  ],
+  "motion_checks": [
+    {
+      "joint": "S11",
+      "moving": 12,
+      "fixed": 112,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    },
+    {
+      "joint": "S11",
+      "moving": 12,
+      "fixed": 114,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    },
+    {
+      "joint": "S11",
+      "moving": 17,
+      "fixed": 112,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    },
+    {
+      "joint": "S11",
+      "moving": 17,
+      "fixed": 114,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    },
+    {
+      "joint": "S11",
+      "moving": 18,
+      "fixed": 112,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    },
+    {
+      "joint": "S11",
+      "moving": 18,
+      "fixed": 114,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    },
+    {
+      "joint": "S11",
+      "moving": 19,
+      "fixed": 112,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    },
+    {
+      "joint": "S11",
+      "moving": 19,
+      "fixed": 114,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    },
+    {
+      "joint": "S11",
+      "moving": 82,
+      "fixed": 112,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    },
+    {
+      "joint": "S11",
+      "moving": 82,
+      "fixed": 114,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    },
+    {
+      "joint": "S11",
+      "moving": 89,
+      "fixed": 112,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    },
+    {
+      "joint": "S11",
+      "moving": 89,
+      "fixed": 114,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    },
+    {
+      "joint": "S12",
+      "moving": 12,
+      "fixed": 112,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    },
+    {
+      "joint": "S12",
+      "moving": 12,
+      "fixed": 114,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    },
+    {
+      "joint": "S12",
+      "moving": 82,
+      "fixed": 112,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    },
+    {
+      "joint": "S12",
+      "moving": 82,
+      "fixed": 114,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    },
+    {
+      "joint": "S12",
+      "moving": 89,
+      "fixed": 112,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    },
+    {
+      "joint": "S12",
+      "moving": 89,
+      "fixed": 114,
+      "overlap_mm3": 0,
+      "baseline_overlap_mm3": 0
+    }
+  ],
+  "export_readback_leaves": 137,
+  "unchanged_leaves": 135,
+  "limitations": [
+    "Board components and connectors absent in source model",
+    "No multi-joint combined-motion certification",
+    "Existing baseline overlaps retained"
+  ]
+}

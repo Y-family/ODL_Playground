@@ -1,0 +1,167 @@
+{
+  "status": "coarse diagnostic; not a clearance certificate",
+  "mesh_tolerance_mm": 0.25,
+  "mesh_angular_tolerance": 0.3,
+  "pairs": [
+    {
+      "pair": [
+        1,
+        23
+      ],
+      "baseline_mm3": 0,
+      "candidate_mm3": 0
+    },
+    {
+      "pair": [
+        10,
+        22
+      ],
+      "baseline_mm3": 0,
+      "candidate_mm3": 0
+    },
+    {
+      "pair": [
+        17,
+        19
+      ],
+      "baseline_mm3": 0,
+      "candidate_mm3": 0
+    },
+    {
+      "pair": [
+        19,
+        20
+      ],
+      "baseline_mm3": 28.1720093216769,
+      "candidate_mm3": 28.1720093216769
+    },
+    {
+      "pair": [
+        19,
+        21
+      ],
+      "baseline_mm3": 16.273449945595495,
+      "candidate_mm3": 16.273449945595495
+    },
+    {
+      "pair": [
+        50,
+        51
+      ],
+      "baseline_mm3": 28.172009321718512,
+      "candidate_mm3": 28.172009321717507
+    },
+    {
+      "pair": [
+        50,
+        52
+      ],
+      "baseline_mm3": 16.273449945595488,
+      "candidate_mm3": 16.273449945595484
+    },
+    {
+      "pair": [
+        80,
+        92
+      ],
+      "baseline_mm3": 6.787767298271081,
+      "candidate_mm3": 6.787767298273338
+    },
+    {
+      "pair": [
+        82,
+        85
+      ],
+      "baseline_mm3": 0,
+      "candidate_mm3": 2.644286782669909
+    },
+    {
+      "pair": [
+        82,
+        89
+      ],
+      "baseline_mm3": 0,
+      "candidate_mm3": 0
+    },
+    {
+      "pair": [
+        82,
+        91
+      ],
+      "baseline_mm3": 0,
+      "candidate_mm3": 0
+    },
+    {
+      "pair": [
+        82,
+        93
+      ],
+      "baseline_mm3": 0,
+      "candidate_mm3": 3.1576444633214846
+    },
+    {
+      "pair": [
+        82,
+        94
+      ],
+      "baseline_mm3": 0.0023330459344183636,
+      "candidate_mm3": 0.0023330459344183636
+    },
+    {
+      "pair": [
+        82,
+        102
+      ],
+      "baseline_mm3": 0,
+      "candidate_mm3": 0
+    },
+    {
+      "pair": [
+        83,
+        88
+      ],
+      "baseline_mm3": 0,
+      "candidate_mm3": 0
+    },
+    {
+      "pair": [
+        84,
+        87
+      ],
+      "baseline_mm3": 0,
+      "candidate_mm3": 0
+    },
+    {
+      "pair": [
+        87,
+        97
+      ],
+      "baseline_mm3": 0,
+      "candidate_mm3": 0
+    },
+    {
+      "pair": [
+        88,
+        101
+      ],
+      "baseline_mm3": 0,
+      "candidate_mm3": 0
+    },
+    {
+      "pair": [
+        98,
+        99
+      ],
+      "baseline_mm3": 16.273449945565396,
+      "candidate_mm3": 16.27344994556513
+    },
+    {
+      "pair": [
+        98,
+        100
+      ],
+      "baseline_mm3": 28.172009321714974,
+      "candidate_mm3": 28.172009321720807
+    }
+  ]
+}
