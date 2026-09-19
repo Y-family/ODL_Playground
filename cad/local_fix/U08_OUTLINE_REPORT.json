@@ -1,0 +1,2468 @@
+{
+  "target_sha256": "ea472c7e2a62f78f6602d98d2257f5c23ebd25edfe8203ff7d7306b146dbf25d",
+  "geometry_changed": false,
+  "status": "passed",
+  "defects": [],
+  "support_findings": [
+    {
+      "servo": "S13",
+      "point": [
+        35.99999999999564,
+        -7.357230660100008,
+        218.0759388123664
+      ],
+      "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+      "radius_mm": 1.25,
+      "external": false,
+      "area_mm2": 3.59071,
+      "bore_midsection_blockage_mm3": 0,
+      "unsupported_half_mm_ring_mm3": 0.10662297189192473
+    },
+    {
+      "servo": "S13",
+      "point": [
+        35.99999999999564,
+        -7.357230660100008,
+        218.0759388123664
+      ],
+      "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+      "radius_mm": 1.25,
+      "external": false,
+      "area_mm2": 10.27727,
+      "bore_midsection_blockage_mm3": 0,
+      "unsupported_half_mm_ring_mm3": 0.02833622148914492
+    },
+    {
+      "servo": "S13",
+      "point": [
+        35.99999999999564,
+        -7.357230660100008,
+        218.0759388123664
+      ],
+      "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+      "radius_mm": 1.25,
+      "external": false,
+      "area_mm2": 23.56194,
+      "bore_midsection_blockage_mm3": 0,
+      "unsupported_half_mm_ring_mm3": 0.028336221489144914
+    },
+    {
+      "servo": "S13",
+      "point": [
+        35.99999999999564,
+        7.642769339899992,
+        218.0759388123664
+      ],
+      "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+      "radius_mm": 1.25,
+      "external": false,
+      "area_mm2": 3.68407,
+      "bore_midsection_blockage_mm3": 0,
+      "unsupported_half_mm_ring_mm3": 0.10487890974656428
+    },
+    {
+      "servo": "S13",
+      "point": [
+        35.99999999999564,
+        7.642769339899992,
+        218.0759388123664
+      ],
+      "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+      "radius_mm": 1.25,
+      "external": false,
+      "area_mm2": 10.52244,
+      "bore_midsection_blockage_mm3": 0,
+      "unsupported_half_mm_ring_mm3": 0.027315456635263725
+    },
+    {
+      "servo": "S13",
+      "point": [
+        35.99999999999564,
+        7.642769339899992,
+        218.0759388123664
+      ],
+      "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+      "radius_mm": 1.25,
+      "external": false,
+      "area_mm2": 23.56194,
+      "bore_midsection_blockage_mm3": 0,
+      "unsupported_half_mm_ring_mm3": 0.027315456635263732
+    },
+    {
+      "servo": "S14",
+      "point": [
+        96.4499999999657,
+        7.557230660013033,
+        223.8509388123593
+      ],
+      "host": "head_assembly <1>/head_roll_mount",
+      "radius_mm": 1.25,
+      "external": false,
+      "area_mm2": 24.97659,
+      "bore_midsection_blockage_mm3": 0,
+      "unsupported_half_mm_ring_mm3": 0.02380623713139734
+    },
+    {
+      "servo": "S14",
+      "point": [
+        96.4499999999657,
+        7.557230660013033,
+        223.8509388123593
+      ],
+      "host": "head_assembly <1>/head_roll_mount",
+      "radius_mm": 1.25,
+      "external": false,
+      "area_mm2": 4.43039,
+      "bore_midsection_blockage_mm3": 0,
+      "unsupported_half_mm_ring_mm3": 0.08143546000588509
+    },
+    {
+      "servo": "S14",
+      "point": [
+        96.44999999996558,
+        -7.442769339986967,
+        223.85093881235946
+      ],
+      "host": "head_assembly <1>/head_roll_mount",
+      "radius_mm": 1.25,
+      "external": false,
+      "area_mm2": 25.00046,
+      "bore_midsection_blockage_mm3": 0,
+      "unsupported_half_mm_ring_mm3": 0.024859248357740314
+    },
+    {
+      "servo": "S14",
+      "point": [
+        96.44999999996558,
+        -7.442769339986967,
+        223.85093881235946
+      ],
+      "host": "head_assembly <1>/head_roll_mount",
+      "radius_mm": 1.25,
+      "external": false,
+      "area_mm2": 4.43039,
+      "bore_midsection_blockage_mm3": 0,
+      "unsupported_half_mm_ring_mm3": 0.08124613795860336
+    },
+    {
+      "servo": "S14",
+      "point": [
+        56.449999999965414,
+        7.099999999913258,
+        216.8509388123609
+      ],
+      "host": "head_assembly <1>/head_roll_mount",
+      "radius_mm": 1.25,
+      "external": false,
+      "area_mm2": 7.40283,
+      "bore_midsection_blockage_mm3": 0,
+      "unsupported_half_mm_ring_mm3": 0.08916069406958696
+    },
+    {
+      "servo": "S14",
+      "point": [
+        56.449999999965414,
+        7.099999999913258,
+        216.8509388123609
+      ],
+      "host": "head_assembly <1>/head_roll_mount",
+      "radius_mm": 1.25,
+      "external": false,
+      "area_mm2": 2.01351,
+      "bore_midsection_blockage_mm3": 0,
+      "unsupported_half_mm_ring_mm3": 0.13566140124802453
+    },
+    {
+      "servo": "S14",
+      "point": [
+        56.449999999965314,
+        -6.900000000086742,
+        216.85093881236105
+      ],
+      "host": "head_assembly <1>/head_roll_mount",
+      "radius_mm": 1.25,
+      "external": false,
+      "area_mm2": 7.40283,
+      "bore_midsection_blockage_mm3": 0,
+      "unsupported_half_mm_ring_mm3": 0.08916069406958692
+    },
+    {
+      "servo": "S14",
+      "point": [
+        56.449999999965314,
+        -6.900000000086742,
+        216.85093881236105
+      ],
+      "host": "head_assembly <1>/head_roll_mount",
+      "radius_mm": 1.25,
+      "external": false,
+      "area_mm2": 2.01351,
+      "bore_midsection_blockage_mm3": 0,
+      "unsupported_half_mm_ring_mm3": 0.13566140124725712
+    }
+  ],
+  "support_note": "0.5 mm radial ring is a diagnostic sample, not a specified strength criterion; partial rings require separate mounting-seat review.",
+  "scope": "U08 case mounting outlines and hole midsection support; no joint motion certification",
+  "joints": [
+    {
+      "servo": "S01",
+      "hosts": [
+        "trunk_assembly <1>/trunk_top",
+        "trunk_assembly <1>/trunk_bottom"
+      ],
+      "case_axes": [
+        {
+          "point": [
+            -45.999999999999645,
+            -37.7072306601,
+            43.865938812376584
+          ],
+          "direction": [
+            -2.1316282072803006e-14,
+            0.0,
+            1.0
+          ],
+          "cylinders": [
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 9.42478,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            },
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 2.0,
+              "external": false,
+              "area_mm2": 18.84956
+            }
+          ]
+        },
+        {
+          "point": [
+            -45.999999999999645,
+            -22.707230660100002,
+            43.865938812376584
+          ],
+          "direction": [
+            -2.1316282072803006e-14,
+            0.0,
+            1.0
+          ],
+          "cylinders": [
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 9.42478,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            },
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 2.0,
+              "external": false,
+              "area_mm2": 18.84956
+            }
+          ]
+        },
+        {
+          "point": [
+            -39.0000000000005,
+            -37.25,
+            83.86593881237673
+          ],
+          "direction": [
+            -2.1316282072803006e-14,
+            0.0,
+            1.0
+          ],
+          "cylinders": [
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 9.42478,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            },
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 2.0,
+              "external": false,
+              "area_mm2": 18.84956
+            }
+          ]
+        },
+        {
+          "point": [
+            -39.0000000000005,
+            -23.25,
+            83.86593881237673
+          ],
+          "direction": [
+            -2.1316282072803006e-14,
+            0.0,
+            1.0
+          ],
+          "cylinders": [
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 9.42478,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            },
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 2.0,
+              "external": false,
+              "area_mm2": 18.84956
+            }
+          ]
+        }
+      ],
+      "external_coaxial_bosses": [],
+      "missing_holes": [],
+      "shared_planar_mount_faces": [
+        {
+          "host": "trunk_assembly <1>/trunk_top",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 606.8217,
+          "outer_edges": 4
+        },
+        {
+          "host": "trunk_assembly <1>/trunk_top",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 606.8217,
+          "outer_edges": 4
+        },
+        {
+          "host": "trunk_assembly <1>/trunk_top",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 844.0208,
+          "outer_edges": 14
+        },
+        {
+          "host": "trunk_assembly <1>/trunk_top",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 846.8548,
+          "outer_edges": 17
+        }
+      ],
+      "axes_without_shared_face": []
+    },
+    {
+      "servo": "S02",
+      "hosts": [
+        "hip_roll_assembly <1>/roll_motor_top",
+        "hip_roll_assembly <1>/roll_motor_bottom"
+      ],
+      "case_axes": [
+        {
+          "point": [
+            2.125000000027514,
+            -22.792769339835605,
+            26.92593881237144
+          ],
+          "direction": [
+            -1.0,
+            1.8829382497642655e-13,
+            1.1723955140041653e-13
+          ],
+          "cylinders": [
+            {
+              "host": "hip_roll_assembly <1>/roll_motor_top",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 18.84956,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            2.125000000024663,
+            -37.7927693398356,
+            26.92593881236979
+          ],
+          "direction": [
+            -1.0,
+            1.8829382497642655e-13,
+            1.1723955140041653e-13
+          ],
+          "cylinders": [
+            {
+              "host": "hip_roll_assembly <1>/roll_motor_top",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 18.84956,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -37.87499999997339,
+            -23.249999999927237,
+            19.92593881237608
+          ],
+          "direction": [
+            -1.0,
+            1.8829382497642655e-13,
+            1.1723955140041653e-13
+          ],
+          "cylinders": [
+            {
+              "host": "hip_roll_assembly <1>/roll_motor_top",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 18.84956,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -37.874999999976055,
+            -37.24999999992724,
+            19.92593881237454
+          ],
+          "direction": [
+            -1.0,
+            1.8829382497642655e-13,
+            1.1723955140041653e-13
+          ],
+          "cylinders": [
+            {
+              "host": "hip_roll_assembly <1>/roll_motor_top",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 18.84956,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        }
+      ],
+      "external_coaxial_bosses": [],
+      "missing_holes": [],
+      "shared_planar_mount_faces": [
+        {
+          "host": "hip_roll_assembly <1>/roll_motor_top",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 407.8968,
+          "outer_edges": 6
+        },
+        {
+          "host": "hip_roll_assembly <1>/roll_motor_top",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 219.218,
+          "outer_edges": 4
+        },
+        {
+          "host": "hip_roll_assembly <1>/roll_motor_top",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 344.598,
+          "outer_edges": 4
+        },
+        {
+          "host": "hip_roll_assembly <1>/roll_motor_top",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 282.5168,
+          "outer_edges": 4
+        }
+      ],
+      "axes_without_shared_face": []
+    },
+    {
+      "servo": "S03",
+      "hosts": [
+        "right_roll_to_pitch_assembly <1>/right_roll_to_pitch"
+      ],
+      "case_axes": [
+        {
+          "point": [
+            -8.059999999980235,
+            -114.42499999993656,
+            -7.531291847731929
+          ],
+          "direction": [
+            1.0658141036401503e-14,
+            1.0,
+            1.1368683772161603e-13
+          ],
+          "cylinders": [
+            {
+              "host": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 18.84956,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -8.059999999980555,
+            -114.42499999993827,
+            7.468708152268071
+          ],
+          "direction": [
+            1.0658141036401503e-14,
+            1.0,
+            1.1368683772161603e-13
+          ],
+          "cylinders": [
+            {
+              "host": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 18.84956,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -15.059999999979748,
+            -74.42499999993653,
+            -7.074061187627528
+          ],
+          "direction": [
+            1.0658141036401503e-14,
+            1.0,
+            1.1368683772161603e-13
+          ],
+          "cylinders": [
+            {
+              "host": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+              "radius_mm": 2.5,
+              "external": false,
+              "area_mm2": 55.37057
+            },
+            {
+              "host": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 12.56637,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            },
+            {
+              "host": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+              "radius_mm": 2.5,
+              "external": false,
+              "area_mm2": 23.96437
+            }
+          ]
+        },
+        {
+          "point": [
+            -15.059999999980047,
+            -74.42499999993812,
+            6.925938812372472
+          ],
+          "direction": [
+            1.0658141036401503e-14,
+            1.0,
+            1.1368683772161603e-13
+          ],
+          "cylinders": [
+            {
+              "host": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+              "radius_mm": 2.5,
+              "external": false,
+              "area_mm2": 55.37057
+            },
+            {
+              "host": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 12.56637,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            },
+            {
+              "host": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+              "radius_mm": 2.5,
+              "external": false,
+              "area_mm2": 23.96437
+            }
+          ]
+        }
+      ],
+      "external_coaxial_bosses": [],
+      "missing_holes": [],
+      "shared_planar_mount_faces": [
+        {
+          "host": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 948.648,
+          "outer_edges": 5
+        },
+        {
+          "host": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 282.0613,
+          "outer_edges": 5
+        },
+        {
+          "host": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 548.5204,
+          "outer_edges": 11
+        },
+        {
+          "host": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 508.2542,
+          "outer_edges": 11
+        }
+      ],
+      "axes_without_shared_face": []
+    },
+    {
+      "servo": "S04",
+      "hosts": [
+        "knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
+        "knee_and_ankle_assembly <1>/left_knee_to_ankle_right_sheet"
+      ],
+      "case_axes": [
+        {
+          "point": [
+            -42.51723066010001,
+            -73.29999999999394,
+            -51.72406118759993
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 50.26502,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            },
+            {
+              "host": "knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 9.11062,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -27.51723066010001,
+            -73.29999999999394,
+            -51.72406118759992
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 50.26502,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            },
+            {
+              "host": "knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 9.11062,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -42.06,
+            -113.29999999999394,
+            -58.724061187599936
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "knee_and_ankle_assembly <1>/left_knee_to_ankle_right_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 65.65929,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -28.060000000000002,
+            -113.29999999999394,
+            -58.72406118759993
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "knee_and_ankle_assembly <1>/left_knee_to_ankle_right_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 65.65929,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        }
+      ],
+      "external_coaxial_bosses": [],
+      "missing_holes": [],
+      "shared_planar_mount_faces": [
+        {
+          "host": "knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 370.6908,
+          "outer_edges": 4
+        },
+        {
+          "host": "knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 370.6908,
+          "outer_edges": 4
+        },
+        {
+          "host": "knee_and_ankle_assembly <1>/left_knee_to_ankle_right_sheet",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 434.7658,
+          "outer_edges": 5
+        },
+        {
+          "host": "knee_and_ankle_assembly <1>/left_knee_to_ankle_right_sheet",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 434.7658,
+          "outer_edges": 5
+        }
+      ],
+      "axes_without_shared_face": []
+    },
+    {
+      "servo": "S05",
+      "hosts": [
+        "knee_and_ankle_assembly <3>/left_knee_to_ankle_left_sheet",
+        "knee_and_ankle_assembly <3>/left_knee_to_ankle_right_sheet"
+      ],
+      "case_axes": [
+        {
+          "point": [
+            -42.51723066010001,
+            -73.39999999999394,
+            -130.37406118759992
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "knee_and_ankle_assembly <3>/left_knee_to_ankle_left_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 59.69026,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -27.51723066010001,
+            -73.39999999999394,
+            -130.37406118759992
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "knee_and_ankle_assembly <3>/left_knee_to_ankle_left_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 59.69026,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -42.06,
+            -113.39999999999394,
+            -137.37406118759995
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "knee_and_ankle_assembly <3>/left_knee_to_ankle_right_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 65.65929,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -28.060000000000002,
+            -113.39999999999394,
+            -137.37406118759995
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "knee_and_ankle_assembly <3>/left_knee_to_ankle_right_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 65.65929,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        }
+      ],
+      "external_coaxial_bosses": [],
+      "missing_holes": [],
+      "shared_planar_mount_faces": [
+        {
+          "host": "knee_and_ankle_assembly <3>/left_knee_to_ankle_left_sheet",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 1289.9334,
+          "outer_edges": 12
+        },
+        {
+          "host": "knee_and_ankle_assembly <3>/left_knee_to_ankle_left_sheet",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 370.6908,
+          "outer_edges": 4
+        },
+        {
+          "host": "knee_and_ankle_assembly <3>/left_knee_to_ankle_right_sheet",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 440.8908,
+          "outer_edges": 4
+        },
+        {
+          "host": "knee_and_ankle_assembly <3>/left_knee_to_ankle_right_sheet",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 440.8908,
+          "outer_edges": 4
+        }
+      ],
+      "axes_without_shared_face": []
+    },
+    {
+      "servo": "S06",
+      "hosts": [
+        "trunk_assembly <1>/trunk_top",
+        "trunk_assembly <1>/trunk_bottom"
+      ],
+      "case_axes": [
+        {
+          "point": [
+            -45.999999999999645,
+            22.79276933989999,
+            43.865938812376584
+          ],
+          "direction": [
+            -2.1316282072803006e-14,
+            0.0,
+            1.0
+          ],
+          "cylinders": [
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 9.42478,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            },
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 2.0,
+              "external": false,
+              "area_mm2": 18.84956
+            }
+          ]
+        },
+        {
+          "point": [
+            -45.999999999999645,
+            37.79276933989999,
+            43.865938812376584
+          ],
+          "direction": [
+            -2.1316282072803006e-14,
+            0.0,
+            1.0
+          ],
+          "cylinders": [
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 9.42478,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            },
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 2.0,
+              "external": false,
+              "area_mm2": 18.84956
+            }
+          ]
+        },
+        {
+          "point": [
+            -39.0000000000005,
+            23.249999999999993,
+            83.86593881237673
+          ],
+          "direction": [
+            -2.1316282072803006e-14,
+            0.0,
+            1.0
+          ],
+          "cylinders": [
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 9.42478,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            },
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 2.0,
+              "external": false,
+              "area_mm2": 18.84956
+            }
+          ]
+        },
+        {
+          "point": [
+            -39.0000000000005,
+            37.24999999999999,
+            83.86593881237673
+          ],
+          "direction": [
+            -2.1316282072803006e-14,
+            0.0,
+            1.0
+          ],
+          "cylinders": [
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 9.42478,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            },
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 2.0,
+              "external": false,
+              "area_mm2": 18.84956
+            }
+          ]
+        }
+      ],
+      "external_coaxial_bosses": [],
+      "missing_holes": [],
+      "shared_planar_mount_faces": [
+        {
+          "host": "trunk_assembly <1>/trunk_top",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 606.8217,
+          "outer_edges": 4
+        },
+        {
+          "host": "trunk_assembly <1>/trunk_top",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 606.8217,
+          "outer_edges": 4
+        },
+        {
+          "host": "trunk_assembly <1>/trunk_top",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 844.0208,
+          "outer_edges": 14
+        },
+        {
+          "host": "trunk_assembly <1>/trunk_top",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 846.8548,
+          "outer_edges": 17
+        }
+      ],
+      "axes_without_shared_face": []
+    },
+    {
+      "servo": "S07",
+      "hosts": [
+        "hip_roll_assembly <2>/roll_motor_top",
+        "hip_roll_assembly <2>/roll_motor_bottom"
+      ],
+      "case_axes": [
+        {
+          "point": [
+            2.125000000024542,
+            37.70723066002524,
+            26.92593881237795
+          ],
+          "direction": [
+            -1.0,
+            7.105427357601002e-14,
+            -8.171241461241152e-14
+          ],
+          "cylinders": [
+            {
+              "host": "hip_roll_assembly <2>/roll_motor_top",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 18.84956,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            2.1250000000235296,
+            22.70723066002524,
+            26.925938812379385
+          ],
+          "direction": [
+            -1.0,
+            7.105427357601002e-14,
+            -8.171241461241152e-14
+          ],
+          "cylinders": [
+            {
+              "host": "hip_roll_assembly <2>/roll_motor_top",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 18.84956,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -37.87499999997491,
+            37.24999999992726,
+            19.925938812374724
+          ],
+          "direction": [
+            -1.0,
+            7.105427357601002e-14,
+            -8.171241461241152e-14
+          ],
+          "cylinders": [
+            {
+              "host": "hip_roll_assembly <2>/roll_motor_top",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 18.84956,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -37.874999999975856,
+            23.24999999992726,
+            19.925938812376067
+          ],
+          "direction": [
+            -1.0,
+            7.105427357601002e-14,
+            -8.171241461241152e-14
+          ],
+          "cylinders": [
+            {
+              "host": "hip_roll_assembly <2>/roll_motor_top",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 18.84956,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        }
+      ],
+      "external_coaxial_bosses": [],
+      "missing_holes": [],
+      "shared_planar_mount_faces": [
+        {
+          "host": "hip_roll_assembly <2>/roll_motor_top",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 407.8968,
+          "outer_edges": 6
+        },
+        {
+          "host": "hip_roll_assembly <2>/roll_motor_top",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 344.598,
+          "outer_edges": 4
+        },
+        {
+          "host": "hip_roll_assembly <2>/roll_motor_top",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 219.218,
+          "outer_edges": 4
+        },
+        {
+          "host": "hip_roll_assembly <2>/roll_motor_top",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 282.5168,
+          "outer_edges": 4
+        }
+      ],
+      "axes_without_shared_face": []
+    },
+    {
+      "servo": "S08",
+      "hosts": [
+        "left_roll_to_pitch_assembly <1>/left_roll_to_pitch"
+      ],
+      "case_axes": [
+        {
+          "point": [
+            -8.059999999979933,
+            114.42499999993706,
+            7.383169472472012
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 18.84956,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -8.059999999979933,
+            114.42499999993706,
+            -7.616830527527988
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 18.84956,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -15.059999999979933,
+            74.42499999993706,
+            6.92593881237201
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+              "radius_mm": 2.5,
+              "external": false,
+              "area_mm2": 55.37057
+            },
+            {
+              "host": "left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 12.56637,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            },
+            {
+              "host": "left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+              "radius_mm": 2.5,
+              "external": false,
+              "area_mm2": 23.96437
+            }
+          ]
+        },
+        {
+          "point": [
+            -15.059999999979933,
+            74.42499999993706,
+            -7.07406118762799
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+              "radius_mm": 2.5,
+              "external": false,
+              "area_mm2": 55.37057
+            },
+            {
+              "host": "left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 12.56637,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            },
+            {
+              "host": "left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+              "radius_mm": 2.5,
+              "external": false,
+              "area_mm2": 23.96437
+            }
+          ]
+        }
+      ],
+      "external_coaxial_bosses": [],
+      "missing_holes": [],
+      "shared_planar_mount_faces": [
+        {
+          "host": "left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 948.648,
+          "outer_edges": 5
+        },
+        {
+          "host": "left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 282.0613,
+          "outer_edges": 5
+        },
+        {
+          "host": "left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 548.5204,
+          "outer_edges": 11
+        },
+        {
+          "host": "left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 508.2542,
+          "outer_edges": 11
+        }
+      ],
+      "axes_without_shared_face": []
+    },
+    {
+      "servo": "S09",
+      "hosts": [
+        "knee_and_ankle_assembly <2>/left_knee_to_ankle_left_sheet",
+        "knee_and_ankle_assembly <2>/left_knee_to_ankle_right_sheet"
+      ],
+      "case_axes": [
+        {
+          "point": [
+            -27.602769339900124,
+            73.29999999999048,
+            -51.72406118760172
+          ],
+          "direction": [
+            7.105427357601002e-14,
+            1.0,
+            9.947598300641403e-14
+          ],
+          "cylinders": [
+            {
+              "host": "knee_and_ankle_assembly <2>/left_knee_to_ankle_left_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 59.37563,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -42.60276933990012,
+            73.29999999999154,
+            -51.72406118760055
+          ],
+          "direction": [
+            7.105427357601002e-14,
+            1.0,
+            9.947598300641403e-14
+          ],
+          "cylinders": [
+            {
+              "host": "knee_and_ankle_assembly <2>/left_knee_to_ankle_left_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 59.37563,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -28.059999999997824,
+            113.2999999999912,
+            -58.724061187597705
+          ],
+          "direction": [
+            7.105427357601002e-14,
+            1.0,
+            9.947598300641403e-14
+          ],
+          "cylinders": [
+            {
+              "host": "knee_and_ankle_assembly <2>/left_knee_to_ankle_right_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 65.65929,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -42.05999999999783,
+            113.2999999999922,
+            -58.72406118759661
+          ],
+          "direction": [
+            7.105427357601002e-14,
+            1.0,
+            9.947598300641403e-14
+          ],
+          "cylinders": [
+            {
+              "host": "knee_and_ankle_assembly <2>/left_knee_to_ankle_right_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 65.65929,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        }
+      ],
+      "external_coaxial_bosses": [],
+      "missing_holes": [],
+      "shared_planar_mount_faces": [
+        {
+          "host": "knee_and_ankle_assembly <2>/left_knee_to_ankle_left_sheet",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 1439.711,
+          "outer_edges": 8
+        },
+        {
+          "host": "knee_and_ankle_assembly <2>/left_knee_to_ankle_left_sheet",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 370.6908,
+          "outer_edges": 4
+        },
+        {
+          "host": "knee_and_ankle_assembly <2>/left_knee_to_ankle_right_sheet",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 434.7658,
+          "outer_edges": 5
+        },
+        {
+          "host": "knee_and_ankle_assembly <2>/left_knee_to_ankle_right_sheet",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 434.7658,
+          "outer_edges": 5
+        }
+      ],
+      "axes_without_shared_face": []
+    },
+    {
+      "servo": "S10",
+      "hosts": [
+        "knee_and_ankle_assembly <4>/left_knee_to_ankle_right_sheet",
+        "knee_and_ankle_assembly <4>/left_knee_to_ankle_left_sheet"
+      ],
+      "case_axes": [
+        {
+          "point": [
+            -27.602769339900004,
+            73.39999999999023,
+            -130.374061187602
+          ],
+          "direction": [
+            7.105427357601002e-14,
+            1.0,
+            1.1368683772161603e-13
+          ],
+          "cylinders": [
+            {
+              "host": "knee_and_ankle_assembly <4>/left_knee_to_ankle_left_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 59.69026,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -42.60276933990001,
+            73.3999999999913,
+            -130.37406118760072
+          ],
+          "direction": [
+            7.105427357601002e-14,
+            1.0,
+            1.1368683772161603e-13
+          ],
+          "cylinders": [
+            {
+              "host": "knee_and_ankle_assembly <4>/left_knee_to_ankle_left_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 59.69026,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -28.05999999999776,
+            113.39999999999105,
+            -137.37406118759742
+          ],
+          "direction": [
+            7.105427357601002e-14,
+            1.0,
+            1.1368683772161603e-13
+          ],
+          "cylinders": [
+            {
+              "host": "knee_and_ankle_assembly <4>/left_knee_to_ankle_right_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 65.65929,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            -42.05999999999776,
+            113.39999999999205,
+            -137.37406118759623
+          ],
+          "direction": [
+            7.105427357601002e-14,
+            1.0,
+            1.1368683772161603e-13
+          ],
+          "cylinders": [
+            {
+              "host": "knee_and_ankle_assembly <4>/left_knee_to_ankle_right_sheet",
+              "radius_mm": 1.0,
+              "external": false,
+              "area_mm2": 65.65929,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        }
+      ],
+      "external_coaxial_bosses": [],
+      "missing_holes": [],
+      "shared_planar_mount_faces": [
+        {
+          "host": "knee_and_ankle_assembly <4>/left_knee_to_ankle_right_sheet",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 440.8908,
+          "outer_edges": 4
+        },
+        {
+          "host": "knee_and_ankle_assembly <4>/left_knee_to_ankle_right_sheet",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 440.8908,
+          "outer_edges": 4
+        },
+        {
+          "host": "knee_and_ankle_assembly <4>/left_knee_to_ankle_left_sheet",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 370.6908,
+          "outer_edges": 4
+        },
+        {
+          "host": "knee_and_ankle_assembly <4>/left_knee_to_ankle_left_sheet",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 370.6908,
+          "outer_edges": 4
+        }
+      ],
+      "axes_without_shared_face": []
+    },
+    {
+      "servo": "S11",
+      "hosts": [
+        "trunk_assembly <1>/trunk_top",
+        "trunk_assembly <1>/trunk_bottom"
+      ],
+      "case_axes": [
+        {
+          "point": [
+            16.45723066010048,
+            21.225000000000065,
+            63.000938812375864
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 2.5,
+              "external": false,
+              "area_mm2": 47.12389
+            },
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 14.13717,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            1.4572306601004783,
+            21.225000000000065,
+            63.00093881237544
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 2.5,
+              "external": false,
+              "area_mm2": 47.12389
+            },
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 14.13717,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            16.000000000000277,
+            -18.774999999999935,
+            70.00093881237585
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 2.5,
+              "external": false,
+              "area_mm2": 47.12389
+            },
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 14.13717,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            2.000000000000277,
+            -18.774999999999935,
+            70.00093881237545
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 2.5,
+              "external": false,
+              "area_mm2": 47.12389
+            },
+            {
+              "host": "trunk_assembly <1>/trunk_top",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 14.13717,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        }
+      ],
+      "external_coaxial_bosses": [],
+      "missing_holes": [],
+      "shared_planar_mount_faces": [
+        {
+          "host": "trunk_assembly <1>/trunk_top",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 744.9821,
+          "outer_edges": 6
+        },
+        {
+          "host": "trunk_assembly <1>/trunk_top",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 744.9821,
+          "outer_edges": 6
+        },
+        {
+          "host": "trunk_assembly <1>/trunk_top",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 358.206,
+          "outer_edges": 8
+        },
+        {
+          "host": "trunk_assembly <1>/trunk_top",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 329.5953,
+          "outer_edges": 6
+        }
+      ],
+      "axes_without_shared_face": []
+    },
+    {
+      "servo": "S12",
+      "hosts": [
+        "neck_pitch_assembly <1>/neck_left_sheet",
+        "neck_pitch_assembly <1>/neck_right_sheet"
+      ],
+      "case_axes": [
+        {
+          "point": [
+            16.45723066009848,
+            21.225000000000065,
+            129.00093881236987
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "neck_pitch_assembly <1>/neck_left_sheet",
+              "radius_mm": 2.5,
+              "external": false,
+              "area_mm2": 47.12389
+            },
+            {
+              "host": "neck_pitch_assembly <1>/neck_left_sheet",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 51.05088,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            1.4572306600984817,
+            21.225000000000065,
+            129.00093881236944
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "neck_pitch_assembly <1>/neck_left_sheet",
+              "radius_mm": 2.5,
+              "external": false,
+              "area_mm2": 47.12389
+            },
+            {
+              "host": "neck_pitch_assembly <1>/neck_left_sheet",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 51.05088,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            15.99999999999828,
+            -18.774999999999935,
+            136.00093881236987
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "neck_pitch_assembly <1>/neck_right_sheet",
+              "radius_mm": 2.5,
+              "external": false,
+              "area_mm2": 47.12389
+            },
+            {
+              "host": "neck_pitch_assembly <1>/neck_right_sheet",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 58.90486,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        },
+        {
+          "point": [
+            1.9999999999982805,
+            -18.774999999999935,
+            136.00093881236947
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "cylinders": [
+            {
+              "host": "neck_pitch_assembly <1>/neck_right_sheet",
+              "radius_mm": 2.5,
+              "external": false,
+              "area_mm2": 47.12389
+            },
+            {
+              "host": "neck_pitch_assembly <1>/neck_right_sheet",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 58.90486,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            }
+          ]
+        }
+      ],
+      "external_coaxial_bosses": [],
+      "missing_holes": [],
+      "shared_planar_mount_faces": [
+        {
+          "host": "neck_pitch_assembly <1>/neck_left_sheet",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 1006.837,
+          "outer_edges": 6
+        },
+        {
+          "host": "neck_pitch_assembly <1>/neck_left_sheet",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 584.1825,
+          "outer_edges": 4
+        },
+        {
+          "host": "neck_pitch_assembly <1>/neck_right_sheet",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 1071.964,
+          "outer_edges": 9
+        },
+        {
+          "host": "neck_pitch_assembly <1>/neck_right_sheet",
+          "axes": [
+            2,
+            3
+          ],
+          "area_mm2": 650.1825,
+          "outer_edges": 4
+        }
+      ],
+      "axes_without_shared_face": []
+    },
+    {
+      "servo": "S13",
+      "hosts": [
+        "neck_yaw_assembly <1>/head_yaw_to_roll"
+      ],
+      "case_axes": [
+        {
+          "point": [
+            35.99999999999564,
+            -7.357230660100008,
+            218.0759388123664
+          ],
+          "direction": [
+            2.1316282072803006e-14,
+            0.0,
+            -1.0
+          ],
+          "cylinders": [
+            {
+              "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 3.59071,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0.10662297189192473
+            },
+            {
+              "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+              "radius_mm": 2.75,
+              "external": false,
+              "area_mm2": 32.05892
+            },
+            {
+              "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 10.27727,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0.02833622148914492
+            },
+            {
+              "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 23.56194,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0.028336221489144914
+            }
+          ]
+        },
+        {
+          "point": [
+            35.99999999999564,
+            7.642769339899992,
+            218.0759388123664
+          ],
+          "direction": [
+            2.1316282072803006e-14,
+            0.0,
+            -1.0
+          ],
+          "cylinders": [
+            {
+              "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 3.68407,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0.10487890974656428
+            },
+            {
+              "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+              "radius_mm": 2.75,
+              "external": false,
+              "area_mm2": 32.05892
+            },
+            {
+              "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 10.52244,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0.027315456635263725
+            },
+            {
+              "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 23.56194,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0.027315456635263732
+            }
+          ]
+        },
+        {
+          "point": [
+            28.999999999996493,
+            -6.900000000000006,
+            178.07593881236625
+          ],
+          "direction": [
+            2.1316282072803006e-14,
+            0.0,
+            -1.0
+          ],
+          "cylinders": [
+            {
+              "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 23.56195,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            },
+            {
+              "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+              "radius_mm": 2.75,
+              "external": false,
+              "area_mm2": 51.83628
+            }
+          ]
+        },
+        {
+          "point": [
+            28.999999999996493,
+            7.099999999999994,
+            178.07593881236625
+          ],
+          "direction": [
+            2.1316282072803006e-14,
+            0.0,
+            -1.0
+          ],
+          "cylinders": [
+            {
+              "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 23.56195,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0
+            },
+            {
+              "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+              "radius_mm": 2.75,
+              "external": false,
+              "area_mm2": 51.83628
+            }
+          ]
+        }
+      ],
+      "external_coaxial_bosses": [],
+      "missing_holes": [],
+      "shared_planar_mount_faces": [
+        {
+          "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+          "axes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "area_mm2": 3883.9925,
+          "outer_edges": 1
+        },
+        {
+          "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+          "axes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "area_mm2": 420.8602,
+          "outer_edges": 12
+        },
+        {
+          "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 26.2735,
+          "outer_edges": 8
+        },
+        {
+          "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 237.4092,
+          "outer_edges": 8
+        },
+        {
+          "host": "neck_yaw_assembly <1>/head_yaw_to_roll",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 49.479,
+          "outer_edges": 6
+        }
+      ],
+      "axes_without_shared_face": []
+    },
+    {
+      "servo": "S14",
+      "hosts": [
+        "head_assembly <1>/head_roll_mount"
+      ],
+      "case_axes": [
+        {
+          "point": [
+            96.4499999999657,
+            7.557230660013033,
+            223.8509388123593
+          ],
+          "direction": [
+            -1.0,
+            7.105427357601002e-15,
+            2.842170943040401e-14
+          ],
+          "cylinders": [
+            {
+              "host": "head_assembly <1>/head_roll_mount",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 24.97659,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0.02380623713139734
+            },
+            {
+              "host": "head_assembly <1>/head_roll_mount",
+              "radius_mm": 2.75,
+              "external": false,
+              "area_mm2": 46.41367
+            },
+            {
+              "host": "head_assembly <1>/head_roll_mount",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 4.43039,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0.08143546000588509
+            }
+          ]
+        },
+        {
+          "point": [
+            96.44999999996558,
+            -7.442769339986967,
+            223.85093881235946
+          ],
+          "direction": [
+            -1.0,
+            7.105427357601002e-15,
+            2.842170943040401e-14
+          ],
+          "cylinders": [
+            {
+              "host": "head_assembly <1>/head_roll_mount",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 25.00046,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0.024859248357740314
+            },
+            {
+              "host": "head_assembly <1>/head_roll_mount",
+              "radius_mm": 2.75,
+              "external": false,
+              "area_mm2": 46.53592
+            },
+            {
+              "host": "head_assembly <1>/head_roll_mount",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 4.43039,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0.08124613795860336
+            }
+          ]
+        },
+        {
+          "point": [
+            56.449999999965414,
+            7.099999999913258,
+            216.8509388123609
+          ],
+          "direction": [
+            -1.0,
+            7.105427357601002e-15,
+            2.842170943040401e-14
+          ],
+          "cylinders": [
+            {
+              "host": "head_assembly <1>/head_roll_mount",
+              "radius_mm": 2.75,
+              "external": false,
+              "area_mm2": 12.16745
+            },
+            {
+              "host": "head_assembly <1>/head_roll_mount",
+              "radius_mm": 2.75,
+              "external": false,
+              "area_mm2": 13.10908
+            },
+            {
+              "host": "head_assembly <1>/head_roll_mount",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 7.40283,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0.08916069406958696
+            },
+            {
+              "host": "head_assembly <1>/head_roll_mount",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 2.01351,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0.13566140124802453
+            }
+          ]
+        },
+        {
+          "point": [
+            56.449999999965314,
+            -6.900000000086742,
+            216.85093881236105
+          ],
+          "direction": [
+            -1.0,
+            7.105427357601002e-15,
+            2.842170943040401e-14
+          ],
+          "cylinders": [
+            {
+              "host": "head_assembly <1>/head_roll_mount",
+              "radius_mm": 2.75,
+              "external": false,
+              "area_mm2": 13.10908
+            },
+            {
+              "host": "head_assembly <1>/head_roll_mount",
+              "radius_mm": 2.75,
+              "external": false,
+              "area_mm2": 12.16745
+            },
+            {
+              "host": "head_assembly <1>/head_roll_mount",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 7.40283,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0.08916069406958692
+            },
+            {
+              "host": "head_assembly <1>/head_roll_mount",
+              "radius_mm": 1.25,
+              "external": false,
+              "area_mm2": 2.01351,
+              "bore_midsection_blockage_mm3": 0,
+              "unsupported_half_mm_ring_mm3": 0.13566140124725712
+            }
+          ]
+        }
+      ],
+      "external_coaxial_bosses": [],
+      "missing_holes": [],
+      "shared_planar_mount_faces": [
+        {
+          "host": "head_assembly <1>/head_roll_mount",
+          "axes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "area_mm2": 615.752,
+          "outer_edges": 18
+        },
+        {
+          "host": "head_assembly <1>/head_roll_mount",
+          "axes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "area_mm2": 602.542,
+          "outer_edges": 20
+        },
+        {
+          "host": "head_assembly <1>/head_roll_mount",
+          "axes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "area_mm2": 102.0099,
+          "outer_edges": 12
+        },
+        {
+          "host": "head_assembly <1>/head_roll_mount",
+          "axes": [
+            0,
+            1
+          ],
+          "area_mm2": 241.944,
+          "outer_edges": 12
+        },
+        {
+          "host": "head_assembly <1>/head_roll_mount",
+          "axes": [
+            1,
+            3
+          ],
+          "area_mm2": 96.4637,
+          "outer_edges": 8
+        },
+        {
+          "host": "head_assembly <1>/head_roll_mount",
+          "axes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "area_mm2": 155.6072,
+          "outer_edges": 10
+        },
+        {
+          "host": "head_assembly <1>/head_roll_mount",
+          "axes": [
+            0,
+            2
+          ],
+          "area_mm2": 96.6596,
+          "outer_edges": 8
+        }
+      ],
+      "axes_without_shared_face": []
+    }
+  ]
+}

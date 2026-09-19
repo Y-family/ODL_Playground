@@ -8,9 +8,9 @@ edges).  The user asked for square outlines on both parts - no slanted, crooked
 or protruding edges - while keeping every hole, the S02 case faces and the
 motion envelope.
 
-Upper bracket: the plate outline is squared to the part's own envelope,
-X -40.875..5.125 x Y -44.61..-15.89 over Z 35.201..38.365939 (the existing plate
-band), adding 347.50 mm3.  Nothing else on the part changes.
+Upper bracket: retain X -40.875..5.125 and trim the entire holder to the
+servo body's 20 mm Y width so side walls cannot protrude in a Z projection.
+Restore the five original cap openings from the pre-U11 reference leaves.
 
 Lower bracket: the tapered wall becomes a vertical wall at Y = -/+43.15, i.e.
 2.90 mm thick off the untouched S02 case face at Y = -/+40.25, which is the
@@ -148,9 +148,17 @@ def square_top(part, sign):
     for y0, y1 in cuts:
         if y1 <= y0:
             continue
-        excess = bd.Box(100.0, y1 - y0, PLATE_Z[1] - PLATE_Z[0] + .2).moved(
-            bd.Pos(-50.0, (y0 + y1) / 2, sum(PLATE_Z) / 2))
-        squared = bd.Compound(squared.cut(excess).solids())
+        excess = bd.Box(100.0, y1 - y0, 100.0).moved(
+            bd.Pos(0.0, (y0 + y1) / 2, 20.0))
+        squared = bd.Compound([solid.cut(excess) for solid in squared.solids()])
+    reference = read_step(Path('/tmp/u10') / f'leaf_{28 if sign < 0 else 108}.step')
+    cap = next(face for face in reference.faces()
+               if abs(face.center().Z - PLATE_Z[1]) < 1e-5 and face.area > 100)
+    assert len(cap.inner_wires()) == 5
+    for wire in cap.inner_wires():
+        bore = bd.extrude(bd.Face(wire), amount=PLATE_Z[1] - PLATE_Z[0] + .02,
+                          dir=(0, 0, -1)).moved(bd.Pos(0, 0, .01))
+        squared = bd.Compound(squared.cut(bore).solids())
     return squared, added
 
 
@@ -159,6 +167,20 @@ def square_bottom(part, sign):
         bd.Pos(-19.0, sign * (WALL_Y + 20.0), sum(WALL_Z) / 2))
     removed = bd.Compound(part.intersect(box).solids()) if part.intersect(box) else None
     return bd.Compound(part.cut(box).solids()), removed
+
+
+def check_top_outline(part):
+    bounds = part.bounding_box()
+    assert sorted(round(abs(value), 3) for value in (bounds.min.Y, bounds.max.Y)) == list(SERVO_Y)
+    cap = next(face for face in part.faces()
+               if abs(face.center().Z - PLATE_Z[1]) < 1e-5 and face.area > 100)
+    assert len(cap.outer_wire().edges()) == 4
+    assert len(cap.inner_wires()) == 5
+    side_holes = [face for face in part.faces()
+                  if face.geom_type == bd.GeomType.CYLINDER and face.bounding_box().max.Z < 34]
+    assert len(side_holes) == 4, len(side_holes)
+    return dict(projected_width_mm=round(bounds.max.Y - bounds.min.Y, 3),
+                cap_outer_edges=4, cap_openings=5, side_holes=4)
 
 
 def build():
@@ -171,6 +193,8 @@ def build():
             part = read_step(source_file(index))
             sign = 1 if part.bounding_box().center().Y > 0 else -1
             candidate, touched = (square_top if kind == 'top' else square_bottom)(part, sign)
+            if kind == 'top':
+                check_top_outline(candidate)
             if len(candidate.solids()) != 1 or not candidate.is_valid:
                 raise ValueError(f'{kind} candidate {index} is not one valid solid')
             before, after = slant_inventory(part), slant_inventory(candidate)
@@ -395,12 +419,16 @@ def verify():
                 raise ValueError(f'{path} still carries slanted geometry: {slants}')
             facts = dict(path=path, volume_delta_mm3=round(delta, 3), slants=slants)
             if node.label == 'roll_motor_top':
-                box = node.bounding_box()
+                facts['projection_and_holes'] = check_top_outline(node)
+                plate_band = bd.Box(200.0, 200.0, PLATE_Z[1] - PLATE_Z[0] - .02).moved(
+                    bd.Pos(0, 0, sum(PLATE_Z) / 2))
+                plate = bd.Compound(node.intersect(plate_band).solids())
+                box = plate.bounding_box()
                 envelope = dict(x=[round(box.min.X, 3), round(box.max.X, 3)],
                                 y=sorted([round(abs(box.min.Y), 3), round(abs(box.max.Y), 3)]),
-                                z=[round(box.max.Z - (PLATE_Z[1] - PLATE_Z[0]), 3), round(box.max.Z, 3)])
+                                z=[round(PLATE_Z[0], 3), round(PLATE_Z[1], 3)])
                 expected = dict(x=[round(PLATE_X[0], 3), round(PLATE_X[1], 3)],
-                                y=[round(PLATE_Y[0], 3), round(PLATE_Y[1], 3)],
+                                y=[round(SERVO_Y[0], 3), round(SERVO_Y[1], 3)],
                                 z=[round(PLATE_Z[0], 3), round(PLATE_Z[1], 3)])
                 if envelope != expected:
                     raise ValueError(f'plate envelope {envelope} != {expected}')

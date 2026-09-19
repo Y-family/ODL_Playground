@@ -1,0 +1,2749 @@
+{
+  "target_sha256": "ea472c7e2a62f78f6602d98d2257f5c23ebd25edfe8203ff7d7306b146dbf25d",
+  "seat_target_mm": 2.0,
+  "counterbore_diameter_mm": {
+    "case": 5.0,
+    "horn": 6.5
+  },
+  "parts": [
+    {
+      "index": 17,
+      "path": "neck_pitch_assembly <1>/neck_left_sheet",
+      "file": "/tmp/servo4/candidate_17.step",
+      "volume_before_mm3": 7469.3612690245955,
+      "volume_after_mm3": 7336.825328949954,
+      "added_volume_mm3": 0,
+      "original_face_changes": [],
+      "holes": [
+        {
+          "servo": "S12",
+          "interface": "case",
+          "hole": 1,
+          "before_seat_mm": 6.5,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S12",
+          "interface": "case",
+          "hole": 2,
+          "before_seat_mm": 6.5,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S12",
+          "interface": "case",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S12",
+          "interface": "case",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": []
+    },
+    {
+      "index": 18,
+      "path": "neck_pitch_assembly <1>/neck_right_sheet",
+      "file": "/tmp/servo4/candidate_18.step",
+      "volume_before_mm3": 8744.396606369344,
+      "volume_after_mm3": 8582.408235170058,
+      "added_volume_mm3": 0,
+      "original_face_changes": [],
+      "holes": [
+        {
+          "servo": "S12",
+          "interface": "case",
+          "hole": 3,
+          "before_seat_mm": 7.5,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S12",
+          "interface": "case",
+          "hole": 4,
+          "before_seat_mm": 7.5,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S12",
+          "interface": "case",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S12",
+          "interface": "case",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": []
+    },
+    {
+      "index": 34,
+      "path": "knee_and_ankle_assembly <3>/left_knee_to_ankle_left_sheet",
+      "file": "/tmp/servo4/candidate_34.step",
+      "volume_before_mm3": 7954.246309292398,
+      "volume_after_mm3": 7699.25696802133,
+      "added_volume_mm3": 82.9172385521933,
+      "original_face_changes": [
+        {
+          "servo": "S04",
+          "interface": "active",
+          "old_recess_mm": 1.4000000000100115,
+          "new_mating_face_mm": 0.0,
+          "extended_original_face_area_mm2": 59.22659858438379
+        }
+      ],
+      "holes": [
+        {
+          "servo": "S04",
+          "interface": "active",
+          "hole": 1,
+          "before_seat_mm": 2.9,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S04",
+          "interface": "active",
+          "hole": 2,
+          "before_seat_mm": 2.9,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S04",
+          "interface": "active",
+          "hole": 3,
+          "before_seat_mm": 2.9,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S04",
+          "interface": "active",
+          "hole": 4,
+          "before_seat_mm": 2.9,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S05",
+          "interface": "case",
+          "hole": 1,
+          "before_seat_mm": 9.5,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S05",
+          "interface": "case",
+          "hole": 2,
+          "before_seat_mm": 9.5,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S04",
+          "interface": "active",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S04",
+          "interface": "active",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S04",
+          "interface": "active",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S04",
+          "interface": "active",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S05",
+          "interface": "case",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S05",
+          "interface": "case",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": [
+        {
+          "part": "knee_and_ankle_assembly <1>/S04_RIGHT_KNEE_ZP10D/ZP10D_vendor_body",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "knee_and_ankle_assembly <1>/S04_RIGHT_KNEE_ZP10D/ZP10D_vendor_active_horn",
+          "added_overlap_mm3": 0
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "path": "knee_and_ankle_assembly <3>/left_knee_to_ankle_right_sheet",
+      "file": "/tmp/servo4/candidate_38.step",
+      "volume_before_mm3": 8863.77277089647,
+      "volume_after_mm3": 8562.361671684814,
+      "added_volume_mm3": 82.91723801815489,
+      "original_face_changes": [
+        {
+          "servo": "S04",
+          "interface": "passive",
+          "old_recess_mm": 1.600000000000007,
+          "new_mating_face_mm": 0.2,
+          "extended_original_face_area_mm2": 59.22659858438237
+        }
+      ],
+      "holes": [
+        {
+          "servo": "S04",
+          "interface": "passive",
+          "hole": 1,
+          "before_seat_mm": 3.05,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S04",
+          "interface": "passive",
+          "hole": 2,
+          "before_seat_mm": 3.05,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S04",
+          "interface": "passive",
+          "hole": 3,
+          "before_seat_mm": 3.05,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S04",
+          "interface": "passive",
+          "hole": 4,
+          "before_seat_mm": 3.05,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S05",
+          "interface": "case",
+          "hole": 3,
+          "before_seat_mm": 10.45,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S05",
+          "interface": "case",
+          "hole": 4,
+          "before_seat_mm": 10.45,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S04",
+          "interface": "passive",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S04",
+          "interface": "passive",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S04",
+          "interface": "passive",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S04",
+          "interface": "passive",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S05",
+          "interface": "case",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S05",
+          "interface": "case",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": [
+        {
+          "part": "right_cache",
+          "added_overlap_mm3": 0
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "path": "neck_yaw_assembly <1>/head_yaw_to_roll",
+      "file": "/tmp/servo4/candidate_53.step",
+      "volume_before_mm3": 35503.184325370625,
+      "volume_after_mm3": 35467.86900981763,
+      "added_volume_mm3": 0,
+      "original_face_changes": [],
+      "holes": [
+        {
+          "servo": "S13",
+          "interface": "case",
+          "hole": 3,
+          "before_seat_mm": 3.19906,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S13",
+          "interface": "case",
+          "hole": 4,
+          "before_seat_mm": 3.19906,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S13",
+          "interface": "case",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S13",
+          "interface": "case",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": []
+    },
+    {
+      "index": 54,
+      "path": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+      "file": "/tmp/servo4/candidate_54.step",
+      "volume_before_mm3": 38973.50223254194,
+      "volume_after_mm3": 38911.39999896679,
+      "added_volume_mm3": 177.10678121398692,
+      "original_face_changes": [
+        {
+          "servo": "S02",
+          "interface": "active",
+          "old_recess_mm": 1.4999999999508462,
+          "new_mating_face_mm": 0.0,
+          "extended_original_face_area_mm2": 59.03559376290315
+        },
+        {
+          "servo": "S02",
+          "interface": "passive",
+          "old_recess_mm": 1.5000000000511382,
+          "new_mating_face_mm": 0.0,
+          "extended_original_face_area_mm2": 59.03559376290655
+        }
+      ],
+      "holes": [
+        {
+          "servo": "S02",
+          "interface": "active",
+          "hole": 1,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S02",
+          "interface": "active",
+          "hole": 2,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S02",
+          "interface": "active",
+          "hole": 3,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S02",
+          "interface": "active",
+          "hole": 4,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S02",
+          "interface": "passive",
+          "hole": 1,
+          "before_seat_mm": 3.05,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S02",
+          "interface": "passive",
+          "hole": 2,
+          "before_seat_mm": 3.05,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S02",
+          "interface": "passive",
+          "hole": 3,
+          "before_seat_mm": 3.05,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S02",
+          "interface": "passive",
+          "hole": 4,
+          "before_seat_mm": 3.05,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S03",
+          "interface": "case",
+          "hole": 1,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S03",
+          "interface": "case",
+          "hole": 2,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S02",
+          "interface": "active",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S02",
+          "interface": "active",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S02",
+          "interface": "active",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S02",
+          "interface": "active",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S02",
+          "interface": "passive",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S02",
+          "interface": "passive",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S02",
+          "interface": "passive",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S02",
+          "interface": "passive",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S03",
+          "interface": "case",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S03",
+          "interface": "case",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": [
+        {
+          "part": "hip_roll_assembly <1>/roll_motor_bottom",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "hip_roll_assembly <1>/S02_RIGHT_HIP_ROLL_ZP10D/ZP10D_vendor_body",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "hip_roll_assembly <1>/S02_RIGHT_HIP_ROLL_ZP10D/ZP10D_vendor_passive_horn",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "hip_roll_assembly <1>/S02_RIGHT_HIP_ROLL_ZP10D/ZP10D_vendor_active_horn",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "body_assembly <1>/body_middle_bottom",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "trunk_assembly <1>/trunk_bottom",
+          "added_overlap_mm3": 0
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "path": "foot_assembly <1>/foot_side",
+      "file": "/tmp/servo4/candidate_59.step",
+      "volume_before_mm3": 25144.291226189554,
+      "volume_after_mm3": 25073.47979733746,
+      "added_volume_mm3": 129.79879900347436,
+      "original_face_changes": [
+        {
+          "servo": "S05",
+          "interface": "passive",
+          "old_recess_mm": 1.499999999999998,
+          "new_mating_face_mm": 0.0,
+          "extended_original_face_area_mm2": 86.53253271743046
+        }
+      ],
+      "holes": [
+        {
+          "servo": "S05",
+          "interface": "passive",
+          "hole": 1,
+          "before_seat_mm": 4.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S05",
+          "interface": "passive",
+          "hole": 2,
+          "before_seat_mm": 4.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S05",
+          "interface": "passive",
+          "hole": 3,
+          "before_seat_mm": 4.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S05",
+          "interface": "passive",
+          "hole": 4,
+          "before_seat_mm": 4.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S05",
+          "interface": "passive",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S05",
+          "interface": "passive",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S05",
+          "interface": "passive",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S05",
+          "interface": "passive",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": [
+        {
+          "part": "knee_and_ankle_assembly <3>/S05_RIGHT_ANKLE_ZP10D/ZP10D_vendor_passive_horn",
+          "added_overlap_mm3": 0
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "path": "foot_assembly <1>/foot_top",
+      "file": "/tmp/servo4/candidate_60.step",
+      "volume_before_mm3": 50708.00323167618,
+      "volume_after_mm3": 50637.38886200891,
+      "added_volume_mm3": 129.79879961050807,
+      "original_face_changes": [
+        {
+          "servo": "S05",
+          "interface": "active",
+          "old_recess_mm": 1.5000000000100062,
+          "new_mating_face_mm": 0.0,
+          "extended_original_face_area_mm2": 86.53253271742136
+        }
+      ],
+      "holes": [
+        {
+          "servo": "S05",
+          "interface": "active",
+          "hole": 1,
+          "before_seat_mm": 4.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S05",
+          "interface": "active",
+          "hole": 2,
+          "before_seat_mm": 4.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S05",
+          "interface": "active",
+          "hole": 3,
+          "before_seat_mm": 4.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S05",
+          "interface": "active",
+          "hole": 4,
+          "before_seat_mm": 4.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S05",
+          "interface": "active",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S05",
+          "interface": "active",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S05",
+          "interface": "active",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S05",
+          "interface": "active",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": [
+        {
+          "part": "knee_and_ankle_assembly <3>/S05_RIGHT_ANKLE_ZP10D/ZP10D_vendor_body",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "knee_and_ankle_assembly <3>/S05_RIGHT_ANKLE_ZP10D/ZP10D_vendor_active_horn",
+          "added_overlap_mm3": 0
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "path": "knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
+      "file": "/tmp/servo4/candidate_66.step",
+      "volume_before_mm3": 8006.835432829426,
+      "volume_after_mm3": 7635.344554915916,
+      "added_volume_mm3": 82.91723801690071,
+      "original_face_changes": [
+        {
+          "servo": "S03",
+          "interface": "passive",
+          "old_recess_mm": 1.6250000000406806,
+          "new_mating_face_mm": 0.225,
+          "extended_original_face_area_mm2": 59.22659858440775
+        }
+      ],
+      "holes": [
+        {
+          "servo": "S03",
+          "interface": "passive",
+          "hole": 1,
+          "before_seat_mm": 4.07493,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S03",
+          "interface": "passive",
+          "hole": 2,
+          "before_seat_mm": 4.07493,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S03",
+          "interface": "passive",
+          "hole": 3,
+          "before_seat_mm": 4.07493,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S03",
+          "interface": "passive",
+          "hole": 4,
+          "before_seat_mm": 4.07493,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S04",
+          "interface": "case",
+          "hole": 1,
+          "before_seat_mm": 9.44993,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S04",
+          "interface": "case",
+          "hole": 2,
+          "before_seat_mm": 9.44993,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S03",
+          "interface": "passive",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S03",
+          "interface": "passive",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S03",
+          "interface": "passive",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S03",
+          "interface": "passive",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S04",
+          "interface": "case",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S04",
+          "interface": "case",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": [
+        {
+          "part": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+          "added_overlap_mm3": 0
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "path": "knee_and_ankle_assembly <1>/left_knee_to_ankle_right_sheet",
+      "file": "/tmp/servo4/candidate_67.step",
+      "volume_before_mm3": 8794.894198860595,
+      "volume_after_mm3": 8514.628952852298,
+      "added_volume_mm3": 81.43657305355906,
+      "original_face_changes": [
+        {
+          "servo": "S03",
+          "interface": "active",
+          "old_recess_mm": 1.374999999999309,
+          "new_mating_face_mm": 0.0,
+          "extended_original_face_area_mm2": 59.22659858440775
+        }
+      ],
+      "holes": [
+        {
+          "servo": "S03",
+          "interface": "active",
+          "hole": 1,
+          "before_seat_mm": 2.825,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S03",
+          "interface": "active",
+          "hole": 2,
+          "before_seat_mm": 2.825,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S03",
+          "interface": "active",
+          "hole": 3,
+          "before_seat_mm": 2.825,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S03",
+          "interface": "active",
+          "hole": 4,
+          "before_seat_mm": 2.825,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S04",
+          "interface": "case",
+          "hole": 3,
+          "before_seat_mm": 10.45,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S04",
+          "interface": "case",
+          "hole": 4,
+          "before_seat_mm": 10.45,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S03",
+          "interface": "active",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S03",
+          "interface": "active",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S03",
+          "interface": "active",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S03",
+          "interface": "active",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S04",
+          "interface": "case",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S04",
+          "interface": "case",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": [
+        {
+          "part": "right_cache",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "right_roll_to_pitch_assembly <1>/S03_RIGHT_HIP_PITCH_ZP10D/ZP10D_vendor_body",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "right_roll_to_pitch_assembly <1>/S03_RIGHT_HIP_PITCH_ZP10D/ZP10D_vendor_active_horn",
+          "added_overlap_mm3": 0
+        }
+      ]
+    },
+    {
+      "index": 72,
+      "path": "knee_and_ankle_assembly <4>/left_knee_to_ankle_right_sheet",
+      "file": "/tmp/servo4/candidate_72.step",
+      "volume_before_mm3": 8863.817998643017,
+      "volume_after_mm3": 8562.406910830641,
+      "added_volume_mm3": 82.917238019716,
+      "original_face_changes": [
+        {
+          "servo": "S09",
+          "interface": "passive",
+          "old_recess_mm": 1.599999999950609,
+          "new_mating_face_mm": 0.2,
+          "extended_original_face_area_mm2": 59.22659858438243
+        }
+      ],
+      "holes": [
+        {
+          "servo": "S09",
+          "interface": "passive",
+          "hole": 1,
+          "before_seat_mm": 3.05,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S09",
+          "interface": "passive",
+          "hole": 2,
+          "before_seat_mm": 3.05,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S09",
+          "interface": "passive",
+          "hole": 3,
+          "before_seat_mm": 3.05,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S09",
+          "interface": "passive",
+          "hole": 4,
+          "before_seat_mm": 3.05,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S10",
+          "interface": "case",
+          "hole": 3,
+          "before_seat_mm": 10.45,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S10",
+          "interface": "case",
+          "hole": 4,
+          "before_seat_mm": 10.45,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S09",
+          "interface": "passive",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S09",
+          "interface": "passive",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S09",
+          "interface": "passive",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S09",
+          "interface": "passive",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S10",
+          "interface": "case",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S10",
+          "interface": "case",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": [
+        {
+          "part": "left_cache",
+          "added_overlap_mm3": 0
+        }
+      ]
+    },
+    {
+      "index": 73,
+      "path": "knee_and_ankle_assembly <4>/left_knee_to_ankle_left_sheet",
+      "file": "/tmp/servo4/candidate_73.step",
+      "volume_before_mm3": 7954.24628059237,
+      "volume_after_mm3": 7699.2569203626035,
+      "added_volume_mm3": 82.91723801401317,
+      "original_face_changes": [
+        {
+          "servo": "S09",
+          "interface": "active",
+          "old_recess_mm": 1.4000000000094066,
+          "new_mating_face_mm": 0.0,
+          "extended_original_face_area_mm2": 59.226598584376
+        }
+      ],
+      "holes": [
+        {
+          "servo": "S09",
+          "interface": "active",
+          "hole": 1,
+          "before_seat_mm": 2.9,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S09",
+          "interface": "active",
+          "hole": 2,
+          "before_seat_mm": 2.9,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S09",
+          "interface": "active",
+          "hole": 3,
+          "before_seat_mm": 2.9,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S09",
+          "interface": "active",
+          "hole": 4,
+          "before_seat_mm": 2.9,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S10",
+          "interface": "case",
+          "hole": 1,
+          "before_seat_mm": 9.5,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S10",
+          "interface": "case",
+          "hole": 2,
+          "before_seat_mm": 9.5,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S09",
+          "interface": "active",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S09",
+          "interface": "active",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S09",
+          "interface": "active",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S09",
+          "interface": "active",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S10",
+          "interface": "case",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S10",
+          "interface": "case",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": [
+        {
+          "part": "knee_and_ankle_assembly <2>/S09_LEFT_KNEE_ZP10D/ZP10D_vendor_body",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "knee_and_ankle_assembly <2>/S09_LEFT_KNEE_ZP10D/ZP10D_vendor_active_horn",
+          "added_overlap_mm3": 0
+        }
+      ]
+    },
+    {
+      "index": 103,
+      "path": "foot_assembly <2>/foot_side",
+      "file": "/tmp/servo4/candidate_103.step",
+      "volume_before_mm3": 25144.266932931467,
+      "volume_after_mm3": 25072.655752278413,
+      "added_volume_mm3": 129.79879907690702,
+      "original_face_changes": [
+        {
+          "servo": "S10",
+          "interface": "passive",
+          "old_recess_mm": 1.499999999950963,
+          "new_mating_face_mm": 0.0,
+          "extended_original_face_area_mm2": 86.53253271774577
+        }
+      ],
+      "holes": [
+        {
+          "servo": "S10",
+          "interface": "passive",
+          "hole": 1,
+          "before_seat_mm": 4.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S10",
+          "interface": "passive",
+          "hole": 2,
+          "before_seat_mm": 4.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S10",
+          "interface": "passive",
+          "hole": 3,
+          "before_seat_mm": 4.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S10",
+          "interface": "passive",
+          "hole": 4,
+          "before_seat_mm": 4.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S10",
+          "interface": "passive",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S10",
+          "interface": "passive",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S10",
+          "interface": "passive",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S10",
+          "interface": "passive",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": [
+        {
+          "part": "knee_and_ankle_assembly <4>/S10_LEFT_ANKLE_ZP10D/ZP10D_vendor_passive_horn",
+          "added_overlap_mm3": 0
+        }
+      ]
+    },
+    {
+      "index": 105,
+      "path": "foot_assembly <2>/foot_top",
+      "file": "/tmp/servo4/candidate_105.step",
+      "volume_before_mm3": 50707.08983980091,
+      "volume_after_mm3": 50636.16818059716,
+      "added_volume_mm3": 129.79879907284737,
+      "original_face_changes": [
+        {
+          "servo": "S10",
+          "interface": "active",
+          "old_recess_mm": 1.5000000000090743,
+          "new_mating_face_mm": 0.0,
+          "extended_original_face_area_mm2": 86.53253271775114
+        }
+      ],
+      "holes": [
+        {
+          "servo": "S10",
+          "interface": "active",
+          "hole": 1,
+          "before_seat_mm": 4.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S10",
+          "interface": "active",
+          "hole": 2,
+          "before_seat_mm": 4.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S10",
+          "interface": "active",
+          "hole": 3,
+          "before_seat_mm": 4.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S10",
+          "interface": "active",
+          "hole": 4,
+          "before_seat_mm": 4.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S10",
+          "interface": "active",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S10",
+          "interface": "active",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S10",
+          "interface": "active",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S10",
+          "interface": "active",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": [
+        {
+          "part": "knee_and_ankle_assembly <4>/S10_LEFT_ANKLE_ZP10D/ZP10D_vendor_body",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "knee_and_ankle_assembly <4>/S10_LEFT_ANKLE_ZP10D/ZP10D_vendor_active_horn",
+          "added_overlap_mm3": 0
+        }
+      ]
+    },
+    {
+      "index": 127,
+      "path": "left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+      "file": "/tmp/servo4/candidate_127.step",
+      "volume_before_mm3": 38973.86299897699,
+      "volume_after_mm3": 38911.86461314891,
+      "added_volume_mm3": 177.1067812848509,
+      "original_face_changes": [
+        {
+          "servo": "S07",
+          "interface": "active",
+          "old_recess_mm": 1.4999999999484082,
+          "new_mating_face_mm": 0.0,
+          "extended_original_face_area_mm2": 59.03559376286461
+        },
+        {
+          "servo": "S07",
+          "interface": "passive",
+          "old_recess_mm": 1.500000000049578,
+          "new_mating_face_mm": 0.0,
+          "extended_original_face_area_mm2": 59.03559376286124
+        }
+      ],
+      "holes": [
+        {
+          "servo": "S07",
+          "interface": "active",
+          "hole": 1,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S07",
+          "interface": "active",
+          "hole": 2,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S07",
+          "interface": "active",
+          "hole": 3,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S07",
+          "interface": "active",
+          "hole": 4,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S07",
+          "interface": "passive",
+          "hole": 1,
+          "before_seat_mm": 3.05,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S07",
+          "interface": "passive",
+          "hole": 2,
+          "before_seat_mm": 3.05,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S07",
+          "interface": "passive",
+          "hole": 3,
+          "before_seat_mm": 3.05,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S07",
+          "interface": "passive",
+          "hole": 4,
+          "before_seat_mm": 3.05,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S08",
+          "interface": "case",
+          "hole": 1,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S08",
+          "interface": "case",
+          "hole": 2,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S07",
+          "interface": "active",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S07",
+          "interface": "active",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S07",
+          "interface": "active",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S07",
+          "interface": "active",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S07",
+          "interface": "passive",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S07",
+          "interface": "passive",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S07",
+          "interface": "passive",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S07",
+          "interface": "passive",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S08",
+          "interface": "case",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S08",
+          "interface": "case",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": [
+        {
+          "part": "body_assembly <1>/body_middle_bottom",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "hip_roll_assembly <2>/roll_motor_bottom",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "hip_roll_assembly <2>/S07_LEFT_HIP_ROLL_ZP10D/ZP10D_vendor_body",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "hip_roll_assembly <2>/S07_LEFT_HIP_ROLL_ZP10D/ZP10D_vendor_passive_horn",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "hip_roll_assembly <2>/S07_LEFT_HIP_ROLL_ZP10D/ZP10D_vendor_active_horn",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "trunk_assembly <1>/trunk_bottom",
+          "added_overlap_mm3": 0
+        }
+      ]
+    },
+    {
+      "index": 131,
+      "path": "knee_and_ankle_assembly <2>/left_knee_to_ankle_left_sheet",
+      "file": "/tmp/servo4/candidate_131.step",
+      "volume_before_mm3": 8006.835421053585,
+      "volume_after_mm3": 7635.34454452038,
+      "added_volume_mm3": 82.91723801689515,
+      "original_face_changes": [
+        {
+          "servo": "S08",
+          "interface": "passive",
+          "old_recess_mm": 1.6250000000409983,
+          "new_mating_face_mm": 0.225,
+          "extended_original_face_area_mm2": 59.226598584407796
+        }
+      ],
+      "holes": [
+        {
+          "servo": "S08",
+          "interface": "passive",
+          "hole": 1,
+          "before_seat_mm": 4.07493,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S08",
+          "interface": "passive",
+          "hole": 2,
+          "before_seat_mm": 4.07493,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S08",
+          "interface": "passive",
+          "hole": 3,
+          "before_seat_mm": 4.07493,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S08",
+          "interface": "passive",
+          "hole": 4,
+          "before_seat_mm": 4.07493,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S09",
+          "interface": "case",
+          "hole": 1,
+          "before_seat_mm": 9.44993,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S09",
+          "interface": "case",
+          "hole": 2,
+          "before_seat_mm": 9.44993,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S08",
+          "interface": "passive",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S08",
+          "interface": "passive",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S08",
+          "interface": "passive",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S08",
+          "interface": "passive",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S09",
+          "interface": "case",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S09",
+          "interface": "case",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": [
+        {
+          "part": "left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+          "added_overlap_mm3": 0
+        }
+      ]
+    },
+    {
+      "index": 132,
+      "path": "knee_and_ankle_assembly <2>/left_knee_to_ankle_right_sheet",
+      "file": "/tmp/servo4/candidate_132.step",
+      "volume_before_mm3": 8794.894199439594,
+      "volume_after_mm3": 8514.62895486368,
+      "added_volume_mm3": 81.4365730543469,
+      "original_face_changes": [
+        {
+          "servo": "S08",
+          "interface": "active",
+          "old_recess_mm": 1.3749999999199929,
+          "new_mating_face_mm": 0.0,
+          "extended_original_face_area_mm2": 59.22659858440779
+        }
+      ],
+      "holes": [
+        {
+          "servo": "S08",
+          "interface": "active",
+          "hole": 1,
+          "before_seat_mm": 2.825,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S08",
+          "interface": "active",
+          "hole": 2,
+          "before_seat_mm": 2.825,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S08",
+          "interface": "active",
+          "hole": 3,
+          "before_seat_mm": 2.825,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S08",
+          "interface": "active",
+          "hole": 4,
+          "before_seat_mm": 2.825,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S09",
+          "interface": "case",
+          "hole": 3,
+          "before_seat_mm": 10.45,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S09",
+          "interface": "case",
+          "hole": 4,
+          "before_seat_mm": 10.45,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S08",
+          "interface": "active",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S08",
+          "interface": "active",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S08",
+          "interface": "active",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S08",
+          "interface": "active",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S09",
+          "interface": "case",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S09",
+          "interface": "case",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": [
+        {
+          "part": "left_cache",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "left_roll_to_pitch_assembly <1>/S08_LEFT_HIP_PITCH_ZP10D/ZP10D_vendor_body",
+          "added_overlap_mm3": 0
+        },
+        {
+          "part": "left_roll_to_pitch_assembly <1>/S08_LEFT_HIP_PITCH_ZP10D/ZP10D_vendor_active_horn",
+          "added_overlap_mm3": 0
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "path": "hip_roll_assembly <1>/roll_motor_top",
+      "file": "/tmp/servo4/candidate_28.step",
+      "volume_before_mm3": 4390.987695086091,
+      "volume_after_mm3": 3471.677773611261,
+      "added_volume_mm3": 0,
+      "original_face_changes": [
+        {
+          "servo": "S01",
+          "interface": "active",
+          "method": "thin underside between existing end walls; retain top outline and wall connections",
+          "before_mm": 3.16494,
+          "after_mm": 2.0
+        }
+      ],
+      "holes": [
+        {
+          "servo": "S01",
+          "interface": "active",
+          "hole": 1,
+          "before_seat_mm": 3.16494,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S01",
+          "interface": "active",
+          "hole": 2,
+          "before_seat_mm": 3.16494,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S01",
+          "interface": "active",
+          "hole": 3,
+          "before_seat_mm": 3.16494,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S01",
+          "interface": "active",
+          "hole": 4,
+          "before_seat_mm": 3.16494,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S02",
+          "interface": "case",
+          "hole": 1,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S02",
+          "interface": "case",
+          "hole": 2,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S02",
+          "interface": "case",
+          "hole": 3,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S02",
+          "interface": "case",
+          "hole": 4,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S01",
+          "interface": "active",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S01",
+          "interface": "active",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S01",
+          "interface": "active",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S01",
+          "interface": "active",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S02",
+          "interface": "case",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S02",
+          "interface": "case",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S02",
+          "interface": "case",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S02",
+          "interface": "case",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": []
+    },
+    {
+      "index": 108,
+      "path": "hip_roll_assembly <2>/roll_motor_top",
+      "file": "/tmp/servo4/candidate_108.step",
+      "volume_before_mm3": 4390.987695085755,
+      "volume_after_mm3": 3471.6777736112685,
+      "added_volume_mm3": 0,
+      "original_face_changes": [
+        {
+          "servo": "S06",
+          "interface": "active",
+          "method": "thin underside between existing end walls; retain top outline and wall connections",
+          "before_mm": 3.16494,
+          "after_mm": 2.0
+        }
+      ],
+      "holes": [
+        {
+          "servo": "S06",
+          "interface": "active",
+          "hole": 1,
+          "before_seat_mm": 3.16494,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S06",
+          "interface": "active",
+          "hole": 2,
+          "before_seat_mm": 3.16494,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S06",
+          "interface": "active",
+          "hole": 3,
+          "before_seat_mm": 3.16494,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S06",
+          "interface": "active",
+          "hole": 4,
+          "before_seat_mm": 3.16494,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 3.25
+        },
+        {
+          "servo": "S07",
+          "interface": "case",
+          "hole": 1,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S07",
+          "interface": "case",
+          "hole": 2,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S07",
+          "interface": "case",
+          "hole": 3,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        },
+        {
+          "servo": "S07",
+          "interface": "case",
+          "hole": 4,
+          "before_seat_mm": 3.0,
+          "after_seat_mm": 2.0,
+          "head_radius_mm": 2.5
+        }
+      ],
+      "bearing_checks": [
+        {
+          "servo": "S06",
+          "interface": "active",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S06",
+          "interface": "active",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S06",
+          "interface": "active",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S06",
+          "interface": "active",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S07",
+          "interface": "case",
+          "hole": 1,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S07",
+          "interface": "case",
+          "hole": 2,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S07",
+          "interface": "case",
+          "hole": 3,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        },
+        {
+          "servo": "S07",
+          "interface": "case",
+          "hole": 4,
+          "bearing_test_axial_thickness_mm": 1.19,
+          "bearing_missing_mm3": 0,
+          "head_passage_blockage_mm3": 0
+        }
+      ],
+      "added_neighbour_checks": []
+    }
+  ],
+  "status": "4 mm screw length adaptation installed and checked; awaiting user review",
+  "viewer": {
+    "url": "http://127.0.0.1:3246/?file=cad/local_fix/open_duck_mini_upper_refit.step",
+    "compile_http_status": 200,
+    "artifact_state": "rendered"
+  },
+  "visual_review": {
+    "cadgen_snapshot": "failed: browser shared library libnspr4.so missing",
+    "fallback": "Matplotlib rendering of actual CAD meshes; six before/after part comparisons",
+    "file": "cad/local_fix/SERVO_SCREW_REVIEW.png",
+    "reviewed": true
+  },
+  "max_rss_mib": 780.83984375,
+  "export_checks": [
+    {
+      "path": "neck_pitch_assembly <1>/neck_left_sheet",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "neck_pitch_assembly <1>/neck_right_sheet",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "hip_roll_assembly <1>/roll_motor_top",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "knee_and_ankle_assembly <3>/left_knee_to_ankle_left_sheet",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "knee_and_ankle_assembly <3>/left_knee_to_ankle_right_sheet",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "neck_yaw_assembly <1>/head_yaw_to_roll",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "foot_assembly <1>/foot_side",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "foot_assembly <1>/foot_top",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "knee_and_ankle_assembly <1>/left_knee_to_ankle_right_sheet",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "knee_and_ankle_assembly <4>/left_knee_to_ankle_right_sheet",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "knee_and_ankle_assembly <4>/left_knee_to_ankle_left_sheet",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "foot_assembly <2>/foot_side",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "foot_assembly <2>/foot_top",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "hip_roll_assembly <2>/roll_motor_top",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "knee_and_ankle_assembly <2>/left_knee_to_ankle_left_sheet",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    },
+    {
+      "path": "knee_and_ankle_assembly <2>/left_knee_to_ankle_right_sheet",
+      "method": "matching face/edge/vertex geometry signatures",
+      "coordinate_decimals": 5,
+      "surface_samples_per_face": 9,
+      "samples_per_edge": 5
+    }
+  ],
+  "final_sha256": "5f6449b73b8130f0cf5dc1b73c0f90846b32007199a9bf83e0bf06a7e29ebad6",
+  "unchanged_leaves": 118,
+  "all_colours_retained": true,
+  "added_material_motion_checks": [
+    {
+      "servo": "S04",
+      "interface": "active",
+      "neighbour": "knee_and_ankle_assembly <1>/S04_RIGHT_KNEE_ZP10D/ZP10D_vendor_body",
+      "method": "added material only; 5 degree samples",
+      "range_deg": [
+        -180,
+        180
+      ],
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "servo": "S04",
+      "interface": "active",
+      "neighbour": "knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S04",
+      "interface": "active",
+      "neighbour": "knee_and_ankle_assembly <1>/left_knee_to_ankle_right_sheet",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S04",
+      "interface": "passive",
+      "neighbour": "knee_and_ankle_assembly <1>/S04_RIGHT_KNEE_ZP10D/ZP10D_vendor_body",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S04",
+      "interface": "passive",
+      "neighbour": "knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S04",
+      "interface": "passive",
+      "neighbour": "knee_and_ankle_assembly <1>/left_knee_to_ankle_right_sheet",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S02",
+      "interface": "active",
+      "neighbour": "hip_roll_assembly <1>/S02_RIGHT_HIP_ROLL_ZP10D/ZP10D_vendor_body",
+      "method": "added material only; 5 degree samples",
+      "range_deg": [
+        -25,
+        25
+      ],
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "servo": "S02",
+      "interface": "active",
+      "neighbour": "hip_roll_assembly <1>/roll_motor_top",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S02",
+      "interface": "active",
+      "neighbour": "hip_roll_assembly <1>/roll_motor_bottom",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S02",
+      "interface": "passive",
+      "neighbour": "hip_roll_assembly <1>/S02_RIGHT_HIP_ROLL_ZP10D/ZP10D_vendor_body",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S02",
+      "interface": "passive",
+      "neighbour": "hip_roll_assembly <1>/roll_motor_top",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S02",
+      "interface": "passive",
+      "neighbour": "hip_roll_assembly <1>/roll_motor_bottom",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S05",
+      "interface": "passive",
+      "neighbour": "knee_and_ankle_assembly <3>/S05_RIGHT_ANKLE_ZP10D/ZP10D_vendor_body",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S05",
+      "interface": "passive",
+      "neighbour": "knee_and_ankle_assembly <3>/left_knee_to_ankle_left_sheet",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S05",
+      "interface": "passive",
+      "neighbour": "knee_and_ankle_assembly <3>/left_knee_to_ankle_right_sheet",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S05",
+      "interface": "active",
+      "neighbour": "knee_and_ankle_assembly <3>/S05_RIGHT_ANKLE_ZP10D/ZP10D_vendor_body",
+      "method": "added material only; 5 degree samples",
+      "range_deg": [
+        -180,
+        180
+      ],
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "servo": "S05",
+      "interface": "active",
+      "neighbour": "knee_and_ankle_assembly <3>/left_knee_to_ankle_left_sheet",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S05",
+      "interface": "active",
+      "neighbour": "knee_and_ankle_assembly <3>/left_knee_to_ankle_right_sheet",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S03",
+      "interface": "passive",
+      "neighbour": "right_roll_to_pitch_assembly <1>/S03_RIGHT_HIP_PITCH_ZP10D/ZP10D_vendor_body",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S03",
+      "interface": "passive",
+      "neighbour": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S03",
+      "interface": "active",
+      "neighbour": "right_roll_to_pitch_assembly <1>/S03_RIGHT_HIP_PITCH_ZP10D/ZP10D_vendor_body",
+      "method": "added material only; 5 degree samples",
+      "range_deg": [
+        -30,
+        70
+      ],
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "servo": "S03",
+      "interface": "active",
+      "neighbour": "right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S09",
+      "interface": "passive",
+      "neighbour": "knee_and_ankle_assembly <2>/S09_LEFT_KNEE_ZP10D/ZP10D_vendor_body",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S09",
+      "interface": "passive",
+      "neighbour": "knee_and_ankle_assembly <2>/left_knee_to_ankle_left_sheet",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S09",
+      "interface": "passive",
+      "neighbour": "knee_and_ankle_assembly <2>/left_knee_to_ankle_right_sheet",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S09",
+      "interface": "active",
+      "neighbour": "knee_and_ankle_assembly <2>/S09_LEFT_KNEE_ZP10D/ZP10D_vendor_body",
+      "method": "added material only; 5 degree samples",
+      "range_deg": [
+        -180,
+        180
+      ],
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "servo": "S09",
+      "interface": "active",
+      "neighbour": "knee_and_ankle_assembly <2>/left_knee_to_ankle_left_sheet",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S09",
+      "interface": "active",
+      "neighbour": "knee_and_ankle_assembly <2>/left_knee_to_ankle_right_sheet",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S10",
+      "interface": "passive",
+      "neighbour": "knee_and_ankle_assembly <4>/S10_LEFT_ANKLE_ZP10D/ZP10D_vendor_body",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S10",
+      "interface": "passive",
+      "neighbour": "knee_and_ankle_assembly <4>/left_knee_to_ankle_right_sheet",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S10",
+      "interface": "passive",
+      "neighbour": "knee_and_ankle_assembly <4>/left_knee_to_ankle_left_sheet",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S10",
+      "interface": "active",
+      "neighbour": "knee_and_ankle_assembly <4>/S10_LEFT_ANKLE_ZP10D/ZP10D_vendor_body",
+      "method": "added material only; 5 degree samples",
+      "range_deg": [
+        -180,
+        180
+      ],
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "servo": "S10",
+      "interface": "active",
+      "neighbour": "knee_and_ankle_assembly <4>/left_knee_to_ankle_right_sheet",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S10",
+      "interface": "active",
+      "neighbour": "knee_and_ankle_assembly <4>/left_knee_to_ankle_left_sheet",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S07",
+      "interface": "active",
+      "neighbour": "hip_roll_assembly <2>/S07_LEFT_HIP_ROLL_ZP10D/ZP10D_vendor_body",
+      "method": "added material only; 5 degree samples",
+      "range_deg": [
+        -25,
+        25
+      ],
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "servo": "S07",
+      "interface": "active",
+      "neighbour": "hip_roll_assembly <2>/roll_motor_top",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S07",
+      "interface": "active",
+      "neighbour": "hip_roll_assembly <2>/roll_motor_bottom",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S07",
+      "interface": "passive",
+      "neighbour": "hip_roll_assembly <2>/S07_LEFT_HIP_ROLL_ZP10D/ZP10D_vendor_body",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S07",
+      "interface": "passive",
+      "neighbour": "hip_roll_assembly <2>/roll_motor_top",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S07",
+      "interface": "passive",
+      "neighbour": "hip_roll_assembly <2>/roll_motor_bottom",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S08",
+      "interface": "passive",
+      "neighbour": "left_roll_to_pitch_assembly <1>/S08_LEFT_HIP_PITCH_ZP10D/ZP10D_vendor_body",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S08",
+      "interface": "passive",
+      "neighbour": "left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "servo": "S08",
+      "interface": "active",
+      "neighbour": "left_roll_to_pitch_assembly <1>/S08_LEFT_HIP_PITCH_ZP10D/ZP10D_vendor_body",
+      "method": "added material only; 5 degree samples",
+      "range_deg": [
+        -70,
+        30
+      ],
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "servo": "S08",
+      "interface": "active",
+      "neighbour": "left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+      "method": "continuous 360 degree conservative cylindrical envelope",
+      "overlap_mm3": 0
+    }
+  ]
+}

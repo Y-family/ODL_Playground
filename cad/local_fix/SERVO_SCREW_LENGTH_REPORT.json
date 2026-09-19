@@ -1,0 +1,4071 @@
+{
+  "target_sha256": "5f6449b73b8130f0cf5dc1b73c0f90846b32007199a9bf83e0bf06a7e29ebad6",
+  "geometry_changed": false,
+  "screw_length_mm": 4.0,
+  "confirmed_length": "4 mm under-head length of supplier servo screws; thread size not inferred",
+  "scope": "servo case and attached horn screws only; passive supports S01/S06/S14 excluded",
+  "limitations": [
+    "Positive reach does not establish effective full-thread engagement or tightening strength.",
+    "Five axial rays screen modeled tip clearance; they do not measure full-thread engagement.",
+    "Actual tapped depth, head fit, complete bearing annulus and tool access are not verified.",
+    "Existing planar bore rims identify candidate seats; unresolved or multiple seats require review."
+  ],
+  "holes": [
+    {
+      "servo": "S01",
+      "interface": "case",
+      "hole": 1,
+      "entry_point_mm": [
+        -45.999999999999645,
+        -37.7072306601,
+        43.865938812376584
+      ],
+      "outward": [
+        2.1316282072803006e-14,
+        -0.0,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/trunk_assembly <1>/trunk_top",
+          "seat_distance_mm": 1.5,
+          "geometric_insertion_mm": 2.5,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S01",
+      "interface": "case",
+      "hole": 2,
+      "entry_point_mm": [
+        -45.999999999999645,
+        -22.707230660100002,
+        43.865938812376584
+      ],
+      "outward": [
+        2.1316282072803006e-14,
+        -0.0,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/trunk_assembly <1>/trunk_top",
+          "seat_distance_mm": 1.5,
+          "geometric_insertion_mm": 2.5,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S01",
+      "interface": "case",
+      "hole": 3,
+      "entry_point_mm": [
+        -39.0000000000005,
+        -37.25,
+        83.86593881237673
+      ],
+      "outward": [
+        -2.1316282072803006e-14,
+        0.0,
+        1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/trunk_assembly <1>/trunk_top",
+          "seat_distance_mm": 1.5,
+          "geometric_insertion_mm": 2.5,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S01",
+      "interface": "case",
+      "hole": 4,
+      "entry_point_mm": [
+        -39.0000000000005,
+        -23.25,
+        83.86593881237673
+      ],
+      "outward": [
+        -2.1316282072803006e-14,
+        0.0,
+        1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/trunk_assembly <1>/trunk_top",
+          "seat_distance_mm": 1.5,
+          "geometric_insertion_mm": 2.5,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S01",
+      "interface": "active",
+      "hole": 1,
+      "entry_point_mm": [
+        -19.018948347236886,
+        -23.250025645751478,
+        38.365938812334
+      ],
+      "outward": [
+        2.131628207280498e-14,
+        2.3307141963787675e-28,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/hip_roll_assembly <1>/roll_motor_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999992255,
+      "sampled_tip_clearance_mm": 1.9999999999992255
+    },
+    {
+      "servo": "S01",
+      "interface": "active",
+      "hole": 2,
+      "entry_point_mm": [
+        -12.00002564575148,
+        -30.231051652763114,
+        38.36593881233415
+      ],
+      "outward": [
+        2.131628207280498e-14,
+        2.3307141963787675e-28,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/hip_roll_assembly <1>/roll_motor_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999992255,
+      "sampled_tip_clearance_mm": 1.9999999999992255
+    },
+    {
+      "servo": "S01",
+      "interface": "active",
+      "hole": 3,
+      "entry_point_mm": [
+        -25.999974354248522,
+        -30.268948347236886,
+        38.36593881233385
+      ],
+      "outward": [
+        2.131628207280498e-14,
+        2.3307141963787675e-28,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/hip_roll_assembly <1>/roll_motor_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999992255,
+      "sampled_tip_clearance_mm": 1.9999999999992255
+    },
+    {
+      "servo": "S01",
+      "interface": "active",
+      "hole": 4,
+      "entry_point_mm": [
+        -18.981051652763114,
+        -37.24997435424852,
+        38.365938812334
+      ],
+      "outward": [
+        2.131628207280498e-14,
+        2.3307141963787675e-28,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/hip_roll_assembly <1>/roll_motor_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999992255,
+      "sampled_tip_clearance_mm": 1.9999999999992255
+    },
+    {
+      "servo": "S02",
+      "interface": "case",
+      "hole": 1,
+      "entry_point_mm": [
+        2.125000000027514,
+        -22.792769339835605,
+        26.92593881237144
+      ],
+      "outward": [
+        1.0,
+        -1.8829382497642655e-13,
+        -1.1723955140041653e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/hip_roll_assembly <1>/roll_motor_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S02",
+      "interface": "case",
+      "hole": 2,
+      "entry_point_mm": [
+        2.125000000024663,
+        -37.7927693398356,
+        26.92593881236979
+      ],
+      "outward": [
+        1.0,
+        -1.8829382497642655e-13,
+        -1.1723955140041653e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/hip_roll_assembly <1>/roll_motor_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S02",
+      "interface": "case",
+      "hole": 3,
+      "entry_point_mm": [
+        -37.87499999997339,
+        -23.249999999927237,
+        19.92593881237608
+      ],
+      "outward": [
+        -1.0,
+        1.8829382497642655e-13,
+        1.1723955140041653e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/hip_roll_assembly <1>/roll_motor_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S02",
+      "interface": "case",
+      "hole": 4,
+      "entry_point_mm": [
+        -37.874999999976055,
+        -37.24999999992724,
+        19.92593881237454
+      ],
+      "outward": [
+        -1.0,
+        1.8829382497642655e-13,
+        1.1723955140041653e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/hip_roll_assembly <1>/roll_motor_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S02",
+      "interface": "active",
+      "hole": 1,
+      "entry_point_mm": [
+        7.6250000000616724,
+        -37.249974354188524,
+        -0.055112840394053876
+      ],
+      "outward": [
+        1.0,
+        -1.9007018181585379e-13,
+        -1.1723955140042847e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999961307,
+      "sampled_tip_clearance_mm": 1.9999999999961307
+    },
+    {
+      "servo": "S02",
+      "interface": "active",
+      "hole": 2,
+      "entry_point_mm": [
+        7.625000000062176,
+        -30.268948347176117,
+        -7.074035541878693
+      ],
+      "outward": [
+        1.0,
+        -1.9007018181585379e-13,
+        -1.1723955140042847e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999961315,
+      "sampled_tip_clearance_mm": 1.9999999999961315
+    },
+    {
+      "servo": "S02",
+      "interface": "active",
+      "hole": 3,
+      "entry_point_mm": [
+        7.6250000000638245,
+        -30.231051652703886,
+        6.925913166618352
+      ],
+      "outward": [
+        1.0,
+        -1.9007018181585379e-13,
+        -1.1723955140042847e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999961307,
+      "sampled_tip_clearance_mm": 1.9999999999961307
+    },
+    {
+      "servo": "S02",
+      "interface": "active",
+      "hole": 4,
+      "entry_point_mm": [
+        7.625000000064328,
+        -23.25002564569148,
+        -0.09300953486628613
+      ],
+      "outward": [
+        1.0,
+        -1.9007018181585379e-13,
+        -1.1723955140042847e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999961307,
+      "sampled_tip_clearance_mm": 1.9999999999961307
+    },
+    {
+      "servo": "S02",
+      "interface": "passive",
+      "hole": 1,
+      "entry_point_mm": [
+        -44.374999999931404,
+        -37.215442881202634,
+        -0.7687593002804731
+      ],
+      "outward": [
+        -1.0,
+        1.9007018181698954e-13,
+        1.1723955140118227e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S02",
+      "interface": "passive",
+      "hole": 2,
+      "entry_point_mm": [
+        -44.374999999929315,
+        -30.944698112586405,
+        6.891381693648565
+      ],
+      "outward": [
+        -1.0,
+        1.9007018181698954e-13,
+        1.1723955140118227e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S02",
+      "interface": "passive",
+      "hole": 3,
+      "entry_point_mm": [
+        -44.37499999993068,
+        -29.555301887273597,
+        -7.039504068896706
+      ],
+      "outward": [
+        -1.0,
+        1.9007018181698954e-13,
+        1.1723955140118227e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S02",
+      "interface": "passive",
+      "hole": 4,
+      "entry_point_mm": [
+        -44.37499999992859,
+        -23.284557118657364,
+        0.6206369250323331
+      ],
+      "outward": [
+        -1.0,
+        1.9007018181698954e-13,
+        1.1723955140118227e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S03",
+      "interface": "case",
+      "hole": 1,
+      "entry_point_mm": [
+        -8.059999999980235,
+        -114.42499999993656,
+        -7.531291847731929
+      ],
+      "outward": [
+        -1.0658141036401503e-14,
+        -1.0,
+        -1.1368683772161603e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S03",
+      "interface": "case",
+      "hole": 2,
+      "entry_point_mm": [
+        -8.059999999980555,
+        -114.42499999993827,
+        7.468708152268071
+      ],
+      "outward": [
+        -1.0658141036401503e-14,
+        -1.0,
+        -1.1368683772161603e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S03",
+      "interface": "case",
+      "hole": 3,
+      "entry_point_mm": [
+        -15.059999999979748,
+        -74.42499999993653,
+        -7.074061187627528
+      ],
+      "outward": [
+        1.0658141036401503e-14,
+        1.0,
+        1.1368683772161603e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S03",
+      "interface": "case",
+      "hole": 4,
+      "entry_point_mm": [
+        -15.059999999980047,
+        -74.42499999993812,
+        6.925938812372472
+      ],
+      "outward": [
+        1.0658141036401503e-14,
+        1.0,
+        1.1368683772161603e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/right_roll_to_pitch_assembly <1>/right_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S03",
+      "interface": "active",
+      "hole": 1,
+      "entry_point_mm": [
+        -35.04105165274326,
+        -119.92499999990079,
+        6.925913166609501
+      ],
+      "outward": [
+        -1.2434497875808247e-14,
+        -1.0,
+        -1.136868377216706e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <1>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.999999999918984,
+      "sampled_tip_clearance_mm": 1.999999999918984
+    },
+    {
+      "servo": "S03",
+      "interface": "active",
+      "hole": 2,
+      "entry_point_mm": [
+        -42.05997435422852,
+        -119.92499999989991,
+        -0.055112840402280885
+      ],
+      "outward": [
+        -1.2434497875808247e-14,
+        -1.0,
+        -1.136868377216706e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <1>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999189697,
+      "sampled_tip_clearance_mm": 1.9999999999189697
+    },
+    {
+      "servo": "S03",
+      "interface": "active",
+      "hole": 3,
+      "entry_point_mm": [
+        -28.06002564573148,
+        -119.92499999990008,
+        -0.09300953487575912
+      ],
+      "outward": [
+        -1.2434497875808247e-14,
+        -1.0,
+        -1.136868377216706e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <1>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999189697,
+      "sampled_tip_clearance_mm": 1.9999999999189697
+    },
+    {
+      "servo": "S03",
+      "interface": "active",
+      "hole": 4,
+      "entry_point_mm": [
+        -35.07894834721674,
+        -119.9249999998992,
+        -7.074035541887541
+      ],
+      "outward": [
+        -1.2434497875808247e-14,
+        -1.0,
+        -1.136868377216706e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <1>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.999999999918984,
+      "sampled_tip_clearance_mm": 1.999999999918984
+    },
+    {
+      "servo": "S03",
+      "interface": "passive",
+      "hole": 1,
+      "entry_point_mm": [
+        -35.754698112635985,
+        -67.92499999998077,
+        6.8913816936395875
+      ],
+      "outward": [
+        1.2434497875939943e-14,
+        1.0,
+        1.1368683772170166e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S03",
+      "interface": "passive",
+      "hole": 2,
+      "entry_point_mm": [
+        -28.09455711870732,
+        -67.92499999998016,
+        0.6206369250228974
+      ],
+      "outward": [
+        1.2434497875939943e-14,
+        1.0,
+        1.1368683772170166e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S03",
+      "interface": "passive",
+      "hole": 3,
+      "entry_point_mm": [
+        -42.02544288125268,
+        -67.92499999997982,
+        -0.7687593002890774
+      ],
+      "outward": [
+        1.2434497875939943e-14,
+        1.0,
+        1.1368683772170166e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S03",
+      "interface": "passive",
+      "hole": 4,
+      "entry_point_mm": [
+        -34.365301887324016,
+        -67.9249999999792,
+        -7.039504068905767
+      ],
+      "outward": [
+        1.2434497875939943e-14,
+        1.0,
+        1.1368683772170166e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S04",
+      "interface": "case",
+      "hole": 1,
+      "entry_point_mm": [
+        -42.51723066010001,
+        -73.29999999999394,
+        -51.72406118759993
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S04",
+      "interface": "case",
+      "hole": 2,
+      "entry_point_mm": [
+        -27.51723066010001,
+        -73.29999999999394,
+        -51.72406118759992
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <1>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S04",
+      "interface": "case",
+      "hole": 3,
+      "entry_point_mm": [
+        -42.06,
+        -113.29999999999394,
+        -58.724061187599936
+      ],
+      "outward": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <1>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S04",
+      "interface": "case",
+      "hole": 4,
+      "entry_point_mm": [
+        -28.060000000000002,
+        -113.29999999999394,
+        -58.72406118759993
+      ],
+      "outward": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <1>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S04",
+      "interface": "active",
+      "hole": 1,
+      "entry_point_mm": [
+        -28.06002564575148,
+        -67.79999999995,
+        -78.70511284036311
+      ],
+      "outward": [
+        -2.5060200436366713e-30,
+        1.0,
+        2.220446049250561e-16
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <3>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 4.0,
+      "sampled_tip_clearance_mm": 2.0
+    },
+    {
+      "servo": "S04",
+      "interface": "active",
+      "hole": 2,
+      "entry_point_mm": [
+        -35.041051652763116,
+        -67.79999999995,
+        -85.72403554184852
+      ],
+      "outward": [
+        -2.5060200436366713e-30,
+        1.0,
+        2.220446049250561e-16
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <3>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 4.0,
+      "sampled_tip_clearance_mm": 2.0
+    },
+    {
+      "servo": "S04",
+      "interface": "active",
+      "hole": 3,
+      "entry_point_mm": [
+        -35.07894834723689,
+        -67.79999999995,
+        -71.72408683335148
+      ],
+      "outward": [
+        -2.5060200436366713e-30,
+        1.0,
+        2.220446049250561e-16
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <3>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 4.0,
+      "sampled_tip_clearance_mm": 2.0
+    },
+    {
+      "servo": "S04",
+      "interface": "active",
+      "hole": 4,
+      "entry_point_mm": [
+        -42.059974354248524,
+        -67.79999999995,
+        -78.74300953483689
+      ],
+      "outward": [
+        -2.5060200436366713e-30,
+        1.0,
+        2.220446049250561e-16
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <3>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 4.0,
+      "sampled_tip_clearance_mm": 2.0
+    },
+    {
+      "servo": "S04",
+      "interface": "passive",
+      "hole": 1,
+      "entry_point_mm": [
+        -28.094557118727316,
+        -119.7999999999,
+        -79.41875930025591
+      ],
+      "outward": [
+        -1.27653718201897e-28,
+        -1.0,
+        -2.220446049270584e-16
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <3>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S04",
+      "interface": "passive",
+      "hole": 2,
+      "entry_point_mm": [
+        -34.36530188734408,
+        -119.7999999999,
+        -71.75861830632732
+      ],
+      "outward": [
+        -1.27653718201897e-28,
+        -1.0,
+        -2.220446049270584e-16
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <3>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S04",
+      "interface": "passive",
+      "hole": 3,
+      "entry_point_mm": [
+        -35.75469811265592,
+        -119.7999999999,
+        -85.68950406887268
+      ],
+      "outward": [
+        -1.27653718201897e-28,
+        -1.0,
+        -2.220446049270584e-16
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <3>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S04",
+      "interface": "passive",
+      "hole": 4,
+      "entry_point_mm": [
+        -42.02544288127269,
+        -119.7999999999,
+        -78.02936307494409
+      ],
+      "outward": [
+        -1.27653718201897e-28,
+        -1.0,
+        -2.220446049270584e-16
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <3>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S05",
+      "interface": "case",
+      "hole": 1,
+      "entry_point_mm": [
+        -42.51723066010001,
+        -73.39999999999394,
+        -130.37406118759992
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <3>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S05",
+      "interface": "case",
+      "hole": 2,
+      "entry_point_mm": [
+        -27.51723066010001,
+        -73.39999999999394,
+        -130.37406118759992
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <3>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S05",
+      "interface": "case",
+      "hole": 3,
+      "entry_point_mm": [
+        -42.06,
+        -113.39999999999394,
+        -137.37406118759995
+      ],
+      "outward": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <3>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S05",
+      "interface": "case",
+      "hole": 4,
+      "entry_point_mm": [
+        -28.060000000000002,
+        -113.39999999999394,
+        -137.37406118759995
+      ],
+      "outward": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <3>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S05",
+      "interface": "active",
+      "hole": 1,
+      "entry_point_mm": [
+        -28.06002564575148,
+        -67.89999999995,
+        -157.35511284036312
+      ],
+      "outward": [
+        -2.5060200436366713e-30,
+        1.0,
+        2.220446049250561e-16
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/foot_assembly <1>/foot_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 4.0,
+      "sampled_tip_clearance_mm": 2.0
+    },
+    {
+      "servo": "S05",
+      "interface": "active",
+      "hole": 2,
+      "entry_point_mm": [
+        -35.041051652763116,
+        -67.89999999995,
+        -164.3740355418485
+      ],
+      "outward": [
+        -2.5060200436366713e-30,
+        1.0,
+        2.220446049250561e-16
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/foot_assembly <1>/foot_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.999999999999986,
+      "sampled_tip_clearance_mm": 1.9999999999999858
+    },
+    {
+      "servo": "S05",
+      "interface": "active",
+      "hole": 3,
+      "entry_point_mm": [
+        -35.07894834723689,
+        -67.89999999995,
+        -150.3740868333515
+      ],
+      "outward": [
+        -2.5060200436366713e-30,
+        1.0,
+        2.220446049250561e-16
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/foot_assembly <1>/foot_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 4.0,
+      "sampled_tip_clearance_mm": 2.0
+    },
+    {
+      "servo": "S05",
+      "interface": "active",
+      "hole": 4,
+      "entry_point_mm": [
+        -42.059974354248524,
+        -67.89999999995,
+        -157.3930095348369
+      ],
+      "outward": [
+        -2.5060200436366713e-30,
+        1.0,
+        2.220446049250561e-16
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/foot_assembly <1>/foot_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 4.0,
+      "sampled_tip_clearance_mm": 2.0
+    },
+    {
+      "servo": "S05",
+      "interface": "passive",
+      "hole": 1,
+      "entry_point_mm": [
+        -28.094557118727316,
+        -119.8999999999,
+        -158.06875930025592
+      ],
+      "outward": [
+        -1.27653718201897e-28,
+        -1.0,
+        -2.220446049270584e-16
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/foot_assembly <1>/foot_side",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S05",
+      "interface": "passive",
+      "hole": 2,
+      "entry_point_mm": [
+        -34.36530188734408,
+        -119.8999999999,
+        -150.40861830632733
+      ],
+      "outward": [
+        -1.27653718201897e-28,
+        -1.0,
+        -2.220446049270584e-16
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/foot_assembly <1>/foot_side",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S05",
+      "interface": "passive",
+      "hole": 3,
+      "entry_point_mm": [
+        -35.75469811265592,
+        -119.89999999990002,
+        -164.33950406887269
+      ],
+      "outward": [
+        -1.27653718201897e-28,
+        -1.0,
+        -2.220446049270584e-16
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/foot_assembly <1>/foot_side",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S05",
+      "interface": "passive",
+      "hole": 4,
+      "entry_point_mm": [
+        -42.02544288127269,
+        -119.8999999999,
+        -156.6793630749441
+      ],
+      "outward": [
+        -1.27653718201897e-28,
+        -1.0,
+        -2.220446049270584e-16
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/foot_assembly <1>/foot_side",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S06",
+      "interface": "case",
+      "hole": 1,
+      "entry_point_mm": [
+        -45.999999999999645,
+        22.79276933989999,
+        43.865938812376584
+      ],
+      "outward": [
+        2.1316282072803006e-14,
+        -0.0,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/trunk_assembly <1>/trunk_top",
+          "seat_distance_mm": 1.5,
+          "geometric_insertion_mm": 2.5,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S06",
+      "interface": "case",
+      "hole": 2,
+      "entry_point_mm": [
+        -45.999999999999645,
+        37.79276933989999,
+        43.865938812376584
+      ],
+      "outward": [
+        2.1316282072803006e-14,
+        -0.0,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/trunk_assembly <1>/trunk_top",
+          "seat_distance_mm": 1.5,
+          "geometric_insertion_mm": 2.5,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S06",
+      "interface": "case",
+      "hole": 3,
+      "entry_point_mm": [
+        -39.0000000000005,
+        23.249999999999993,
+        83.86593881237673
+      ],
+      "outward": [
+        -2.1316282072803006e-14,
+        0.0,
+        1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/trunk_assembly <1>/trunk_top",
+          "seat_distance_mm": 1.5,
+          "geometric_insertion_mm": 2.5,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S06",
+      "interface": "case",
+      "hole": 4,
+      "entry_point_mm": [
+        -39.0000000000005,
+        37.24999999999999,
+        83.86593881237673
+      ],
+      "outward": [
+        -2.1316282072803006e-14,
+        0.0,
+        1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/trunk_assembly <1>/trunk_top",
+          "seat_distance_mm": 1.5,
+          "geometric_insertion_mm": 2.5,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S06",
+      "interface": "active",
+      "hole": 1,
+      "entry_point_mm": [
+        -19.01894834722688,
+        37.24997435424852,
+        38.365938812333
+      ],
+      "outward": [
+        2.131628207280498e-14,
+        2.2175619602861287e-28,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/hip_roll_assembly <2>/roll_motor_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S06",
+      "interface": "active",
+      "hole": 2,
+      "entry_point_mm": [
+        -12.000025645741479,
+        30.26894834723688,
+        38.36593881233315
+      ],
+      "outward": [
+        2.131628207280498e-14,
+        2.2175619602861287e-28,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/hip_roll_assembly <2>/roll_motor_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S06",
+      "interface": "active",
+      "hole": 3,
+      "entry_point_mm": [
+        -25.999974354238518,
+        30.23105165276312,
+        38.36593881233285
+      ],
+      "outward": [
+        2.131628207280498e-14,
+        2.2175619602861287e-28,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/hip_roll_assembly <2>/roll_motor_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S06",
+      "interface": "active",
+      "hole": 4,
+      "entry_point_mm": [
+        -18.98105165275312,
+        23.250025645751478,
+        38.365938812333
+      ],
+      "outward": [
+        2.131628207280498e-14,
+        2.2175619602861287e-28,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/hip_roll_assembly <2>/roll_motor_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S07",
+      "interface": "case",
+      "hole": 1,
+      "entry_point_mm": [
+        2.125000000024542,
+        37.70723066002524,
+        26.92593881237795
+      ],
+      "outward": [
+        1.0,
+        -7.105427357601002e-14,
+        8.171241461241152e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/hip_roll_assembly <2>/roll_motor_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S07",
+      "interface": "case",
+      "hole": 2,
+      "entry_point_mm": [
+        2.1250000000235296,
+        22.70723066002524,
+        26.925938812379385
+      ],
+      "outward": [
+        1.0,
+        -7.105427357601002e-14,
+        8.171241461241152e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/hip_roll_assembly <2>/roll_motor_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S07",
+      "interface": "case",
+      "hole": 3,
+      "entry_point_mm": [
+        -37.87499999997491,
+        37.24999999992726,
+        19.925938812374724
+      ],
+      "outward": [
+        -1.0,
+        7.105427357601002e-14,
+        -8.171241461241152e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/hip_roll_assembly <2>/roll_motor_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S07",
+      "interface": "case",
+      "hole": 4,
+      "entry_point_mm": [
+        -37.874999999975856,
+        23.24999999992726,
+        19.925938812376067
+      ],
+      "outward": [
+        -1.0,
+        7.105427357601002e-14,
+        -8.171241461241152e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/hip_roll_assembly <2>/roll_motor_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S07",
+      "interface": "active",
+      "hole": 1,
+      "entry_point_mm": [
+        7.625000000066526,
+        23.25002564567448,
+        -0.05511284038379889
+      ],
+      "outward": [
+        1.0,
+        -6.750155989740861e-14,
+        8.17124146128092e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999968203,
+      "sampled_tip_clearance_mm": 1.9999999999968203
+    },
+    {
+      "servo": "S07",
+      "interface": "active",
+      "hole": 2,
+      "entry_point_mm": [
+        7.625000000067571,
+        30.231051652685448,
+        -7.074035541869868
+      ],
+      "outward": [
+        1.0,
+        -6.750155989740861e-14,
+        8.17124146128092e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999968194,
+      "sampled_tip_clearance_mm": 1.9999999999968194
+    },
+    {
+      "servo": "S07",
+      "interface": "active",
+      "hole": 3,
+      "entry_point_mm": [
+        7.6250000000664295,
+        30.26894834716055,
+        6.9259131666271685
+      ],
+      "outward": [
+        1.0,
+        -6.750155989740861e-14,
+        8.17124146128092e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999968203,
+      "sampled_tip_clearance_mm": 1.9999999999968203
+    },
+    {
+      "servo": "S07",
+      "interface": "active",
+      "hole": 4,
+      "entry_point_mm": [
+        7.625000000067474,
+        37.24997435417151,
+        -0.09300953485890111
+      ],
+      "outward": [
+        1.0,
+        -6.750155989740861e-14,
+        8.17124146128092e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999968194,
+      "sampled_tip_clearance_mm": 1.9999999999968194
+    },
+    {
+      "servo": "S07",
+      "interface": "passive",
+      "hole": 1,
+      "entry_point_mm": [
+        -44.37499999993042,
+        23.28455711865326,
+        -0.7687593002809635
+      ],
+      "outward": [
+        -1.0,
+        6.750155989767761e-14,
+        -8.17124146128086e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S07",
+      "interface": "passive",
+      "hole": 2,
+      "entry_point_mm": [
+        -44.374999999930616,
+        29.555301887270637,
+        6.89138169364714
+      ],
+      "outward": [
+        -1.0,
+        6.750155989767761e-14,
+        -8.17124146128086e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S07",
+      "interface": "passive",
+      "hole": 3,
+      "entry_point_mm": [
+        -44.374999999929386,
+        30.944698112581364,
+        -7.0395040688983395
+      ],
+      "outward": [
+        -1.0,
+        6.750155989767761e-14,
+        -8.17124146128086e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S07",
+      "interface": "passive",
+      "hole": 4,
+      "entry_point_mm": [
+        -44.374999999929585,
+        37.21544288119874,
+        0.6206369250297635
+      ],
+      "outward": [
+        -1.0,
+        6.750155989767761e-14,
+        -8.17124146128086e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S08",
+      "interface": "case",
+      "hole": 1,
+      "entry_point_mm": [
+        -8.059999999979933,
+        114.42499999993706,
+        7.383169472472012
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S08",
+      "interface": "case",
+      "hole": 2,
+      "entry_point_mm": [
+        -8.059999999979933,
+        114.42499999993706,
+        -7.616830527527988
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S08",
+      "interface": "case",
+      "hole": 3,
+      "entry_point_mm": [
+        -15.059999999979933,
+        74.42499999993706,
+        6.92593881237201
+      ],
+      "outward": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S08",
+      "interface": "case",
+      "hole": 4,
+      "entry_point_mm": [
+        -15.059999999979933,
+        74.42499999993706,
+        -7.07406118762799
+      ],
+      "outward": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/left_roll_to_pitch_assembly <1>/left_roll_to_pitch",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S08",
+      "interface": "active",
+      "hole": 1,
+      "entry_point_mm": [
+        -35.04105165274312,
+        119.92499999998,
+        -7.07403554187637
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <2>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999990052,
+      "sampled_tip_clearance_mm": 1.9999999999990052
+    },
+    {
+      "servo": "S08",
+      "interface": "active",
+      "hole": 2,
+      "entry_point_mm": [
+        -42.05997435422852,
+        119.92499999998,
+        -0.09300953486472911
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <2>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999990052,
+      "sampled_tip_clearance_mm": 1.9999999999990052
+    },
+    {
+      "servo": "S08",
+      "interface": "active",
+      "hole": 3,
+      "entry_point_mm": [
+        -28.06002564573148,
+        119.92499999998,
+        -0.05511284039097088
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <2>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999990052,
+      "sampled_tip_clearance_mm": 1.9999999999990052
+    },
+    {
+      "servo": "S08",
+      "interface": "active",
+      "hole": 4,
+      "entry_point_mm": [
+        -35.07894834721688,
+        119.92499999998,
+        6.925913166620671
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <2>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999990052,
+      "sampled_tip_clearance_mm": 1.9999999999990052
+    },
+    {
+      "servo": "S08",
+      "interface": "passive",
+      "hole": 1,
+      "entry_point_mm": [
+        -35.75469811263578,
+        67.924999999981,
+        -7.039504068900558
+      ],
+      "outward": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <2>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S08",
+      "interface": "passive",
+      "hole": 2,
+      "entry_point_mm": [
+        -28.094557118707304,
+        67.924999999981,
+        -0.7687593002836394
+      ],
+      "outward": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <2>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S08",
+      "interface": "passive",
+      "hole": 3,
+      "entry_point_mm": [
+        -42.0254428812527,
+        67.924999999981,
+        0.6206369250279195
+      ],
+      "outward": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <2>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S08",
+      "interface": "passive",
+      "hole": 4,
+      "entry_point_mm": [
+        -34.36530188732422,
+        67.924999999981,
+        6.8913816936448375
+      ],
+      "outward": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <2>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S09",
+      "interface": "case",
+      "hole": 1,
+      "entry_point_mm": [
+        -27.602769339900124,
+        73.29999999999048,
+        -51.72406118760172
+      ],
+      "outward": [
+        -7.105427357601002e-14,
+        -1.0,
+        -9.947598300641403e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <2>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S09",
+      "interface": "case",
+      "hole": 2,
+      "entry_point_mm": [
+        -42.60276933990012,
+        73.29999999999154,
+        -51.72406118760055
+      ],
+      "outward": [
+        -7.105427357601002e-14,
+        -1.0,
+        -9.947598300641403e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <2>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S09",
+      "interface": "case",
+      "hole": 3,
+      "entry_point_mm": [
+        -28.059999999997824,
+        113.2999999999912,
+        -58.724061187597705
+      ],
+      "outward": [
+        7.105427357601002e-14,
+        1.0,
+        9.947598300641403e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <2>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S09",
+      "interface": "case",
+      "hole": 4,
+      "entry_point_mm": [
+        -42.05999999999783,
+        113.2999999999922,
+        -58.72406118759661
+      ],
+      "outward": [
+        7.105427357601002e-14,
+        1.0,
+        9.947598300641403e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <2>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S09",
+      "interface": "active",
+      "hole": 1,
+      "entry_point_mm": [
+        -42.059974354248524,
+        67.7999999999505,
+        -78.70511284036257
+      ],
+      "outward": [
+        -7.117673825632649e-14,
+        -1.0,
+        -9.947598300680881e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <4>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999997584,
+      "sampled_tip_clearance_mm": 1.9999999999997584
+    },
+    {
+      "servo": "S09",
+      "interface": "active",
+      "hole": 2,
+      "entry_point_mm": [
+        -35.07894834723743,
+        67.7999999999507,
+        -85.72403554184852
+      ],
+      "outward": [
+        -7.117673825632649e-14,
+        -1.0,
+        -9.947598300680881e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <4>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999997584,
+      "sampled_tip_clearance_mm": 1.9999999999997584
+    },
+    {
+      "servo": "S09",
+      "interface": "active",
+      "hole": 3,
+      "entry_point_mm": [
+        -35.041051652762576,
+        67.7999999999493,
+        -71.72408683335148
+      ],
+      "outward": [
+        -7.117673825632649e-14,
+        -1.0,
+        -9.947598300680881e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <4>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999997584,
+      "sampled_tip_clearance_mm": 1.9999999999997584
+    },
+    {
+      "servo": "S09",
+      "interface": "active",
+      "hole": 4,
+      "entry_point_mm": [
+        -28.060025645751484,
+        67.7999999999495,
+        -78.74300953483743
+      ],
+      "outward": [
+        -7.117673825632649e-14,
+        -1.0,
+        -9.947598300680881e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <4>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999997584,
+      "sampled_tip_clearance_mm": 1.9999999999997584
+    },
+    {
+      "servo": "S09",
+      "interface": "passive",
+      "hole": 1,
+      "entry_point_mm": [
+        -42.02544288127274,
+        119.79999999995057,
+        -79.41875930024536
+      ],
+      "outward": [
+        7.117673825622169e-14,
+        1.0,
+        9.947598300701245e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <4>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S09",
+      "interface": "passive",
+      "hole": 2,
+      "entry_point_mm": [
+        -35.75469811265537,
+        119.79999999994936,
+        -71.75861830631726
+      ],
+      "outward": [
+        7.117673825622169e-14,
+        1.0,
+        9.947598300701245e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <4>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S09",
+      "interface": "passive",
+      "hole": 3,
+      "entry_point_mm": [
+        -34.365301887344636,
+        119.79999999995064,
+        -85.68950406886273
+      ],
+      "outward": [
+        7.117673825622169e-14,
+        1.0,
+        9.947598300701245e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <4>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S09",
+      "interface": "passive",
+      "hole": 4,
+      "entry_point_mm": [
+        -28.094557118727263,
+        119.79999999994943,
+        -78.02936307493464
+      ],
+      "outward": [
+        7.117673825622169e-14,
+        1.0,
+        9.947598300701245e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <4>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S10",
+      "interface": "case",
+      "hole": 1,
+      "entry_point_mm": [
+        -27.602769339900004,
+        73.39999999999023,
+        -130.374061187602
+      ],
+      "outward": [
+        -7.105427357601002e-14,
+        -1.0,
+        -1.1368683772161603e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <4>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S10",
+      "interface": "case",
+      "hole": 2,
+      "entry_point_mm": [
+        -42.60276933990001,
+        73.3999999999913,
+        -130.37406118760072
+      ],
+      "outward": [
+        -7.105427357601002e-14,
+        -1.0,
+        -1.1368683772161603e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <4>/left_knee_to_ankle_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S10",
+      "interface": "case",
+      "hole": 3,
+      "entry_point_mm": [
+        -28.05999999999776,
+        113.39999999999105,
+        -137.37406118759742
+      ],
+      "outward": [
+        7.105427357601002e-14,
+        1.0,
+        1.1368683772161603e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <4>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S10",
+      "interface": "case",
+      "hole": 4,
+      "entry_point_mm": [
+        -42.05999999999776,
+        113.39999999999205,
+        -137.37406118759623
+      ],
+      "outward": [
+        7.105427357601002e-14,
+        1.0,
+        1.1368683772161603e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/knee_and_ankle_assembly <4>/left_knee_to_ankle_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.0
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S10",
+      "interface": "active",
+      "hole": 1,
+      "entry_point_mm": [
+        -42.059974354248524,
+        67.8999999999505,
+        -157.35511284036252
+      ],
+      "outward": [
+        -7.117673825633269e-14,
+        -1.0,
+        -1.1368683772167828e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/foot_assembly <2>/foot_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999999005,
+      "sampled_tip_clearance_mm": 1.9999999999999005
+    },
+    {
+      "servo": "S10",
+      "interface": "active",
+      "hole": 2,
+      "entry_point_mm": [
+        -35.07894834723748,
+        67.8999999999508,
+        -164.3740355418485
+      ],
+      "outward": [
+        -7.117673825633269e-14,
+        -1.0,
+        -1.1368683772167828e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/foot_assembly <2>/foot_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999999005,
+      "sampled_tip_clearance_mm": 1.9999999999999005
+    },
+    {
+      "servo": "S10",
+      "interface": "active",
+      "hole": 3,
+      "entry_point_mm": [
+        -35.041051652762526,
+        67.8999999999492,
+        -150.3740868333515
+      ],
+      "outward": [
+        -7.117673825633269e-14,
+        -1.0,
+        -1.1368683772167828e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/foot_assembly <2>/foot_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999999005,
+      "sampled_tip_clearance_mm": 1.9999999999999005
+    },
+    {
+      "servo": "S10",
+      "interface": "active",
+      "hole": 4,
+      "entry_point_mm": [
+        -28.060025645751484,
+        67.8999999999495,
+        -157.3930095348375
+      ],
+      "outward": [
+        -7.117673825633269e-14,
+        -1.0,
+        -1.1368683772167828e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/foot_assembly <2>/foot_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 3.9999999999999005,
+      "sampled_tip_clearance_mm": 1.9999999999999005
+    },
+    {
+      "servo": "S10",
+      "interface": "passive",
+      "hole": 1,
+      "entry_point_mm": [
+        -42.02544288127274,
+        119.89999999995057,
+        -158.06875930015536
+      ],
+      "outward": [
+        7.117673825627531e-14,
+        1.0,
+        1.136868377216943e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/foot_assembly <2>/foot_side",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S10",
+      "interface": "passive",
+      "hole": 2,
+      "entry_point_mm": [
+        -35.75469811265537,
+        119.89999999994926,
+        -150.40861830622725
+      ],
+      "outward": [
+        7.117673825627531e-14,
+        1.0,
+        1.136868377216943e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/foot_assembly <2>/foot_side",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S10",
+      "interface": "passive",
+      "hole": 3,
+      "entry_point_mm": [
+        -34.365301887344636,
+        119.89999999995074,
+        -164.33950406877273
+      ],
+      "outward": [
+        7.117673825627531e-14,
+        1.0,
+        1.136868377216943e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/foot_assembly <2>/foot_side",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S10",
+      "interface": "passive",
+      "hole": 4,
+      "entry_point_mm": [
+        -28.094557118727263,
+        119.89999999994943,
+        -156.67936307484462
+      ],
+      "outward": [
+        7.117673825627531e-14,
+        1.0,
+        1.136868377216943e-13
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/foot_assembly <2>/foot_side",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S11",
+      "interface": "case",
+      "hole": 1,
+      "entry_point_mm": [
+        16.45723066010048,
+        21.225000000000065,
+        63.000938812375864
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/trunk_assembly <1>/trunk_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.25
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S11",
+      "interface": "case",
+      "hole": 2,
+      "entry_point_mm": [
+        1.4572306601004783,
+        21.225000000000065,
+        63.00093881237544
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/trunk_assembly <1>/trunk_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.25
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S11",
+      "interface": "case",
+      "hole": 3,
+      "entry_point_mm": [
+        16.000000000000277,
+        -18.774999999999935,
+        70.00093881237585
+      ],
+      "outward": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/trunk_assembly <1>/trunk_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.25
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S11",
+      "interface": "case",
+      "hole": 4,
+      "entry_point_mm": [
+        2.000000000000277,
+        -18.774999999999935,
+        70.00093881237545
+      ],
+      "outward": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/trunk_assembly <1>/trunk_top",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.25
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S11",
+      "interface": "active",
+      "hole": 1,
+      "entry_point_mm": [
+        2.0000256457504806,
+        26.725000000044,
+        89.98199046513892
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_pitch_assembly <1>/neck_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 4.0,
+      "sampled_tip_clearance_mm": 2.0
+    },
+    {
+      "servo": "S11",
+      "interface": "active",
+      "hole": 2,
+      "entry_point_mm": [
+        8.981051652761918,
+        26.725000000044,
+        97.00091316662453
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_pitch_assembly <1>/neck_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 4.0,
+      "sampled_tip_clearance_mm": 2.0
+    },
+    {
+      "servo": "S11",
+      "interface": "active",
+      "hole": 3,
+      "entry_point_mm": [
+        9.018948347236082,
+        26.725000000044,
+        83.00096445812748
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_pitch_assembly <1>/neck_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 4.0,
+      "sampled_tip_clearance_mm": 2.0
+    },
+    {
+      "servo": "S11",
+      "interface": "active",
+      "hole": 4,
+      "entry_point_mm": [
+        15.99997435424752,
+        26.725000000044,
+        90.01988715961309
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_pitch_assembly <1>/neck_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 4.0,
+      "sampled_tip_clearance_mm": 2.0
+    },
+    {
+      "servo": "S11",
+      "interface": "passive",
+      "hole": 1,
+      "entry_point_mm": [
+        2.0345571187262887,
+        -25.27499999995,
+        90.69563692503165
+      ],
+      "outward": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_pitch_assembly <1>/neck_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S11",
+      "interface": "passive",
+      "hole": 2,
+      "entry_point_mm": [
+        8.30530188734336,
+        -25.27499999995,
+        83.0354959311033
+      ],
+      "outward": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_pitch_assembly <1>/neck_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S11",
+      "interface": "passive",
+      "hole": 3,
+      "entry_point_mm": [
+        9.69469811265464,
+        -25.27499999995,
+        96.96638169364871
+      ],
+      "outward": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_pitch_assembly <1>/neck_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S11",
+      "interface": "passive",
+      "hole": 4,
+      "entry_point_mm": [
+        15.965442881271711,
+        -25.27499999995,
+        89.30624069972036
+      ],
+      "outward": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_pitch_assembly <1>/neck_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S12",
+      "interface": "case",
+      "hole": 1,
+      "entry_point_mm": [
+        16.45723066009848,
+        21.225000000000065,
+        129.00093881236987
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_pitch_assembly <1>/neck_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.25
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S12",
+      "interface": "case",
+      "hole": 2,
+      "entry_point_mm": [
+        1.4572306600984817,
+        21.225000000000065,
+        129.00093881236944
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_pitch_assembly <1>/neck_left_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.25
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S12",
+      "interface": "case",
+      "hole": 3,
+      "entry_point_mm": [
+        15.99999999999828,
+        -18.774999999999935,
+        136.00093881236987
+      ],
+      "outward": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_pitch_assembly <1>/neck_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.25
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S12",
+      "interface": "case",
+      "hole": 4,
+      "entry_point_mm": [
+        1.9999999999982805,
+        -18.774999999999935,
+        136.00093881236947
+      ],
+      "outward": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_pitch_assembly <1>/neck_right_sheet",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.25
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S12",
+      "interface": "active",
+      "hole": 1,
+      "entry_point_mm": [
+        2.0000256457484804,
+        26.725000000044,
+        155.98199046513292
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_pitch_to_yaw",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 4.0,
+      "sampled_tip_clearance_mm": 2.0
+    },
+    {
+      "servo": "S12",
+      "interface": "active",
+      "hole": 2,
+      "entry_point_mm": [
+        8.981051652759918,
+        26.725000000044,
+        163.00091316661852
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_pitch_to_yaw",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 4.0,
+      "sampled_tip_clearance_mm": 2.0
+    },
+    {
+      "servo": "S12",
+      "interface": "active",
+      "hole": 3,
+      "entry_point_mm": [
+        9.018948347234081,
+        26.725000000044,
+        149.0009644581215
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_pitch_to_yaw",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 4.0,
+      "sampled_tip_clearance_mm": 2.0
+    },
+    {
+      "servo": "S12",
+      "interface": "active",
+      "hole": 4,
+      "entry_point_mm": [
+        15.99997435424552,
+        26.725000000044,
+        156.0198871596071
+      ],
+      "outward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_pitch_to_yaw",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": 4.0,
+      "sampled_tip_clearance_mm": 2.0
+    },
+    {
+      "servo": "S12",
+      "interface": "passive",
+      "hole": 1,
+      "entry_point_mm": [
+        2.0345571187242886,
+        -25.27499999995,
+        156.69563692502564
+      ],
+      "outward": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_pitch_to_yaw",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S12",
+      "interface": "passive",
+      "hole": 2,
+      "entry_point_mm": [
+        8.30530188734136,
+        -25.27499999995,
+        149.0354959310973
+      ],
+      "outward": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_pitch_to_yaw",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S12",
+      "interface": "passive",
+      "hole": 3,
+      "entry_point_mm": [
+        9.69469811265264,
+        -25.27499999995,
+        162.96638169364272
+      ],
+      "outward": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_pitch_to_yaw",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S12",
+      "interface": "passive",
+      "hole": 4,
+      "entry_point_mm": [
+        15.965442881269711,
+        -25.27499999995,
+        155.30624069971438
+      ],
+      "outward": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_pitch_to_yaw",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S13",
+      "interface": "case",
+      "hole": 1,
+      "entry_point_mm": [
+        35.99999999999564,
+        -7.357230660100008,
+        218.0759388123664
+      ],
+      "outward": [
+        -2.1316282072803006e-14,
+        -0.0,
+        1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_yaw_assembly <1>/head_yaw_to_roll",
+          "seat_distance_mm": 1.20094,
+          "geometric_insertion_mm": 2.79906,
+          "bore_radius_mm": 1.25
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S13",
+      "interface": "case",
+      "hole": 2,
+      "entry_point_mm": [
+        35.99999999999564,
+        7.642769339899992,
+        218.0759388123664
+      ],
+      "outward": [
+        -2.1316282072803006e-14,
+        -0.0,
+        1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_yaw_assembly <1>/head_yaw_to_roll",
+          "seat_distance_mm": 1.20094,
+          "geometric_insertion_mm": 2.79906,
+          "bore_radius_mm": 1.25
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S13",
+      "interface": "case",
+      "hole": 3,
+      "entry_point_mm": [
+        28.999999999996493,
+        -6.900000000000006,
+        178.07593881236625
+      ],
+      "outward": [
+        2.1316282072803006e-14,
+        0.0,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_yaw_assembly <1>/head_yaw_to_roll",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.25
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S13",
+      "interface": "case",
+      "hole": 4,
+      "entry_point_mm": [
+        28.999999999996493,
+        7.099999999999994,
+        178.07593881236625
+      ],
+      "outward": [
+        2.1316282072803006e-14,
+        0.0,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_yaw_assembly <1>/head_yaw_to_roll",
+          "seat_distance_mm": 2.0,
+          "geometric_insertion_mm": 2.0,
+          "bore_radius_mm": 1.25
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S13",
+      "interface": "active",
+      "hole": 1,
+      "entry_point_mm": [
+        9.018948347232879,
+        7.09997435424852,
+        223.57593881241
+      ],
+      "outward": [
+        -2.131628207280498e-14,
+        2.2175619602861287e-28,
+        1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_pitch_to_yaw",
+          "seat_distance_mm": 1.0,
+          "geometric_insertion_mm": 3.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S13",
+      "interface": "active",
+      "hole": 2,
+      "entry_point_mm": [
+        2.0000256457474794,
+        0.11894834723687912,
+        223.57593881240985
+      ],
+      "outward": [
+        -2.131628207280498e-14,
+        2.2175619602861287e-28,
+        1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_pitch_to_yaw",
+          "seat_distance_mm": 1.0,
+          "geometric_insertion_mm": 3.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S13",
+      "interface": "active",
+      "hole": 3,
+      "entry_point_mm": [
+        15.99997435424452,
+        0.08105165276312089,
+        223.57593881241013
+      ],
+      "outward": [
+        -2.131628207280498e-14,
+        2.2175619602861287e-28,
+        1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_pitch_to_yaw",
+          "seat_distance_mm": 1.0,
+          "geometric_insertion_mm": 3.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S13",
+      "interface": "active",
+      "hole": 4,
+      "entry_point_mm": [
+        8.98105165275912,
+        -6.899974354248521,
+        223.57593881241
+      ],
+      "outward": [
+        -2.131628207280498e-14,
+        2.2175619602861287e-28,
+        1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_pitch_to_yaw",
+          "seat_distance_mm": 1.0,
+          "geometric_insertion_mm": 3.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S13",
+      "interface": "passive",
+      "hole": 1,
+      "entry_point_mm": [
+        8.305301887341221,
+        7.0654428812726975,
+        171.57593881240996
+      ],
+      "outward": [
+        2.1316282072998438e-14,
+        1.2150035662214021e-26,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_pitch_to_yaw",
+          "seat_distance_mm": 1.0,
+          "geometric_insertion_mm": 3.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S13",
+      "interface": "passive",
+      "hole": 2,
+      "entry_point_mm": [
+        15.965442881269698,
+        0.7946981126557794,
+        171.57593881241013
+      ],
+      "outward": [
+        2.1316282072998438e-14,
+        1.2150035662214021e-26,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_pitch_to_yaw",
+          "seat_distance_mm": 1.0,
+          "geometric_insertion_mm": 3.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S13",
+      "interface": "passive",
+      "hole": 3,
+      "entry_point_mm": [
+        2.034557118724302,
+        -0.5946981126557794,
+        171.57593881240985
+      ],
+      "outward": [
+        2.1316282072998438e-14,
+        1.2150035662214021e-26,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_pitch_to_yaw",
+          "seat_distance_mm": 1.0,
+          "geometric_insertion_mm": 3.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S13",
+      "interface": "passive",
+      "hole": 4,
+      "entry_point_mm": [
+        9.694698112652778,
+        -6.865442881272698,
+        171.57593881241002
+      ],
+      "outward": [
+        2.1316282072998438e-14,
+        1.2150035662214021e-26,
+        -1.0
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_pitch_to_yaw",
+          "seat_distance_mm": 1.0,
+          "geometric_insertion_mm": 3.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S14",
+      "interface": "case",
+      "hole": 1,
+      "entry_point_mm": [
+        96.4499999999657,
+        7.557230660013033,
+        223.8509388123593
+      ],
+      "outward": [
+        1.0,
+        -7.105427357601002e-15,
+        -2.842170943040401e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_assembly <1>/head_roll_mount",
+          "seat_distance_mm": 1.2,
+          "geometric_insertion_mm": 2.8,
+          "bore_radius_mm": 1.25
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S14",
+      "interface": "case",
+      "hole": 2,
+      "entry_point_mm": [
+        96.44999999996558,
+        -7.442769339986967,
+        223.85093881235946
+      ],
+      "outward": [
+        1.0,
+        -7.105427357601002e-15,
+        -2.842170943040401e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_assembly <1>/head_roll_mount",
+          "seat_distance_mm": 1.2,
+          "geometric_insertion_mm": 2.8,
+          "bore_radius_mm": 1.25
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S14",
+      "interface": "case",
+      "hole": 3,
+      "entry_point_mm": [
+        56.449999999965414,
+        7.099999999913258,
+        216.8509388123609
+      ],
+      "outward": [
+        -1.0,
+        7.105427357601002e-15,
+        2.842170943040401e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_assembly <1>/head_roll_mount",
+          "seat_distance_mm": 1.2,
+          "geometric_insertion_mm": 2.8,
+          "bore_radius_mm": 1.25
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S14",
+      "interface": "case",
+      "hole": 4,
+      "entry_point_mm": [
+        56.449999999965314,
+        -6.900000000086742,
+        216.85093881236105
+      ],
+      "outward": [
+        -1.0,
+        7.105427357601002e-15,
+        2.842170943040401e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/head_assembly <1>/head_roll_mount",
+          "seat_distance_mm": 1.2,
+          "geometric_insertion_mm": 2.8,
+          "bore_radius_mm": 1.25
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S14",
+      "interface": "active",
+      "hole": 1,
+      "entry_point_mm": [
+        49.95000000000892,
+        -6.865442881360245,
+        196.15624069970428
+      ],
+      "outward": [
+        -1.0,
+        7.609489102382427e-15,
+        4.036738569695241e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_yaw_assembly <1>/head_yaw_to_roll",
+          "seat_distance_mm": 1.0,
+          "geometric_insertion_mm": 3.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S14",
+      "interface": "active",
+      "hole": 2,
+      "entry_point_mm": [
+        49.950000000009275,
+        -0.5946981127432501,
+        203.8163816936327
+      ],
+      "outward": [
+        -1.0,
+        7.609489102382427e-15,
+        4.036738569695241e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_yaw_assembly <1>/head_yaw_to_roll",
+          "seat_distance_mm": 1.0,
+          "geometric_insertion_mm": 3.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S14",
+      "interface": "active",
+      "hole": 3,
+      "entry_point_mm": [
+        49.95000000000872,
+        0.7946981125681701,
+        189.8854959310873
+      ],
+      "outward": [
+        -1.0,
+        7.609489102382427e-15,
+        4.036738569695241e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_yaw_assembly <1>/head_yaw_to_roll",
+          "seat_distance_mm": 1.0,
+          "geometric_insertion_mm": 3.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    },
+    {
+      "servo": "S14",
+      "interface": "active",
+      "hole": 4,
+      "entry_point_mm": [
+        49.95000000000908,
+        7.065442881185165,
+        197.5456369250157
+      ],
+      "outward": [
+        -1.0,
+        7.609489102382427e-15,
+        4.036738569695241e-14
+      ],
+      "status": "positive_reach_not_tightening_verified",
+      "candidates": [
+        {
+          "host": "/open_duck_mini_covers_forward_review/neck_yaw_assembly <1>/head_yaw_to_roll",
+          "seat_distance_mm": 1.0,
+          "geometric_insertion_mm": 3.0,
+          "bore_radius_mm": 1.6
+        }
+      ],
+      "sampled_servo_obstruction_depth_mm": null,
+      "sampled_tip_clearance_mm": null
+    }
+  ]
+}
