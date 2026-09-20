@@ -1,0 +1,40 @@
+{
+  "input_sha256": "7a98135bef434052fc506fd699d5d8b264d819e87876664c8a0c65b4f4b0e781",
+  "output_sha256": "993ac313d66fab58c424a1c54d9b6e69165a0e24e090927024f7b47b1b0a0af3",
+  "changed": [
+    "body_middle_bottom"
+  ],
+  "committed": false,
+  "source": "scripts/cad/repair_motion_clearance_current.py",
+  "geometry": "Extend rear hip opening edge from X=-54 to -64 mm in Y=\u00b140..56, Z=-36..17 mm",
+  "screw_protection": "No removed material inside each cylindrical-face bounding box expanded 2 mm",
+  "checks": [
+    {
+      "joint": "S01",
+      "angles_deg": [
+        0,
+        30
+      ],
+      "step_deg": 1,
+      "tested_pair_poses": 403,
+      "asserted_clearance_lower_bound_mm": 0.199
+    },
+    {
+      "joint": "S06",
+      "angles_deg": [
+        -30,
+        0
+      ],
+      "step_deg": 1,
+      "tested_pair_poses": 403,
+      "asserted_clearance_lower_bound_mm": 0.199
+    }
+  ],
+  "export_verification": "137 leaves valid; labels, volumes, bounds and per-face type, area, centre and bounds match expected geometry",
+  "snapshot": "cadgen snapshot failed: missing matching Chromium. Mesh-rendered comparison reviewed instead.",
+  "limitations": [
+    "Opposite hip yaw directions remain unresolved at front shell fastenings",
+    "Other joints and simultaneous joint motion not cleared",
+    "1 degree samples do not prove continuous clearance"
+  ]
+}

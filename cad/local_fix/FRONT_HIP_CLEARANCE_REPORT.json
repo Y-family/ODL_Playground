@@ -1,0 +1,98 @@
+{
+  "input_sha256": "993ac313d66fab58c424a1c54d9b6e69165a0e24e090927024f7b47b1b0a0af3",
+  "changed": [
+    "body_front",
+    "body_middle_bottom"
+  ],
+  "old_fastening_z": 2.857885438806,
+  "new_fastening_z": 25,
+  "checks": [
+    {
+      "joint": "S01",
+      "new_material_clearance_pass": true,
+      "hip_pose_checks": 412,
+      "clearance_lower_bound_mm": 0.5203625854511031
+    },
+    {
+      "joint": "S02",
+      "new_material_clearance_pass": true,
+      "hip_pose_checks": 0,
+      "clearance_lower_bound_mm": null
+    },
+    {
+      "joint": "S03",
+      "new_material_clearance_pass": true,
+      "hip_pose_checks": 0,
+      "clearance_lower_bound_mm": null
+    },
+    {
+      "joint": "S04",
+      "new_material_clearance_pass": true,
+      "hip_pose_checks": 0,
+      "clearance_lower_bound_mm": null
+    },
+    {
+      "joint": "S05",
+      "new_material_clearance_pass": true,
+      "hip_pose_checks": 0,
+      "clearance_lower_bound_mm": null
+    },
+    {
+      "joint": "S06",
+      "new_material_clearance_pass": true,
+      "hip_pose_checks": 412,
+      "clearance_lower_bound_mm": 0.520362585451366
+    },
+    {
+      "joint": "S07",
+      "new_material_clearance_pass": true,
+      "hip_pose_checks": 0,
+      "clearance_lower_bound_mm": null
+    },
+    {
+      "joint": "S08",
+      "new_material_clearance_pass": true,
+      "hip_pose_checks": 0,
+      "clearance_lower_bound_mm": null
+    },
+    {
+      "joint": "S09",
+      "new_material_clearance_pass": true,
+      "hip_pose_checks": 0,
+      "clearance_lower_bound_mm": null
+    },
+    {
+      "joint": "S10",
+      "new_material_clearance_pass": true,
+      "hip_pose_checks": 0,
+      "clearance_lower_bound_mm": null
+    },
+    {
+      "joint": "S11",
+      "new_material_clearance_pass": true,
+      "hip_pose_checks": 0,
+      "clearance_lower_bound_mm": null
+    },
+    {
+      "joint": "S12",
+      "new_material_clearance_pass": true,
+      "hip_pose_checks": 0,
+      "clearance_lower_bound_mm": null
+    },
+    {
+      "joint": "S13",
+      "new_material_clearance_pass": true,
+      "hip_pose_checks": 0,
+      "clearance_lower_bound_mm": null
+    },
+    {
+      "joint": "S14",
+      "new_material_clearance_pass": true,
+      "hip_pose_checks": 0,
+      "clearance_lower_bound_mm": null
+    }
+  ],
+  "output_sha256": "0de0e9be36944ef3b6ed1b7682e6ba1c62fb0f5b8537159e180a56c06bec89fa",
+  "export_leaf_count": 137,
+  "complete_local_validity": true
+}

@@ -1,0 +1,88 @@
+{
+  "input_sha256": "a938eff0c7d57ff634a32114734a3dcb57dae7845653025cccc716c15155a936",
+  "parts": [
+    {
+      "joint": "S02",
+      "removed_mm3": 159.0987878216981,
+      "outer_y_abs_mm": 43.15,
+      "inner_y_abs_mm": 17.35,
+      "minimum_gap_mm": 8.163983402671565,
+      "limits_deg": [
+        -25,
+        25
+      ],
+      "step_deg": 1,
+      "validity": {
+        "solidCount": 1,
+        "volumes": [
+          7475.237795164961
+        ],
+        "reasons": []
+      }
+    },
+    {
+      "joint": "S07",
+      "removed_mm3": 159.0987878217181,
+      "outer_y_abs_mm": 43.15,
+      "inner_y_abs_mm": 17.35,
+      "minimum_gap_mm": 8.163983402671247,
+      "limits_deg": [
+        -25,
+        25
+      ],
+      "step_deg": 1,
+      "validity": {
+        "solidCount": 1,
+        "volumes": [
+          7475.237795166075
+        ],
+        "reasons": []
+      }
+    }
+  ],
+  "output_sha256": "945755d7426bbf28b3c6a4287605ddcdbf206a2ae3e8879e663378aa50a43976",
+  "export_leaf_count": 137,
+  "previous_outer_repair": {
+    "input_sha256": "0de0e9be36944ef3b6ed1b7682e6ba1c62fb0f5b8537159e180a56c06bec89fa",
+    "parts": [
+      {
+        "joint": "S02",
+        "removed_mm3": 50.062914273825506,
+        "outer_y_abs_mm": 43.15,
+        "minimum_gap_mm": 8.163983402671564,
+        "limits_deg": [
+          -25,
+          25
+        ],
+        "step_deg": 1,
+        "validity": {
+          "solidCount": 1,
+          "volumes": [
+            7634.3365829882705
+          ],
+          "reasons": []
+        }
+      },
+      {
+        "joint": "S07",
+        "removed_mm3": 50.062914273983765,
+        "outer_y_abs_mm": 43.15,
+        "minimum_gap_mm": 8.163983402671246,
+        "limits_deg": [
+          -25,
+          25
+        ],
+        "step_deg": 1,
+        "validity": {
+          "solidCount": 1,
+          "volumes": [
+            7634.336582988622
+          ],
+          "reasons": []
+        }
+      }
+    ],
+    "output_sha256": "a938eff0c7d57ff634a32114734a3dcb57dae7845653025cccc716c15155a936",
+    "export_leaf_count": 137
+  }
+}

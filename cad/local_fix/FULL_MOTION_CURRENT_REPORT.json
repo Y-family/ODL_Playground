@@ -1,0 +1,874 @@
+{
+  "target_sha256": "993ac313d66fab58c424a1c54d9b6e69165a0e24e090927024f7b47b1b0a0af3",
+  "scanner_sha256": "58c4b8b68e0c51244b23874c6ff70f2e86b3e87d4c91580a0854c49de38b6c1c",
+  "mjcf_sha256": "682baf8c4a517dfe148776a5bb4c0e3ee3163095451fbbd41b7b2592a5f2503d",
+  "axes": {
+    "S12": [
+      [
+        8.999999999997002,
+        0.7250000000469985,
+        156.00093881237
+      ],
+      [
+        -8.361834352060642e-17,
+        -1.0,
+        1.8732529380327426e-16
+      ]
+    ],
+    "S02": [
+      [
+        -18.374999999931223,
+        -30.249999999935,
+        -0.07406118762712
+      ],
+      [
+        -1.0000000000000002,
+        1.2364106529e-14,
+        -2.2426505097525044e-14
+      ]
+    ],
+    "S05": [
+      [
+        -35.06,
+        -93.899999999925,
+        -157.3740611876
+      ],
+      [
+        -1.2168350936435996e-14,
+        -1.0000000000000007,
+        2.060984466371243e-16
+      ]
+    ],
+    "S13": [
+      [
+        8.9999999999965,
+        0.0999999999999992,
+        197.57593881240996
+      ],
+      [
+        -2.232120398368149e-14,
+        1.8732529380327608e-16,
+        1.0
+      ]
+    ],
+    "S03": [
+      [
+        -35.05999999998,
+        -93.92499999991287,
+        -0.07406118763605507
+      ],
+      [
+        1.2142061924074975e-14,
+        1.0000000000000002,
+        -3.2347204538755113e-16
+      ]
+    ],
+    "S04": [
+      [
+        -35.06,
+        -93.799999999925,
+        -78.7240611876
+      ],
+      [
+        -1.2107118596478596e-14,
+        -1.0000000000000007,
+        2.060984466375469e-16
+      ]
+    ],
+    "S10": [
+      [
+        -35.06,
+        93.89999999995,
+        -157.37406118755
+      ],
+      [
+        7.956965112075405e-14,
+        -1.0000000000000002,
+        6.960127070587202e-16
+      ]
+    ],
+    "S14": [
+      [
+        75.9500000000095,
+        0.0999999999119301,
+        196.85093881236
+      ],
+      [
+        -1.0,
+        8.361832032325718e-17,
+        -2.232120398368149e-14
+      ]
+    ],
+    "S07": [
+      [
+        -18.374999999931475,
+        30.2499999999245,
+        -0.07406118762347536
+      ],
+      [
+        -1.0000000000000002,
+        -7.934760651580002e-14,
+        -2.248773743732504e-14
+      ]
+    ],
+    "S06": [
+      [
+        -18.999999999994998,
+        30.25,
+        64.365938812333
+      ],
+      [
+        -2.2265692832400002e-14,
+        -2.6666893440883368e-17,
+        1.0
+      ]
+    ],
+    "S11": [
+      [
+        8.999999999998998,
+        0.7250000000469985,
+        90.000938812376
+      ],
+      [
+        6.123277885599776e-17,
+        -1.0,
+        -1.2258063339448554e-28
+      ]
+    ],
+    "S01": [
+      [
+        -19.0,
+        -30.25,
+        64.365938812334
+      ],
+      [
+        -2.22044604926e-14,
+        2.957164716581373e-16,
+        1.0
+      ]
+    ],
+    "S08": [
+      [
+        -35.05999999998,
+        93.9249999999805,
+        -0.07406118762785496
+      ],
+      [
+        7.956965112072505e-14,
+        -1.0000000000000002,
+        6.960127070197884e-16
+      ]
+    ],
+    "S09": [
+      [
+        -35.06,
+        93.79999999995,
+        -78.724061187595
+      ],
+      [
+        7.956965112071888e-14,
+        -1.0000000000000002,
+        6.960127070336092e-16
+      ]
+    ]
+  },
+  "angle_convention": "MJCF joint angle; current STEP neutral pose and measured servo axes",
+  "limit_source": "playground/open_duck_mini_zp10d/xmls/open_duck_mini_zp10d.xml",
+  "excluded_reference_roots": [
+    "Frame <1>",
+    "Frame <2>",
+    "Frame <3>",
+    "Frame <4>",
+    "Frame <5>"
+  ],
+  "step_deg": 5,
+  "penetration_tolerance_mm": 0.05,
+  "joints": [
+    {
+      "id": "S01",
+      "name": "right_hip_yaw",
+      "limits": [
+        -30,
+        30
+      ],
+      "moving_count": 28,
+      "candidate_collisions": [
+        {
+          "moving": "/right_roll_to_pitch_assembly <1>[16]/right_roll_to_pitch[0]",
+          "fixed": "/body_assembly <1>[14]/body_middle_bottom[1]",
+          "angles_deg": [
+            10,
+            15,
+            20,
+            25,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "name": "right_hip_roll",
+      "limits": [
+        -25,
+        25
+      ],
+      "moving_count": 23,
+      "candidate_collisions": []
+    },
+    {
+      "id": "S03",
+      "name": "right_hip_pitch",
+      "limits": [
+        -30,
+        70
+      ],
+      "moving_count": 19,
+      "candidate_collisions": [
+        {
+          "moving": "/right_cache[5]",
+          "fixed": "/right_roll_to_pitch_assembly <1>[16]/right_roll_to_pitch[0]",
+          "angles_deg": [
+            45,
+            50,
+            55,
+            60,
+            65,
+            70
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "name": "right_knee",
+      "limits": [
+        -90,
+        90
+      ],
+      "moving_count": 12,
+      "candidate_collisions": []
+    },
+    {
+      "id": "S05",
+      "name": "right_ankle",
+      "limits": [
+        -90,
+        90
+      ],
+      "moving_count": 6,
+      "candidate_collisions": [
+        {
+          "moving": "/foot_assembly <1>[17]/foot_side[1]",
+          "fixed": "/knee_and_ankle_assembly <3>[13]/left_knee_to_ankle_right_sheet[3]",
+          "angles_deg": [
+            -90,
+            -85,
+            -80,
+            -75,
+            -70,
+            -65,
+            -60,
+            40,
+            45,
+            50,
+            55,
+            60,
+            65,
+            70,
+            75,
+            80,
+            85,
+            90
+          ]
+        },
+        {
+          "moving": "/foot_assembly <1>[17]/foot_side[1]",
+          "fixed": "/knee_and_ankle_assembly <3>[13]/leg_spacer[0]",
+          "angles_deg": [
+            85,
+            90
+          ]
+        },
+        {
+          "moving": "/foot_assembly <1>[17]/foot_top[2]",
+          "fixed": "/knee_and_ankle_assembly <3>[13]/left_knee_to_ankle_left_sheet[1]",
+          "angles_deg": [
+            -90,
+            -85,
+            -80,
+            -75,
+            -70,
+            55,
+            60,
+            65,
+            70,
+            75,
+            80,
+            85,
+            90
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "name": "left_hip_yaw",
+      "limits": [
+        -30,
+        30
+      ],
+      "moving_count": 28,
+      "candidate_collisions": [
+        {
+          "moving": "/left_roll_to_pitch_assembly <1>[25]/left_roll_to_pitch[0]",
+          "fixed": "/body_assembly <1>[14]/body_middle_bottom[1]",
+          "angles_deg": [
+            -30,
+            -25,
+            -20,
+            -15,
+            -10
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "name": "left_hip_roll",
+      "limits": [
+        -25,
+        25
+      ],
+      "moving_count": 23,
+      "candidate_collisions": []
+    },
+    {
+      "id": "S08",
+      "name": "left_hip_pitch",
+      "limits": [
+        -70,
+        30
+      ],
+      "moving_count": 19,
+      "candidate_collisions": [
+        {
+          "moving": "/left_cache[0]",
+          "fixed": "/left_roll_to_pitch_assembly <1>[25]/left_roll_to_pitch[0]",
+          "angles_deg": [
+            -70,
+            -65,
+            -60,
+            -55,
+            -50,
+            -45
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "name": "left_knee",
+      "limits": [
+        -90,
+        90
+      ],
+      "moving_count": 12,
+      "candidate_collisions": []
+    },
+    {
+      "id": "S10",
+      "name": "left_ankle",
+      "limits": [
+        -90,
+        90
+      ],
+      "moving_count": 6,
+      "candidate_collisions": [
+        {
+          "moving": "/foot_assembly <2>[22]/foot_side[0]",
+          "fixed": "/knee_and_ankle_assembly <4>[20]/left_knee_to_ankle_right_sheet[0]",
+          "angles_deg": [
+            -90,
+            -85,
+            -80,
+            -75,
+            -70,
+            -65,
+            -60,
+            40,
+            45,
+            50,
+            55,
+            60,
+            65,
+            70,
+            75,
+            80,
+            85,
+            90
+          ]
+        },
+        {
+          "moving": "/foot_assembly <2>[22]/foot_side[0]",
+          "fixed": "/knee_and_ankle_assembly <4>[20]/leg_spacer[2]",
+          "angles_deg": [
+            85,
+            90
+          ]
+        },
+        {
+          "moving": "/foot_assembly <2>[22]/foot_top[2]",
+          "fixed": "/knee_and_ankle_assembly <4>[20]/left_knee_to_ankle_left_sheet[1]",
+          "angles_deg": [
+            -90,
+            -85,
+            -80,
+            -75,
+            -70,
+            55,
+            60,
+            65,
+            70,
+            75,
+            80,
+            85,
+            90
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S11",
+      "name": "neck_pitch",
+      "limits": [
+        -20,
+        65
+      ],
+      "moving_count": 41,
+      "candidate_collisions": [
+        {
+          "moving": "/head_assembly <1>[21]/head[4]",
+          "fixed": "/body_assembly <1>[14]/18650 pack <1>[7]/holder[1]",
+          "angles_deg": [
+            65
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/head[4]",
+          "fixed": "/body_assembly <1>[14]/battery_pack_lid[4]",
+          "angles_deg": [
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/head[4]",
+          "fixed": "/body_assembly <1>[14]/body_back[2]",
+          "angles_deg": [
+            45,
+            50,
+            55,
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/head[4]",
+          "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+          "angles_deg": [
+            40,
+            45,
+            50,
+            55,
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/head[4]",
+          "fixed": "/body_assembly <1>[14]/power_switch[6]",
+          "angles_deg": [
+            45,
+            50,
+            55,
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/head[4]",
+          "fixed": "/body_assembly <1>[14]/usb_c_charger[3]",
+          "angles_deg": [
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/head[4]",
+          "fixed": "/trunk_assembly <1>[24]/Board[2]",
+          "angles_deg": [
+            65
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/head[4]",
+          "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+          "angles_deg": [
+            65
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/head_bot_sheet[11]",
+          "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+          "angles_deg": [
+            40,
+            45,
+            50,
+            55,
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/head_bot_sheet[11]",
+          "fixed": "/trunk_assembly <1>[24]/Board[2]",
+          "angles_deg": [
+            65
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/head_bot_sheet[11]",
+          "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+          "angles_deg": [
+            65
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+          "fixed": "/body_assembly <1>[14]/body_back[2]",
+          "angles_deg": [
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+          "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+          "angles_deg": [
+            55,
+            60
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+          "fixed": "/body_assembly <1>[14]/power_switch[6]",
+          "angles_deg": [
+            65
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/sg90[13]",
+          "fixed": "/body_assembly <1>[14]/body_back[2]",
+          "angles_deg": [
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/sg90[13]",
+          "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+          "angles_deg": [
+            55,
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/sg90[22]",
+          "fixed": "/body_assembly <1>[14]/body_back[2]",
+          "angles_deg": [
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/sg90[22]",
+          "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+          "angles_deg": [
+            55,
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/head_pitch_to_yaw[6]",
+          "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+          "angles_deg": [
+            65
+          ]
+        },
+        {
+          "moving": "/neck_pitch_assembly <1>[8]/neck_left_sheet[0]",
+          "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+          "angles_deg": [
+            55,
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/neck_pitch_assembly <1>[8]/neck_left_sheet[0]",
+          "fixed": "/trunk_assembly <1>[24]/S06_LEFT_HIP_YAW_ZP10D[5]/ZP10D_vendor_passive_horn[1]",
+          "angles_deg": [
+            55,
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/neck_pitch_assembly <1>[8]/neck_left_sheet[0]",
+          "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+          "angles_deg": [
+            50,
+            55,
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/neck_pitch_assembly <1>[8]/neck_right_sheet[1]",
+          "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+          "angles_deg": [
+            55,
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/neck_pitch_assembly <1>[8]/neck_right_sheet[1]",
+          "fixed": "/trunk_assembly <1>[24]/S01_RIGHT_HIP_YAW_ZP10D[8]/ZP10D_vendor_passive_horn[1]",
+          "angles_deg": [
+            55,
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/neck_pitch_assembly <1>[8]/neck_right_sheet[1]",
+          "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+          "angles_deg": [
+            50,
+            55,
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+          "fixed": "/body_assembly <1>[14]/body_back[2]",
+          "angles_deg": [
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+          "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+          "angles_deg": [
+            50,
+            55,
+            60,
+            65
+          ]
+        },
+        {
+          "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+          "fixed": "/body_assembly <1>[14]/power_switch[6]",
+          "angles_deg": [
+            65
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S12",
+      "name": "head_pitch",
+      "limits": [
+        -45,
+        45
+      ],
+      "moving_count": 36,
+      "candidate_collisions": [
+        {
+          "moving": "/head_pitch_to_yaw[6]",
+          "fixed": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_body[0]",
+          "angles_deg": [
+            -45,
+            -40,
+            -35,
+            -30,
+            -25,
+            -20,
+            -15,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40,
+            45
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S13",
+      "name": "head_yaw",
+      "limits": [
+        -160,
+        160
+      ],
+      "moving_count": 31,
+      "candidate_collisions": [
+        {
+          "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+          "fixed": "/head_pitch_to_yaw[6]",
+          "angles_deg": [
+            -140,
+            -135,
+            -130,
+            -125,
+            -120,
+            -115,
+            -75,
+            -70,
+            -65,
+            -60,
+            -55
+          ]
+        },
+        {
+          "moving": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+          "fixed": "/head_pitch_to_yaw[6]",
+          "angles_deg": [
+            -160,
+            -155,
+            -150,
+            -145,
+            -140,
+            -135,
+            -130,
+            -125,
+            -120,
+            -115,
+            -110,
+            110,
+            115,
+            120,
+            125,
+            130,
+            135,
+            140,
+            145,
+            150,
+            155,
+            160
+          ]
+        },
+        {
+          "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+          "fixed": "/head_pitch_to_yaw[6]",
+          "angles_deg": [
+            -160,
+            -155,
+            -150,
+            -145,
+            -140,
+            -135,
+            -130,
+            -125,
+            -120,
+            -115,
+            -110,
+            110,
+            115,
+            120,
+            125,
+            130,
+            135,
+            140,
+            145,
+            150,
+            155,
+            160
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S14",
+      "name": "head_roll",
+      "limits": [
+        -30,
+        30
+      ],
+      "moving_count": 27,
+      "candidate_collisions": [
+        {
+          "moving": "/head_assembly <1>[21]/sg90[13]",
+          "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+          "angles_deg": [
+            15,
+            20,
+            25,
+            30
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/sg90[22]",
+          "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+          "angles_deg": [
+            -30,
+            -25,
+            -20,
+            -15
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+          "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+          "angles_deg": [
+            -30,
+            -25,
+            -20,
+            -15
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+          "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+          "angles_deg": [
+            -30,
+            -25,
+            -20,
+            -15,
+            -10
+          ]
+        },
+        {
+          "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+          "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+          "angles_deg": [
+            -30,
+            -25,
+            -20,
+            -15,
+            -10,
+            -5
+          ]
+        }
+      ]
+    }
+  ]
+}
