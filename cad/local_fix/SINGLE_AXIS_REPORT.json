@@ -1,0 +1,367 @@
+{
+  "source_sha256": "38eed0a3f2c5dbf61d30335866a1c712f69a19d3561b5ca52742976ff2f8a422",
+  "source": "/tmp/single-axis/supports/source.step",
+  "output_sha256": "579174b3c4ec4748bdf7a085cce242e13e990bb4326f991f284d9c480c675115",
+  "candidate": "/tmp/single-axis/supports/review.step",
+  "modified": {
+    "path": "open_duck_mini_covers_forward_review/trunk_assembly <1>/trunk_top",
+    "removed_by_side": [
+      {
+        "servo": "S01",
+        "volume_mm3": 1804.0390561656436,
+        "bounds": [
+          [
+            -32.3500001,
+            -45.61000010000023,
+            83.86593871233302
+          ],
+          [
+            -9.1999999999954,
+            -17.8802466083,
+            93.365938812334
+          ]
+        ],
+        "detached_collar_sliver_mm3": 3.794734237586739
+      },
+      {
+        "servo": "S06",
+        "volume_mm3": 1802.574010903741,
+        "bounds": [
+          [
+            -32.3500001,
+            17.8802466083,
+            83.86593871233302
+          ],
+          [
+            -9.199999899994909,
+            45.6100001,
+            93.365938912333
+          ]
+        ],
+        "detached_collar_sliver_mm3": 3.7947344404674905
+      }
+    ],
+    "removed_mm3": 3606.613065971039,
+    "adaptive_volume_balance_residual_mm3": 0.008349401258783473,
+    "validity": {
+      "solidCount": 1,
+      "volumes": [
+        139815.43055594972
+      ],
+      "reasons": []
+    },
+    "obsolete_horn_bore_faces_removed": 16,
+    "retained_cylinder_faces": 56,
+    "case_seat_guards_xy": [
+      [
+        -39,
+        -37.25
+      ],
+      [
+        -39,
+        -23.25
+      ],
+      [
+        -39,
+        23.25
+      ],
+      [
+        -39,
+        37.25
+      ]
+    ]
+  },
+  "leaf_count_before": 135,
+  "leaf_count_after": 135,
+  "unchanged_leaf_count": 134,
+  "export_checks": "Hierarchy, per-face geometry, colours and all 14 joint axes checked.",
+  "limits_deg": [
+    -20,
+    39
+  ],
+  "scope": "Only trunk_top upper-horn supports and their direct interfaces.",
+  "current_validity": {
+    "trunk_top": {
+      "solidCount": 1,
+      "volumes": [
+        139815.43055592937
+      ],
+      "reasons": []
+    }
+  },
+  "static_checks": [
+    {
+      "part": "open_duck_mini_covers_forward_review/trunk_assembly <1>/S06_LEFT_HIP_YAW_ZP10D/ZP10D_vendor_body",
+      "gap_before_mm": 4.6625814320577774e-11,
+      "gap_after_mm": 3.694822225952521e-13,
+      "overlap_before_mm3": 0,
+      "overlap_after_mm3": 0
+    },
+    {
+      "part": "open_duck_mini_covers_forward_review/trunk_assembly <1>/S06_LEFT_HIP_YAW_ZP10D/ZP10D_vendor_active_horn",
+      "gap_before_mm": 1.0103477124633218,
+      "gap_after_mm": 1.0103477124633218,
+      "overlap_before_mm3": 0,
+      "overlap_after_mm3": 0
+    },
+    {
+      "part": "open_duck_mini_covers_forward_review/trunk_assembly <1>/S11_NECK_PITCH_ZP10D/ZP10D_vendor_body",
+      "gap_before_mm": 0.0,
+      "gap_after_mm": 0.0,
+      "overlap_before_mm3": 0,
+      "overlap_after_mm3": 0
+    },
+    {
+      "part": "open_duck_mini_covers_forward_review/trunk_assembly <1>/S11_NECK_PITCH_ZP10D/ZP10D_vendor_passive_horn",
+      "gap_before_mm": 2.000938812376006,
+      "gap_after_mm": 2.000938812376006,
+      "overlap_before_mm3": 0,
+      "overlap_after_mm3": 0
+    },
+    {
+      "part": "open_duck_mini_covers_forward_review/trunk_assembly <1>/S11_NECK_PITCH_ZP10D/ZP10D_vendor_active_horn",
+      "gap_before_mm": 2.000938812376006,
+      "gap_after_mm": 2.000938812376006,
+      "overlap_before_mm3": 0,
+      "overlap_after_mm3": 0
+    },
+    {
+      "part": "open_duck_mini_covers_forward_review/trunk_assembly <1>/S01_RIGHT_HIP_YAW_ZP10D/ZP10D_vendor_body",
+      "gap_before_mm": 4.6625814320577774e-11,
+      "gap_after_mm": 3.694822225952521e-13,
+      "overlap_before_mm3": 0,
+      "overlap_after_mm3": 0
+    },
+    {
+      "part": "open_duck_mini_covers_forward_review/trunk_assembly <1>/S01_RIGHT_HIP_YAW_ZP10D/ZP10D_vendor_active_horn",
+      "gap_before_mm": 1.0103477124561873,
+      "gap_after_mm": 1.0103477124561873,
+      "overlap_before_mm3": 0,
+      "overlap_after_mm3": 0
+    }
+  ],
+  "motion_checks": [
+    {
+      "moving": "neck_left_sheet",
+      "fixed": "trunk_top",
+      "step_deg": 1,
+      "min_gap_mm": 1.1188737668587363,
+      "minimum_angle_deg": -20
+    },
+    {
+      "moving": "neck_right_sheet",
+      "fixed": "trunk_top",
+      "step_deg": 1,
+      "min_gap_mm": 1.803296566283724,
+      "minimum_angle_deg": -3
+    }
+  ],
+  "former_support_angles": [
+    {
+      "neck": "neck_left_sheet",
+      "angle_deg": 46,
+      "gap_before_mm": 0.0,
+      "gap_after_mm": 1.1188737668587492,
+      "overlap_before_mm3": 0.4513437471562783,
+      "overlap_after_mm3": 0
+    },
+    {
+      "neck": "neck_left_sheet",
+      "angle_deg": 47,
+      "gap_before_mm": 0.0,
+      "gap_after_mm": 1.1188737668587492,
+      "overlap_before_mm3": 0.6797524859335141,
+      "overlap_after_mm3": 0
+    },
+    {
+      "neck": "neck_left_sheet",
+      "angle_deg": 52,
+      "gap_before_mm": 0.0,
+      "gap_after_mm": 1.1188737668587492,
+      "overlap_before_mm3": 4.339950417868485,
+      "overlap_after_mm3": 0
+    },
+    {
+      "neck": "neck_left_sheet",
+      "angle_deg": 55,
+      "gap_before_mm": 0.0,
+      "gap_after_mm": 1.1188737668587492,
+      "overlap_before_mm3": 13.06129984619345,
+      "overlap_after_mm3": 0
+    },
+    {
+      "neck": "neck_left_sheet",
+      "angle_deg": 65,
+      "gap_before_mm": 0.0,
+      "gap_after_mm": 1.1188737668587492,
+      "overlap_before_mm3": 182.50812164301715,
+      "overlap_after_mm3": 0
+    },
+    {
+      "neck": "neck_right_sheet",
+      "angle_deg": 46,
+      "gap_before_mm": 0.0,
+      "gap_after_mm": 1.803296566283732,
+      "overlap_before_mm3": 2.16818425649173,
+      "overlap_after_mm3": 0
+    },
+    {
+      "neck": "neck_right_sheet",
+      "angle_deg": 47,
+      "gap_before_mm": 0.0,
+      "gap_after_mm": 1.803296566283732,
+      "overlap_before_mm3": 3.8048486517924003,
+      "overlap_after_mm3": 0
+    },
+    {
+      "neck": "neck_right_sheet",
+      "angle_deg": 52,
+      "gap_before_mm": 0.0,
+      "gap_after_mm": 1.803296566283732,
+      "overlap_before_mm3": 18.842841840687477,
+      "overlap_after_mm3": 0
+    },
+    {
+      "neck": "neck_right_sheet",
+      "angle_deg": 55,
+      "gap_before_mm": 0.0,
+      "gap_after_mm": 1.803296566283732,
+      "overlap_before_mm3": 39.08243889594343,
+      "overlap_after_mm3": 0
+    },
+    {
+      "neck": "neck_right_sheet",
+      "angle_deg": 65,
+      "gap_before_mm": 0.0,
+      "gap_after_mm": 1.803296566283729,
+      "overlap_before_mm3": 234.46285364146843,
+      "overlap_after_mm3": 0
+    }
+  ],
+  "local_motion_passed": true,
+  "prior_single_axis_stage_sha256": "38eed0a3f2c5dbf61d30335866a1c712f69a19d3561b5ca52742976ff2f8a422",
+  "removed": [
+    {
+      "path": "open_duck_mini_covers_forward_review/trunk_assembly <1>/S06_LEFT_HIP_YAW_ZP10D/ZP10D_vendor_passive_horn",
+      "volume_mm3": 750.525630286795
+    },
+    {
+      "path": "open_duck_mini_covers_forward_review/trunk_assembly <1>/S01_RIGHT_HIP_YAW_ZP10D/ZP10D_vendor_passive_horn",
+      "volume_mm3": 750.5256302867962
+    }
+  ],
+  "restored_necks": {
+    "neck_left_sheet": {
+      "restored_mm3": 1.344741788346255,
+      "faces_before": 32,
+      "faces_after": 29,
+      "cylinders_preserved": true,
+      "validity": {
+        "solidCount": 1,
+        "volumes": [
+          7338.170070738276
+        ],
+        "reasons": []
+      }
+    },
+    "neck_right_sheet": {
+      "restored_mm3": 3.491927342971394,
+      "faces_before": 32,
+      "faces_after": 29,
+      "cylinders_preserved": true,
+      "validity": {
+        "solidCount": 1,
+        "volumes": [
+          8585.900162513008
+        ],
+        "reasons": []
+      }
+    }
+  },
+  "removed_upper_shafts": {
+    "S06_LEFT_HIP_YAW_ZP10D": {
+      "removed_mm3": 275.13981771734495,
+      "case_top_z_mm": 83.865938812333,
+      "shaft_and_boss_height_mm": 5.5,
+      "faces_before": 324,
+      "faces_after": 185,
+      "retained_case_and_lower_faces": 184,
+      "validity": {
+        "solidCount": 1,
+        "volumes": [
+          31513.546680956882
+        ],
+        "reasons": []
+      }
+    },
+    "S01_RIGHT_HIP_YAW_ZP10D": {
+      "removed_mm3": 275.1398177175014,
+      "case_top_z_mm": 83.865938812333,
+      "shaft_and_boss_height_mm": 5.5,
+      "faces_before": 324,
+      "faces_after": 185,
+      "retained_case_and_lower_faces": 184,
+      "validity": {
+        "solidCount": 1,
+        "volumes": [
+          31513.54668095684
+        ],
+        "reasons": []
+      }
+    }
+  },
+  "installed": "/root/work/Open_Duck_Playground/cad/local_fix/open_duck_mini_upper_refit.step",
+  "review": "/root/work/Open_Duck_Playground/cad/local_fix/SINGLE_AXIS_REVIEW.png",
+  "visual_review": {
+    "reviewed": true,
+    "file": "/root/work/Open_Duck_Playground/cad/local_fix/SINGLE_AXIS_REVIEW.png",
+    "sha256": "174a3cb848d6446c3c435dd2faa6c0b43e681a68089ac1aa57905fa708ea3031",
+    "description": "Current imported STEP before/after views; both circular upper-horn frames and forward roots removed; rear case fastening seats and central beam retained."
+  },
+  "resources": {
+    "address_space_cap_bytes": 4000000000,
+    "serial": true,
+    "native_threads": 1,
+    "build_peak_rss_mb": 1063.0,
+    "verify_peak_rss_mb": 865.2,
+    "review_peak_rss_mb": 952.6,
+    "install_peak_rss_mb": 411.3,
+    "host_process_rss_sample_bytes": 1836568576,
+    "host_sample_log": "/tmp/single-axis/resource-now.log",
+    "host_sample_is_peak": false,
+    "snapshot_peak_rss_mb": 746.9,
+    "viewer_host_process_rss_sample_bytes": 1344966656
+  },
+  "source_script_sha256": "80a2233244bc6e7e9f2914523831fbb0c51ea3a5f0ed73b9697de979c3309f27",
+  "snapshot": {
+    "command": "snapshot",
+    "installed_sha256": "579174b3c4ec4748bdf7a085cce242e13e990bb4326f991f284d9c480c675115",
+    "passed": false,
+    "error": "Missing Playwright Chromium headless shell revision 1243",
+    "log": "/tmp/single-axis/support-snapshot.log",
+    "fallback": {
+      "reviewed": true,
+      "file": "/root/work/Open_Duck_Playground/cad/local_fix/SINGLE_AXIS_REVIEW.png",
+      "sha256": "174a3cb848d6446c3c435dd2faa6c0b43e681a68089ac1aa57905fa708ea3031",
+      "description": "Current imported STEP before/after views; both circular upper-horn frames and forward roots removed; rear case fastening seats and central beam retained."
+    }
+  },
+  "viewer": {
+    "url": "http://172.20.179.51:3245/?file=open_duck_mini_upper_refit.step",
+    "persistent_session": "open-duck-cad-viewer",
+    "linux": {
+      "page_http": 200,
+      "artifact": {
+        "state": "rendered",
+        "ref": "/__cad/store?file=fc4ffb5914dd78ecb97ab304ecea42629adae82855b5d9ba6e6d7ee79b0ebf1a"
+      }
+    },
+    "model_stats": {
+      "linkCount": 0,
+      "occurrenceCount": 135,
+      "shapeCount": 135
+    },
+    "windows": "PAGE 200 MODEL rendered HTTP 200 BYTES 101444 REF /__cad/store?file=fc4ffb5914dd78ecb97ab304ecea42629adae82855b5d9ba6e6d7ee79b0ebf1a",
+    "installed_sha256": "579174b3c4ec4748bdf7a085cce242e13e990bb4326f991f284d9c480c675115"
+  }
+}

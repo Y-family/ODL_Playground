@@ -6,6 +6,7 @@ from __future__ import annotations
 import hashlib
 import json
 import math
+import os
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -14,10 +15,11 @@ import trimesh
 from cadgen import read_step
 
 from validate_s01_s10_interfaces_local import _children, _axis
+from scan_s01_s14_motion_collisions import _angles
 
 ROOT = Path(__file__).resolve().parents[2]
-TARGET = ROOT / "cad/local_fix/open_duck_mini_upper_refit.step"
-REPORT = ROOT / "cad/local_fix/FULL_MOTION_CURRENT_REPORT.json"
+TARGET = Path(os.environ.get("OPEN_DUCK_MOTION_TARGET", ROOT / "cad/local_fix/open_duck_mini_upper_refit.step"))
+REPORT = Path(os.environ.get("OPEN_DUCK_MOTION_REPORT", ROOT / "cad/local_fix/FULL_MOTION_CURRENT_REPORT.json"))
 STEP_DEG = 5
 PENETRATION_TOLERANCE_MM = 0.05
 
@@ -195,7 +197,8 @@ def main():
             for fixed_path, depth in _depths(manager, meshes[item["path"]]).items():
                 baseline[(item["path"], fixed_path)] = depth
         pair_angles = {}
-        for angle in range(LIMITS[servo_id][0], LIMITS[servo_id][1] + 1, STEP_DEG):
+        angles = _angles(*LIMITS[servo_id], STEP_DEG)
+        for angle in angles:
             transform = trimesh.transformations.rotation_matrix(math.radians(angle), direction, origin)
             for item in moving:
                 posed = meshes[item["path"]].copy()
@@ -209,7 +212,7 @@ def main():
             {"moving": moving_path, "fixed": fixed_path, "angles_deg": sorted(set(angles))}
             for (moving_path, fixed_path), angles in sorted(pair_angles.items())
         ]
-        report["joints"].append({"id": servo_id, "name": JOINT_NAMES[servo_id], "limits": list(LIMITS[servo_id]), "moving_count": len(moving), "candidate_collisions": candidates})
+        report["joints"].append({"id": servo_id, "name": JOINT_NAMES[servo_id], "limits": list(LIMITS[servo_id]), "sampled_angles_deg": angles, "moving_count": len(moving), "candidate_collisions": candidates})
         REPORT.write_text(json.dumps(report, indent=2) + "\n")
         print(servo_id, "moving", len(moving), "candidate pairs", len(candidates), flush=True)
 

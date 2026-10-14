@@ -1,0 +1,7023 @@
+{
+  "axis": {
+    "origin": [
+      8.999999999998998,
+      0.7250000000469985,
+      90.000938812376
+    ],
+    "direction": [
+      6.123277885599776e-17,
+      -1.0,
+      -1.2258063339448554e-28
+    ]
+  },
+  "range_deg": [
+    -20,
+    90
+  ],
+  "candidates": [
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/18650 pack <1>[7]/cell[0]",
+      "angles_deg": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/18650 pack <1>[7]/cell[2]",
+      "angles_deg": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/18650 pack <1>[7]/holder[1]",
+      "angles_deg": [
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/battery_pack_lid[4]",
+      "angles_deg": [
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/bms[8]",
+      "angles_deg": [
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "angles_deg": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/body_middle_bottom[1]",
+      "angles_deg": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "angles_deg": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/power_switch[6]",
+      "angles_deg": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        65,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/usb_c_charger[3]",
+      "angles_deg": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/trunk_assembly <1>[24]/BNO055[1]",
+      "angles_deg": [
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/trunk_assembly <1>[24]/Board[2]",
+      "angles_deg": [
+        64,
+        65,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "angles_deg": [
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "fixed": "/body_assembly <1>[14]/body_middle_bottom[1]",
+      "angles_deg": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "angles_deg": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "fixed": "/trunk_assembly <1>[24]/BNO055[1]",
+      "angles_deg": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "fixed": "/trunk_assembly <1>[24]/Board[2]",
+      "angles_deg": [
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "angles_deg": [
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/body_assembly <1>[14]/18650 pack <1>[7]/cell[0]",
+      "angles_deg": [
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/body_assembly <1>[14]/18650 pack <1>[7]/cell[2]",
+      "angles_deg": [
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/body_assembly <1>[14]/18650 pack <1>[7]/holder[1]",
+      "angles_deg": [
+        76,
+        77,
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/body_assembly <1>[14]/battery_pack_lid[4]",
+      "angles_deg": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "angles_deg": [
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "angles_deg": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/body_assembly <1>[14]/power_switch[6]",
+      "angles_deg": [
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/trunk_assembly <1>[24]/BNO055[1]",
+      "angles_deg": [
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/trunk_assembly <1>[24]/Board[2]",
+      "angles_deg": [
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "angles_deg": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/sg90[13]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "angles_deg": [
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/sg90[13]",
+      "fixed": "/body_assembly <1>[14]/body_middle_bottom[1]",
+      "angles_deg": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/sg90[13]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "angles_deg": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/sg90[22]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "angles_deg": [
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/sg90[22]",
+      "fixed": "/body_assembly <1>[14]/body_middle_bottom[1]",
+      "angles_deg": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/sg90[22]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "angles_deg": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "angles_deg": [
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "angles_deg": [
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "angles_deg": [
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "angles_deg": [
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "angles_deg": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "angles_deg": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_pitch_to_yaw[6]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "angles_deg": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_pitch_to_yaw[6]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "angles_deg": [
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ]
+    },
+    {
+      "moving": "/head_pitch_to_yaw[6]",
+      "fixed": "/body_assembly <1>[14]/power_switch[6]",
+      "angles_deg": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86
+      ]
+    },
+    {
+      "moving": "/head_pitch_to_yaw[6]",
+      "fixed": "/trunk_assembly <1>[24]/S01_RIGHT_HIP_YAW_ZP10D[8]/ZP10D_vendor_body[0]",
+      "angles_deg": [
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_pitch_to_yaw[6]",
+      "fixed": "/trunk_assembly <1>[24]/S06_LEFT_HIP_YAW_ZP10D[5]/ZP10D_vendor_body[0]",
+      "angles_deg": [
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/head_pitch_to_yaw[6]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "angles_deg": [
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/left_antenna_holder[9]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "angles_deg": [
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/left_antenna_holder[9]",
+      "fixed": "/body_assembly <1>[14]/body_middle_bottom[1]",
+      "angles_deg": [
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_active_horn[2]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "angles_deg": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_active_horn[2]",
+      "fixed": "/trunk_assembly <1>[24]/S06_LEFT_HIP_YAW_ZP10D[5]/ZP10D_vendor_body[0]",
+      "angles_deg": [
+        90
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_active_horn[2]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "angles_deg": [
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_body[0]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "angles_deg": [
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_body[0]",
+      "fixed": "/trunk_assembly <1>[24]/S06_LEFT_HIP_YAW_ZP10D[5]/ZP10D_vendor_body[0]",
+      "angles_deg": [
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_body[0]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "angles_deg": [
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_passive_horn[1]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "angles_deg": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_passive_horn[1]",
+      "fixed": "/trunk_assembly <1>[24]/S01_RIGHT_HIP_YAW_ZP10D[8]/ZP10D_vendor_body[0]",
+      "angles_deg": [
+        90
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_passive_horn[1]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "angles_deg": [
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/neck_left_sheet[0]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "angles_deg": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/neck_left_sheet[0]",
+      "fixed": "/trunk_assembly <1>[24]/S06_LEFT_HIP_YAW_ZP10D[5]/ZP10D_vendor_body[0]",
+      "angles_deg": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/neck_left_sheet[0]",
+      "fixed": "/trunk_assembly <1>[24]/S06_LEFT_HIP_YAW_ZP10D[5]/ZP10D_vendor_passive_horn[1]",
+      "angles_deg": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/neck_left_sheet[0]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "angles_deg": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/neck_right_sheet[1]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "angles_deg": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/neck_right_sheet[1]",
+      "fixed": "/trunk_assembly <1>[24]/S01_RIGHT_HIP_YAW_ZP10D[8]/ZP10D_vendor_body[0]",
+      "angles_deg": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/neck_right_sheet[1]",
+      "fixed": "/trunk_assembly <1>[24]/S01_RIGHT_HIP_YAW_ZP10D[8]/ZP10D_vendor_passive_horn[1]",
+      "angles_deg": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/neck_right_sheet[1]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "angles_deg": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "angles_deg": [
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "fixed": "/body_assembly <1>[14]/power_switch[6]",
+      "angles_deg": [
+        85,
+        86,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "angles_deg": [
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "angles_deg": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "fixed": "/body_assembly <1>[14]/power_switch[6]",
+      "angles_deg": [
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_passive_horn[1]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "angles_deg": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "fixed": "/body_assembly <1>[14]/18650 pack <1>[7]/holder[1]",
+      "angles_deg": [
+        77,
+        78,
+        79,
+        80,
+        81
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "fixed": "/body_assembly <1>[14]/battery_pack_lid[4]",
+      "angles_deg": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "angles_deg": [
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "angles_deg": [
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "fixed": "/body_assembly <1>[14]/power_switch[6]",
+      "angles_deg": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "fixed": "/trunk_assembly <1>[24]/BNO055[1]",
+      "angles_deg": [
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "fixed": "/trunk_assembly <1>[24]/Board[2]",
+      "angles_deg": [
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "angles_deg": [
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/right_antenna_holder[1]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "angles_deg": [
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "moving": "/right_antenna_holder[1]",
+      "fixed": "/body_assembly <1>[14]/body_middle_bottom[1]",
+      "angles_deg": [
+        86,
+        87,
+        88,
+        89,
+        90
+      ]
+    }
+  ],
+  "exact": [
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/18650 pack <1>[7]/cell[0]",
+      "exact": [
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 66,
+          "overlap_mm3": 13.654
+        },
+        {
+          "angle_deg": 67,
+          "overlap_mm3": 99.212
+        },
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 264.933
+        },
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 460.67
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 659.3
+        },
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 816.008
+        },
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 954.384
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 1078.951
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 1287.776
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 4692.975
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 5345.144
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/18650 pack <1>[7]/cell[2]",
+      "exact": [
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 66,
+          "overlap_mm3": 13.654
+        },
+        {
+          "angle_deg": 67,
+          "overlap_mm3": 99.212
+        },
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 264.933
+        },
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 460.67
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 659.3
+        },
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 816.008
+        },
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 954.384
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 1078.951
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 1287.776
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 5797.641
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 4693.417
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 5347.702
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/18650 pack <1>[7]/holder[1]",
+      "exact": [
+        {
+          "angle_deg": 58,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 59,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 61,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 32.718
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 137.602
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 230.413
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 255.115
+        },
+        {
+          "angle_deg": 66,
+          "overlap_mm3": 281.063
+        },
+        {
+          "angle_deg": 67,
+          "overlap_mm3": 308.398
+        },
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 337.278
+        },
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 397.376
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 474.361
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 894.446
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 1320.192
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 1395.667
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 938.154
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/battery_pack_lid[4]",
+      "exact": [
+        {
+          "angle_deg": 53,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 54,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 56,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 57,
+          "overlap_mm3": 20.35
+        },
+        {
+          "angle_deg": 58,
+          "overlap_mm3": 111.758
+        },
+        {
+          "angle_deg": 59,
+          "overlap_mm3": 242.542
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 356.132
+        },
+        {
+          "angle_deg": 61,
+          "overlap_mm3": 611.731
+        },
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 847.754
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 899.13
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 896.581
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 894.3
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 1017.276
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 1290.361
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 1336.567
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 1381.202
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 1923.402
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/bms[8]",
+      "exact": [
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 11.809
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 56.744
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 122.339
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 187.382
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 245.655
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 288.532
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 317.779
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 333.723
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 366.469
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "exact": [
+        {
+          "angle_deg": 37,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 38,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 39,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 40,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 41,
+          "overlap_mm3": 17.27
+        },
+        {
+          "angle_deg": 42,
+          "overlap_mm3": 163.483
+        },
+        {
+          "angle_deg": 43,
+          "overlap_mm3": 451.608
+        },
+        {
+          "angle_deg": 44,
+          "overlap_mm3": 701.118
+        },
+        {
+          "angle_deg": 45,
+          "overlap_mm3": 845.911
+        },
+        {
+          "angle_deg": 46,
+          "overlap_mm3": 916.722
+        },
+        {
+          "angle_deg": 47,
+          "overlap_mm3": 950.152
+        },
+        {
+          "angle_deg": 48,
+          "overlap_mm3": 958.79
+        },
+        {
+          "angle_deg": 50,
+          "overlap_mm3": 1083.995
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 2289.994
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 2771.207
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 3620.271
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 5612.183
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 9252.931
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 9622.958
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 6904.954
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 5467.694
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/body_middle_bottom[1]",
+      "exact": [
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 66,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 67,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 12.057
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 50.465
+        },
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 119.485
+        },
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 222.159
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 426.814
+        },
+        {
+          "angle_deg": 74,
+          "overlap_mm3": 780.609
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 1106.307
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 1404.88
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 2116.107
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 1969.515
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 1680.292
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "exact": [
+        {
+          "angle_deg": 35,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 36,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 37,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 38,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 39,
+          "overlap_mm3": 119.023
+        },
+        {
+          "angle_deg": 40,
+          "overlap_mm3": 562.67
+        },
+        {
+          "angle_deg": 41,
+          "overlap_mm3": 756.332
+        },
+        {
+          "angle_deg": 42,
+          "overlap_mm3": 755.575
+        },
+        {
+          "angle_deg": 43,
+          "overlap_mm3": 562.152
+        },
+        {
+          "angle_deg": 44,
+          "overlap_mm3": 380.718
+        },
+        {
+          "angle_deg": 45,
+          "overlap_mm3": 290.73
+        },
+        {
+          "angle_deg": 46,
+          "overlap_mm3": 251.619
+        },
+        {
+          "angle_deg": 50,
+          "overlap_mm3": 493.493
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 1558.05
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 981.16
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 839.317
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 968.23
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 627.655
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 182.023
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 50.514
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 89.921
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/power_switch[6]",
+      "exact": [
+        {
+          "angle_deg": 41,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 42,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 43,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 44,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 45,
+          "overlap_mm3": 1.938
+        },
+        {
+          "angle_deg": 46,
+          "overlap_mm3": 7.925
+        },
+        {
+          "angle_deg": 47,
+          "overlap_mm3": 20.674
+        },
+        {
+          "angle_deg": 48,
+          "overlap_mm3": 93.978
+        },
+        {
+          "angle_deg": 49,
+          "overlap_mm3": 154.483
+        },
+        {
+          "angle_deg": 50,
+          "overlap_mm3": 170.969
+        },
+        {
+          "angle_deg": 51,
+          "overlap_mm3": 204.911
+        },
+        {
+          "angle_deg": 52,
+          "overlap_mm3": 226.026
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 157.82
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 8.199
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 0.001
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 7.114
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/body_assembly <1>[14]/usb_c_charger[3]",
+      "exact": [
+        {
+          "angle_deg": 54,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 56,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 57,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 58,
+          "overlap_mm3": 0.891
+        },
+        {
+          "angle_deg": 59,
+          "overlap_mm3": 11.042
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 30.798
+        },
+        {
+          "angle_deg": 61,
+          "overlap_mm3": 53.543
+        },
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 76.946
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 99.839
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 118.393
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 132.076
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 134.203
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 150.187
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 187.353
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 158.963
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 153.164
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/trunk_assembly <1>[24]/BNO055[1]",
+      "exact": [
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 0.382
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 157.747
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 284.63
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 231.62
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 238.968
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 251.244
+        },
+        {
+          "angle_deg": 93,
+          "overlap_mm3": 201.456
+        },
+        {
+          "angle_deg": 94,
+          "overlap_mm3": 68.042
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/trunk_assembly <1>[24]/Board[2]",
+      "exact": [
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 61,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 32.819
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 65.934
+        },
+        {
+          "angle_deg": 66,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 67,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 201.047
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "exact": [
+        {
+          "angle_deg": 59,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 61,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 2.993
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 26.383
+        },
+        {
+          "angle_deg": 66,
+          "overlap_mm3": 120.28
+        },
+        {
+          "angle_deg": 67,
+          "overlap_mm3": 416.892
+        },
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 667.182
+        },
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 752.967
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 787.898
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 35.589
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 0.021
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 1229.57
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 248.977
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "fixed": "/body_assembly <1>[14]/body_middle_bottom[1]",
+      "exact": [
+        {
+          "angle_deg": 67,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 0.994
+        },
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 6.974
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 18.514
+        },
+        {
+          "angle_deg": 74,
+          "overlap_mm3": 35.324
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 57.14
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 83.716
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 113.859
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 144.115
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 203.327
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 344.776
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 478.75
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "exact": [
+        {
+          "angle_deg": 36,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 37,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 38,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 39,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 40,
+          "overlap_mm3": 152.47
+        },
+        {
+          "angle_deg": 41,
+          "overlap_mm3": 703.609
+        },
+        {
+          "angle_deg": 42,
+          "overlap_mm3": 1041.663
+        },
+        {
+          "angle_deg": 43,
+          "overlap_mm3": 1214.646
+        },
+        {
+          "angle_deg": 44,
+          "overlap_mm3": 1385.111
+        },
+        {
+          "angle_deg": 45,
+          "overlap_mm3": 1444.105
+        },
+        {
+          "angle_deg": 46,
+          "overlap_mm3": 1421.229
+        },
+        {
+          "angle_deg": 47,
+          "overlap_mm3": 1355.13
+        },
+        {
+          "angle_deg": 50,
+          "overlap_mm3": 694.87
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 908.068
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 579.801
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 613.698
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 661.113
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 662.989
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 536.453
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 395.004
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 261.03
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "fixed": "/trunk_assembly <1>[24]/BNO055[1]",
+      "exact": [
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 74,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 10.151
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 99.604
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 181.802
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 217.646
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 220.322
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 234.682
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 245.236
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 231.742
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 148.873
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "fixed": "/trunk_assembly <1>[24]/Board[2]",
+      "exact": [
+        {
+          "angle_deg": 61,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 57.713
+        },
+        {
+          "angle_deg": 66,
+          "overlap_mm3": 195.194
+        },
+        {
+          "angle_deg": 67,
+          "overlap_mm3": 200.07
+        },
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 207.099
+        },
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 208.567
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 206.355
+        },
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 207.001
+        },
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 208.902
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 147.15
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "exact": [
+        {
+          "angle_deg": 61,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 1.438
+        },
+        {
+          "angle_deg": 66,
+          "overlap_mm3": 24.172
+        },
+        {
+          "angle_deg": 67,
+          "overlap_mm3": 96.952
+        },
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 322.731
+        },
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 587.082
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 814.537
+        },
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 1027.22
+        },
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 1180.152
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 1235.669
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 753.894
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 51.373
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/body_assembly <1>[14]/18650 pack <1>[7]/cell[0]",
+      "exact": [
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 4.728
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 119.441
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 232.881
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 311.857
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 318.159
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 274.321
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 229.104
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 183.544
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 21.784
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/body_assembly <1>[14]/18650 pack <1>[7]/cell[2]",
+      "exact": [
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 4.795
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 239.087
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 321.123
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 328.271
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 283.795
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 237.879
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 191.555
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 25.493
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/body_assembly <1>[14]/18650 pack <1>[7]/holder[1]",
+      "exact": [
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 74,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 6.601
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 149.915
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 187.087
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 176.203
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 79.417
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/body_assembly <1>[14]/battery_pack_lid[4]",
+      "exact": [
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 9.361
+        },
+        {
+          "angle_deg": 74,
+          "overlap_mm3": 27.724
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 51.892
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 154.699
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 255.372
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 356.488
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 437.808
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 439.393
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 707.186
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 989.603
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "exact": [
+        {
+          "angle_deg": 53,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 54,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 56,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 57,
+          "overlap_mm3": 11.17
+        },
+        {
+          "angle_deg": 58,
+          "overlap_mm3": 51.947
+        },
+        {
+          "angle_deg": 59,
+          "overlap_mm3": 116.454
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 183.17
+        },
+        {
+          "angle_deg": 61,
+          "overlap_mm3": 234.456
+        },
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 257.649
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 262.72
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 270.16
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 281.8
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 345.082
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 8.414
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "exact": [
+        {
+          "angle_deg": 49,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 50,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 51,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 52,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 53,
+          "overlap_mm3": 26.922
+        },
+        {
+          "angle_deg": 54,
+          "overlap_mm3": 168.948
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 401.561
+        },
+        {
+          "angle_deg": 56,
+          "overlap_mm3": 587.873
+        },
+        {
+          "angle_deg": 57,
+          "overlap_mm3": 605.552
+        },
+        {
+          "angle_deg": 58,
+          "overlap_mm3": 434.139
+        },
+        {
+          "angle_deg": 59,
+          "overlap_mm3": 248.548
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 105.083
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/body_assembly <1>[14]/power_switch[6]",
+      "exact": [
+        {
+          "angle_deg": 59,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 61,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 4.381
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 25.218
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 61.935
+        },
+        {
+          "angle_deg": 66,
+          "overlap_mm3": 86.335
+        },
+        {
+          "angle_deg": 67,
+          "overlap_mm3": 78.769
+        },
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 91.662
+        },
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 129.514
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 167.196
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/trunk_assembly <1>[24]/BNO055[1]",
+      "exact": [
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 84.674
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 249.395
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 311.225
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 348.371
+        },
+        {
+          "angle_deg": 93,
+          "overlap_mm3": 276.46
+        },
+        {
+          "angle_deg": 94,
+          "overlap_mm3": 76.284
+        },
+        {
+          "angle_deg": 95,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 96,
+          "overlap_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/trunk_assembly <1>[24]/Board[2]",
+      "exact": [
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 1.4
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 173.602
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 263.191
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 279.339
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 292.825
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 87.974
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/roll_bearing[3]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "exact": [
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 30.127
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 342.038
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 717.063
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 1123.127
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 1539.845
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 1487.486
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 1155.23
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 775.826
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 376.121
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/sg90[13]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "exact": [
+        {
+          "angle_deg": 52,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 53,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 54,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 56,
+          "overlap_mm3": 0.542
+        },
+        {
+          "angle_deg": 57,
+          "overlap_mm3": 14.972
+        },
+        {
+          "angle_deg": 58,
+          "overlap_mm3": 66.159
+        },
+        {
+          "angle_deg": 59,
+          "overlap_mm3": 184.563
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 332.55
+        },
+        {
+          "angle_deg": 61,
+          "overlap_mm3": 445.27
+        },
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 510.013
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 545.739
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 550.356
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 738.66
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 700.882
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 430.365
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 213.809
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/sg90[13]",
+      "fixed": "/body_assembly <1>[14]/body_middle_bottom[1]",
+      "exact": [
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 8.614
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 73.073
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 152.19
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 254.57
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 431.86
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 633.117
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 790.059
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 905.355
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 933.076
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/sg90[13]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "exact": [
+        {
+          "angle_deg": 49,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 50,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 51,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 52,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 53,
+          "overlap_mm3": 0.012
+        },
+        {
+          "angle_deg": 54,
+          "overlap_mm3": 10.195
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 52.501
+        },
+        {
+          "angle_deg": 56,
+          "overlap_mm3": 146.922
+        },
+        {
+          "angle_deg": 57,
+          "overlap_mm3": 280.441
+        },
+        {
+          "angle_deg": 58,
+          "overlap_mm3": 418.495
+        },
+        {
+          "angle_deg": 59,
+          "overlap_mm3": 539.597
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 636.831
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 904.378
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 1205.192
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 1032.491
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 759.818
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 692.281
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 437.891
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/sg90[22]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "exact": [
+        {
+          "angle_deg": 52,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 53,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 54,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 56,
+          "overlap_mm3": 0.648
+        },
+        {
+          "angle_deg": 57,
+          "overlap_mm3": 15.977
+        },
+        {
+          "angle_deg": 58,
+          "overlap_mm3": 70.678
+        },
+        {
+          "angle_deg": 59,
+          "overlap_mm3": 192.545
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 341.188
+        },
+        {
+          "angle_deg": 61,
+          "overlap_mm3": 458.826
+        },
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 533.924
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 587.16
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 635.499
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 830.11
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 708.317
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 435.06
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 215.549
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/sg90[22]",
+      "fixed": "/body_assembly <1>[14]/body_middle_bottom[1]",
+      "exact": [
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 8.58
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 72.029
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 149.554
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 252.8
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 430.383
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 631.483
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 789.851
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 904.582
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 930.473
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/sg90[22]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "exact": [
+        {
+          "angle_deg": 49,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 50,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 51,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 52,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 53,
+          "overlap_mm3": 0.016
+        },
+        {
+          "angle_deg": 54,
+          "overlap_mm3": 11.158
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 56.189
+        },
+        {
+          "angle_deg": 56,
+          "overlap_mm3": 154.879
+        },
+        {
+          "angle_deg": 57,
+          "overlap_mm3": 292.11
+        },
+        {
+          "angle_deg": 58,
+          "overlap_mm3": 433.261
+        },
+        {
+          "angle_deg": 59,
+          "overlap_mm3": 556.827
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 654.447
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 921.177
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 1196.554
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 1027.837
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 754.475
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 688.22
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 435.375
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "exact": [
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 10.785
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 18.175
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 24.044
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 40.209
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 60.293
+        },
+        {
+          "angle_deg": 93,
+          "overlap_mm3": 59.523
+        },
+        {
+          "angle_deg": 94,
+          "overlap_mm3": 63.886
+        },
+        {
+          "angle_deg": 95,
+          "overlap_mm3": 70.186
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "exact": [
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 3.243
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 15.921
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 25.007
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 42.286
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 64.31
+        },
+        {
+          "angle_deg": 93,
+          "overlap_mm3": 77.256
+        },
+        {
+          "angle_deg": 94,
+          "overlap_mm3": 85.113
+        },
+        {
+          "angle_deg": 95,
+          "overlap_mm3": 94.385
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "exact": [
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 2.114
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 25.063
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 47.481
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 60.394
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 77.572
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 98.592
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 99.182
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 89.823
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "exact": [
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 0.015
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 16.939
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 54.991
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 84.688
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 112.05
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 137.625
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 164.63
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 189.589
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "exact": [
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 9.126
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 57.123
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 105.21
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 112.747
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 118.419
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 150.734
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 176.528
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 152.843
+        }
+      ]
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "exact": [
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 5.387
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 72.021
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 172.743
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 223.541
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 227.092
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 239.911
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 247.479
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 246.029
+        }
+      ]
+    },
+    {
+      "moving": "/head_pitch_to_yaw[6]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "exact": [
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 10.589
+        },
+        {
+          "angle_deg": 74,
+          "overlap_mm3": 76.688
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 167.439
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 215.612
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 217.264
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 182.502
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 147.543
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 148.721
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 223.221
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 315.026
+        }
+      ]
+    },
+    {
+      "moving": "/head_pitch_to_yaw[6]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "exact": [
+        {
+          "angle_deg": 61,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 53.24
+        },
+        {
+          "angle_deg": 66,
+          "overlap_mm3": 271.154
+        },
+        {
+          "angle_deg": 67,
+          "overlap_mm3": 681.085
+        },
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 1050.433
+        },
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 1263.63
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 1343.37
+        },
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 1356.382
+        },
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 1325.358
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 538.672
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 600.482
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 474.318
+        }
+      ]
+    },
+    {
+      "moving": "/head_pitch_to_yaw[6]",
+      "fixed": "/body_assembly <1>[14]/power_switch[6]",
+      "exact": [
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 74,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 6.405
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 12.281
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 73.9
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 208.964
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 234.711
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 193.612
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 180.556
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 182.744
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 82.974
+        }
+      ]
+    },
+    {
+      "moving": "/head_pitch_to_yaw[6]",
+      "fixed": "/trunk_assembly <1>[24]/S01_RIGHT_HIP_YAW_ZP10D[8]/ZP10D_vendor_body[0]",
+      "exact": [
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 1.192
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 6.716
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 15.981
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 28.385
+        },
+        {
+          "angle_deg": 93,
+          "overlap_mm3": 41.446
+        },
+        {
+          "angle_deg": 94,
+          "overlap_mm3": 53.821
+        },
+        {
+          "angle_deg": 95,
+          "overlap_mm3": 64.716
+        },
+        {
+          "angle_deg": 96,
+          "overlap_mm3": 75.725
+        }
+      ]
+    },
+    {
+      "moving": "/head_pitch_to_yaw[6]",
+      "fixed": "/trunk_assembly <1>[24]/S06_LEFT_HIP_YAW_ZP10D[5]/ZP10D_vendor_body[0]",
+      "exact": [
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 1.192
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 6.716
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 15.981
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 28.372
+        },
+        {
+          "angle_deg": 93,
+          "overlap_mm3": 42.935
+        },
+        {
+          "angle_deg": 94,
+          "overlap_mm3": 56.04
+        },
+        {
+          "angle_deg": 95,
+          "overlap_mm3": 67.743
+        },
+        {
+          "angle_deg": 96,
+          "overlap_mm3": 77.832
+        }
+      ]
+    },
+    {
+      "moving": "/head_pitch_to_yaw[6]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "exact": [
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 40.345
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 97.218
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 156.163
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 203.402
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 241.543
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 286.362
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 320.086
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 312.234
+        }
+      ]
+    },
+    {
+      "moving": "/left_antenna_holder[9]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "exact": [
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 0.012
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 0.086
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 0.256
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 0.529
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 0.885
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 1.286
+        },
+        {
+          "angle_deg": 93,
+          "overlap_mm3": 1.677
+        },
+        {
+          "angle_deg": 94,
+          "overlap_mm3": 1.996
+        }
+      ]
+    },
+    {
+      "moving": "/left_antenna_holder[9]",
+      "fixed": "/body_assembly <1>[14]/body_middle_bottom[1]",
+      "exact": [
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 0.045
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 0.346
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 1.128
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 2.57
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 4.8
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 7.884
+        },
+        {
+          "angle_deg": 93,
+          "overlap_mm3": 11.817
+        },
+        {
+          "angle_deg": 94,
+          "overlap_mm3": 16.518
+        }
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_active_horn[2]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "exact": [
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 66,
+          "overlap_mm3": 10.82
+        },
+        {
+          "angle_deg": 67,
+          "overlap_mm3": 30.286
+        },
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 50.046
+        },
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 59.952
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 69.3
+        },
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 82.211
+        },
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 87.395
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 78.984
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 64.608
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 85.74
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 8.129
+        }
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_active_horn[2]",
+      "fixed": "/trunk_assembly <1>[24]/S06_LEFT_HIP_YAW_ZP10D[5]/ZP10D_vendor_body[0]",
+      "exact": [
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 0.24
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 2.551
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 6.983
+        },
+        {
+          "angle_deg": 93,
+          "overlap_mm3": 13.205
+        },
+        {
+          "angle_deg": 94,
+          "overlap_mm3": 20.907
+        },
+        {
+          "angle_deg": 95,
+          "overlap_mm3": 29.265
+        },
+        {
+          "angle_deg": 96,
+          "overlap_mm3": 36.124
+        }
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_active_horn[2]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "exact": [
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 14.616
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 33.384
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 50.971
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 69.808
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 91.673
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 121.08
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 138.322
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 144.08
+        }
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_body[0]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "exact": [
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 1.912
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 10.269
+        },
+        {
+          "angle_deg": 74,
+          "overlap_mm3": 16.721
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 18.659
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 18.199
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 18.066
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 11.875
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 3.204
+        }
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_body[0]",
+      "fixed": "/trunk_assembly <1>[24]/S06_LEFT_HIP_YAW_ZP10D[5]/ZP10D_vendor_body[0]",
+      "exact": [
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 0.046
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 3.016
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 12.995
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 27.76
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 43.846
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 60.527
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 78.797
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 97.684
+        }
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_body[0]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "exact": [
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 74,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 0.002
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 0.01
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 0.024
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 0.047
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 1.535
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 13.361
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 103.778
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 1651.436
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 6993.812
+        }
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_passive_horn[1]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "exact": [
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 66,
+          "overlap_mm3": 1.725
+        },
+        {
+          "angle_deg": 67,
+          "overlap_mm3": 4.836
+        },
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 8.211
+        },
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 9.772
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 10.921
+        },
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 12.494
+        },
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 13.54
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 13.813
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 14.052
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 13.543
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 1.296
+        }
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_passive_horn[1]",
+      "fixed": "/trunk_assembly <1>[24]/S01_RIGHT_HIP_YAW_ZP10D[8]/ZP10D_vendor_body[0]",
+      "exact": [
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 0.099
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 1.148
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 4.596
+        },
+        {
+          "angle_deg": 93,
+          "overlap_mm3": 10.156
+        },
+        {
+          "angle_deg": 94,
+          "overlap_mm3": 17.46
+        },
+        {
+          "angle_deg": 95,
+          "overlap_mm3": 25.125
+        },
+        {
+          "angle_deg": 96,
+          "overlap_mm3": 32.1
+        }
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_passive_horn[1]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "exact": [
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 14.616
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 33.957
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 52.374
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 70.671
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 92.165
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 121.221
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 145.242
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 154.005
+        }
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/neck_left_sheet[0]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "exact": [
+        {
+          "angle_deg": 51,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 52,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 53,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 54,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 1.061
+        },
+        {
+          "angle_deg": 56,
+          "overlap_mm3": 6.029
+        },
+        {
+          "angle_deg": 57,
+          "overlap_mm3": 11.644
+        },
+        {
+          "angle_deg": 58,
+          "overlap_mm3": 17.25
+        },
+        {
+          "angle_deg": 59,
+          "overlap_mm3": 16.894
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 13.897
+        },
+        {
+          "angle_deg": 61,
+          "overlap_mm3": 11.372
+        },
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 9.29
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 5.144
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 2.802
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 4.77
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 14.342
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 0.892
+        }
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/neck_left_sheet[0]",
+      "fixed": "/trunk_assembly <1>[24]/S06_LEFT_HIP_YAW_ZP10D[5]/ZP10D_vendor_body[0]",
+      "exact": [
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 66,
+          "overlap_mm3": 0.206
+        },
+        {
+          "angle_deg": 67,
+          "overlap_mm3": 1.399
+        },
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 3.723
+        },
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 6.954
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 11.536
+        },
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 17.551
+        },
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 23.68
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 29.943
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 48.571
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 197.993
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 657.012
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 1281.779
+        }
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/neck_left_sheet[0]",
+      "fixed": "/trunk_assembly <1>[24]/S06_LEFT_HIP_YAW_ZP10D[5]/ZP10D_vendor_passive_horn[1]",
+      "exact": [
+        {
+          "angle_deg": 48,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 49,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 50,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 51,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 52,
+          "overlap_mm3": 0.079
+        },
+        {
+          "angle_deg": 53,
+          "overlap_mm3": 0.468
+        },
+        {
+          "angle_deg": 54,
+          "overlap_mm3": 1.211
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 2.375
+        },
+        {
+          "angle_deg": 56,
+          "overlap_mm3": 4.437
+        },
+        {
+          "angle_deg": 57,
+          "overlap_mm3": 6.848
+        },
+        {
+          "angle_deg": 58,
+          "overlap_mm3": 9.525
+        },
+        {
+          "angle_deg": 59,
+          "overlap_mm3": 12.497
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 15.866
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 67.763
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 184.51
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 348.62
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 364.263
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 371.315
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 372.312
+        }
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/neck_left_sheet[0]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "exact": [
+        {
+          "angle_deg": 42,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 43,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 44,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 45,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 46,
+          "overlap_mm3": 0.015
+        },
+        {
+          "angle_deg": 47,
+          "overlap_mm3": 0.217
+        },
+        {
+          "angle_deg": 48,
+          "overlap_mm3": 0.419
+        },
+        {
+          "angle_deg": 49,
+          "overlap_mm3": 0.64
+        },
+        {
+          "angle_deg": 50,
+          "overlap_mm3": 1.122
+        },
+        {
+          "angle_deg": 51,
+          "overlap_mm3": 1.949
+        },
+        {
+          "angle_deg": 52,
+          "overlap_mm3": 3.152
+        },
+        {
+          "angle_deg": 53,
+          "overlap_mm3": 4.937
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 12.959
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 79.216
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 182.489
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 342.745
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 399.476
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 499.436
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 657.021
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 723.796
+        }
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/neck_right_sheet[1]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "exact": [
+        {
+          "angle_deg": 51,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 52,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 53,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 54,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 0.792
+        },
+        {
+          "angle_deg": 56,
+          "overlap_mm3": 6.942
+        },
+        {
+          "angle_deg": 57,
+          "overlap_mm3": 18.685
+        },
+        {
+          "angle_deg": 58,
+          "overlap_mm3": 30.724
+        },
+        {
+          "angle_deg": 59,
+          "overlap_mm3": 35.325
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 32.585
+        },
+        {
+          "angle_deg": 61,
+          "overlap_mm3": 27.278
+        },
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 24.923
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 39.725
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 41.597
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 39.804
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 27.973
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 4.466
+        }
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/neck_right_sheet[1]",
+      "fixed": "/trunk_assembly <1>[24]/S01_RIGHT_HIP_YAW_ZP10D[8]/ZP10D_vendor_body[0]",
+      "exact": [
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 66,
+          "overlap_mm3": 0.05
+        },
+        {
+          "angle_deg": 67,
+          "overlap_mm3": 0.511
+        },
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 1.806
+        },
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 4.013
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 7.309
+        },
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 11.197
+        },
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 15.089
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 19.017
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 31.049
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 153.022
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 606.983
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 1308.569
+        }
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/neck_right_sheet[1]",
+      "fixed": "/trunk_assembly <1>[24]/S01_RIGHT_HIP_YAW_ZP10D[8]/ZP10D_vendor_passive_horn[1]",
+      "exact": [
+        {
+          "angle_deg": 48,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 49,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 50,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 51,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 52,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 53,
+          "overlap_mm3": 0.005
+        },
+        {
+          "angle_deg": 54,
+          "overlap_mm3": 0.02
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 0.174
+        },
+        {
+          "angle_deg": 56,
+          "overlap_mm3": 1.966
+        },
+        {
+          "angle_deg": 57,
+          "overlap_mm3": 4.62
+        },
+        {
+          "angle_deg": 58,
+          "overlap_mm3": 8.084
+        },
+        {
+          "angle_deg": 59,
+          "overlap_mm3": 12.433
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 17.751
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 74.267
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 183.253
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 324.76
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 338.23
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 339.346
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 339.785
+        }
+      ]
+    },
+    {
+      "moving": "/neck_pitch_assembly <1>[8]/neck_right_sheet[1]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "exact": [
+        {
+          "angle_deg": 42,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 43,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 44,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 45,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 46,
+          "overlap_mm3": 0.098
+        },
+        {
+          "angle_deg": 47,
+          "overlap_mm3": 1.567
+        },
+        {
+          "angle_deg": 48,
+          "overlap_mm3": 3.476
+        },
+        {
+          "angle_deg": 49,
+          "overlap_mm3": 5.824
+        },
+        {
+          "angle_deg": 50,
+          "overlap_mm3": 8.62
+        },
+        {
+          "angle_deg": 51,
+          "overlap_mm3": 11.887
+        },
+        {
+          "angle_deg": 52,
+          "overlap_mm3": 15.699
+        },
+        {
+          "angle_deg": 53,
+          "overlap_mm3": 20.61
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 38.314
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 113.323
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 234.0
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 430.083
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 553.755
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 697.136
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 928.934
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 931.126
+        }
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "exact": [
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 0.175
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 23.615
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 96.9
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 186.708
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 217.911
+        },
+        {
+          "angle_deg": 93,
+          "overlap_mm3": 177.416
+        },
+        {
+          "angle_deg": 94,
+          "overlap_mm3": 161.189
+        },
+        {
+          "angle_deg": 95,
+          "overlap_mm3": 182.806
+        }
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "fixed": "/body_assembly <1>[14]/power_switch[6]",
+      "exact": [
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 2.834
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 4.859
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 2.807
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 10.571
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 5.351
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 5.075
+        }
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "exact": [
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 74,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 14.039
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 82.027
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 205.938
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 345.453
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 480.918
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 574.995
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 665.177
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 736.891
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 783.087
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 1000.883
+        }
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "exact": [
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 44.338
+        },
+        {
+          "angle_deg": 74,
+          "overlap_mm3": 265.053
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 649.322
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 1102.056
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 1549.249
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 1692.073
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 1705.816
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 1702.239
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 1559.553
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 1513.323
+        }
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "fixed": "/body_assembly <1>[14]/power_switch[6]",
+      "exact": [
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 0.25
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 8.714
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 28.133
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 138.455
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 303.02
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 455.23
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 591.038
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 725.626
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 934.378
+        }
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_passive_horn[1]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "exact": [
+        {
+          "angle_deg": 67,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 69,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 71,
+          "overlap_mm3": 4.339
+        },
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 36.677
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 74.234
+        },
+        {
+          "angle_deg": 74,
+          "overlap_mm3": 97.224
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 124.464
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 155.947
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 157.698
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 125.766
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 148.991
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 46.6
+        }
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "fixed": "/body_assembly <1>[14]/18650 pack <1>[7]/holder[1]",
+      "exact": [
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 74,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 48.597
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 60.202
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 47.242
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 35.753
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 20.26
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "fixed": "/body_assembly <1>[14]/battery_pack_lid[4]",
+      "exact": [
+        {
+          "angle_deg": 72,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 74,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 64.521
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 250.909
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 434.598
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 612.345
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 807.752
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 878.092
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 854.422
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 840.764
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 831.606
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 351.211
+        }
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "exact": [
+        {
+          "angle_deg": 53,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 54,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 56,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 57,
+          "overlap_mm3": 1.379
+        },
+        {
+          "angle_deg": 58,
+          "overlap_mm3": 36.272
+        },
+        {
+          "angle_deg": 59,
+          "overlap_mm3": 120.073
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 230.778
+        },
+        {
+          "angle_deg": 61,
+          "overlap_mm3": 344.392
+        },
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 457.461
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 500.8
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 471.737
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 399.638
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 8.072
+        }
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "exact": [
+        {
+          "angle_deg": 44,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 45,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 46,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 47,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 48,
+          "overlap_mm3": 7.589
+        },
+        {
+          "angle_deg": 49,
+          "overlap_mm3": 119.671
+        },
+        {
+          "angle_deg": 50,
+          "overlap_mm3": 410.612
+        },
+        {
+          "angle_deg": 51,
+          "overlap_mm3": 746.494
+        },
+        {
+          "angle_deg": 52,
+          "overlap_mm3": 979.499
+        },
+        {
+          "angle_deg": 53,
+          "overlap_mm3": 1135.942
+        },
+        {
+          "angle_deg": 54,
+          "overlap_mm3": 1246.984
+        },
+        {
+          "angle_deg": 55,
+          "overlap_mm3": 1246.878
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 1255.638
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 465.168
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 465.393
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 483.683
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 517.691
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 580.301
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 1142.698
+        }
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "fixed": "/body_assembly <1>[14]/power_switch[6]",
+      "exact": [
+        {
+          "angle_deg": 57,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 58,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 59,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 60,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 61,
+          "overlap_mm3": 6.601
+        },
+        {
+          "angle_deg": 62,
+          "overlap_mm3": 13.481
+        },
+        {
+          "angle_deg": 63,
+          "overlap_mm3": 71.852
+        },
+        {
+          "angle_deg": 64,
+          "overlap_mm3": 183.872
+        },
+        {
+          "angle_deg": 65,
+          "overlap_mm3": 296.882
+        },
+        {
+          "angle_deg": 66,
+          "overlap_mm3": 394.1
+        },
+        {
+          "angle_deg": 67,
+          "overlap_mm3": 453.763
+        },
+        {
+          "angle_deg": 68,
+          "overlap_mm3": 409.444
+        },
+        {
+          "angle_deg": 70,
+          "overlap_mm3": 240.723
+        }
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "fixed": "/trunk_assembly <1>[24]/BNO055[1]",
+      "exact": [
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 81.719
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 303.582
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 454.018
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 467.694
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 467.765
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 479.006
+        },
+        {
+          "angle_deg": 93,
+          "overlap_mm3": 496.76
+        },
+        {
+          "angle_deg": 94,
+          "overlap_mm3": 836.952
+        }
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "fixed": "/trunk_assembly <1>[24]/Board[2]",
+      "exact": [
+        {
+          "angle_deg": 73,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 74,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 75,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 59.444
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 231.946
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 330.695
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 384.241
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 426.448
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 465.046
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 484.207
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 629.567
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 879.523
+        }
+      ]
+    },
+    {
+      "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "exact": [
+        {
+          "angle_deg": 76,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 77,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 78,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 79,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 80,
+          "overlap_mm3": 87.544
+        },
+        {
+          "angle_deg": 81,
+          "overlap_mm3": 347.124
+        },
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 721.22
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 1164.711
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 1774.942
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 2355.807
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 2777.895
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 3420.726
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 3385.625
+        }
+      ]
+    },
+    {
+      "moving": "/right_antenna_holder[1]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "exact": [
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 0.007
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 0.073
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 0.248
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 0.552
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 0.975
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 1.485
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 2.03
+        },
+        {
+          "angle_deg": 93,
+          "overlap_mm3": 2.54
+        }
+      ]
+    },
+    {
+      "moving": "/right_antenna_holder[1]",
+      "fixed": "/body_assembly <1>[14]/body_middle_bottom[1]",
+      "exact": [
+        {
+          "angle_deg": 82,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 83,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 84,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 85,
+          "overlap_mm3": 0.0
+        },
+        {
+          "angle_deg": 86,
+          "overlap_mm3": 0.024
+        },
+        {
+          "angle_deg": 87,
+          "overlap_mm3": 0.269
+        },
+        {
+          "angle_deg": 88,
+          "overlap_mm3": 0.984
+        },
+        {
+          "angle_deg": 89,
+          "overlap_mm3": 2.386
+        },
+        {
+          "angle_deg": 90,
+          "overlap_mm3": 4.645
+        },
+        {
+          "angle_deg": 91,
+          "overlap_mm3": 7.873
+        },
+        {
+          "angle_deg": 92,
+          "overlap_mm3": 12.119
+        },
+        {
+          "angle_deg": 93,
+          "overlap_mm3": 17.359
+        }
+      ]
+    }
+  ]
+}

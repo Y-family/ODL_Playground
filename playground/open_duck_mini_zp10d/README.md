@@ -6,16 +6,23 @@ existing `open_duck_mini_v2` model.
 
 Current state:
 
-- joint names, axes, limits and printed-part meshes are inherited from V2;
+- joint names and axes are inherited from V2; S13 (`head_yaw`) is limited to
+  ±100° in both ZP10D XML files, and its position actuator inherits this range;
 - actuator force is capped at the ZP10D published stall torque of 10 kg.cm
   (`0.980665 N.m`);
 - ZP10D response parameters (`kp`, damping, friction and armature) are unknown;
-- link mass, centre of mass and inertia still describe the original assembly;
-- printed mounting parts have not yet been redrawn around the ZP10D envelope.
+- mesh, mass, centre of mass and inertia were generated from the older
+  `cad/local_fix/open_duck_mini_covers_forward_review.step`; they have not been
+  refreshed from the current `open_duck_mini_upper_refit.step`;
+- the current CAD mounting parts have been adapted, but their later geometry,
+  speaker/antenna placement and body/head changes are not synchronized here;
+- only the two foot soles participate in robot contact. Head, body and bracket
+  self-collisions cannot be detected by this MJCF's existing contact settings.
 
-The model is therefore suitable for checking XML compatibility and estimating
-whether the lower torque limit is viable. It is not yet a manufacturing model
-or a validated dynamics model.
+The model is therefore suitable for checking XML compatibility and diagnosing
+the older dynamics model. It cannot validate current CAD clearances or establish
+that the current assembly can stand or walk. Current assembly review evidence
+is recorded in `cad/local_fix/FINAL_ASSEMBLY_REVIEW.json`.
 
 Run an existing policy against this draft with:
 

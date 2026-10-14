@@ -1,0 +1,2697 @@
+{
+  "source_sha256": "13412c73715d9abc91b32723c79c4f071e556b7474ba77e5158b9b0b2074db6b",
+  "static": [
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/right_antenna_holder[1]",
+      "gap_mm": 96.63245898516337,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/antenna[4]",
+      "gap_mm": 150.4746695071542,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "gap_mm": 50.80105215921831,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/left_antenna_holder[9]",
+      "gap_mm": 149.97880996792665,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/antenna[10]",
+      "gap_mm": 101.6329405861077,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "gap_mm": 46.0409806167041,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 69.25421544033307,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 59.41021688096504,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "gap_mm": 29.66800630081923,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/RaspberryPiZeroW[0]",
+      "gap_mm": 86.35669995660892,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/flash_reflector_interface[1]",
+      "gap_mm": 131.5647515589052,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/roll_bearing[3]",
+      "gap_mm": 94.47010148966432,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/head[4]",
+      "gap_mm": 0.4171472353014113,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/left_eye[5]",
+      "gap_mm": 80.44528303602902,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/right_eye[6]",
+      "gap_mm": 18.972998200433196,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/speaker_stand[7]",
+      "gap_mm": 9.663391655489592e-12,
+      "overlap_mm3": 0,
+      "intended_contact": true,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/flash_light_module[8]",
+      "gap_mm": 123.47855283641526,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/glass[9]",
+      "gap_mm": 25.725438203004558,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/glass[10]",
+      "gap_mm": 83.651519186734,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "gap_mm": 11.789230675828748,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/head_roll_mount[12]",
+      "gap_mm": 20.962949974193375,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/sg90[13]",
+      "gap_mm": 123.8089652349415,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "gap_mm": 0.0,
+      "overlap_mm3": 0,
+      "intended_contact": true,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/speaker_top[15]",
+      "gap_mm": 4.321207843051584,
+      "overlap_mm3": 0.0,
+      "intended_contact": true,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/Cam[16]",
+      "gap_mm": 41.8925696731418,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/bulb[17]",
+      "gap_mm": 13.974620954938176,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/bulb[18]",
+      "gap_mm": 79.42485363991501,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/glass[19]",
+      "gap_mm": 23.90624393692913,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_body[0]",
+      "gap_mm": 43.323742222119286,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 50.39049973715573,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 49.476408215614946,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/glass[21]",
+      "gap_mm": 83.18591820316468,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/sg90[22]",
+      "gap_mm": 92.01028577579683,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/right_antenna_holder[1]",
+      "gap_mm": 99.27895888452572,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/antenna[4]",
+      "gap_mm": 158.16454639357212,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "gap_mm": 57.172776039124415,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/left_antenna_holder[9]",
+      "gap_mm": 155.93334868874237,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/antenna[10]",
+      "gap_mm": 103.91776649298592,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "gap_mm": 50.258406006986654,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 73.06769854100722,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 66.08620124143292,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "gap_mm": 35.723403242649766,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/RaspberryPiZeroW[0]",
+      "gap_mm": 87.53557324881848,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/flash_reflector_interface[1]",
+      "gap_mm": 131.58147000032181,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/roll_bearing[3]",
+      "gap_mm": 97.82948037403028,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/head[4]",
+      "gap_mm": 0.6946361291763783,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/left_eye[5]",
+      "gap_mm": 83.31677095765937,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/right_eye[6]",
+      "gap_mm": 21.41767349667293,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/speaker_stand[7]",
+      "gap_mm": 1.5000000000391036,
+      "overlap_mm3": 0.0,
+      "intended_contact": true,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/flash_light_module[8]",
+      "gap_mm": 123.92917403978579,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/glass[9]",
+      "gap_mm": 28.85114265994087,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/glass[10]",
+      "gap_mm": 86.72364585098131,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "gap_mm": 16.178145096227013,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/head_roll_mount[12]",
+      "gap_mm": 23.944766406091457,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/sg90[13]",
+      "gap_mm": 128.6079051256479,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/speaker_top[15]",
+      "gap_mm": 1.6633378991627446e-12,
+      "overlap_mm3": 0,
+      "intended_contact": true,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/Cam[16]",
+      "gap_mm": 47.02967673712793,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/bulb[17]",
+      "gap_mm": 17.30112440384112,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/bulb[18]",
+      "gap_mm": 81.59813572444203,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/glass[19]",
+      "gap_mm": 27.078521233660027,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_body[0]",
+      "gap_mm": 43.16687149701199,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 50.7201402064342,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 46.81799647383256,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/glass[21]",
+      "gap_mm": 86.00111341122548,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/sg90[22]",
+      "gap_mm": 95.12917309704137,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/right_antenna_holder[1]",
+      "gap_mm": 97.5773772914752,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/antenna[4]",
+      "gap_mm": 161.05925126048072,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "gap_mm": 62.239561583187694,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/left_antenna_holder[9]",
+      "gap_mm": 160.1705468433939,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/antenna[10]",
+      "gap_mm": 102.17131904759401,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "gap_mm": 58.28857804558158,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 79.62946099802545,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 70.45788259290505,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "gap_mm": 41.785329065126795,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/RaspberryPiZeroW[0]",
+      "gap_mm": 96.70352905169163,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/flash_reflector_interface[1]",
+      "gap_mm": 142.44755234924105,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/roll_bearing[3]",
+      "gap_mm": 99.501868267802,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/head[4]",
+      "gap_mm": 0.249999999904636,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/left_eye[5]",
+      "gap_mm": 92.65028086403215,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/right_eye[6]",
+      "gap_mm": 21.849754370212896,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/speaker_stand[7]",
+      "gap_mm": 9.033397435739763,
+      "overlap_mm3": 0.0,
+      "intended_contact": true,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/flash_light_module[8]",
+      "gap_mm": 133.3869761539393,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/glass[9]",
+      "gap_mm": 30.12290770264774,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/glass[10]",
+      "gap_mm": 95.88574236694629,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "gap_mm": 15.959883178975076,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/head_roll_mount[12]",
+      "gap_mm": 32.4496735567319,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/sg90[13]",
+      "gap_mm": 132.60505381198814,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/Cam[16]",
+      "gap_mm": 54.319642670474664,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/bulb[17]",
+      "gap_mm": 19.49456886954517,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/bulb[18]",
+      "gap_mm": 91.49942880299291,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/glass[19]",
+      "gap_mm": 28.55353892746344,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_body[0]",
+      "gap_mm": 53.71628658917887,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 61.47070497317083,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 60.06375504240674,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/glass[21]",
+      "gap_mm": 95.38666534942742,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/sg90[22]",
+      "gap_mm": 93.96412153938456,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/right_antenna_holder[1]",
+      "gap_mm": 85.85310442158296,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/antenna[4]",
+      "gap_mm": 120.13457957123835,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "gap_mm": 28.00129759261983,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/left_antenna_holder[9]",
+      "gap_mm": 119.93236757341343,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/antenna[10]",
+      "gap_mm": 90.28770027966183,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "gap_mm": 17.60457676911022,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 59.55537735507451,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 29.13856357227536,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "gap_mm": 13.783227125654253,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/RaspberryPiZeroW[0]",
+      "gap_mm": 57.261794857433195,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/flash_reflector_interface[1]",
+      "gap_mm": 114.22509484724078,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/roll_bearing[3]",
+      "gap_mm": 74.25408866818748,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/head[4]",
+      "gap_mm": 4.831690603168681e-13,
+      "overlap_mm3": 0,
+      "intended_contact": true,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/left_eye[5]",
+      "gap_mm": 65.83225844442937,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/right_eye[6]",
+      "gap_mm": 14.830830083692028,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/flash_light_module[8]",
+      "gap_mm": 102.01989327514595,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/glass[9]",
+      "gap_mm": 21.73325783149921,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/glass[10]",
+      "gap_mm": 69.0561866201093,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "gap_mm": 39.29364641528346,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/head_roll_mount[12]",
+      "gap_mm": 3.7886281983342083,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/sg90[13]",
+      "gap_mm": 95.7821960537481,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/Cam[16]",
+      "gap_mm": 26.151483226574232,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/bulb[17]",
+      "gap_mm": 10.138742494218535,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/bulb[18]",
+      "gap_mm": 64.78908378519668,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/glass[19]",
+      "gap_mm": 19.917957477952825,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_body[0]",
+      "gap_mm": 20.240208135281947,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 39.28803572153917,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 30.638641596070375,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/glass[21]",
+      "gap_mm": 68.57134502302314,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/sg90[22]",
+      "gap_mm": 77.52644828235653,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/right_antenna_holder[1]",
+      "gap_mm": 51.83133064347608,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/antenna[4]",
+      "gap_mm": 131.85158799469528,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "gap_mm": 42.28780543859971,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/left_antenna_holder[9]",
+      "gap_mm": 134.50697396389572,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/antenna[10]",
+      "gap_mm": 56.5758906564197,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "gap_mm": 56.17719813295104,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 60.31719095661223,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 55.88718274199186,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "gap_mm": 20.363360042964963,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/RaspberryPiZeroW[0]",
+      "gap_mm": 98.4383908602307,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/flash_reflector_interface[1]",
+      "gap_mm": 144.72617697657745,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/roll_bearing[3]",
+      "gap_mm": 63.72139274786848,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/left_eye[5]",
+      "gap_mm": 94.76163875001534,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/right_eye[6]",
+      "gap_mm": 22.14912442939655,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/flash_light_module[8]",
+      "gap_mm": 135.45625568591913,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/glass[9]",
+      "gap_mm": 30.845704444973713,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/glass[10]",
+      "gap_mm": 97.9657688395661,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "gap_mm": 11.861742733448267,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/head_roll_mount[12]",
+      "gap_mm": 34.62463637565969,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/sg90[13]",
+      "gap_mm": 105.98901289087286,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/Cam[16]",
+      "gap_mm": 56.06679187580339,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/bulb[17]",
+      "gap_mm": 20.52693930934945,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/bulb[18]",
+      "gap_mm": 93.70040068139242,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/glass[19]",
+      "gap_mm": 29.324900831508987,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_body[0]",
+      "gap_mm": 55.827293513052695,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 63.9413343217611,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 61.50927592152561,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/glass[21]",
+      "gap_mm": 97.50202317278378,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/sg90[22]",
+      "gap_mm": 49.384513950535286,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    }
+  ],
+  "motion": [
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 0.2637215794330517,
+      "minimum_angle_deg": -9,
+      "exact_minimum_sample_gap_mm": 25.178580355278914,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.03818972362705024,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 30.072891644427198,
+      "minimum_angle_deg": 30,
+      "exact_minimum_sample_gap_mm": 48.36937585468121,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.03127335747618461,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 24.49488557450335,
+      "minimum_angle_deg": 30,
+      "exact_minimum_sample_gap_mm": 39.04385576380912,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.031049859742541475,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_passive_horn[1]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 43.845177894555746,
+      "minimum_angle_deg": -30,
+      "exact_minimum_sample_gap_mm": 58.852610353636074,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.029763154999477147,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 38.06468992183235,
+      "minimum_angle_deg": 30,
+      "exact_minimum_sample_gap_mm": 50.537618780956294,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.029763154999482653,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 0.2664012855056898,
+      "minimum_angle_deg": -11,
+      "exact_minimum_sample_gap_mm": 29.666941964905636,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.04616403905729224,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 31.978537663442708,
+      "minimum_angle_deg": 30,
+      "exact_minimum_sample_gap_mm": 54.61438708073715,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.0392476729064266,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 24.747074428765373,
+      "minimum_angle_deg": 30,
+      "exact_minimum_sample_gap_mm": 42.30149589540082,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.03902417517278347,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_passive_horn[1]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 46.69228056450074,
+      "minimum_angle_deg": -30,
+      "exact_minimum_sample_gap_mm": 63.365765684987906,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.03773747042971914,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 39.270320455835055,
+      "minimum_angle_deg": 30,
+      "exact_minimum_sample_gap_mm": 56.39401544745191,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.03773747042972465,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 0.9358696762367266,
+      "minimum_angle_deg": 17,
+      "exact_minimum_sample_gap_mm": 47.539132282372194,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.024903528159492174,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 31.68160449836297,
+      "minimum_angle_deg": 30,
+      "exact_minimum_sample_gap_mm": 58.26812595992886,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.017987162008626538,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 31.242031265709148,
+      "minimum_angle_deg": 30,
+      "exact_minimum_sample_gap_mm": 50.31259890969989,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.017763664274983406,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_passive_horn[1]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 52.36011115282433,
+      "minimum_angle_deg": -30,
+      "exact_minimum_sample_gap_mm": 68.74487908356996,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.016476959531919078,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 42.76943165079722,
+      "minimum_angle_deg": 30,
+      "exact_minimum_sample_gap_mm": 60.348345081239415,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.016476959531924584,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 0.383982743906969,
+      "minimum_angle_deg": 23,
+      "exact_minimum_sample_gap_mm": 11.488665643192357,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.10108955485780807,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 18.40582681129545,
+      "minimum_angle_deg": 30,
+      "exact_minimum_sample_gap_mm": 21.22447082319156,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.09417318870694244,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 0.4503943366908816,
+      "minimum_angle_deg": 28,
+      "exact_minimum_sample_gap_mm": 16.645528605712883,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.0939496909732993,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_passive_horn[1]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 29.130126489133637,
+      "minimum_angle_deg": -30,
+      "exact_minimum_sample_gap_mm": 51.14758658930355,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.09266298623023497,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 19.407373650561084,
+      "minimum_angle_deg": 25,
+      "exact_minimum_sample_gap_mm": 23.950420152890295,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.09266298623024048,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 0.257482541721471,
+      "minimum_angle_deg": 19,
+      "exact_minimum_sample_gap_mm": 36.64802145467944,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.03225933443223439,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 10.456901491723706,
+      "minimum_angle_deg": 30,
+      "exact_minimum_sample_gap_mm": 42.01991359634876,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.025342968281368748,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 29.83212498940735,
+      "minimum_angle_deg": 30,
+      "exact_minimum_sample_gap_mm": 47.643879954721505,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.02511947054772562,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_passive_horn[1]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 41.855230140199616,
+      "minimum_angle_deg": -30,
+      "exact_minimum_sample_gap_mm": 48.17649981763563,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.02383276580466129,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "range_deg": [
+        -30,
+        30
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 29.833448330938406,
+      "minimum_angle_deg": 30,
+      "exact_minimum_sample_gap_mm": 44.68725285890573,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.023832765804666797,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S13",
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "range_deg": [
+        -160,
+        160
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 27.326206623948764,
+      "minimum_angle_deg": -73,
+      "exact_minimum_sample_gap_mm": 48.36713660763091,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.03127335747618461,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S13",
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "range_deg": [
+        -160,
+        160
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 29.1888363509995,
+      "minimum_angle_deg": -74,
+      "exact_minimum_sample_gap_mm": 52.94238114117347,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.0392476729064266,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S13",
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "range_deg": [
+        -160,
+        160
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 34.45738429141487,
+      "minimum_angle_deg": -70,
+      "exact_minimum_sample_gap_mm": 59.83265106505114,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.017987162008626538,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S13",
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "range_deg": [
+        -160,
+        160
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 2.3128241784626065,
+      "minimum_angle_deg": -85,
+      "exact_minimum_sample_gap_mm": 21.4096912036586,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.09417318870694244,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S13",
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "range_deg": [
+        -160,
+        160
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 0.9417703757482977,
+      "minimum_angle_deg": -59,
+      "exact_minimum_sample_gap_mm": 43.394975062145676,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.025342968281368748,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/body_assembly <1>[14]/body_front[0]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 56.89850177215337,
+      "minimum_angle_deg": -20,
+      "exact_minimum_sample_gap_mm": 79.68496769596912,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.0288194534430528,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 102.40109550146073,
+      "minimum_angle_deg": 39,
+      "exact_minimum_sample_gap_mm": 122.82063636005567,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.02975921047881988,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 63.46844005904882,
+      "minimum_angle_deg": -20,
+      "exact_minimum_sample_gap_mm": 83.43407693057674,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.029597622586291512,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 87.4037366374626,
+      "minimum_angle_deg": -20,
+      "exact_minimum_sample_gap_mm": 116.63760701703193,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.04496166723925707,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/body_assembly <1>[14]/body_front[0]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 62.746857693370224,
+      "minimum_angle_deg": -20,
+      "exact_minimum_sample_gap_mm": 86.00772164137877,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.036793768873294795,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 106.63884136204025,
+      "minimum_angle_deg": 39,
+      "exact_minimum_sample_gap_mm": 128.3929885883027,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.03773352590906187,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 69.24645407146474,
+      "minimum_angle_deg": -20,
+      "exact_minimum_sample_gap_mm": 90.37796522449071,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.0375719380165335,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 93.19816267979202,
+      "minimum_angle_deg": -20,
+      "exact_minimum_sample_gap_mm": 122.79037760668523,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.05293598266949906,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/body_assembly <1>[14]/body_front[0]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 61.58750156313895,
+      "minimum_angle_deg": -20,
+      "exact_minimum_sample_gap_mm": 89.90061639074446,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.015533257975494735,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 104.25104468687582,
+      "minimum_angle_deg": 39,
+      "exact_minimum_sample_gap_mm": 128.0424934827002,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.01647301501126181,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 67.92850538301317,
+      "minimum_angle_deg": -20,
+      "exact_minimum_sample_gap_mm": 93.98610622318746,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.016311427118733443,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 92.84698370283624,
+      "minimum_angle_deg": -20,
+      "exact_minimum_sample_gap_mm": 126.32665898388424,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.031675471771699,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/body_assembly <1>[14]/body_front[0]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 77.06770668248657,
+      "minimum_angle_deg": -20,
+      "exact_minimum_sample_gap_mm": 102.13027674514291,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.09171928467381063,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 108.45730806611293,
+      "minimum_angle_deg": 39,
+      "exact_minimum_sample_gap_mm": 117.63353080108082,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.09265904170957771,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 81.86703920037927,
+      "minimum_angle_deg": -20,
+      "exact_minimum_sample_gap_mm": 105.57600500276858,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.09249745381704934,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 106.04778678144666,
+      "minimum_angle_deg": -20,
+      "exact_minimum_sample_gap_mm": 139.09747756718022,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.10786149847001489,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/body_assembly <1>[14]/body_front[0]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 46.62164524535952,
+      "minimum_angle_deg": -20,
+      "exact_minimum_sample_gap_mm": 78.04241206805561,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.022889064248236946,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/body_assembly <1>[14]/body_back[2]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 59.56181765340161,
+      "minimum_angle_deg": 39,
+      "exact_minimum_sample_gap_mm": 81.40341134478388,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.023828821284004025,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/body_assembly <1>[14]/body_middle_top[5]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 46.67422272738635,
+      "minimum_angle_deg": -20,
+      "exact_minimum_sample_gap_mm": 79.81492797205779,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.023667233391475657,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S11",
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/trunk_assembly <1>[24]/trunk_top[0]",
+      "range_deg": [
+        -20,
+        39
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 70.79866464950977,
+      "minimum_angle_deg": -20,
+      "exact_minimum_sample_gap_mm": 113.37588101360421,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.03903127804444121,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S12",
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/neck_pitch_assembly <1>[8]/neck_left_sheet[0]",
+      "range_deg": [
+        -45,
+        45
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 84.3008923484829,
+      "minimum_angle_deg": -45,
+      "exact_minimum_sample_gap_mm": 97.65685142033192,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.03127335747741137,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S12",
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/neck_pitch_assembly <1>[8]/neck_right_sheet[1]",
+      "range_deg": [
+        -45,
+        45
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 46.284265409109715,
+      "minimum_angle_deg": -45,
+      "exact_minimum_sample_gap_mm": 56.94057561069498,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.031011786237877398,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S12",
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_body[0]",
+      "range_deg": [
+        -45,
+        45
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 43.77090283595081,
+      "minimum_angle_deg": 14,
+      "exact_minimum_sample_gap_mm": 62.793772826482076,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.031049859742560318,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S12",
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/neck_pitch_assembly <1>[8]/neck_left_sheet[0]",
+      "range_deg": [
+        -45,
+        45
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 86.3669889398338,
+      "minimum_angle_deg": -45,
+      "exact_minimum_sample_gap_mm": 98.49462935923474,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.039247672907653366,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S12",
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/neck_pitch_assembly <1>[8]/neck_right_sheet[1]",
+      "range_deg": [
+        -45,
+        45
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 50.111389138162075,
+      "minimum_angle_deg": -45,
+      "exact_minimum_sample_gap_mm": 64.11872691194976,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.038986101668119395,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S12",
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_body[0]",
+      "range_deg": [
+        -45,
+        45
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 47.53325022987245,
+      "minimum_angle_deg": 14,
+      "exact_minimum_sample_gap_mm": 68.76016360418899,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.03902417517280231,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S12",
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/neck_pitch_assembly <1>[8]/neck_left_sheet[0]",
+      "range_deg": [
+        -45,
+        45
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 94.90952845410048,
+      "minimum_angle_deg": -34,
+      "exact_minimum_sample_gap_mm": 111.56299767090505,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.017987162009853303,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S12",
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/neck_pitch_assembly <1>[8]/neck_right_sheet[1]",
+      "range_deg": [
+        -45,
+        45
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 54.498020302246225,
+      "minimum_angle_deg": -31,
+      "exact_minimum_sample_gap_mm": 72.90791245417398,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.017725590770319332,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S12",
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_body[0]",
+      "range_deg": [
+        -45,
+        45
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 53.55500174475885,
+      "minimum_angle_deg": 13,
+      "exact_minimum_sample_gap_mm": 74.75558763008509,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.01776366427500225,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S12",
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/neck_pitch_assembly <1>[8]/neck_left_sheet[0]",
+      "range_deg": [
+        -45,
+        45
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 68.0106722927543,
+      "minimum_angle_deg": -38,
+      "exact_minimum_sample_gap_mm": 91.68827746097477,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.0941731887081692,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S12",
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/neck_pitch_assembly <1>[8]/neck_right_sheet[1]",
+      "range_deg": [
+        -45,
+        45
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 48.72339020341482,
+      "minimum_angle_deg": -36,
+      "exact_minimum_sample_gap_mm": 75.60836974102966,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.09391161746863523,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S12",
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_body[0]",
+      "range_deg": [
+        -45,
+        45
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 40.80988605516289,
+      "minimum_angle_deg": -20,
+      "exact_minimum_sample_gap_mm": 62.71023242033275,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.09394969097331815,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S12",
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/neck_pitch_assembly <1>[8]/neck_left_sheet[0]",
+      "range_deg": [
+        -45,
+        45
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 86.8732380929776,
+      "minimum_angle_deg": -33,
+      "exact_minimum_sample_gap_mm": 100.28194691757199,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.025342968282595513,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S12",
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/neck_pitch_assembly <1>[8]/neck_right_sheet[1]",
+      "range_deg": [
+        -45,
+        45
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 36.37135492646987,
+      "minimum_angle_deg": -31,
+      "exact_minimum_sample_gap_mm": 56.570560707961086,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.025081397043061542,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "S12",
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_body[0]",
+      "range_deg": [
+        -45,
+        45
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 41.339031834970065,
+      "minimum_angle_deg": -26,
+      "exact_minimum_sample_gap_mm": 52.36310588077112,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.02511947054774446,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/right_antenna_holder[1]",
+      "fixed": "/head_assembly <1>[21]/speaker_interface[2]",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 78.34297157941634,
+      "minimum_angle_deg": 79,
+      "exact_minimum_sample_gap_mm": 81.82952998582414,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.029752913436643727,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/right_antenna_holder[1]",
+      "fixed": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 80.3132118329155,
+      "minimum_angle_deg": 79,
+      "exact_minimum_sample_gap_mm": 84.42245144389675,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.03772722886688572,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/right_antenna_holder[1]",
+      "fixed": "/head_assembly <1>[21]/speaker_top[15]",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 78.44876540332082,
+      "minimum_angle_deg": 79,
+      "exact_minimum_sample_gap_mm": 82.68975337720123,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.016466717969085658,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/right_antenna_holder[1]",
+      "fixed": "/head_assembly <1>[21]/speaker_stand[7]",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 66.8066095102241,
+      "minimum_angle_deg": 79,
+      "exact_minimum_sample_gap_mm": 75.07853006016731,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.09265274466740156,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/right_antenna_holder[1]",
+      "fixed": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 33.2734953520762,
+      "minimum_angle_deg": 79,
+      "exact_minimum_sample_gap_mm": 36.66567233605694,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.023822524241827868,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/antenna[4]",
+      "fixed": "/head_assembly <1>[21]/speaker_interface[2]",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 79.07718906196128,
+      "minimum_angle_deg": -90,
+      "exact_minimum_sample_gap_mm": 142.5120724210934,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.027141297090821394,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/antenna[4]",
+      "fixed": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 78.91246541886375,
+      "minimum_angle_deg": -90,
+      "exact_minimum_sample_gap_mm": 144.09149055209895,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.03511561252106339,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/antenna[4]",
+      "fixed": "/head_assembly <1>[21]/speaker_top[15]",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 89.49233986751547,
+      "minimum_angle_deg": -90,
+      "exact_minimum_sample_gap_mm": 154.55314515116712,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.013855101623263328,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/antenna[4]",
+      "fixed": "/head_assembly <1>[21]/speaker_stand[7]",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 51.26308815948595,
+      "minimum_angle_deg": -86,
+      "exact_minimum_sample_gap_mm": 110.70733924903132,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.09004112832157922,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/antenna[4]",
+      "fixed": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 91.52094134099956,
+      "minimum_angle_deg": -90,
+      "exact_minimum_sample_gap_mm": 141.92387172014213,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.02121090789600554,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/left_antenna_holder[9]",
+      "fixed": "/head_assembly <1>[21]/speaker_interface[2]",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 126.19489619011681,
+      "minimum_angle_deg": -79,
+      "exact_minimum_sample_gap_mm": 147.13648993423718,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.029752913436384656,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/left_antenna_holder[9]",
+      "fixed": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 127.30298319386756,
+      "minimum_angle_deg": -79,
+      "exact_minimum_sample_gap_mm": 152.67972768539698,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.037727228866626654,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/left_antenna_holder[9]",
+      "fixed": "/head_assembly <1>[21]/speaker_top[15]",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 134.57113445690612,
+      "minimum_angle_deg": -79,
+      "exact_minimum_sample_gap_mm": 157.70412578539867,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.01646671796882659,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/left_antenna_holder[9]",
+      "fixed": "/head_assembly <1>[21]/speaker_stand[7]",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 97.57413222336424,
+      "minimum_angle_deg": -79,
+      "exact_minimum_sample_gap_mm": 116.75734166031144,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.09265274466714249,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/left_antenna_holder[9]",
+      "fixed": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 116.2306642208929,
+      "minimum_angle_deg": -80,
+      "exact_minimum_sample_gap_mm": 134.41594076855884,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.0238225242415688,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/antenna[10]",
+      "fixed": "/head_assembly <1>[21]/speaker_interface[2]",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 1.304779979665314,
+      "minimum_angle_deg": 52,
+      "exact_minimum_sample_gap_mm": 48.993010132423684,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.02714129709074893,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/antenna[10]",
+      "fixed": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 0.6515919849793536,
+      "minimum_angle_deg": 54,
+      "exact_minimum_sample_gap_mm": 48.52128060261473,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.03511561252099093,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/antenna[10]",
+      "fixed": "/head_assembly <1>[21]/speaker_top[15]",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 1.4105738035697917,
+      "minimum_angle_deg": 52,
+      "exact_minimum_sample_gap_mm": 49.38014499948892,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.013855101623190863,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/antenna[10]",
+      "fixed": "/head_assembly <1>[21]/speaker_stand[7]",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 0.6611736668586399,
+      "minimum_angle_deg": 87,
+      "exact_minimum_sample_gap_mm": 32.81225907094426,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.09004112832150676,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    },
+    {
+      "joint": "antenna",
+      "moving": "/antenna[10]",
+      "fixed": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "range_deg": [
+        -90,
+        90
+      ],
+      "step_deg": 1,
+      "min_gap_lower_bound_mm": 2.1295374823674247,
+      "minimum_angle_deg": 25,
+      "exact_minimum_sample_gap_mm": 40.23147520901786,
+      "overlap_mm3": 0.0,
+      "mesh_error_mm": 0.021210907895933075,
+      "exact_fallback": [],
+      "broad_phase": "Conservative transformed mesh bounds; FCL and BRep where bounds do not establish clearance"
+    }
+  ],
+  "completed": true,
+  "passed": true,
+  "sampling": "single joint, other joints at zero, 1 degree steps",
+  "antenna_range_diagnostic_only": true,
+  "head_scope": "Full new head used against speaker leaves; newly added wall material checked against direct neighbours and motion. Removed material cannot introduce collisions."
+}

@@ -30,6 +30,11 @@ def main():
                 print('PASS: allocation at the address-space ceiling was rejected')
                 return
             raise AssertionError(f'Address-space limit failed: {len(allocation)} bytes allocated')
+        # build123d requests parallel OCC meshing even with OMP_NUM_THREADS=1.
+        # Cap OCC's own native pool before the target imports or reads geometry.
+        from OCP.OSD import OSD_Parallel, OSD_ThreadPool
+        OSD_Parallel.SetUseOcctThreads_s(True)
+        OSD_ThreadPool.DefaultPool_s().Init(1)
         script = Path(sys.argv[1]).resolve()
         sys.argv = sys.argv[1:]
         sys.path.insert(0, str(script.parent))

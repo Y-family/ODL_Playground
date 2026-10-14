@@ -47,17 +47,38 @@ def _one(parent: bd.Shape, label: str) -> bd.Shape:
     return matches[0]
 
 
-def _servo_parts(servo: bd.Shape) -> tuple[bd.Shape, bd.Shape, bd.Shape]:
+SINGLE_OUTPUT_SERVOS = {"S01_RIGHT_HIP_YAW_ZP10D", "S06_LEFT_HIP_YAW_ZP10D"}
+ZP10D_HORN_TO_JOINT_DATUM_MM = 23.75
+
+
+def _servo_parts(servo: bd.Shape) -> tuple[bd.Shape, bd.Shape | None, bd.Shape]:
     body = _one(servo, "ZP10D_vendor_body")
-    passive = _one(servo, "ZP10D_vendor_passive_horn")
+    passive_horns = [child for child in _children(servo)
+                     if child.label == "ZP10D_vendor_passive_horn"]
+    if not passive_horns and servo.label in SINGLE_OUTPUT_SERVOS:
+        passive = None
+    else:
+        passive = _one(servo, "ZP10D_vendor_passive_horn")
     active = _one(servo, "ZP10D_vendor_active_horn")
     return body, passive, active
 
 
 def _axis(shape: bd.Shape) -> tuple[bd.Vector, bd.Vector]:
-    _, passive, active = _servo_parts(shape)
-    passive_center = passive.bounding_box().center()
+    body, passive, active = _servo_parts(shape)
     active_center = active.bounding_box().center()
+    if passive is None:
+        # The retained R10 output cylinder supplies the axis; the datum offset
+        # is verified against both unmodified vendor placements before removal.
+        cylinders = [face for face in active.faces()
+                     if face.geom_type == bd.GeomType.CYLINDER
+                     and face.radius is not None and abs(face.radius - 10.0) < 0.001]
+        if not cylinders:
+            raise ValueError(f"{shape.label}: missing output-axis cylinder")
+        direction = cylinders[0].axis_of_rotation.direction.normalized()
+        if direction.dot(active_center - body.bounding_box().center()) < 0:
+            direction = -direction
+        return direction, active_center - direction * ZP10D_HORN_TO_JOINT_DATUM_MM
+    passive_center = passive.bounding_box().center()
     return (active_center - passive_center).normalized(), (
         passive_center + active_center
     ) * 0.5
@@ -236,6 +257,8 @@ def _validate_joint(
         )
     else:
         for horn in (passive, active):
+            if horn is None:
+                continue
             host = _nearest_host(horn, spec.horn_hosts)
             horn_lines = _horn_pattern_lines(horn, joint_axis, joint_center)
             _require_host_lines(
@@ -254,7 +277,7 @@ def _validate_joint(
             )
 
     support_gap = None
-    if spec.passive_support is not None:
+    if spec.passive_support is not None and passive is not None:
         support_gap = _require_contact(
             f"{servo_id} passive horn/support",
             passive,

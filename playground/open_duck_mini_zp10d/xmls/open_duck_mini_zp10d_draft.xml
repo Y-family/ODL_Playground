@@ -223,7 +223,7 @@
         <!-- Link neck_pitch_assembly -->
         <body name="neck_pitch_assembly" pos="0.001 0.01915 0.0900009" quat="0.707107 0.707107 -7.88258e-15 7.79925e-15">
           <!-- Joint from trunk_assembly to neck_pitch_assembly -->
-          <joint name="neck_pitch" type="hinge" range="-0.3490658503988437 1.1344640137963364" class="zp10d_draft"/>
+          <joint name="neck_pitch" type="hinge" range="-0.3490658503988437 0.6806784082777885" class="zp10d_draft"/>
           <inertial pos="-5.63137e-06 0.0492968 0.0181786" mass="0.06618"
             fullinertia="3.49456e-05 1.70231e-05 2.80043e-05 8.75633e-09 -2.15592e-09 -1.85188e-08"/>
           <!-- Part neck_left_sheet -->
@@ -250,7 +250,7 @@
             <body name="neck_yaw_assembly" pos="-4.33681e-19 0.057 0.01905"
               quat="0.707107 -0.707107 1.11022e-16 -5.88785e-17">
               <!-- Joint from head_pitch_to_yaw to neck_yaw_assembly -->
-              <joint name="head_yaw" type="hinge" range="-2.792526803190927 2.792526803190927" class="zp10d_draft"/>
+              <joint name="head_yaw" type="hinge" range="-1.7453292519943295 1.7453292519943295" class="zp10d_draft"/>
               <inertial pos="0.00412907 3.95745e-06 -0.0222828" mass="0.0918099"
                 fullinertia="3.11706e-05 6.94935e-05 7.04025e-05 4.29429e-09 -4.41251e-06 -3.82028e-09"/>
               <!-- Part head_yaw_to_roll -->

@@ -1,0 +1,505 @@
+{
+  "source_sha256": "0398653cb440736ace1acd58a0548ae62ca953c9fe0ce13dc5240a1301043d71",
+  "output_sha256": "dcb978187096062087c1747a91c76378dc77df510ce7698ed88463c61f3e4ec9",
+  "mjcf_sha256": "e11af33cc6dc34ac7ad71ecf5d875efec504aa0e13fef982f6c9beae42358d37",
+  "axes": {
+    "S12": [
+      [
+        8.999999999997002,
+        0.7250000000469985,
+        156.00093881237
+      ],
+      [
+        -8.361834352060642e-17,
+        -1.0,
+        1.8732529380327426e-16
+      ]
+    ],
+    "S02": [
+      [
+        -18.374999999931223,
+        -30.249999999935,
+        -0.07406118762711955
+      ],
+      [
+        -1.0000000000000002,
+        1.2364106529e-14,
+        -2.2426505097525044e-14
+      ]
+    ],
+    "S05": [
+      [
+        -35.06,
+        -93.899999999925,
+        -157.3740611876
+      ],
+      [
+        -1.2168350936435996e-14,
+        -1.0000000000000007,
+        2.060984466371243e-16
+      ]
+    ],
+    "S13": [
+      [
+        8.999999999996499,
+        0.10000000000000009,
+        197.57593881240996
+      ],
+      [
+        -2.232120398368149e-14,
+        1.8732529380327608e-16,
+        1.0
+      ]
+    ],
+    "S03": [
+      [
+        -35.05999999998,
+        -93.92499999991287,
+        -0.07406118763605507
+      ],
+      [
+        1.2142061924074975e-14,
+        1.0000000000000002,
+        -3.2347204538755113e-16
+      ]
+    ],
+    "S04": [
+      [
+        -35.06,
+        -93.799999999925,
+        -78.7240611876
+      ],
+      [
+        -1.2107118596478596e-14,
+        -1.0000000000000007,
+        2.060984466375469e-16
+      ]
+    ],
+    "S10": [
+      [
+        -35.06,
+        93.89999999995,
+        -157.37406118755
+      ],
+      [
+        7.956965112075405e-14,
+        -1.0000000000000002,
+        6.960127070587202e-16
+      ]
+    ],
+    "S14": [
+      [
+        75.9500000000095,
+        0.0999999999119301,
+        196.85093881236
+      ],
+      [
+        -1.0,
+        8.361832032325718e-17,
+        -2.232120398368149e-14
+      ]
+    ],
+    "S07": [
+      [
+        -18.374999999931475,
+        30.2499999999245,
+        -0.0740611876234758
+      ],
+      [
+        -1.0000000000000002,
+        -7.934760651580002e-14,
+        -2.248773743732504e-14
+      ]
+    ],
+    "S06": [
+      [
+        -18.999999999994998,
+        30.25,
+        64.365938812333
+      ],
+      [
+        -2.2265692832400002e-14,
+        -2.6666893440883368e-17,
+        1.0
+      ]
+    ],
+    "S11": [
+      [
+        8.999999999998998,
+        0.7250000000469985,
+        90.000938812376
+      ],
+      [
+        6.123277885599776e-17,
+        -1.0,
+        -1.2258063339448554e-28
+      ]
+    ],
+    "S01": [
+      [
+        -19.0,
+        -30.25,
+        64.365938812334
+      ],
+      [
+        -2.22044604926e-14,
+        2.957164716581373e-16,
+        1.0
+      ]
+    ],
+    "S08": [
+      [
+        -35.05999999998,
+        93.9249999999805,
+        -0.07406118762785496
+      ],
+      [
+        7.956965112072505e-14,
+        -1.0000000000000002,
+        6.960127070197884e-16
+      ]
+    ],
+    "S09": [
+      [
+        -35.06,
+        93.79999999995,
+        -78.724061187595
+      ],
+      [
+        7.956965112071888e-14,
+        -1.0000000000000002,
+        6.960127070336092e-16
+      ]
+    ]
+  },
+  "clearance_method": "FCL mesh separation minus measured OCCT deflection bounds; 0.6 mm invariant-axis pruning; sampled angles only.",
+  "candidate": "/tmp/minor-clearance/review.step",
+  "modified": {
+    "/right_cache[5]": {
+      "joint": "S03",
+      "file": "S03-relief.brep",
+      "removed_file": "S03-removed.brep",
+      "file_sha256": "5fabb027f0fa0c1c30fd9623e1d46836b1972908e4f814ca3248f6406538028c",
+      "removed_mm3": 686.1550482088818,
+      "removed_fraction": 0.012796065617497701,
+      "cuts": 2,
+      "pocket_profile_expansion_mm": 1.2,
+      "normal_recession_mm": 0.35,
+      "volume_integration_relative_tolerance": 1e-10,
+      "volume_audit_tolerance_mm3": 0.01,
+      "volume_audit_difference_mm3": 0.0013305853468636997,
+      "minimum_gap_lower_bound_mm": 0.25029616316111347,
+      "minimum_angle_deg": 44.0,
+      "limits_deg": [
+        -30,
+        70
+      ],
+      "verification_step_deg": 0.5,
+      "mesh_absolute_tolerance_mm": 0.01,
+      "mesh_pair_error_bound_mm": 0.0997038367391633,
+      "exact_sample_angle_deg": 44.0,
+      "exact_sample_overlap_mm3": 0.0,
+      "validity": {
+        "solidCount": 1,
+        "volumes": [
+          52934.08167983756
+        ],
+        "reasons": []
+      },
+      "mounting_guard_mm": 0.55,
+      "cylinders_preserved": true,
+      "bounds_preserved": true,
+      "visible_outer_side_faces_preserved": true
+    },
+    "/left_cache[0]": {
+      "joint": "S08",
+      "file": "S08-relief.brep",
+      "removed_file": "S08-removed.brep",
+      "file_sha256": "c4213d59708a02a22eb66164051c1ae5d9af1d5c3551b97c0098bec1257d761c",
+      "removed_mm3": 686.1548883130038,
+      "removed_fraction": 0.012796062940626896,
+      "cuts": 2,
+      "pocket_profile_expansion_mm": 1.2,
+      "normal_recession_mm": 0.35,
+      "volume_integration_relative_tolerance": 1e-10,
+      "volume_audit_tolerance_mm3": 0.01,
+      "volume_audit_difference_mm3": 0.00021224374154371617,
+      "minimum_gap_lower_bound_mm": 0.2502961631628589,
+      "minimum_angle_deg": -44.0,
+      "limits_deg": [
+        -70,
+        30
+      ],
+      "verification_step_deg": 0.5,
+      "mesh_absolute_tolerance_mm": 0.01,
+      "mesh_pair_error_bound_mm": 0.09970383673900947,
+      "exact_sample_angle_deg": -44.0,
+      "exact_sample_overlap_mm3": 0.0,
+      "validity": {
+        "solidCount": 1,
+        "volumes": [
+          52934.134532364755
+        ],
+        "reasons": []
+      },
+      "mounting_guard_mm": 0.55,
+      "cylinders_preserved": true,
+      "bounds_preserved": true,
+      "visible_outer_side_faces_preserved": true
+    },
+    "/head_pitch_to_yaw[6]": {
+      "joint": "S13 speaker_stand pair only",
+      "file": "S13-speaker-corner.brep",
+      "removed_file": "S13-speaker-removed.brep",
+      "file_sha256": "b6f5dce80640a40547b3244a1b6f195f6c9d1fccd9fafa8ad8f1bdb7f2e455c8",
+      "removed_mm3": 70.46187500517925,
+      "removed_fraction": 0.005286878524839044,
+      "removed_bounds": [
+        [
+          -8.1,
+          -10.900000000000007,
+          225.65093881235
+        ],
+        [
+          -4.174999999940016,
+          11.100000000000001,
+          226.57593881241
+        ]
+      ],
+      "minimum_gap_lower_bound_mm": 0.23028745884600854,
+      "minimum_angle_deg": -139,
+      "mesh_absolute_tolerance_mm": 0.01,
+      "mesh_pair_error_bound_mm": 0.01971254116348432,
+      "exact_sample_angle_deg": -90,
+      "exact_sample_overlap_mm3": 0.0,
+      "limits_deg": [
+        -160,
+        160
+      ],
+      "verification_step_deg": 1,
+      "validity": {
+        "solidCount": 1,
+        "volumes": [
+          13257.227549696425
+        ],
+        "reasons": []
+      },
+      "cylinders_preserved": true,
+      "mounting_guard_mm": 0.55
+    }
+  },
+  "export_leaf_count": 137,
+  "unchanged_leaf_count": 134,
+  "export_checks": "All occurrence labels, colours and per-face geometry match expected parts.",
+  "mount_probe": [
+    {
+      "joint": "S12",
+      "moving": "/head_pitch_to_yaw[6]",
+      "fixed": "/neck_pitch_assembly <1>[8]/S12_HEAD_PITCH_ZP10D[2]/ZP10D_vendor_body[0]",
+      "neutral_contact_bounds": [
+        [
+          6.533803088636146,
+          -18.275000099950006,
+          167.67687752473998
+        ],
+        [
+          10.759090130171362,
+          21.225000000044,
+          169.78952104550757
+        ]
+      ],
+      "mounts_at_risk": [
+        {
+          "radius": 3.25,
+          "center": [
+            5.055301887344999,
+            7.065442881273673,
+            169.126408218575
+          ],
+          "guard_overlap_mm3": 5.696530520439477
+        },
+        {
+          "radius": 3.25,
+          "center": [
+            6.444698112649,
+            -6.865442881272328,
+            169.126408218575
+          ],
+          "guard_overlap_mm3": 7.202341015955364
+        }
+      ]
+    },
+    {
+      "joint": "S13",
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "neutral_contact_bounds": [
+        [
+          -8.100000000000021,
+          -10.900000000000007,
+          225.90093881234972
+        ],
+        [
+          -5.992647090764844,
+          -7.449824617174622,
+          226.57593881241013
+        ]
+      ],
+      "mounts_at_risk": []
+    },
+    {
+      "joint": "S13",
+      "moving": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "neutral_contact_bounds": [
+        [
+          -8.1,
+          -10.900000000000007,
+          178.07593881240894
+        ],
+        [
+          -5.099999999999994,
+          5.6097974216071185,
+          218.07593881240987
+        ]
+      ],
+      "mounts_at_risk": []
+    },
+    {
+      "joint": "S13",
+      "moving": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "neutral_contact_bounds": [
+        [
+          -8.100000000000001,
+          -10.900000000000007,
+          171.87687762473917
+        ],
+        [
+          -5.099999999999998,
+          3.224797870211182,
+          177.87687762473936
+        ]
+      ],
+      "mounts_at_risk": []
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/sg90[13]",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "neutral_contact_bounds": [
+        [
+          -36.58845375357972,
+          22.399223851016053,
+          171.87687762474
+        ],
+        [
+          -16.921469553534507,
+          41.66127731389283,
+          177.65087762474005
+        ]
+      ],
+      "mounts_at_risk": []
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/sg90[22]",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "neutral_contact_bounds": [
+        [
+          -36.58845375353472,
+          -41.46127731390816,
+          171.87687762473988
+        ],
+        [
+          -16.921469553528432,
+          -22.199223851108062,
+          177.65087762474002
+        ]
+      ],
+      "mounts_at_risk": []
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "neutral_contact_bounds": [
+        [
+          2.970210695399931,
+          -50.4094890981773,
+          171.87687752473994
+        ],
+        [
+          30.928740625615674,
+          -40.810792129805996,
+          177.65087772474013
+        ]
+      ],
+      "mounts_at_risk": []
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "neutral_contact_bounds": [
+        [
+          2.2734152311686326,
+          -50.13965204990711,
+          171.87687752474
+        ],
+        [
+          20.798370466670605,
+          -44.2872679583204,
+          177.65087772473998
+        ]
+      ],
+      "mounts_at_risk": []
+    },
+    {
+      "joint": "S14",
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "neutral_contact_bounds": [
+        [
+          -1.0787638246487947,
+          -50.09388856384461,
+          171.87687752474
+        ],
+        [
+          20.063406101890997,
+          -42.20614429236854,
+          177.65087772473998
+        ]
+      ],
+      "mounts_at_risk": []
+    }
+  ],
+  "scope": "Modified parts and direct interfaces only. Single-joint samples; no combined-motion certification.",
+  "installed": "/root/work/Open_Duck_Playground/cad/local_fix/open_duck_mini_upper_refit.step",
+  "visual_review_file": "/root/work/Open_Duck_Playground/cad/local_fix/MINOR_CLEARANCE_REVIEW.png",
+  "standard_snapshot": {
+    "status": "failed",
+    "reason": "Installed Playwright needs chromium_headless_shell-1243; only revision 1234 is installed.",
+    "fallback": "cad/local_fix/MINOR_CLEARANCE_REVIEW.png",
+    "fallback_reviewed": true
+  },
+  "viewer": {
+    "url": "http://172.20.179.51:3245/?file=open_duck_mini_upper_refit.step",
+    "page_http_status": 200,
+    "artifact_http_status": 200,
+    "artifact_state": "rendered",
+    "verified_at_utc": "2026-10-09T01:04:47.753622+00:00",
+    "step_sha256": "dcb978187096062087c1747a91c76378dc77df510ce7698ed88463c61f3e4ec9",
+    "model_data_http_status": 200,
+    "model_data_bytes": 102954,
+    "recovery": "Previous temporary command sessions did not keep the viewer alive. Started it in an independent detached tmux session and verified from Windows.",
+    "localhost_url": "http://127.0.0.1:3245/?file=open_duck_mini_upper_refit.step",
+    "bind_host": "0.0.0.0",
+    "persistent_tmux_session": "open-duck-cad-viewer",
+    "log": "/tmp/open-duck-cad-viewer.log",
+    "windows_page_http_status": 200,
+    "windows_artifact_state": "rendered",
+    "windows_model_http_status": 200,
+    "windows_model_bytes": 102954
+  }
+}

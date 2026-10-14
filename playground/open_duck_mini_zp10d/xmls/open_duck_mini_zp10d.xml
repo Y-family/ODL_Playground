@@ -186,7 +186,7 @@
         <!-- Link neck_pitch_assembly -->
         <body name="neck_pitch_assembly" pos="0.000999999999999 0.000725000000047 0.0900009388124" quat="0.707106781187 0.707106781187 -7.82881323684e-15 7.87211135e-15">
           <!-- Joint from trunk_assembly to neck_pitch_assembly -->
-          <joint name="neck_pitch" type="hinge" range="-0.3490658503988437 1.1344640137963364" class="zp10d" />
+          <joint name="neck_pitch" type="hinge" range="-0.3490658503988437 0.6806784082777885" class="zp10d" />
           <inertial pos="-3.20116031037e-07 0.050529682328 3.30884160192e-05" mass="0.068280535955" fullinertia="3.37928784497e-05 1.68357390438e-05 2.23062529849e-05 1.482769291e-09 -1.87472717623e-09 5.22255097541e-07" />
           <!-- Part neck_left_sheet -->
           <geom type="mesh" class="visual" pos="-0.02 -0.02511 0.000625000000047" quat="0.707106781187 -0.707106781187 1.97103243322e-33 -4.07483753474e-33" mesh="neck_pitch_assembly__neck_left_sheet_zp10d" material="neck_left_sheet_material" />
@@ -207,7 +207,7 @@
             <!-- Link neck_yaw_assembly -->
             <body name="neck_yaw_assembly" pos="4.25007251614e-16 0.041575 0.000625000000047" quat="0.707106781187 -0.707106781187 -2.16488932522e-17 2.16489095599e-17">
               <!-- Joint from head_pitch_to_yaw to neck_yaw_assembly -->
-              <joint name="head_yaw" type="hinge" range="-2.792526803190927 2.792526803190927" class="zp10d" />
+              <joint name="head_yaw" type="hinge" range="-1.7453292519943295 1.7453292519943295" class="zp10d" />
               <inertial pos="0.00584937314178 2.89610964334e-06 -0.00417726400458" mass="0.106653343935" fullinertia="3.78232496073e-05 7.69259087285e-05 6.85231541935e-05 -6.54263609338e-09 -4.04577349615e-06 -7.71844508169e-09" />
               <!-- Part head_yaw_to_roll -->
               <geom type="mesh" class="visual" pos="-0.02 3.13456400593e-16 -0.129785" quat="1 7.93483137088e-29 7.88860905221e-31 -1.57772180966e-30" mesh="neck_yaw_assembly__head_yaw_to_roll_zp10d" material="head_yaw_to_roll_material" />

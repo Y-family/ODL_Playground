@@ -1,0 +1,2154 @@
+{
+  "status": "installed: speaker face seating and aligned grille locally verified; appearance awaiting user review",
+  "source_sha256": "953778525984d6df474c1df6250235028db87239db882a3d41f012e2d022ddd5",
+  "candidate": "/tmp/speaker-rework/review.step",
+  "candidate_sha256": "13412c73715d9abc91b32723c79c4f071e556b7474ba77e5158b9b0b2074db6b",
+  "speaker_translation_mm": [
+    11.757119393403315,
+    -10.604389057992051,
+    3.743918615470619
+  ],
+  "speaker_rotation": {
+    "angle_deg": 16.303761228070062,
+    "axis": [
+      -0.09795978200223937,
+      0.08997993848163868,
+      0.2472178491822183
+    ],
+    "center_mm": [
+      58.242880606596685,
+      -61.85036226764758,
+      206.25608138452938
+    ]
+  },
+  "face_seating": {
+    "center_mm": [
+      70.0,
+      -72.45475132563963,
+      210.0
+    ],
+    "normal": [
+      0.0,
+      -0.9396926207859084,
+      0.3420201433256687
+    ],
+    "normal_gap_mm": 0.25
+  },
+  "grille": {
+    "hole_diameter_mm": 2.0,
+    "hole_count": 91,
+    "center_mm": [
+      70.0,
+      -72.68967448083612,
+      210.0855050358314
+    ],
+    "normal": [
+      0.0,
+      -0.9396926207859084,
+      0.3420201433256687
+    ],
+    "old_holes_restored": true
+  },
+  "speaker_stand_refit": {
+    "original_transition_x_span_mm": [
+      48.0,
+      81.0
+    ],
+    "transition_reference_displacement_mm": [
+      8.960830439030701,
+      -3.476964289408855,
+      0.04172194309109045
+    ],
+    "head_fixings_retained": 2,
+    "speaker_fixings_retained": 2,
+    "head_fixing_positions_unchanged": true,
+    "original_upper_band_follows_speaker_rigid_pose": true,
+    "transition_interface_overlap_removed_mm3": 0.3550886091786761
+  },
+  "modified": {
+    "speaker_interface": {
+      "volume_before_mm3": 1796.3550537920314,
+      "volume_after_mm3": 1796.3550537920314,
+      "bounds_after_mm": [
+        49.97299820044407,
+        -71.86260818466369,
+        186.66610830059545,
+        90.02700179956489,
+        -53.201170705409815,
+        224.81759013060727
+      ],
+      "validity": {
+        "solidCount": 1,
+        "volumes": [
+          1796.3550537920314
+        ],
+        "reasons": []
+      }
+    },
+    "speaker_bottom": {
+      "volume_before_mm3": 832.390057426208,
+      "volume_after_mm3": 832.3900574262104,
+      "bounds_after_mm": [
+        51.94999990000141,
+        -76.09104493655187,
+        191.05502262099176,
+        88.0500001000014,
+        -53.04282431908081,
+        226.03799751820605
+      ],
+      "validity": {
+        "solidCount": 1,
+        "volumes": [
+          832.3900574262104
+        ],
+        "reasons": []
+      }
+    },
+    "speaker_top": {
+      "volume_before_mm3": 3219.9718101489675,
+      "volume_after_mm3": 3219.9718101489684,
+      "bounds_after_mm": [
+        50.06411776503237,
+        -78.93388709978713,
+        190.8367607037429,
+        89.93588223497035,
+        -63.60136226557187,
+        228.34882876984233
+      ],
+      "validity": {
+        "solidCount": 1,
+        "volumes": [
+          3219.9718101489684
+        ],
+        "reasons": []
+      }
+    },
+    "speaker_stand": {
+      "volume_before_mm3": 3236.0474963296015,
+      "volume_after_mm3": 3396.600451561233,
+      "bounds_after_mm": [
+        38.49999989999777,
+        -58.37476196287188,
+        214.17052394005088,
+        94.18406626005421,
+        -25.41178568438,
+        229.11408902677408
+      ],
+      "validity": {
+        "solidCount": 1,
+        "volumes": [
+          3396.600451561233
+        ],
+        "reasons": []
+      }
+    },
+    "head": {
+      "volume_before_mm3": 186902.785278759,
+      "volume_after_mm3": 185150.43952435834,
+      "bounds_after_mm": [
+        -65.99999955975045,
+        -87.39999985672043,
+        171.87687752457424,
+        109.00000010004452,
+        87.59999985664066,
+        236.90093891236012
+      ],
+      "validity": {
+        "solidCount": 1,
+        "volumes": [
+          185150.43952435834
+        ],
+        "reasons": [
+          "selfIntersecting"
+        ]
+      }
+    }
+  },
+  "leaf_count": 135,
+  "head_geometry_checks": {
+    "no_new_self_intersections": true,
+    "original_faults": [
+      {
+        "status": "BOPAlgo_CheckStatus.BOPAlgo_SelfIntersect",
+        "boxes": [
+          [
+            92.4,
+            66.52368,
+            190.50094,
+            95.6,
+            67.49208,
+            191.46232
+          ]
+        ]
+      },
+      {
+        "status": "BOPAlgo_CheckStatus.BOPAlgo_SelfIntersect",
+        "boxes": [
+          [
+            92.4,
+            -67.29208,
+            190.50094,
+            95.6,
+            -66.32368,
+            191.46232
+          ]
+        ]
+      }
+    ],
+    "current_faults": [
+      {
+        "status": "BOPAlgo_CheckStatus.BOPAlgo_SelfIntersect",
+        "boxes": [
+          [
+            92.4,
+            66.52368,
+            190.50094,
+            95.6,
+            67.49208,
+            191.46232
+          ]
+        ]
+      }
+    ],
+    "speaker_face_sample_count": 138,
+    "face_gap_range_mm": [
+      0.24999999994639432,
+      0.24999999995691344
+    ],
+    "restored_old_opening_sample_count": 120,
+    "restored_old_hole_wall_sample_count": 162,
+    "aligned_circular_hole_count": 91,
+    "hole_axis_radius_mm": 1,
+    "grille_center_error_mm": 1.362888216579835e-11,
+    "grille_axis_angle_error_deg": 0.0,
+    "actual_grille_center_mm": [
+      70.0,
+      -72.68967448083612,
+      210.0855050358314
+    ],
+    "actual_speaker_front_center_mm": [
+      70.0000000000026,
+      -72.45475132567427,
+      209.99999999999835
+    ],
+    "grille_edge_coverage_sample_count": 728,
+    "grille_edge_to_speaker_face_max_distance_mm": 3.500658522769108e-11,
+    "original_floor_screw_surfaces_preserved": [
+      [
+        1.6,
+        9.87068,
+        92.90226,
+        -68.40788,
+        186.30094,
+        95.04627,
+        -67.97191,
+        190.50094
+      ],
+      [
+        1.6,
+        42.22301,
+        67.4,
+        -74.34202,
+        186.30094,
+        70.6,
+        -71.14202,
+        190.50094
+      ],
+      [
+        1.6,
+        98.91245,
+        92.4,
+        -68.01838,
+        174.87688,
+        95.6,
+        -65.20788,
+        190.0
+      ],
+      [
+        2.0,
+        16.67862,
+        93.17484,
+        -64.98604,
+        174.87688,
+        94.6,
+        -64.80788,
+        186.30094
+      ],
+      [
+        2.0,
+        43.62171,
+        92.32961,
+        -68.80788,
+        174.87688,
+        95.59207,
+        -67.90778,
+        186.30094
+      ],
+      [
+        2.0,
+        143.55899,
+        67.0,
+        -74.74202,
+        174.87688,
+        71.0,
+        -70.74202,
+        186.30094
+      ]
+    ],
+    "complete_head_critical_samples": [
+      {
+        "joint": "S14",
+        "fixed": "head_yaw_to_roll",
+        "angle_deg": -30,
+        "gap_mm": 0.2000611876433993,
+        "overlap_mm3": 0
+      },
+      {
+        "joint": "S14",
+        "fixed": "head_yaw_to_roll",
+        "angle_deg": 0,
+        "gap_mm": 0.20006118762000824,
+        "overlap_mm3": 0
+      },
+      {
+        "joint": "S14",
+        "fixed": "head_yaw_to_roll",
+        "angle_deg": 30,
+        "gap_mm": 0.20006118759590663,
+        "overlap_mm3": 0
+      },
+      {
+        "joint": "S11",
+        "fixed": "body_middle_top",
+        "angle_deg": -20,
+        "gap_mm": 67.59483477703884,
+        "overlap_mm3": 0
+      },
+      {
+        "joint": "S11",
+        "fixed": "body_middle_top",
+        "angle_deg": 39,
+        "gap_mm": 0.33247062459321314,
+        "overlap_mm3": 0
+      }
+    ]
+  },
+  "static_local_checks": [
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/right_antenna_holder[1]",
+      "gap_mm": 96.63245898516337,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/antenna[4]",
+      "gap_mm": 150.4746695071542,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "gap_mm": 50.80105215921831,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/left_antenna_holder[9]",
+      "gap_mm": 149.97880996792665,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/antenna[10]",
+      "gap_mm": 101.6329405861077,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "gap_mm": 46.0409806167041,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 69.25421544033307,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 59.41021688096504,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "gap_mm": 29.66800630081923,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/RaspberryPiZeroW[0]",
+      "gap_mm": 86.35669995660892,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/flash_reflector_interface[1]",
+      "gap_mm": 131.5647515589052,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/roll_bearing[3]",
+      "gap_mm": 94.47010148966432,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/head[4]",
+      "gap_mm": 0.4171472353014113,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/left_eye[5]",
+      "gap_mm": 80.44528303602902,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/right_eye[6]",
+      "gap_mm": 18.972998200433196,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/speaker_stand[7]",
+      "gap_mm": 9.663391655489592e-12,
+      "overlap_mm3": 0,
+      "intended_contact": true,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/flash_light_module[8]",
+      "gap_mm": 123.47855283641526,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/glass[9]",
+      "gap_mm": 25.725438203004558,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/glass[10]",
+      "gap_mm": 83.651519186734,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "gap_mm": 11.789230675828748,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/head_roll_mount[12]",
+      "gap_mm": 20.962949974193375,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/sg90[13]",
+      "gap_mm": 123.8089652349415,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "gap_mm": 0.0,
+      "overlap_mm3": 0,
+      "intended_contact": true,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/speaker_top[15]",
+      "gap_mm": 4.321207843051584,
+      "overlap_mm3": 0.0,
+      "intended_contact": true,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/Cam[16]",
+      "gap_mm": 41.8925696731418,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/bulb[17]",
+      "gap_mm": 13.974620954938176,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/bulb[18]",
+      "gap_mm": 79.42485363991501,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/glass[19]",
+      "gap_mm": 23.90624393692913,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_body[0]",
+      "gap_mm": 43.323742222119286,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 50.39049973715573,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 49.476408215614946,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/glass[21]",
+      "gap_mm": 83.18591820316468,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_interface[2]",
+      "fixed": "/head_assembly <1>[21]/sg90[22]",
+      "gap_mm": 92.01028577579683,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/right_antenna_holder[1]",
+      "gap_mm": 99.27895888452572,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/antenna[4]",
+      "gap_mm": 158.16454639357212,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "gap_mm": 57.172776039124415,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/left_antenna_holder[9]",
+      "gap_mm": 155.93334868874237,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/antenna[10]",
+      "gap_mm": 103.91776649298592,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "gap_mm": 50.258406006986654,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 73.06769854100722,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 66.08620124143292,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "gap_mm": 35.723403242649766,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/RaspberryPiZeroW[0]",
+      "gap_mm": 87.53557324881848,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/flash_reflector_interface[1]",
+      "gap_mm": 131.58147000032181,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/roll_bearing[3]",
+      "gap_mm": 97.82948037403028,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/head[4]",
+      "gap_mm": 0.6946361291763783,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/left_eye[5]",
+      "gap_mm": 83.31677095765937,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/right_eye[6]",
+      "gap_mm": 21.41767349667293,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/speaker_stand[7]",
+      "gap_mm": 1.5000000000391036,
+      "overlap_mm3": 0.0,
+      "intended_contact": true,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/flash_light_module[8]",
+      "gap_mm": 123.92917403978579,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/glass[9]",
+      "gap_mm": 28.85114265994087,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/glass[10]",
+      "gap_mm": 86.72364585098131,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "gap_mm": 16.178145096227013,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/head_roll_mount[12]",
+      "gap_mm": 23.944766406091457,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/sg90[13]",
+      "gap_mm": 128.6079051256479,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/speaker_top[15]",
+      "gap_mm": 1.6633378991627446e-12,
+      "overlap_mm3": 0,
+      "intended_contact": true,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/Cam[16]",
+      "gap_mm": 47.02967673712793,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/bulb[17]",
+      "gap_mm": 17.30112440384112,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/bulb[18]",
+      "gap_mm": 81.59813572444203,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/glass[19]",
+      "gap_mm": 27.078521233660027,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_body[0]",
+      "gap_mm": 43.16687149701199,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 50.7201402064342,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 46.81799647383256,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/glass[21]",
+      "gap_mm": 86.00111341122548,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_bottom[14]",
+      "fixed": "/head_assembly <1>[21]/sg90[22]",
+      "gap_mm": 95.12917309704137,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/right_antenna_holder[1]",
+      "gap_mm": 97.5773772914752,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/antenna[4]",
+      "gap_mm": 161.05925126048072,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "gap_mm": 62.239561583187694,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/left_antenna_holder[9]",
+      "gap_mm": 160.1705468433939,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/antenna[10]",
+      "gap_mm": 102.17131904759401,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "gap_mm": 58.28857804558158,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 79.62946099802545,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 70.45788259290505,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "gap_mm": 41.785329065126795,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/RaspberryPiZeroW[0]",
+      "gap_mm": 96.70352905169163,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/flash_reflector_interface[1]",
+      "gap_mm": 142.44755234924105,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/roll_bearing[3]",
+      "gap_mm": 99.501868267802,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/head[4]",
+      "gap_mm": 0.249999999904636,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/left_eye[5]",
+      "gap_mm": 92.65028086403215,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/right_eye[6]",
+      "gap_mm": 21.849754370212896,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/speaker_stand[7]",
+      "gap_mm": 9.033397435739763,
+      "overlap_mm3": 0.0,
+      "intended_contact": true,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/flash_light_module[8]",
+      "gap_mm": 133.3869761539393,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/glass[9]",
+      "gap_mm": 30.12290770264774,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/glass[10]",
+      "gap_mm": 95.88574236694629,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "gap_mm": 15.959883178975076,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/head_roll_mount[12]",
+      "gap_mm": 32.4496735567319,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/sg90[13]",
+      "gap_mm": 132.60505381198814,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/Cam[16]",
+      "gap_mm": 54.319642670474664,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/bulb[17]",
+      "gap_mm": 19.49456886954517,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/bulb[18]",
+      "gap_mm": 91.49942880299291,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/glass[19]",
+      "gap_mm": 28.55353892746344,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_body[0]",
+      "gap_mm": 53.71628658917887,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 61.47070497317083,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 60.06375504240674,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/glass[21]",
+      "gap_mm": 95.38666534942742,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_top[15]",
+      "fixed": "/head_assembly <1>[21]/sg90[22]",
+      "gap_mm": 93.96412153938456,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/right_antenna_holder[1]",
+      "gap_mm": 85.85310442158296,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/antenna[4]",
+      "gap_mm": 120.13457957123835,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "gap_mm": 28.00129759261983,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/left_antenna_holder[9]",
+      "gap_mm": 119.93236757341343,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/antenna[10]",
+      "gap_mm": 90.28770027966183,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "gap_mm": 17.60457676911022,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 59.55537735507451,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 29.13856357227536,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "gap_mm": 13.783227125654253,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/RaspberryPiZeroW[0]",
+      "gap_mm": 57.261794857433195,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/flash_reflector_interface[1]",
+      "gap_mm": 114.22509484724078,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/roll_bearing[3]",
+      "gap_mm": 74.25408866818748,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/head[4]",
+      "gap_mm": 4.831690603168681e-13,
+      "overlap_mm3": 0,
+      "intended_contact": true,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/left_eye[5]",
+      "gap_mm": 65.83225844442937,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/right_eye[6]",
+      "gap_mm": 14.830830083692028,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/flash_light_module[8]",
+      "gap_mm": 102.01989327514595,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/glass[9]",
+      "gap_mm": 21.73325783149921,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/glass[10]",
+      "gap_mm": 69.0561866201093,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "gap_mm": 39.29364641528346,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/head_roll_mount[12]",
+      "gap_mm": 3.7886281983342083,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/sg90[13]",
+      "gap_mm": 95.7821960537481,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/Cam[16]",
+      "gap_mm": 26.151483226574232,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/bulb[17]",
+      "gap_mm": 10.138742494218535,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/bulb[18]",
+      "gap_mm": 64.78908378519668,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/glass[19]",
+      "gap_mm": 19.917957477952825,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_body[0]",
+      "gap_mm": 20.240208135281947,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 39.28803572153917,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 30.638641596070375,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/glass[21]",
+      "gap_mm": 68.57134502302314,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/speaker_stand[7]",
+      "fixed": "/head_assembly <1>[21]/sg90[22]",
+      "gap_mm": 77.52644828235653,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/right_antenna_holder[1]",
+      "gap_mm": 51.83133064347608,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/antenna[4]",
+      "gap_mm": 131.85158799469528,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_pitch_to_yaw[6]",
+      "gap_mm": 42.28780543859971,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/left_antenna_holder[9]",
+      "gap_mm": 134.50697396389572,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/antenna[10]",
+      "gap_mm": 56.5758906564197,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_body[0]",
+      "gap_mm": 56.17719813295104,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 60.31719095661223,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/neck_yaw_assembly <1>[15]/S13_HEAD_YAW_ZP10D[0]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 55.88718274199186,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/neck_yaw_assembly <1>[15]/head_yaw_to_roll[1]",
+      "gap_mm": 20.363360042964963,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/RaspberryPiZeroW[0]",
+      "gap_mm": 98.4383908602307,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/flash_reflector_interface[1]",
+      "gap_mm": 144.72617697657745,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/roll_bearing[3]",
+      "gap_mm": 63.72139274786848,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/left_eye[5]",
+      "gap_mm": 94.76163875001534,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/right_eye[6]",
+      "gap_mm": 22.14912442939655,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/flash_light_module[8]",
+      "gap_mm": 135.45625568591913,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/glass[9]",
+      "gap_mm": 30.845704444973713,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/glass[10]",
+      "gap_mm": 97.9657688395661,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/head_bot_sheet[11]",
+      "gap_mm": 11.861742733448267,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/head_roll_mount[12]",
+      "gap_mm": 34.62463637565969,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/sg90[13]",
+      "gap_mm": 105.98901289087286,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/Cam[16]",
+      "gap_mm": 56.06679187580339,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/bulb[17]",
+      "gap_mm": 20.52693930934945,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/bulb[18]",
+      "gap_mm": 93.70040068139242,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/glass[19]",
+      "gap_mm": 29.324900831508987,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_body[0]",
+      "gap_mm": 55.827293513052695,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_passive_horn[1]",
+      "gap_mm": 63.9413343217611,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/S14_HEAD_ROLL_ZP10D[20]/ZP10D_vendor_active_horn[2]",
+      "gap_mm": 61.50927592152561,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/glass[21]",
+      "gap_mm": 97.50202317278378,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    },
+    {
+      "moving": "/head_assembly <1>[21]/head[4]::added_wall_material",
+      "fixed": "/head_assembly <1>[21]/sg90[22]",
+      "gap_mm": 49.384513950535286,
+      "overlap_mm3": 0.0,
+      "intended_contact": false,
+      "passed": true
+    }
+  ],
+  "speaker_head_clearance": [
+    {
+      "part": "speaker_interface",
+      "gap_mm": 0.4171472353014113,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "speaker_bottom",
+      "gap_mm": 0.6946361291763783,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "speaker_top",
+      "gap_mm": 0.249999999904636,
+      "overlap_mm3": 0.0
+    }
+  ],
+  "speaker_stand_head_overlap_mm3": 0,
+  "speaker_stand_clearance": [
+    {
+      "part": "speaker_interface",
+      "gap_mm": 9.663391655489592e-12,
+      "overlap_mm3": 0
+    },
+    {
+      "part": "speaker_bottom",
+      "gap_mm": 1.5000000000391036,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "speaker_top",
+      "gap_mm": 9.033397435739763,
+      "overlap_mm3": 0.0
+    }
+  ],
+  "roof_fixing_axes_before_after": {
+    "before": [
+      [
+        42.12066,
+        -38.376275,
+        233.900939
+      ],
+      [
+        44.286625,
+        -30.675068,
+        233.900939
+      ]
+    ],
+    "after": [
+      [
+        42.12066,
+        -38.376275,
+        233.900939
+      ],
+      [
+        44.286625,
+        -30.675068,
+        233.900939
+      ]
+    ]
+  },
+  "candidate_leaf_count": 135,
+  "unchanged_leaf_count": 130,
+  "main_axes_preserved": 14,
+  "upper_speaker_fixings": [
+    {
+      "original_axis": [
+        77.746639285355,
+        -51.5997363471,
+        219.03958894849
+      ],
+      "translation_mm": [
+        11.757119393403315,
+        -10.604389057992051,
+        3.743918615470619
+      ],
+      "rotation_deg": 16.303761228070062,
+      "moved_axis": [
+        87.2270017995649,
+        -56.44266143297864,
+        219.78434393647385
+      ],
+      "moved_axis_direction": [
+        2.42861286636753e-17,
+        0.9396926207859084,
+        -0.3420201433256687
+      ],
+      "bearing_radial_material_checked_mm": 0.55,
+      "material_samples": [
+        [
+          88.79696843798915,
+          -52.96184583150921,
+          218.38353970218486
+        ],
+        [
+          88.62931401039725,
+          -53.16405601437408,
+          217.82797179077983
+        ],
+        [
+          88.24817026069796,
+          -53.32893033966499,
+          217.37498330499523
+        ],
+        [
+          87.71156286970633,
+          -53.43136818594587,
+          217.09353763544092
+        ],
+        [
+          87.10118544834269,
+          -53.45577431972185,
+          217.02648233399526
+        ],
+        [
+          86.50996242592458,
+          -53.39843312836768,
+          217.18402596244545
+        ],
+        [
+          86.0279021481651,
+          -53.268074288467844,
+          217.54218393149654
+        ],
+        [
+          85.72839392246583,
+          -53.084543751691264,
+          218.04642993707054
+        ],
+        [
+          85.65703516114066,
+          -52.87578237855372,
+          218.61999709582028
+        ],
+        [
+          85.82468958873255,
+          -52.67357219568885,
+          219.17556500722532
+        ],
+        [
+          86.20583333843184,
+          -52.50869787039794,
+          219.62855349300992
+        ],
+        [
+          86.74244072942348,
+          -52.40626002411706,
+          219.90999916256422
+        ],
+        [
+          87.35281815078712,
+          -52.381853890341084,
+          219.97705446400988
+        ],
+        [
+          87.94404117320522,
+          -52.43919508169525,
+          219.8195108355597
+        ],
+        [
+          88.42610145096471,
+          -52.56955392159509,
+          219.4613528665086
+        ],
+        [
+          88.72560967666398,
+          -52.75308445837166,
+          218.9571068609346
+        ]
+      ]
+    },
+    {
+      "original_axis": [
+        46.94180920043,
+        -42.93587788571,
+        219.03958894849
+      ],
+      "translation_mm": [
+        11.757119393403315,
+        -10.604389057992051,
+        3.743918615470619
+      ],
+      "rotation_deg": 16.303761228070062,
+      "moved_axis": [
+        55.329266923638045,
+        -55.568366037897704,
+        222.18645079240673
+      ],
+      "moved_axis_direction": [
+        2.42861286636753e-17,
+        0.9396926207859084,
+        -0.3420201433256687
+      ],
+      "bearing_radial_material_checked_mm": 0.55,
+      "material_samples": [
+        [
+          56.89923356206229,
+          -52.08755043642827,
+          220.78564655811778
+        ],
+        [
+          56.731579134470394,
+          -52.289760619293155,
+          220.23007864671274
+        ],
+        [
+          56.35043538477111,
+          -52.454634944584065,
+          219.77709016092814
+        ],
+        [
+          55.813827993779476,
+          -52.55707279086494,
+          219.49564449137384
+        ],
+        [
+          55.203450572415846,
+          -52.581478924640926,
+          219.42858918992818
+        ],
+        [
+          54.612227549997726,
+          -52.52413773328676,
+          219.58613281837836
+        ],
+        [
+          54.130167272238246,
+          -52.39377889338693,
+          219.94429078742945
+        ],
+        [
+          53.83065904653897,
+          -52.21024835661036,
+          220.44853679300346
+        ],
+        [
+          53.7593002852138,
+          -52.001486983472816,
+          221.0221039517532
+        ],
+        [
+          53.926954712805696,
+          -51.799276800607934,
+          221.57767186315823
+        ],
+        [
+          54.30809846250498,
+          -51.634402475317025,
+          222.03066034894283
+        ],
+        [
+          54.84470585349661,
+          -51.531964629036146,
+          222.31210601849713
+        ],
+        [
+          55.45508327486024,
+          -51.50755849526016,
+          222.3791613199428
+        ],
+        [
+          56.04630629727836,
+          -51.56489968661433,
+          222.2216176914926
+        ],
+        [
+          56.52836657503784,
+          -51.69525852651416,
+          221.86345972244152
+        ],
+        [
+          56.82787480073712,
+          -51.87878906329073,
+          221.35921371686752
+        ]
+      ]
+    }
+  ],
+  "formal_sha256_before_install": "953778525984d6df474c1df6250235028db87239db882a3d41f012e2d022ddd5",
+  "verified": true,
+  "installed": true,
+  "installed_sha256": "13412c73715d9abc91b32723c79c4f071e556b7474ba77e5158b9b0b2074db6b",
+  "installed_reread_leaf_count": 135,
+  "step_validation": {
+    "ok": false,
+    "entry": "review",
+    "occurrenceCount": 5,
+    "prototypeCount": 5,
+    "selfIntersectionCheck": "first-placement",
+    "failureCount": 1,
+    "parts": [
+      {
+        "ref": "o1.22.5",
+        "name": "head",
+        "reasons": [
+          "selfIntersecting"
+        ],
+        "solidCount": 1,
+        "volumes": [
+          185150.43952427112
+        ],
+        "occurrences": [
+          {
+            "ref": "o1.22.5",
+            "name": "head"
+          }
+        ]
+      }
+    ],
+    "errors": []
+  },
+  "visual_review": {
+    "source_sha256": "13412c73715d9abc91b32723c79c4f071e556b7474ba77e5158b9b0b2074db6b",
+    "snapshot_sha256": "bb318f57e88f7f6928901b8bce24e8dbf9136288fad6129bbf94013d28bb3b68",
+    "mesh_bounds_mm": {
+      "head": [
+        [
+          -65.99999945975,
+          -87.39999985671,
+          171.87687762473
+        ],
+        [
+          109.00000000000051,
+          87.599999856633,
+          236.90093881236
+        ]
+      ],
+      "head_bot_sheet": [
+        [
+          -63.05429599996,
+          -84.54948668255,
+          171.87687762472
+        ],
+        [
+          105.90000000003,
+          84.749486682564,
+          174.87687762477032
+        ]
+      ],
+      "head_roll_mount": [
+        [
+          52.24999999996496,
+          -32.262551594580216,
+          216.80093881236
+        ],
+        [
+          100.64999999996009,
+          32.46255159453619,
+          231.90093881236
+        ]
+      ],
+      "head_yaw_to_roll": [
+        [
+          -41.75,
+          -50.50809270694489,
+          171.87687762474
+        ],
+        [
+          59.75,
+          50.708092706944896,
+          222.27687762474
+        ]
+      ],
+      "speaker_stand": [
+        [
+          38.5,
+          -58.3747618628,
+          214.17052404005
+        ],
+        [
+          94.184066160054,
+          -25.41178578438,
+          229.1122913795188
+        ]
+      ],
+      "speaker_interface": [
+        [
+          49.97852322191143,
+          -71.86260818469144,
+          186.67130012249532
+        ],
+        [
+          90.02147677810284,
+          -53.20306037408032,
+          224.812398308709
+        ]
+      ],
+      "speaker_bottom": [
+        [
+          51.95167680689087,
+          -76.0794989676724,
+          191.08431019269466
+        ],
+        [
+          88.0483231931161,
+          -53.04910628454692,
+          226.00627540408613
+        ]
+      ],
+      "speaker_top": [
+        [
+          50.06596986639839,
+          -78.9217694502299,
+          190.87187760829093
+        ],
+        [
+          89.93403013361555,
+          -63.623764293216524,
+          228.3137923078156
+        ]
+      ],
+      "grille_wall_region": [
+        [
+          45.99999999999999,
+          -83.71723578297359,
+          187.5363023384029
+        ],
+        [
+          94.000000000006,
+          -64.90000000003968,
+          234.504112217812
+        ]
+      ]
+    },
+    "reviewed": true,
+    "findings": [
+      "Actual exterior circular holes coincide with speaker face outline",
+      "True centre section shows 0.25 mm stand-off",
+      "Original short upper orange hanger retains two roof and two speaker holes",
+      "Original ring diameter and height retained"
+    ]
+  },
+  "motion_report": "/root/work/Open_Duck_Playground/cad/local_fix/SPEAKER_LAYOUT_MOTION_REPORT.json",
+  "viewer_verification": {
+    "formal_sha256": "13412c73715d9abc91b32723c79c4f071e556b7474ba77e5158b9b0b2074db6b",
+    "launcher": {
+      "url": "http://0.0.0.0:3245/",
+      "port": 3245,
+      "action": "reused"
+    },
+    "clients": {
+      "http://127.0.0.1:3245": {
+        "page_http_status": 200,
+        "artifact": {
+          "http_status": 200,
+          "state": "rendered",
+          "ref": "/__cad/store?file=0865001d7cf3e7464d48c2e5e2897b3a585a8dd1a077db542b1ffedf03fc6850"
+        },
+        "model": {
+          "http_status": 200,
+          "occurrences": 135,
+          "components": 135,
+          "tree": "0865001d7cf3e7464d48c2e5e2897b3a585a8dd1a077db542b1ffedf03fc6850"
+        },
+        "download": {
+          "http_status": 200,
+          "sha256": "13412c73715d9abc91b32723c79c4f071e556b7474ba77e5158b9b0b2074db6b",
+          "matches_formal": true
+        },
+        "modified_surfaces": {
+          "head": {
+            "http_status": 200,
+            "bytes": 3228319,
+            "occurrence": "o1.22.5",
+            "component": "e1a4170e16b1cea5"
+          },
+          "speaker_interface": {
+            "http_status": 200,
+            "bytes": 415049,
+            "occurrence": "o1.22.3",
+            "component": "65fb444f2bcddacc"
+          },
+          "speaker_bottom": {
+            "http_status": 200,
+            "bytes": 367387,
+            "occurrence": "o1.22.15",
+            "component": "be0448242f0d85e3"
+          },
+          "speaker_top": {
+            "http_status": 200,
+            "bytes": 10768,
+            "occurrence": "o1.22.16",
+            "component": "7ee55e0ee6892e6d"
+          },
+          "speaker_stand": {
+            "http_status": 200,
+            "bytes": 390716,
+            "occurrence": "o1.22.8",
+            "component": "8c538b34ead4403c"
+          }
+        }
+      },
+      "http://172.20.179.51:3245": {
+        "page_http_status": 200,
+        "artifact": {
+          "http_status": 200,
+          "state": "rendered",
+          "ref": "/__cad/store?file=0865001d7cf3e7464d48c2e5e2897b3a585a8dd1a077db542b1ffedf03fc6850"
+        },
+        "model": {
+          "http_status": 200,
+          "occurrences": 135,
+          "components": 135,
+          "tree": "0865001d7cf3e7464d48c2e5e2897b3a585a8dd1a077db542b1ffedf03fc6850"
+        },
+        "download": {
+          "http_status": 200,
+          "sha256": "13412c73715d9abc91b32723c79c4f071e556b7474ba77e5158b9b0b2074db6b",
+          "matches_formal": true
+        },
+        "modified_surfaces": {
+          "head": {
+            "http_status": 200,
+            "bytes": 3228319,
+            "occurrence": "o1.22.5",
+            "component": "e1a4170e16b1cea5"
+          },
+          "speaker_interface": {
+            "http_status": 200,
+            "bytes": 415049,
+            "occurrence": "o1.22.3",
+            "component": "65fb444f2bcddacc"
+          },
+          "speaker_bottom": {
+            "http_status": 200,
+            "bytes": 367387,
+            "occurrence": "o1.22.15",
+            "component": "be0448242f0d85e3"
+          },
+          "speaker_top": {
+            "http_status": 200,
+            "bytes": 10768,
+            "occurrence": "o1.22.16",
+            "component": "7ee55e0ee6892e6d"
+          },
+          "speaker_stand": {
+            "http_status": 200,
+            "bytes": 390716,
+            "occurrence": "o1.22.8",
+            "component": "8c538b34ead4403c"
+          }
+        }
+      }
+    },
+    "windows_client_verified": false
+  },
+  "standard_snapshot": {
+    "target": "/root/work/Open_Duck_Playground/cad/local_fix/open_duck_mini_upper_refit.step",
+    "attempted": true,
+    "succeeded": false,
+    "reason": "Playwright chromium_headless_shell-1243 is absent",
+    "log": "/tmp/speaker-rework/snapshot.log",
+    "fallback": "cad/local_fix/SPEAKER_LAYOUT_REVIEW.png",
+    "fallback_source_sha256": "13412c73715d9abc91b32723c79c4f071e556b7474ba77e5158b9b0b2074db6b"
+  },
+  "standard_refs": {
+    "source_sha256": "13412c73715d9abc91b32723c79c4f071e556b7474ba77e5158b9b0b2074db6b",
+    "ok": true,
+    "refs": [
+      "o1.22.3",
+      "o1.22.5",
+      "o1.22.8",
+      "o1.22.15",
+      "o1.22.16"
+    ],
+    "facts_planes_positioning": true,
+    "result": "/tmp/speaker-rework/step-refs.json"
+  },
+  "resource_limits": {
+    "serial_cad": true,
+    "native_threads": 1,
+    "worker_count": 1,
+    "address_space_hard_cap_bytes": 4000000000,
+    "maximum_recorded_process_rss_bytes": 2512500000,
+    "workspace_limit_bytes": 5000000000
+  }
+}

@@ -11,3 +11,4 @@ checkpoints/
 *.TXT
 .env
 *.swp
+.cadgen-cache/

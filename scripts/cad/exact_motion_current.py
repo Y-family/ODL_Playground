@@ -7,6 +7,7 @@ import json
 import gc
 import sys
 import hashlib
+import os
 from pathlib import Path
 
 from cadgen import build123d as bd
@@ -16,7 +17,7 @@ from full_motion_current import LIMITS, REPORT as BROAD_REPORT, TARGET, MJCF, _l
 from validate_s01_s10_interfaces_local import _children
 
 ROOT = Path(__file__).resolve().parents[2]
-REPORT = ROOT / "cad/local_fix/FULL_MOTION_EXACT_REPORT.json"
+REPORT = Path(os.environ.get("OPEN_DUCK_EXACT_REPORT", ROOT / "cad/local_fix/FULL_MOTION_EXACT_REPORT.json"))
 VOLUME_TOLERANCE_MM3 = 0.05
 
 
