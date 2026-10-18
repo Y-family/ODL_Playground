@@ -392,6 +392,13 @@ def simulation():
     import xml.etree.ElementTree as ET
     report = json.loads(REPORT.read_text())
     scene = MJCF.parent / 'scene_flat_terrain.xml'
+    mass_path = TARGET.parent / 'open_duck_mini_zp10d_mass_properties.json'
+    current = json.loads(mass_path.read_text()) if mass_path.exists() else {}
+    synchronized = (current.get('stage') == 'published'
+                    and current.get('source_step_sha256') == digest(TARGET)
+                    and current.get('mjcf_sha256') == digest(MJCF)
+                    and current.get('scene_sha256') == digest(scene)
+                    and current.get('validation', {}).get('synchronization_passed', False))
     model = mujoco.MjModel.from_xml_path(str(scene))
     data = mujoco.MjData(model)
     mujoco.mj_forward(model, data)
@@ -426,6 +433,9 @@ def simulation():
         matches = [p for p in report['parts'] if p['label'] == label]
         if len(matches) != 1:
             continue
+        if synchronized:
+            source_part = next(p for p in current['parts'] if p['label'] == label)
+            mesh_stem = Path(source_part['mesh']).stem
         mesh = mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_MESH, mesh_stem)
         geoms = np.flatnonzero(model.geom_dataid == mesh) if mesh >= 0 else []
         if len(geoms) == 0:
@@ -467,8 +477,10 @@ def simulation():
         pose_deg=load_poses[a]) for a in range(model.nu)]
     fixed_xml = ET.parse(MJCF).getroot()
     fixed_xml.find('compiler').set('meshdir', str(MJCF.parent / 'assets'))
-    fixed_base = fixed_xml.find('worldbody/body')
-    fixed_base.remove(fixed_base.find('freejoint'))
+    equality = fixed_xml.find('equality')
+    if equality is None:
+        equality = ET.SubElement(fixed_xml, 'equality')
+    ET.SubElement(equality, 'weld', {'body1': 'base', 'solref': '0.004 1'})
     fixed_model = mujoco.MjModel.from_xml_string(ET.tostring(fixed_xml, encoding='unicode'))
     for mode in ('fixed_base_neutral', 'fixed_base_sweep', 'free_home_hold'):
         run_model = model if mode == 'free_home_hold' else fixed_model
@@ -520,9 +532,11 @@ def simulation():
             warning_counts=(data.warning.number - warnings_before).tolist(), frames=frames))
         print('simulation', mode, 'base_z', data.xpos[base_id, 2], 'peak error deg', max(np.degrees(peak_error)), flush=True)
     sim['completed'] = True
-    sim['limitations'] = ['Existing MJCF geometry and mass source is an older STEP.',
+    sim['current_step_synchronized'] = synchronized
+    sim['limitations'] = [('Current STEP geometry is synchronized; mass distribution and actuator response remain estimates.'
+                           if synchronized else 'Current STEP synchronization is not verified by the published mass report.'),
         'Only enabled collision geoms can participate in MuJoCo contact; CAD checks independently use all physical STEP parts.',
-        'Fixed-base tests remove only the free joint, retain gravity and the legacy link properties, and do not validate balance.',
+        'Fixed-base tests constrain the free base with a weld equality, preserving parent-contact filtering; they do not validate balance. Gravity-only bias loads omit standing ground reactions.',
         'No trained ONNX policy is available locally; no walking-policy rollout was performed.',
         'Actuator response and continuous torque are unmeasured; stall torque is not a continuous rating.']
     report['simulation'] = sim
