@@ -12,3 +12,21 @@ checkpoints/
 .env
 *.swp
 .cadgen-cache/
+
+# Local training runs; selected benchmark sources/reports remain tracked.
+:memory:.ses
+/playground/open_duck_mini_zp10d/training/
+/playground/open_duck_mini_zp10d/training_gpu/metadata.json
+/playground/open_duck_mini_zp10d/training_gpu/**/*.log
+/playground/open_duck_mini_zp10d/training_gpu/**/*.jsonl
+/playground/open_duck_mini_zp10d/training_gpu/**/trace/
+/playground/open_duck_mini_zp10d/training_gpu/**/training_scene.xml
+/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_*/
+
+# Large local CAD assessment outputs and previews.
+/cad/local_fix/CURRENT_*.json
+/cad/local_fix/CURRENT_*.png
+/cad/local_fix/CURRENT_*.csv
+/cad/local_fix/LEG_LINK_SHORTENING_REVIEW.png
+/cad/local_fix/open_duck_mini_zp10d_dynamics.glb
+/cad/local_fix/open_duck_mini_zp10d_dynamics.png
