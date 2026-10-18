@@ -5,8 +5,9 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "coacd==1.0.14",
     "framesviewer>=1.0.2",
-    "jax[cuda12]>=0.5.0",
+    "jax>=0.5.0",
     "jaxlib>=0.5.0",
     "jaxtyping>=0.2.38",
     "matplotlib>=3.10.0",
@@ -17,6 +18,20 @@ dependencies = [
     "tensorflow>=2.18.0",
     "tf2onnx>=1.16.1",
 ]
+[project.optional-dependencies]
+dynamics = ["osqp>=1.0,<2"]
+cuda = [
+    # MX350 stack; GPU training also needs the static MJX mass-mask workaround.
+    "jax[cuda12]==0.8.2",
+    "flax==0.12.2",
+]
+reference = [
+    "placo==0.9.16",
+    # Pinocchio 3.4 wheels link against urdfdom 4 and TinyXML2 10.
+    "cmeel-urdfdom>=4,<5",
+    "cmeel-tinyxml2>=10,<11",
+]
+
 [build-system]
 requires = ["setuptools"]
 [tool.setuptools]
