@@ -68,6 +68,7 @@ class PolyReferenceMotion:
         self.startend_double_support_ratio = None
         self.start_offset = None
         self.nb_steps_in_period = None
+        self.basis = next(iter(data.values())).get('basis', 'monomial')
 
         self.process(data)
 
@@ -75,6 +76,8 @@ class PolyReferenceMotion:
         print("[Poly ref data] Processing ...")
         _data = {}
         for name in data.keys():
+            if data[name].get('basis', 'monomial') != self.basis:
+                raise ValueError('All reference records must use the same polynomial basis')
             split = name.split("_")
             dx = float(split[0])
             dy = float(split[1])
@@ -119,7 +122,7 @@ class PolyReferenceMotion:
 
             coeffs = []
             for k, v in _coeffs.items():
-                coeffs.append(jp.flip(jp.array(v)))
+                coeffs.append(jp.array(v) if self.basis in ('chebyshev', 'periodic_cubic') else jp.flip(jp.array(v)))
             _data[dx][dy][dtheta] = coeffs
 
         # print(self.dtheta_range)
@@ -158,6 +161,18 @@ class PolyReferenceMotion:
         return ix, iy, itheta
 
     def sample_polynomial(self, t, coeffs):
+        if self.basis == 'periodic_cubic':
+            segments = coeffs.shape[-1]
+            segment = jp.minimum((t * segments).astype(jp.int32), segments - 1)
+            local = t - segment / segments
+            c = coeffs[:, :, segment]
+            return ((c[:, 0] * local + c[:, 1]) * local + c[:, 2]) * local + c[:, 3]
+        if self.basis == 'chebyshev':
+            x = 2 * t - 1
+            b1 = b2 = jp.zeros(coeffs.shape[0])
+            for k in range(coeffs.shape[1] - 1, 0, -1):
+                b1, b2 = 2 * x * b1 - b2 + coeffs[:, k], b1
+            return x * b1 - b2 + coeffs[:, 0]
         return vmap(lambda c: jp.polyval(c, t))(coeffs)
 
     def get_reference_motion(self, dx, dy, dtheta, i):

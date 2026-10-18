@@ -18,6 +18,7 @@ class PolyReferenceMotion:
         self.startend_double_support_ratio = None
         self.start_offset = None
         self.nb_steps_in_period = None
+        self.basis = next(iter(data.values())).get('basis', 'monomial')
 
         self.process(data)
 
@@ -25,6 +26,8 @@ class PolyReferenceMotion:
         print("[Poly ref data] Processing ...")
         _data = {}
         for name in data.keys():
+            if data[name].get('basis', 'monomial') != self.basis:
+                raise ValueError('All reference records must use the same polynomial basis')
             split = name.split("_")
             dx = float(split[0])
             dy = float(split[1])
@@ -105,6 +108,15 @@ class PolyReferenceMotion:
         return int(ix), int(iy), int(itheta)
 
     def sample_polynomial(self, t, coeffs):
+        if self.basis == 'periodic_cubic':
+            coeffs = np.asarray(coeffs)
+            segments = coeffs.shape[-1]
+            segment = min(int(t * segments), segments - 1)
+            local = t - segment / segments
+            c = coeffs[:, :, segment]
+            return ((c[:, 0] * local + c[:, 1]) * local + c[:, 2]) * local + c[:, 3]
+        if self.basis == 'chebyshev':
+            return np.polynomial.chebyshev.chebval(2 * t - 1, np.asarray(coeffs).T)
         ret = []
         for c in coeffs:
             ret.append(np.polyval(np.flip(c), t))
