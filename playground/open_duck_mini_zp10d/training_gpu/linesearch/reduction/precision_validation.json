@@ -1,0 +1,40 @@
+{
+  "status": "PASS: exact FP32 point parity; independent FP64 equations, boundary cases and autodiff",
+  "samples": 4096,
+  "boundaries": 8,
+  "comparisons": {
+    "upstream_friction_disabled_False": {
+      "max_oracle_bound_ratio": 0.042326169821738285,
+      "max_autodiff_bound_ratio": 0.024875403687407528
+    },
+    "accepted_friction_disabled_False": {
+      "max_oracle_bound_ratio": 0.042326169821738285,
+      "max_autodiff_bound_ratio": 0.024875403687407528
+    },
+    "update_slice_friction_disabled_False": {
+      "max_oracle_bound_ratio": 0.042326169821738285,
+      "max_autodiff_bound_ratio": 0.024875403687407528
+    },
+    "upstream_friction_disabled_True": {
+      "max_oracle_bound_ratio": 0.03770527665479987,
+      "max_autodiff_bound_ratio": 0.024746807473686516
+    },
+    "accepted_friction_disabled_True": {
+      "max_oracle_bound_ratio": 0.03770527665479987,
+      "max_autodiff_bound_ratio": 0.024746807473686516
+    },
+    "update_slice_friction_disabled_True": {
+      "max_oracle_bound_ratio": 0.03770527665479987,
+      "max_autodiff_bound_ratio": 0.024746807473686516
+    }
+  },
+  "input_sha256": {
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/linesearch/reduction/precision_check.py": "a8fed24d6f0a321cc631a8bc38ea046252dd1d5e8557349c45780b4eebc54834",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/linesearch/reduction/experiment.py": "23ad3cb49fa3559ae5671c78c61c5dc0a517ba44edcd7012cdcf70600a93b022",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/linesearch/reduction/accepted_implementation.py": "229bcdb4d99266457c89d90476c8130b85f499e812b5f603b89854e2e953eec2",
+    "/root/work/Open_Duck_Playground/playground/common/mjx_compat.py": "229bcdb4d99266457c89d90476c8130b85f499e812b5f603b89854e2e953eec2"
+  },
+  "adapter_sha256": "229bcdb4d99266457c89d90476c8130b85f499e812b5f603b89854e2e953eec2",
+  "bound": "32 * FP32 epsilon * max(1, sum(abs(contributions)))",
+  "candidate_source_sha256": "03fbf4998bcb029220bd518841a799fc82b04775638885ecdec6ab6fe17d233d"
+}

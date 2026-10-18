@@ -35,7 +35,7 @@ def _pyramidal_point(cls, m, d, ctx, alpha, jv, quad, quad_gauss, uu, v0, uv, vv
         qf = linear_neg * jp.array([f * (-.5 * rf - ctx.Jaref[start:stop]), -f * jv[start:stop], z]).T
         qf += linear_pos * jp.array([f * (-.5 * rf + ctx.Jaref[start:stop]), f * jv[start:stop], z]).T
         friction = jp.where((linear_neg | linear_pos) & (f[:, None] > 0), qf, quad[start:stop])
-        quad = jp.concatenate((quad[:start], friction, quad[stop:]), axis=0)
+        quad = jax.lax.dynamic_update_slice(quad, friction, (start, 0))
     quad_total = quad_gauss + jp.sum(jax.vmap(jp.multiply)(quad, active), axis=0)
     cost = alpha * alpha * quad_total[2] + alpha * quad_total[1] + quad_total[0]
     deriv_0 = 2 * alpha * quad_total[2] + quad_total[1]

@@ -1,0 +1,81 @@
+{
+  "status": "PASS: fixed bounds; 2 s standing/drop/impact; finite states and force limits",
+  "input_sha256": {
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/linesearch/reduction/physics_check.py": "7d7cb21b715a56af2dfd098422a3e11d21ba98a94767415348efcb6547d04065",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/linesearch/reduction/experiment.py": "23ad3cb49fa3559ae5671c78c61c5dc0a517ba44edcd7012cdcf70600a93b022",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/linesearch/reduction/accepted_implementation.py": "229bcdb4d99266457c89d90476c8130b85f499e812b5f603b89854e2e953eec2",
+    "/root/work/Open_Duck_Playground/playground/common/mjx_compat.py": "229bcdb4d99266457c89d90476c8130b85f499e812b5f603b89854e2e953eec2",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/joystick.py": "9b2c84635e9e93804406c8f15d91103fe78330fb9357afbbbc2904eb372e4597",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/data/reference.json": "69e3118ab03418c52b3914473970888c92fc68df9c742158cde0abedc7bf1f28",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/data/polynomial_coefficients.pkl": "ac5b7813ea24448c255757941619964601ba17502e4172ddec341029d440f01b",
+    "/tmp/zp10d-training/scene.xml": "b13b817e38765092e6933237871a32c6d068ed97bee48063f6aea2ed3878be2d"
+  },
+  "num_envs": 128,
+  "control_steps": 100,
+  "same_input_bounds": {
+    "base_position": 2e-06,
+    "base_quaternion": 1e-05,
+    "joint_position": 2e-05,
+    "linear_velocity": 0.0001,
+    "qvel": 0.003,
+    "penetration": 2e-06,
+    "done": 0.0
+  },
+  "trajectory_bounds": {
+    "base_position": 0.0003,
+    "base_quaternion": 0.001,
+    "joint_position": 0.002,
+    "linear_velocity": 0.02,
+    "qvel": 0.15,
+    "penetration": 0.0003,
+    "done": 0.0
+  },
+  "same_input_max_abs": {
+    "base_position": 1.3262033462524414e-06,
+    "base_quaternion": 3.9637088775634766e-06,
+    "joint_position": 1.150369644165039e-05,
+    "linear_velocity": 7.127970457077026e-05,
+    "qvel": 0.0011665523052215576,
+    "penetration": 6.885966286063194e-08,
+    "done": 0.0
+  },
+  "trajectory_max_abs": {
+    "base_position": 0.00010125432163476944,
+    "base_quaternion": 0.0005458742380142212,
+    "joint_position": 0.0006943568587303162,
+    "linear_velocity": 0.004111696034669876,
+    "qvel": 0.047460734844207764,
+    "penetration": 8.75496189109981e-05,
+    "done": 0.0
+  },
+  "timings": {
+    "accepted": {
+      "seconds": [
+        0.13698970100085717,
+        0.1308265020015824,
+        0.13334770099754678,
+        0.1344210019997263,
+        0.13268448000235367,
+        0.12958006400003796,
+        0.13115946299876668
+      ],
+      "median": 0.13268448000235367
+    },
+    "update_slice": {
+      "seconds": [
+        0.142901505001646,
+        0.14109800499863923,
+        0.13993890500205453,
+        0.13826990500092506,
+        0.14215940600115573,
+        0.13950660499904188,
+        0.13927190499816788
+      ],
+      "median": 0.13993890500205453
+    }
+  },
+  "total_load_impulse_max_abs_Ns": 0.06181338429450989,
+  "candidate_source_sha256": "03fbf4998bcb029220bd518841a799fc82b04775638885ecdec6ab6fe17d233d",
+  "elapsed_seconds": 182.7600910830006,
+  "peak_process_rss_bytes": 1696116736
+}
