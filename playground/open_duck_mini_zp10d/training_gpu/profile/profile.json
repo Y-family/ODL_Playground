@@ -1,0 +1,107 @@
+{
+  "status": "PASS: six actual PPO epochs; warm trace captured",
+  "input_sha256": {
+    "/root/work/Open_Duck_Playground/scripts/profile_zp10d.py": "82af9e0fed37c85d78a77d2117c69ee11c8e1f0938154ea6dda258ab54bd04e0",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/runner.py": "0deaabbb41b0ce22b25d36b47a78a1d00d5aade5969d35e8e7f3aef00b5b4487",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/joystick.py": "209c160bcb588eed6b205b5da3d7dd2f488bd7015a22a83b69861da8d53f52f9",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_v2/joystick.py": "1152b823e5492daa6c47ed97dd2fe6c2cc9ef9a73e6af07a5db4cdd94cdcdc44",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_v2/base.py": "fd12addd06a88759a7bbd900dc8f122e47cb5c64beaf15126bc9e77e6ee64f43",
+    "/root/work/Open_Duck_Playground/playground/common/mjx_compat.py": "35fc283be7fb634f2de5f367822d290ad7048d483c2d9a4a5c28ab5bb38fb5f6",
+    "/root/work/Open_Duck_Playground/playground/common/poly_reference_motion.py": "e27fe51796e5e47dbe90f81606b8f97d8720732bd39b72971150ed6725a23df5",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/data/reference.json": "69e3118ab03418c52b3914473970888c92fc68df9c742158cde0abedc7bf1f28",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/data/polynomial_coefficients.pkl": "ac5b7813ea24448c255757941619964601ba17502e4172ddec341029d440f01b",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/open_duck_mini_zp10d.urdf": "29fc94163cdee551f5e258b4d3628a357f65efd8221b9b3b04f2f6c632f4c13c",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/xmls/open_duck_mini_zp10d.xml": "12a9ca61f0c10bc320f6eecc8517bad557e0d89dc64500fcfb191d9dadbfd8d0",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/xmls/scene_flat_terrain.xml": "9bc71ddfdeffbf6e0bf6be477b09c84035741a2ec6c463fcb31598427e2d8a86",
+    "/tmp/zp10d-training/scene.xml": "b13b817e38765092e6933237871a32c6d068ed97bee48063f6aea2ed3878be2d"
+  },
+  "backend": "gpu",
+  "devices": [
+    "cuda:0"
+  ],
+  "jax_version": "0.8.2",
+  "num_envs": 512,
+  "ctrl_dt": 0.02,
+  "sim_dt": 0.002,
+  "substeps": 10,
+  "unroll_length": 16,
+  "batch_size": 512,
+  "updates_per_batch": 2,
+  "run_evals": false,
+  "gpu_memory_fraction": "1.0",
+  "trace_epoch": 4,
+  "samples": [
+    {
+      "epoch": 1,
+      "steps": 8192,
+      "elapsed_seconds": 112.26868869600003,
+      "training_sps": 94.36376269459743,
+      "training_walltime": 86.81298589706421,
+      "trace_active": false
+    },
+    {
+      "epoch": 2,
+      "steps": 16384,
+      "elapsed_seconds": 171.60446017900176,
+      "training_sps": 138.39944841196802,
+      "training_walltime": 146.00397324562073,
+      "trace_active": false
+    },
+    {
+      "epoch": 3,
+      "steps": 24576,
+      "elapsed_seconds": 181.35904529600157,
+      "training_sps": 853.6591565455361,
+      "training_walltime": 155.60030913352966,
+      "trace_active": false
+    },
+    {
+      "epoch": 4,
+      "steps": 32768,
+      "elapsed_seconds": 206.15190387000257,
+      "training_sps": 794.4032700070114,
+      "training_walltime": 165.91245198249817,
+      "trace_active": true
+    },
+    {
+      "epoch": 5,
+      "steps": 40960,
+      "elapsed_seconds": 221.05282968699976,
+      "training_sps": 865.4923547425261,
+      "training_walltime": 175.37758469581604,
+      "trace_active": false
+    },
+    {
+      "epoch": 6,
+      "steps": 49152,
+      "elapsed_seconds": 230.83473635300106,
+      "training_sps": 851.0934396742556,
+      "training_walltime": 185.002849817276,
+      "trace_active": false
+    }
+  ],
+  "callback_seconds": {
+    "profile_parameter_check": [
+      0.008591800000431249,
+      0.010763800997665385,
+      0.010559598998952424,
+      0.005897799997910624,
+      0.003474000001006061,
+      0.005531599999812897,
+      0.007298799999261973
+    ],
+    "profile_checkpoint_save": [
+      0.12336000800132751,
+      0.10930389400164131,
+      0.1263742019982601,
+      0.10710580200247932,
+      0.10858320399711374,
+      0.1187022030026128
+    ]
+  },
+  "median_untraced_warm_sps": 853.6591565455361,
+  "inputs_unchanged": true,
+  "elapsed_seconds": 231.6810320730001,
+  "peak_process_rss_bytes": 3031670784,
+  "cgroup_memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+}

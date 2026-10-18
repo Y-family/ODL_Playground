@@ -11,7 +11,7 @@ import numpy as np
 from mujoco.mjx._src import support
 
 from playground.open_duck_mini_v2 import base, joystick as original
-from playground.common.mjx_compat import install_static_mass_mask
+from playground.common.mjx_compat import install_linesearch_optimization, install_static_mass_mask
 from playground.open_duck_mini_zp10d.reference import ROOT, source_hashes
 
 TRAINING_XML = Path('/tmp/zp10d-training/scene.xml')
@@ -44,6 +44,7 @@ class Joystick(original.Joystick):
     def __init__(self, noise=0., pushes=False, reward_mode='optimized'):
         if jax.default_backend() == 'gpu':
             install_static_mass_mask()
+            install_linesearch_optimization()
         if reward_mode not in ('original', 'optimized'):
             raise ValueError(reward_mode)
         self.reward_mode = reward_mode

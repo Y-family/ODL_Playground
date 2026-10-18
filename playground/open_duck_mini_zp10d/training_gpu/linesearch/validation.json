@@ -1,0 +1,1088 @@
+{
+  "status": "PASS",
+  "strategy": "sliced_friction_point",
+  "backend": "gpu",
+  "num_envs": 512,
+  "input_sha256": {
+    "/root/work/Open_Duck_Playground/scripts/check_mjx_linesearch.py": "cce1f55c824994a2913dc9e2fcc0124f0047a44be9f4becfa34bf2b838b06bc1",
+    "/root/work/Open_Duck_Playground/playground/common/mjx_compat.py": "229bcdb4d99266457c89d90476c8130b85f499e812b5f603b89854e2e953eec2",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/joystick.py": "9b2c84635e9e93804406c8f15d91103fe78330fb9357afbbbc2904eb372e4597",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/data/reference.json": "69e3118ab03418c52b3914473970888c92fc68df9c742158cde0abedc7bf1f28",
+    "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/data/polynomial_coefficients.pkl": "ac5b7813ea24448c255757941619964601ba17502e4172ddec341029d440f01b",
+    "/tmp/zp10d-training/scene.xml": "b13b817e38765092e6933237871a32c6d068ed97bee48063f6aea2ed3878be2d"
+  },
+  "same_input_max_abs": {
+    "qpos": 1.4386605471372604e-05,
+    "base_position": 1.1920928955078125e-07,
+    "base_quaternion": 4.886533133685589e-07,
+    "joint_position": 1.4386605471372604e-05,
+    "qvel": 0.001817546784877777,
+    "linear_velocity": 4.085712134838104e-06,
+    "qacc": 0.9087724685668945,
+    "constraint_force": 0.01563262939453125,
+    "constraint_torque": 0.0018596649169921875,
+    "actuator_force": 1.6629695892333984e-05,
+    "foot_loads": 0.01195526123046875,
+    "penetration": 9.592622518539429e-08,
+    "reward": 1.773238182067871e-05,
+    "done": 0.0,
+    "state_obs": 0.0008349418640136719,
+    "privileged_obs": 0.001817546784877777
+  },
+  "trajectory_max_abs": {
+    "qpos": 0.0006502866744995117,
+    "base_position": 9.828619658946991e-05,
+    "base_quaternion": 0.0002518435940146446,
+    "joint_position": 0.0006502866744995117,
+    "qvel": 0.04253506660461426,
+    "linear_velocity": 0.0032370612025260925,
+    "qacc": 28.596439361572266,
+    "constraint_force": 6.609358310699463,
+    "constraint_torque": 0.8047665357589722,
+    "actuator_force": 0.008457660675048828,
+    "foot_loads": 10.439306259155273,
+    "penetration": 3.129261313006282e-05,
+    "reward": 0.037036359310150146,
+    "done": 0.0,
+    "state_obs": 4.163995742797852,
+    "privileged_obs": 4.163995742797852
+  },
+  "roundoff_max_abs": {
+    "qpos": 0.0006505250930786133,
+    "base_position": 0.00011168420314788818,
+    "base_quaternion": 0.00034815073013305664,
+    "joint_position": 0.0006505250930786133,
+    "qvel": 0.06093082204461098,
+    "linear_velocity": 0.004675857722759247,
+    "qacc": 30.087406158447266,
+    "constraint_force": 6.60935640335083,
+    "constraint_torque": 0.8047665357589722,
+    "actuator_force": 0.008461475372314453,
+    "foot_loads": 10.439306259155273,
+    "penetration": 0.0001380016328766942,
+    "reward": 0.03984925150871277,
+    "done": 0.0,
+    "state_obs": 4.1638970375061035,
+    "privileged_obs": 4.1638970375061035
+  },
+  "rejected_early_exit": {
+    "status": "failed",
+    "backend": "gpu",
+    "num_envs": 512,
+    "input_sha256": {
+      "/root/work/Open_Duck_Playground/scripts/check_mjx_linesearch.py": "d5cf6122a245ffc386760214f256db58cb0b132ba3281f09a6f0814a38a02f6c",
+      "/root/work/Open_Duck_Playground/playground/common/mjx_compat.py": "0b782cb4c5fc65365517ce71d7113b44546a8eccda1e885aa91a233a7877f22f",
+      "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/joystick.py": "a41f85f5999b6bcc658c5d8f3f3cbd4d85c04d147c1d911cad0f60ef1a598c73",
+      "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/data/reference.json": "69e3118ab03418c52b3914473970888c92fc68df9c742158cde0abedc7bf1f28",
+      "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/data/polynomial_coefficients.pkl": "ac5b7813ea24448c255757941619964601ba17502e4172ddec341029d440f01b",
+      "/tmp/zp10d-training/scene.xml": "b13b817e38765092e6933237871a32c6d068ed97bee48063f6aea2ed3878be2d"
+    },
+    "same_input_max_abs": {
+      "qpos": 1.0585878044366837e-05,
+      "qvel": 0.0004915595054626465,
+      "qacc": 0.0300140380859375,
+      "constraint_force": 0.009679794311523438,
+      "constraint_torque": 0.0011302530765533447,
+      "actuator_force": 1.1265277862548828e-05,
+      "foot_loads": 0.006236076354980469,
+      "penetration": 6.984919309616089e-08,
+      "reward": 1.004338264465332e-05,
+      "done": 0.0,
+      "state_obs": 0.0002918243408203125,
+      "privileged_obs": 0.0004915595054626465
+    },
+    "trajectory_max_abs": {
+      "qpos": 0.0006502270698547363,
+      "qvel": 0.03569561243057251,
+      "qacc": 28.596715927124023,
+      "constraint_force": 6.609414577484131,
+      "constraint_torque": 0.8047649264335632,
+      "actuator_force": 0.008456707000732422,
+      "foot_loads": 10.439276695251465,
+      "penetration": 6.0514576034620404e-05,
+      "reward": 0.03703492879867554,
+      "done": 0.0,
+      "state_obs": 4.16400671005249,
+      "privileged_obs": 4.16400671005249
+    },
+    "initial_check": {
+      "error": "AssertionError: \nNot equal to tolerance rtol=2e-05, atol=0.001\nqfrc_constraint\nMismatched elements: 6 / 11264 (0.0533%)\nMax absolute difference among violations: 0.00806808\nMax relative difference among violations: 0.00642205\n ACTUAL: array([[ 0.338115, -0.572391, 20.718212, ..., -0.189627,  0.540174,\n         0.118686],\n       [-1.176316,  0.091534, 33.31285 , ..., -0.379501,  0.744633,...\n DESIRED: array([[ 0.338115, -0.57239 , 20.718212, ..., -0.189627,  0.540174,\n         0.118686],\n       [-1.176316,  0.09153 , 33.312855, ..., -0.379501,  0.744633,...",
+      "same_input_max_abs": {
+        "qpos": 2.812594175338745e-07,
+        "qvel": 1.329183578491211e-05,
+        "qacc": 0.0019092559814453125,
+        "qfrc_constraint": 0.008068084716796875,
+        "actuator_force": 1.9073486328125e-06,
+        "efc_force": 0.00014573335647583008,
+        "contact_dist": 1.7881393432617188e-07,
+        "reward": 1.8775463104248047e-06,
+        "done": 0.0,
+        "state_obs": 6.973743438720703e-05,
+        "privileged_obs": 6.973743438720703e-05
+      },
+      "trajectory_max_abs": {
+        "qpos": 1.1920928955078125e-07,
+        "qvel": 3.1515955924987793e-06,
+        "qacc": 0.0004673004150390625,
+        "qfrc_constraint": 0.000362396240234375,
+        "actuator_force": 9.5367431640625e-07,
+        "efc_force": 0.35886600613594055,
+        "contact_dist": 9.050685912370682e-05,
+        "reward": 1.8775463104248047e-06,
+        "done": 0.0,
+        "state_obs": 5.53131103515625e-05,
+        "privileged_obs": 5.53131103515625e-05
+      }
+    },
+    "nested_batch_edge_cases": "PASS: exact outputs",
+    "same_state_control_seconds": {
+      "original": [
+        0.5459218440009863,
+        0.550449144000595,
+        0.5492614440008765,
+        0.5470632470023702
+      ],
+      "optimized": [
+        0.6482126560003962,
+        0.6538174570014235,
+        0.6582583569979761,
+        0.645923757001583
+      ]
+    },
+    "same_input_violations": [
+      {
+        "control": 1,
+        "field": "qacc",
+        "max_abs": 0.010015487670898438,
+        "expected": 28.141551971435547,
+        "actual": 28.151567459106445
+      },
+      {
+        "control": 2,
+        "field": "qpos",
+        "max_abs": 1.282431185245514e-06,
+        "expected": -0.01173682976514101,
+        "actual": -0.011735547333955765
+      },
+      {
+        "control": 2,
+        "field": "qvel",
+        "max_abs": 8.362904191017151e-05,
+        "expected": -0.04401206597685814,
+        "actual": -0.04392843693494797
+      },
+      {
+        "control": 2,
+        "field": "qacc",
+        "max_abs": 0.0300140380859375,
+        "expected": -1.4287052154541016,
+        "actual": -1.398691177368164
+      },
+      {
+        "control": 3,
+        "field": "qacc",
+        "max_abs": 0.005084991455078125,
+        "expected": -34.284141540527344,
+        "actual": -34.28922653198242
+      },
+      {
+        "control": 4,
+        "field": "qpos",
+        "max_abs": 1.0585878044366837e-05,
+        "expected": -0.005756221245974302,
+        "actual": -0.0057456353679299355
+      },
+      {
+        "control": 4,
+        "field": "qvel",
+        "max_abs": 0.0004915595054626465,
+        "expected": 0.2422269880771637,
+        "actual": 0.24173542857170105
+      },
+      {
+        "control": 4,
+        "field": "qacc",
+        "max_abs": 0.015468597412109375,
+        "expected": -6.237410068511963,
+        "actual": -6.2219414710998535
+      },
+      {
+        "control": 5,
+        "field": "qacc",
+        "max_abs": 0.003360748291015625,
+        "expected": -34.061134338378906,
+        "actual": -34.05777359008789
+      },
+      {
+        "control": 7,
+        "field": "qacc",
+        "max_abs": 0.0038928985595703125,
+        "expected": 6.122175693511963,
+        "actual": 6.118282794952393
+      },
+      {
+        "control": 8,
+        "field": "qacc",
+        "max_abs": 0.0135345458984375,
+        "expected": 28.281137466430664,
+        "actual": 28.2946720123291
+      },
+      {
+        "control": 8,
+        "field": "state_obs",
+        "max_abs": 0.00022721290588378906,
+        "expected": -0.25345414876937866,
+        "actual": -0.25368136167526245
+      },
+      {
+        "control": 9,
+        "field": "qacc",
+        "max_abs": 0.0023754239082336426,
+        "expected": 0.06566314399242401,
+        "actual": 0.06803856790065765
+      },
+      {
+        "control": 10,
+        "field": "qacc",
+        "max_abs": 0.004730224609375,
+        "expected": 33.82645034790039,
+        "actual": 33.821720123291016
+      },
+      {
+        "control": 11,
+        "field": "qacc",
+        "max_abs": 0.00232696533203125,
+        "expected": -10.713315963745117,
+        "actual": -10.715642929077148
+      },
+      {
+        "control": 12,
+        "field": "qvel",
+        "max_abs": 2.3320317268371582e-05,
+        "expected": -0.14590488374233246,
+        "actual": -0.1458815634250641
+      },
+      {
+        "control": 13,
+        "field": "qacc",
+        "max_abs": 0.003101348876953125,
+        "expected": -48.36121368408203,
+        "actual": -48.35811233520508
+      },
+      {
+        "control": 14,
+        "field": "qvel",
+        "max_abs": 5.447864532470703e-05,
+        "expected": -0.501949667930603,
+        "actual": -0.5020041465759277
+      },
+      {
+        "control": 14,
+        "field": "qacc",
+        "max_abs": 0.00580596923828125,
+        "expected": 74.08277893066406,
+        "actual": 74.08858489990234
+      },
+      {
+        "control": 17,
+        "field": "qacc",
+        "max_abs": 0.0029382705688476562,
+        "expected": 0.8052427172660828,
+        "actual": 0.8023044466972351
+      },
+      {
+        "control": 18,
+        "field": "qacc",
+        "max_abs": 0.004352569580078125,
+        "expected": -45.726158142089844,
+        "actual": -45.73051071166992
+      },
+      {
+        "control": 19,
+        "field": "qpos",
+        "max_abs": 3.647059202194214e-06,
+        "expected": 0.017246335744857788,
+        "actual": 0.017249982804059982
+      },
+      {
+        "control": 19,
+        "field": "qacc",
+        "max_abs": 0.009775757789611816,
+        "expected": 1.087349772453308,
+        "actual": 1.0775740146636963
+      },
+      {
+        "control": 20,
+        "field": "qacc",
+        "max_abs": 0.0059986114501953125,
+        "expected": 19.906631469726562,
+        "actual": 19.900632858276367
+      },
+      {
+        "control": 21,
+        "field": "qacc",
+        "max_abs": 0.005523681640625,
+        "expected": -21.065385818481445,
+        "actual": -21.07090950012207
+      },
+      {
+        "control": 23,
+        "field": "qacc",
+        "max_abs": 0.002435445785522461,
+        "expected": 3.6755924224853516,
+        "actual": 3.673156976699829
+      }
+    ],
+    "error": "AssertionError: [{'control': 1, 'field': 'qacc', 'max_abs': 0.010015487670898438, 'expected': 28.141551971435547, 'actual': 28.151567459106445}, {'control': 2, 'field': 'qpos', 'max_abs': 1.282431185245514e-06, 'expected': -0.01173682976514101, 'actual': -0.011735547333955765}, {'control': 2, 'field': 'qvel', 'max_abs': 8.362904191017151e-05, 'expected': -0.04401206597685814, 'actual': -0.04392843693494797}, {'control': 2, 'field': 'qacc', 'max_abs': 0.0300140380859375, 'expected': -1.4287052154541016, 'actual': -1.398691177368164}, {'control': 3, 'field': 'qacc', 'max_abs': 0.005084991455078125, 'expected': -34.284141540527344, 'actual': -34.28922653198242}, {'control': 4, 'field': 'qpos', 'max_abs': 1.0585878044366837e-05, 'expected': -0.005756221245974302, 'actual': -0.0057456353679299355}, {'control': 4, 'field': 'qvel', 'max_abs': 0.0004915595054626465, 'expected': 0.2422269880771637, 'actual': 0.24173542857170105}, {'control': 4, 'field': 'qacc', 'max_abs': 0.015468597412109375, 'expected': -6.237410068511963, 'actual': -6.2219414710998535}, {'control': 5, 'field': 'qacc', 'max_abs': 0.003360748291015625, 'expected': -34.061134338378906, 'actual': -34.05777359008789}, {'control': 7, 'field': 'qacc', 'max_abs': 0.0038928985595703125, 'expected': 6.122175693511963, 'actual': 6.118282794952393}]",
+    "elapsed_seconds": 167.52080361799744,
+    "peak_process_rss_bytes": 1608663040
+  },
+  "point_parity": {
+    "status": "PASS: exact values",
+    "friction_rows": 16,
+    "constraint_rows": 304
+  },
+  "same_state_control_seconds": {
+    "original": [
+      0.5493810700027097,
+      0.5488243700019666,
+      0.5497487700013153,
+      0.5485380700010865
+    ],
+    "optimized": [
+      0.47534516099767643,
+      0.4786521610003547,
+      0.47830826100107515,
+      0.4775742660021933
+    ]
+  },
+  "strict_array_comparison_diagnostics": [
+    {
+      "control": 0,
+      "field": "qacc",
+      "max_abs": 0.003208160400390625,
+      "expected": 36.070716857910156,
+      "actual": 36.07392501831055
+    },
+    {
+      "control": 1,
+      "field": "qpos",
+      "max_abs": 6.083282642066479e-06,
+      "expected": -0.0016427070368081331,
+      "actual": -0.0016487903194501996
+    },
+    {
+      "control": 1,
+      "field": "joint_position",
+      "max_abs": 6.083282642066479e-06,
+      "expected": -0.0016427070368081331,
+      "actual": -0.0016487903194501996
+    },
+    {
+      "control": 1,
+      "field": "qvel",
+      "max_abs": 0.000511467456817627,
+      "expected": -0.11083516478538513,
+      "actual": -0.11134663224220276
+    },
+    {
+      "control": 1,
+      "field": "qacc",
+      "max_abs": 0.1075739860534668,
+      "expected": 4.905691146850586,
+      "actual": 5.013265132904053
+    },
+    {
+      "control": 2,
+      "field": "qpos",
+      "max_abs": 1.4386605471372604e-05,
+      "expected": -0.004317175131291151,
+      "actual": -0.0043027885258197784
+    },
+    {
+      "control": 2,
+      "field": "joint_position",
+      "max_abs": 1.4386605471372604e-05,
+      "expected": -0.004317175131291151,
+      "actual": -0.0043027885258197784
+    },
+    {
+      "control": 2,
+      "field": "qvel",
+      "max_abs": 0.0005604922771453857,
+      "expected": 0.058617234230041504,
+      "actual": 0.05917772650718689
+    },
+    {
+      "control": 2,
+      "field": "linear_velocity",
+      "max_abs": 3.4868717193603516e-06,
+      "expected": -0.09666673839092255,
+      "actual": -0.0966702252626419
+    },
+    {
+      "control": 2,
+      "field": "qacc",
+      "max_abs": 0.15224647521972656,
+      "expected": -5.0210795402526855,
+      "actual": -5.173326015472412
+    },
+    {
+      "control": 3,
+      "field": "qpos",
+      "max_abs": 3.7690624594688416e-06,
+      "expected": 0.006320745684206486,
+      "actual": 0.006324514746665955
+    },
+    {
+      "control": 3,
+      "field": "joint_position",
+      "max_abs": 3.7690624594688416e-06,
+      "expected": 0.006320745684206486,
+      "actual": 0.006324514746665955
+    },
+    {
+      "control": 3,
+      "field": "qvel",
+      "max_abs": 0.00015629082918167114,
+      "expected": 0.10043436288833618,
+      "actual": 0.10059065371751785
+    },
+    {
+      "control": 3,
+      "field": "qacc",
+      "max_abs": 0.05511951446533203,
+      "expected": 5.752355098724365,
+      "actual": 5.697235584259033
+    },
+    {
+      "control": 3,
+      "field": "state_obs",
+      "max_abs": 0.000518798828125,
+      "expected": 65.55567169189453,
+      "actual": 65.55619049072266
+    },
+    {
+      "control": 4,
+      "field": "qpos",
+      "max_abs": 1.058308407664299e-05,
+      "expected": -0.005756219383329153,
+      "actual": -0.00574563629925251
+    },
+    {
+      "control": 4,
+      "field": "joint_position",
+      "max_abs": 1.058308407664299e-05,
+      "expected": -0.005756219383329153,
+      "actual": -0.00574563629925251
+    },
+    {
+      "control": 4,
+      "field": "qvel",
+      "max_abs": 0.0004914999008178711,
+      "expected": 0.2422269731760025,
+      "actual": 0.24173547327518463
+    },
+    {
+      "control": 4,
+      "field": "linear_velocity",
+      "max_abs": 4.085712134838104e-06,
+      "expected": -0.012151281349360943,
+      "actual": -0.012155367061495781
+    },
+    {
+      "control": 4,
+      "field": "qacc",
+      "max_abs": 0.15145111083984375,
+      "expected": -31.745893478393555,
+      "actual": -31.59444236755371
+    },
+    {
+      "control": 4,
+      "field": "actuator_force",
+      "max_abs": 1.6629695892333984e-05,
+      "expected": -0.09096795320510864,
+      "actual": -0.09095132350921631
+    },
+    {
+      "control": 4,
+      "field": "state_obs",
+      "max_abs": 0.000335693359375,
+      "expected": 35.65126037597656,
+      "actual": 35.65092468261719
+    },
+    {
+      "control": 5,
+      "field": "qvel",
+      "max_abs": 4.220008850097656e-05,
+      "expected": 0.34337174892425537,
+      "actual": 0.3433295488357544
+    },
+    {
+      "control": 5,
+      "field": "qacc",
+      "max_abs": 0.00606536865234375,
+      "expected": -16.888080596923828,
+      "actual": -16.882015228271484
+    },
+    {
+      "control": 6,
+      "field": "qpos",
+      "max_abs": 3.98978590965271e-06,
+      "expected": -0.017482280731201172,
+      "actual": -0.017486270517110825
+    },
+    {
+      "control": 6,
+      "field": "joint_position",
+      "max_abs": 3.98978590965271e-06,
+      "expected": -0.017482280731201172,
+      "actual": -0.017486270517110825
+    },
+    {
+      "control": 6,
+      "field": "qvel",
+      "max_abs": 0.0007223263382911682,
+      "expected": 0.12180950492620468,
+      "actual": 0.12108717858791351
+    },
+    {
+      "control": 6,
+      "field": "linear_velocity",
+      "max_abs": 1.421663910150528e-06,
+      "expected": 0.005949884187430143,
+      "actual": 0.005951305851340294
+    },
+    {
+      "control": 6,
+      "field": "qacc",
+      "max_abs": 0.36110925674438477,
+      "expected": -5.810480117797852,
+      "actual": -6.171589374542236
+    },
+    {
+      "control": 6,
+      "field": "state_obs",
+      "max_abs": 0.0004036128520965576,
+      "expected": 0.18947379291057587,
+      "actual": 0.1890701800584793
+    },
+    {
+      "control": 7,
+      "field": "qpos",
+      "max_abs": 4.800152964890003e-06,
+      "expected": -0.00012726958084385842,
+      "actual": -0.00012246942787896842
+    },
+    {
+      "control": 7,
+      "field": "joint_position",
+      "max_abs": 4.800152964890003e-06,
+      "expected": -0.00012726958084385842,
+      "actual": -0.00012246942787896842
+    },
+    {
+      "control": 7,
+      "field": "qvel",
+      "max_abs": 0.0003973767161369324,
+      "expected": -0.10428795963525772,
+      "actual": -0.10468533635139465
+    },
+    {
+      "control": 7,
+      "field": "qacc",
+      "max_abs": 0.0884547233581543,
+      "expected": 4.145755290985107,
+      "actual": 4.234210014343262
+    },
+    {
+      "control": 8,
+      "field": "qpos",
+      "max_abs": 3.4882687032222748e-06,
+      "expected": 0.0032048069406300783,
+      "actual": 0.0032082952093333006
+    },
+    {
+      "control": 8,
+      "field": "joint_position",
+      "max_abs": 3.4882687032222748e-06,
+      "expected": 0.0032048069406300783,
+      "actual": 0.0032082952093333006
+    },
+    {
+      "control": 8,
+      "field": "qvel",
+      "max_abs": 0.0003522112965583801,
+      "expected": 0.10658992826938629,
+      "actual": 0.10694213956594467
+    },
+    {
+      "control": 8,
+      "field": "linear_velocity",
+      "max_abs": 1.6628764569759369e-06,
+      "expected": 0.005626996513456106,
+      "actual": 0.00562533363699913
+    },
+    {
+      "control": 8,
+      "field": "qacc",
+      "max_abs": 0.15492427349090576,
+      "expected": -1.3568428754806519,
+      "actual": -1.201918601989746
+    },
+    {
+      "control": 8,
+      "field": "state_obs",
+      "max_abs": 0.0008349418640136719,
+      "expected": -1.4393373727798462,
+      "actual": -1.4401723146438599
+    },
+    {
+      "control": 9,
+      "field": "qpos",
+      "max_abs": 1.5059486031532288e-06,
+      "expected": 0.010807662270963192,
+      "actual": 0.010809168219566345
+    },
+    {
+      "control": 9,
+      "field": "joint_position",
+      "max_abs": 1.5059486031532288e-06,
+      "expected": 0.010807662270963192,
+      "actual": 0.010809168219566345
+    },
+    {
+      "control": 9,
+      "field": "qvel",
+      "max_abs": 8.906424045562744e-05,
+      "expected": 0.09874636679887772,
+      "actual": 0.09883543103933334
+    },
+    {
+      "control": 9,
+      "field": "qacc",
+      "max_abs": 0.019824981689453125,
+      "expected": -3.4852683544158936,
+      "actual": -3.5050933361053467
+    },
+    {
+      "control": 10,
+      "field": "qpos",
+      "max_abs": 1.6652047634124756e-06,
+      "expected": -0.005943430587649345,
+      "actual": -0.005941765382885933
+    },
+    {
+      "control": 10,
+      "field": "joint_position",
+      "max_abs": 1.6652047634124756e-06,
+      "expected": -0.005943430587649345,
+      "actual": -0.005941765382885933
+    },
+    {
+      "control": 10,
+      "field": "qvel",
+      "max_abs": 6.470084190368652e-05,
+      "expected": 0.09184705466032028,
+      "actual": 0.09191175550222397
+    },
+    {
+      "control": 10,
+      "field": "qacc",
+      "max_abs": 0.017653226852416992,
+      "expected": -2.725980520248413,
+      "actual": -2.74363374710083
+    },
+    {
+      "control": 10,
+      "field": "state_obs",
+      "max_abs": 0.0002460479736328125,
+      "expected": -2.225301742553711,
+      "actual": -2.2255477905273438
+    },
+    {
+      "control": 11,
+      "field": "qpos",
+      "max_abs": 2.255663275718689e-06,
+      "expected": 0.012144745327532291,
+      "actual": 0.01214700099080801
+    },
+    {
+      "control": 11,
+      "field": "joint_position",
+      "max_abs": 2.255663275718689e-06,
+      "expected": 0.012144745327532291,
+      "actual": 0.01214700099080801
+    },
+    {
+      "control": 11,
+      "field": "qvel",
+      "max_abs": 0.000250793993473053,
+      "expected": 0.1004004031419754,
+      "actual": 0.10065119713544846
+    },
+    {
+      "control": 11,
+      "field": "qacc",
+      "max_abs": 0.0558168888092041,
+      "expected": -3.625425100326538,
+      "actual": -3.681241989135742
+    },
+    {
+      "control": 12,
+      "field": "qpos",
+      "max_abs": 3.516674041748047e-06,
+      "expected": -0.004120750352740288,
+      "actual": -0.004124267026782036
+    },
+    {
+      "control": 12,
+      "field": "joint_position",
+      "max_abs": 3.516674041748047e-06,
+      "expected": -0.004120750352740288,
+      "actual": -0.004124267026782036
+    },
+    {
+      "control": 12,
+      "field": "qvel",
+      "max_abs": 0.0004950091242790222,
+      "expected": 0.11809207499027252,
+      "actual": 0.11858708411455154
+    },
+    {
+      "control": 12,
+      "field": "qacc",
+      "max_abs": 0.24748945236206055,
+      "expected": -5.788346767425537,
+      "actual": -5.540857315063477
+    },
+    {
+      "control": 13,
+      "field": "qpos",
+      "max_abs": 2.1811574697494507e-06,
+      "expected": 0.026175368577241898,
+      "actual": 0.026177549734711647
+    },
+    {
+      "control": 13,
+      "field": "joint_position",
+      "max_abs": 2.1811574697494507e-06,
+      "expected": 0.026175368577241898,
+      "actual": 0.026177549734711647
+    },
+    {
+      "control": 13,
+      "field": "qvel",
+      "max_abs": 0.00024283677339553833,
+      "expected": 0.10291780531406403,
+      "actual": 0.10316064208745956
+    },
+    {
+      "control": 13,
+      "field": "linear_velocity",
+      "max_abs": 1.1711381375789642e-06,
+      "expected": -0.0071247536689043045,
+      "actual": -0.0071235825307667255
+    },
+    {
+      "control": 13,
+      "field": "qacc",
+      "max_abs": 0.0540461540222168,
+      "expected": -4.0283308029174805,
+      "actual": -4.082376956939697
+    },
+    {
+      "control": 14,
+      "field": "qpos",
+      "max_abs": 3.6349520087242126e-06,
+      "expected": 0.0065439967438578606,
+      "actual": 0.006547631695866585
+    },
+    {
+      "control": 14,
+      "field": "joint_position",
+      "max_abs": 3.6349520087242126e-06,
+      "expected": 0.0065439967438578606,
+      "actual": 0.006547631695866585
+    },
+    {
+      "control": 14,
+      "field": "qvel",
+      "max_abs": 0.001817546784877777,
+      "expected": 0.08924856036901474,
+      "actual": 0.09106610715389252
+    },
+    {
+      "control": 14,
+      "field": "qacc",
+      "max_abs": 0.9087724685668945,
+      "expected": -1.8984606266021729,
+      "actual": -0.9896881580352783
+    },
+    {
+      "control": 14,
+      "field": "state_obs",
+      "max_abs": 0.0006326436996459961,
+      "expected": 0.20027901232242584,
+      "actual": 0.19964636862277985
+    },
+    {
+      "control": 15,
+      "field": "qpos",
+      "max_abs": 2.1997839212417603e-06,
+      "expected": -0.02432709001004696,
+      "actual": -0.024324890226125717
+    },
+    {
+      "control": 15,
+      "field": "joint_position",
+      "max_abs": 2.1997839212417603e-06,
+      "expected": -0.02432709001004696,
+      "actual": -0.024324890226125717
+    },
+    {
+      "control": 15,
+      "field": "qvel",
+      "max_abs": 0.0004540383815765381,
+      "expected": 0.10859145224094391,
+      "actual": 0.10904549062252045
+    },
+    {
+      "control": 15,
+      "field": "qacc",
+      "max_abs": 0.09574174880981445,
+      "expected": -4.559905052185059,
+      "actual": -4.655646800994873
+    },
+    {
+      "control": 16,
+      "field": "qpos",
+      "max_abs": 4.408648237586021e-06,
+      "expected": -0.003516943659633398,
+      "actual": -0.003512535011395812
+    },
+    {
+      "control": 16,
+      "field": "joint_position",
+      "max_abs": 4.408648237586021e-06,
+      "expected": -0.003516943659633398,
+      "actual": -0.003512535011395812
+    },
+    {
+      "control": 16,
+      "field": "qvel",
+      "max_abs": 0.0012679994106292725,
+      "expected": 0.10220228135585785,
+      "actual": 0.10347028076648712
+    },
+    {
+      "control": 16,
+      "field": "qacc",
+      "max_abs": 0.6340060234069824,
+      "expected": -3.6644208431243896,
+      "actual": -3.0304148197174072
+    },
+    {
+      "control": 17,
+      "field": "qpos",
+      "max_abs": 4.282686859369278e-06,
+      "expected": 0.0033150978852063417,
+      "actual": 0.0033108151983469725
+    },
+    {
+      "control": 17,
+      "field": "joint_position",
+      "max_abs": 4.282686859369278e-06,
+      "expected": 0.0033150978852063417,
+      "actual": 0.0033108151983469725
+    },
+    {
+      "control": 17,
+      "field": "qvel",
+      "max_abs": 0.00027868151664733887,
+      "expected": -0.09281723201274872,
+      "actual": -0.09309591352939606
+    },
+    {
+      "control": 17,
+      "field": "linear_velocity",
+      "max_abs": 2.3292377591133118e-06,
+      "expected": -0.015484936535358429,
+      "actual": -0.015487265773117542
+    },
+    {
+      "control": 17,
+      "field": "qacc",
+      "max_abs": 0.06746816635131836,
+      "expected": 3.2509188652038574,
+      "actual": 3.318387031555176
+    },
+    {
+      "control": 17,
+      "field": "state_obs",
+      "max_abs": 0.00039308518171310425,
+      "expected": 0.07795959711074829,
+      "actual": 0.0783526822924614
+    },
+    {
+      "control": 18,
+      "field": "qacc",
+      "max_abs": 0.003238677978515625,
+      "expected": -37.47515106201172,
+      "actual": -37.478389739990234
+    },
+    {
+      "control": 19,
+      "field": "qpos",
+      "max_abs": 1.2884847819805145e-06,
+      "expected": -0.004207618534564972,
+      "actual": -0.004206330049782991
+    },
+    {
+      "control": 19,
+      "field": "joint_position",
+      "max_abs": 1.2884847819805145e-06,
+      "expected": -0.004207618534564972,
+      "actual": -0.004206330049782991
+    },
+    {
+      "control": 19,
+      "field": "qvel",
+      "max_abs": 0.00014060735702514648,
+      "expected": -0.09955321252346039,
+      "actual": -0.09969381988048553
+    },
+    {
+      "control": 19,
+      "field": "qacc",
+      "max_abs": 0.031294822692871094,
+      "expected": 3.5765469074249268,
+      "actual": 3.607841730117798
+    },
+    {
+      "control": 20,
+      "field": "qvel",
+      "max_abs": 4.820525646209717e-05,
+      "expected": -0.17025060951709747,
+      "actual": -0.17020240426063538
+    },
+    {
+      "control": 20,
+      "field": "qacc",
+      "max_abs": 0.0041046142578125,
+      "expected": 7.580632209777832,
+      "actual": 7.5847368240356445
+    },
+    {
+      "control": 21,
+      "field": "qacc",
+      "max_abs": 0.006694793701171875,
+      "expected": -21.06366539001465,
+      "actual": -21.07036018371582
+    },
+    {
+      "control": 22,
+      "field": "qpos",
+      "max_abs": 2.746470272541046e-06,
+      "expected": -0.005637532565742731,
+      "actual": -0.005640279036015272
+    },
+    {
+      "control": 22,
+      "field": "joint_position",
+      "max_abs": 2.746470272541046e-06,
+      "expected": -0.005637532565742731,
+      "actual": -0.005640279036015272
+    },
+    {
+      "control": 22,
+      "field": "qacc",
+      "max_abs": 0.0073664188385009766,
+      "expected": 1.0540107488632202,
+      "actual": 1.0613771677017212
+    },
+    {
+      "control": 23,
+      "field": "qpos",
+      "max_abs": 3.1050294637680054e-06,
+      "expected": -0.019727297127246857,
+      "actual": -0.019730402156710625
+    },
+    {
+      "control": 23,
+      "field": "joint_position",
+      "max_abs": 3.1050294637680054e-06,
+      "expected": -0.019727297127246857,
+      "actual": -0.019730402156710625
+    },
+    {
+      "control": 23,
+      "field": "qvel",
+      "max_abs": 0.00016463547945022583,
+      "expected": -0.1076635792851448,
+      "actual": -0.10782821476459503
+    },
+    {
+      "control": 23,
+      "field": "qacc",
+      "max_abs": 0.034621238708496094,
+      "expected": 4.541093826293945,
+      "actual": 4.575715065002441
+    },
+    {
+      "control": 23,
+      "field": "state_obs",
+      "max_abs": 0.000364840030670166,
+      "expected": -0.35688328742980957,
+      "actual": -0.35724812746047974
+    }
+  ],
+  "trajectory_acceptance_bounds": {
+    "base_position": 0.0001,
+    "base_quaternion": 0.0005,
+    "joint_position": 0.001,
+    "linear_velocity": 0.01,
+    "qvel": 0.05,
+    "penetration": 0.0001,
+    "done": 0.0
+  },
+  "total_load_impulse_max_abs_Ns": 0.10515156388282776,
+  "roundoff_total_load_impulse_max_abs_Ns": 0.10514727234840393,
+  "roundoff_comparison": "original solver; +/- 1 ULP to qpos/qvel before each control; max drift multiplier 2",
+  "effective_trajectory_bounds": {
+    "base_position": 0.00022336840629577637,
+    "base_quaternion": 0.0006963014602661133,
+    "joint_position": 0.0013010501861572266,
+    "linear_velocity": 0.01,
+    "qvel": 0.12186164408922195,
+    "penetration": 0.0002760032657533884,
+    "done": 0.0
+  },
+  "control_steps": 24,
+  "physics_substeps": 240,
+  "sampled_lane_point_check": "PASS: 48 scalar control steps; rtol=2e-6, atol=2e-6",
+  "diagnostic_same_input_atol": {
+    "qpos": 1e-06,
+    "qvel": 2e-05,
+    "qacc": 0.002,
+    "constraint_force": 0.02040602029709929,
+    "constraint_torque": 0.002,
+    "actuator_force": 1e-05,
+    "foot_loads": 0.02040602029709929,
+    "penetration": 1e-06,
+    "reward": 2e-05,
+    "done": 0.0,
+    "state_obs": 0.0002,
+    "privileged_obs": 0.002
+  },
+  "diagnostic_same_input_rtol": 2e-05,
+  "inputs_unchanged": true,
+  "physical_settings": {
+    "ctrl_dt": 0.02,
+    "sim_dt": 0.002,
+    "solver_iterations": 50,
+    "ls_iterations": 10
+  },
+  "elapsed_seconds": 101.81325809199916,
+  "peak_process_rss_bytes": 1580105728
+}

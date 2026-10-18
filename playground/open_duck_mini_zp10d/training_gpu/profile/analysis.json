@@ -1,0 +1,585 @@
+{
+  "source": "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/profile/trace/plugins/profile/2026_10_18_14_52_18/DESKTOP-KFDTOD6.xplane.pb",
+  "source_sha256": "a508471f738b5e7967dce239548214714c23eed900ddb2fdbdc532e0c6927d72",
+  "errors": [],
+  "warnings": [],
+  "kernel_count": 190086,
+  "kernel_seconds": 9.22099683699972,
+  "gpu_event_span_seconds": 10.441631206,
+  "gpu_event_union_seconds": 9.232553721002901,
+  "median_kernel_us": 2.88,
+  "kernels_under_10us": 129232,
+  "kernels_under_10us_seconds": 0.33196483899999996,
+  "batched_solver_iterations": {
+    "physics_batches": 160,
+    "total": 1129,
+    "mean": 7.05625,
+    "min": 6,
+    "max": 9,
+    "histogram": {
+      "6": 23,
+      "7": 108,
+      "8": 26,
+      "9": 3
+    }
+  },
+  "attribution_seconds": {
+    "event_metadata": 0.6683437119999958,
+    "saved_hlo": 7.027043816999601,
+    "unclassified": 0.3503017620000002,
+    "host_launch_ancestor": 1.1753075459999838
+  },
+  "categories": [
+    {
+      "category": "physics/solver/line_search",
+      "kernels": 90498,
+      "seconds": 4.93939886799978,
+      "percent_kernel_time": 53.56686435657575,
+      "mixed_fusion_seconds": 1.4665308880000303
+    },
+    {
+      "category": "physics/solver/gradient",
+      "kernels": 20784,
+      "seconds": 1.4109417579999604,
+      "percent_kernel_time": 15.301401604851272,
+      "mixed_fusion_seconds": 0.8761866279999986
+    },
+    {
+      "category": "physics/solver/other",
+      "kernels": 15957,
+      "seconds": 1.3345149229999815,
+      "percent_kernel_time": 14.472566758131531,
+      "mixed_fusion_seconds": 0.3584245850000058
+    },
+    {
+      "category": "physics/other",
+      "kernels": 51410,
+      "seconds": 0.9701359129999978,
+      "percent_kernel_time": 10.520943994984123,
+      "mixed_fusion_seconds": 0.21756783199999985
+    },
+    {
+      "category": "mixed_fusion",
+      "kernels": 2290,
+      "seconds": 0.34516810000000026,
+      "percent_kernel_time": 3.743284008242967,
+      "mixed_fusion_seconds": 0.34516810000000026
+    },
+    {
+      "category": "physics/solver/constraint",
+      "kernels": 2249,
+      "seconds": 0.09979038900000005,
+      "percent_kernel_time": 1.0822082553980068,
+      "mixed_fusion_seconds": 0.0974030520000001
+    },
+    {
+      "category": "physics/collision",
+      "kernels": 4640,
+      "seconds": 0.059901443000000006,
+      "percent_kernel_time": 0.6496200363028258,
+      "mixed_fusion_seconds": 0.04913122799999999
+    },
+    {
+      "category": "sampling/other",
+      "kernels": 1481,
+      "seconds": 0.04023104899999998,
+      "percent_kernel_time": 0.4362982626625664,
+      "mixed_fusion_seconds": 0.0038707130000000035
+    },
+    {
+      "category": "reward",
+      "kernels": 224,
+      "seconds": 0.0072561899999999966,
+      "percent_kernel_time": 0.07869203436752266,
+      "mixed_fusion_seconds": 0.0069331129999999986
+    },
+    {
+      "category": "ppo_loss_and_gradient",
+      "kernels": 86,
+      "seconds": 0.005404650000000001,
+      "percent_kernel_time": 0.05861242656882353,
+      "mixed_fusion_seconds": 0.003224863
+    },
+    {
+      "category": "unknown",
+      "kernels": 70,
+      "seconds": 0.005133662,
+      "percent_kernel_time": 0.055673611983044165,
+      "mixed_fusion_seconds": 0.0
+    },
+    {
+      "category": "other",
+      "kernels": 301,
+      "seconds": 0.002795669000000004,
+      "percent_kernel_time": 0.030318511647051426,
+      "mixed_fusion_seconds": 0.0003054380000000002
+    },
+    {
+      "category": "observation",
+      "kernels": 96,
+      "seconds": 0.000324223,
+      "percent_kernel_time": 0.0035161382845186402,
+      "mixed_fusion_seconds": 0.0002862109999999999
+    }
+  ],
+  "top_kernels": [
+    {
+      "name": "input_reduce_fusion_1",
+      "category": "physics/solver/line_search",
+      "calls": 11290,
+      "seconds": 2.391692099000002
+    },
+    {
+      "name": "loop_compare_reduce_fusion",
+      "category": "physics/solver/line_search",
+      "calls": 1129,
+      "seconds": 1.1170726469999996
+    },
+    {
+      "name": "loop_compare_multiply_fusion",
+      "category": "physics/solver/line_search",
+      "calls": 11290,
+      "seconds": 1.0457022590000022
+    },
+    {
+      "name": "maxwell_sgemm_64x64_nt",
+      "category": "physics/solver/other",
+      "calls": 1129,
+      "seconds": 0.9194152959999993
+    },
+    {
+      "name": "input_multiply_reduce_fusion_3",
+      "category": "physics/solver/gradient",
+      "calls": 1289,
+      "seconds": 0.8049454649999984
+    },
+    {
+      "name": "input_reduce_fusion_33",
+      "category": "mixed_fusion",
+      "calls": 2258,
+      "seconds": 0.3441179170000002
+    },
+    {
+      "name": "void potrf_cta_lower_batch<float, float, 16>(int, int, int, float**, unsigned long, int*)",
+      "category": "physics/solver/gradient",
+      "calls": 2578,
+      "seconds": 0.2129434999999993
+    },
+    {
+      "name": "loop_subtract_fusion_4",
+      "category": "physics/solver/other",
+      "calls": 160,
+      "seconds": 0.14524476800000002
+    },
+    {
+      "name": "maxwell_sgemm_64x64_nt",
+      "category": "physics/other",
+      "calls": 160,
+      "seconds": 0.127238652
+    },
+    {
+      "name": "input_add_reduce_select_fusion",
+      "category": "physics/solver/other",
+      "calls": 1129,
+      "seconds": 0.10906171700000003
+    },
+    {
+      "name": "void potrf_syrk_T16_nc_kernel<float, 5, 4, 4, 5, 4>(int, int, int, int, int, int, int, float**, unsigned long)",
+      "category": "physics/solver/gradient",
+      "calls": 1289,
+      "seconds": 0.1086910190000002
+    },
+    {
+      "name": "loop_reduce_fusion_1",
+      "category": "physics/solver/line_search",
+      "calls": 1129,
+      "seconds": 0.10379145800000009
+    },
+    {
+      "name": "input_concatenate_fusion_6",
+      "category": "physics/solver/line_search",
+      "calls": 1129,
+      "seconds": 0.08393829799999997
+    },
+    {
+      "name": "input_concatenate_fusion_17",
+      "category": "physics/other",
+      "calls": 160,
+      "seconds": 0.08170652000000005
+    },
+    {
+      "name": "void potrfBatch_trsm_lower<float, float, 16>(int, int, int, int, int, int, float**, unsigned long)",
+      "category": "physics/solver/gradient",
+      "calls": 1289,
+      "seconds": 0.07900616199999991
+    },
+    {
+      "name": "loop_broadcast_subtract_fusion",
+      "category": "physics/other",
+      "calls": 160,
+      "seconds": 0.07623837400000005
+    },
+    {
+      "name": "loop_subtract_fusion_3",
+      "category": "physics/solver/other",
+      "calls": 160,
+      "seconds": 0.06586084800000004
+    },
+    {
+      "name": "wrapped_dot_1",
+      "category": "physics/other",
+      "calls": 160,
+      "seconds": 0.06582914300000003
+    },
+    {
+      "name": "void trsm_batch_left_lower_kernel<float>(cublasTrsmBatchParams<float>, float const* const*, float* const*, float const*, float)",
+      "category": "physics/solver/gradient",
+      "calls": 1289,
+      "seconds": 0.061244515999999936
+    },
+    {
+      "name": "void trsm_batch_left_upper_kernel<float>(cublasTrsmBatchParams<float>, float const* const*, float* const*, float const*, float)",
+      "category": "physics/solver/gradient",
+      "calls": 1289,
+      "seconds": 0.05893104999999994
+    },
+    {
+      "name": "loop_add_and_fusion",
+      "category": "physics/solver/constraint",
+      "calls": 1129,
+      "seconds": 0.057910019000000035
+    },
+    {
+      "name": "memcpy32_post",
+      "category": "physics/solver/other",
+      "calls": 3387,
+      "seconds": 0.05387467899999908
+    },
+    {
+      "name": "loop_compare_fusion_6",
+      "category": "physics/solver/line_search",
+      "calls": 1129,
+      "seconds": 0.05288053600000002
+    },
+    {
+      "name": "input_concatenate_fusion_8",
+      "category": "physics/other",
+      "calls": 160,
+      "seconds": 0.04910240200000001
+    },
+    {
+      "name": "input_transpose_fusion_1",
+      "category": "physics/solver/gradient",
+      "calls": 1129,
+      "seconds": 0.04560946200000005
+    },
+    {
+      "name": "input_transpose_fusion",
+      "category": "physics/other",
+      "calls": 1129,
+      "seconds": 0.043979282999999994
+    },
+    {
+      "name": "loop_select_fusion",
+      "category": "physics/solver/line_search",
+      "calls": 11290,
+      "seconds": 0.04306502700000062
+    },
+    {
+      "name": "maxwell_sgemm_64x64_nn",
+      "category": "physics/other",
+      "calls": 320,
+      "seconds": 0.042831153999999996
+    },
+    {
+      "name": "loop_subtract_fusion",
+      "category": "physics/solver/line_search",
+      "calls": 22580,
+      "seconds": 0.035473622000000746
+    },
+    {
+      "name": "input_scatter_fusion",
+      "category": "physics/other",
+      "calls": 160,
+      "seconds": 0.034246308999999996
+    }
+  ],
+  "transfers": {
+    "MemcpyD2D": {
+      "calls": 4066,
+      "seconds": 0.009185391000000034
+    },
+    "MemcpyD2H": {
+      "calls": 1330,
+      "seconds": 0.002353828999999996
+    },
+    "Memset 0": {
+      "calls": 8,
+      "seconds": 9.92e-06
+    },
+    "MemcpyH2D": {
+      "calls": 5,
+      "seconds": 7.743999999999999e-06
+    }
+  },
+  "host_inclusive": [
+    {
+      "name": "PjitFunction(call_wrapped)",
+      "calls": 2,
+      "seconds": 20.58556633
+    },
+    {
+      "name": "PJRT_LoadedExecutable_Execute",
+      "calls": 45,
+      "seconds": 10.295849265000001
+    },
+    {
+      "name": "PjRtStreamExecutorLoadedExecutable::Execute",
+      "calls": 45,
+      "seconds": 10.295588864999997
+    },
+    {
+      "name": "PjRtStreamExecutorLoadedExecutable::ExecuteHelper",
+      "calls": 45,
+      "seconds": 10.295352265
+    },
+    {
+      "name": "PjRtStreamExecutorLoadedExecutable::EnqueueExecution",
+      "calls": 45,
+      "seconds": 10.276113564000001
+    },
+    {
+      "name": "GpuExecutable::ExecuteThunks",
+      "calls": 45,
+      "seconds": 10.274264264000006
+    },
+    {
+      "name": "jit_call_wrapped:XLA GPU module",
+      "calls": 1,
+      "seconds": 10.272295463999999
+    },
+    {
+      "name": "while.2490",
+      "calls": 1,
+      "seconds": 10.268966964
+    },
+    {
+      "name": "while.2525",
+      "calls": 16,
+      "seconds": 10.260817263999998
+    },
+    {
+      "name": "while.2524",
+      "calls": 160,
+      "seconds": 9.848416856000002
+    },
+    {
+      "name": "While",
+      "calls": 1289,
+      "seconds": 9.84678205600001
+    },
+    {
+      "name": "BUFFER_FLUSH",
+      "calls": 1217,
+      "seconds": 6.813002024000001
+    },
+    {
+      "name": "command_buffer",
+      "calls": 14227,
+      "seconds": 0.8689782159999985
+    },
+    {
+      "name": "command_buffer::execute",
+      "calls": 14227,
+      "seconds": 0.8197111149999995
+    },
+    {
+      "name": "while.2235",
+      "calls": 1129,
+      "seconds": 0.3230398070000006
+    },
+    {
+      "name": "cuGraphLaunch (CudaGraph:203)",
+      "calls": 11290,
+      "seconds": 0.2829566070000009
+    },
+    {
+      "name": "",
+      "calls": 2898,
+      "seconds": 0.22225690300000067
+    },
+    {
+      "name": "cholesky.118",
+      "calls": 1129,
+      "seconds": 0.16971770100000003
+    },
+    {
+      "name": "cuGraphLaunch (CudaGraph:200)",
+      "calls": 1129,
+      "seconds": 0.14934229999999998
+    },
+    {
+      "name": "profile_checkpoint_save",
+      "calls": 1,
+      "seconds": 0.107096102
+    },
+    {
+      "name": "triangular-solve",
+      "calls": 2258,
+      "seconds": 0.10092800300000013
+    },
+    {
+      "name": "cuGraphLaunch (CudaGraph:219)",
+      "calls": 160,
+      "seconds": 0.10015000299999996
+    },
+    {
+      "name": "cuGraphLaunch (CudaGraph:177)",
+      "calls": 160,
+      "seconds": 0.06953390200000001
+    },
+    {
+      "name": "triangular-solve.1",
+      "calls": 2258,
+      "seconds": 0.06878990000000008
+    },
+    {
+      "name": "MemcpyD2D",
+      "calls": 4087,
+      "seconds": 0.06497420100000005
+    },
+    {
+      "name": "stream_executor::cuda::(anonymous namespace)::MakeBatchPointers(char*, unsigned long, unsigned long, void**)",
+      "calls": 5796,
+      "seconds": 0.06305399999999979
+    },
+    {
+      "name": "MemcpyD2H",
+      "calls": 1309,
+      "seconds": 0.06227180099999993
+    },
+    {
+      "name": "cuGraphLaunch (CudaGraph:208)",
+      "calls": 1129,
+      "seconds": 0.060213001000000016
+    },
+    {
+      "name": "loop_select_subtract_fusion",
+      "calls": 2258,
+      "seconds": 0.05657240199999994
+    },
+    {
+      "name": "cuGraphLaunch (CudaGraph:195)",
+      "calls": 160,
+      "seconds": 0.054658599999999974
+    },
+    {
+      "name": "cuGraphLaunch (CudaGraph:186)",
+      "calls": 160,
+      "seconds": 0.05190369999999999
+    },
+    {
+      "name": "cholesky.156",
+      "calls": 160,
+      "seconds": 0.04014290000000001
+    },
+    {
+      "name": "jax::cuda::(anonymous namespace)::MakeBatchPointersAsyncKernel(char*, void**, long, long)",
+      "calls": 1449,
+      "seconds": 0.03897640099999999
+    },
+    {
+      "name": "copy.505",
+      "calls": 1129,
+      "seconds": 0.038848100999999954
+    },
+    {
+      "name": "loop_reduce_fusion",
+      "calls": 2578,
+      "seconds": 0.034168001999999906
+    },
+    {
+      "name": "input_transpose_fusion",
+      "calls": 2258,
+      "seconds": 0.03196650000000001
+    },
+    {
+      "name": "input_reduce_fusion",
+      "calls": 2578,
+      "seconds": 0.03128970000000001
+    },
+    {
+      "name": "loop_not_fusion",
+      "calls": 2578,
+      "seconds": 0.02912240000000002
+    },
+    {
+      "name": "void potrf_cta_lower_batch<float, float, 16>(int, int, int, float**, unsigned long, int*)",
+      "calls": 2898,
+      "seconds": 0.02594360000000001
+    },
+    {
+      "name": "loop_select_fusion.2",
+      "calls": 1129,
+      "seconds": 0.0239668
+    }
+  ],
+  "host_while": [
+    {
+      "name": "while.2490",
+      "calls": 1,
+      "seconds": 10.268966964,
+      "labels": [
+        "jit(call_wrapped)/while/body/closed_call/while/body/closed_call/profile_sampling/while"
+      ]
+    },
+    {
+      "name": "while.2525",
+      "calls": 16,
+      "seconds": 10.260817263999998,
+      "labels": [
+        "jit(call_wrapped)/while/body/closed_call/while/body/closed_call/profile_sampling/while/body/closed_call/jit(f)/while/body/closed_call/vmap(profile_physics)/while"
+      ]
+    },
+    {
+      "name": "while.2524",
+      "calls": 160,
+      "seconds": 9.848416856000002,
+      "labels": [
+        "jit(call_wrapped)/while/body/closed_call/while/body/closed_call/profile_sampling/while/body/closed_call/jit(f)/while/body/closed_call/vmap(profile_physics)/while/body/closed_call/step/forward/solve/profile_solversolve/while"
+      ]
+    },
+    {
+      "name": "while.2235",
+      "calls": 1129,
+      "seconds": 0.3230398070000006,
+      "labels": [
+        "jit(call_wrapped)/while/body/closed_call/while/body/closed_call/profile_sampling/while/body/closed_call/jit(f)/while/body/closed_call/vmap(profile_physics)/while/body/closed_call/step/forward/solve/profile_solversolve/while/body/profile_solver_linesearch/while"
+      ]
+    },
+    {
+      "name": "while.2103",
+      "calls": 1,
+      "seconds": 0.0017506,
+      "labels": [
+        "jit(call_wrapped)/while/body/closed_call/while"
+      ]
+    },
+    {
+      "name": "while.2086",
+      "calls": 2,
+      "seconds": 0.000809,
+      "labels": [
+        "jit(call_wrapped)/while/body/closed_call/while/body/closed_call/while/body/closed_call/jvp(profile_ppo_loss)/while"
+      ]
+    }
+  ],
+  "notes": [
+    "GPU durations are measured CUPTI events, not static HLO cost estimates.",
+    "Each kernel is counted once; host inclusive durations overlap and must not be added.",
+    "Fused kernel labels indicate attribution, not an exact arithmetic split.",
+    "Library kernels without labels use the enclosing host launch scope, linked by correlation ID.",
+    "Solver iteration counts describe the batch of 512 environments, not each environment.",
+    "GPU span/union include callbacks and transfers; steady throughput is in profile.json."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "python": "3.12.3",
+  "packages": {
+    "jax": "0.8.2",
+    "jaxlib": "0.8.2",
+    "jax-cuda12-plugin": "0.8.2",
+    "mujoco": "3.12.0",
+    "mujoco-mjx": "3.12.0",
+    "brax": "0.14.2",
+    "flax": "0.12.2"
+  }
+}

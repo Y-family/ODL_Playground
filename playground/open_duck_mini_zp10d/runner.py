@@ -20,6 +20,7 @@ os.environ.setdefault('XLA_FLAGS', '--xla_cpu_multi_thread_eigen=false --xla_gpu
 
 import jax
 import jax.numpy as jp
+from mujoco.mjx._src import solver
 from brax.training.agents.ppo import networks, train as ppo
 from mujoco_playground import wrapper
 
@@ -75,6 +76,8 @@ def main():
                     num_envs=args.envs, num_eval_envs=min(args.envs, 4),
                     gpu_memory_fraction=os.environ.get('XLA_PYTHON_CLIENT_MEM_FRACTION'),
                     run_evals=not args.no_eval)
+    metadata['linesearch_implementation'] = solver._LSPoint.create.__name__
+    metadata['mjx_adapter_sha256'] = hashlib.sha256((ROOT.parent / 'common/mjx_compat.py').read_bytes()).hexdigest()
     metadata['reward_specification'] = env.reward_specification()
     metadata['reward_code_sha256'] = hashlib.sha256((ROOT / 'joystick.py').read_bytes()).hexdigest()
     metadata['reward_reference_sha256'] = hashlib.sha256(json.dumps(
