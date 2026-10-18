@@ -4,8 +4,13 @@ import onnxruntime
 class OnnxInfer:
     def __init__(self, onnx_model_path, input_name="obs", awd=False):
         self.onnx_model_path = onnx_model_path
+        options = onnxruntime.SessionOptions()
+        options.intra_op_num_threads = 1
+        options.inter_op_num_threads = 1
         self.ort_session = onnxruntime.InferenceSession(
-            self.onnx_model_path, providers=["CPUExecutionProvider"]
+            self.onnx_model_path,
+            sess_options=options,
+            providers=["CPUExecutionProvider"],
         )
         self.input_name = input_name
         self.awd = awd

@@ -7,7 +7,6 @@ import time
 import argparse
 from playground.common.onnx_infer import OnnxInfer
 from playground.common.poly_reference_motion_numpy import PolyReferenceMotion
-from playground.common.utils import LowPassActionFilter
 
 from playground.open_duck_mini_v2.mujoco_infer_base import MJInferBase
 
@@ -29,8 +28,6 @@ class MjInfer(MJInferBase):
         self.dof_pos_scale = 1.0
         self.dof_vel_scale = 0.05
         self.action_scale = 0.25
-
-        self.action_filter = LowPassActionFilter(50, cutoff_frequency=37.5)
 
         if not self.standing:
             self.PRM = PolyReferenceMotion(reference_data)
@@ -201,9 +198,6 @@ class MjInfer(MJInferBase):
                         )
                         self.saved_obs.append(obs)
                         action = self.policy.infer(obs)
-
-                        # self.action_filter.push(action)
-                        # action = self.action_filter.get_filtered_action()
 
                         self.last_last_last_action = self.last_last_action.copy()
                         self.last_last_action = self.last_action.copy()
