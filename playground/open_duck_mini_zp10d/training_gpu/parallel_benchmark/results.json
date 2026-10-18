@@ -1,0 +1,371 @@
+{
+  "status": "completed: user selected 512; capacity search stopped",
+  "gpu": "NVIDIA GeForce MX350",
+  "vram_fraction": "1.0",
+  "workspace_ram_budget_bytes": 10000000000,
+  "task_cgroup_ram_limit_bytes": 7000000000,
+  "model": "current ZP10D; existing 18-box floor-contact approximation",
+  "configuration": "existing runner; optimized rewards; unroll=16; batch_size=num_envs; 2 updates per batch; no eval",
+  "scope": "short capacity/throughput test, not walking acceptance or long-run stability",
+  "runs": [
+    {
+      "envs": 16,
+      "epochs": 3,
+      "command": [
+        "/root/work/Open_Duck_Playground/.venv/bin/python",
+        "-u",
+        "playground/open_duck_mini_zp10d/runner.py",
+        "--envs",
+        "16",
+        "--steps",
+        "768",
+        "--checkpoint-every",
+        "256",
+        "--no-eval",
+        "--reward-mode",
+        "optimized",
+        "--output",
+        "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_16"
+      ],
+      "output": "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_16",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 155.6650690280003,
+      "resource_peaks": {
+        "process_rss_bytes": 2109956096,
+        "process_peak_rss_bytes": 2109956096,
+        "cgroup_ram_bytes": 1859325952,
+        "gpu_total_used_mib": 476.0,
+        "gpu_util_percent": 57.0,
+        "gpu_temp_c": 63.0
+      },
+      "gpu_util_mean_percent": 17.157894736842106,
+      "completed_steps": 768,
+      "policy_parameter_max_delta": 0.0016982629895210266,
+      "source_hashes": {
+        "open_duck_mini_zp10d.urdf": "29fc94163cdee551f5e258b4d3628a357f65efd8221b9b3b04f2f6c632f4c13c",
+        "open_duck_mini_zp10d.xml": "12a9ca61f0c10bc320f6eecc8517bad557e0d89dc64500fcfb191d9dadbfd8d0",
+        "scene_flat_terrain.xml": "9bc71ddfdeffbf6e0bf6be477b09c84035741a2ec6c463fcb31598427e2d8a86"
+      },
+      "reward_code_sha256": "209c160bcb588eed6b205b5da3d7dd2f488bd7015a22a83b69861da8d53f52f9",
+      "reference_sha256": "ac5b7813ea24448c255757941619964601ba17502e4172ddec341029d440f01b",
+      "reward_reference_sha256": "f69dbe0fb456eac16eedac3cb822f7dc05c2e57a476cd7194cebfa3f86065719",
+      "post_warmup_sps": [
+        313.2919742957114
+      ],
+      "median_post_warmup_sps": 313.2919742957114,
+      "estimated_300m_days_no_eval": 11.08302320871088,
+      "cgroup_memory_events_after": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+    },
+    {
+      "envs": 32,
+      "epochs": 3,
+      "command": [
+        "/root/work/Open_Duck_Playground/.venv/bin/python",
+        "-u",
+        "playground/open_duck_mini_zp10d/runner.py",
+        "--envs",
+        "32",
+        "--steps",
+        "1536",
+        "--checkpoint-every",
+        "512",
+        "--no-eval",
+        "--reward-mode",
+        "optimized",
+        "--output",
+        "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_32"
+      ],
+      "output": "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_32",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 176.15950260700083,
+      "resource_peaks": {
+        "process_rss_bytes": 2120695808,
+        "process_peak_rss_bytes": 2120695808,
+        "cgroup_ram_bytes": 1889570816,
+        "gpu_total_used_mib": 482.0,
+        "gpu_util_percent": 84.0,
+        "gpu_temp_c": 61.0
+      },
+      "gpu_util_mean_percent": 20.77906976744186,
+      "completed_steps": 1536,
+      "policy_parameter_max_delta": 0.0016191154718399048,
+      "source_hashes": {
+        "open_duck_mini_zp10d.urdf": "29fc94163cdee551f5e258b4d3628a357f65efd8221b9b3b04f2f6c632f4c13c",
+        "open_duck_mini_zp10d.xml": "12a9ca61f0c10bc320f6eecc8517bad557e0d89dc64500fcfb191d9dadbfd8d0",
+        "scene_flat_terrain.xml": "9bc71ddfdeffbf6e0bf6be477b09c84035741a2ec6c463fcb31598427e2d8a86"
+      },
+      "reward_code_sha256": "209c160bcb588eed6b205b5da3d7dd2f488bd7015a22a83b69861da8d53f52f9",
+      "reference_sha256": "ac5b7813ea24448c255757941619964601ba17502e4172ddec341029d440f01b",
+      "reward_reference_sha256": "f69dbe0fb456eac16eedac3cb822f7dc05c2e57a476cd7194cebfa3f86065719",
+      "post_warmup_sps": [
+        436.5596536119259
+      ],
+      "median_post_warmup_sps": 436.5596536119259,
+      "estimated_300m_days_no_eval": 7.953603118140665,
+      "cgroup_memory_events_after": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+    },
+    {
+      "envs": 64,
+      "epochs": 3,
+      "command": [
+        "/root/work/Open_Duck_Playground/.venv/bin/python",
+        "-u",
+        "playground/open_duck_mini_zp10d/runner.py",
+        "--envs",
+        "64",
+        "--steps",
+        "3072",
+        "--checkpoint-every",
+        "1024",
+        "--no-eval",
+        "--reward-mode",
+        "optimized",
+        "--output",
+        "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_64"
+      ],
+      "output": "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_64",
+      "status": "CANCELLED",
+      "cancellation_reason": "User requested jumping directly to 128 environments"
+    },
+    {
+      "envs": 128,
+      "epochs": 6,
+      "command": [
+        "/root/work/Open_Duck_Playground/.venv/bin/python",
+        "-u",
+        "playground/open_duck_mini_zp10d/runner.py",
+        "--envs",
+        "128",
+        "--steps",
+        "12288",
+        "--checkpoint-every",
+        "2048",
+        "--no-eval",
+        "--reward-mode",
+        "optimized",
+        "--output",
+        "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_128"
+      ],
+      "output": "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_128",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 180.1654793029993,
+      "resource_peaks": {
+        "process_rss_bytes": 2126901248,
+        "process_peak_rss_bytes": 2126901248,
+        "cgroup_ram_bytes": 1833775104,
+        "gpu_total_used_mib": 467.0,
+        "gpu_util_percent": 95.0,
+        "gpu_temp_c": 65.0
+      },
+      "gpu_util_mean_percent": 21.545454545454547,
+      "completed_steps": 12288,
+      "policy_parameter_max_delta": 0.0032348036766052246,
+      "source_hashes": {
+        "open_duck_mini_zp10d.urdf": "29fc94163cdee551f5e258b4d3628a357f65efd8221b9b3b04f2f6c632f4c13c",
+        "open_duck_mini_zp10d.xml": "12a9ca61f0c10bc320f6eecc8517bad557e0d89dc64500fcfb191d9dadbfd8d0",
+        "scene_flat_terrain.xml": "9bc71ddfdeffbf6e0bf6be477b09c84035741a2ec6c463fcb31598427e2d8a86"
+      },
+      "reward_code_sha256": "209c160bcb588eed6b205b5da3d7dd2f488bd7015a22a83b69861da8d53f52f9",
+      "reference_sha256": "ac5b7813ea24448c255757941619964601ba17502e4172ddec341029d440f01b",
+      "reward_reference_sha256": "f69dbe0fb456eac16eedac3cb822f7dc05c2e57a476cd7194cebfa3f86065719",
+      "post_warmup_sps": [
+        775.5117867855397,
+        777.1333415359674,
+        798.8966949884987,
+        778.258198863064
+      ],
+      "median_post_warmup_sps": 777.6957701995157,
+      "estimated_300m_days_no_eval": 4.46475647068446,
+      "cgroup_memory_events_after": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+    },
+    {
+      "envs": 256,
+      "epochs": 6,
+      "command": [
+        "/root/work/Open_Duck_Playground/.venv/bin/python",
+        "-u",
+        "playground/open_duck_mini_zp10d/runner.py",
+        "--envs",
+        "256",
+        "--steps",
+        "24576",
+        "--checkpoint-every",
+        "4096",
+        "--no-eval",
+        "--reward-mode",
+        "optimized",
+        "--output",
+        "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_256"
+      ],
+      "output": "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_256",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 198.37610803299867,
+      "resource_peaks": {
+        "process_rss_bytes": 2100879360,
+        "process_peak_rss_bytes": 2101346304,
+        "cgroup_ram_bytes": 1807912960,
+        "gpu_total_used_mib": 472.0,
+        "gpu_util_percent": 98.0,
+        "gpu_temp_c": 64.0
+      },
+      "gpu_util_mean_percent": 33.43298969072165,
+      "completed_steps": 24576,
+      "policy_parameter_max_delta": 0.0032691583037376404,
+      "source_hashes": {
+        "open_duck_mini_zp10d.urdf": "29fc94163cdee551f5e258b4d3628a357f65efd8221b9b3b04f2f6c632f4c13c",
+        "open_duck_mini_zp10d.xml": "12a9ca61f0c10bc320f6eecc8517bad557e0d89dc64500fcfb191d9dadbfd8d0",
+        "scene_flat_terrain.xml": "9bc71ddfdeffbf6e0bf6be477b09c84035741a2ec6c463fcb31598427e2d8a86"
+      },
+      "reward_code_sha256": "209c160bcb588eed6b205b5da3d7dd2f488bd7015a22a83b69861da8d53f52f9",
+      "reference_sha256": "ac5b7813ea24448c255757941619964601ba17502e4172ddec341029d440f01b",
+      "reward_reference_sha256": "f69dbe0fb456eac16eedac3cb822f7dc05c2e57a476cd7194cebfa3f86065719",
+      "post_warmup_sps": [
+        749.0071191532476,
+        768.354621524997,
+        761.4652557556552,
+        756.8653089333607
+      ],
+      "median_post_warmup_sps": 759.1652823445079,
+      "estimated_300m_days_no_eval": 4.57373684357517,
+      "cgroup_memory_events_after": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+    },
+    {
+      "envs": 512,
+      "epochs": 6,
+      "command": [
+        "/root/work/Open_Duck_Playground/.venv/bin/python",
+        "-u",
+        "playground/open_duck_mini_zp10d/runner.py",
+        "--envs",
+        "512",
+        "--steps",
+        "49152",
+        "--checkpoint-every",
+        "8192",
+        "--no-eval",
+        "--reward-mode",
+        "optimized",
+        "--output",
+        "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_512"
+      ],
+      "output": "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_512",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 212.45544135399905,
+      "resource_peaks": {
+        "process_rss_bytes": 2066022400,
+        "process_peak_rss_bytes": 2066022400,
+        "cgroup_ram_bytes": 1777254400,
+        "gpu_total_used_mib": 600.0,
+        "gpu_util_percent": 98.0,
+        "gpu_temp_c": 66.0
+      },
+      "gpu_util_mean_percent": 42.95192307692308,
+      "completed_steps": 49152,
+      "policy_parameter_max_delta": 0.003307439386844635,
+      "source_hashes": {
+        "open_duck_mini_zp10d.urdf": "29fc94163cdee551f5e258b4d3628a357f65efd8221b9b3b04f2f6c632f4c13c",
+        "open_duck_mini_zp10d.xml": "12a9ca61f0c10bc320f6eecc8517bad557e0d89dc64500fcfb191d9dadbfd8d0",
+        "scene_flat_terrain.xml": "9bc71ddfdeffbf6e0bf6be477b09c84035741a2ec6c463fcb31598427e2d8a86"
+      },
+      "reward_code_sha256": "209c160bcb588eed6b205b5da3d7dd2f488bd7015a22a83b69861da8d53f52f9",
+      "reference_sha256": "ac5b7813ea24448c255757941619964601ba17502e4172ddec341029d440f01b",
+      "reward_reference_sha256": "f69dbe0fb456eac16eedac3cb822f7dc05c2e57a476cd7194cebfa3f86065719",
+      "post_warmup_sps": [
+        849.4281549258989,
+        859.5132928395093,
+        853.2904286235126,
+        851.6524281821767
+      ],
+      "median_post_warmup_sps": 852.4714284028446,
+      "estimated_300m_days_no_eval": 4.073124455006821,
+      "cgroup_memory_events_after": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+    },
+    {
+      "envs": 1024,
+      "epochs": 6,
+      "command": [
+        "/root/work/Open_Duck_Playground/.venv/bin/python",
+        "-u",
+        "playground/open_duck_mini_zp10d/runner.py",
+        "--envs",
+        "1024",
+        "--steps",
+        "98304",
+        "--checkpoint-every",
+        "16384",
+        "--no-eval",
+        "--reward-mode",
+        "optimized",
+        "--output",
+        "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_1024"
+      ],
+      "output": "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_1024",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 323.2202467220013,
+      "resource_peaks": {
+        "process_rss_bytes": 2070028288,
+        "process_peak_rss_bytes": 2070028288,
+        "cgroup_ram_bytes": 1786077184,
+        "gpu_total_used_mib": 857.0,
+        "gpu_util_percent": 99.0,
+        "gpu_temp_c": 67.0
+      },
+      "gpu_util_mean_percent": 44.31012658227848,
+      "completed_steps": 98304,
+      "policy_parameter_max_delta": 0.003268808126449585,
+      "source_hashes": {
+        "open_duck_mini_zp10d.urdf": "29fc94163cdee551f5e258b4d3628a357f65efd8221b9b3b04f2f6c632f4c13c",
+        "open_duck_mini_zp10d.xml": "12a9ca61f0c10bc320f6eecc8517bad557e0d89dc64500fcfb191d9dadbfd8d0",
+        "scene_flat_terrain.xml": "9bc71ddfdeffbf6e0bf6be477b09c84035741a2ec6c463fcb31598427e2d8a86"
+      },
+      "reward_code_sha256": "209c160bcb588eed6b205b5da3d7dd2f488bd7015a22a83b69861da8d53f52f9",
+      "reference_sha256": "ac5b7813ea24448c255757941619964601ba17502e4172ddec341029d440f01b",
+      "reward_reference_sha256": "f69dbe0fb456eac16eedac3cb822f7dc05c2e57a476cd7194cebfa3f86065719",
+      "post_warmup_sps": [
+        844.8790679063812,
+        856.7364619554189,
+        862.1592973629255,
+        848.1684862500066
+      ],
+      "median_post_warmup_sps": 852.4524741027128,
+      "estimated_300m_days_no_eval": 4.07321502102163,
+      "cgroup_memory_events_after": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+    },
+    {
+      "envs": 2048,
+      "epochs": 6,
+      "command": [
+        "/root/work/Open_Duck_Playground/.venv/bin/python",
+        "-u",
+        "playground/open_duck_mini_zp10d/runner.py",
+        "--envs",
+        "2048",
+        "--steps",
+        "196608",
+        "--checkpoint-every",
+        "32768",
+        "--no-eval",
+        "--reward-mode",
+        "optimized",
+        "--output",
+        "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_2048"
+      ],
+      "output": "/root/work/Open_Duck_Playground/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_2048",
+      "status": "CANCELLED",
+      "cancellation_reason": "User selected 512 environments; stopped further capacity search"
+    }
+  ],
+  "timing_method": "Discard first two epochs: both contain JAX compilation. Subsequent trials run six epochs.",
+  "selected_training_envs": 512,
+  "selected_median_post_warmup_sps": 852.4714284028446,
+  "selected_estimated_300m_days_no_eval": 4.073124455006821,
+  "largest_short_test_pass_envs": 1024,
+  "capacity_limit_determined": false,
+  "all_passed_inputs_identical": true
+}

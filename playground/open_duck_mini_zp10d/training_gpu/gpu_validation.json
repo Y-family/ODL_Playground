@@ -1,0 +1,69 @@
+{
+  "status": "PASS: actual GPU PPO parameter updates and checkpoint saves verified",
+  "gpu": "NVIDIA GeForce MX350",
+  "compute_capability": "6.1",
+  "driver": "582.78",
+  "versions": {
+    "jax": "0.8.2",
+    "jaxlib": "0.8.2",
+    "jax-cuda12-plugin": "0.8.2",
+    "flax": "0.12.2",
+    "mujoco-mjx": "3.12.0",
+    "brax": "0.14.2"
+  },
+  "root_cause": "MJX dense mass-matrix boolean scatter emits atom.sys.global.cas, rejected by Windows/WSL Pascal driver",
+  "fix": "Construct the same static mass-matrix topology mask with NumPy before JAX compilation; sparse path unchanged",
+  "workaround_sha256": "35fc283be7fb634f2de5f367822d290ad7048d483c2d9a4a5c28ab5bb38fb5f6",
+  "source_hashes": {
+    "open_duck_mini_zp10d.urdf": "29fc94163cdee551f5e258b4d3628a357f65efd8221b9b3b04f2f6c632f4c13c",
+    "open_duck_mini_zp10d.xml": "12a9ca61f0c10bc320f6eecc8517bad557e0d89dc64500fcfb191d9dadbfd8d0",
+    "scene_flat_terrain.xml": "9bc71ddfdeffbf6e0bf6be477b09c84035741a2ec6c463fcb31598427e2d8a86"
+  },
+  "mass_matrix_regression": "PASS: batched dense/sparse matrices, with/without diagonal, GPU results match original CPU at rtol=atol=1e-6",
+  "failed_probe_system_atomic_count": 1,
+  "fixed_probe_system_atomic_count": 0,
+  "training": {
+    "backend": "gpu",
+    "num_envs": 16,
+    "completed_steps": 2048,
+    "policy_parameter_max_delta": 0.004802286624908447,
+    "elapsed_seconds": 152.15376237300006,
+    "reference_sha256": "d6253947bbdc4f32d0eae36ede5b2c649ef3d5c931de12b2b99d176009366819",
+    "reward_specification": {
+      "mode": "optimized",
+      "scales": {
+        "action_rate": -0.05,
+        "alive": 20.0,
+        "feet_clearance": -2.0,
+        "feet_slip": -0.25,
+        "imitation": 1.0,
+        "stand_still": -0.2,
+        "support_contact": 1.0,
+        "support_load": -2.0,
+        "torques": -0.001,
+        "tracking_ang_vel": 1.0,
+        "tracking_lin_vel": 2.5
+      },
+      "forward_velocity_std_m_s": 0.02,
+      "lateral_velocity_std_m_s": 0.1,
+      "lateral_target": "command plus phase-dependent Placo base lateral velocity",
+      "clearance_normalizer_m": 0.015,
+      "slip_normalizer_m_s": 0.03333333,
+      "support": "exact Placo contacts; smooth load transfer during double support",
+      "contact_force": "MJX decoded floor reaction, N",
+      "clearance": "minimum over full CAD-derived foot collision vertices",
+      "survival_constant_unchanged": true
+    }
+  },
+  "training_peak_process_rss_mb": 2142.3,
+  "checkpoints": [
+    "checkpoints/000000001024",
+    "checkpoints/000000002048"
+  ],
+  "checkpoint_reload": {
+    "status": "not run",
+    "reason": "Optional probe cancelled while waiting for the shared serial lock held by another long-running CPU training task; existing task left running"
+  },
+  "scope": "GPU PPO updates/save verification with --no-eval on the existing 18-box training approximation; not walking acceptance or full-model GPU capacity validation",
+  "command": "JAX_PLATFORMS=cuda .venv/bin/python scripts/cad/run_memory_limited.py --gpu --wait playground/open_duck_mini_zp10d/runner.py --envs 16 --steps 2048 --checkpoint-every 1024 --no-eval --output playground/open_duck_mini_zp10d/training_gpu"
+}
