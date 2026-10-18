@@ -68,6 +68,6 @@ JAX_PLATFORMS=cuda .venv/bin/python scripts/cad/run_memory_limited.py --gpu --wa
 
 - `profile.json`：原始计时、输入哈希、资源与完成验证。
 - `analysis.json`：GPU 分类、内核、传输、主机嵌套范围、批次迭代分布及原始文件哈希。
-- `metadata.json`、`metrics.jsonl`、`train.log`、`environment.json`：配置、参数更新、完整日志和依赖版本。
+- `environment.json`：依赖版本。`metadata.json`、`metrics.jsonl`、`train.log` 为本地配置/运行日志，不纳入版本控制。
 - `training_scene.xml`：与本次输入哈希一致的临时训练场景副本。
 - `trace/plugins/profile/2026_10_18_14_52_18/`：`.trace.json.gz` 与 `.xplane.pb` 原始证据。

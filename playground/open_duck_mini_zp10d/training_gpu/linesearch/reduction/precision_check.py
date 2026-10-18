@@ -79,7 +79,7 @@ def main():
                            2*abs(a)*magnitude[:, 2]+magnitude[:, 1],
                            2*magnitude[:, 2]), axis=-1)
         allowance = 32*np.finfo(np.float32).eps*np.maximum(1., scales)
-        points = candidates(second=True)
+        points = candidates()
         functions = [('upstream', _original_linesearch_point)]
         for name in ('accepted', 'update_slice'):
             functions.append((name, lambda *args, point=points[name]: point(solver._LSPoint, *args)))

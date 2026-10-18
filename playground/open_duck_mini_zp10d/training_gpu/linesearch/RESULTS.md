@@ -84,10 +84,10 @@ JAX_PLATFORMS=cuda .venv/bin/python scripts/cad/run_memory_limited.py --gpu --wa
 .venv/bin/python scripts/analyze_zp10d_profile.py /tmp/zp10d-linesearch-optimized
 ```
 
-本轮实际使用 `benchmark.py` 在同一串行锁和资源组内顺序运行两版，以检查输入哈希一致。上述独立复现命令未额外重复执行；跨两个命令须保持模型、参考和源代码不变。
+本轮实际使用一次性 `benchmark.py` 在同一串行锁和资源组内顺序运行两版，以检查输入哈希一致；该包装脚本现仅保留在本地和历史提交 `dea711a3`。复现第一轮应使用该提交，当前生产实现已包含第二轮切片优化。上述独立复现命令未额外重复执行；跨两个命令须保持模型、参考和源代码不变。
 
 - `benchmark.json`：两版 PPO 计时、输入哈希与吞吐比值。
-- `baseline/`、`optimized/`：各自的 `profile.json`、`analysis.json`、`metadata.json`、`metrics.jsonl`、日志、六个检查点及原始 JAX/CUPTI 轨迹。
+- `baseline/analysis.json`、`optimized/analysis.json`：两版独立 GPU 内核分析。各版 `profile.json` 的计时/配置已包含在 `benchmark.json`，不再重复跟踪；逐次元数据、日志、检查点和原始轨迹仅保留本地。
 - `validation.json`、`validation.log`：数值、轨迹和同状态物理性能检查，包括失败候选及严格比较诊断。
 - `training_scene.xml`：与本轮输入哈希一致的训练接触近似副本。
 - `environment.json`：本轮 Python 与 JAX/MuJoCo/Brax/Flax 包版本。

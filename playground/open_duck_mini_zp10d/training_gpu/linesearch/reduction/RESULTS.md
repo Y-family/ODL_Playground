@@ -71,7 +71,7 @@ MX350、相同初始种子和 13 个模型/参考/训练源码输入，各版运
 
 ## 未采用的实验
 
-以下为隔离的单次线搜索或矩阵乘法测试，不能用来代替实际 PPO 吞吐。各数字与同轮基线相比，原始计时全部保留：
+以下为隔离的单次线搜索或矩阵乘法测试，不能用来代替实际 PPO 吞吐。各数字与同轮基线相比；未采用候选的脚本与原始计时仅保留在本地和历史提交 `ae774b1c`：
 
 | 写法 | 初步结果 |
 |---|---|
@@ -86,12 +86,14 @@ MX350、相同初始种子和 13 个模型/参考/训练源码输入，各版运
 | 雅可比乘法扩成 2/4/8 列以调用 cuBLAS | 均比原向量乘法慢 |
 | 切片替代拼接 | 初测 5.372→4.255 ms，耗时减少约 20.8%；进入完整验证 |
 
-测试脚本与原始结果为 `experiment.py`、`exploration.json`、`batch_exploration.json`、`second_exploration.json`、`matvec_experiment.py`、`matvec_exploration.json`。初始化时尚未执行 forward 的探针产生非有限上下文，已丢弃；表格采用完成 MJX forward 且明确通过有限性断言后的数据。
+清理后 `experiment.py` 仅为回归检查提供第一轮基线和已接受的切片实现，不再包含失败候选或性能探针。初始化时尚未执行 forward 的探针产生非有限上下文，已丢弃；表格采用完成 MJX forward 且明确通过有限性断言后的数据。
 
 ## 证据与复现
 
-`accepted_implementation.py` 是上一轮已接受适配层的原样存档；隔离候选由该存档只替换一行生成。完成上述对照后，将这一行应用到正常训练适配层，并用标准库 AST 与源码哈希确认正式函数和通过验证的候选完全一致；记录为 `adoption.json`。历史输入哈希对应采用前的适配层，采用后仅此一个源码文件有预期变化，其余模型、参考和训练输入再次核对不变。`profile_variant.py` 将指定候选注入本进程后调用共享分析脚本；候选名称和函数源码 SHA256 额外记入元数据。`benchmark.py` 在一个串行锁内顺序进行公式检查与两版 PPO 采集，校验模型/参考/源代码及候选哈希。
+`accepted_implementation.py` 是两轮回归比较所需的第一轮固定基线。隔离候选由该基线只替换一行生成。完成上述对照后，将这一行应用到正常训练适配层，并用标准库 AST 与源码哈希确认正式函数和通过验证的候选完全一致；记录为 `adoption.json`。历史输入哈希对应当时的实现与测试工具；清理测试工具不重新生成这些历史通过记录。第一轮基线、当前生产算法和生成候选的源码均保持，切片函数哈希仍为 `03fbf4998bcb029220bd518841a799fc82b04775638885ecdec6ab6fe17d233d`。
 
-本轮 GPU 命令在导入 JAX 前进入 3.5 GB RAM cgroup、禁用 swap，并复用原共享串行锁和单线程设置。两版正式训练设置不因实验调整，诊断使用 `--no-eval`。独立复现可通过原 GPU launcher 执行 `precision_check.py`、`physics_check.py`，以及 `profile_variant.py concat --output /tmp/新目录1` / `profile_variant.py slice --output /tmp/新目录2`；目录须无既有检查点，两次之间保持全部输入不变。采集需要 CUDA CUPTI 库路径，与父目录报告相同。
+本轮曾使用一次性 `profile_variant.py` 和 `benchmark.py` 进行顺序 PPO 对照。这些包装脚本现仅保留在本地和历史提交 `ae774b1c`。`benchmark.json` 已完整包含两版计时、配置与输入哈希；不再重复跟踪 `concat/`、`slice/` 下的 `profile.json`、`metadata.json`。各版独立 GPU 内核分析仍保留为 `analysis.json`。
 
-完整 PPO 结果保存于 `benchmark.json`、`concat/` 和 `slice/`；每版包含 `profile.json`、`analysis.json`、`metadata.json`、日志、检查点和原始 GPU 轨迹。采集内核分类包含融合归属的不确定性，实际收益以未采集的预热后训练吞吐为准。
+本轮 GPU 命令在导入 JAX 前进入 3.5 GB RAM cgroup、禁用 swap，并复用原共享串行锁和单线程设置。两版正式训练设置不因实验调整，诊断使用 `--no-eval`。保留的 `precision_check.py`、`physics_check.py` 可通过原 GPU launcher 进行数值回归检查。复现当时的 PPO 对照须使用历史提交 `ae774b1c` 的包装脚本和两个尚无检查点的新输出目录，保持输入不变；常规新性能采集继续使用 `scripts/profile_zp10d.py`。采集需要 CUDA CUPTI 库路径，与父目录报告相同。
+
+版本库保留 `benchmark.json`、数值/物理检查 JSON、`adoption.json` 和两版 `analysis.json`。其余逐次运行输出、日志、检查点和原始 GPU 轨迹仅在本地保存。采集内核分类包含融合归属的不确定性，实际收益以未采集的预热后训练吞吐为准。

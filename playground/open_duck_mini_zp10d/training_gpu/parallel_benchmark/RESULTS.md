@@ -27,4 +27,4 @@ runner.py 默认环境数已改为 512；默认短程预算 49,152 步、每 8,1
 
 Intel 核显未加入此 CUDA 训练；CPU 参与编译与调度。当前脚本未实现 Intel/NVIDIA 或 CPU/GPU 的异构采样合并训练。
 
-原始证据：results.json，各 envs_* 目录中的 metadata.json、metrics.jsonl、train.log、resources.jsonl 和 checkpoints/。
+版本库保留汇总证据 `results.json`。各 envs_* 目录中的 metadata.json、metrics.jsonl、train.log、resources.jsonl 和 checkpoints/ 为本地运行产物。一次性容量搜索脚本已停止跟踪，原版本见历史提交 `846c85be`；正式训练使用 runner.py 的默认 512 环境配置。

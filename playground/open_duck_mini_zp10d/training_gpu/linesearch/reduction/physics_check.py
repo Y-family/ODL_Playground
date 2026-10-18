@@ -43,7 +43,7 @@ def main():
             qpos=state.data.qpos.at[:, 2].add(jp.array([0., .003, .03, .06])[group]),
             qvel=state.data.qvel.at[:, 2].set(jp.where(group >= 2, -.3, 0.))))
         action = jp.zeros((128, env.action_size))
-        methods = candidates(second=True)
+        methods = candidates()
         compiled = {}
         for name in ('accepted', 'update_slice'):
             solver._LSPoint.create = classmethod(methods[name])

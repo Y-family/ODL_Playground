@@ -30,3 +30,15 @@ checkpoints/
 /cad/local_fix/LEG_LINK_SHORTENING_REVIEW.png
 /cad/local_fix/open_duck_mini_zp10d_dynamics.glb
 /cad/local_fix/open_duck_mini_zp10d_dynamics.png
+
+# Completed one-off experiments; reusable regression checks remain tracked.
+/playground/open_duck_mini_zp10d/training_gpu/**/metadata.json
+/playground/open_duck_mini_zp10d/training_gpu/**/profile.json
+/playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/benchmark.py
+/playground/open_duck_mini_zp10d/training_gpu/linesearch/benchmark.py
+/playground/open_duck_mini_zp10d/training_gpu/linesearch/reduction/benchmark.py
+/playground/open_duck_mini_zp10d/training_gpu/linesearch/reduction/profile_variant.py
+/playground/open_duck_mini_zp10d/training_gpu/linesearch/reduction/matvec_experiment.py
+/playground/open_duck_mini_zp10d/training_gpu/linesearch/reduction/*exploration.json
+/scripts/cad/control_zp10d_liftoff.py
+/scripts/cad/diagnose_zp10d_liftoff.py
