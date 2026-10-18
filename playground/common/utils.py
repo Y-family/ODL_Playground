@@ -2,6 +2,15 @@ import jax.numpy as jp
 import jax
 
 
+def geoms_colliding(data, first, second):
+    """Actual penetrating/touching pairs among MJX's statically allocated slots."""
+    contact = data._impl.contact
+    pairs = contact.geom
+    match = ((pairs[:, 0] == first) & (pairs[:, 1] == second)) | (
+        (pairs[:, 0] == second) & (pairs[:, 1] == first))
+    return jp.any(match & (contact.dist <= 0.))
+
+
 class LowPassActionFilter:
     def __init__(self, control_freq, cutoff_frequency=30.0):
         self.last_action = 0

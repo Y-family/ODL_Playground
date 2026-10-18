@@ -46,11 +46,12 @@ class OpenDuckMiniV2Env(mjx_env.MjxEnv):
         xml_path: str,
         config: config_dict.ConfigDict,
         config_overrides: Optional[Dict[str, Union[str, int, list[Any]]]] = None,
+        model: Optional[mujoco.MjModel] = None,
     ) -> None:
         super().__init__(config, config_overrides)
 
         print(f"xml: {xml_path}")
-        self._mj_model = mujoco.MjModel.from_xml_string(
+        self._mj_model = model if model is not None else mujoco.MjModel.from_xml_string(
             epath.Path(xml_path).read_text(), assets=get_assets()
         )
         self._mj_model.opt.timestep = self.sim_dt
@@ -112,7 +113,7 @@ class OpenDuckMiniV2Env(mjx_env.MjxEnv):
         # self.all_joint_no_backlash_ids=jp.zeros(7+self._mj_model.nu)
         # all_idx=self.actuator_joint_ids+list(range(self._floating_base_qpos_addr,self._floating_base_qpos_addr+7))
         # all_idx=jp.array(all_idx).sort()
-        all_idx=self.actuator_joint_ids+list([self.get_joint_id_from_name("trunk_assembly_freejoint")])
+        all_idx=self.actuator_joint_ids+[self._floating_base_id]
         all_idx=jp.array(all_idx).sort()
         # self.all_joint_no_backlash_ids=[idx for idx in self.all_joint_ids if idx not in self.backlash_joint_ids]+list(range(self._floating_base_add,self._floating_base_add+7))
         self.all_joint_no_backlash_ids=[idx for idx in all_idx]
@@ -164,7 +165,7 @@ class OpenDuckMiniV2Env(mjx_env.MjxEnv):
         return addr
 
     def get_floating_base_qpos(self, data:jax.Array) -> jax.Array:
-        return data[self._floating_base_qpos_addr:self._floating_base_qvel_addr+7]
+        return data[self._floating_base_qpos_addr:self._floating_base_qpos_addr+7]
 
     def get_floating_base_qvel(self, data:jax.Array) -> jax.Array:
         return data[self._floating_base_qvel_addr:self._floating_base_qvel_addr+6]
