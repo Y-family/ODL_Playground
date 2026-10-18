@@ -83,7 +83,7 @@ def checkpoint():
     report['static_report'] = 'HEAD_COMPACT_STATIC_REPORT.json'
     report['snapshot'] = dict(browser='failed: required Playwright browser executable missing',
                               fallback='HEAD_COMPACT_LAYOUT.png', status='diagnostic only')
-    report['resource_policy'] = dict(total_budget_bytes=5_000_000_000,
+    report['resource_policy'] = dict(total_budget_bytes=8_000_000_000,
                                       process_address_space_limit_bytes=4_000_000_000,
                                       component_workers=1, validate_workers=1, daemon=False,
                                       aggregate_cgroup_enforcement=False)

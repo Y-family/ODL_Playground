@@ -2926,7 +2926,7 @@ def publish():
                 review='cad/local_fix/HEAD_LAYOUT_PROPOSAL.png',
                 review_sha256=hashlib.sha256((TARGET.parent/'HEAD_LAYOUT_PROPOSAL.png').read_bytes()).hexdigest(),
                 snapshot_skipped_reason='No STEP created or visibly updated in this planning round; only temporary BREP bodies and a diagnostic projection were created',
-                resources={'address_space_cap_bytes':4_000_000_000,'workspace_limit_bytes':5_000_000_000,
+                resources={'address_space_cap_bytes':4_000_000_000,'workspace_limit_bytes':8_000_000_000,
                            'serial':True,'native_threads':1,'daemon':False,'peak_process_rss_mb':peaks})
     (TARGET.parent/'HEAD_LAYOUT_PLAN_REPORT.json').write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n')
     block=f'''<!-- HEAD_LAYOUT_PLAN_START -->
