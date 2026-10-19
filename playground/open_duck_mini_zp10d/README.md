@@ -190,6 +190,202 @@ exceed the provisional motor caps. These are contact geometry and inverse-dynami
 checks, not physical replay. A small `--check` case verifies that a raised sole
 corner cannot support the robot and that an airborne foot supplies no floor force.
 
+The user-requested **free-base torque-limit comparison** is now available:
+
+```bash
+.venv/bin/python scripts/cad/run_memory_limited.py --wait \
+  playground/open_duck_mini_zp10d/replay_reference.py \
+  /tmp/zp10d-reference-before-dynamics/candidate.npz
+```
+
+This uses the current reference's original 200 Hz Placo startup and joint samples,
+one second at home, and a 0.5-second smooth transition. Both cases use identical
+position commands, the full 3296-geom scene and freely integrated base motion.
+The second case disables only the 14 main servos' actuator/joint torque caps in
+memory; model files, antenna caps, gains, armatures and joint limits stay intact.
+The capped case stops at 45.15 degrees tilt after 1.102 reference seconds.
+The uncapped case completes 5.996 reference seconds with 7.109 degrees maximum
+tilt, but whole-foot clearance reaches only 0.068/0.067 mm (left/right), with no
+2 mm lift; knee peaks reach 4.454/4.193 N m. Results and integrated trajectories
+are in `training/reference_replay/assessment.json`, `capped.npz` and `uncapped.npz`.
+Removing the caps improves this trial's stability but does not produce liftoff.
+This open-loop diagnostic has no learned balance feedback; upstream PPO instead
+uses the Placo reference as an imitation reward and chooses joint actions from
+observations. The result is neither a walking certificate nor proof of mechanical
+inability to lift. Formal model/reference hashes were unchanged.
+
+Follow-up isolated the direct replay's failure to controller/reference response
+mismatch. The 4.454 N m left-knee peak occurs at reference time 0.856 s, during
+double support: target 62.843 degrees versus actual 81.931 degrees. At that instant
+viscous damping opposes motion by 2.213 N m and armature acceleration accounts for
+1.238 N m. Torque balance closes within 2.22e-16 N m. The inherited damping and
+armature were not retuned when the torque cap changed from 3.23 to 0.980665 N m.
+Ignoring external load, the constant-speed torque balance consequently drops from
+5.646 to 1.630 rad/s; damping plus dry friction at the allowed 5.24 rad/s command
+speed alone requires 3.002 N m. This diagnoses the simulation, not actual ZP10D
+hardware capability.
+
+Six uncapped response trials are in `training/reference_replay/diagnosis.json`.
+Only increasing kp by four, with original geometry and joint limits, produces
+20.022/27.011 mm whole-foot lift and completes the six-second reference without
+falling. Both feet clear 10 mm while the other carries load, for 0.196/0.232 s.
+Knee peaks rise to 10.760/11.446 N m: this is a causal diagnostic, not an accepted
+controller. Halving replay speed or reducing armature alone does not lift; reducing
+damping alone or with armature produces lift but falls and violates soft joint
+limits, so those candidates are rejected. Clock scaling does not replan COM
+dynamics. Independent FK verifies saved foot heights; body sag and joint lag
+together cancel the nominal lift. Motor response calibration and feedback/reference
+adaptation remain unresolved. Formal parameters and home were preserved.
+
+For real-servo acquisition, follow [ZP10Dg serial capture and BAM identification](SERVO_IDENTIFICATION.md).
+`scripts/collect_zp10d.py` provides a read-only probe and small-angle recordings
+on Windows/Linux. Its frames were checked against the supplied ESP32/STM32 and
+position-readback examples. Actual COM5 read-only queries passed after adding
+CBM firmware replies (`@ ...` version and `MOD1` mode); ID0/115200/8N1 and P2071
+were confirmed without movement commands. After the user confirmed a fixed case
+and 7.8 V supply, a six-second T1000 recording collected 550 progressive PRAD
+samples at 92.09 Hz. A 20 ms position-command gap fixed the initial query loss.
+Late-window errors are nominally 2.16-2.295 degrees. The user subsequently confirmed
+that nothing was attached to the output shaft (no external load or horn); the original
+capture metadata retains the setup description available during acquisition.
+PDST returns no ACK. These observations are not a physical angle calibration
+or a BAM fit. Evidence and the response plot are under
+`training/actuator_capture/slow_7p8v/`. Raw captures are not yet directly usable BAM logs.
+
+The user reports **ZP10Dg supplied at approximately 8 V**. This does not rescale
+the existing torque cap or identify motor response. `audit_actuator_response.py`
+isolates the inherited parameters in a zero-gravity shaft with no external load:
+the current/legacy capped models reach 90% of a 60-degree position step after
+0.626/0.214 s. Constant-torque terminal speeds agree with analytic damping/friction
+balance within 1e-7 rad/s. Results are in `training/actuator_response.json` and npz.
+This is a model check, not a hardware calibration. A datasheet no-load speed and
+its voltage can constrain an initial linear torque-speed approximation; they do
+not uniquely identify armature, gain or delay. The audit accepts `--speed-60-s`
+and `--speed-voltage-v` together, and never edits the formal actuator parameters.
+Calibration does not add a requirement for perfect direct joint replay before
+upstream Placo-reference/PPO training resumes.
+
+The supplied 28-page manual `/root/ZP10D舵机/众灵舵机使用手..08.pdf` has SHA256
+`9905405f676031379ceaa51b25bd9743c269d278e0f10fd08f538f67a532e265`.
+Both selectable text and embedded image tables were reviewed. Page 12 lists
+**ZP10D**, 5–8.4 V, 270 degrees and 10 kgf cm (0.980665 N m), without a torque
+test voltage. It does not identify the **g** suffix. Page 14 gives 0.16 s/60 deg
+at 6 V and 0.14 s/60 deg at 6.6 V, alongside **13.5/15 kgf cm**, with no exact
+model label. These are generic table values, not established ZP10Dg values and
+not 8 V specifications. Page 18 recommends running torque around one third of
+stall torque (conditionally 0.327 N m at the existing cap); this is guidance,
+not a measured continuous-duty rating. Pages 25–27 document bus commands;
+the `T` field is requested movement duration, not a physical speed measurement.
+
+The audit now verifies this PDF's hash and records page-specific applicability.
+Its two **what-if** cases retain the existing torque cap, friction, armature and
+gain, while matching the generic constant-speed values with equivalent damping
+0.139445/0.122014 N m s/rad. Native terminal speeds match the analytic calculation
+within 1e-7 rad/s; 60-degree step 90% times are 0.294/0.286 s. These hypothetical
+combinations are not manufacturer parameter sets, physical calibration or walking
+validation. Formal models remain unchanged. Exact-model speed at the actual
+supply and transient response remain missing; the manual alone cannot resolve
+the inherited armature, gain or delay. Evidence remains in the same
+`training/actuator_response.json` and npz outputs.
+
+The user subsequently selected the **6.6 V table parameters for simulation**.
+`replay_reference.py --manual-6p6v MANUAL.pdf` now applies 15 kgf cm
+(**1.4709975 N m**) and 0.14 s/60 deg (**7.479983 rad/s**) to the 14 main servos
+in memory. With inherited friction 0.068 N m, the linear torque-speed
+approximation gives damping **0.187566949 N m s/rad**; kp 13.37, armature
+0.027 kg m² and SG90 parameters remain inherited. The isolated shaft reaches
+the specified steady no-load speed within 1e-7 rad/s; its 60-degree step reaches
+90% at 0.242 s. This selects both torque and speed from the table, unlike the
+earlier speed-only sensitivity cases with the original torque cap.
+
+Full 3296-geom free-base integration used identical Placo commands, with 1 s
+home preparation and 0.5 s blending. It produced:
+
+| Direct replay | Formal baseline | Selected 6.6 V assumption |
+|---|---:|---:|
+| Reference time before 45-degree tilt stop | 1.102 s | 1.264 s |
+| Left/right whole-foot peak height | 0.022 / −0.004 mm | 0.091 / 1.576 mm |
+| Supported clearance at least 2 mm | 0 s / 0 s | 0 s / 0 s |
+| Left/right knee peak torque | 0.981 / 0.981 N m | 1.471 / 1.471 N m |
+| Maximum soft joint-limit overrun | 0.463 deg | 2.238 deg |
+
+The separate 3 s home hold under the 6.6 V assumption ran to duration: maximum
+tilt 0.078 degrees, knee peaks 0.419/0.429 N m and no joint-limit overrun.
+Direct motion replay still fails; this does not establish physical motor
+incapability or replace PPO balance feedback. Both knees saturate during motion,
+while the unmeasured transient parameters remain inherited. No learned policy
+was retrained, and formal CAD/model/reference files were preserved.
+
+Saved-state FK explains why the selected 6.6 V replay still misses lift. At the
+first left planned peak (reference 0.420 s), nominal whole-foot height is
+15.008 mm. Substituting actual base translation lowers it to 9.200 mm (base
+5.808 mm below plan); additionally substituting actual base orientation lowers
+it to 1.167 mm (tilt 4.445 degrees), then actual joints give −0.031 mm. These are
+sequential geometric substitutions, not separately integrated physical states.
+The left foot still carries 5.151 N. Its knee target/actual are 48.610/28.722
+degrees, with knee, hip pitch and ankle torque saturated. At the first right
+planned peak (0.720 s), the base is 12.249 mm below plan and tilted 13.087 degrees;
+the right foot still carries 10.384 N, and its knee/hip pitch/ankle also saturate.
+This identifies residual unloading, posture and tracking errors in this model;
+it does not isolate physical hardware torque as the sole cause. Details are in
+the report's `swing_peak_explanation`, computed from the same saved trajectory
+without another physics run or parameter change.
+
+The upstream cause audit traces this mismatch to the current planning/execution
+interface. `reference.py` limits joint positions and velocities but does not
+constrain joint acceleration or actuator torque. In first-swing knee reversals,
+central position differences with a 20 ms half-window reach 369.57/383.08 rad/s²;
+with a 50 ms half-window they still reach 155.13/152.99 rad/s². Thus the rapid
+changes persist beyond a single 5 ms sample. The inherited 0.027 kg m² armature
+accounts for 95.72% of each knee's home mass-matrix diagonal (rigid-body remainder
+0.001207 kg m²); this is a fixed-coordinate diagonal comparison, not a full
+effective inertia identification. Armature-times-reference-acceleration is only
+one hypothetical dynamics term, not actual motor torque or a hardware load
+requirement. With kp 13.37 and a 1.4709975 N m cap, the proportional actuator
+saturates at 6.304 degrees of position error. The replay continues on its fixed
+reference clock; it applies neither base/COM feedback nor a learned policy.
+Placo does plan COM transfer, but the physical base is free and can fail to
+follow that plan. These findings explain why changing stall torque and terminal
+speed alone does not complete the dynamics/control adaptation; exact physical
+motor parameters and a uniquely isolated dominant cause remain unproven.
+Source trace, inertia audit and derivative windows are recorded in the same
+report under `response_cause_audit`.
+
+Evidence is in `training/reference_replay/manual_6p6v/assessment.json`, the three
+named trajectory npz files and `assessment.png`. Independent FK height error is
+below 6e-16 m; all samples are finite, the 1.471 N m cap holds, and all numeric
+fields available in the previous capped baseline reproduce within 1e-10.
+The run remained serial under the 4 GB address-space limit, peak RSS 1.111 GB
+(verification/plot 1.147 GB).
+
+```bash
+.venv/bin/python scripts/cad/run_memory_limited.py --wait \
+  playground/open_duck_mini_zp10d/replay_reference.py \
+  /tmp/zp10d-reference-before-dynamics/candidate.npz \
+  --manual-6p6v '/root/ZP10D舵机/众灵舵机使用手..08.pdf'
+```
+
+```bash
+.venv/bin/python scripts/cad/run_memory_limited.py --wait \
+  playground/open_duck_mini_zp10d/audit_actuator_response.py \
+  --manual '/root/ZP10D舵机/众灵舵机使用手..08.pdf'
+```
+
+```bash
+.venv/bin/python scripts/cad/run_memory_limited.py --wait \
+  playground/open_duck_mini_zp10d/diagnose_reference_replay.py \
+  --candidate /path/to/the/original/candidate.npz
+# Analyze existing diagnostic trajectories without rerunning physics:
+.venv/bin/python scripts/cad/run_memory_limited.py --wait \
+  playground/open_duck_mini_zp10d/diagnose_reference_replay.py \
+  --candidate /path/to/the/original/candidate.npz --report-only
+```
+
+The script records knee peak-state force terms and checks baseline trajectory
+reproduction, geometry measurements, torque identities, and joint-limit margins.
+`training/reference_replay/diagnosis.png` shows the reference/actual knee angles,
+motor torque and whole-foot clearance during the first two swing phases.
+
 Repair trials retained the 15 mm swing goal and physical limits. Slower timing,
 flat soles, inward swing arcs, free COM height, implicit height compensation,
 IK regularization and post-filtering have not produced an accepted replacement.
