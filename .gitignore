@@ -47,6 +47,7 @@ checkpoints/
 /cad/printing/STL/
 /cad/printing/STEP/
 /cad/printing/quarantine/
+/cad/printing/unclassified/
 /cad/printing/manifest.json
 /cad/printing/dfam*.json
 /cad/printing/PRINT_REPORT.md

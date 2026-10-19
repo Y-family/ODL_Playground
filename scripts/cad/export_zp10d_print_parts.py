@@ -1,12 +1,14 @@
 """Export current STEP print occurrences in mm; run via run_memory_limited.py.
 
-No remodelling, scaling, arbitrary hole capping, or deduplication. Purchased parts and
-construction frames are excluded using the existing dynamics print catalog.
+No remodelling, scaling, arbitrary hole capping, or deduplication. Manufacturing
+classification uses upstream print/BOM evidence; unknown parts remain unresolved.
 """
 import argparse
+import csv
 import hashlib
 import json
 from pathlib import Path
+import re
 import resource
 
 if resource.getrlimit(resource.RLIMIT_AS)[1] != 4_000_000_000:
@@ -18,7 +20,7 @@ from cadgen import build123d as bd, read_step
 from OCP.BRepCheck import BRepCheck_Analyzer
 from OCP.gp import gp_Trsf
 from print_mesh import tessellate, recover_planar_faces, conform_seams
-from build_zp10d_mjcf_from_final_step import FINAL_STEP, REPORT_OUTPUT, PRINTED
+from build_zp10d_mjcf_from_final_step import FINAL_STEP, REPORT_OUTPUT
 from full_motion_current import _leaves
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -32,11 +34,59 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def classification_catalog():
+    sources = ROOT / 'cad/printing/sources'
+    guide = sources / 'print_guide.md'
+    bom = sources / 'bom.csv'
+    entries = re.findall(r'^- (\S+)\.stl x(\d+)', guide.read_text(), re.M)
+    if not entries or len(dict(entries)) != len(entries):
+        raise ValueError('Missing or duplicate upstream print guide entries')
+    catalog = {label: dict(classification='print', source='upstream_print_guide',
+                           reference_file=f'print/{label}.stl', upstream_quantity=int(quantity))
+               for label, quantity in entries}
+    # Current shortened ZP10D leg plates retained their original part family.
+    for side in ('left', 'right'):
+        catalog[f'left_knee_to_ankle_{side}_sheet'] = dict(catalog[f'knee_to_ankle_{side}_sheet'])
+    bom_rows = {row[1].strip(): i for i, row in enumerate(csv.reader(bom.open()), 1)
+                if len(row) > 1 and row[1].strip()}
+    purchased = {
+        'usb_c_charger': 'usb-c charger', 'power_switch': 'Small power switch',
+        'cell': '18650 cell', 'holder': '18650 cell holder', 'bms': '2S BMS',
+        'RaspberryPiZeroW': 'Raspberry pi zero 2w', 'roll_bearing': 'Bearing',
+        'glass': 'Eye diffusers', 'sg90': '9g servos',
+        'speaker_bottom': 'Speaker', 'speaker_top': 'Speaker',
+        'Cam': 'Raspberry pi camera', 'BNO055': 'IMU (BNO055)',
+        'Board': 'Servo control board',
+    }
+    for label, entry in purchased.items():
+        if label in catalog or entry not in bom_rows:
+            raise ValueError(f'Conflicting or missing manufacturing evidence for {label}')
+        catalog[label] = dict(classification='purchased', source='upstream_bom',
+                              bom_part=entry, csv_row=bom_rows[entry])
+    for component in ('body', 'passive_horn', 'active_horn'):
+        catalog[f'ZP10D_vendor_{component}'] = dict(
+            classification='purchased', source='current_vendor_servo_assembly',
+            note='Supplied ZP10D servo/horns replace the original BOM STS3215 group; not printed')
+    return catalog, dict(
+        print_guide=dict(file=str(guide.relative_to(ROOT)), sha256=digest(guide),
+                         upstream_commit='b23317a485b3cec7d8417f352478778b3475173c',
+                         url='https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md'),
+        bom=dict(file=str(bom.relative_to(ROOT)), sha256=digest(bom),
+                 url='https://docs.google.com/spreadsheets/d/1gq4iWWHEJVgAA_eemkTEsshXqrYlFxXAPwO515KpCJc/edit',
+                 snapshot_date='2026-10-19'))
+
+
+def classify_part(label, catalog):
+    return catalog.get(label, dict(classification='unresolved',
+                                   reason='No upstream print/BOM evidence; manufacturing method requires confirmation'))
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, default=ROOT / 'cad/printing')
     parser.add_argument('--step', action='store_true', help='also export individual exact STEP solids')
     args = parser.parse_args()
+    catalog, classification_sources = classification_catalog()
     source_sha = digest(FINAL_STEP)
     source = json.loads(REPORT_OUTPUT.read_text())
     if source_sha != source['source_step_sha256']:
@@ -47,11 +97,20 @@ def main():
     quarantine = args.output / 'quarantine'
     output.mkdir(parents=True, exist_ok=True)
     quarantine.mkdir(exist_ok=True)
-    records, excluded = [], []
+    records, excluded, unresolved = [], [], []
     for index, (row, original) in enumerate(zip(leaves, source['parts'])):
         assert (row['path'], row['label']) == (original['path'], original['label'])
-        if row['label'] not in PRINTED:
-            excluded.append({'index': index, 'label': row['label'], 'path': row['path']})
+        decision = classify_part(row['label'], catalog)
+        if decision['classification'] != 'print':
+            entry = dict(index=index, label=row['label'], path=row['path'], evidence=decision)
+            (excluded if decision['classification'] == 'purchased' else unresolved).append(entry)
+            # Retain former exports for review, outside the confirmed print folders.
+            for folder, suffix in [('STL', '.stl'), ('STEP', '.step')]:
+                previous = args.output / folder / f'{index:03d}_{row["label"]}{suffix}'
+                if previous.exists():
+                    saved = args.output / 'unclassified' / folder / previous.name
+                    saved.parent.mkdir(parents=True, exist_ok=True)
+                    previous.replace(saved)
             continue
         shape = row['shape']
         cad_volume = float(shape.volume)
@@ -125,6 +184,7 @@ def main():
         fits = bool((actual.extents <= 180).all())
         records.append(dict(
             index=index, label=row['label'], occurrence_path=row['path'], root=row['root'],
+            classification_evidence=decision,
             body=original['body'], quantity=1, file=str(path.relative_to(args.output)),
             sha256=digest(path), units='mm', source_to_print_transform=transform.tolist(),
             dimensions_mm=actual.extents.tolist(), cad_volume_mm3=cad_volume,
@@ -150,6 +210,9 @@ def main():
         source_step=str(FINAL_STEP.relative_to(ROOT)), source_step_sha256=source_sha,
         source_manifest_sha256=digest(REPORT_OUTPUT), exporter_sha256=digest(Path(__file__)),
         print_mesh_sha256=digest(Path(__file__).with_name('print_mesh.py')),
+        classification_sources=classification_sources,
+        source_occurrence_count=len(leaves), unresolved_parts=unresolved,
+        manufacturing_classification_complete=not unresolved,
         units='mm', occurrence_count=len(records),
         validated_count=sum(r['status'] == 'validated_mesh' for r in records),
         deflection_mm=DEFLECTION_MM, angular_tolerance_rad=ANGULAR_TOLERANCE_RAD,
@@ -160,7 +223,7 @@ def main():
         parts=records, excluded_purchased_parts=excluded)
     (args.output / 'manifest.json').write_text(json.dumps(report, indent=2, ensure_ascii=False) + '\n')
     print(f'Validated {report["validated_count"]}/{len(records)} print occurrences; '
-          f'excluded {len(excluded)} purchased occurrences', flush=True)
+          f'excluded {len(excluded)} purchased occurrences; {len(unresolved)} unresolved', flush=True)
 
 
 if __name__ == '__main__':

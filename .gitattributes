@@ -1,0 +1,2 @@
+# Preserve verbatim upstream evidence snapshots, including CSV CRLF/spacing.
+/cad/printing/sources/* -whitespace
