@@ -1,6 +1,6 @@
 """Export current STEP print occurrences in mm; run via run_memory_limited.py.
 
-No remodelling, scaling, hole filling, or deduplication. Purchased parts and
+No remodelling, scaling, arbitrary hole capping, or deduplication. Purchased parts and
 construction frames are excluded using the existing dynamics print catalog.
 """
 import argparse
@@ -16,7 +16,8 @@ import numpy as np
 import trimesh
 from cadgen import build123d as bd, read_step
 from OCP.BRepCheck import BRepCheck_Analyzer
-from OCP.BRepMesh import BRepMesh_IncrementalMesh
+from OCP.gp import gp_Trsf
+from print_mesh import tessellate, recover_planar_faces, conform_seams
 from build_zp10d_mjcf_from_final_step import FINAL_STEP, REPORT_OUTPUT, PRINTED
 from full_motion_current import _leaves
 
@@ -34,6 +35,7 @@ def digest(path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, default=ROOT / 'cad/printing')
+    parser.add_argument('--step', action='store_true', help='also export individual exact STEP solids')
     args = parser.parse_args()
     source_sha = digest(FINAL_STEP)
     source = json.loads(REPORT_OUTPUT.read_text())
@@ -58,19 +60,13 @@ def main():
         assert cad_volume > 0 and solid_count == 1, row['path']
         np.testing.assert_allclose(cad_volume, original['volume_mm3'], rtol=1e-8)
         try:
-            # build123d.mesh uses relative deflection and enables parallel mode;
-            # mesh explicitly with absolute mm deflection and serial OCC instead.
-            BRepMesh_IncrementalMesh(shape.wrapped, DEFLECTION_MM, False,
-                                    ANGULAR_TOLERANCE_RAD, False)
-            vertices, triangles = shape.tessellate(DEFLECTION_MM, ANGULAR_TOLERANCE_RAD)
+            mesh, missing, mesh_status = tessellate(shape, DEFLECTION_MM, ANGULAR_TOLERANCE_RAD)
         except (AttributeError, RuntimeError) as error:
             records.append(dict(index=index, label=row['label'], occurrence_path=row['path'],
                                 quantity=1, file=None, status='quarantined',
                                 cad_valid=valid_cad, error=str(error)))
             print(index, row['label'], 'MESH FAILED', str(error), flush=True)
             continue
-        mesh = trimesh.Trimesh(np.array([tuple(v) for v in vertices]),
-                               np.array(triangles), process=True)
         # A repeatable initial orientation, not a slicer/support prescription.
         planes = [f for f in shape.faces() if f.geom_type == bd.GeomType.PLANE]
         transform = np.eye(4)
@@ -91,6 +87,10 @@ def main():
         mesh.update_faces(mesh.unique_faces())
         mesh.remove_unreferenced_vertices()
         dropped_faces = before_faces - len(mesh.faces)
+        patches = recover_planar_faces(mesh, shape, transform, missing, DEFLECTION_MM) if missing else []
+        seam_repair = conform_seams(mesh) if not mesh.is_watertight else None
+        # Repaired triangles must also survive the final binary STL quantization.
+        mesh.vertices = mesh.vertices.astype(np.float32).astype(float)
         volume_error = abs(float(mesh.volume) - cad_volume) / cad_volume
         # An internal sealed cavity is a second, inward-facing boundary shell.
         # Require exactly one positive outer shell; never discard the cavity.
@@ -111,6 +111,17 @@ def main():
         assert actual.is_winding_consistent == mesh.is_winding_consistent
         assert actual.body_count == mesh.body_count
         assert abs(actual.volume - mesh.volume) / cad_volume < 1e-5
+        step_file = None
+        if accepted and args.step:
+            folder = args.output / 'STEP'
+            folder.mkdir(exist_ok=True)
+            rigid = gp_Trsf()
+            rigid.SetValues(*transform[:3].ravel())
+            placed = shape.moved(bd.Location(rigid))
+            placed.parent = None
+            np.testing.assert_allclose(placed.volume, cad_volume, rtol=1e-9)
+            step_file = folder / filename.replace('.stl', '.step')
+            bd.export_step(placed, step_file)
         fits = bool((actual.extents <= 180).all())
         records.append(dict(
             index=index, label=row['label'], occurrence_path=row['path'], root=row['root'],
@@ -124,6 +135,9 @@ def main():
             mesh_body_count=int(actual.body_count), faces=len(actual.faces),
             boundary_shell_volumes_mm3=boundary_volumes,
             duplicate_or_zero_area_faces_removed=dropped_faces,
+            mesher_status=int(mesh_status), rebuilt_cad_faces=patches, seam_repair=seam_repair,
+            step_file=str(step_file.relative_to(args.output)) if step_file else None,
+            step_sha256=digest(step_file) if step_file else None,
             fits_180mm_cube=fits, status='validated_mesh' if accepted else 'quarantined',
             material='PETG', infill_percent=10 if row['label'] in SHELLS else 30,
             material_note=('legacy name denotes flexible sole; PETG grip/compliance must be tested'
@@ -135,6 +149,7 @@ def main():
     report = dict(
         source_step=str(FINAL_STEP.relative_to(ROOT)), source_step_sha256=source_sha,
         source_manifest_sha256=digest(REPORT_OUTPUT), exporter_sha256=digest(Path(__file__)),
+        print_mesh_sha256=digest(Path(__file__).with_name('print_mesh.py')),
         units='mm', occurrence_count=len(records),
         validated_count=sum(r['status'] == 'validated_mesh' for r in records),
         deflection_mm=DEFLECTION_MM, angular_tolerance_rad=ANGULAR_TOLERANCE_RAD,

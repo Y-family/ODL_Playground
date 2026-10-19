@@ -45,6 +45,7 @@ checkpoints/
 
 # Regenerable printable meshes and local manufacturing review outputs.
 /cad/printing/STL/
+/cad/printing/STEP/
 /cad/printing/quarantine/
 /cad/printing/manifest.json
 /cad/printing/dfam*.json
