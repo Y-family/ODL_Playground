@@ -42,3 +42,14 @@ checkpoints/
 /playground/open_duck_mini_zp10d/training_gpu/linesearch/reduction/*exploration.json
 /scripts/cad/control_zp10d_liftoff.py
 /scripts/cad/diagnose_zp10d_liftoff.py
+
+# Regenerable printable meshes and local manufacturing review outputs.
+/cad/printing/STL/
+/cad/printing/quarantine/
+/cad/printing/manifest.json
+/cad/printing/dfam*.json
+/cad/printing/PRINT_REPORT.md
+/cad/printing/*.zip
+/cad/printing/*.glb
+/cad/printing/*.png
+/cad/printing/parts.csv
