@@ -1,0 +1,99 @@
+{
+  "complete": true,
+  "target_sha256": "528d82d2a2bda0a7757f28600dc02b289c73220f0cf98c8b0d39ebacd92bf65b",
+  "frames": [
+    {
+      "file": "both_legs_mesh_0_1.00.png",
+      "pose": {},
+      "label": "CAD零位"
+    },
+    {
+      "file": "both_legs_mesh_1_0.33.png",
+      "pose": {
+        "S03": -9.9
+      },
+      "label": "S03反向极限"
+    },
+    {
+      "file": "both_legs_mesh_1_0.67.png",
+      "pose": {
+        "S03": -20.1
+      },
+      "label": "S03反向极限"
+    },
+    {
+      "file": "both_legs_mesh_1_1.00.png",
+      "pose": {
+        "S03": -30.0
+      },
+      "label": "S03反向极限"
+    },
+    {
+      "file": "both_legs_mesh_2_0.33.png",
+      "pose": {
+        "S03": 23.1
+      },
+      "label": "S03正向极限"
+    },
+    {
+      "file": "both_legs_mesh_2_0.67.png",
+      "pose": {
+        "S03": 46.900000000000006
+      },
+      "label": "S03正向极限"
+    },
+    {
+      "file": "both_legs_mesh_2_1.00.png",
+      "pose": {
+        "S03": 70.0
+      },
+      "label": "S03正向极限"
+    },
+    {
+      "file": "both_legs_mesh_3_0.33.png",
+      "pose": {
+        "S08": 9.9
+      },
+      "label": "S08正向极限"
+    },
+    {
+      "file": "both_legs_mesh_3_0.67.png",
+      "pose": {
+        "S08": 20.1
+      },
+      "label": "S08正向极限"
+    },
+    {
+      "file": "both_legs_mesh_3_1.00.png",
+      "pose": {
+        "S08": 30.0
+      },
+      "label": "S08正向极限"
+    },
+    {
+      "file": "both_legs_mesh_4_0.33.png",
+      "pose": {
+        "S08": -23.1
+      },
+      "label": "S08反向极限"
+    },
+    {
+      "file": "both_legs_mesh_4_0.67.png",
+      "pose": {
+        "S08": -46.900000000000006
+      },
+      "label": "S08反向极限"
+    },
+    {
+      "file": "both_legs_mesh_4_1.00.png",
+      "pose": {
+        "S08": -70.0
+      },
+      "label": "S08反向极限"
+    }
+  ],
+  "whole_robot_parts": 113,
+  "geometry_modified": false,
+  "kind": "prescribed rigid kinematic poses from actual STEP tessellation, no contact forces",
+  "renderer": "VTK actual STEP mesh; all 113 physical parts retained; single-axis kinematic poses only; combinations excluded per user"
+}
