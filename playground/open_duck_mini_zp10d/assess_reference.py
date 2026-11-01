@@ -19,7 +19,14 @@ from scipy.spatial import ConvexHull
 from reference import DATA, ROOT, SCENE, source_hashes
 
 
-def contact_allocation(model, data, points, bodies, friction):
+def ground_zmp(origin, force, moment):
+    """Ground-plane pressure centre from a world-frame wrench about origin."""
+    return origin[:2] + np.array([-origin[2] * force[0] - moment[1],
+                                  moment[0] - origin[2] * force[1]]) / force[2]
+
+
+def contact_allocation(model, data, points, bodies, friction, *, command_limits=False,
+                       physical_friction=True):
     """Minimize peak normalized motor torque with optimistic floor contacts."""
     dofs = model.jnt_dofadr[model.actuator_trnid[:, 0]]
     assert np.all(model.actuator_gear[:, 0] == 1)
@@ -50,9 +57,23 @@ def contact_allocation(model, data, points, bodies, friction):
             row[3 * j:3 * j + 3] = [np.cos(angle), np.sin(angle), -friction]
             inequalities.append(row)
     bounds = [(0., None) if j % 3 == 2 else (None, None) for j in range(nf)]
-    bounds += [(None, None)] * nu
-    # Giving dry friction either sign makes this a generous necessary test.
-    bounds += [(-float(f), float(f)) for f in model.dof_frictionloss[dofs]]
+    if command_limits:
+        q = data.qpos[model.jnt_qposadr[model.actuator_trnid[:, 0]]]
+        kp = model.actuator_gainprm[:, 0]
+        assert np.all(kp > 0)
+        np.testing.assert_allclose(model.actuator_biasprm[:, 1], -kp)
+        bias = model.actuator_biasprm[:, 0] + model.actuator_biasprm[:, 2] * data.qvel[dofs]
+        bounds += [(float(k * (lo - position) + b), float(k * (hi - position) + b))
+                   if limited else (None, None)
+                   for k, lo, hi, position, b, limited in zip(kp, *model.actuator_ctrlrange.T, q, bias,
+                                                          model.actuator_ctrllimited)]
+    else:
+        bounds += [(None, None)] * nu
+    # Sliding friction resists velocity. At rest its sign is indeterminate.
+    # The explicitly optimistic historical diagnostic retains either sign.
+    bounds += [(-float(f) * np.sign(v), -float(f) * np.sign(v))
+               if physical_friction and abs(v) > 1e-4 else (-float(f), float(f))
+               for f, v in zip(model.dof_frictionloss[dofs], data.qvel[dofs])]
     bounds += [(0., None)]
     objective = np.zeros(size)
     objective[-1] = 1.
@@ -101,6 +122,11 @@ def support_points(model, data, sites, vertices, supports, *, actual_contacts=Tr
 
 def check_contact_geometry():
     """A rolled sole cannot balance gravity on its raised corners."""
+    # A force at a known ground point must recover that point, including shear.
+    origin, point = np.array([.02, -.03, .2]), np.array([-.01, .08, 0.])
+    force = np.array([2., -3., 20.])
+    np.testing.assert_allclose(ground_zmp(origin, force, np.cross(point - origin, force)),
+                               point[:2], atol=1e-12)
     angle = np.deg2rad(15.)
     lift = .03 * np.sin(angle)
     model = mujoco.MjModel.from_xml_string(f'''<mujoco>
@@ -143,7 +169,12 @@ def assess(candidate, output, data_dir=DATA, *, actual_contacts=True):
     assert record['basis'] == 'periodic_cubic'
     coefficients = np.asarray([record['coefficients'][f'dim_{j}'] for j in range(16)])
     model = mujoco.MjModel.from_xml_path(str(SCENE))
+    parameters = meta.get('fitted_dynamics_audit', {}).get('parameters')
+    if parameters is not None:
+        from diagnose_identified_liftoff import set_identified
+        set_identified(model, parameters)
     data = mujoco.MjData(model)
+    mujoco.mj_setConst(model, data)
     names = meta['joint_names']
     addresses = [model.joint(n).qposadr[0] for n in names]
     velocities = [model.joint(n).dofadr[0] for n in names]
@@ -224,11 +255,13 @@ def assess(candidate, output, data_dir=DATA, *, actual_contacts=True):
                       armature_torque_nm=float(model.dof_armature[dof] * peak_acceleration[j]))
                       for j, dof in enumerate(motor_dofs)},
                   motion_peak_scope='Independent absolute maxima at 200 Hz knots; terms are not summed or measured motor torque',
-                  response_parameter_status='ZP10D gains, damping, friction and armature inherited; unmeasured',
+                  response_parameter_status=('7.8 V S09 equivalent-response candidate applied uniformly to 14 main servos'
+                                             if parameters else 'inherited unmeasured actuator dynamics'),
+                  response_parameters=parameters,
                   scope='Necessary-condition diagnostic; not free-base tracking or physical walking acceptance',
                   optimistic_assumptions=(['Floor load allowed across a 0.2 mm gap'] if actual_contacts else [
                       'Full projected sole contacts at floor even when foot rolls']) + [
-                      'Circumscribed eight-plane friction cone', 'Joint dry friction allowed either sign',
+                      'Circumscribed eight-plane friction cone', 'Static joint friction is an interval near zero velocity',
                       'No actuator tracking error, sticking constraint or contact compliance imposed'],
                   rows=rows)
     assert source_hashes() == hashes

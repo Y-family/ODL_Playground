@@ -148,5 +148,5 @@ def reward_imitation(
         # + torso_orientation_rew
     )
 
-    reward *= cmd_norm > 0.01  # No reward for zero commands.
+    reward *= cmd_norm > 1e-6  # No reward for zero commands; slow nonzero references remain active.
     return jp.nan_to_num(reward)

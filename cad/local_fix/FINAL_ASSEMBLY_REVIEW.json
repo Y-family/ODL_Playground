@@ -1,6 +1,6 @@
 {
   "date": "2026-10-17",
-  "target_sha256": "bb9c851dfcae554653981919bf69a950febc2730c4362e562f58a0a63f7ce740",
+  "target_sha256": "e0de72c20ee04779f40771a256d7d06924932cc4a66176fd3e8c881bec48c961",
   "mjcf_sha256": "12a9ca61f0c10bc320f6eecc8517bad557e0d89dc64500fcfb191d9dadbfd8d0",
   "geometry_changed": true,
   "review_scope": "R11 changed leg components and immediate interfaces; prior whole-robot review retained under historical_full_review.",

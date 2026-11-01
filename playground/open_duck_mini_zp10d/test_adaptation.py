@@ -20,10 +20,48 @@ from playground.open_duck_mini_v2.custom_rewards import reward_imitation
 from playground.open_duck_mini_zp10d.reference import ROOT, inputs
 from playground.common.utils import geoms_colliding
 from playground.open_duck_mini_zp10d.evaluate import observation
-from playground.open_duck_mini_zp10d.joystick import Joystick, gait_reward_terms, torque_margin_cost
+from playground.open_duck_mini_zp10d.joystick import (
+    Joystick, gait_reward_terms, torque_margin_cost, lateral_com_offset, sagittal_balance_cost,
+    locomotion_tracking, supported_air_time_reward, overspeed_cost)
 
 
 def main():
+    # Air time cannot pay for standing, sideways motion, loaded feet or a jump
+    # with no supporting foot, even if the contact timer reports an airborne foot.
+    command = jp.array([.01, 0., 0.])
+    good = (.005, .0)
+    for cmd, velocity, loads, expected in [
+        (command, [.01, 0., 0.], [0., 20.], 1.),
+        (command, [0., 0., 0.], [0., 20.], 0.),
+        (command, [0., .1, 0.], [0., 20.], 0.),
+        (command, [-.01, 0., 0.], [0., 20.], 0.),
+        (command, [.01, 0., 0.], [10., 10.], 0.),
+        (command, [.01, 0., 0.], [0., 0.], 0.),
+        (jp.zeros(3), [.01, 0., 0.], [0., 20.], 0.)]:
+        np.testing.assert_allclose(supported_air_time_reward(cmd, jp.array(velocity),
+            jp.array(good), jp.array(loads), jp.array([.2, 0.]), 20.), expected)
+    np.testing.assert_allclose(supported_air_time_reward(command, command, jp.array(good),
+        jp.array([0., 20.]), jp.array([.4, 0.]), 20.), 0.)
+    # The failed policy pitched forward with both feet loaded. Penalize that
+    # behavior without penalizing the roll motion needed for lateral transfer.
+    from scipy.spatial.transform import Rotation
+    for yaw in (0., .7, -1.8):
+        for roll in (0., .35, -.35):
+            for pitch in (0., np.deg2rad(10.), np.deg2rad(-10.)):
+                rotation = jp.array(Rotation.from_euler('xyz', [roll, pitch, yaw]).as_matrix())
+                np.testing.assert_allclose(sagittal_balance_cost(rotation, pitch), 0., atol=1e-10)
+                np.testing.assert_allclose(sagittal_balance_cost(rotation, 0.),
+                                           0. if pitch == 0. else 1., atol=1e-6)
+    # A rightward shift stays rightward after the upstream random-yaw reset.
+    feet = jp.array([[0., .095, 0.], [0., -.095, 0.]])
+    com = jp.array([-.02, -.025, .20])
+    np.testing.assert_allclose(lateral_com_offset(com, feet), -.025, atol=1e-7)
+    for angle in (0., .7, -1.8):
+        rotation = jp.array([[jp.cos(angle), -jp.sin(angle), 0.],
+                             [jp.sin(angle), jp.cos(angle), 0.], [0., 0., 1.]])
+        translation = jp.array([.4, -.6, 0.])
+        np.testing.assert_allclose(lateral_com_offset(com @ rotation.T + translation,
+                                                    feet @ rotation.T + translation), -.025, atol=1e-7)
     contacts = SimpleNamespace(geom=jp.array([[2, 5], [8, 3]]), dist=jp.array([.01, -.001]))
     fake = SimpleNamespace(_impl=SimpleNamespace(contact=contacts))
     assert not bool(geoms_colliding(fake, 2, 5))
@@ -56,21 +94,62 @@ def main():
     legs = jp.array([actuators.index(n) for n in leg_names])
     q = jp.array([home[7 + names.index(n)] for n in actuators])
     ref = jp.concatenate([jp.array(home[7:]), jp.zeros(16), jp.ones(2), jp.zeros(6)])
-    def reward(angles):
+    def reward(angles, command=jp.array([.03, 0., 0.])):
         return reward_imitation(jp.array(home[:7]), jp.zeros(6), angles, jp.zeros(16),
-                                jp.ones(2), ref, jp.array([.03, 0., 0.]), True, legs)
+                                jp.ones(2), ref, command, True, legs)
     normal = reward(q)
+    assert float(reward(q, jp.array([.01, 0., 0.]))) > 0.
+    np.testing.assert_allclose(reward(q, jp.zeros(3)), 0., atol=1e-8)
     antenna = q.at[actuators.index('left_antenna')].add(.5)
     knee = q.at[actuators.index('right_knee')].add(.1)
     np.testing.assert_allclose(normal, reward(antenna), atol=1e-6)
     assert float(reward(knee)) < float(normal) - .1
     fitted = NumpyReference(str(ROOT / 'data/polynomial_coefficients.pkl'))
-    contacts = np.array([fitted.get_reference_motion(.03333333, 0., 0., i)[32:34] > .5
+    contacts = np.array([fitted.get_reference_motion(max(fitted.dxs), 0., 0., i)[32:34] > .5
                          for i in range(fitted.nb_steps_in_period)])
     assert np.any(np.all(contacts == [1, 0], axis=1))
     assert np.any(np.all(contacts == [0, 1], axis=1))
 
     env = Joystick()
+    assert float(env._reference_lateral_com.min()) < -.005
+    assert float(env._reference_lateral_com.max()) > .005
+    from playground.open_duck_mini_zp10d.actuators import configure, signature, position_feedback_action
+    from playground.open_duck_mini_zp10d.reference import SCENE, apply_reference_stance
+    # Exercise both loading paths, not just the shared parameter setter.
+    full = mujoco.MjModel.from_xml_path(str(SCENE))
+    configure(full)
+    import json
+    apply_reference_stance(full, json.loads((ROOT / 'data/reference.json').read_text()))
+    assert env.actuator_signature == signature()
+    for attr in ('dof_armature', 'dof_damping', 'dof_frictionloss', 'actuator_gainprm',
+                 'actuator_biasprm', 'actuator_forcerange', 'key_qpos', 'key_ctrl'):
+        np.testing.assert_allclose(getattr(full, attr), getattr(env.mj_model, attr), atol=1e-12)
+    assert env._config.noise_config.action_min_delay == 2
+    assert env._config.noise_config.action_max_delay == 3
+    del full
+    # A torque-only sensitivity run preserves command scaling, geometry and
+    # identified response. Native and MJX paths must apply the same override.
+    scaled = Joystick(torque_limit_scale=2.)
+    full = mujoco.MjModel.from_xml_path(str(SCENE))
+    prior = full.actuator_forcerange.copy()
+    configure(full, torque_limit_scale=2.)
+    apply_reference_stance(full, json.loads((ROOT / 'data/reference.json').read_text()))
+    main_servo = np.array(['antenna' not in full.actuator(i).name for i in range(full.nu)])
+    np.testing.assert_allclose(full.actuator_forcerange[main_servo], 2. * prior[main_servo])
+    np.testing.assert_array_equal(full.actuator_forcerange[~main_servo], prior[~main_servo])
+    np.testing.assert_array_equal(scaled._config.action_scale, env._config.action_scale)
+    for attr in ('dof_armature', 'dof_damping', 'dof_frictionloss', 'actuator_gainprm',
+                 'actuator_biasprm', 'key_qpos', 'key_ctrl'):
+        np.testing.assert_array_equal(getattr(scaled.mj_model, attr), getattr(env.mj_model, attr))
+    np.testing.assert_allclose(full.actuator_forcerange, scaled.mj_model.actuator_forcerange)
+    for invalid in (0., -1., float('nan'), float('inf')):
+        try:
+            configure(full, invalid)
+        except ValueError:
+            pass
+        else:
+            raise AssertionError('Invalid torque limit scale accepted')
+    del full, scaled
     np.testing.assert_allclose(torque_margin_cost(.5 * env._effort_limits, env._effort_limits), 0., atol=1e-6)
     np.testing.assert_allclose(torque_margin_cost(.9 * env._effort_limits, env._effort_limits), 4., atol=1e-5)
     np.testing.assert_allclose(torque_margin_cost(env._effort_limits, env._effort_limits), 16., atol=1e-5)
@@ -80,11 +159,50 @@ def main():
               command=cmd):
         return gait_reward_terms(command, velocity, height, foot_v, load, contact, target_h, target_c, target_load)
     correct = terms()
+    slow = terms(command=jp.array([.01, 0., 0.]), velocity=jp.array([.01, 0., 0.]))
+    assert float(slow['support_contact']) > 0.
     stationary = terms(velocity=jp.zeros(3), height=jp.zeros(2), load=jp.ones(2) * 10.2, contact=jp.ones(2, dtype=bool))
     weights = dict(env._config.reward_config.scales)
     score = lambda values: float(sum(values[k] * weights[k] for k in values))
     assert score(correct) > score(stationary) + 3.
-    np.testing.assert_allclose(stationary['tracking_lin_vel'], .06217656, atol=1e-6)
+    np.testing.assert_allclose(stationary['tracking_lin_vel'], 0., atol=1e-6)
+    # The 0.01 m/s command must remain active, unlike a literal >0.01 gate.
+    slow_command = jp.array([.01, 0., 0.])
+    for velocity in (jp.zeros(3), jp.array([-.01, 0., 0.]), jp.array([0., .01, 0.])):
+        tracking, progress = locomotion_tracking(slow_command, velocity)
+        np.testing.assert_allclose(tracking, 0., atol=1e-7)
+        assert not bool(progress)
+    np.testing.assert_allclose(locomotion_tracking(slow_command, slow_command)[0], 1., atol=1e-7)
+    assert bool(locomotion_tracking(slow_command, slow_command)[1])
+    np.testing.assert_allclose(locomotion_tracking(jp.zeros(3), jp.zeros(3))[0], 1., atol=1e-7)
+    np.testing.assert_allclose(locomotion_tracking(slow_command, jp.array([.01, .1, 0.]))[0],
+                               np.exp(-3.), atol=1e-7)
+    np.testing.assert_allclose(locomotion_tracking(slow_command, jp.array([.01, .1, 0.]), .1)[0],
+                               1., atol=1e-7)
+    for command in (slow_command, -slow_command, jp.array([0., .01, 0.])):
+        np.testing.assert_allclose(locomotion_tracking(command, command)[0], 1., atol=1e-7)
+        assert bool(locomotion_tracking(command, command)[1])
+        # Direct learning retains forward credit beyond twice the tiny command,
+        # with a separate modest overspeed cost. Legacy v1 stays reproducible.
+        velocity = command * 3.
+        np.testing.assert_allclose(locomotion_tracking(command, velocity)[0], 0., atol=1e-7)
+        np.testing.assert_allclose(locomotion_tracking(command, velocity, allow_overspeed=True)[0], 1., atol=1e-7)
+        np.testing.assert_allclose(overspeed_cost(command, velocity), .16, atol=1e-7)
+        assert 4. - .2 * float(overspeed_cost(command, velocity)) > 3.9
+    for velocity in (jp.zeros(3), -slow_command, jp.array([0., .01, 0.])):
+        assert float(locomotion_tracking(slow_command, velocity, allow_overspeed=True)[0]) <= 1e-7
+    # Equal forward/backward motion cannot improve on stationary zero credit.
+    rocking = [locomotion_tracking(slow_command, sign * slow_command,
+               allow_overspeed=True)[0] for sign in (-1., 1.)]
+    assert float(sum(rocking)) <= 0.
+    # Nine slow forward samples and one fast backward return have zero net
+    # travel. A bounded Gaussian penalty incorrectly pays for this sequence.
+    asymmetric = [locomotion_tracking(slow_command, slow_command * sign,
+                  allow_overspeed=True)[0] for sign in ([1.] * 9 + [-9.])]
+    assert float(sum(asymmetric)) <= 1e-6
+    np.testing.assert_allclose(locomotion_tracking(slow_command, jp.array([-.09, 1., 1.]),
+        allow_overspeed=True)[0], -9., atol=1e-6)
+    assert float(locomotion_tracking(jp.zeros(3), slow_command * 3., allow_overspeed=True)[0]) < .2
     sliding = terms(foot_v=jp.array([[0., 0., 0.], [.01, 0., 0.]]))
     assert score(sliding) < score(correct)
     moving_swing = terms(foot_v=jp.array([[.2, 0., 0.], [0., 0., 0.]]))
@@ -142,8 +260,59 @@ def main():
     state = jax.jit(env.reset)(jax.random.PRNGKey(0))
     state = jax.jit(env.step)(state, jp.zeros(env.action_size))
     assert bool(jp.isfinite(state.reward)) and bool(jp.isfinite(state.data.qpos).all())
+    assert bool(jp.isfinite(state.metrics['cost/com_transfer']))
+    assert bool(jp.isfinite(state.metrics['cost/sagittal_balance']))
+    # Planned lateral bank is allowed; a >45-degree tip fails both backends.
+    for axis in ('x', 'y'):
+        for angle, should_stop in ((25., False), (46., True)):
+            rotation = Rotation.from_euler(axis, angle, degrees=True).as_matrix()
+            tilted = state.data.replace(xmat=state.data.xmat.at[1].set(jp.array(rotation)))
+            assert bool(env._get_termination(tilted)) == should_stop
+    # Feedback must pass through the same 40 ms delay as policy residuals.
+    feedback_env = Joystick(position_feedback_gain=3., position_feedback_damping=.03)
+    np.testing.assert_allclose(np.asarray(feedback_env._config.action_scale),
+        np.asarray(env._config.action_scale) * (1. + 3. * np.asarray(feedback_env._leg_mask)))
+    feedback_state = feedback_env.reset(jax.random.PRNGKey(0))
+    ankle = feedback_env.actuator_names.index('left_ankle')
+    jid = feedback_env._mj_model.actuator_trnid[ankle, 0]
+    address = feedback_env.actuator_joint_qpos_addr[ankle]
+    feedback_state = feedback_state.replace(data=feedback_state.data.replace(
+        qpos=feedback_state.data.qpos.at[address].add(.01),
+        qvel=feedback_state.data.qvel.at[feedback_env._mj_model.jnt_dofadr[jid]].set(.2)))
+    command = np.asarray(feedback_env.command_action(feedback_state.data, jp.zeros(16)))
+    expected_delta = np.zeros(16); expected_delta[ankle] = -.036
+    np.testing.assert_allclose(command * np.asarray(feedback_env._config.action_scale), expected_delta, atol=2e-7)
+    native_command = position_feedback_action(
+        np.zeros(16), np.asarray(feedback_env.get_actuator_joints_qpos(feedback_state.data.qpos)),
+        np.asarray(feedback_env._geometric_home), np.asarray(feedback_env._config.action_scale),
+        np.asarray(feedback_env._leg_mask), 3.,
+        np.asarray(feedback_env.get_actuator_joints_qvel(feedback_state.data.qvel)), .03)
+    np.testing.assert_allclose(command, native_command, atol=2e-7)
+    step_feedback = jax.jit(feedback_env.step)
+    for tick in range(3):
+        feedback_state = step_feedback(feedback_state, jp.zeros(16))
+        expected = np.asarray(feedback_env._default_actuator) + (expected_delta if tick == 2 else 0.)
+        np.testing.assert_allclose(feedback_state.info['motor_targets'], expected, atol=3e-7)
+    direct = Joystick(position_feedback_gain=3., direct_locomotion=True, position_feedback_damping=.03)
+    assert direct.PRM.nb_steps_in_period == 25
+    assert direct.reward_specification()['fixed_support_schedule'] is False
+    assert direct.reward_specification()['moving_foot_clearance_target_m'] == .005
+    np.testing.assert_array_equal(direct.PRM.get_reference_motion(.01, 0., 0., 80), np.zeros(40))
+    assert direct._config.reward_config.scales.imitation == 0.
+    assert direct._config.reward_config.scales.alive == 0.
+    sampled = np.asarray(jax.vmap(direct.sample_command)(jax.random.split(jax.random.PRNGKey(0), 4096)))
+    assert .01 < np.mean(sampled[:, 0] == 0.) < .035
+    for term in ('support_load', 'support_contact', 'com_transfer', 'sagittal_balance'):
+        assert direct._config.reward_config.scales[term] == 0.
+    direct_state = direct.reset(jax.random.PRNGKey(0))
+    direct_state.info['imitation_i'] = 24  # exercise the observation clock seam
+    direct_state = jax.jit(direct.step)(direct_state, jp.zeros(16))
+    assert bool(jp.isfinite(direct_state.reward))
+    assert bool(jp.isfinite(direct_state.info['gait_velocity']).all())
+    assert int(direct_state.info['imitation_i']) == 0
     print('PASS: reference parity, leg mapping, observations, dense reward ranking, zero-command gating, '
-          'stance-only slip, native/JAX foot forces, JIT reset/physics/rewards', flush=True)
+          'stance-only slip, native/JAX foot forces, JIT reset/physics/rewards, delayed position feedback, '
+          'direct support learning and progress-gated air time', flush=True)
 
 
 if __name__ == '__main__':

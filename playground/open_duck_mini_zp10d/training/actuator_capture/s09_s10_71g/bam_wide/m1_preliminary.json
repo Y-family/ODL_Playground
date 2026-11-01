@@ -1,0 +1,66 @@
+{
+  "status": "preliminary_equivalent_response_fit",
+  "actuator": "ZP10Dg equivalent position actuator",
+  "bam_commit": "e9a619d56da5236206f4de6ceec2c1ee1b497b5c",
+  "model": "BAM M1",
+  "source_script_sha256": "bd77f93e420e4159865def42b8e5297a056888e4c19ca62cc9ca9a4632694d98",
+  "rig_sha256": "73873dad5f0844d3725b7aa922c3b8b798e91828b6a9a2835c39f81834382cb4",
+  "source_capture_hashes": {
+    "upright_steps_45deg": {
+      "capture.json": "0de3255ecf160fcbd65edfb0c5c8ec8e8b59e7a646409e15dbc3a0f754172b69",
+      "samples.csv": "72a109cc6103bbde495215fdea8c6a6a9a96c291f4f9dc575b46fd657e3c0633"
+    },
+    "upright_validation_35deg": {
+      "capture.json": "2629cd8d0dc355faa382aa6d3695a50b62149e36acf5a63f6139e454b13ad924",
+      "samples.csv": "b6222ed0db85810b7c7d93092b8d986891e012b5d6c2aada7e2607778f932793"
+    }
+  },
+  "parameters": {
+    "position_gain_Nm_per_rad": 2.1662888749078335,
+    "armature_kg_m2": 0.00022216565245351924,
+    "frictionloss_Nm": 0.07568416621730174,
+    "damping_Nm_s_per_rad": 0.13553800013115147,
+    "transport_delay_s": 0.036147902262733456,
+    "mounting_offset_rad": -0.04998491647206405
+  },
+  "metrics": {
+    "upright_steps_45deg": {
+      "mae_deg": 0.43500547246977045,
+      "rmse_deg": 0.6024935265623242,
+      "peak_error_deg": 3.6679315255405798,
+      "predicted_peak_motor_torque_Nm": 0.980665,
+      "predicted_torque_cap_fraction": 0.016519993824301374
+    },
+    "upright_validation_35deg": {
+      "mae_deg": 0.437448572375753,
+      "rmse_deg": 0.5591733890832509,
+      "peak_error_deg": 3.893391831241125,
+      "predicted_peak_motor_torque_Nm": 0.980665,
+      "predicted_torque_cap_fraction": 0.008179012345679013
+    }
+  },
+  "simulation_dt_s": 0.002,
+  "optimizer": {
+    "generations": 67,
+    "vectorized_evaluations": 68,
+    "converged": true,
+    "termination_message": "Optimization terminated successfully.",
+    "seed": 0,
+    "workers": 1
+  },
+  "near_search_bound": [
+    "mounting_offset_rad"
+  ],
+  "torque_cap_prior_Nm": 0.980665,
+  "torque_cap_measured": false,
+  "formal_robot_model_updated": false,
+  "validation_used_for_optimization": false,
+  "validation_used_for_model_diagnosis": true,
+  "limitations": [
+    "Single 71 g CAD-estimated load; mass distribution and physical angle scale not measured",
+    "Equivalent P gain, not internal firmware gain; no motor kt/R or current identified",
+    "Delay includes host/serial/feedback timing effects; first 20 ms after commands are not sampled",
+    "Small-load position fits do not uniquely establish all physical parameters or stall torque",
+    "Validation only covers the named held-out trajectory at 7.8 V"
+  ]
+}

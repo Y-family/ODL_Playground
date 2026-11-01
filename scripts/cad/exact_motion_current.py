@@ -13,7 +13,8 @@ from pathlib import Path
 from cadgen import build123d as bd
 from cadgen import read_step
 
-from full_motion_current import LIMITS, REPORT as BROAD_REPORT, TARGET, MJCF, _leaves
+from full_motion_current import (LIMITS, REPORT as BROAD_REPORT, TARGET, MJCF,
+                                 _leaves, command_to_cad_angle)
 from validate_s01_s10_interfaces_local import _children
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -87,7 +88,7 @@ def main():
             baseline = _overlap(mover, fixed)
             exact = []
             for angle in candidate["angles_deg"]:
-                posed = mover.rotate(axis, angle)
+                posed = mover.rotate(axis, command_to_cad_angle(servo_id, angle))
                 volume = _overlap(posed, fixed)
                 del posed
                 gc.collect()
@@ -103,7 +104,7 @@ def main():
                 first = int(min(hits))
                 for magnitude in range(max(1, first-4), first):
                     angle = sign*magnitude
-                    posed = mover.rotate(axis, angle)
+                    posed = mover.rotate(axis, command_to_cad_angle(servo_id, angle))
                     overlap = _overlap(posed, fixed)
                     exact.append(dict(angle_deg=angle, overlap_mm3=overlap, increase_mm3=overlap-baseline))
                     del posed

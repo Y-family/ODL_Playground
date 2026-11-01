@@ -361,10 +361,11 @@ class Joystick(open_duck_mini_v2_base.OpenDuckMiniV2Env):
         )
 
         # Handle action delay
+        command_action = self.command_action(state.data, action) if hasattr(self, 'command_action') else action
         action_history = (
             jp.roll(state.info["action_history"], self._actuators)
             .at[: self._actuators]
-            .set(action)
+            .set(command_action)
         )
         state.info["action_history"] = action_history
         action_idx = jax.random.randint(
@@ -409,19 +410,25 @@ class Joystick(open_duck_mini_v2_base.OpenDuckMiniV2Env):
         if hasattr(self, '_target_lowers'):
             motor_targets = jp.clip(motor_targets, self._target_lowers, self._target_uppers)
 
-        if USE_MOTOR_SPEED_LIMITS:
+        target_slew = getattr(self, '_target_slew_rate', self._config.max_motor_velocity)
+        if USE_MOTOR_SPEED_LIMITS and target_slew is not None:
             prev_motor_targets = state.info["motor_targets"]
 
             motor_targets = jp.clip(
                 motor_targets,
                 prev_motor_targets
-                - self._config.max_motor_velocity * self.dt,  # control dt
+                - target_slew * self.dt,  # control dt
                 prev_motor_targets
-                + self._config.max_motor_velocity * self.dt,  # control dt
+                + target_slew * self.dt,  # control dt
             )
 
         # motor_targets.at[5:9].set(state.info["command"][3:])  # head joints
         data = mjx_env.step(self.mjx_model, state.data, motor_targets, self.n_substeps)
+        if getattr(self, '_refresh_post_step_fields', False):
+            # mjx.step leaves sensors/contacts at the final substep's input.
+            # Sample the integrated state at this control boundary, as native
+            # validation does, before building observations and rewards.
+            data = mjx.forward(self.mjx_model, data)
 
         state.info["motor_targets"] = motor_targets
 
@@ -448,7 +455,8 @@ class Joystick(open_duck_mini_v2_base.OpenDuckMiniV2Env):
         rewards = {
             k: v * self._config.reward_config.scales[k] for k, v in rewards.items()
         }
-        reward = jp.clip(sum(rewards.values()) * self.dt, 0.0, 10000.0)
+        reward = jp.clip(sum(rewards.values()) * self.dt,
+                         -10000.0 if getattr(self, '_allow_negative_rewards', False) else 0.0, 10000.0)
         # jax.debug.print('STEP REWARD: {}',reward)
         state.info["push"] = push
         state.info["step"] += 1

@@ -9,7 +9,8 @@
 - 原项目：https://github.com/apirrone/Open_Duck_Mini ，固定提交 `b23317a485b3cec7d8417f352478778b3475173c`。本地打印指南与该提交的远端原文逐字节一致，原指南最后相关提交 `730c14bc50e4e60c4a983f57fd739e015510cc76`（2025-04-19，adding missing stl files）。
 - 官方打印指南：https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md ，列出36种、共51件；当前用量按当前装配实例计，不盲目沿用原版数量。
 - 官方采购 BOM（原项目 README 指向）：https://docs.google.com/spreadsheets/d/1gq4iWWHEJVgAA_eemkTEsshXqrYlFxXAPwO515KpCJc/edit ，本轮只读下载CSV快照。该在线表可变，快照日期与哈希固定如下。
-- 当前正式 STEP：`cad/local_fix/open_duck_mini_upper_refit.step`，SHA256 `bb9c851dfcae554653981919bf69a950febc2730c4362e562f58a0a63f7ce740`。装配位置、层级和局部改件来源保留；本轮没有修改几何。
+- 全局复查补充：README指向的Tnkr指南 https://tnkr.ai/open-duck-mini/open-duck-mini-v2 于2026-10-19成功读取，其Print Guide表同样列出36类、51件，没有天线本体。提取的名称/数量/下载链接保存于`sources/tnkr_print_guide.csv`，SHA256 `37fb7822b314200c95ae237266e0e55cdd0d29d8bc03d3bcd42f28e0bc38cb8f`；获取的HTML哈希为`d4d211929df1deb78f9572a5ba6ad3f7d9e9f58047f5f0fc976119326b738e9a`。这与固定GitHub指南相互核对，并非仅凭本地人工名单。
+- 当前正式 STEP：`cad/local_fix/open_duck_mini_upper_refit.step`，SHA256 `3776a38a413e207992cb08e1cd7491d1dcae11847a3719d66bca63a4a4ff2f4c`。分类/网格复核时的STEP哈希为 `bb9c851dfcae554653981919bf69a950febc2730c4362e562f58a0a63f7ce740`；后续只改外观样式并去透明，全部非外观STEP字节相同，装配位置、层级及几何保持。用户于2026-10-19确认外观，制造分类依据保持。
 
 |本地证据快照|SHA256|
 |---|---|
@@ -106,7 +107,7 @@ BOM映射结合当前CAD名称、装配位置/用途和数量，不是SKU尺寸/
 ## 待确认：两根天线
 
 index 2、11的antenna未出现在官方打印指南或print/顶层目录，公开BOM也未给出天线本体的材料/采购项。原仓库相关issue只讨论舵机动作，不能证明天线的制造方式。没有把“不在打印清单”当作“采购件”。
-两件原导出保留于unclassified/STL及unclassified/STEP，仅供审核；不在52件确认包中。需要原设计制造说明或明确的成品/打印选择，才能补齐这两项；本轮不凭细长外形猜材料。
+按用户“没有打印依据的就去掉”要求，两件的旧独立导出已从打印输出目录移除，不在52件审核包中；完整原始几何仍保留在正式整机STEP。排除清单保留编号和原因，不输出它们的打印模型。需要原设计制造说明或明确的成品/打印选择，才能补齐这两项；本轮不凭细长外形猜材料。Tnkr的天线装配步骤也未说明制造方式；仅有仿真STL不构成打印依据。
 
 本轮只修正打印导出分类。原动力学质量/碰撞模型与整机STEP保持，历史动力学分类字段不作为打印依据。导出器遇到新名称默认待确认，并在manifest中记录，不再自动排为采购件。
 

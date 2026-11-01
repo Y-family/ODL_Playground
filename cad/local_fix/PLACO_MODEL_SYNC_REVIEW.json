@@ -1,0 +1,129 @@
+{
+  "source_step_sha256": "528d82d2a2bda0a7757f28600dc02b289c73220f0cf98c8b0d39ebacd92bf65b",
+  "source_hashes": {
+    "open_duck_mini_zp10d.urdf": "905377f478b16453bcaa371de33eca25599022b2cbe64b226dc8b86b70c3560c",
+    "open_duck_mini_zp10d.xml": "526c3577b513b1846291b5d2d7951bac83b33befa83d2294656c10b3cf8abf2d",
+    "scene_flat_terrain.xml": "74c098a75f198126dbf09e84d9ad153a90231e925f2f47d5eb107cf9f354fe84"
+  },
+  "urdf_strict_validation_passed": true,
+  "kinematic_check": "33 poses, all physical frames and COM; max frame error 2.73e-13",
+  "support_rectangle_m": [
+    0.05,
+    0.02
+  ],
+  "sole_checks": [
+    {
+      "side": "left",
+      "margin_mm": 1.1638876837624206,
+      "site_to_sole_offset_m": [
+        2.0750316616340758e-27,
+        0.0,
+        0.0026008822028467378
+      ]
+    },
+    {
+      "side": "right",
+      "margin_mm": 0.5999547477656859,
+      "site_to_sole_offset_m": [
+        -1.7746234120991282e-30,
+        0.0,
+        0.002600882202869067
+      ]
+    }
+  ],
+  "reference_metadata": {
+    "period": 0.5,
+    "step_length": 0.0025,
+    "support_duration": 0.16,
+    "foot_height": 0.0025,
+    "com_height": 0.1972727645529239,
+    "reduced_pendulum_height_m": 0.35,
+    "trunk_pitch_task": "hard",
+    "preparation_steps": 0,
+    "preparation_end_s": 0.0,
+    "double_support_ratio": 0.5625,
+    "startend_double_support_ratio": 8.0,
+    "com_lateral_scale": 1.0,
+    "com_lateral_smoothing": 0.0,
+    "contact_aware": true,
+    "contact_guard_s": 0.02,
+    "startup_swing_height_scale": [
+      0.6,
+      0.8,
+      1.0
+    ],
+    "startup_extra_lift_guard_s": 0.015,
+    "double_support_roll_blend_com_width_m": 0.002,
+    "single_support_timesteps": 16,
+    "yaw_momentum_heading_gain_Nms_per_rad": 0.12,
+    "max_single_support_sole_tilt_deg": 5.0869435897894064e-05,
+    "foot_support_rectangle_m": [
+      0.05,
+      0.02
+    ],
+    "foot_zmp_offset_m": [
+      -0.0125,
+      0.0
+    ],
+    "com_target_height_range_m": [
+      0.1942057280842214,
+      0.1972727645529239
+    ],
+    "generator_sha256": "078798c05cf311c57aac96b084a13f875b893b7491d93b15d1fed1178413ff34",
+    "feet_spacing": 0.16355407690705376,
+    "max_joint_speed": 3.285593946990273,
+    "max_limit_error": 0.0,
+    "min_foot_frame_height": 2.7934397850426507e-11,
+    "source_hashes": {
+      "open_duck_mini_zp10d.urdf": "905377f478b16453bcaa371de33eca25599022b2cbe64b226dc8b86b70c3560c",
+      "open_duck_mini_zp10d.xml": "526c3577b513b1846291b5d2d7951bac83b33befa83d2294656c10b3cf8abf2d",
+      "scene_flat_terrain.xml": "74c098a75f198126dbf09e84d9ad153a90231e925f2f47d5eb107cf9f354fe84"
+    },
+    "max_feet_position_error": 2.9418572319555287e-07,
+    "max_com_position_error_m": 2.423423378388249e-07,
+    "support_orientation": "loaded sole flat; torso roll free; swing sole roll free",
+    "exact_com": true,
+    "exact_feet": true,
+    "sample_fps": 200,
+    "foot_origin_lift_max_m": [
+      0.00016828656958336576,
+      6.781572668422953e-05
+    ],
+    "planning_joint_speed_limit_rad_s": 5.2,
+    "min_whole_foot_height_m": [
+      -1.1379361297034175e-06,
+      -8.154609549626543e-07
+    ],
+    "whole_foot_target": "planned height of lowest oriented collision-foot vertex",
+    "joint_names": [
+      "left_hip_yaw",
+      "left_hip_roll",
+      "left_hip_pitch",
+      "left_knee",
+      "left_ankle",
+      "neck_pitch",
+      "head_pitch",
+      "head_yaw",
+      "head_roll",
+      "left_antenna",
+      "right_antenna",
+      "right_hip_yaw",
+      "right_hip_roll",
+      "right_hip_pitch",
+      "right_knee",
+      "right_ankle"
+    ],
+    "kind": "kinematic_candidate_not_dynamics_acceptance"
+  },
+  "candidate_sha256": "6d7b39581a3964d5edaa7d375623b49166f5903970489c860a5c71d31e87815a",
+  "candidate_path": "playground/open_duck_mini_zp10d/training/reference_demo/candidate.npz",
+  "native_window_test_seconds": 6,
+  "native_window_test_passed": true,
+  "physics_walking_accepted": false,
+  "scope": "Latest CAD synchronization and kinematic reference display; no CAD geometry change, no learned policy or physical gait acceptance",
+  "whole_sole_kinematic_peak_mm": [
+    2.50007995,
+    2.50003701
+  ],
+  "display": "native MuJoCo GLFW window, 50 Hz, opaque visual surfaces, collision proxies hidden, space pause/resume"
+}

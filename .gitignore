@@ -22,6 +22,14 @@ checkpoints/
 /playground/open_duck_mini_zp10d/training_gpu/**/trace/
 /playground/open_duck_mini_zp10d/training_gpu/**/training_scene.xml
 /playground/open_duck_mini_zp10d/training_gpu/parallel_benchmark/envs_*/
+/playground/open_duck_mini_zp10d/training_gpu/identified_walk/
+/playground/open_duck_mini_zp10d/training_gpu/lift_10mm_current/
+/playground/open_duck_mini_zp10d/training_gpu/placo_lift_12mm/
+/playground/open_duck_mini_zp10d/training_gpu/placo_imitation_unlimited_v2/
+
+# Training history/checkpoints are preserved in the migration archive.
+# The adopted torque audit and calibration inputs are explicitly tracked.
+/cad/local_fix/solidworks/.collision_cache/
 
 # Large local CAD assessment outputs and previews.
 /cad/local_fix/CURRENT_*.json
@@ -55,3 +63,9 @@ checkpoints/
 /cad/printing/*.glb
 /cad/printing/*.png
 /cad/printing/parts.csv
+/cad/printing/PRINT_REVIEW.md
+/cad/printing/print_review.csv
+/cad/printing/print_review_audit.json
+/cad/printing/plates/
+/cad/printing/PRINT_GROUPS.md
+/cad/printing/PRINT_GROUPS.csv

@@ -1,1195 +1,1151 @@
 <?xml version="1.0"?>
 <!--
-robot: open_duck_mini_zp10d | consumers: Placo/Pinocchio reference planning, CAD Viewer
-units: metres, kg, seconds, radians | root axes: +X eyes/forward, +Y left, +Z up
-source: xmls/open_duck_mini_zp10d.xml SHA256 12a9ca61f0c10bc320f6eecc8517bad557e0d89dc64500fcfb191d9dadbfd8d0
-source scene: xmls/scene_flat_terrain.xml, accepted shortened legs and 60-degree home
-root: base, frame-only; floating-base transform is supplied by Placo (no world joint)
-physical links: source MJCF bodies below base; link/joint names and zero poses preserved
-trunk: source trunk site, frame-only; left_foot/right_foot: frame-only sole references
-sole frames: source foot site XY; Z projected onto minimum collision-vertex height at home
-sole orientation: body Rx(-pi/2), yielding forward X, left Y, up Z at home
-meshes: explicit sets of original per-solid visual STLs; already metres, scale 1
-visual origins: copied raw MJCF geom transforms (not compiled mesh-normalization offsets)
-collision: intentionally omitted for this kinematic planner; full MJCF owns contact validation
-inertials: source per-body CAD-derived estimates, copied COM/full inertia in body frame
-mass: estimated PETG/purchased masses; not weighed or calibrated to actual infill
-limits/axis: copied source hinge ranges and local axes; positive is right-hand about axis
-effort: copied actuator force limits; velocity 5.24 rad/s is original software cap, uncalibrated
-antenna axes are oblique by measured CAD design; retained without snapping to principal axes
-frame-only links omit inertia/geometry; no fake mass is introduced
-joint ledger: parent/child/origin/axis are explicit in each joint below
-positive axes at accepted home, expressed in world:
-  left_hip_yaw: -2.226569283239975e-14 -2.666689344088488e-17 1
-  left_hip_roll: -0.9999980000006766 -0.001999998666739944 -1.576516694967722e-14
-  left_hip_pitch: 0.001999998666735743 -0.9999980000006738 9.992007221626409e-15
-  left_knee: 0.001999998666735821 -0.9999980000006667 1.743050148661496e-14
-  left_ankle: 0.001999998666735849 -0.9999980000006665 1.77635683940025e-14
-  neck_pitch: 6.123277885608528e-17 -1.000000000000007 -6.661338147750939e-15
-  head_pitch: -8.361834352052474e-17 -1 7.771561172376096e-16
-  head_yaw: -2.232120398368733e-14 4.75677667060813e-16 1
-  head_roll: -1.000000000000007 -1.384262848636216e-16 -2.90878432451791e-14
-  left_antenna: 0.2630837400590187 -0.93540885354207 -0.2362143569550215
-  right_antenna: 0.2630837400590185 0.93540885354207 -0.2362143569550216
-  right_hip_yaw: -2.220446049259985e-14 2.957164716581373e-16 1
-  right_hip_roll: -0.9999955000033749 0.002999995500014699 -2.264854970235319e-14
-  right_hip_pitch: 0.002999995500014867 0.9999955000033818 1.287858708565182e-14
-  right_knee: -0.002999995500014858 -0.9999955000033751 -2.020605904817785e-14
-  right_ankle: -0.002999995500014747 -0.9999955000033751 -2.065014825802791e-14
+Canonical URDF for Placo; units m/kg/s/rad; +X forward +Y left +Z up.
+Synchronized from latest STEP 528d82d2a2bda0a7757f28600dc02b289c73220f0cf98c8b0d39ebacd92bf65b.
+MJCF SHA256 526c3577b513b1846291b5d2d7951bac83b33befa83d2294656c10b3cf8abf2d.
+Physical link frames, hinge signs, ranges and inertial tensors measured from compiled MJCF.
+Includes approved lower-leg swap; no servo, CAD or joint-limit changes.
+Foot frame XY and orientation follow current corresponding MJCF site; Z projected onto collision sole minimum.
+Visual meshes in metres, raw mesh origins; collisions owned by MJCF, intentionally omitted here.
+Mass/inertias are CAD estimates; torque/thermal/real hardware and walking are not certified.
+Frame-only base/trunk/foot references have no fabricated inertia. Floating base supplied by Placo.
+This XML remains canonical; one-time computation helper is temporary scaffolding.
 -->
 <robot name="open_duck_mini_zp10d">
   <link name="base" />
   <link name="trunk_assembly">
     <inertial>
-      <origin xyz="-0.04423694140946 -8.246593046474e-05 0.03876005597619" rpy="0 0 0" />
-      <mass value="0.66762101469419" />
-      <inertia ixx="0.0015239880564843" iyy="0.0030778106631376" izz="0.0025413739745046" ixy="-1.2965366484219e-05" ixz="-6.1873277345284e-05" iyz="-2.9547428916792e-06" />
+      <origin xyz="-0.046608474508834999 -0.00024854413995038002 0.044227574921924001" rpy="0 0 0" />
+      <mass value="0.57787039801851003" />
+      <inertia ixx="0.0010352017376390463" iyy="0.0024810717815112503" izz="0.002097527899563011" ixy="-1.0803242092095246e-05" ixz="-0.00015560230107421647" iyz="-3.2261134863044651e-06" />
     </inertial>
-    <visual name="visual_023">
-      <origin xyz="0.040939276966208 8.254621973041e-08 0.03627906334935" rpy="0 0 0" />
+    <visual name="visual_022">
+      <origin xyz="0.040936191880748 6.0269724479805e-06 0.038820268531977" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_023_body_front.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_022_body_front.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_023_body_front">
-        <color rgba="0.8227858 0.8227858 0.8227858 0.35" />
+      <material name="visual_022_color">
+        <color rgba="1 1 1 0.35" />
+      </material>
+    </visual>
+    <visual name="visual_023">
+      <origin xyz="-0.040397501477647 -1.4784872471038e-08 -0.00576371066193" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="xmls/assets/current_023_body_middle_bottom.stl" scale="1 1 1" />
+      </geometry>
+      <material name="visual_023_color">
+        <color rgba="1 1 1 0.35" />
       </material>
     </visual>
     <visual name="visual_024">
-      <origin xyz="-0.029424279071499 2.6909806556852e-15 -0.017719425999862" rpy="0 0 0" />
+      <origin xyz="-0.12373888028258 -0.00015781841965114 0.036231565657152" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_024_body_middle_bottom.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_024_body_back.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_024_body_middle_bottom">
-        <color rgba="0.8227858 0.8227858 0.8227858 0.35" />
+      <material name="visual_024_color">
+        <color rgba="1 1 1 0.35" />
       </material>
     </visual>
     <visual name="visual_025">
-      <origin xyz="-0.12533564380385 -0.00018872695673914 0.03578688637166" rpy="0 0 0" />
+      <origin xyz="-0.0833 -0.04443150464637 0.061229252983702" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_025_body_back.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_025_usb_c_charger.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_025_body_back">
-        <color rgba="0.8227858 0.8227858 0.8227858 0.35" />
+      <material name="visual_025_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_026">
-      <origin xyz="-0.1163 -0.02676849535363 0.05828651789391" rpy="0 0 0" />
+      <origin xyz="-0.10699960975715 8.7489696339756e-19 0.032857885438806" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_026_usb_c_charger.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_026_battery_pack_lid.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_026_usb_c_charger">
-        <color rgba="0.093007 0.3472328 0.6863463 1" />
+      <material name="visual_026_color">
+        <color rgba="1 1 1 1" />
       </material>
     </visual>
     <visual name="visual_027">
-      <origin xyz="-0.10699960975715 -4.5205935509082e-19 0.032857885438806" rpy="0 0 0" />
+      <origin xyz="-0.036547595049613 1.8612048829857e-15 0.08141604585339" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_027_battery_pack_lid.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_027_body_middle_top.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_027_battery_pack_lid">
-        <color rgba="0.0033957 0.013327 0.1758904 1" />
+      <material name="visual_027_color">
+        <color rgba="1 1 1 0.35" />
       </material>
     </visual>
     <visual name="visual_028">
-      <origin xyz="-0.036097030301193 2.3116896576986e-15 0.083824468053022" rpy="0 0 0" />
+      <origin xyz="-0.11349447934493 -1.1913059799713e-18 0.092764032099575" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_028_body_middle_top.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_028_power_switch.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_028_body_middle_top">
-        <color rgba="0.8227858 0.8227858 0.8227858 0.35" />
+      <material name="visual_028_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_029">
-      <origin xyz="-0.11349447934493 -1.1913059799713e-18 0.092764032099575" rpy="0 0 0" />
+      <origin xyz="-0.1196245681563 -0.010499999999998 0.032513432174047" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_029_power_switch.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_029_cell.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_029_power_switch">
-        <color rgba="0.5891826 0.5891826 0.5891826 1" />
+      <material name="visual_029_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_030">
-      <origin xyz="-0.1196245681563 -0.010499999999998 0.032513432174047" rpy="0 0 0" />
+      <origin xyz="-0.12328700470452 8.5301768172258e-15 0.032513432174045" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_030_cell.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_030_holder.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_030_cell">
-        <color rgba="0.093007 0.3472328 0.6863463 1" />
+      <material name="visual_030_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_031">
-      <origin xyz="-0.12328700470452 8.5301768172258e-15 0.032513432174045" rpy="0 0 0" />
+      <origin xyz="-0.1196245681563 0.010500000000002 0.032513432174047" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_031_holder.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_031_cell.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_031_holder">
-        <color rgba="0.1168351 0.1168351 0.1168351 1" />
+      <material name="visual_031_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_032">
-      <origin xyz="-0.1196245681563 0.010500000000002 0.032513432174047" rpy="0 0 0" />
+      <origin xyz="-0.0832999999999 -0.0437 0.021857885438806" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_032_cell.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_032_bms.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_032_cell">
-        <color rgba="0.093007 0.3472328 0.6863463 1" />
+      <material name="visual_032_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_033">
-      <origin xyz="-0.1162999999999 -0.0267 0.018857885438806" rpy="0 0 0" />
+    <visual name="visual_090">
+      <origin xyz="-0.030954568201598 0.00033883564772429 0.061719888634529" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_033_bms.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_090_trunk_top.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_033_bms">
-        <color rgba="0.0033957 0.013327 0.1758904 1" />
+      <material name="visual_090_color">
+        <color rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <visual name="visual_091">
+      <origin xyz="-0.07711 2.7050940594095e-17 0.043290938812376" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="xmls/assets/current_091_BNO055.stl" scale="1 1 1" />
+      </geometry>
+      <material name="visual_091_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_092">
-      <origin xyz="-0.032219355871195 0.00033528204094212 0.061977667361895" rpy="0 0 0" />
+      <origin xyz="-0.080990967908022 1.3396305589482e-05 0.059590938482375" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_092_trunk_top.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_092_Board.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_092_trunk_top">
-        <color rgba="0.0021146 0.0021146 0.0021146 1" />
+      <material name="visual_092_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_093">
-      <origin xyz="-0.07711 2.7050940594095e-17 0.043290938812376" rpy="0 0 0" />
+      <origin xyz="-0.0188 -0.0248 -0.01194406118762" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_093_BNO055.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_093_roll_bearing.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_093_BNO055">
-        <color rgba="0.093007 0.3472328 0.6863463 1" />
+      <material name="visual_093_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_094">
-      <origin xyz="-0.080990967908022 1.3396305589473e-05 0.059590938482376" rpy="0 0 0" />
+      <origin xyz="-0.0188 0.0248 -0.01194406118762" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_094_Board.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_094_roll_bearing.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_094_Board">
-        <color rgba="0 0.0382634 0 1" />
+      <material name="visual_094_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_095">
-      <origin xyz="-0.019 -0.03025 -0.01688406118762" rpy="0 0 0" />
+      <origin xyz="-0.029271566557761 0.024799920171021 0.063785800889396" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_095_roll_bearing.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_095_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_095_roll_bearing">
-        <color rgba="0.0827603 0.0827603 0.0827603 1" />
-      </material>
-    </visual>
-    <visual name="visual_096">
-      <origin xyz="-0.019 0.03025 -0.01688406118762" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="xmls/assets/current_096_roll_bearing.stl" scale="1 1 1" />
-      </geometry>
-      <material name="color_current_096_roll_bearing">
-        <color rgba="0.0827603 0.0827603 0.0827603 1" />
+      <material name="visual_095_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_097">
-      <origin xyz="-0.029471566557761 0.030249920171021 0.063785800889396" rpy="0 0 0" />
+      <origin xyz="-0.018799999999999 3.2472918938249e-14 -0.013341913837277" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_097_ZP10D_vendor_body.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_097_trunk_bottom.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_097_ZP10D_vendor_body">
-        <color rgba="0.0026579 0.0030609 0.0036426 1" />
+      <material name="visual_097_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_099">
-      <origin xyz="-0.018471515641383 -2.25190544295e-14 0.0023919712317892" rpy="0 0 0" />
+    <visual name="visual_098">
+      <origin xyz="0.0088000791380372 0.00091696968300048 0.079620006540937" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_099_trunk_bottom.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_098_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_099_trunk_bottom">
-        <color rgba="0.0021146 0.0021146 0.0021146 1" />
+      <material name="visual_098_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_100">
-      <origin xyz="0.0090000791380372 0.0011169696830005 0.079620006540937" rpy="0 0 0" />
+    <visual name="visual_101">
+      <origin xyz="-0.029271566557761 -0.024800079828979 0.063785800889396" rpy="0 0 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_100_ZP10D_vendor_body.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_101_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_100_ZP10D_vendor_body">
-        <color rgba="0.0026579 0.0030609 0.0036426 1" />
-      </material>
-    </visual>
-    <visual name="visual_103">
-      <origin xyz="-0.029471566557761 -0.030250079828979 0.063785800889396" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="xmls/assets/current_103_ZP10D_vendor_body.stl" scale="1 1 1" />
-      </geometry>
-      <material name="color_current_103_ZP10D_vendor_body">
-        <color rgba="0.0026579 0.0030609 0.0036426 1" />
+      <material name="visual_101_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
   </link>
   <link name="hip_roll_assembly">
     <inertial>
-      <origin xyz="0.00081482821443719 -6.565956105073e-05 -0.053868791208" rpy="0 0 0" />
-      <mass value="0.061492786032159" />
-      <inertia ixx="1.3560191437347e-05" iyy="1.9963165634475e-05" izz="1.0688025056568e-05" ixy="-1.7537785315684e-08" ixz="-5.3883101545676e-08" iyz="-7.3619827915648e-09" />
+      <origin xyz="0.00066369247202879996 -4.3784897140830002e-06 -0.049283995554746003" rpy="0 0 0" />
+      <mass value="0.060501056822001999" />
+      <inertia ixx="1.2187060037786941e-05" iyy="1.9008785424595e-05" izz="1.0701982560348071e-05" ixy="-5.9299963968689556e-09" ixz="1.2512515404568547e-07" iyz="2.991654258535684e-09" />
     </inertial>
+    <visual name="visual_086">
+      <origin xyz="0.0021781792219026 -4.6993812000479e-05 -0.046800879073596" rpy="-2.6666893440796566e-17 2.2204460492503131e-14 -7.9347606515728002e-14" />
+      <geometry>
+        <mesh filename="xmls/assets/current_086_roll_motor_top_bottom.stl" scale="1 1 1" />
+      </geometry>
+      <material name="visual_086_color">
+        <color rgba="0 0 0 1" />
+      </material>
+    </visual>
     <visual name="visual_087">
-      <origin xyz="-0.00032999863522866 -0.00089654895505959 -0.073721117669334" rpy="-2.666689344079657e-17 2.220446049250313e-14 -7.9347606515728e-14" />
+      <origin xyz="0.00051696968301374 7.9137962120945e-08 -0.050119067728517" rpy="-2.6666893440796566e-17 2.2204460492503131e-14 -7.9347606515728002e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_087_roll_motor_bottom.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_087_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_087_roll_motor_bottom">
-        <color rgba="0.1168351 0.1168351 0.1168351 1" />
+      <material name="visual_087_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_088">
-      <origin xyz="-0.001163915836399 -0.00011942952200824 -0.031597360863357" rpy="-2.666689344079657e-17 2.220446049250313e-14 -7.9347606515728e-14" />
+    <visual name="visual_096">
+      <origin xyz="-5.1347814888913e-16 -4.5102810375397e-16 -0.02454346092504" rpy="-2.6666893440796566e-17 2.2204460492503131e-14 -7.9347606515728002e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_088_roll_motor_top.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_096_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_088_roll_motor_top">
-        <color rgba="0.5891826 0.5891826 0.5891826 1" />
-      </material>
-    </visual>
-    <visual name="visual_089">
-      <origin xyz="0.0010169696830136 7.913796209319e-08 -0.054059067728517" rpy="-2.666689344079657e-17 2.220446049250313e-14 -7.9347606515728e-14" />
-      <geometry>
-        <mesh filename="xmls/assets/current_089_ZP10D_vendor_body.stl" scale="1 1 1" />
-      </geometry>
-      <material name="color_current_089_ZP10D_vendor_body">
-        <color rgba="0.0026579 0.0030609 0.0036426 1" />
-      </material>
-    </visual>
-    <visual name="visual_098">
-      <origin xyz="-5.0306980803327e-16 -4.6837533851374e-16 -0.02454346092504" rpy="-2.666689344079657e-17 2.220446049250313e-14 -7.9347606515728e-14" />
-      <geometry>
-        <mesh filename="xmls/assets/current_098_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
-      </geometry>
-      <material name="color_current_098_ZP10D_vendor_active_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_096_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
   </link>
   <link name="left_roll_to_pitch_assembly">
     <inertial>
-      <origin xyz="0.054821036680422 -0.00027383154404823 0.00045222769912819" rpy="0 0 0" />
-      <mass value="0.082471632754129" />
-      <inertia ixx="2.8479072789433e-05" iyy="6.3233938287611e-05" izz="4.289244849055e-05" ixy="2.0679710031742e-07" ixz="-2.3825252545222e-06" iyz="-2.3562824544026e-07" />
+      <origin xyz="0.049827969265732998 -2.9966404926591001e-05 0.0029359408009698999" rpy="0 0 0" />
+      <mass value="0.076474818164930999" />
+      <inertia ixx="2.0830677070314523e-05" iyy="5.0343002768616732e-05" izz="3.6132546490038836e-05" ixy="-4.8460051113829262e-08" ixz="-2.4576833398040075e-06" iyz="2.8690374089162315e-08" />
     </inertial>
-    <visual name="visual_090">
-      <origin xyz="3.5388358909927e-16 -1.1763593571468e-17 0.024547276295319" rpy="1.570796326794996 1.570796326794797 0" />
+    <visual name="visual_088">
+      <origin xyz="3.1571967262778e-16 -1.1709383462843e-17 0.024547276295319" rpy="1.5707963267949965 1.5707963267947966 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_090_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_088_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_090_ZP10D_vendor_passive_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_088_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_091">
-      <origin xyz="5.1694759584109e-16 -3.4342103813478e-17 -0.024543460925038" rpy="1.570796326794996 1.570796326794797 0" />
+    <visual name="visual_089">
+      <origin xyz="5.1000870193718e-16 -3.2526065174565e-17 -0.024543460925038" rpy="1.5707963267949965 1.5707963267947966 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_091_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_089_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_091_ZP10D_vendor_active_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_089_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_105">
-      <origin xyz="0.041211553231427 -0.00085295446546351 -0.011406546199103" rpy="1.570796326794996 1.570796326794797 0" />
+    <visual name="visual_103">
+      <origin xyz="0.032958533401368 -0.00011171958539141 -0.0056029957813594" rpy="1.5707963267949965 1.5707963267947966 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_105_left_roll_to_pitch.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_103_left_roll_to_pitch.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_105_left_roll_to_pitch">
-        <color rgba="0.6156783 0.0671737 0.0017921 1" />
+      <material name="visual_103_color">
+        <color rgba="1 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_106">
-      <origin xyz="0.064066969683009 -7.9138041807406e-08 0.006304067728614" rpy="1.570796326794996 1.570796326794797 0" />
+    <visual name="visual_104">
+      <origin xyz="0.058566969683009 -7.9138041248188e-08 0.0063040677286136" rpy="1.5707963267949965 1.5707963267947966 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_106_ZP10D_vendor_body.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_104_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_106_ZP10D_vendor_body">
-        <color rgba="0.0026579 0.0030609 0.0036426 1" />
+      <material name="visual_104_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
   </link>
   <link name="knee_and_ankle_assembly">
     <inertial>
-      <origin xyz="0.0069087846939841 -0.03298187040911 -0.0096871355416786" rpy="0 0 0" />
-      <mass value="0.11173255165962" />
-      <inertia ixx="0.000162127205287" iyy="8.6765442449723e-05" izz="0.0001630832797402" ixy="-3.5400231142948e-05" ixz="1.3173223553618e-05" iyz="3.2231919485991e-05" />
+      <origin xyz="0.0044729512906783002 -0.032640124999704 -0.0086586345239653001" rpy="0 0 0" />
+      <mass value="0.11206579934463" />
+      <inertia ixx="0.00015798762394439415" iyy="7.8038321991250354e-05" izz="0.00015591396319174095" ixy="-2.1780514376187052e-05" ixz="7.8903946674525808e-06" iyz="2.805277197423091e-05" />
     </inertial>
     <visual name="visual_000">
-      <origin xyz="0.019711970972491 -0.0016270015936319 -0.02759750635849" rpy="-1.570796326794798 6.52811138479592e-14 -7.471800955727304e-14" />
+      <origin xyz="0.012687350274793 -0.00092129829236347 -0.024827603150973" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_000_left_cache.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_000_left_cache">
-        <color rgba="0.8227858 0.8227858 0.8227858 0.35" />
+      <material name="visual_000_color">
+        <color rgba="1 1 1 1" />
       </material>
     </visual>
-    <visual name="visual_107">
-      <origin xyz="9.645062526431e-16 -2.0917783564306e-15 0.02454727629532" rpy="-1.570796326794798 6.52811138479592e-14 -7.471800955727304e-14" />
+    <visual name="visual_045">
+      <origin xyz="-2.1914159988312e-06 -0.027418413368196 -0.026805684555155" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_107_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_045_left_knee_to_ankle_left_sheet.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_107_ZP10D_vendor_passive_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_045_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_108">
-      <origin xyz="-2.1094237467878e-15 2.9664042489747e-15 -0.024543460925039" rpy="-1.570796326794798 6.52811138479592e-14 -7.471800955727304e-14" />
+    <visual name="visual_046">
+      <origin xyz="9.9615916445792e-05 -0.029894108969589 0.026243133855353" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_108_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_046_left_knee_to_ankle_right_sheet.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_108_ZP10D_vendor_active_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_046_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_109">
-      <origin xyz="2.1914027897862e-06 -0.027418413375048 0.026855684553011" rpy="-1.570796326794798 6.52811138479592e-14 -7.471800955727304e-14" />
+    <visual name="visual_047">
+      <origin xyz="-7.9138061513662e-08 -0.058269067728533 -0.00046696968305401" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_109_left_knee_to_ankle_left_sheet.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_047_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_109_left_knee_to_ankle_left_sheet">
-        <color rgba="0.0031676 0.0030609 0.0030609 1" />
+      <material name="visual_047_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_110">
-      <origin xyz="9.9615918972507e-05 -0.029894108973936 -0.026193133856967" rpy="-1.570796326794798 6.52811138479592e-14 -7.471800955727304e-14" />
+    <visual name="visual_050">
+      <origin xyz="-1.8220348840803e-11 -0.032765943703764 -2.6770721274647e-05" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_110_left_knee_to_ankle_right_sheet.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_050_leg_spacer.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_110_left_knee_to_ankle_right_sheet">
-        <color rgba="0.0031676 0.0030609 0.0030609 1" />
+      <material name="visual_050_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_111">
-      <origin xyz="-1.8219370456762e-11 -0.032765943706018 7.6770723267852e-05" rpy="-1.570796326794798 6.52811138479592e-14 -7.471800955727304e-14" />
+    <visual name="visual_105">
+      <origin xyz="9.9226182825873e-16 -2.092076512028e-15 0.02454727629532" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_111_leg_spacer.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_105_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_111_leg_spacer">
-        <color rgba="0.1168351 0.1168351 0.1168351 1" />
+      <material name="visual_105_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_112">
-      <origin xyz="7.9138014197344e-08 -0.058269067728531 0.00051696968298193" rpy="-1.570796326794798 6.52811138479592e-14 -7.471800955727304e-14" />
+    <visual name="visual_106">
+      <origin xyz="-2.1233015345956e-15 2.9663771439203e-15 -0.024543460925039" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_112_ZP10D_vendor_body.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_106_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_112_ZP10D_vendor_body">
-        <color rgba="0.0026579 0.0030609 0.0036426 1" />
+      <material name="visual_106_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
   </link>
   <link name="knee_and_ankle_assembly_2">
     <inertial>
-      <origin xyz="2.0026416150284e-07 -0.049877624753419 -0.00029591302571504" rpy="0 0 0" />
-      <mass value="0.072686580930857" />
-      <inertia ixx="4.4599749229866e-05" iyy="2.0470761329487e-05" izz="2.9359936787275e-05" ixy="-5.1972490174725e-11" ixz="-3.4799969280669e-10" iyz="5.6960763019151e-07" />
+      <origin xyz="-2.0262477805061e-07 -0.049877655603039001 0.00029589654951185998" rpy="0 0 0" />
+      <mass value="0.072686540614991996" />
+      <inertia ixx="4.459958821496902e-05" iyy="2.0470723747375567e-05" izz="2.9359809192761417e-05" ixy="6.0524524951468004e-11" ixz="-3.429057405350913e-10" iyz="-5.6954100424054634e-07" />
     </inertial>
-    <visual name="visual_052">
-      <origin xyz="2.4768104234241e-12 -0.030167624675044 -0.026397403182934" rpy="-1.570796326794798 6.52811138479592e-14 -8.071321389024888e-14" />
+    <visual name="visual_016">
+      <origin xyz="-1.8202418738955e-11 -0.032765943714296 0.00014822927881744" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_052_left_knee_to_ankle_right_sheet.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_016_leg_spacer.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_052_left_knee_to_ankle_right_sheet">
-        <color rgba="0.0031676 0.0030609 0.0030609 1" />
+      <material name="visual_016_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_053">
-      <origin xyz="2.1863816489776e-06 -0.027395219898311 0.026652602163962" rpy="-1.570796326794798 6.52811138479592e-14 -8.071321389024888e-14" />
+    <visual name="visual_017">
+      <origin xyz="-2.1863480928891e-06 -0.027395219696887 -0.026652602178033" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_053_left_knee_to_ankle_left_sheet.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_017_left_knee_to_ankle_left_sheet.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_053_left_knee_to_ankle_left_sheet">
-        <color rgba="0.0031676 0.0030609 0.0030609 1" />
+      <material name="visual_017_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_054">
-      <origin xyz="-1.8201419538233e-11 -0.032765943716554 -0.00014822927676132" rpy="-1.570796326794798 6.52811138479592e-14 -8.071321389024888e-14" />
+    <visual name="visual_018">
+      <origin xyz="-7.9138041793325e-08 -0.058269067728562 -0.00029196968295934" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_054_leg_spacer.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_018_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_054_leg_spacer">
-        <color rgba="0.1168351 0.1168351 0.1168351 1" />
+      <material name="visual_018_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_055">
-      <origin xyz="7.9138033862169e-08 -0.058269067728545 0.00029196968295124" rpy="-1.570796326794798 6.52811138479592e-14 -8.071321389024888e-14" />
+    <visual name="visual_021">
+      <origin xyz="-2.8239263240304e-08 -0.030167863177151 0.026397379454732" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_055_ZP10D_vendor_body.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_021_left_knee_to_ankle_right_sheet.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_055_ZP10D_vendor_body">
-        <color rgba="0.0026579 0.0030609 0.0036426 1" />
+      <material name="visual_021_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_113">
-      <origin xyz="-1.7902346272081e-15 7.0499162063697e-15 -0.024547276295321" rpy="-1.570796326794798 6.52811138479592e-14 -8.071321389024888e-14" />
+    <visual name="visual_048">
+      <origin xyz="-2.5812685322535e-15 1.9984014443253e-15 -0.024543460925015" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_113_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_048_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_113_ZP10D_vendor_passive_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_048_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_114">
-      <origin xyz="1.4571677198205e-15 -8.1185058675715e-15 0.02454346092504" rpy="-1.570796326794798 6.52811138479592e-14 -8.071321389024888e-14" />
+    <visual name="visual_049">
+      <origin xyz="5.3429483060086e-16 -3.1363800445661e-15 0.024547276295296" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_114_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_049_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_114_ZP10D_vendor_active_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_049_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
   </link>
   <link name="foot_assembly">
     <inertial>
-      <origin xyz="0.010886666679146 -0.024986402694214 -0.00076890776604188" rpy="0 0 0" />
-      <mass value="0.10029444256847" />
-      <inertia ixx="3.7490407984295e-05" iyy="0.00010225420251433" izz="8.0909178684357e-05" ixy="2.7366472832935e-06" ixz="6.6013899918187e-08" iyz="-2.9069497161003e-07" />
+      <origin xyz="0.010886770844138 -0.024986407711494001 0.00076873964850875998" rpy="0 0 0" />
+      <mass value="0.10029533290613001" />
+      <inertia ixx="3.7491074763990406e-05" iyy="0.00010225546800001465" izz="8.0909816022323045e-05" ixy="2.736637838890091e-06" ixz="-6.5950421133826425e-08" iyz="2.906464381851078e-07" />
     </inertial>
-    <visual name="visual_056">
-      <origin xyz="-2.3731017151363e-15 4.6879167214797e-14 -0.024547276295323" rpy="-1.570796326794798 6.550315845288424e-14 -8.060219158778636e-14" />
+    <visual name="visual_019">
+      <origin xyz="-2.5535129566379e-15 -2.470246229791e-15 -0.024543460925015" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_056_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_019_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_056_ZP10D_vendor_passive_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_019_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_057">
-      <origin xyz="1.4710455076283e-15 -4.1633363423443e-14 0.02454346092504" rpy="-1.570796326794798 6.550315845288424e-14 -8.060219158778636e-14" />
+    <visual name="visual_020">
+      <origin xyz="9.1593399531575e-16 -8.6319840164606e-15 0.024547276295298" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_057_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_020_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_057_ZP10D_vendor_active_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_020_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_083">
-      <origin xyz="0.0094705724842609 -0.019577655015361 -0.024836825341964" rpy="-1.570796326794798 6.550315845288424e-14 -8.060219158778636e-14" />
+    <visual name="visual_041">
+      <origin xyz="0.013905392167883 -0.034230011239502 0.0011526586456942" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_083_foot_side.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_041_foot_bottom_tpu.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_083_foot_side">
-        <color rgba="0.9027539 0.1854245 2.35e-05 1" />
+      <material name="visual_041_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_084">
-      <origin xyz="0.013905392167883 -0.034230011239553 -0.0011526586457221" rpy="-1.570796326794798 6.550315845288424e-14 -8.060219158778636e-14" />
+    <visual name="visual_042">
+      <origin xyz="0.0094708829291588 -0.019577641063586 0.024836838955001" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_084_foot_bottom_tpu.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_042_foot_side.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_084_foot_bottom_tpu">
-        <color rgba="0.0067161 0.0062453 0.0052095 1" />
+      <material name="visual_042_color">
+        <color rgba="1 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_085">
-      <origin xyz="0.010769260014959 -0.020112174725925 0.012830453437341" rpy="-1.570796326794798 6.550315845288424e-14 -8.060219158778636e-14" />
+    <visual name="visual_043">
+      <origin xyz="0.010769467317396 -0.020112351023661 -0.012830817185486" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_085_foot_top.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_043_foot_top.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_085_foot_top">
-        <color rgba="0.9027539 0.1854245 2.35e-05 1" />
+      <material name="visual_043_color">
+        <color rgba="1 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_086">
-      <origin xyz="0.0097980381686819 -0.026404327323752 -0.0015501355012888" rpy="-1.570796326794798 6.550315845288424e-14 -8.060219158778636e-14" />
+    <visual name="visual_044">
+      <origin xyz="0.0097980381686823 -0.026404327323701 0.0015501355012648" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_086_foot_bottom_pla.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_044_foot_bottom_pla.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_086_foot_bottom_pla">
-        <color rgba="0.0067161 0.0062453 0.0052095 1" />
+      <material name="visual_044_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
   </link>
   <link name="neck_pitch_assembly">
     <inertial>
-      <origin xyz="1.9680875808484e-07 0.048321537071225 0.00068221397117793" rpy="0 0 0" />
-      <mass value="0.068878972906325" />
-      <inertia ixx="4.1676757719299e-05" iyy="1.9791008641308e-05" izz="2.649131771396e-05" ixy="5.856787738891e-11" ixz="3.2736950469024e-10" iyz="1.3236710661081e-06" />
+      <origin xyz="1.9680875807963999e-07 0.048321537071226002 0.00068221397117793005" rpy="0 0 0" />
+      <mass value="0.068878972906324998" />
+      <inertia ixx="4.1676757719298017e-05" iyy="1.9791008641308003e-05" izz="2.6491317713957998e-05" ixy="6.21971419091512e-11" ixz="3.2667845413069656e-10" iyz="1.3236710661079978e-06" />
     </inertial>
     <visual name="visual_005">
-      <origin xyz="1.8310265757805e-06 0.026006330650996 -0.025945522263532" rpy="-1.570796326794897 0 -2.231548279496565e-14" />
+      <origin xyz="1.8310265757718e-06 0.026006330650996 -0.025945522263532" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_005_neck_left_sheet.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_005_neck_left_sheet">
-        <color rgba="0.0031676 0.0030609 0.0030609 1" />
+      <material name="visual_005_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_006">
-      <origin xyz="2.166669621495e-15 0.027992737167737 0.025458029767399" rpy="-1.570796326794897 0 -2.231548279496565e-14" />
+      <origin xyz="2.1632001745431e-15 0.027992737167737 0.025458029767399" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_006_neck_right_sheet.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_006_neck_right_sheet">
-        <color rgba="0.0031676 0.0030609 0.0030609 1" />
+      <material name="visual_006_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_007">
-      <origin xyz="7.913803749468e-08 0.055619067728551 -0.00039196968295354" rpy="-1.570796326794897 0 -2.231548279496565e-14" />
+      <origin xyz="7.9138037487742e-08 0.055619067728551 -0.00039196968295354" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_007_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_007_ZP10D_vendor_body">
-        <color rgba="0.0026579 0.0030609 0.0036426 1" />
+      <material name="visual_007_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_101">
-      <origin xyz="4.4235448637409e-16 1.5265566588596e-16 0.024547276295318" rpy="-1.570796326794897 0 -2.231548279496565e-14" />
+    <visual name="visual_099">
+      <origin xyz="4.4755865680202e-16 1.5265566588596e-16 0.024547276295318" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_101_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_099_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_101_ZP10D_vendor_passive_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_099_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_102">
-      <origin xyz="4.6664061503776e-16 2.7755575615629e-17 -0.024543460925037" rpy="-1.570796326794897 0 -2.231548279496565e-14" />
+    <visual name="visual_100">
+      <origin xyz="4.6664061503776e-16 4.1633363423443e-17 -0.024543460925037" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_102_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_100_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_102_ZP10D_vendor_active_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_100_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
   </link>
   <link name="head_pitch_to_yaw">
     <inertial>
-      <origin xyz="-0.0051945883378819 0.024320416237493 0.00043705656593284" rpy="0 0 0" />
-      <mass value="0.019610674563664" />
-      <inertia ixx="1.7937208172114e-05" iyy="7.7836536139998e-06" izz="1.2997635238032e-05" ixy="1.1892404438854e-06" ixz="1.959366736273e-09" iyz="-5.7822902305309e-08" />
+      <origin xyz="-0.0051945883378819004 0.024320416237492998 0.00043705656593283002" rpy="0 0 0" />
+      <mass value="0.019610674563663999" />
+      <inertia ixx="1.7937208172040933e-05" iyy="7.7836536130664157e-06" izz="1.2997635239039455e-05" ixy="1.1892404442554744e-06" ixz="1.959361377735764e-09" iyz="-5.7822855914060733e-08" />
     </inertial>
     <visual name="visual_004">
-      <origin xyz="-0.006932848893602 0.025619448385848 0.00036192134534301" rpy="-1.570796326794897 0 -2.231548279496565e-14" />
+      <origin xyz="-0.006932848893602 0.025619448385848 0.00036192134534301" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_004_head_pitch_to_yaw.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_004_head_pitch_to_yaw">
-        <color rgba="0.0159017 0.0159017 0.0159017 1" />
+      <material name="visual_004_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_008">
-      <origin xyz="4.2327252813834e-16 7.2164496600635e-16 0.024547276295318" rpy="-1.570796326794897 0 -2.231548279496565e-14" />
+      <origin xyz="4.3541559247018e-16 8.3266726846887e-16 0.024547276295318" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_008_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_008_ZP10D_vendor_passive_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_008_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_009">
-      <origin xyz="4.6317116808581e-16 5.5511151231258e-16 -0.024543460925037" rpy="-1.570796326794897 0 -2.231548279496565e-14" />
+      <origin xyz="4.6837533851374e-16 5.5511151231258e-16 -0.024543460925037" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_009_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_009_ZP10D_vendor_active_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_009_color">
+        <color rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <visual name="visual_034">
+      <origin xyz="3.9898639947467e-16 0.017027723704719 0.00062500000004743" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
+      <geometry>
+        <mesh filename="xmls/assets/current_034_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
+      </geometry>
+      <material name="visual_034_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_035">
-      <origin xyz="4.1806835771041e-16 0.01702772370472 0.00062500000004743" rpy="-1.570796326794897 0 -2.231548279496565e-14" />
+      <origin xyz="4.3021142204225e-16 0.06611846092508 0.00062500000004747" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_035_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_035_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_035_ZP10D_vendor_passive_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
-      </material>
-    </visual>
-    <visual name="visual_036">
-      <origin xyz="4.3888503942213e-16 0.06611846092508 0.00062500000004747" rpy="-1.570796326794897 0 -2.231548279496565e-14" />
-      <geometry>
-        <mesh filename="xmls/assets/current_036_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
-      </geometry>
-      <material name="color_current_036_ZP10D_vendor_active_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_035_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
   </link>
   <link name="neck_yaw_assembly">
     <inertial>
-      <origin xyz="0.010138257317405 -5.5189083414122e-06 -0.0060172066992004" rpy="0 0 0" />
-      <mass value="0.10033511012396" />
-      <inertia ixx="4.9345478133801e-05" iyy="8.6164263136462e-05" izz="9.2823392406879e-05" ixy="1.3432749592264e-08" ixz="-6.1507503398106e-06" iyz="2.2229680150453e-09" />
+      <origin xyz="0.011293260933733 -5.6375449111845996e-06 -0.0061309515453131999" rpy="0 0 0" />
+      <mass value="0.098223990685755005" />
+      <inertia ixx="4.9163044314879108e-05" iyy="7.980631437042203e-05" izz="8.6525841143256951e-05" ixy="1.2792776552538867e-08" ixz="-6.7640511515019743e-06" iyz="2.2857949610996216e-09" />
     </inertial>
-    <visual name="visual_034">
-      <origin xyz="0.010380932271439 -7.913803706783e-08 0.00039196968295266" rpy="6.050876260732694e-17 2.242650509742816e-14 8.361832046355668e-17" />
+    <visual name="visual_033">
+      <origin xyz="0.010380932271439 -7.9138037068209e-08 0.0003919696829526" rpy="6.0508762607326939e-17 2.2426505097428162e-14 8.361832046355668e-17" />
       <geometry>
-        <mesh filename="xmls/assets/current_034_ZP10D_vendor_body.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_033_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_034_ZP10D_vendor_body">
-        <color rgba="0.0026579 0.0030609 0.0036426 1" />
+      <material name="visual_033_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_037">
-      <origin xyz="0.0067335754913767 -1.2394310134952e-05 -0.014050745696069" rpy="6.050876260732694e-17 2.242650509742816e-14 8.361832046355668e-17" />
+    <visual name="visual_036">
+      <origin xyz="0.0092501868476958 -1.3014046717668e-05 -0.014717007519792" rpy="6.0508762607326939e-17 2.2426505097428162e-14 8.361832046355668e-17" />
       <geometry>
-        <mesh filename="xmls/assets/current_037_head_yaw_to_roll.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_036_head_yaw_to_roll.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_037_head_yaw_to_roll">
-        <color rgba="0.1168351 0.1168351 0.1168351 1" />
+      <material name="visual_036_color">
+        <color rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <visual name="visual_078">
+      <origin xyz="0.091493460925053 -8.8131054103852e-14 -0.00072500000005157" rpy="6.0508762607326939e-17 2.2426505097428162e-14 8.361832046355668e-17" />
+      <geometry>
+        <mesh filename="xmls/assets/current_078_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
+      </geometry>
+      <material name="visual_078_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_079">
-      <origin xyz="0.091493460925053 -8.813082371089e-14 -0.0007250000000516" rpy="6.050876260732694e-17 2.242650509742816e-14 8.361832046355668e-17" />
+      <origin xyz="0.042402723704692 -8.7142465010452e-14 -0.00072500000004994" rpy="6.0508762607326939e-17 2.2426505097428162e-14 8.361832046355668e-17" />
       <geometry>
-        <mesh filename="xmls/assets/current_079_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_079_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_079_ZP10D_vendor_passive_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
-      </material>
-    </visual>
-    <visual name="visual_080">
-      <origin xyz="0.042402723704692 -8.7141651858823e-14 -0.00072500000004991" rpy="6.050876260732694e-17 2.242650509742816e-14 8.361832046355668e-17" />
-      <geometry>
-        <mesh filename="xmls/assets/current_080_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
-      </geometry>
-      <material name="color_current_080_ZP10D_vendor_active_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_079_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
   </link>
   <link name="head_assembly">
     <inertial>
-      <origin xyz="0.0083199383070281 0.00069390607727194 0.033531631384025" rpy="0 0 0" />
-      <mass value="0.35788949393399" />
-      <inertia ixx="0.0019324708869684" iyy="0.0013158817266252" izz="0.0008942263437177" ixy="-5.5053054481222e-06" ixz="6.5939212047108e-05" iyz="2.4510384337347e-05" />
+      <origin xyz="0.0083679508842983003 0.00069557350027369996 0.033202548291667001" rpy="0 0 0" />
+      <mass value="0.35687953660748001" />
+      <inertia ixx="0.0019182352711186919" iyy="0.0013016406169839097" izz="0.00089022988090179972" ixy="-5.493550571254401e-06" ixz="6.4277459811456686e-05" iyz="2.4435645230811183e-05" />
     </inertial>
-    <visual name="visual_058">
-      <origin xyz="0.031115401746722 0.047309289296027 0.032494014309843" rpy="6.050876260414067e-17 1.570796326794869 0" />
+    <visual name="visual_057">
+      <origin xyz="0.031115401746721 0.047309289296027 0.032494014309843" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_058_RaspberryPiZeroW.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_057_RaspberryPiZeroW.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_058_RaspberryPiZeroW">
-        <color rgba="0.0033957 0.013327 0.1758904 1" />
+      <material name="visual_057_color">
+        <color rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <visual name="visual_058">
+      <origin xyz="0.015480302149879 0.087934960036703 -0.019555198392109" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <geometry>
+        <mesh filename="xmls/assets/current_058_flash_reflector_interface.stl" scale="1 1 1" />
+      </geometry>
+      <material name="visual_058_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_059">
-      <origin xyz="0.015480302149879 0.087934960036703 -0.019555198392109" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="0.0089234138311228 -0.061052130347606 0.0056437801550443" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_059_flash_reflector_interface.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_059_speaker_interface.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_059_flash_reflector_interface">
-        <color rgba="0.1168351 0.1168351 0.1168351 1" />
+      <material name="visual_059_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_060">
-      <origin xyz="0.0089234138310666 -0.061052130347586 0.0056437801549236" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="2.5535129566379e-15 8.8060702935384e-14 0.11023571428572" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_060_speaker_interface.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_060_roll_bearing.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_060_speaker_interface">
-        <color rgba="0.093007 0.3472328 0.6863463 1" />
+      <material name="visual_060_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_061">
-      <origin xyz="-7.1886940844479e-15 4.7395288106482e-14 0.11154999999991" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="0.015228320161198 0.00085012312370085 0.046308222538746" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_061_roll_bearing.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_061_head.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_061_roll_bearing">
-        <color rgba="0.0827603 0.0827603 0.0827603 1" />
+      <material name="visual_061_color">
+        <color rgba="1 1 1 0.35" />
       </material>
     </visual>
     <visual name="visual_062">
-      <origin xyz="0.015039683497625 0.00084423334809217 0.046849171136711" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="0.010349999999985 0.040000000000049 -0.035052389907557" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_062_head.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_062_left_eye.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_062_head">
-        <color rgba="0.8227858 0.8227858 0.8227858 0.35" />
+      <material name="visual_062_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_063">
-      <origin xyz="0.010349999999985 0.040000000000049 -0.035052389907557" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="0.01035 -0.039999999999951 -0.03606326287174" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_063_left_eye.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_063_right_eye.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_063_left_eye">
-        <color rgba="0.0370443 0.0370443 0.0370443 1" />
+      <material name="visual_063_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_064">
-      <origin xyz="0.01035 -0.039999999999951 -0.03606326287174" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="0.028417419003479 -0.048639797834638 0.0081911815309417" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_064_right_eye.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_064_speaker_stand.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_064_right_eye">
-        <color rgba="0.0100071 0.0128613 0.0159017 1" />
+      <material name="visual_064_color">
+        <color rgba="1 0 0 1" />
       </material>
     </visual>
     <visual name="visual_065">
-      <origin xyz="0.028417419003495 -0.048639797834627 0.0081911815309449" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="0.014802594354108 0.086072838039482 -0.010004697069625" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_065_speaker_stand.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_065_flash_light_module.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_065_speaker_stand">
-        <color rgba="0.9027539 0.1854245 2.35e-05 1" />
+      <material name="visual_065_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_066">
-      <origin xyz="0.014802594354108 0.086072838039482 -0.010004697069625" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="0.010349999999999 -0.039999999999952 -0.040324999999991" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_066_flash_light_module.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_066_glass.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_066_flash_light_module">
-        <color rgba="0.0100071 0.0128613 0.0159017 1" />
+      <material name="visual_066_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_067">
-      <origin xyz="0.010349999999999 -0.039999999999952 -0.040324999999991" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="0.010349999999999 0.040000000000045 -0.036324999999991" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_067_glass.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_067_glass">
-        <color rgba="0.2524193 0.4097434 0.6716914 1" />
+      <material name="visual_067_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_068">
-      <origin xyz="0.010349999999999 0.040000000000045 -0.036324999999991" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="-0.023470892755395 -0.00011413248543653 0.033457572739521" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_068_glass.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_068_head_bot_sheet.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_068_glass">
-        <color rgba="0.2524193 0.4097434 0.6716914 1" />
+      <material name="visual_068_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_069">
-      <origin xyz="-0.023470892755395 -0.00011413248543652 0.033457572739521" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="0.028109885340172 3.2653650102764e-07 -0.0013554245166428" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_069_head_bot_sheet.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_069_head_roll_mount.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_069_head_bot_sheet">
-        <color rgba="0.0176607 0.0176607 0.0176607 1" />
+      <material name="visual_069_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_070">
-      <origin xyz="0.028109885340172 3.2653650103249e-07 -0.0013554245166427" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="-0.0003912124203537 0.04365449395286 0.1225243026201" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_070_head_roll_mount.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_070_sg90.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_070_head_roll_mount">
-        <color rgba="0.0382634 0.0382634 0.0382634 1" />
+      <material name="visual_070_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_071">
-      <origin xyz="-0.00039121242035398 0.04365449395286 0.1225243026201" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="0.0092544757084878 -0.061915128977142 0.0044278905278421" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_071_sg90.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_071_speaker_bottom.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_071_sg90">
-        <color rgba="0.0217268 0.1379992 0.8842915 1" />
+      <material name="visual_071_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_072">
-      <origin xyz="0.0092544757084327 -0.061915128977122 0.0044278905277205" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="0.012688631117734 -0.071289730105132 0.0059500000001479" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_072_speaker_bottom.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_072_speaker_top.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_072_speaker_bottom">
-        <color rgba="0.093007 0.3472328 0.6863463 1" />
+      <material name="visual_072_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_073">
-      <origin xyz="0.012688631117678 -0.071289730105112 0.0059500000000225" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="0.023984302693565 -0.0021107571707095 -0.027241379688202" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_073_speaker_top.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_073_Cam.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_073_speaker_top">
-        <color rgba="0.093007 0.3472328 0.6863463 1" />
+      <material name="visual_073_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_074">
-      <origin xyz="0.023984302693565 -0.0021107571707095 -0.027241379688202" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="0.010349999999998 -0.039999999999952 -0.029081754098756" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_074_Cam.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_074_bulb.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_074_Cam">
-        <color rgba="0.1013965 0.1013965 0.1013965 1" />
+      <material name="visual_074_color">
+        <color rgba="1 0 0 1" />
       </material>
     </visual>
     <visual name="visual_075">
-      <origin xyz="0.010349999999998 -0.039999999999952 -0.029081754098756" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="0.010349999999998 0.040000000000045 -0.029081754098756" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_075_bulb.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_075_bulb">
-        <color rgba="0.8661474 0.0478405 2.35e-05 1" />
+      <material name="visual_075_color">
+        <color rgba="1 0 0 1" />
       </material>
     </visual>
     <visual name="visual_076">
-      <origin xyz="0.010349999999998 0.040000000000045 -0.029081754098755" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="0.010349999999999 -0.039999999999952 -0.038474999999991" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_076_bulb.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_076_glass.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_076_bulb">
-        <color rgba="0.8661474 0.0478405 2.35e-05 1" />
+      <material name="visual_076_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_077">
-      <origin xyz="0.010349999999999 -0.039999999999952 -0.038474999999991" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="0.010380932271155 7.9137992886144e-08 -0.00039196968464103" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_077_glass.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_077_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_077_glass">
-        <color rgba="0.2524193 0.4097434 0.6716914 1" />
+      <material name="visual_077_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_078">
-      <origin xyz="0.010380932271155 7.9137992885602e-08 -0.00039196968464092" rpy="6.050876260414067e-17 1.570796326794869 0" />
+    <visual name="visual_080">
+      <origin xyz="0.010349999999999 0.040000000000045 -0.034474999999991" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_078_ZP10D_vendor_body.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_080_glass.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_078_ZP10D_vendor_body">
-        <color rgba="0.0026579 0.0030609 0.0036426 1" />
+      <material name="visual_080_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_081">
-      <origin xyz="0.010349999999999 0.040000000000045 -0.034474999999991" rpy="6.050876260414067e-17 1.570796326794869 0" />
+      <origin xyz="-0.0003912124203512 -0.043654493952755 0.1225243026201" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_081_glass.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_081_sg90.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_081_glass">
-        <color rgba="0.2524193 0.4097434 0.6716914 1" />
-      </material>
-    </visual>
-    <visual name="visual_082">
-      <origin xyz="-0.00039121242035145 -0.043654493952755 0.1225243026201" rpy="6.050876260414067e-17 1.570796326794869 0" />
-      <geometry>
-        <mesh filename="xmls/assets/current_082_sg90.stl" scale="1 1 1" />
-      </geometry>
-      <material name="color_current_082_sg90">
-        <color rgba="0.0217268 0.1379992 0.8842915 1" />
+      <material name="visual_081_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
   </link>
   <link name="left_antenna_assembly">
     <inertial>
-      <origin xyz="-0.0053798117154304 -0.0010676421144501 0.0081158593120984" rpy="0 0 0" />
-      <mass value="0.0042163250055487" />
-      <inertia ixx="3.6041949756308e-06" iyy="3.6193219378523e-06" izz="4.2690742574742e-07" ixy="-1.7938950236281e-08" ixz="-1.6218244085582e-07" iyz="7.6663155403575e-07" />
+      <origin xyz="-0.0053798117154303 -0.0010676421144501999 0.0081158593120987006" rpy="0 0 0" />
+      <mass value="0.0042163250055487003" />
+      <inertia ixx="3.6041951905924155e-06" iyy="3.6193217257640124e-06" izz="4.2690742287409996e-07" ixy="-1.7939306535160043e-08" ixz="-1.6218253181812295e-07" iyz="7.6663152259319368e-07" />
     </inertial>
     <visual name="visual_002">
-      <origin xyz="-0.00092079309023956 -0.012179917566446 0.062023990522414" rpy="0 0 0" />
+      <origin xyz="-0.00092079309023957 -0.012179917566446 0.062023990522414" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_002_antenna.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_002_antenna">
-        <color rgba="0.1168351 0.1168351 0.1168351 1" />
+      <material name="visual_002_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_010">
-      <origin xyz="-0.0060390981725442 0.00057535903199732 0.00014529362876861" rpy="0 0 0" />
+      <origin xyz="-0.0060390981725441 0.00057535903199725 0.00014529362876897" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_010_left_antenna_holder.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_010_left_antenna_holder">
-        <color rgba="0.9027539 0.1854245 2.35e-05 1" />
+      <material name="visual_010_color">
+        <color rgba="1 0 0 1" />
       </material>
     </visual>
   </link>
   <link name="right_antenna_assembly">
     <inertial>
-      <origin xyz="-0.0053798099550232 0.0010999137637844 0.0082436559524587" rpy="0 0 0" />
-      <mass value="0.0042163228919289" />
-      <inertia ixx="3.6658066862172e-06" iyy="3.6778798455654e-06" izz="4.2996085949277e-07" ixy="1.7332209606924e-08" ixz="-1.6458495709284e-07" iyz="-7.8007144596188e-07" />
+      <origin xyz="-0.0053798099550232004 0.0010999137637844999 0.0082436559524589996" rpy="0 0 0" />
+      <mass value="0.0042163228919289003" />
+      <inertia ixx="3.6658068959386737e-06" iyy="3.6778796386629375e-06" izz="4.2996085667376707e-07" ixy="1.7332557440928505e-08" ixz="-1.6458504588331208e-07" iyz="-7.8007141525384955e-07" />
     </inertial>
     <visual name="visual_001">
-      <origin xyz="-0.0060390965312176 -0.0005753590469689 0.00014529377030018" rpy="0 0 0" />
+      <origin xyz="-0.0060390965312176 -0.0005753590469688 0.00014529377030051" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_001_right_antenna_holder.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_001_right_antenna_holder">
-        <color rgba="0.9027539 0.1854245 2.35e-05 1" />
+      <material name="visual_001_color">
+        <color rgba="1 0 0 1" />
       </material>
     </visual>
     <visual name="visual_011">
-      <origin xyz="-0.00092079309022002 0.012430448899832 0.063016094602689" rpy="0 0 0" />
+      <origin xyz="-0.00092079309022003 0.012430448899832 0.063016094602689" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_011_antenna.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_011_antenna">
-        <color rgba="0.1168351 0.1168351 0.1168351 1" />
+      <material name="visual_011_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
   </link>
   <link name="hip_roll_assembly_2">
     <inertial>
-      <origin xyz="0.00081482821444629 6.5844047570247e-05 -0.053868791208005" rpy="0 0 0" />
-      <mass value="0.061492786032159" />
-      <inertia ixx="1.3560189945493e-05" iyy="1.9963165634475e-05" izz="1.0688023564713e-05" ixy="1.7322569476677e-08" ixz="-5.3883101545565e-08" iyz="7.3111943676838e-09" />
+      <origin xyz="0.00066369247204260998 4.5658194590595997e-06 -0.049283995554749001" rpy="0 0 0" />
+      <mass value="0.060501056822018999" />
+      <inertia ixx="1.2187059936411598e-05" iyy="1.9008785424602155e-05" izz="1.0701982458989239e-05" ixy="5.7196336185790439e-09" ixz="1.2512515407968635e-07" iyz="-2.9866328732389318e-09" />
     </inertial>
     <visual name="visual_012">
-      <origin xyz="-0.0011639158363894 0.00012055492790379 -0.031597360863358" rpy="2.957164716583772e-16 2.220446049250313e-14 1.23641065289942e-14" />
+      <origin xyz="0.0021781792219576 4.749306680845e-05 -0.046800879073577" rpy="2.9571647165837716e-16 2.2204460492503131e-14 1.2364106528994203e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_012_roll_motor_top.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_012_roll_motor_top_bottom.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_012_roll_motor_top">
-        <color rgba="0.5891826 0.5891826 0.5891826 1" />
+      <material name="visual_012_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_013">
-      <origin xyz="-0.00032999863521888 0.00089654895505913 -0.073721117669335" rpy="2.957164716583772e-16 2.220446049250313e-14 1.23641065289942e-14" />
+      <origin xyz="0.00051696968302297 7.9138109870813e-08 -0.050119067728522" rpy="2.9571647165837716e-16 2.2204460492503131e-14 1.2364106528994203e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_013_roll_motor_bottom.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_013_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_013_roll_motor_bottom">
-        <color rgba="0.1168351 0.1168351 0.1168351 1" />
+      <material name="visual_013_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_014">
-      <origin xyz="0.0010169696830229 7.9138109877752e-08 -0.054059067728522" rpy="2.957164716583772e-16 2.220446049250313e-14 1.23641065289942e-14" />
+    <visual name="visual_102">
+      <origin xyz="-4.9266146717741e-16 -9.5062846483529e-16 -0.02454346092504" rpy="2.9571647165837716e-16 2.2204460492503131e-14 1.2364106528994203e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_014_ZP10D_vendor_body.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_102_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_014_ZP10D_vendor_body">
-        <color rgba="0.0026579 0.0030609 0.0036426 1" />
-      </material>
-    </visual>
-    <visual name="visual_104">
-      <origin xyz="-5.0306980803327e-16 -9.575673587392e-16 -0.02454346092504" rpy="2.957164716583772e-16 2.220446049250313e-14 1.23641065289942e-14" />
-      <geometry>
-        <mesh filename="xmls/assets/current_104_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
-      </geometry>
-      <material name="color_current_104_ZP10D_vendor_active_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_102_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
   </link>
   <link name="right_roll_to_pitch_assembly">
     <inertial>
-      <origin xyz="-0.054821098674799 -0.0002737096311581 0.00045230171527352" rpy="0 0 0" />
-      <mass value="0.082471314368613" />
-      <inertia ixx="2.8478977098144e-05" iyy="6.323374796532e-05" izz="4.2892327386453e-05" ixy="-2.064247595135e-07" ixz="2.3823792221852e-06" iyz="-2.3562909818547e-07" />
+      <origin xyz="-0.049828746515858002 -2.9839339020084998e-05 0.0029366967429346998" rpy="0 0 0" />
+      <mass value="0.076472926706915995" />
+      <inertia ixx="2.0828397501088859e-05" iyy="5.0338970166070105e-05" izz="3.6130516731863002e-05" ixy="4.8644792915667825e-08" ixz="2.4559778350771321e-06" iyz="2.8667837749874371e-08" />
     </inertial>
-    <visual name="visual_015">
-      <origin xyz="4.6872228320893e-15 -3.4557453469988e-15 0.02454727629532" rpy="1.570796326794786 1.570796326794865 0" />
+    <visual name="visual_014">
+      <origin xyz="4.6802839381854e-15 -3.4560028450148e-15 0.02454727629532" rpy="1.5707963267947864 1.570796326794865 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_015_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_014_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_015_ZP10D_vendor_passive_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_014_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_016">
-      <origin xyz="-3.4174052476743e-15 3.4125263378981e-15 -0.024543460925034" rpy="1.570796326794786 1.570796326794865 0" />
+    <visual name="visual_015">
+      <origin xyz="-3.4174052476743e-15 3.4130684389844e-15 -0.024543460925034" rpy="1.5707963267947864 1.570796326794865 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_016_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_015_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_016_ZP10D_vendor_active_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_015_color">
+        <color rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <visual name="visual_037">
+      <origin xyz="-0.032959878141442 -0.00011166643585505 -0.0056009609938923" rpy="1.5707963267947864 1.570796326794865 0" />
+      <geometry>
+        <mesh filename="xmls/assets/current_037_right_roll_to_pitch.stl" scale="1 1 1" />
+      </geometry>
+      <material name="visual_037_color">
+        <color rgba="1 0 0 1" />
       </material>
     </visual>
     <visual name="visual_038">
-      <origin xyz="-0.041211582685882 -0.00085290174464131 -0.011406458234176" rpy="1.570796326794786 1.570796326794865 0" />
+      <origin xyz="-0.058566969682959 7.9138032861668e-08 0.0063040677286099" rpy="1.5707963267947864 1.570796326794865 0" />
       <geometry>
-        <mesh filename="xmls/assets/current_038_right_roll_to_pitch.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_038_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_038_right_roll_to_pitch">
-        <color rgba="0.6156783 0.0671737 0.0017921 1" />
-      </material>
-    </visual>
-    <visual name="visual_039">
-      <origin xyz="-0.064066969682959 7.9138032259868e-08 0.0063040677286098" rpy="1.570796326794786 1.570796326794865 0" />
-      <geometry>
-        <mesh filename="xmls/assets/current_039_ZP10D_vendor_body.stl" scale="1 1 1" />
-      </geometry>
-      <material name="color_current_039_ZP10D_vendor_body">
-        <color rgba="0.0026579 0.0030609 0.0036426 1" />
+      <material name="visual_038_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
   </link>
   <link name="knee_and_ankle_assembly_3">
     <inertial>
-      <origin xyz="0.0069085237618347 0.032981875536455 -0.0096871280993791" rpy="0 0 0" />
-      <mass value="0.11173251119318" />
-      <inertia ixx="0.00016212717995984" iyy="8.6765823506596e-05" izz="0.00016308366969803" ixy="3.5400615476025e-05" ixz="1.3174190696288e-05" iyz="-3.2231907798175e-05" />
+      <origin xyz="0.0044734802899627996 0.032642098032529002 -0.0086396796233400002" rpy="0 0 0" />
+      <mass value="0.11205902561448" />
+      <inertia ixx="0.00015791322484168824" iyy="7.7970413233374332e-05" izz="0.00015590590109460924" ixy="2.1780961332972419e-05" ixz="7.875300278936944e-06" iyz="-2.7985255789142668e-05" />
     </inertial>
     <visual name="visual_003">
-      <origin xyz="0.019711979778296 0.0016269838048653 -0.027597503644031" rpy="1.570796326794784 -1.176836406102666e-14 -1.525446435834965e-13" />
+      <origin xyz="0.012689528402896 0.00092145647593227 -0.024776545227686" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
       <geometry>
         <mesh filename="xmls/assets/current_003_right_cache.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_003_right_cache">
-        <color rgba="0.8227858 0.8227858 0.8227858 0.35" />
+      <material name="visual_003_color">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <visual name="visual_039">
+      <origin xyz="-8.0491169285324e-16 3.0704605524789e-16 0.024547276295253" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
+      <geometry>
+        <mesh filename="xmls/assets/current_039_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
+      </geometry>
+      <material name="visual_039_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
     <visual name="visual_040">
-      <origin xyz="-8.673617379884e-16 3.0719513304661e-16 0.024547276295253" rpy="1.570796326794784 -1.176836406102666e-14 -1.525446435834965e-13" />
+      <origin xyz="-2.4286128663675e-16 5.6205040621649e-16 -0.024543460925028" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
       <geometry>
-        <mesh filename="xmls/assets/current_040_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_040_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_040_ZP10D_vendor_passive_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_040_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_041">
-      <origin xyz="-2.4980018054066e-16 5.6171159303758e-16 -0.024543460925028" rpy="1.570796326794784 -1.176836406102666e-14 -1.525446435834965e-13" />
+    <visual name="visual_107">
+      <origin xyz="2.1914028321551e-06 0.02741841337507 -0.026805684553102" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
       <geometry>
-        <mesh filename="xmls/assets/current_041_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_107_left_knee_to_ankle_left_sheet.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_041_ZP10D_vendor_active_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_107_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_046">
-      <origin xyz="-2.1914160199185e-06 0.027418413383048 0.026855684562034" rpy="1.570796326794784 -1.176836406102666e-14 -1.525446435834965e-13" />
+    <visual name="visual_108">
+      <origin xyz="9.9615918980923e-05 0.029894108973933 0.026243133856854" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
       <geometry>
-        <mesh filename="xmls/assets/current_046_left_knee_to_ankle_left_sheet.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_108_left_knee_to_ankle_right_sheet.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_046_left_knee_to_ankle_left_sheet">
-        <color rgba="0.0031676 0.0030609 0.0030609 1" />
+      <material name="visual_108_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_047">
-      <origin xyz="9.9615916451037e-05 0.029894108969575 -0.026193133855465" rpy="1.570796326794784 -1.176836406102666e-14 -1.525446435834965e-13" />
+    <visual name="visual_109">
+      <origin xyz="-1.8211897268028e-11 0.03276594370601 -2.6770723381309e-05" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
       <geometry>
-        <mesh filename="xmls/assets/current_047_left_knee_to_ankle_right_sheet.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_109_leg_spacer.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_047_left_knee_to_ankle_right_sheet">
-        <color rgba="0.0031676 0.0030609 0.0030609 1" />
+      <material name="visual_109_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_048">
-      <origin xyz="-7.9138048204863e-08 0.058269067728525 0.00051696968293509" rpy="1.570796326794784 -1.176836406102666e-14 -1.525446435834965e-13" />
+    <visual name="visual_110">
+      <origin xyz="7.913802733267e-08 0.058269067728522 -0.00046696968310103" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
       <geometry>
-        <mesh filename="xmls/assets/current_048_ZP10D_vendor_body.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_110_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_048_ZP10D_vendor_body">
-        <color rgba="0.0026579 0.0030609 0.0036426 1" />
-      </material>
-    </visual>
-    <visual name="visual_051">
-      <origin xyz="-1.8212889529856e-11 0.032765943703755 7.6770721161176e-05" rpy="1.570796326794784 -1.176836406102666e-14 -1.525446435834965e-13" />
-      <geometry>
-        <mesh filename="xmls/assets/current_051_leg_spacer.stl" scale="1 1 1" />
-      </geometry>
-      <material name="color_current_051_leg_spacer">
-        <color rgba="0.1168351 0.1168351 0.1168351 1" />
+      <material name="visual_110_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
   </link>
   <link name="knee_and_ankle_assembly_4">
     <inertial>
-      <origin xyz="-2.0262476917564e-07 -0.049877655603039 0.00029589654952237" rpy="0 0 0" />
-      <mass value="0.072686540614992" />
-      <inertia ixx="4.4599588214971e-05" iyy="2.0470723747265e-05" izz="2.9359809192877e-05" ixy="6.0525199036202e-11" ixz="-3.4290574605855e-10" iyz="-5.695410033666e-07" />
+      <origin xyz="2.0026417036084999e-07 -0.049877624753419003 -0.00029591302570442001" rpy="0 0 0" />
+      <mass value="0.072686580930858002" />
+      <inertia ixx="4.4599749229865009e-05" iyy="2.0470761329487001e-05" izz="2.9359936787274002e-05" ixy="-2.2329307682465748e-11" ixz="-3.4989143145400105e-10" iyz="5.6960763019324025e-07" />
     </inertial>
-    <visual name="visual_017">
-      <origin xyz="-1.81965623125e-11 -0.032765943714296 0.00014822927882439" rpy="-1.57079632679501 1.176836406102666e-14 9.758860386455126e-14" />
+    <visual name="visual_051">
+      <origin xyz="2.4838534007365e-12 -0.03016762467505 -0.026397403182927" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_017_leg_spacer.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_051_left_knee_to_ankle_right_sheet.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_017_leg_spacer">
-        <color rgba="0.1168351 0.1168351 0.1168351 1" />
+      <material name="visual_051_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_018">
-      <origin xyz="-2.1863480864637e-06 -0.027395219696893 -0.026652602178028" rpy="-1.57079632679501 1.176836406102666e-14 9.758860386455126e-14" />
+    <visual name="visual_052">
+      <origin xyz="2.1863816521625e-06 -0.027395219898305 0.026652602163968" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_018_left_knee_to_ankle_left_sheet.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_052_left_knee_to_ankle_left_sheet.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_018_left_knee_to_ankle_left_sheet">
-        <color rgba="0.0031676 0.0030609 0.0030609 1" />
+      <material name="visual_052_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_019">
-      <origin xyz="-7.9138031384984e-08 -0.058269067728562 -0.00029196968294706" rpy="-1.57079632679501 1.176836406102666e-14 9.758860386455126e-14" />
+    <visual name="visual_053">
+      <origin xyz="-1.8195597806248e-11 -0.032765943716555 -0.00014822927675461" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_019_ZP10D_vendor_body.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_053_leg_spacer.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_019_ZP10D_vendor_body">
-        <color rgba="0.0026579 0.0030609 0.0036426 1" />
+      <material name="visual_053_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_022">
-      <origin xyz="-2.8239259416973e-08 -0.030167863177145 0.026397379454738" rpy="-1.57079632679501 1.176836406102666e-14 9.758860386455126e-14" />
+    <visual name="visual_054">
+      <origin xyz="7.9138044180305e-08 -0.058269067728545 0.00029196968296366" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_022_left_knee_to_ankle_right_sheet.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_054_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_022_left_knee_to_ankle_right_sheet">
-        <color rgba="0.0031676 0.0030609 0.0030609 1" />
+      <material name="visual_054_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_049">
-      <origin xyz="-1.2628786905111e-15 -3.1641356201817e-15 -0.024543460925015" rpy="-1.57079632679501 1.176836406102666e-14 9.758860386455126e-14" />
+    <visual name="visual_111">
+      <origin xyz="-3.9551695252271e-16 1.8041124150159e-15 -0.024547276295321" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_049_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_111_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_049_ZP10D_vendor_active_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_111_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_050">
-      <origin xyz="-7.9797279894933e-16 2.0816681711722e-15 0.024547276295296" rpy="-1.57079632679501 1.176836406102666e-14 9.758860386455126e-14" />
+    <visual name="visual_112">
+      <origin xyz="1.5959455978987e-16 -2.9976021664879e-15 0.02454346092504" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
       <geometry>
-        <mesh filename="xmls/assets/current_050_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_112_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_050_ZP10D_vendor_passive_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_112_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
   </link>
   <link name="foot_assembly_2">
     <inertial>
-      <origin xyz="0.010886770843975 -0.024986407711486 0.00076873964863594" rpy="0 0 0" />
-      <mass value="0.10029533290657" />
-      <inertia ixx="3.7491074763933e-05" iyy="0.00010225546795105" izz="8.0909816073342e-05" ixy="2.7366378331621e-06" ixz="-6.595034157162e-08" iyz="2.9064831494427e-07" />
+      <origin xyz="0.010886666679152999 -0.024986402694212002 -0.00076890776603460997" rpy="0 0 0" />
+      <mass value="0.10029444256847" />
+      <inertia ixx="3.7490407984681448e-05" iyy="0.00010225420256439343" izz="8.0909178633909172e-05" ixy="2.7366472889305866e-06" ixz="6.6013979177031264e-08" iyz="-2.9069309134225844e-07" />
     </inertial>
-    <visual name="visual_020">
-      <origin xyz="-1.2559397966072e-15 -7.6605388699136e-15 -0.024543460925015" rpy="-1.57079632679501 1.221245327087672e-14 1.163513729807164e-13" />
+    <visual name="visual_055">
+      <origin xyz="-1.04777297949e-15 4.1605607847828e-14 -0.024547276295323" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
       <geometry>
-        <mesh filename="xmls/assets/current_020_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_055_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_020_ZP10D_vendor_active_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_055_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_021">
-      <origin xyz="-3.4694469519536e-16 -3.3306690738755e-15 0.024547276295298" rpy="-1.57079632679501 1.221245327087672e-14 1.163513729807164e-13" />
+    <visual name="visual_056">
+      <origin xyz="1.5959455978987e-16 -3.6415315207705e-14 0.02454346092504" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
       <geometry>
-        <mesh filename="xmls/assets/current_021_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_056_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_021_ZP10D_vendor_passive_horn">
-        <color rgba="0.1306056 0.1538708 0.1806037 1" />
+      <material name="visual_056_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_042">
-      <origin xyz="0.013905392167884 -0.034230011239499 0.0011526586457055" rpy="-1.57079632679501 1.221245327087672e-14 1.163513729807164e-13" />
+    <visual name="visual_082">
+      <origin xyz="0.0094705724842705 -0.019577655015364 -0.024836825341959" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
       <geometry>
-        <mesh filename="xmls/assets/current_042_foot_bottom_tpu.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_082_foot_side.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_042_foot_bottom_tpu">
-        <color rgba="0.0067161 0.0062453 0.0052095 1" />
+      <material name="visual_082_color">
+        <color rgba="1 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_043">
-      <origin xyz="0.0094708829281043 -0.019577641063698 0.024836838955099" rpy="-1.57079632679501 1.221245327087672e-14 1.163513729807164e-13" />
+    <visual name="visual_083">
+      <origin xyz="0.013905392167895 -0.03423001123955 -0.0011526586457108" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
       <geometry>
-        <mesh filename="xmls/assets/current_043_foot_side.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_083_foot_bottom_tpu.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_043_foot_side">
-        <color rgba="0.9027539 0.1854245 2.35e-05 1" />
+      <material name="visual_083_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_044">
-      <origin xyz="0.010769467317401 -0.020112351023661 -0.012830817185481" rpy="-1.57079632679501 1.221245327087672e-14 1.163513729807164e-13" />
+    <visual name="visual_084">
+      <origin xyz="0.010769260014962 -0.02011217472592 0.012830453437346" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
       <geometry>
-        <mesh filename="xmls/assets/current_044_foot_top.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_084_foot_top.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_044_foot_top">
-        <color rgba="0.9027539 0.1854245 2.35e-05 1" />
+      <material name="visual_084_color">
+        <color rgba="1 0 0 1" />
       </material>
     </visual>
-    <visual name="visual_045">
-      <origin xyz="0.0097980381686875 -0.026404327323699 0.0015501355012709" rpy="-1.57079632679501 1.221245327087672e-14 1.163513729807164e-13" />
+    <visual name="visual_085">
+      <origin xyz="0.0097980381686872 -0.02640432732375 -0.0015501355012827" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
       <geometry>
-        <mesh filename="xmls/assets/current_045_foot_bottom_pla.stl" scale="1 1 1" />
+        <mesh filename="xmls/assets/current_085_foot_bottom_pla.stl" scale="1 1 1" />
       </geometry>
-      <material name="color_current_045_foot_bottom_pla">
-        <color rgba="0.0067161 0.0062453 0.0052095 1" />
+      <material name="visual_085_color">
+        <color rgba="0 0 0 1" />
       </material>
     </visual>
   </link>
@@ -1204,144 +1160,144 @@ positive axes at accepted home, expressed in world:
   <joint name="left_hip_yaw" type="revolute">
     <parent link="trunk_assembly" />
     <child link="hip_roll_assembly" />
-    <origin xyz="-0.018999999999991 0.03025 0.064365938812333" rpy="2.666689343902952e-17 -2.220446049250313e-14 7.9347606515728e-14" />
-    <axis xyz="6.0253195940781e-26 -8.5514371018704e-29 1" />
-    <limit lower="-0.5235987755983" upper="0.5235987755983" effort="0.980665" velocity="5.24" />
+    <origin xyz="-0.018799999999991001 0.024799999999999999 0.064365938812333004" rpy="2.6666893439029517e-17 -2.2204460492503131e-14 7.9347606515728002e-14" />
+    <axis xyz="6.0505631430451996e-26 -8.7030463070926002e-29 1" />
+    <limit lower="-0.52359877559830004" upper="0.52359877559830004" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="left_hip_roll" type="revolute">
     <parent link="hip_roll_assembly" />
     <child link="left_roll_to_pitch_assembly" />
-    <origin xyz="0.0006250000000576 -7.5550676825742e-14 -0.064439999999956" rpy="-1.570796326794947 1.099120794378905e-13 1.570796326794746" />
-    <axis xyz="-1.4371837053779e-13 -6.6446848023873e-14 1" />
+    <origin xyz="0.00012500000005768999 -7.5505574015366998e-14 -0.060499999999955999" rpy="-1.5707963267949467 1.099120794378905e-13 1.5707963267947465" />
+    <axis xyz="-1.3727907699495001e-13 -8.2878148788338996e-14 1" />
     <limit lower="-0.43633231299858" upper="0.43633231299858" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="left_hip_pitch" type="revolute">
     <parent link="left_roll_to_pitch_assembly" />
     <child link="knee_and_ankle_assembly" />
-    <origin xyz="0.063675000000055 -3.4408646721815e-15 0.016685000000053" rpy="3.141592653589792 1.570796326794891 0" />
-    <axis xyz="1.3956809388416e-13 -9.336550973756e-14 1" />
-    <limit lower="-1.221730476396" upper="0.5235987755983" effort="0.980665" velocity="5.24" />
+    <origin xyz="0.058175000000055002 -2.8813756935974999e-15 0.016685000000051999" rpy="3.1415926535897922 1.5707963267948908 0" />
+    <axis xyz="1.2886750138524001e-13 -7.6707917734760002e-14 1" />
+    <limit lower="-1.221730476396" upper="0.52359877559830004" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="left_knee" type="revolute">
     <parent link="knee_and_ankle_assembly" />
     <child link="knee_and_ankle_assembly_2" />
-    <origin xyz="-2.5118795932144e-14 -0.068649999999967 0.00012500000002345" rpy="-1.382084305947213e-26 0 5.8022925530204e-15" />
-    <axis xyz="1.395680938845e-13 -9.3365509737619e-14 1" />
-    <limit lower="-1.5707963267949" upper="1.5707963267949" effort="0.980665" velocity="5.24" />
+    <origin xyz="-2.5146551507760001e-14 -0.068649999999971997 -7.5000000101522001e-05" rpy="-1.3820843059472127e-26 0 5.8022925530204003e-15" />
+    <axis xyz="1.2886750138591999e-13 -7.6707917734877006e-14 1" />
+    <limit lower="-1.5707963267949001" upper="1.5707963267949001" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="left_ankle" type="revolute">
     <parent link="knee_and_ankle_assembly_2" />
     <child link="foot_assembly" />
-    <origin xyz="-5.5441762292219e-15 -0.068649999999955 -0.00010000000000703" rpy="-2.511102033499525e-26 0 -8.3266725724458e-17" />
-    <axis xyz="1.3956809388432e-13 -9.3365509737699e-14 1" />
-    <limit lower="-1.5707963267949" upper="1.5707963267949" effort="0.980665" velocity="5.24" />
+    <origin xyz="-5.5233595475102003e-15 -0.068650000000000003 9.9999999992981002e-05" rpy="-2.5111020334995248e-26 0 -8.3266725724457998e-17" />
+    <axis xyz="1.2886750138556e-13 -7.6707917735037e-14 1" />
+    <limit lower="-1.5707963267949001" upper="1.5707963267949001" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="neck_pitch" type="revolute">
     <parent link="trunk_assembly" />
     <child link="neck_pitch_assembly" />
-    <origin xyz="0.008999999999999 0.000725000000047 0.090000938812376" rpy="1.570796326794897 -2.220446049250313e-14 0" />
-    <axis xyz="6.8433246239073e-27 2.536329939109e-16 1" />
-    <limit lower="-0.34906585039887" upper="0.68067840827779" effort="0.980665" velocity="5.24" />
+    <origin xyz="0.0087999999999989996 0.00052500000004700002 0.090000938812376002" rpy="1.5707963267948966 -2.2204460492503131e-14 0" />
+    <axis xyz="6.9355831958548001e-27 5.0726598782180002e-16 1" />
+    <limit lower="-0.34906585039887" upper="0.68067840827779003" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="head_pitch" type="revolute">
     <parent link="neck_pitch_assembly" />
     <child link="head_pitch_to_yaw" />
-    <origin xyz="-5.308253836489e-16 0.065999999999994 -8.3483567281384e-18" rpy="-1.87325293803444e-16 0 5.551115123168002e-17" />
-    <axis xyz="6.778315952787e-27 2.5363299391086e-16 1" />
-    <limit lower="-0.78539816339745" upper="0.78539816339745" effort="0.980665" velocity="5.24" />
+    <origin xyz="-5.3776427755281e-16 0.065999999999993994 -8.3483567281383995e-18" rpy="-1.8732529380344403e-16 0 5.5511151231680016e-17" />
+    <axis xyz="6.8655349640199006e-27 5.0726598782175998e-16 1" />
+    <limit lower="-0.78539816339745006" upper="0.78539816339745006" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="head_yaw" type="revolute">
     <parent link="head_pitch_to_yaw" />
     <child link="neck_yaw_assembly" />
-    <origin xyz="4.2327252813834e-16 0.04157500000004 0.000625000000047" rpy="-1.570796326794897 0 0" />
-    <axis xyz="5.4178966970579e-27 2.5363306213578e-16 1" />
+    <origin xyz="4.2674197509029001e-16 0.041575000000039997 0.00062500000004699996" rpy="-1.5707963267948966 0 0" />
+    <axis xyz="-2.6821270777513998e-28 5.0726612427160002e-16 1" />
     <limit lower="-1.7453292519943" upper="1.7453292519943" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="head_roll" type="revolute">
     <parent link="neck_yaw_assembly" />
     <child link="head_assembly" />
-    <origin xyz="0.066950000000013 -8.806391488432e-14 -0.00072500000005143" rpy="1.347688952501661e-25 -1.570796326794897 0" />
-    <axis xyz="2.2204460493307e-16 -2.2204460519351e-16 1" />
-    <limit lower="-0.5235987755983" upper="0.5235987755983" effort="0.980665" velocity="5.24" />
+    <origin xyz="0.066950000000012999 -8.8064795798586002e-14 -0.00072500000005142995" rpy="1.3476889525016614e-25 -1.5707963267948966 0" />
+    <axis xyz="4.4408920985504999e-16 -4.4408921038039004e-16 1" />
+    <limit lower="-0.52359877559830004" upper="0.52359877559830004" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="left_antenna" type="revolute">
     <parent link="head_assembly" />
     <child link="left_antenna_assembly" />
-    <origin xyz="-0.0012959305449672 0.061662837687404 0.12758914929545" rpy="6.050876260414067e-17 1.570796326794869 0" />
-    <axis xyz="0.26308374005902 -0.93540885354207 -0.23621435695502" />
-    <limit lower="-1.5707963267949" upper="1.5707963267949" effort="0.1" velocity="5.24" />
+    <origin xyz="-0.0012959305449672001 0.061662837687404 0.12758914929545001" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+    <axis xyz="0.26308374005902002 -0.93540885354207004 -0.23621435695501999" />
+    <limit lower="-1.5707963267949001" upper="1.5707963267949001" effort="0.1" velocity="5.24" />
     <dynamics damping="0.005" friction="0.001" />
   </joint>
   <joint name="right_antenna" type="revolute">
     <parent link="head_assembly" />
     <child link="right_antenna_assembly" />
-    <origin xyz="-0.0012959305449672 -0.061662837687302 0.12758914929545" rpy="6.050876260414067e-17 1.570796326794869 0" />
-    <axis xyz="0.26308374005902 0.93540885354207 -0.23621435695502" />
-    <limit lower="-1.5707963267949" upper="1.5707963267949" effort="0.1" velocity="5.24" />
+    <origin xyz="-0.0012959305449672001 -0.061662837687301998 0.12758914929545001" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+    <axis xyz="0.26308374005902002 0.93540885354207004 -0.23621435695501999" />
+    <limit lower="-1.5707963267949001" upper="1.5707963267949001" effort="0.1" velocity="5.24" />
     <dynamics damping="0.005" friction="0.001" />
   </joint>
   <joint name="right_hip_yaw" type="revolute">
     <parent link="trunk_assembly" />
     <child link="hip_roll_assembly_2" />
-    <origin xyz="-0.019000000000001 -0.03025 0.064365938812334" rpy="-2.957164716581026e-16 -2.220446049250313e-14 -1.23641065289942e-14" />
-    <axis xyz="-4.1847493300164e-26 -2.4001093041349e-28 1" />
-    <limit lower="-0.5235987755983" upper="0.5235987755983" effort="0.980665" velocity="5.24" />
+    <origin xyz="-0.018800000000001 -0.024799999999999999 0.064365938812334003" rpy="-2.9571647165810264e-16 -2.2204460492503131e-14 -1.2364106528994197e-14" />
+    <axis xyz="-4.1696032006362001e-26 -2.4001093041349002e-28 1" />
+    <limit lower="-0.52359877559830004" upper="0.52359877559830004" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="right_hip_roll" type="revolute">
     <parent link="hip_roll_assembly_2" />
     <child link="right_roll_to_pitch_assembly" />
-    <origin xyz="0.00062500000006785 6.5027844220467e-14 -0.064439999999961" rpy="-1.570796326794897 -1.199040866595169e-13 1.570796326794897" />
-    <axis xyz="3.2605456345407e-16 4.6923426990543e-16 1" />
+    <origin xyz="0.00012500000006794999 6.5013966432659003e-14 -0.060499999999961002" rpy="-1.5707963267948966 -1.1990408665951691e-13 1.5707963267948966" />
+    <axis xyz="6.5210912690237004e-16 8.2744623730632997e-16 1" />
     <limit lower="-0.43633231299858" upper="0.43633231299858" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="right_hip_pitch" type="revolute">
     <parent link="right_roll_to_pitch_assembly" />
     <child link="knee_and_ankle_assembly_3" />
-    <origin xyz="-0.063674999999978 1.5953492867038e-15 0.016685000000048" rpy="-2.775557364486354e-17 1.570796326794722 0" />
-    <axis xyz="4.6130489383844e-16 9.9623326917228e-14 1" />
-    <limit lower="-0.5235987755983" upper="1.221730476396" effort="0.980665" velocity="5.24" />
+    <origin xyz="-0.058174999999978001 2.1974609631935999e-15 0.016685000000048002" rpy="-2.7755573644863539e-17 1.570796326794722 0" />
+    <axis xyz="9.7812093888138008e-16 7.9287056023623994e-14 1" />
+    <limit lower="-0.52359877559830004" upper="1.221730476396" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="right_knee" type="revolute">
     <parent link="knee_and_ankle_assembly_3" />
     <child link="knee_and_ankle_assembly_4" />
-    <origin xyz="-9.5340402239685e-15 0.068649999999964 0.00012499999998035" rpy="-3.141592653589793 0 -5.506706202140776e-14" />
-    <axis xyz="-4.6130489383321e-16 9.9623326917229e-14 1" />
-    <limit lower="-1.5707963267949" upper="1.5707963267949" effort="0.980665" velocity="5.24" />
+    <origin xyz="-9.5271013300645993e-15 0.068649999999957995 -7.5000000144654003e-05" rpy="-3.1415926535897931 0 -5.5067062021407764e-14" />
+    <axis xyz="-9.7812093887757008e-16 7.9287056023626998e-14 1" />
+    <limit lower="-1.5707963267949001" upper="1.5707963267949001" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="right_ankle" type="revolute">
     <parent link="knee_and_ankle_assembly_4" />
     <child link="foot_assembly_2" />
-    <origin xyz="6.6890937233666e-15 -0.06865 0.00010000000000751" rpy="4.291403324402304e-28 0 -1.8840883528173e-14" />
-    <axis xyz="-4.6130489383511e-16 9.9623326917229e-14 1" />
-    <limit lower="-1.5707963267949" upper="1.5707963267949" effort="0.980665" velocity="5.24" />
+    <origin xyz="6.6960326172704998e-15 -0.068649999999954997 -9.9999999992466995e-05" rpy="4.2914033244023042e-28 0 -1.8840883528173e-14" />
+    <axis xyz="-9.7812093887906991e-16 7.9287056023626998e-14 1" />
+    <limit lower="-1.5707963267949001" upper="1.5707963267949001" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="trunk_frame" type="fixed">
     <parent link="trunk_assembly" />
     <child link="trunk" />
-    <origin xyz="-0.015676812021769 0.00031578894438777 0.088140746534967" rpy="-1.40621021771368e-16 0 0" />
+    <origin xyz="-0.014412024352172001 0.00031934255116994 0.087882967807601006" rpy="-1.40621021771368e-16 0 0" />
   </joint>
   <joint name="left_foot_frame" type="fixed">
     <parent link="foot_assembly" />
     <child link="left_foot" />
-    <origin xyz="0.0004999341404748912 -0.03882499994448319 -0.0008706001248783662" rpy="-1.570796326794897 0 0" />
+    <origin xyz="0.00049993414047563996 -0.038824999944429742 0.0014347171665382" rpy="-1.5707963267948966 0 0" />
   </joint>
   <joint name="right_foot_frame" type="fixed">
     <parent link="foot_assembly_2" />
     <child link="right_foot" />
-    <origin xyz="0.0004999341404478164 -0.03882499994443229 0.001434717166497408" rpy="-1.570796326794897 0 0" />
+    <origin xyz="0.00049993414045820003 -0.038824999944486065 -0.00087060012491927004" rpy="-1.5707963267948966 0 0" />
   </joint>
 </robot>

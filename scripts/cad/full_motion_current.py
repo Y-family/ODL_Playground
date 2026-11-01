@@ -25,9 +25,21 @@ PENETRATION_TOLERANCE_MM = 0.05
 
 MJCF = ROOT / 'playground/open_duck_mini_zp10d/xmls/open_duck_mini_zp10d.xml'
 JOINT_NAMES = dict(zip([f'S{index:02d}' for index in range(1, 15)],
-    ['right_hip_yaw', 'right_hip_roll', 'right_hip_pitch', 'right_knee', 'right_ankle',
-     'left_hip_yaw', 'left_hip_roll', 'left_hip_pitch', 'left_knee', 'left_ankle',
+    ['right_hip_yaw', 'right_hip_roll', 'right_hip_pitch', 'left_knee', 'left_ankle',
+     'left_hip_yaw', 'left_hip_roll', 'left_hip_pitch', 'right_knee', 'right_ankle',
      'neck_pitch', 'head_pitch', 'head_yaw', 'head_roll']))
+
+# The complete knee-to-foot assemblies were exchanged across the two sides.
+# Their output shafts therefore produce the opposite front/back motion for the
+# same software command.  Keep this conversion in one place so CAD replay,
+# dynamics generation and runtime checks use the same convention.
+SERVO_COMMAND_SIGN = {servo: (-1 if servo in {'S04', 'S05', 'S09', 'S10'} else 1)
+                      for servo in JOINT_NAMES}
+
+
+def command_to_cad_angle(servo: str, angle: float) -> float:
+    """Convert a controller angle to the physical CAD rotation angle."""
+    return SERVO_COMMAND_SIGN[servo] * angle
 
 
 def joint_specs():
@@ -101,14 +113,14 @@ RIGHT = {"right_cache"}
 LEFT = {"left_cache"}
 HEAD = {"right_antenna_holder", "left_antenna_holder", "antenna"}
 MOVING_ROOTS = {
-    "S01": {"hip_roll_assembly <1>", "right_roll_to_pitch_assembly <1>", "knee_and_ankle_assembly <1>", "knee_and_ankle_assembly <3>", "foot_assembly <1>"} | RIGHT,
-    "S02": {"right_roll_to_pitch_assembly <1>", "knee_and_ankle_assembly <1>", "knee_and_ankle_assembly <3>", "foot_assembly <1>"} | RIGHT,
-    "S03": {"knee_and_ankle_assembly <1>", "knee_and_ankle_assembly <3>", "foot_assembly <1>"} | RIGHT,
+    "S01": {"hip_roll_assembly <1>", "right_roll_to_pitch_assembly <1>", "knee_and_ankle_assembly <2>", "knee_and_ankle_assembly <4>", "foot_assembly <2>"} | RIGHT,
+    "S02": {"right_roll_to_pitch_assembly <1>", "knee_and_ankle_assembly <2>", "knee_and_ankle_assembly <4>", "foot_assembly <2>"} | RIGHT,
+    "S03": {"knee_and_ankle_assembly <2>", "knee_and_ankle_assembly <4>", "foot_assembly <2>"} | RIGHT,
     "S04": {"knee_and_ankle_assembly <3>", "foot_assembly <1>"},
     "S05": {"foot_assembly <1>"},
-    "S06": {"hip_roll_assembly <2>", "left_roll_to_pitch_assembly <1>", "knee_and_ankle_assembly <2>", "knee_and_ankle_assembly <4>", "foot_assembly <2>"} | LEFT,
-    "S07": {"left_roll_to_pitch_assembly <1>", "knee_and_ankle_assembly <2>", "knee_and_ankle_assembly <4>", "foot_assembly <2>"} | LEFT,
-    "S08": {"knee_and_ankle_assembly <2>", "knee_and_ankle_assembly <4>", "foot_assembly <2>"} | LEFT,
+    "S06": {"hip_roll_assembly <2>", "left_roll_to_pitch_assembly <1>", "knee_and_ankle_assembly <1>", "knee_and_ankle_assembly <3>", "foot_assembly <1>"} | LEFT,
+    "S07": {"left_roll_to_pitch_assembly <1>", "knee_and_ankle_assembly <1>", "knee_and_ankle_assembly <3>", "foot_assembly <1>"} | LEFT,
+    "S08": {"knee_and_ankle_assembly <1>", "knee_and_ankle_assembly <3>", "foot_assembly <1>"} | LEFT,
     "S09": {"knee_and_ankle_assembly <4>", "foot_assembly <2>"},
     "S10": {"foot_assembly <2>"},
     "S11": {"neck_pitch_assembly <1>", "head_pitch_to_yaw", "neck_yaw_assembly <1>", "head_assembly <1>"} | HEAD,
@@ -173,7 +185,8 @@ def main():
         "scanner_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         "mjcf_sha256": hashlib.sha256(MJCF.read_bytes()).hexdigest(),
         "axes": axes,
-        "angle_convention": "MJCF joint angle; current STEP neutral pose and measured servo axes",
+        "angle_convention": "controller command angle; physical CAD rotation applies SERVO_COMMAND_SIGN",
+        "command_signs": SERVO_COMMAND_SIGN,
         "limit_source": "playground/open_duck_mini_zp10d/xmls/open_duck_mini_zp10d.xml",
         "excluded_reference_roots": ["Frame <1>", "Frame <2>", "Frame <3>", "Frame <4>", "Frame <5>"],
         "step_deg": STEP_DEG,
@@ -199,7 +212,8 @@ def main():
         pair_angles = {}
         angles = _angles(*LIMITS[servo_id], STEP_DEG)
         for angle in angles:
-            transform = trimesh.transformations.rotation_matrix(math.radians(angle), direction, origin)
+            transform = trimesh.transformations.rotation_matrix(
+                math.radians(command_to_cad_angle(servo_id, angle)), direction, origin)
             for item in moving:
                 posed = meshes[item["path"]].copy()
                 posed.apply_transform(transform)

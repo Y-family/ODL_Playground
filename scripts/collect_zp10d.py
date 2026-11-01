@@ -104,10 +104,14 @@ def capture(device, args, report):
     probe = report["probe"]
     if probe["mode"] not in (1, 2, 3, 4):
         raise ValueError("Not in position mode (1-4); no movement command sent")
-    center = probe["position_pulse_us"]
+    center = getattr(args, "center_pulse", None)
+    if center is None:
+        center = probe["position_pulse_us"]
     report["center_pulse_us"] = center
     if not 600 <= center - args.amplitude <= center + args.amplitude <= 2400:
         raise ValueError("Insufficient pulse-range margin around current position")
+    if args.amplitude > 100 and getattr(args, "max_deviation_deg", None) is None:
+        raise ValueError("Larger motion requires an explicit confirmed feedback window (--max-deviation-deg)")
     plan, duration = make_plan(args.profile, args.amplitude)
     report["planned_commands"] = [
         {"time_s": t, "pulse_us": center + offset, "time_ms": ms}
@@ -116,8 +120,22 @@ def capture(device, args, report):
     report["planned_duration_s"] = duration
     # Relative angles only: the center is NOT assumed to be pendulum-down zero.
     scale = math.radians(probe["nominal_travel_deg"]) / 2000
-    report["angle_reference"] = "relative to initial PRAD; nominal mode scaling"
+    report["angle_reference"] = (
+        "relative to fixed center_pulse_us; nominal mode scaling"
+        if getattr(args, "center_pulse", None) is not None else
+        "relative to initial PRAD; nominal mode scaling"
+    )
     amplitude_deg = math.degrees(args.amplitude * scale)
+    max_deviation_deg = getattr(args, "max_deviation_deg", None)
+    if max_deviation_deg is not None and amplitude_deg >= max_deviation_deg:
+        raise ValueError("Command amplitude must be smaller than the feedback deviation limit")
+    deviation_limit = args.amplitude + 50
+    if max_deviation_deg is not None:
+        deviation_limit = min(deviation_limit, math.floor(math.radians(max_deviation_deg) / scale))
+    report["feedback_deviation_limit_p"] = deviation_limit
+    report["feedback_deviation_limit_deg"] = math.degrees(deviation_limit * scale)
+    if abs(probe["position_pulse_us"] - center) > deviation_limit:
+        raise ValueError("Initial position outside the fixed reference window; no motion command sent")
     print(f"Record {args.profile}: center P{center}, +/-{amplitude_deg:.3f} deg, "
           f"{duration:g} s, voltage {args.voltage:g} V", flush=True)
     goal, command_ms, index = center, 0, 0
@@ -129,6 +147,21 @@ def capture(device, args, report):
         with (args.output / "samples.csv").open("x", newline="", encoding="utf-8") as stream:
             writer = csv.DictWriter(stream, fieldnames=FIELDS)
             writer.writeheader()
+            if getattr(args, "restore_torque", False):
+                # The vendor defines PULR as restoring torque at the current
+                # position. It changes runtime holding, not startup settings.
+                motion_attempted = True
+                try:
+                    device.exchange("PULR", r"#(OK)!")
+                    report["torque_restore_acknowledged"] = True
+                except TimeoutError:
+                    report["torque_restore_acknowledged"] = False
+                    print("Torque restore has no ACK; actual holding is unverified", file=sys.stderr)
+                position = device.position()
+                if abs(position - center) > deviation_limit:
+                    raise RuntimeError("Position moved outside the test window while restoring torque")
+                record_start = time.perf_counter()
+                report["record_started_s"] = record_start - device.started
             while time.perf_counter() - record_start < duration:
                 elapsed = time.perf_counter() - record_start
                 if index < len(plan) and elapsed >= plan[index][0]:
@@ -149,7 +182,7 @@ def capture(device, args, report):
                     (goal - center) * scale, (position - center) * scale, command_ms,
                 ))))
                 stream.flush()
-                if abs(position - center) > args.amplitude + 50:
+                if abs(position - center) > deviation_limit:
                     raise RuntimeError("Reported position outside the test window; stopping")
                 time.sleep(max(0, 1 / args.hz - (time.perf_counter() - device.started
                                                - event["tx_started_s"])))
@@ -186,10 +219,16 @@ def main():
     parser.add_argument("--voltage", type=float, help="Actual measured supply voltage, not a target")
     parser.add_argument("--profile", choices=("slow", "steps"), default="slow")
     parser.add_argument("--amplitude", type=int, default=50,
-                        help="Max pulse offset (1-100 us); default +/-6.75 deg in 270-deg mode")
+                        help="Max pulse offset (1-900 us); >100 requires an explicit feedback window; default +/-6.75 deg")
+    parser.add_argument("--center-pulse", type=int,
+                        help="Fixed reference P for repeated tests; default is initial PRAD")
     parser.add_argument("--hz", type=float, default=100, help="Requested feedback polling Hz (10-200)")
     parser.add_argument("--command-gap-ms", type=float, default=20,
                         help="Wait after a position write before querying (0-100 ms; CH340 default 20)")
+    parser.add_argument("--max-deviation-deg", type=float,
+                        help="Abort if feedback exceeds this nominal angle from the fixed/initial center")
+    parser.add_argument("--restore-torque", action="store_true",
+                        help="Request PULR at the current position before recording; does not change startup settings")
     parser.add_argument("--setup", default="unloaded; describe any horn/load separately",
                         help="Describe the fixture/load; stored verbatim")
     args = parser.parse_args()
@@ -197,10 +236,16 @@ def main():
         parser.error("--port is required")
     if not 0 <= args.servo_id <= 254 or args.baud <= 0:
         parser.error("ID must be 0-254 (no broadcast); baud must be positive")
-    if not 1 <= args.amplitude <= 100 or not 10 <= args.hz <= 200:
-        parser.error("amplitude must be 1-100 us and hz must be 10-200")
+    if not 1 <= args.amplitude <= 900 or not 10 <= args.hz <= 200:
+        parser.error("amplitude must be 1-900 us and hz must be 10-200")
+    if args.center_pulse is not None and not 500 <= args.center_pulse <= 2500:
+        parser.error("center-pulse must be in [500, 2500]")
     if not 0 <= args.command_gap_ms <= 100:
         parser.error("command-gap-ms must be 0-100")
+    if args.max_deviation_deg is not None and not (
+        math.isfinite(args.max_deviation_deg) and 0 < args.max_deviation_deg <= 180
+    ):
+        parser.error("max-deviation-deg must be finite and in (0, 180]")
     if args.action == "record" and (args.voltage is None or not 5 <= args.voltage <= 8.4):
         parser.error("record requires --voltage with actual ZP10D supply (5-8.4 V)")
     try:
@@ -223,6 +268,9 @@ def main():
                   serial_format="8N1; no hardware/software flow control",
                   requested_hz=args.hz, profile=args.profile if args.action == "record" else None,
                   command_gap_ms=args.command_gap_ms,
+                  fixed_center_pulse_us=args.center_pulse,
+                  max_deviation_deg=args.max_deviation_deg,
+                  restore_torque_requested=args.restore_torque if args.action == "record" else False,
                   setup=args.setup, script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
                   timestamp_convention="PRAD response received; query bounds retained; not hardware timestamps",
                   bam_ready=False)

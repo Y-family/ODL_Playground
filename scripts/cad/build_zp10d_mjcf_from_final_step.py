@@ -13,6 +13,7 @@ import gc
 import hashlib
 import json
 import math
+import os
 from pathlib import Path
 import re
 import resource
@@ -27,7 +28,15 @@ import numpy as np
 import trimesh
 from cadgen import build123d as bd, read_step
 
-from full_motion_current import JOINT_NAMES, LIMITS, _leaves, is_moving, measured_axes
+from full_motion_current import (JOINT_NAMES, LIMITS, SERVO_COMMAND_SIGN,
+                                 _leaves, is_moving, measured_axes)
+
+# Hardware IDs are swapped below the knee boundary; depth keeps the physical
+# parent-to-child chain ordered after that remap instead of relying on S01..S14
+# numeric order.
+JOINT_DEPTH = {'S01': 1, 'S06': 1, 'S02': 2, 'S07': 2,
+               'S03': 3, 'S08': 3, 'S04': 4, 'S09': 4,
+               'S05': 5, 'S10': 5, 'S11': 1, 'S12': 2, 'S13': 3, 'S14': 4}
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 FINAL_STEP = PROJECT_ROOT / 'cad/local_fix/open_duck_mini_upper_refit.step'
@@ -47,7 +56,7 @@ MESH_DEFLECTION_MM = 0.35
 COLLISION_THRESHOLD_MM = 1.0
 FALLBACK_DENSITY_KG_MM3 = 1.25e-6
 ANTENNA_NAMES = {'A_plus_y': 'left_antenna', 'A_minus_y': 'right_antenna'}
-PRINTED = set('left_cache right_cache antenna left_antenna_holder right_antenna_holder head_pitch_to_yaw neck_left_sheet neck_right_sheet roll_motor_top roll_motor_bottom leg_spacer left_knee_to_ankle_left_sheet left_knee_to_ankle_right_sheet body_front body_middle_bottom body_back body_middle_top battery_pack_lid head_yaw_to_roll right_roll_to_pitch left_roll_to_pitch foot_side foot_top foot_bottom_tpu foot_bottom_pla head head_bot_sheet head_roll_mount trunk_top trunk_bottom speaker_stand speaker_interface flash_reflector_interface flash_light_module'.split())
+PRINTED = set('left_cache right_cache antenna left_antenna_holder right_antenna_holder head_pitch_to_yaw neck_left_sheet neck_right_sheet roll_motor_top roll_motor_bottom leg_spacer left_knee_to_ankle_left_sheet left_knee_to_ankle_right_sheet roll_motor_top_bottom body_front body_middle_bottom body_back body_middle_top battery_pack_lid head_yaw_to_roll right_roll_to_pitch left_roll_to_pitch foot_side foot_top foot_bottom_tpu foot_bottom_pla head head_bot_sheet head_roll_mount trunk_top trunk_bottom speaker_stand speaker_interface flash_reflector_interface flash_light_module'.split())
 
 
 def digest(path):
@@ -183,7 +192,7 @@ def prepare():
     original = _leaves(read_step(ORIGINAL_STEP))
     current_root = read_step(FINAL_STEP)
     current = _leaves(current_root)
-    assert len(current) == 115
+    assert len(current) == 113
     reference = defaultdict(list)
     for row in original:
         reference[(row['root'],row['label'])].append(row)
@@ -228,7 +237,8 @@ def prepare():
     parts=[]
     for index,row in enumerate(current):
         shape=row['shape']
-        chain=[sid for sid in JOINT_NAMES if is_moving(row,sid)]
+        chain=sorted((sid for sid in JOINT_NAMES if is_moving(row,sid)),
+                     key=lambda sid: JOINT_DEPTH[sid])
         body=body_for[chain[-1]] if chain else 'trunk_assembly'
         if row['label'] in ('antenna','left_antenna_holder','right_antenna_holder'):
             side='A_plus_y' if shape.center().Y>.1 else 'A_minus_y'
@@ -240,32 +250,59 @@ def prepare():
             provenance={'method':'vendor_group_mass_distributed_by_current_solid_volume',
                         'group':row['servo'],'group_mass_kg':ZP10D_MASS_KG,'measured':False}
         else:
-            key=(row['root'],row['label']);ordinal=used_reference[key];used_reference[key]+=1
-            candidates=reference[key]
-            assert ordinal<len(candidates), f'No source BRep for {row["path"]}'
-            before=candidates[ordinal]['shape']
-            before_com=np.array(tuple(bd.Shape.combined_center([before],bd.CenterOf.MASS)))*1e-3
-            label=_normalize(row['label'])
-            if label in ('speaker_bottom','speaker_top'):
-                nominal=baseline_by_label['full_speaker'][0]
-                group_volume=sum(item['shape'].volume for item in original
-                                 if item['root']==row['root'] and item['label'] in ('speaker_bottom','speaker_top'))
-                old_mass=float(nominal.mass)*before.volume/group_volume
-            else:
-                choices=baseline_by_label[label]
+            # The current approved CAD fuses roll_motor_top and
+            # roll_motor_bottom into one existing connector.  Treat the two
+            # original occurrences as one mass/reference record; no geometry
+            # is added by this compatibility path.
+            merged_roll = row['label'] == 'roll_motor_top_bottom'
+            if merged_roll:
+                candidates = [item for label in ('roll_motor_top', 'roll_motor_bottom')
+                              for item in reference[(row['root'], label)]]
+                assert candidates, f'No source BRep for {row["path"]}'
+                before_volume = sum(item['shape'].volume for item in candidates)
+                before_com = (sum(np.array(tuple(bd.Shape.combined_center(
+                    [item['shape']], bd.CenterOf.MASS))) * item['shape'].volume
+                    for item in candidates) / before_volume) * 1e-3
+                choices = [part for label in ('roll_motor_top', 'roll_motor_bottom')
+                           for part in baseline_by_label[_normalize(label)]]
                 assert choices, f'No baseline mass for {row["path"]}'
-                nominal=min(choices,key=lambda p:np.linalg.norm((p.T_world_part@[*p.com,1])[:3]-before_com))
-                old_mass=float(nominal.mass)
+                old_mass = 0.0
+                for item in candidates:
+                    item_com = np.array(tuple(bd.Shape.combined_center(
+                        [item['shape']], bd.CenterOf.MASS)))
+                    nominal = min(choices, key=lambda part: np.linalg.norm(
+                        (part.T_world_part @ [*part.com, 1])[:3] - item_com))
+                    old_mass += float(nominal.mass)
+                reference_name = 'roll_motor_top+roll_motor_bottom'
+            else:
+                key=(row['root'],row['label']);ordinal=used_reference[key];used_reference[key]+=1
+                candidates=reference[key]
+                assert ordinal<len(candidates), f'No source BRep for {row["path"]}'
+                before=candidates[ordinal]['shape']
+                before_volume = before.volume
+                before_com=np.array(tuple(bd.Shape.combined_center([before],bd.CenterOf.MASS)))*1e-3
+                label=_normalize(row['label'])
+                if label in ('speaker_bottom','speaker_top'):
+                    nominal=baseline_by_label['full_speaker'][0]
+                    group_volume=sum(item['shape'].volume for item in original
+                                     if item['root']==row['root'] and item['label'] in ('speaker_bottom','speaker_top'))
+                    old_mass=float(nominal.mass)*before.volume/group_volume
+                else:
+                    choices=baseline_by_label[label]
+                    assert choices, f'No baseline mass for {row["path"]}'
+                    nominal=min(choices,key=lambda p:np.linalg.norm((p.T_world_part@[*p.com,1])[:3]-before_com))
+                    old_mass=float(nominal.mass)
+                reference_name=nominal.name
             printed=row['label'] in PRINTED
             if old_mass<=0:
                 mass=volume*FALLBACK_DENSITY_KG_MM3
                 provenance={'method':'provisional_PLA_density_for_missing_legacy_mass',
                             'density_kg_m3':1250,'measured':False,'legacy_mass_kg':old_mass}
             else:
-                mass=old_mass*volume/before.volume if printed else old_mass
+                mass=old_mass*volume/before_volume if printed else old_mass
                 provenance={'method':'legacy_effective_density' if printed else 'legacy_component_mass',
-                            'reference_part':nominal.name,'reference_mass_kg':old_mass,
-                            'reference_volume_mm3':before.volume,'measured':False}
+                            'reference_part':reference_name,'reference_mass_kg':old_mass,
+                            'reference_volume_mm3':before_volume,'measured':False}
             provenance['reference_com_world_m']=before_com.tolist()
         com,inertia=properties(shape,mass)
         vertices,faces=shape.tessellate(MESH_DEFLECTION_MM,.3)
@@ -297,15 +334,33 @@ def prepare():
             matches=[p for p in matches if p['body']==expected]
         assert len(matches)==1,(name,len(matches))
         part=matches[0]
-        sites[name][:3,3]+=np.array(part['com_world_m'])-np.array(part['mass_provenance']['reference_com_world_m'])
+        # The lower occurrences exchanged sides.  Preserve the original foot
+        # datum offset from the matching physical side, rather than comparing
+        # root <1> to its old right-side reference (which would add 168.9 mm).
+        if name in ('left_foot', 'right_foot'):
+            reference_root = ('foot_assembly <2>' if name == 'left_foot'
+                              else 'foot_assembly <1>')
+            reference_row = reference[(reference_root, 'foot_bottom_tpu')][0]
+            reference_com = np.array(tuple(bd.Shape.combined_center(
+                [reference_row['shape']], bd.CenterOf.MASS))) * 1e-3
+        else:
+            reference_com = np.array(part['mass_provenance']['reference_com_world_m'])
+        sites[name][:3,3] += np.array(part['com_world_m']) - reference_com
     old_model=mujoco.MjModel.from_xml_path(str(SCENE))
     home={mujoco.mj_id2name(old_model,mujoco.mjtObj.mjOBJ_JOINT,j):float(old_model.key_qpos[0,old_model.jnt_qposadr[j]])
           for j in range(old_model.njnt) if old_model.jnt_type[j]!=mujoco.mjtJoint.mjJNT_FREE}
     home_ctrl={old_model.actuator(a).name:float(old_model.key_ctrl[0,a]) for a in range(old_model.nu)}
+    # The exchanged lower assemblies have the opposite front/back response.
+    # Express the existing neutral pose in the new controller convention so
+    # the compiled model still starts at the unchanged CAD neutral pose.
+    for servo, name in JOINT_NAMES.items():
+        sign = SERVO_COMMAND_SIGN[servo]
+        home[name] *= sign
+        home_ctrl[name] *= sign
     data=dict(source_step=str(FINAL_STEP.relative_to(PROJECT_ROOT)),source_step_sha256=source_sha,
               original_step_sha256=digest(ORIGINAL_STEP),robot_pickle_sha256=digest(ROBOT_PICKLE),
               template_sha256=digest(MJCF_TEMPLATE),previous_mjcf_sha256=digest(MJCF_OUTPUT),
-              axes=axes,limits_deg=LIMITS,body_for=body_for,
+              axes=axes,command_signs=SERVO_COMMAND_SIGN,limits_deg=LIMITS,body_for=body_for,
               frames={k:v.tolist() for k,v in frames.items()},parents=parents,
               sites={k:v.tolist() for k,v in sites.items()},parts=parts,
               home_joint_angles_rad=home,home_ctrl_rad=home_ctrl,home_free_qpos=old_model.key_qpos[0,:7].tolist(),
@@ -326,7 +381,12 @@ def collision(index):
     hull=mesh.convex_hull
     ratio=abs(hull.volume)/max(abs(mesh.volume),1e-12)
     threshold = .5 if part['label'] in ('head', 'head_yaw_to_roll','left_cache','right_cache') else COLLISION_THRESHOLD_MM
-    if mesh.is_watertight and ratio<1.02:
+    if os.environ.get('ZP10D_HULL_ONLY') == '1':
+        # Candidate synchronization path: the STEP motion scan remains the
+        # exact CAD check; MuJoCo receives one conservative hull per leaf.
+        pieces=[(hull.vertices*1000,hull.faces)]
+        method='single_convex_hull_candidate_sync'
+    elif mesh.is_watertight and ratio<1.02:
         pieces=[(hull.vertices*1000,hull.faces)]
         method='single_convex_hull_under_2_percent_volume_difference'
     elif part['servo'] or (part['mass_provenance']['method'] == 'legacy_component_mass'
@@ -418,7 +478,8 @@ def assemble():
         joint=root.find(f'.//joint[@name="{name}"]')
         assert joint is not None
         frame=frames[data['body_for'][sid]]
-        joint.set('axis',_format_vector(frame[:3,:3].T@np.array(data['axes'][sid][1])))
+        axis = frame[:3,:3].T @ np.array(data['axes'][sid][1])
+        joint.set('axis',_format_vector(SERVO_COMMAND_SIGN[sid] * axis))
         joint.set('pos','0 0 0')
         joint.set('range',_format_vector(np.radians(data['limits_deg'][sid])))
     for side,name in ANTENNA_NAMES.items():
@@ -566,7 +627,10 @@ def publish():
 
 
 def main():
-    mode=sys.argv[1] if len(sys.argv)>1 else 'prepare'
+    if len(sys.argv)<2:
+        raise SystemExit('Specify prepare | collision INDEX | assemble | publish. '
+                         'prepare alone does not synchronize the published model.')
+    mode=sys.argv[1]
     if mode=='prepare':prepare()
     elif mode=='collision':collision(int(sys.argv[2]))
     elif mode=='assemble':assemble()

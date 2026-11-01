@@ -9,10 +9,13 @@ import hashlib
 import json
 from pathlib import Path
 import resource
+import os
 
 if resource.getrlimit(resource.RLIMIT_AS)[1] != 4_000_000_000:
     raise SystemExit('Run through scripts/cad/run_memory_limited.py')
 
+os.environ.setdefault('MUJOCO_GL', 'egl')
+os.environ.setdefault('PYOPENGL_PLATFORM', 'egl')
 import mujoco
 import numpy as np
 
@@ -31,8 +34,11 @@ def longest_run(mask, dt):
     return longest * dt
 
 
-def replay(model, targets, desired_contacts, feet, vertices, warmup, blend):
+def replay(model, targets, desired_contacts, feet, vertices, warmup, blend, *, delay_s=0., live=None):
     data = mujoco.MjData(model)
+    # Parameter diagnostics mutate armature after compilation. Refresh the cached
+    # inertia/constraint constants before integrating the modified model.
+    mujoco.mj_setConst(model, data)
     mujoco.mj_resetDataKeyframe(model, data, model.key('home').id)
     mujoco.mj_forward(model, data)
     joint_ids = model.actuator_trnid[:, 0]
@@ -41,15 +47,23 @@ def replay(model, targets, desired_contacts, feet, vertices, warmup, blend):
     floor = model.geom('floor').id
     weight = float(model.body_subtreemass[1] * abs(model.opt.gravity[2]))
     dt = model.opt.timestep
+    delay_steps = round(delay_s / dt)
+    assert delay_s >= 0 and len(targets) == len(desired_contacts) and len(targets) > 0
     rows, self_contacts, nonfoot_contacts, peak_events = [], {}, {}, {}
     knees = [model.actuator(side + '_knee').id for side in ('left', 'right')]
     stop = 'duration'
-    for i, target in enumerate(targets):
+    max_dynamics_residual = 0.
+    for i in range(len(targets)):
+        target = targets[max(0, i - delay_steps)]
         # mj_step leaves position/contact fields at this pre-integration state.
         qpos = data.qpos.copy()
         qvel = data.qvel.copy()
         data.ctrl[:] = target
         mujoco.mj_step(model, data)
+        inertia = np.zeros(model.nv)
+        mujoco.mj_mulM(model, data, inertia, data.qacc)
+        residual = inertia + data.qfrc_bias - data.qfrc_passive - data.qfrc_actuator - data.qfrc_constraint
+        max_dynamics_residual = max(max_dynamics_residual, float(abs(residual).max()))
         force = np.zeros(2)
         for ci in range(data.ncon):
             contact = data.contact[ci]
@@ -77,8 +91,6 @@ def replay(model, targets, desired_contacts, feet, vertices, warmup, blend):
             torque = float(data.actuator_force[actuator])
             if abs(torque) <= abs(peak_events.get(name, {}).get('motor_torque_nm', 0.)):
                 continue
-            inertia = np.zeros(model.nv)
-            mujoco.mj_mulM(model, data, inertia, data.qacc)
             friction = np.zeros(model.nv)
             friction_rows = np.where(data.efc_type == mujoco.mjtConstraint.mjCNSTR_FRICTION_DOF,
                                      data.efc_force, 0.)
@@ -101,23 +113,27 @@ def replay(model, targets, desired_contacts, feet, vertices, warmup, blend):
                 balance_residual_nm=float(inertia[dof] + data.qfrc_bias[dof] - data.qfrc_passive[dof]
                                           - data.qfrc_actuator[dof] - data.qfrc_constraint[dof]))
         rows.append((qpos, height, force, tilt, data.actuator_force.copy(), error, qvel))
+        if live is not None:
+            live.update(i * dt, qpos, height, force, target)
         if not np.isfinite(data.qpos).all() or tilt > 45 or qpos[2] < .10:
             stop = 'fall_or_nonfinite'
             break
         if nonfoot_contacts or any(data.warning.number):
             stop = 'nonfoot_ground_contact' if nonfoot_contacts else 'numerical_warning'
             break
+    if live is not None:
+        live.update(i * dt, qpos, height, force, target, force=True)
+        live.close(stop)
     qpos, heights, forces, tilts, torques, errors, qvel = map(np.asarray, zip(*rows))
     times = np.arange(len(rows)) * dt
     motion = times >= warmup + blend
-    assert motion.any(), 'Stopped before the Placo reference began'
     requested_swing = ~desired_contacts[:len(rows)].astype(bool)
     summaries = []
     for side in range(2):
         loaded_other = forces[:, 1 - side] > .5 * weight
         unloaded = (forces[:, side] < .5) & loaded_other & motion
         summaries.append(dict(
-            peak_clearance_mm=float(1000 * heights[motion, side].max()),
+            peak_clearance_mm=(float(1000 * heights[motion, side].max()) if motion.any() else None),
             peak_clearance_with_other_foot_loaded_mm=(float(1000 * heights[unloaded, side].max())
                                                        if unloaded.any() else None),
             longest_supported_clearance_s={str(mm): longest_run(unloaded & (heights[:, side] >= mm / 1000), dt)
@@ -135,7 +151,9 @@ def replay(model, targets, desired_contacts, feet, vertices, warmup, blend):
                   replayed_reference_seconds=max(0., len(rows) * dt - warmup - blend),
                   feet=dict(zip(('left', 'right'), summaries)),
                   peak_torque_nm=dict(zip(names, abs(torques).max(axis=0).tolist())),
-                  max_joint_error_deg=float(np.rad2deg(abs(errors[motion]).max())),
+                  reference_started=bool(motion.any()),
+                  max_dynamics_residual_abs=max_dynamics_residual,
+                  max_joint_error_deg=(float(np.rad2deg(abs(errors[motion]).max())) if motion.any() else None),
                   max_tilt_deg=float(tilts.max()), final_tilt_deg=float(tilts[-1]),
                   self_contact_max_penetration_m=self_contacts,
                   nonfoot_ground_contact_peak_force_n=nonfoot_contacts,
@@ -145,7 +163,8 @@ def replay(model, targets, desired_contacts, feet, vertices, warmup, blend):
                   warnings=data.warning.number.tolist())
     arrays = dict(time=times, qpos=qpos, qvel=qvel, foot_clearance=heights, foot_force=forces,
                   tilt_deg=tilts, torque=torques, joint_error=errors, target=targets[:len(rows)],
-                  desired_contact=desired_contacts[:len(rows)])
+                  desired_contact=desired_contacts[:len(rows)],
+                  applied_target=targets[np.maximum(0, np.arange(len(rows)) - delay_steps)])
     return report, arrays
 
 

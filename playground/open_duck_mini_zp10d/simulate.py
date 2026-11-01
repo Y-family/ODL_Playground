@@ -15,13 +15,91 @@ import threading
 import time
 
 
+def reference_window(model, candidate, *, headless=False, duration=None):
+    """Show a source-checked Placo pose sequence, without claiming physical tracking."""
+    import mujoco
+    import numpy as np
+    from scipy.spatial.transform import Rotation
+    from reference import source_hashes
+
+    with np.load(candidate, allow_pickle=False) as archive:
+        metadata = json.loads(str(archive['metadata']))
+        positions, bases = archive['qpos'].copy(), archive['base'].copy()
+    if metadata['source_hashes'] != source_hashes():
+        raise RuntimeError('Reference belongs to another model; regenerate it first')
+    joints = [model.joint(name).id for name in metadata['joint_names']]
+    addresses = model.jnt_qposadr[joints]
+    if (positions.shape != (len(bases), len(addresses)) or bases.shape != (len(bases), 4, 4)
+            or not np.isfinite(positions).all() or not np.isfinite(bases).all()):
+        raise ValueError('Invalid reference positions')
+    if (np.any(positions < model.jnt_range[joints, 0] - 1e-5)
+            or np.any(positions > model.jnt_range[joints, 1] + 1e-5)):
+        raise ValueError('Reference exceeds the current joint limits')
+    period = (len(bases) - 1) / 50.
+    if period <= 0:
+        raise ValueError('Reference needs at least two samples')
+    data = mujoco.MjData(model)
+    model.geom_rgba[:, 3] = 1  # Display only: show the complete outer shape.
+    if not headless:
+        import mujoco.viewer
+    paused = [False]
+    def key_callback(key):
+        if key == 32:
+            paused[0] = not paused[0]
+    existing_threads = set(threading.enumerate())
+    context = nullcontext(None) if headless else mujoco.viewer.launch_passive(
+        model, data, show_left_ui=False, show_right_ui=False, key_callback=key_callback)
+    viewer_threads = set(threading.enumerate()) - existing_threads
+    elapsed = 0.
+    with context as viewer:
+        if viewer:
+            viewer.opt.geomgroup[3] = 0
+            viewer.cam.distance = .85
+            viewer.cam.azimuth, viewer.cam.elevation = 140, -15
+            viewer.set_texts((None, None, 'Placo kinematic reference / latest CAD',
+                              'NOT physics or trained walking | Space: pause/resume'))
+            print('MUJOCO_LOCAL_REFERENCE_WINDOW_READY', flush=True)
+        while duration is None or elapsed < duration:
+            if viewer and not viewer.is_running():
+                break
+            tick = time.monotonic()
+            t = elapsed % period
+            i = min(round(t * 50), len(bases) - 1)
+            data.qpos[:3] = bases[i, :3, 3]
+            data.qpos[3:7] = np.roll(Rotation.from_matrix(bases[i, :3, :3]).as_quat(), 1)
+            data.qpos[addresses] = positions[i]
+            data.qvel[:] = 0
+            data.time = t
+            mujoco.mj_forward(model, data)
+            if not np.isfinite(data.xpos).all():
+                raise RuntimeError('Nonfinite reference pose')
+            if viewer:
+                viewer.cam.lookat[:] = data.xpos[model.body('base').id] + [0, 0, .03]
+                viewer.sync()
+                time.sleep(max(0., .02 - (time.monotonic() - tick)))
+                if not paused[0]:
+                    elapsed += time.monotonic() - tick
+            else:
+                elapsed += .02
+    for thread in viewer_threads:
+        thread.join(timeout=10)
+        if thread.is_alive():
+            raise RuntimeError('MuJoCo reference window did not finish closing')
+    print(json.dumps(dict(mode='kinematic reference, not physical walking',
+                          displayed_seconds=elapsed, source_hashes=metadata['source_hashes'])), flush=True)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--replay', choices=('left', 'right'),
                         help='rerun saved 50 Hz liftoff commands, then hold home')
     parser.add_argument('--headless', action='store_true')
+    parser.add_argument('--reference', type=Path,
+                        help='show a current-model Placo NPZ as looping kinematic poses, not physics')
     parser.add_argument('--duration', type=float, help='seconds after the 3 s home settling')
     args = parser.parse_args()
+    if args.reference and args.replay:
+        parser.error('--reference and --replay cannot be combined')
     if args.duration is not None and (not math.isfinite(args.duration) or args.duration <= 0):
         parser.error('--duration must be finite and positive')
     if resource.getrlimit(resource.RLIMIT_AS)[1] != 4_000_000_000:
@@ -47,6 +125,10 @@ def main():
     model = mujoco.MjModel.from_xml_path(str(paths[2]))
     if model.nu != 16 or model.neq != 0 or model.jnt_type[0] != mujoco.mjtJoint.mjJNT_FREE:
         raise RuntimeError('Expected the current 16-actuator, floating-base ZP10D model')
+    if args.reference:
+        reference_window(model, args.reference, headless=args.headless,
+                         duration=args.duration or (1. if args.headless else None))
+        return
     data = mujoco.MjData(model)
     home = model.key('home').id
     mujoco.mj_resetDataKeyframe(model, data, home)
