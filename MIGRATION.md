@@ -21,13 +21,17 @@
 
 ## CAD 与训练模型的边界
 
-**最新 CAD 已提交，但最后一轮 CAD 尚未同步到训练模型。不要绕过哈希校验。**
+**最新 CAD 的动力学已同步；历史步态参考和权重仍绑定旧模型。不要绕过哈希校验。**
 
-- 最新 CAD（`db1f780`）：髋部每侧内收 1.36 mm、后部矩形缺口闭合。
-  STEP SHA256：`91e610bc6e8640f1fc8698a5cfdc121c2be64f48ce824873e99b85a4ce08533e`。
-- 当前训练模型/参考/权重使用 `ae7b161` 的 STEP，SHA256：
+- 当前 CAD、MuJoCo、Placo URDF 和训练模型生成器一致，STEP SHA256：
+  `91e610bc6e8640f1fc8698a5cfdc121c2be64f48ce824873e99b85a4ce08533e`。
+  包括每侧内收 1.36 mm 和后部缺口修复。113 个物理零件，估算质量 1.976184 kg。
+  独立同步检查、33 姿态 URDF 对照、辨识舵机加既有反馈的 4 s 站姿检查和训练模型结构对照通过。
+  辨识参数下固定目标、无反馈会失稳，新旧版本都存在；不把固定目标试验记作通过。
+- 历史参考/权重使用 `ae7b161` 的 STEP，SHA256：
   `528d82d2a2bda0a7757f28600dc02b289c73220f0cf98c8b0d39ebacd92bf65b`。
-- `reference.source_hashes()` 会拒绝最新 CAD 与旧动力学混用。这是预期的同步保护。
+- `reference.source_hashes()` 已可校验最新模型；环境仍会拒绝旧参考与新模型混用。
+  本轮没有重标旧轨迹哈希，也没有启动 PPO。
 
 为保留最新 CAD，同时重放已有训练，在独立工作树使用其匹配的 CAD 输入：
 
@@ -36,15 +40,15 @@
 sha256sum -c SHA256SUMS
 git clone -b migration/zp10d-training-20261101 Open_Duck_Playground.bundle Open_Duck_Playground
 cd Open_Duck_Playground
-git worktree add --detach ../Open_Duck_Training HEAD
+git worktree add --detach ../Open_Duck_Training 1ac9284
 git -C ../Open_Duck_Training restore --source=ae7b161 -- cad/local_fix/open_duck_mini_upper_refit.step
 cd ../Open_Duck_Training
 # 替换为实际放置迁移包的绝对路径。
 tar -xzf /path/to/migration/training-runs.tar.gz
 ```
 
-该工作树的 STEP 会显示为已修改；它明确用于复现旧训练。正式迁移分支仍保留最新 CAD。
-要用最新 CAD 重新训练，需要另做动力学/参考同步、验证并评估 checkpoint 兼容性。
+该工作树的 STEP 会显示为已修改；它明确用于复现旧训练；`1ac9284` 保留旧动力学/参考。正式迁移分支保留最新 CAD 和已同步动力学。
+要用最新 CAD 重新训练，下一步是重生成 Placo 参考/拟合力矩审计，再验证并评估 checkpoint 兼容性。
 
 ## 重建运行环境
 
@@ -88,7 +92,8 @@ MJX/Brax/Playground 安装目录没有额外 Python 补丁；适配代码已在�
 
 ## 训练进度与恢复
 
-这次只保存、验证迁移输入，未启动新 PPO 训练，未修改 CAD 或奖励行为。
+已保存迁移输入并同步最新 CAD 动力学；未启动新 PPO 训练，未修改 CAD 或奖励行为。
+下列评估/续训命令用于上文 `1ac9284` 的旧模型工作树，不能直接用于最新模型。
 训练尚未完成持续稳定踏步/行走验收。
 
 - README 曾选中的 `sampled_control/drift_feedback/checkpoints/000000262144`

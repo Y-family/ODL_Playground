@@ -1,12 +1,12 @@
 {
-  "source_step_sha256": "528d82d2a2bda0a7757f28600dc02b289c73220f0cf98c8b0d39ebacd92bf65b",
+  "source_step_sha256": "91e610bc6e8640f1fc8698a5cfdc121c2be64f48ce824873e99b85a4ce08533e",
   "source_hashes": {
-    "open_duck_mini_zp10d.urdf": "905377f478b16453bcaa371de33eca25599022b2cbe64b226dc8b86b70c3560c",
-    "open_duck_mini_zp10d.xml": "526c3577b513b1846291b5d2d7951bac83b33befa83d2294656c10b3cf8abf2d",
-    "scene_flat_terrain.xml": "74c098a75f198126dbf09e84d9ad153a90231e925f2f47d5eb107cf9f354fe84"
+    "open_duck_mini_zp10d.urdf": "ddcca8782a5ee0b70d1952443f2146dff4a8966f0d86d47d44cd935d3d07903c",
+    "open_duck_mini_zp10d.xml": "05393716caaae107efb4aca9016f3f2ea85091207bf268f290e2db087a261dcd",
+    "scene_flat_terrain.xml": "eb0c1691d1259d221774459e1f3d15c06174929e9f35e1dcc6dd2b365fa72438"
   },
   "urdf_strict_validation_passed": true,
-  "kinematic_check": "33 poses, all physical frames and COM; max frame error 2.73e-13",
+  "kinematic_check": "PASS: home and both limits of all 16 joints, every physical body frame and total COM",
   "support_rectangle_m": [
     0.05,
     0.02
@@ -14,116 +14,576 @@
   "sole_checks": [
     {
       "side": "left",
-      "margin_mm": 1.1638876837624206,
+      "margin_mm": 2.1207955781742482,
       "site_to_sole_offset_m": [
-        2.0750316616340758e-27,
-        0.0,
-        0.0026008822028467378
+        3.1864701849556357e-16,
+        -2.803746818047514e-16,
+        0.0025994457909968498
       ]
     },
     {
       "side": "right",
-      "margin_mm": 0.5999547477656859,
+      "margin_mm": 1.7282060590106154,
       "site_to_sole_offset_m": [
-        -1.7746234120991282e-30,
-        0.0,
-        0.002600882202869067
+        -1.4680097415453905e-16,
+        3.0964814046186e-16,
+        0.00260012741551871
       ]
     }
   ],
-  "reference_metadata": {
-    "period": 0.5,
-    "step_length": 0.0025,
-    "support_duration": 0.16,
-    "foot_height": 0.0025,
-    "com_height": 0.1972727645529239,
-    "reduced_pendulum_height_m": 0.35,
-    "trunk_pitch_task": "hard",
-    "preparation_steps": 0,
-    "preparation_end_s": 0.0,
-    "double_support_ratio": 0.5625,
-    "startend_double_support_ratio": 8.0,
-    "com_lateral_scale": 1.0,
-    "com_lateral_smoothing": 0.0,
-    "contact_aware": true,
-    "contact_guard_s": 0.02,
-    "startup_swing_height_scale": [
-      0.6,
-      0.8,
-      1.0
-    ],
-    "startup_extra_lift_guard_s": 0.015,
-    "double_support_roll_blend_com_width_m": 0.002,
-    "single_support_timesteps": 16,
-    "yaw_momentum_heading_gain_Nms_per_rad": 0.12,
-    "max_single_support_sole_tilt_deg": 5.0869435897894064e-05,
-    "foot_support_rectangle_m": [
-      0.05,
-      0.02
-    ],
-    "foot_zmp_offset_m": [
-      -0.0125,
-      0.0
-    ],
-    "com_target_height_range_m": [
-      0.1942057280842214,
-      0.1972727645529239
-    ],
-    "generator_sha256": "078798c05cf311c57aac96b084a13f875b893b7491d93b15d1fed1178413ff34",
-    "feet_spacing": 0.16355407690705376,
-    "max_joint_speed": 3.285593946990273,
-    "max_limit_error": 0.0,
-    "min_foot_frame_height": 2.7934397850426507e-11,
-    "source_hashes": {
-      "open_duck_mini_zp10d.urdf": "905377f478b16453bcaa371de33eca25599022b2cbe64b226dc8b86b70c3560c",
-      "open_duck_mini_zp10d.xml": "526c3577b513b1846291b5d2d7951bac83b33befa83d2294656c10b3cf8abf2d",
-      "scene_flat_terrain.xml": "74c098a75f198126dbf09e84d9ad153a90231e925f2f47d5eb107cf9f354fe84"
-    },
-    "max_feet_position_error": 2.9418572319555287e-07,
-    "max_com_position_error_m": 2.423423378388249e-07,
-    "support_orientation": "loaded sole flat; torso roll free; swing sole roll free",
-    "exact_com": true,
-    "exact_feet": true,
-    "sample_fps": 200,
-    "foot_origin_lift_max_m": [
-      0.00016828656958336576,
-      6.781572668422953e-05
-    ],
-    "planning_joint_speed_limit_rad_s": 5.2,
-    "min_whole_foot_height_m": [
-      -1.1379361297034175e-06,
-      -8.154609549626543e-07
-    ],
-    "whole_foot_target": "planned height of lowest oriented collision-foot vertex",
-    "joint_names": [
-      "left_hip_yaw",
-      "left_hip_roll",
-      "left_hip_pitch",
-      "left_knee",
-      "left_ankle",
-      "neck_pitch",
-      "head_pitch",
-      "head_yaw",
-      "head_roll",
-      "left_antenna",
-      "right_antenna",
-      "right_hip_yaw",
-      "right_hip_roll",
-      "right_hip_pitch",
-      "right_knee",
-      "right_ankle"
-    ],
-    "kind": "kinematic_candidate_not_dynamics_acceptance"
-  },
-  "candidate_sha256": "6d7b39581a3964d5edaa7d375623b49166f5903970489c860a5c71d31e87815a",
-  "candidate_path": "playground/open_duck_mini_zp10d/training/reference_demo/candidate.npz",
-  "native_window_test_seconds": 6,
-  "native_window_test_passed": true,
-  "physics_walking_accepted": false,
-  "scope": "Latest CAD synchronization and kinematic reference display; no CAD geometry change, no learned policy or physical gait acceptance",
-  "whole_sole_kinematic_peak_mm": [
-    2.50007995,
-    2.50003701
+  "physical_parts": 113,
+  "references_regenerated": false,
+  "checkpoint_compatibility_evaluated": false,
+  "model_sync_passed": true,
+  "estimated_total_mass_kg": 1.9761839846386382,
+  "mass_change_g": 2.250183463989197,
+  "collision_piece_count": 3409,
+  "collision_rebuilt_parts": [
+    1,
+    10,
+    16,
+    23,
+    36,
+    37,
+    41,
+    42,
+    43,
+    44,
+    50,
+    53,
+    61,
+    65,
+    68,
+    71,
+    73,
+    82,
+    83,
+    84,
+    85,
+    90,
+    103,
+    109
   ],
-  "display": "native MuJoCo GLFW window, 50 Hz, opaque visual surfaces, collision proxies hidden, space pause/resume"
+  "collision_reused_parts": 89,
+  "control_preservation": {
+    "command_signs": true,
+    "joint_limits": true,
+    "home_joint_angles": true,
+    "home_controls": true,
+    "actuator_defaults": true,
+    "repeated_axis_read": true
+  },
+  "identified_servo_home_hold": {
+    "version": "current",
+    "feedback": true,
+    "seconds": 3.999999999999781,
+    "max_tilt_deg": 2.5516807764731086,
+    "warning_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "parameters": {
+      "position_gain_Nm_per_rad": 2.1662888749078335,
+      "armature_kg_m2": 0.00022216565245351924,
+      "frictionloss_Nm": 0.07568416621730174,
+      "damping_Nm_s_per_rad": 0.13553800013115147,
+      "transport_delay_s": 0.036147902262733456,
+      "mounting_offset_rad": -0.04998491647206405
+    },
+    "torque_limit_scale": 1,
+    "delay_ticks": 2,
+    "control_dt_s": 0.02,
+    "position_feedback_gain": 1.1275290085055225,
+    "position_feedback_damping": 0.07053243703737014,
+    "peak_actuator_torque_Nm": {
+      "left_hip_yaw": 0.0193477312757018,
+      "left_hip_roll": 0.4186326895824371,
+      "left_hip_pitch": 0.2208823359677229,
+      "left_knee": 0.4689770245463183,
+      "left_ankle": 0.15878558834393086,
+      "neck_pitch": 0.21494623079155778,
+      "head_pitch": 0.16633634541258782,
+      "head_yaw": 0.0003397102483225103,
+      "head_roll": 0.0024584731659683698,
+      "right_hip_yaw": 0.019538918559213393,
+      "right_hip_roll": 0.4392214219994234,
+      "right_hip_pitch": 0.24678656326684434,
+      "right_knee": 0.4885375376061405,
+      "right_ankle": 0.18966864708850695,
+      "left_antenna": 0.00020204507690562085,
+      "right_antenna": 0.00020218710002967513
+    },
+    "stable": true,
+    "scope": "4 s nominal standing only, zero policy residual; no Placo reference or new policy"
+  },
+  "identified_servo_hold_comparison": [
+    {
+      "version": "previous",
+      "feedback": false,
+      "seconds": 3.999999999999781,
+      "max_tilt_deg": 75.43954998804726,
+      "warning_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "position_gain_Nm_per_rad": 2.1662888749078335,
+        "armature_kg_m2": 0.00022216565245351924,
+        "frictionloss_Nm": 0.07568416621730174,
+        "damping_Nm_s_per_rad": 0.13553800013115147,
+        "transport_delay_s": 0.036147902262733456,
+        "mounting_offset_rad": -0.04998491647206405
+      },
+      "torque_limit_scale": 1,
+      "delay_ticks": 0,
+      "control_dt_s": 0.02,
+      "position_feedback_gain": 0,
+      "position_feedback_damping": 0,
+      "peak_actuator_torque_Nm": {
+        "left_hip_yaw": 0.11480767080546947,
+        "left_hip_roll": 0.4151172239936356,
+        "left_hip_pitch": 0.37221782324572583,
+        "left_knee": 0.7472589396774671,
+        "left_ankle": 0.5226479268199298,
+        "neck_pitch": 0.33087001305792724,
+        "head_pitch": 0.6655332333567329,
+        "head_yaw": 0.10444183836603572,
+        "head_roll": 0.08070447241376652,
+        "right_hip_yaw": 0.11457177375740979,
+        "right_hip_roll": 0.4392214219994234,
+        "right_hip_pitch": 0.3917374428485043,
+        "right_knee": 0.7575657231181485,
+        "right_ankle": 0.5286779433942667,
+        "left_antenna": 0.0015807851142886121,
+        "right_antenna": 0.001973417339188019
+      },
+      "stable": false,
+      "scope": "4 s nominal standing only, zero policy residual; no Placo reference or new policy"
+    },
+    {
+      "version": "previous",
+      "feedback": true,
+      "seconds": 3.999999999999781,
+      "max_tilt_deg": 2.486406375602401,
+      "warning_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "position_gain_Nm_per_rad": 2.1662888749078335,
+        "armature_kg_m2": 0.00022216565245351924,
+        "frictionloss_Nm": 0.07568416621730174,
+        "damping_Nm_s_per_rad": 0.13553800013115147,
+        "transport_delay_s": 0.036147902262733456,
+        "mounting_offset_rad": -0.04998491647206405
+      },
+      "torque_limit_scale": 1,
+      "delay_ticks": 2,
+      "control_dt_s": 0.02,
+      "position_feedback_gain": 1.1275290085055225,
+      "position_feedback_damping": 0.07053243703737014,
+      "peak_actuator_torque_Nm": {
+        "left_hip_yaw": 0.018792705672931773,
+        "left_hip_roll": 0.417957872236848,
+        "left_hip_pitch": 0.22036853486419028,
+        "left_knee": 0.46785091702369996,
+        "left_ankle": 0.15918440255791477,
+        "neck_pitch": 0.21425190148547868,
+        "head_pitch": 0.16608466655464707,
+        "head_yaw": 0.0003404957991120279,
+        "head_roll": 0.002463193738693868,
+        "right_hip_yaw": 0.018830172123026012,
+        "right_hip_roll": 0.4392214219994234,
+        "right_hip_pitch": 0.2472931458531531,
+        "right_knee": 0.4890718093193711,
+        "right_ankle": 0.19085405956703183,
+        "left_antenna": 0.00020196944359514228,
+        "right_antenna": 0.0002020548153047961
+      },
+      "stable": true,
+      "scope": "4 s nominal standing only, zero policy residual; no Placo reference or new policy"
+    },
+    {
+      "version": "current",
+      "feedback": false,
+      "seconds": 3.999999999999781,
+      "max_tilt_deg": 75.1912038322933,
+      "warning_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "position_gain_Nm_per_rad": 2.1662888749078335,
+        "armature_kg_m2": 0.00022216565245351924,
+        "frictionloss_Nm": 0.07568416621730174,
+        "damping_Nm_s_per_rad": 0.13553800013115147,
+        "transport_delay_s": 0.036147902262733456,
+        "mounting_offset_rad": -0.04998491647206405
+      },
+      "torque_limit_scale": 1,
+      "delay_ticks": 0,
+      "control_dt_s": 0.02,
+      "position_feedback_gain": 0,
+      "position_feedback_damping": 0,
+      "peak_actuator_torque_Nm": {
+        "left_hip_yaw": 0.11575143735527842,
+        "left_hip_roll": 0.41537313282328286,
+        "left_hip_pitch": 0.3703210565202836,
+        "left_knee": 0.7434295700774085,
+        "left_ankle": 0.5199333437861274,
+        "neck_pitch": 0.33104670384839663,
+        "head_pitch": 0.6655037973294852,
+        "head_yaw": 0.10205583100201711,
+        "head_roll": 0.08635949928077738,
+        "right_hip_yaw": 0.11508862825406824,
+        "right_hip_roll": 0.4392214219994234,
+        "right_hip_pitch": 0.39159050954292307,
+        "right_knee": 0.7615726996037764,
+        "right_ankle": 0.5314205459053807,
+        "left_antenna": 0.0015136243105177082,
+        "right_antenna": 0.0019382988949721886
+      },
+      "stable": false,
+      "scope": "4 s nominal standing only, zero policy residual; no Placo reference or new policy"
+    },
+    {
+      "version": "current",
+      "feedback": true,
+      "seconds": 3.999999999999781,
+      "max_tilt_deg": 2.5516807764731086,
+      "warning_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "position_gain_Nm_per_rad": 2.1662888749078335,
+        "armature_kg_m2": 0.00022216565245351924,
+        "frictionloss_Nm": 0.07568416621730174,
+        "damping_Nm_s_per_rad": 0.13553800013115147,
+        "transport_delay_s": 0.036147902262733456,
+        "mounting_offset_rad": -0.04998491647206405
+      },
+      "torque_limit_scale": 1,
+      "delay_ticks": 2,
+      "control_dt_s": 0.02,
+      "position_feedback_gain": 1.1275290085055225,
+      "position_feedback_damping": 0.07053243703737014,
+      "peak_actuator_torque_Nm": {
+        "left_hip_yaw": 0.0193477312757018,
+        "left_hip_roll": 0.4186326895824371,
+        "left_hip_pitch": 0.2208823359677229,
+        "left_knee": 0.4689770245463183,
+        "left_ankle": 0.15878558834393086,
+        "neck_pitch": 0.21494623079155778,
+        "head_pitch": 0.16633634541258782,
+        "head_yaw": 0.0003397102483225103,
+        "head_roll": 0.0024584731659683698,
+        "right_hip_yaw": 0.019538918559213393,
+        "right_hip_roll": 0.4392214219994234,
+        "right_hip_pitch": 0.24678656326684434,
+        "right_knee": 0.4885375376061405,
+        "right_ankle": 0.18966864708850695,
+        "left_antenna": 0.00020204507690562085,
+        "right_antenna": 0.00020218710002967513
+      },
+      "stable": true,
+      "scope": "4 s nominal standing only, zero policy residual; no Placo reference or new policy"
+    }
+  ],
+  "identified_servo_hold_limitation": "Fixed motor targets fall in both previous/current models; the existing feedback formula with 40 ms delay holds both. This is zero-policy standing, with no target slew limiter or reference trajectory, not gait acceptance.",
+  "sole_low_band_mm": 0.2,
+  "numerical_rollouts": [
+    {
+      "mode": "fixed_neutral_hold",
+      "seconds": 4,
+      "max_base_tilt_deg": 0.009638179158777519,
+      "warning_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "mode": "fixed_small_sweep",
+      "seconds": 4,
+      "max_base_tilt_deg": 0.010149592641114258,
+      "warning_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "mode": "free_home_hold",
+      "seconds": 4,
+      "max_base_tilt_deg": 0.09758999817615363,
+      "warning_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "training_model": {
+    "source_hashes": {
+      "open_duck_mini_zp10d.urdf": "ddcca8782a5ee0b70d1952443f2146dff4a8966f0d86d47d44cd935d3d07903c",
+      "open_duck_mini_zp10d.xml": "05393716caaae107efb4aca9016f3f2ea85091207bf268f290e2db087a261dcd",
+      "scene_flat_terrain.xml": "eb0c1691d1259d221774459e1f3d15c06174929e9f35e1dcc6dd2b365fa72438"
+    },
+    "full_geoms": 3523,
+    "training_geoms": 18,
+    "approximation": "original CAD sole collision meshes; boxes on other bodies; floor-only; self-contact and upper-foot contacts omitted",
+    "foot_contacts": "one unmodified original foot_bottom_tpu collision mesh per foot; full model still required for acceptance",
+    "sole_source_geoms": {
+      "left_foot_contact": "collision_041_000",
+      "right_foot_contact": "collision_083_000"
+    },
+    "training_xml_sha256": "4204ac8d38cb883c99eb98d0dbb267433b2d92cd5b97c230c622b14906e6ae90",
+    "unchanged": "joint tree, inertias, armature, damping, frictionloss, gains, force/position limits, home",
+    "bounds": {
+      "trunk_assembly": {
+        "low": [
+          -0.14400000072023436,
+          -0.048500001579186165,
+          -0.02816906529775126
+        ],
+        "high": [
+          0.04600010027438723,
+          0.048500002056510505,
+          0.10789093893386642
+        ]
+      },
+      "hip_roll_assembly": {
+        "low": [
+          -0.024875001064814325,
+          -0.01000000035892804,
+          -0.07861000051160517
+        ],
+        "high": [
+          0.02612500169262888,
+          0.01000000003328435,
+          -0.021499999931249614
+        ]
+      },
+      "left_roll_to_pitch_assembly": {
+        "low": [
+          -0.010972187505832226,
+          -0.015360000938472482,
+          -0.030999998403863166
+        ],
+        "high": [
+          0.08281500169262387,
+          0.015360000519065959,
+          0.03104999978684874
+        ]
+      },
+      "knee_and_ankle_assembly": {
+        "low": [
+          -0.028691654482354244,
+          -0.07814999953580756,
+          -0.03857500009141665
+        ],
+        "high": [
+          0.06128229829596044,
+          0.04212091080507461,
+          0.029875000174435548
+        ]
+      },
+      "knee_and_ankle_assembly_2": {
+        "low": [
+          -0.0117000003614699,
+          -0.07814999953583755,
+          -0.02990000042689393
+        ],
+        "high": [
+          0.011700001473845955,
+          0.010999999580268791,
+          0.03005000074443558
+        ]
+      },
+      "foot_assembly": {
+        "low": [
+          -0.03959139755902687,
+          -0.03882500020560032,
+          -0.03100000044540369
+        ],
+        "high": [
+          0.06433690313337732,
+          0.014669113975715879,
+          0.030999999638122857
+        ]
+      },
+      "neck_pitch_assembly": {
+        "low": [
+          -0.011000000415849682,
+          -0.01099999936932483,
+          -0.030000000206540985
+        ],
+        "high": [
+          0.011000000151800703,
+          0.07549999953582151,
+          0.030000000178625107
+        ]
+      },
+      "head_pitch_to_yaw": {
+        "low": [
+          -0.017100000094786603,
+          -0.010969242931677567,
+          -0.02999999747255243
+        ],
+        "high": [
+          0.011000000559557582,
+          0.07057500011118939,
+          0.02999999949724446
+        ]
+      },
+      "neck_yaw_assembly": {
+        "low": [
+          -0.05074999905942381,
+          -0.050608087851241,
+          -0.025699061577839175
+        ],
+        "high": [
+          0.09294999997037828,
+          0.0506080945226133,
+          0.02600000169256888
+        ]
+      },
+      "head_assembly": {
+        "low": [
+          -0.024974063195458928,
+          -0.0875000027320326,
+          -0.04145000005520518
+        ],
+        "high": [
+          0.040050002172416145,
+          0.10093494633807228,
+          0.1419499927984567
+        ]
+      },
+      "left_antenna_assembly": {
+        "low": [
+          -0.021687143569081437,
+          -0.03024311821204046,
+          -0.020027385217210595
+        ],
+        "high": [
+          0.005163350023257564,
+          0.01272003005156635,
+          0.12672580105833553
+        ]
+      },
+      "right_antenna_assembly": {
+        "low": [
+          -0.02168679276733552,
+          -0.01272002995373756,
+          -0.02002738563600904
+        ],
+        "high": [
+          0.005163370281609685,
+          0.030494154279044797,
+          0.12771856064096532
+        ]
+      },
+      "hip_roll_assembly_2": {
+        "low": [
+          -0.024875001064804943,
+          -0.0100000008625523,
+          -0.07860956821363907
+        ],
+        "high": [
+          0.026125001692638032,
+          0.01000000051428181,
+          -0.02149999993124961
+        ]
+      },
+      "right_roll_to_pitch_assembly": {
+        "low": [
+          -0.08281500169257311,
+          -0.015360001377143172,
+          -0.030999916688600894
+        ],
+        "high": [
+          0.010974998293224123,
+          0.015360001573939637,
+          0.03105000139062495
+        ]
+      },
+      "knee_and_ankle_assembly_3": {
+        "low": [
+          -0.028691279352841957,
+          -0.042120912777317984,
+          -0.03852500014520773
+        ],
+        "high": [
+          0.0612825649188127,
+          0.07814999953579659,
+          0.02987500027699417
+        ]
+      },
+      "knee_and_ankle_assembly_4": {
+        "low": [
+          -0.011700001405937814,
+          -0.07814999953581318,
+          -0.03005000070528637
+        ],
+        "high": [
+          0.011700001622580822,
+          0.010999999761952142,
+          0.029900000449399833
+        ]
+      },
+      "foot_assembly_2": {
+        "low": [
+          -0.039591398008269885,
+          -0.038825000029479875,
+          -0.03100000012783397
+        ],
+        "high": [
+          0.06433690499155152,
+          0.014670881811297148,
+          0.030999998284036014
+        ]
+      }
+    }
+  },
+  "reference_status": "Preserved previous references/checkpoints. Their source hashes differ; regeneration, dynamics audit and policy evaluation required before current-model PPO.",
+  "scope": "Latest CAD geometry, mass, inertia, joint axes, visual/collision meshes, MuJoCo, canonical Placo URDF and reduced training model. No CAD changes or PPO run."
 }

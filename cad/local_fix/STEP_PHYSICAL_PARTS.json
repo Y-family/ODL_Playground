@@ -1,0 +1,829 @@
+{
+  "source_step_sha256": "91e610bc6e8640f1fc8698a5cfdc121c2be64f48ce824873e99b85a4ce08533e",
+  "baseline_step_sha256": "528d82d2a2bda0a7757f28600dc02b289c73220f0cf98c8b0d39ebacd92bf65b",
+  "physical_parts": 113,
+  "step_solids": 135,
+  "parts": [
+    {
+      "index": 0,
+      "label": "left_cache",
+      "solid_indices": [
+        0
+      ]
+    },
+    {
+      "index": 1,
+      "label": "right_antenna_holder",
+      "solid_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "index": 2,
+      "label": "antenna",
+      "solid_indices": [
+        11
+      ]
+    },
+    {
+      "index": 3,
+      "label": "right_cache",
+      "solid_indices": [
+        12
+      ]
+    },
+    {
+      "index": 4,
+      "label": "head_pitch_to_yaw",
+      "solid_indices": [
+        13
+      ]
+    },
+    {
+      "index": 5,
+      "label": "neck_left_sheet",
+      "solid_indices": [
+        18
+      ]
+    },
+    {
+      "index": 6,
+      "label": "neck_right_sheet",
+      "solid_indices": [
+        19
+      ]
+    },
+    {
+      "index": 7,
+      "label": "ZP10D_vendor_body",
+      "solid_indices": [
+        20
+      ]
+    },
+    {
+      "index": 8,
+      "label": "ZP10D_vendor_passive_horn",
+      "solid_indices": [
+        21
+      ]
+    },
+    {
+      "index": 9,
+      "label": "ZP10D_vendor_active_horn",
+      "solid_indices": [
+        22
+      ]
+    },
+    {
+      "index": 10,
+      "label": "left_antenna_holder",
+      "solid_indices": [
+        23,
+        24
+      ]
+    },
+    {
+      "index": 11,
+      "label": "antenna",
+      "solid_indices": [
+        25
+      ]
+    },
+    {
+      "index": 12,
+      "label": "roll_motor_top_bottom",
+      "solid_indices": [
+        30
+      ]
+    },
+    {
+      "index": 13,
+      "label": "ZP10D_vendor_body",
+      "solid_indices": [
+        31
+      ]
+    },
+    {
+      "index": 14,
+      "label": "ZP10D_vendor_passive_horn",
+      "solid_indices": [
+        32
+      ]
+    },
+    {
+      "index": 15,
+      "label": "ZP10D_vendor_active_horn",
+      "solid_indices": [
+        33
+      ]
+    },
+    {
+      "index": 16,
+      "label": "leg_spacer",
+      "solid_indices": [
+        34
+      ]
+    },
+    {
+      "index": 17,
+      "label": "left_knee_to_ankle_left_sheet",
+      "solid_indices": [
+        35
+      ]
+    },
+    {
+      "index": 18,
+      "label": "ZP10D_vendor_body",
+      "solid_indices": [
+        36
+      ]
+    },
+    {
+      "index": 19,
+      "label": "ZP10D_vendor_active_horn",
+      "solid_indices": [
+        37
+      ]
+    },
+    {
+      "index": 20,
+      "label": "ZP10D_vendor_passive_horn",
+      "solid_indices": [
+        38
+      ]
+    },
+    {
+      "index": 21,
+      "label": "left_knee_to_ankle_right_sheet",
+      "solid_indices": [
+        39
+      ]
+    },
+    {
+      "index": 22,
+      "label": "body_front",
+      "solid_indices": [
+        40
+      ]
+    },
+    {
+      "index": 23,
+      "label": "body_middle_bottom",
+      "solid_indices": [
+        134
+      ]
+    },
+    {
+      "index": 24,
+      "label": "body_back",
+      "solid_indices": [
+        41
+      ]
+    },
+    {
+      "index": 25,
+      "label": "usb_c_charger",
+      "solid_indices": [
+        42
+      ]
+    },
+    {
+      "index": 26,
+      "label": "battery_pack_lid",
+      "solid_indices": [
+        43
+      ]
+    },
+    {
+      "index": 27,
+      "label": "body_middle_top",
+      "solid_indices": [
+        44
+      ]
+    },
+    {
+      "index": 28,
+      "label": "power_switch",
+      "solid_indices": [
+        45
+      ]
+    },
+    {
+      "index": 29,
+      "label": "cell",
+      "solid_indices": [
+        46
+      ]
+    },
+    {
+      "index": 30,
+      "label": "holder",
+      "solid_indices": [
+        47
+      ]
+    },
+    {
+      "index": 31,
+      "label": "cell",
+      "solid_indices": [
+        48
+      ]
+    },
+    {
+      "index": 32,
+      "label": "bms",
+      "solid_indices": [
+        49
+      ]
+    },
+    {
+      "index": 33,
+      "label": "ZP10D_vendor_body",
+      "solid_indices": [
+        50
+      ]
+    },
+    {
+      "index": 34,
+      "label": "ZP10D_vendor_passive_horn",
+      "solid_indices": [
+        51
+      ]
+    },
+    {
+      "index": 35,
+      "label": "ZP10D_vendor_active_horn",
+      "solid_indices": [
+        52
+      ]
+    },
+    {
+      "index": 36,
+      "label": "head_yaw_to_roll",
+      "solid_indices": [
+        53
+      ]
+    },
+    {
+      "index": 37,
+      "label": "right_roll_to_pitch",
+      "solid_indices": [
+        54
+      ]
+    },
+    {
+      "index": 38,
+      "label": "ZP10D_vendor_body",
+      "solid_indices": [
+        55
+      ]
+    },
+    {
+      "index": 39,
+      "label": "ZP10D_vendor_passive_horn",
+      "solid_indices": [
+        56
+      ]
+    },
+    {
+      "index": 40,
+      "label": "ZP10D_vendor_active_horn",
+      "solid_indices": [
+        57
+      ]
+    },
+    {
+      "index": 41,
+      "label": "foot_bottom_tpu",
+      "solid_indices": [
+        58
+      ]
+    },
+    {
+      "index": 42,
+      "label": "foot_side",
+      "solid_indices": [
+        59
+      ]
+    },
+    {
+      "index": 43,
+      "label": "foot_top",
+      "solid_indices": [
+        60
+      ]
+    },
+    {
+      "index": 44,
+      "label": "foot_bottom_pla",
+      "solid_indices": [
+        61
+      ]
+    },
+    {
+      "index": 45,
+      "label": "left_knee_to_ankle_left_sheet",
+      "solid_indices": [
+        66
+      ]
+    },
+    {
+      "index": 46,
+      "label": "left_knee_to_ankle_right_sheet",
+      "solid_indices": [
+        67
+      ]
+    },
+    {
+      "index": 47,
+      "label": "ZP10D_vendor_body",
+      "solid_indices": [
+        68
+      ]
+    },
+    {
+      "index": 48,
+      "label": "ZP10D_vendor_active_horn",
+      "solid_indices": [
+        69
+      ]
+    },
+    {
+      "index": 49,
+      "label": "ZP10D_vendor_passive_horn",
+      "solid_indices": [
+        70
+      ]
+    },
+    {
+      "index": 50,
+      "label": "leg_spacer",
+      "solid_indices": [
+        71
+      ]
+    },
+    {
+      "index": 51,
+      "label": "left_knee_to_ankle_right_sheet",
+      "solid_indices": [
+        72
+      ]
+    },
+    {
+      "index": 52,
+      "label": "left_knee_to_ankle_left_sheet",
+      "solid_indices": [
+        73
+      ]
+    },
+    {
+      "index": 53,
+      "label": "leg_spacer",
+      "solid_indices": [
+        74
+      ]
+    },
+    {
+      "index": 54,
+      "label": "ZP10D_vendor_body",
+      "solid_indices": [
+        75
+      ]
+    },
+    {
+      "index": 55,
+      "label": "ZP10D_vendor_passive_horn",
+      "solid_indices": [
+        76
+      ]
+    },
+    {
+      "index": 56,
+      "label": "ZP10D_vendor_active_horn",
+      "solid_indices": [
+        77
+      ]
+    },
+    {
+      "index": 57,
+      "label": "RaspberryPiZeroW",
+      "solid_indices": [
+        78
+      ]
+    },
+    {
+      "index": 58,
+      "label": "flash_reflector_interface",
+      "solid_indices": [
+        79
+      ]
+    },
+    {
+      "index": 59,
+      "label": "speaker_interface",
+      "solid_indices": [
+        80
+      ]
+    },
+    {
+      "index": 60,
+      "label": "roll_bearing",
+      "solid_indices": [
+        81
+      ]
+    },
+    {
+      "index": 61,
+      "label": "head",
+      "solid_indices": [
+        82
+      ]
+    },
+    {
+      "index": 62,
+      "label": "left_eye",
+      "solid_indices": [
+        83
+      ]
+    },
+    {
+      "index": 63,
+      "label": "right_eye",
+      "solid_indices": [
+        84
+      ]
+    },
+    {
+      "index": 64,
+      "label": "speaker_stand",
+      "solid_indices": [
+        85
+      ]
+    },
+    {
+      "index": 65,
+      "label": "flash_light_module",
+      "solid_indices": [
+        86
+      ]
+    },
+    {
+      "index": 66,
+      "label": "glass",
+      "solid_indices": [
+        87
+      ]
+    },
+    {
+      "index": 67,
+      "label": "glass",
+      "solid_indices": [
+        88
+      ]
+    },
+    {
+      "index": 68,
+      "label": "head_bot_sheet",
+      "solid_indices": [
+        89
+      ]
+    },
+    {
+      "index": 69,
+      "label": "head_roll_mount",
+      "solid_indices": [
+        90
+      ]
+    },
+    {
+      "index": 70,
+      "label": "sg90",
+      "solid_indices": [
+        91
+      ]
+    },
+    {
+      "index": 71,
+      "label": "speaker_bottom",
+      "solid_indices": [
+        92
+      ]
+    },
+    {
+      "index": 72,
+      "label": "speaker_top",
+      "solid_indices": [
+        93
+      ]
+    },
+    {
+      "index": 73,
+      "label": "Cam",
+      "solid_indices": [
+        94
+      ]
+    },
+    {
+      "index": 74,
+      "label": "bulb",
+      "solid_indices": [
+        95
+      ]
+    },
+    {
+      "index": 75,
+      "label": "bulb",
+      "solid_indices": [
+        96
+      ]
+    },
+    {
+      "index": 76,
+      "label": "glass",
+      "solid_indices": [
+        97
+      ]
+    },
+    {
+      "index": 77,
+      "label": "ZP10D_vendor_body",
+      "solid_indices": [
+        98
+      ]
+    },
+    {
+      "index": 78,
+      "label": "ZP10D_vendor_passive_horn",
+      "solid_indices": [
+        99
+      ]
+    },
+    {
+      "index": 79,
+      "label": "ZP10D_vendor_active_horn",
+      "solid_indices": [
+        100
+      ]
+    },
+    {
+      "index": 80,
+      "label": "glass",
+      "solid_indices": [
+        101
+      ]
+    },
+    {
+      "index": 81,
+      "label": "sg90",
+      "solid_indices": [
+        102
+      ]
+    },
+    {
+      "index": 82,
+      "label": "foot_side",
+      "solid_indices": [
+        103
+      ]
+    },
+    {
+      "index": 83,
+      "label": "foot_bottom_tpu",
+      "solid_indices": [
+        104
+      ]
+    },
+    {
+      "index": 84,
+      "label": "foot_top",
+      "solid_indices": [
+        105
+      ]
+    },
+    {
+      "index": 85,
+      "label": "foot_bottom_pla",
+      "solid_indices": [
+        106
+      ]
+    },
+    {
+      "index": 86,
+      "label": "roll_motor_top_bottom",
+      "solid_indices": [
+        107
+      ]
+    },
+    {
+      "index": 87,
+      "label": "ZP10D_vendor_body",
+      "solid_indices": [
+        108
+      ]
+    },
+    {
+      "index": 88,
+      "label": "ZP10D_vendor_passive_horn",
+      "solid_indices": [
+        109
+      ]
+    },
+    {
+      "index": 89,
+      "label": "ZP10D_vendor_active_horn",
+      "solid_indices": [
+        110
+      ]
+    },
+    {
+      "index": 90,
+      "label": "trunk_top",
+      "solid_indices": [
+        111
+      ]
+    },
+    {
+      "index": 91,
+      "label": "BNO055",
+      "solid_indices": [
+        112
+      ]
+    },
+    {
+      "index": 92,
+      "label": "Board",
+      "solid_indices": [
+        113
+      ]
+    },
+    {
+      "index": 93,
+      "label": "roll_bearing",
+      "solid_indices": [
+        114
+      ]
+    },
+    {
+      "index": 94,
+      "label": "roll_bearing",
+      "solid_indices": [
+        115
+      ]
+    },
+    {
+      "index": 95,
+      "label": "ZP10D_vendor_body",
+      "solid_indices": [
+        116
+      ]
+    },
+    {
+      "index": 96,
+      "label": "ZP10D_vendor_active_horn",
+      "solid_indices": [
+        117
+      ]
+    },
+    {
+      "index": 97,
+      "label": "trunk_bottom",
+      "solid_indices": [
+        118
+      ]
+    },
+    {
+      "index": 98,
+      "label": "ZP10D_vendor_body",
+      "solid_indices": [
+        119
+      ]
+    },
+    {
+      "index": 99,
+      "label": "ZP10D_vendor_passive_horn",
+      "solid_indices": [
+        120
+      ]
+    },
+    {
+      "index": 100,
+      "label": "ZP10D_vendor_active_horn",
+      "solid_indices": [
+        121
+      ]
+    },
+    {
+      "index": 101,
+      "label": "ZP10D_vendor_body",
+      "solid_indices": [
+        122
+      ]
+    },
+    {
+      "index": 102,
+      "label": "ZP10D_vendor_active_horn",
+      "solid_indices": [
+        123
+      ]
+    },
+    {
+      "index": 103,
+      "label": "left_roll_to_pitch",
+      "solid_indices": [
+        124
+      ]
+    },
+    {
+      "index": 104,
+      "label": "ZP10D_vendor_body",
+      "solid_indices": [
+        125
+      ]
+    },
+    {
+      "index": 105,
+      "label": "ZP10D_vendor_passive_horn",
+      "solid_indices": [
+        126
+      ]
+    },
+    {
+      "index": 106,
+      "label": "ZP10D_vendor_active_horn",
+      "solid_indices": [
+        127
+      ]
+    },
+    {
+      "index": 107,
+      "label": "left_knee_to_ankle_left_sheet",
+      "solid_indices": [
+        128
+      ]
+    },
+    {
+      "index": 108,
+      "label": "left_knee_to_ankle_right_sheet",
+      "solid_indices": [
+        129
+      ]
+    },
+    {
+      "index": 109,
+      "label": "leg_spacer",
+      "solid_indices": [
+        130
+      ]
+    },
+    {
+      "index": 110,
+      "label": "ZP10D_vendor_body",
+      "solid_indices": [
+        131
+      ]
+    },
+    {
+      "index": 111,
+      "label": "ZP10D_vendor_passive_horn",
+      "solid_indices": [
+        132
+      ]
+    },
+    {
+      "index": 112,
+      "label": "ZP10D_vendor_active_horn",
+      "solid_indices": [
+        133
+      ]
+    }
+  ],
+  "reference_solid_indices": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    14,
+    15,
+    16,
+    17,
+    26,
+    27,
+    28,
+    29,
+    62,
+    63,
+    64,
+    65
+  ],
+  "notes": [
+    "Canonical physical IDs and control tree retained from the published model.",
+    "20 coordinate-frame solids excluded from physical mass and contacts.",
+    "Two pre-existing antenna-holder exporter fragments are fully contained in their valid parent solid (residual volume <1e-5 mm3, vertex distance <1e-4 mm); omit duplicate material for mass and meshes, without modifying STEP.",
+    "Mapping is bound to exact STEP bytes; cannot be reused on a different export without rematching."
+  ]
+}

@@ -75,7 +75,9 @@ def measured_axes(robot):
         servo = node.label[:3]
         if servo in SPECS and node.label.startswith(servo + '_'):
             direction, origin = _axis(node)
-            expected = np.array(SPECS[servo]['direction'])
+            # SPECS comes from an already converted control model. Recover the
+            # CAD convention before callers apply command_to_cad_angle once.
+            expected = SERVO_COMMAND_SIGN[servo] * np.array(SPECS[servo]['direction'])
             assert abs(np.dot(tuple(direction), expected)) > .99999, node.label
             result[servo] = (list(origin), expected.tolist())
         for child in _children(node):

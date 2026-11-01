@@ -2,6 +2,7 @@
 
 当前目标是迁移环境，已切分支 `migration/zp10d-training-20261101`，保存训练、
 仿真、奖励函数、标定、参考轨迹、模型输入以及完整历史权重。
+已按后续要求先同步最新 CAD 的动力学；未重新生成训练参考或启动 PPO。
 迁移操作见 `MIGRATION.md`；验证记录和归档哈希见迁移包清单。
 
 ## 首先遵守
@@ -24,9 +25,13 @@
 最新 STEP 哈希 `91e610bc6e8640f1fc8698a5cfdc121c2be64f48ce824873e99b85a4ce08533e`。
 近期按用户边界仅查单关节/直接接口，组合运动碰撞暂不纳入。
 
-**动力学仍是 `ae7b161`（STEP 哈希 `528d82d2a2bda0a7757f28600dc02b289c73220f0cf98c8b0d39ebacd92bf65b`）。**
-已有 checkpoint 绑定这个 URDF/MJCF/参考；直接从最新 CAD 重新生成会改变模型。
-使用 MIGRATION.md 的独立工作树复现，不伪造哈希或关闭同步保护。
+**最新 CAD 动力学已同步并验证。** MuJoCo/URDF/碰撞网格/质量惯量与当前 STEP 一致，
+113 个物理零件，估算质量 1.976184 kg；限位、反向控制和60°站姿保持。
+证据 `cad/local_fix/PLACO_MODEL_SYNC_REVIEW.json` 与质量报告。
+已有参考/checkpoint 仍绑定旧 STEP `528d82d2...`；没有伪造哈希或关闭同步保护。
+下一步重生成 Placo 参考及拟合力矩审计，再评估 checkpoint 兼容性和抬脚。
+复现旧训练时使用 MIGRATION.md 的 `1ac9284` 独立工作树，并还原其匹配 STEP；
+不能仅在最新模型上恢复旧 STEP，否则反而产生另一组不同步输入。
 制造、轴承、限位与碰撞逐项记录见 `cad/local_fix/UPPER_REFIT_ISSUES.md`，
 不要以过往扫描替代修改后的新验证。
 

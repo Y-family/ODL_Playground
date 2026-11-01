@@ -48,6 +48,7 @@ MJCF_OUTPUT = MODEL_DIR / 'open_duck_mini_zp10d.xml'
 SCENE = MODEL_DIR / 'scene_flat_terrain.xml'
 ASSET_DIR = MODEL_DIR / 'assets'
 REPORT_OUTPUT = FINAL_STEP.parent / 'open_duck_mini_zp10d_mass_properties.json'
+PHYSICAL_MAP = FINAL_STEP.parent / 'STEP_PHYSICAL_PARTS.json'
 WORK = Path('/tmp/open-duck-dynamics-sync')
 MANIFEST = WORK / 'manifest.json'
 ONSHAPE_TO_ROBOT_SITE_PACKAGES = Path('/root/.local/share/uv/tools/onshape-to-robot/lib/python3.12/site-packages')
@@ -182,6 +183,139 @@ def _rgba(shape):
     return [.65,.68,.72,1]
 
 
+def current_geometry():
+    """Read canonical leaves, including the named physical map of a flat export."""
+    root = read_step(FINAL_STEP)
+    rows = _leaves(root)
+    if rows:
+        return root, rows
+    mapping = json.loads(PHYSICAL_MAP.read_text())
+    assert mapping['source_step_sha256'] == digest(FINAL_STEP), 'Stale physical STEP map'
+    previous = json.loads(REPORT_OUTPUT.read_text())
+    solids = list(root.solids())
+    assert len(solids) == mapping['step_solids']
+    rows, used = [], set()
+    for entry, old in zip(mapping['parts'], previous['parts'], strict=True):
+        assert (entry['index'], entry['label']) == (old['index'], old['label'])
+        indices = entry['solid_indices']
+        assert not used.intersection(indices)
+        used.update(indices)
+        shapes = sorted((solids[i] for i in indices), key=lambda s: s.volume, reverse=True)
+        shape = shapes[0]
+        # SolidWorks exported two tiny antenna-holder fragments twice. Their
+        # material is already contained in the large valid solid; adding their
+        # volumes would double-count mass. Do not fuse coincident spline faces.
+        for fragment in shapes[1:]:
+            intersection = shape.intersect(fragment)
+            overlap = sum(s.volume for s in intersection.solids()) if intersection else 0.
+            assert abs(fragment.volume - overlap) < 1e-5, old['path']
+            assert max(shape.distance_to(bd.Vertex(v.center())) for v in fragment.vertices()) < 1e-4
+        assert shape.is_valid and len(shape.solids()) == 1, old['path']
+        shape.label = old['label']
+        shape.color = bd.Color(*old['rgba'][:3], 1.)
+        rows.append({k: old[k] for k in ('path', 'root', 'servo', 'label')} | {'shape': shape})
+    assert used.isdisjoint(mapping['reference_solid_indices'])
+    assert used | set(mapping['reference_solid_indices']) == set(range(len(solids)))
+    # Only the servo groups are needed to measure axes; logical membership of
+    # every other part remains explicit in the canonical, hash-bound map.
+    servos = []
+    for sid in JOINT_NAMES:
+        members = [r for r in rows if r['servo'] == sid]
+        label = next(segment.rsplit('[', 1)[0] for segment in members[0]['path'].split('/')
+                     if segment.startswith(sid + '_'))
+        servos.append(bd.Compound(children=[r['shape'] for r in members], label=label))
+    return bd.Compound(children=servos), rows
+
+
+def prepare_flat(current_root, rows):
+    """Update the published topology using actual flat STEP solids and datums."""
+    from OCP.BRepAdaptor import BRepAdaptor_Surface
+    from OCP.GeomAbs import GeomAbs_Cylinder
+    import mujoco
+
+    previous = json.loads(REPORT_OUTPUT.read_text())
+    assert len(rows) == len(previous['parts']) == 113
+    data = deepcopy(previous)
+    for key in ('validation', 'published_verification', 'links', 'ok', 'candidate_mjcf_sha256',
+                'candidate_scene_sha256', 'mjcf_sha256', 'scene_sha256'):
+        data.pop(key, None)
+    axes = measured_axes(current_root)
+    frames = {name: np.array(frame) for name, frame in previous['frames'].items()}
+    for sid in JOINT_NAMES:
+        frames[previous['body_for'][sid]][:3, 3] = np.array(axes[sid][0]) * .001
+    for row in rows:
+        if row['label'] != 'sg90':
+            continue
+        side = 'A_plus_y' if row['shape'].center().Y > .1 else 'A_minus_y'
+        cylinders = [BRepAdaptor_Surface(f.wrapped, True).Cylinder() for f in row['shape'].faces()
+                     if BRepAdaptor_Surface(f.wrapped, True).GetType() == GeomAbs_Cylinder
+                     and abs(BRepAdaptor_Surface(f.wrapped, True).Cylinder().Radius() - 2.425) < 1e-6]
+        assert cylinders
+        axes[side] = [list(cylinders[0].Location().Coord()), list(cylinders[0].Axis().Direction().Coord())]
+        frames[ANTENNA_NAMES[side] + '_assembly'][:3, 3] = np.array(axes[side][0]) * .001
+    parts, reuse = [], []
+    for row, old in zip(rows, previous['parts'], strict=True):
+        assert row['path'] == old['path']
+        shape = row['shape']
+        part = deepcopy(old)
+        # Preserve adopted effective densities and purchased-component masses.
+        mass = old['mass_kg'] * shape.volume / old['volume_mm3'] if row['label'] in PRINTED else old['mass_kg']
+        com, inertia = properties(shape, mass)
+        vertices, faces = shape.tessellate(MESH_DEFLECTION_MM, .3)
+        mesh = trimesh.Trimesh(np.array([tuple(v) for v in vertices]) * .001 - com,
+                               np.array(faces), process=True)
+        mesh.export(WORK / 'assets' / old['mesh'])
+        bounds = visual_bounds(shape, (mesh.bounds + com) * 1000)
+        delta = com - np.array(old['com_world_m'])
+        expected = np.array(old['bbox_mm']) + delta * 1000
+        rigid = (abs(shape.volume - old['volume_mm3']) < max(.001, old['volume_mm3'] * 1e-7)
+                 and np.max(abs(np.array(bounds['bbox_mm']) - expected)) < .001
+                 and np.max(abs(inertia - np.array(old['inertia_world_kg_m2']))) < 1e-10)
+        part.update(mass_kg=mass, volume_mm3=shape.volume, com_world_m=com.tolist(),
+                    inertia_world_kg_m2=inertia.tolist(), **bounds, rgba=_rgba(shape),
+                    mesh_sha256=digest(WORK/'assets'/old['mesh']),
+                    mesh_vertices=len(mesh.vertices), mesh_faces=len(mesh.faces))
+        part['synchronization'] = dict(step_solid_indices=json.loads(PHYSICAL_MAP.read_text())['parts'][old['index']]['solid_indices'],
+                                      previous_com_world_m=old['com_world_m'], rigid_translation_m=delta.tolist(),
+                                      reused_collision=bool(rigid))
+        if rigid:
+            for piece in old['collision']['pieces']:
+                assert digest(ASSET_DIR/piece['mesh']) == piece['sha256']
+                shutil.copyfile(ASSET_DIR/piece['mesh'], WORK/'assets'/piece['mesh'])
+            reuse.append(old['index'])
+        else:
+            part.pop('collision', None)
+        parts.append(part)
+        print('export', old['index'], row['label'], 'reuse collision' if rigid else 'rebuild collision', flush=True)
+        del mesh, vertices, faces
+        gc.collect()
+    sites = {name: np.array(frame) for name, frame in previous['sites'].items()}
+    for name, label in {'imu':'BNO055', 'left_foot':'foot_bottom_tpu', 'right_foot':'foot_bottom_tpu',
+                        'head':'head', 'trunk':'trunk_top'}.items():
+        matches = [p for p in parts if p['label'] == label]
+        if name.endswith('_foot'):
+            body = 'foot_assembly' if name == 'left_foot' else 'foot_assembly_2'
+            matches = [p for p in matches if p['body'] == body]
+        assert len(matches) == 1
+        p = matches[0]
+        sites[name][:3, 3] += np.array(p['com_world_m']) - np.array(previous['parts'][p['index']]['com_world_m'])
+    model = mujoco.MjModel.from_xml_path(str(SCENE))
+    home = {model.joint(j).name: float(model.key_qpos[0, model.jnt_qposadr[j]])
+            for j in range(1, model.njnt)}
+    ctrl = {model.actuator(a).name: float(model.key_ctrl[0, a]) for a in range(model.nu)}
+    data.update(source_step_sha256=digest(FINAL_STEP), previous_source_step_sha256=previous['source_step_sha256'],
+                previous_mass_report_sha256=digest(REPORT_OUTPUT), physical_map_sha256=digest(PHYSICAL_MAP),
+                previous_mjcf_sha256=digest(MJCF_OUTPUT), template_sha256=digest(MJCF_TEMPLATE),
+                axes=axes, frames={k:v.tolist() for k,v in frames.items()},
+                sites={k:v.tolist() for k,v in sites.items()}, parts=parts, command_signs=SERVO_COMMAND_SIGN,
+                home_joint_angles_rad=home, home_ctrl_rad=ctrl, home_free_qpos=model.key_qpos[0,:7].tolist(),
+                updated_total_mass_kg=sum(p['mass_kg'] for p in parts), stage='prepared',
+                collision_reuse_indices=reuse, collision_rebuild_indices=[p['index'] for p in parts if 'collision' not in p])
+    assert digest(FINAL_STEP) == json.loads(PHYSICAL_MAP.read_text())['source_step_sha256']
+    save(data)
+    print('Prepared flat STEP:', len(parts), 'physical parts; rebuild', data['collision_rebuild_indices'], flush=True)
+
+
 def prepare():
     import mujoco
     from OCP.BRepAdaptor import BRepAdaptor_Surface
@@ -189,9 +323,10 @@ def prepare():
     WORK.mkdir(exist_ok=True)
     (WORK/'assets').mkdir(exist_ok=True)
     source_sha = digest(FINAL_STEP)
+    current_root, current = current_geometry()
+    if PHYSICAL_MAP.exists() and json.loads(PHYSICAL_MAP.read_text())['source_step_sha256'] == source_sha:
+        return prepare_flat(current_root, current)
     original = _leaves(read_step(ORIGINAL_STEP))
-    current_root = read_step(FINAL_STEP)
-    current = _leaves(current_root)
     assert len(current) == 113
     reference = defaultdict(list)
     for row in original:
@@ -353,10 +488,12 @@ def prepare():
     # The exchanged lower assemblies have the opposite front/back response.
     # Express the existing neutral pose in the new controller convention so
     # the compiled model still starts at the unchanged CAD neutral pose.
+    previous_signs = json.loads(REPORT_OUTPUT.read_text()).get('command_signs', {})
     for servo, name in JOINT_NAMES.items():
         sign = SERVO_COMMAND_SIGN[servo]
-        home[name] *= sign
-        home_ctrl[name] *= sign
+        conversion = sign / previous_signs.get(servo, 1)
+        home[name] *= conversion
+        home_ctrl[name] *= conversion
     data=dict(source_step=str(FINAL_STEP.relative_to(PROJECT_ROOT)),source_step_sha256=source_sha,
               original_step_sha256=digest(ORIGINAL_STEP),robot_pickle_sha256=digest(ROBOT_PICKLE),
               template_sha256=digest(MJCF_TEMPLATE),previous_mjcf_sha256=digest(MJCF_OUTPUT),

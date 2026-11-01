@@ -1,3 +1,40 @@
+## 2026-11-01 Latest CAD dynamics synchronization
+
+The accepted STEP `91e610bc6e8640f1fc8698a5cfdc121c2be64f48ce824873e99b85a4ce08533e`
+is synchronized to the full MuJoCo model, canonical Placo URDF and reduced
+training-model generator. This includes the 1.36 mm inward shift per leg and
+rear shell seam repair. CAD geometry was not changed. The flat SolidWorks STEP
+has 135 solids: 20 datum/reference solids are excluded and two contained antenna
+export fragments are deduplicated, leaving 113 physical parts.
+
+Adopted component masses/effective densities are preserved. Estimated total
+mass is 1.976183985 kg (+2.250 g); actual PETG print
+weights remain unmeasured. All 113 visual meshes were refreshed; 24 collision
+parts were rebuilt and 89 rigidly unchanged parts reused (3409 convex pieces).
+Convex contacts remain approximations and do not certify 0.2 mm CAD clearance.
+
+Independent geometry/inertia/axis/combined-pose and numerical checks passed.
+Strict URDF validation and all physical-body frames/total COM at home plus
+both limits of all 16 joints passed (33 poses). The unchanged 50 x 20 mm
+planning rectangles fit the low sole hulls with left/right margins
+2.121/1.728 mm. S04/S05/S09/S10 reverse control, all joint
+limits, home joint angles/controls and actuator defaults are preserved; a
+second axis read confirms the signs do not flip on repeated synchronization.
+The existing 7.8 V BAM response is still applied by `actuators.configure` at
+runtime: with the existing feedback formula and 40 ms delay, the new full model
+held home for 4 s, max tilt 2.552 degrees, without numerical warnings
+(old model 2.486 degrees). Fixed targets without feedback fall in both old/new
+models (75.440/75.191 degrees); this is an existing control dependency. These
+zero-policy diagnostic holds omit target slew limiting. Reduced-model structural arrays and actual sole
+meshes match the full model.
+
+No PPO steps were run and historical references/checkpoints were not relabeled.
+Their hashes still bind the earlier model; the environment rejects mixing them
+with this model. Next: regenerate the Placo reference and fitted force audit,
+then evaluate checkpoint compatibility and motion before resuming training.
+Evidence: `cad/local_fix/open_duck_mini_zp10d_mass_properties.json`,
+`STEP_PHYSICAL_PARTS.json` and `PLACO_MODEL_SYNC_REVIEW.json`.
+
 ## 2026-10-31 Drift feedback candidate and continuation
 
 `sampled_control/drift_feedback` completed 262,144 new steps from the retained

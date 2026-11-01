@@ -16,7 +16,7 @@ if resource.getrlimit(resource.RLIMIT_AS)[1] != 4_000_000_000:
 import numpy as np
 import trimesh
 import mujoco
-from cadgen import build123d as bd, read_step
+from cadgen import build123d as bd
 from OCP.BRepClass3d import BRepClass3d_SolidClassifier
 from OCP.TopAbs import TopAbs_OUT
 from OCP.gp import gp_Pnt
@@ -24,9 +24,8 @@ from scipy.spatial import ConvexHull
 
 from build_zp10d_mjcf_from_final_step import (
     WORK, MJCF_OUTPUT, SCENE, FINAL_STEP, REPORT_OUTPUT, JOINT_NAMES,
-    ANTENNA_NAMES, SERVO_COMMAND_SIGN, digest, load, properties, PROJECT_ROOT, MANIFEST,
+    ANTENNA_NAMES, SERVO_COMMAND_SIGN, digest, load, properties, PROJECT_ROOT, MANIFEST, PHYSICAL_MAP, current_geometry,
 )
-from full_motion_current import _leaves
 
 
 def forward_matrix(pose, chain, axes):
@@ -92,7 +91,7 @@ def analytic_property_check():
 
 
 def cavities(manifest):
-    rows=_leaves(read_step(FINAL_STEP));findings=[]
+    rows=current_geometry()[1];findings=[]
     for part in manifest['parts']:
         if part['label'] not in ('head','head_yaw_to_roll','body_front','body_back'):
             continue
@@ -202,6 +201,29 @@ def main():
                 nq=model.nq,nv=model.nv,nu=model.nu,physical_parts=len(manifest['parts']),
                 mass_property_units=analytic_property_check(),joint_alignment=[],geometry=[],inertials=[],
                 actuator_order=[mujoco.mj_id2name(model,mujoco.mjtObj.mjOBJ_ACTUATOR,a) for a in range(model.nu)])
+    if 'physical_map_sha256' in manifest:
+        assert digest(PHYSICAL_MAP) == manifest['physical_map_sha256'], 'Physical STEP map changed'
+        mapping = json.loads(PHYSICAL_MAP.read_text())
+        assert mapping['source_step_sha256'] == manifest['source_step_sha256']
+        assert mapping['physical_parts'] == len(manifest['parts'])
+        report['step_physical_mapping'] = dict(
+            sha256=manifest['physical_map_sha256'], step_solids=mapping['step_solids'],
+            physical_parts=mapping['physical_parts'],
+            excluded_reference_solids=len(mapping['reference_solid_indices']),
+            collision_parts_reused=len(manifest['collision_reuse_indices']),
+            collision_parts_rebuilt=len(manifest['collision_rebuild_indices']))
+        # Flat-export synchronization retains the existing control convention.
+        # A second conversion of the swapped knee/ankle signs must fail here.
+        previous = json.loads(REPORT_OUTPUT.read_text())
+        direction_checks = []
+        for sid, name in JOINT_NAMES.items():
+            old_axis = (previous.get('command_signs', {}).get(sid, 1)
+                        * np.array(previous['axes'][sid][1]))
+            actual = data.xaxis[model.joint(name).id]
+            dot = float(np.dot(actual, old_axis))
+            assert dot > 1 - 1e-10, (sid, 'Control direction changed', dot)
+            direction_checks.append(dict(servo=sid, previous_axis_dot=dot))
+        report['preserved_control_directions'] = direction_checks
     assert model.nu==16 and report['actuator_order'][:14]==manifest['original_actuator_order']
     base=mujoco.mj_name2id(model,mujoco.mjtObj.mjOBJ_BODY,'base')
     base_offset=data.xpos[base].copy()

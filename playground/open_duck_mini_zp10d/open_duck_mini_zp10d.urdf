@@ -1,53 +1,57 @@
 <?xml version="1.0"?>
 <!--
 Canonical URDF for Placo; units m/kg/s/rad; +X forward +Y left +Z up.
-Synchronized from latest STEP 528d82d2a2bda0a7757f28600dc02b289c73220f0cf98c8b0d39ebacd92bf65b.
-MJCF SHA256 526c3577b513b1846291b5d2d7951bac83b33befa83d2294656c10b3cf8abf2d.
-Physical link frames, hinge signs, ranges and inertial tensors measured from compiled MJCF.
-Includes approved lower-leg swap; no servo, CAD or joint-limit changes.
-Foot frame XY and orientation follow current corresponding MJCF site; Z projected onto collision sole minimum.
-Visual meshes in metres, raw mesh origins; collisions owned by MJCF, intentionally omitted here.
-Mass/inertias are CAD estimates; torque/thermal/real hardware and walking are not certified.
-Frame-only base/trunk/foot references have no fabricated inertia. Floating base supplied by Placo.
-This XML remains canonical; one-time computation helper is temporary scaffolding.
+Synchronized from latest STEP 91e610bc6e8640f1fc8698a5cfdc121c2be64f48ce824873e99b85a4ce08533e.
+MJCF SHA256 05393716caaae107efb4aca9016f3f2ea85091207bf268f290e2db087a261dcd.
+Physical link frames, hinge signs, ranges and inertial tensors from compiled MJCF.
+Hip spacing reduced 1.36 mm per side; rear seam repair included; 113 physical parts.
+Includes approved lower-leg swap; positive joint motion follows the MJCF command axes,
+including S04/S05/S09/S10 reverse control. Joint limits and 60 degree knee home preserved.
+Foot frame XY/orientation follow current MJCF sites; Z projected onto collision sole minimum.
+Visual meshes in metres, raw mesh origins relative to owning links, scale 1.
+Collisions owned by MJCF and intentionally omitted from this planning description.
+Mass/COM/inertias use the adopted effective densities and purchased-component mass estimates;
+PETG fill settings do not establish measured printed weights. No hardware/strength/gait acceptance.
+Frame-only base/trunk/foot references omit inertia. Floating base supplied by Placo.
+This XML remains canonical; one-time computation scaffold is temporary.
 -->
 <robot name="open_duck_mini_zp10d">
   <link name="base" />
   <link name="trunk_assembly">
     <inertial>
-      <origin xyz="-0.046608474508834999 -0.00024854413995038002 0.044227574921924001" rpy="0 0 0" />
-      <mass value="0.57787039801851003" />
-      <inertia ixx="0.0010352017376390463" iyy="0.0024810717815112503" izz="0.002097527899563011" ixy="-1.0803242092095246e-05" ixz="-0.00015560230107421647" iyz="-3.2261134863044651e-06" />
+      <origin xyz="-0.046828565308003306 -0.00024735519374728747 0.043929383037174537" rpy="0 0 0" />
+      <mass value="0.58064635144854293" />
+      <inertia ixx="0.0010474626845892289" iyy="0.0024978543500771282" izz="0.0021050579971726058" ixy="-1.0771567803065961e-05" ixz="-0.00016350097230148619" iyz="-3.1832549859433331e-06" />
     </inertial>
     <visual name="visual_022">
-      <origin xyz="0.040936191880748 6.0269724479805e-06 0.038820268531977" rpy="0 0 0" />
+      <origin xyz="0.040936191880747999 6.0269724479775003e-06 0.038820268531977002" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_022_body_front.stl" scale="1 1 1" />
       </geometry>
       <material name="visual_022_color">
-        <color rgba="1 1 1 0.35" />
+        <color rgba="1 1 1 1" />
       </material>
     </visual>
     <visual name="visual_023">
-      <origin xyz="-0.040397501477647 -1.4784872471038e-08 -0.00576371066193" rpy="0 0 0" />
+      <origin xyz="-0.044496255390718997 -2.1444235429441e-09 -0.0067350687839479997" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_023_body_middle_bottom.stl" scale="1 1 1" />
       </geometry>
       <material name="visual_023_color">
-        <color rgba="1 1 1 0.35" />
+        <color rgba="1 1 1 1" />
       </material>
     </visual>
     <visual name="visual_024">
-      <origin xyz="-0.12373888028258 -0.00015781841965114 0.036231565657152" rpy="0 0 0" />
+      <origin xyz="-0.12373888028257 -0.00015781841965063 0.036231565657153998" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_024_body_back.stl" scale="1 1 1" />
       </geometry>
       <material name="visual_024_color">
-        <color rgba="1 1 1 0.35" />
+        <color rgba="1 1 1 1" />
       </material>
     </visual>
     <visual name="visual_025">
-      <origin xyz="-0.0833 -0.04443150464637 0.061229252983702" rpy="0 0 0" />
+      <origin xyz="-0.083299999999999999 -0.044431504646370003 0.061229252983702999" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_025_usb_c_charger.stl" scale="1 1 1" />
       </geometry>
@@ -56,7 +60,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_026">
-      <origin xyz="-0.10699960975715 8.7489696339756e-19 0.032857885438806" rpy="0 0 0" />
+      <origin xyz="-0.10699960975715 1.2648043658392e-18 0.032857885438806002" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_026_battery_pack_lid.stl" scale="1 1 1" />
       </geometry>
@@ -65,16 +69,16 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_027">
-      <origin xyz="-0.036547595049613 1.8612048829857e-15 0.08141604585339" rpy="0 0 0" />
+      <origin xyz="-0.036547595049611997 1.9231030503843002e-15 0.081416045853391003" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_027_body_middle_top.stl" scale="1 1 1" />
       </geometry>
       <material name="visual_027_color">
-        <color rgba="1 1 1 0.35" />
+        <color rgba="1 1 1 1" />
       </material>
     </visual>
     <visual name="visual_028">
-      <origin xyz="-0.11349447934493 -1.1913059799713e-18 0.092764032099575" rpy="0 0 0" />
+      <origin xyz="-0.11349447934494 1.3578285390507e-18 0.092764032099572" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_028_power_switch.stl" scale="1 1 1" />
       </geometry>
@@ -83,7 +87,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_029">
-      <origin xyz="-0.1196245681563 -0.010499999999998 0.032513432174047" rpy="0 0 0" />
+      <origin xyz="-0.1196245681563 -0.010500000000000001 0.032513432174047001" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_029_cell.stl" scale="1 1 1" />
       </geometry>
@@ -92,7 +96,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_030">
-      <origin xyz="-0.12328700470452 8.5301768172258e-15 0.032513432174045" rpy="0 0 0" />
+      <origin xyz="-0.12328700470452 8.5151228280906005e-15 0.032513432174045002" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_030_holder.stl" scale="1 1 1" />
       </geometry>
@@ -101,7 +105,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_031">
-      <origin xyz="-0.1196245681563 0.010500000000002 0.032513432174047" rpy="0 0 0" />
+      <origin xyz="-0.1196245681563 0.010500000000000001 0.032513432174047001" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_031_cell.stl" scale="1 1 1" />
       </geometry>
@@ -110,7 +114,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_032">
-      <origin xyz="-0.0832999999999 -0.0437 0.021857885438806" rpy="0 0 0" />
+      <origin xyz="-0.083299999999899996 -0.043700000000000003 0.021857885438805999" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_032_bms.stl" scale="1 1 1" />
       </geometry>
@@ -119,7 +123,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_090">
-      <origin xyz="-0.030954568201598 0.00033883564772429 0.061719888634529" rpy="0 0 0" />
+      <origin xyz="-0.030954568838384999 0.00033883550911029998 0.061719876433057" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_090_trunk_top.stl" scale="1 1 1" />
       </geometry>
@@ -128,7 +132,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_091">
-      <origin xyz="-0.07711 2.7050940594095e-17 0.043290938812376" rpy="0 0 0" />
+      <origin xyz="-0.077109999999999998 0 0.043290938812376001" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_091_BNO055.stl" scale="1 1 1" />
       </geometry>
@@ -137,7 +141,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_092">
-      <origin xyz="-0.080990967908022 1.3396305589482e-05 0.059590938482375" rpy="0 0 0" />
+      <origin xyz="-0.080990967909693998 1.3396305660855999e-05 0.059590938482376003" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_092_Board.stl" scale="1 1 1" />
       </geometry>
@@ -146,7 +150,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_093">
-      <origin xyz="-0.0188 -0.0248 -0.01194406118762" rpy="0 0 0" />
+      <origin xyz="-0.018800000000000001 -0.024799999999999999 -0.01194406118762" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_093_roll_bearing.stl" scale="1 1 1" />
       </geometry>
@@ -155,7 +159,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_094">
-      <origin xyz="-0.0188 0.0248 -0.01194406118762" rpy="0 0 0" />
+      <origin xyz="-0.018800000000000001 0.024799999999999999 -0.01194406118762" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_094_roll_bearing.stl" scale="1 1 1" />
       </geometry>
@@ -164,7 +168,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_095">
-      <origin xyz="-0.029271566557761 0.024799920171021 0.063785800889396" rpy="0 0 0" />
+      <origin xyz="-0.029271566557774999 0.024799920171020999 0.063785800887999997" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_095_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
@@ -173,7 +177,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_097">
-      <origin xyz="-0.018799999999999 3.2472918938249e-14 -0.013341913837277" rpy="0 0 0" />
+      <origin xyz="-0.018799999999999002 3.2209205478098e-14 -0.013341913837277" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_097_trunk_bottom.stl" scale="1 1 1" />
       </geometry>
@@ -182,7 +186,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_098">
-      <origin xyz="0.0088000791380372 0.00091696968300048 0.079620006540937" rpy="0 0 0" />
+      <origin xyz="0.0088000791380372992 0.00091696968369398999 0.079620006540898999" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_098_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
@@ -191,7 +195,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_101">
-      <origin xyz="-0.029271566557761 -0.024800079828979 0.063785800889396" rpy="0 0 0" />
+      <origin xyz="-0.029271566557774999 -0.024800079828978999 0.063785800888000996" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_101_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
@@ -202,12 +206,12 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
   </link>
   <link name="hip_roll_assembly">
     <inertial>
-      <origin xyz="0.00066369247202879996 -4.3784897140830002e-06 -0.049283995554746003" rpy="0 0 0" />
-      <mass value="0.060501056822001999" />
-      <inertia ixx="1.2187060037786941e-05" iyy="1.9008785424595e-05" izz="1.0701982560348071e-05" ixy="-5.9299963968689556e-09" ixz="1.2512515404568547e-07" iyz="2.991654258535684e-09" />
+      <origin xyz="0.00066369247292692246 -4.3784897159218553e-06 -0.049283995554737108" rpy="0 0 0" />
+      <mass value="0.060501056823623896" />
+      <inertia ixx="1.2187060037547847e-05" iyy="1.9008785424047684e-05" izz="1.0701982560106009e-05" ixy="-5.9299951928402225e-09" ixz="1.2512515430380743e-07" iyz="2.9916543616092291e-09" />
     </inertial>
     <visual name="visual_086">
-      <origin xyz="0.0021781792219026 -4.6993812000479e-05 -0.046800879073596" rpy="-2.6666893440796566e-17 2.2204460492503131e-14 -7.9347606515728002e-14" />
+      <origin xyz="0.0021781792244823001 -4.6993812008569998e-05 -0.046800879074545998" rpy="-2.6666893440796566e-17 2.2204460492503131e-14 -7.9347606515728002e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_086_roll_motor_top_bottom.stl" scale="1 1 1" />
       </geometry>
@@ -216,7 +220,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_087">
-      <origin xyz="0.00051696968301374 7.9137962120945e-08 -0.050119067728517" rpy="-2.6666893440796566e-17 2.2204460492503131e-14 -7.9347606515728002e-14" />
+      <origin xyz="0.00051696968370676995 7.9137962190334006e-08 -0.050119067728480002" rpy="-2.6666893440796566e-17 2.2204460492503131e-14 -7.9347606515728002e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_087_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
@@ -225,7 +229,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_096">
-      <origin xyz="-5.1347814888913e-16 -4.5102810375397e-16 -0.02454346092504" rpy="-2.6666893440796566e-17 2.2204460492503131e-14 -7.9347606515728002e-14" />
+      <origin xyz="-5.0306980803327001e-16 0 -0.024543460925039999" rpy="-2.6666893440796566e-17 2.2204460492503131e-14 -7.9347606515728002e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_096_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
@@ -236,12 +240,12 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
   </link>
   <link name="left_roll_to_pitch_assembly">
     <inertial>
-      <origin xyz="0.049827969265732998 -2.9966404926591001e-05 0.0029359408009698999" rpy="0 0 0" />
-      <mass value="0.076474818164930999" />
-      <inertia ixx="2.0830677070314523e-05" iyy="5.0343002768616732e-05" izz="3.6132546490038836e-05" ixy="-4.8460051113829262e-08" ixz="-2.4576833398040075e-06" iyz="2.8690374089162315e-08" />
+      <origin xyz="0.048687856341525407 -3.001600237997376e-05 0.0029454460118740703" rpy="0 0 0" />
+      <mass value="0.076204220757094529" />
+      <inertia ixx="2.0589024188559788e-05" iyy="4.9103971655138646e-05" izz="3.5096654946137055e-05" ixy="-4.8829010027253533e-08" ixz="-2.4138217070414002e-06" iyz="2.8680673434139989e-08" />
     </inertial>
     <visual name="visual_088">
-      <origin xyz="3.1571967262778e-16 -1.1709383462843e-17 0.024547276295319" rpy="1.5707963267949965 1.5707963267947966 0" />
+      <origin xyz="-8.3266726846886999e-17 -1.6219664500383001e-16 0.024547276295317" rpy="1.5707963267949965 1.5707963267947966 0" />
       <geometry>
         <mesh filename="xmls/assets/current_088_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
@@ -250,7 +254,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_089">
-      <origin xyz="5.1000870193718e-16 -3.2526065174565e-17 -0.024543460925038" rpy="1.5707963267949965 1.5707963267947966 0" />
+      <origin xyz="5.8980598183210997e-17 3.7123082385904002e-16 -0.024543460925038001" rpy="1.5707963267949965 1.5707963267947966 0" />
       <geometry>
         <mesh filename="xmls/assets/current_089_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
@@ -259,7 +263,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_103">
-      <origin xyz="0.032958533401368 -0.00011171958539141 -0.0056029957813594" rpy="1.5707963267949965 1.5707963267947966 0" />
+      <origin xyz="0.032036460339030001 -0.00011300158157989 -0.0056815079364112" rpy="1.5707963267949965 1.5707963267947966 0" />
       <geometry>
         <mesh filename="xmls/assets/current_103_left_roll_to_pitch.stl" scale="1 1 1" />
       </geometry>
@@ -268,7 +272,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_104">
-      <origin xyz="0.058566969683009 -7.9138041248188e-08 0.0063040677286136" rpy="1.5707963267949965 1.5707963267947966 0" />
+      <origin xyz="0.057206969683702001 -7.9138041272040996e-08 0.0063040677285763997" rpy="1.5707963267949965 1.5707963267947966 0" />
       <geometry>
         <mesh filename="xmls/assets/current_104_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
@@ -279,12 +283,12 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
   </link>
   <link name="knee_and_ankle_assembly">
     <inertial>
-      <origin xyz="0.0044729512906783002 -0.032640124999704 -0.0086586345239653001" rpy="0 0 0" />
-      <mass value="0.11206579934463" />
-      <inertia ixx="0.00015798762394439415" iyy="7.8038321991250354e-05" izz="0.00015591396319174095" ixy="-2.1780514376187052e-05" ixz="7.8903946674525808e-06" iyz="2.805277197423091e-05" />
+      <origin xyz="0.0044729521730352594 -0.032640125134724779 -0.008658636323797278" rpy="0 0 0" />
+      <mass value="0.11206578073268575" />
+      <inertia ixx="0.00015798762108224122" iyy="7.8038318624457182e-05" izz="0.00015591396267086439" ixy="-2.1780514517865553e-05" ixz="7.8903936379102068e-06" iyz="2.8052772037495723e-05" />
     </inertial>
     <visual name="visual_000">
-      <origin xyz="0.012687350274793 -0.00092129829236347 -0.024827603150973" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
+      <origin xyz="0.012687350271911001 -0.00092129829266815 -0.024827603152368" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_000_left_cache.stl" scale="1 1 1" />
       </geometry>
@@ -293,7 +297,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_045">
-      <origin xyz="-2.1914159988312e-06 -0.027418413368196 -0.026805684555155" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
+      <origin xyz="-2.1914155688696001e-06 -0.027418413370602 -0.026805684556272" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_045_left_knee_to_ankle_left_sheet.stl" scale="1 1 1" />
       </geometry>
@@ -302,7 +306,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_046">
-      <origin xyz="9.9615916445792e-05 -0.029894108969589 0.026243133855353" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
+      <origin xyz="9.9615924648321005e-05 -0.029894108938916999 0.026243133859623" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_046_left_knee_to_ankle_right_sheet.stl" scale="1 1 1" />
       </geometry>
@@ -311,7 +315,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_047">
-      <origin xyz="-7.9138061513662e-08 -0.058269067728533 -0.00046696968305401" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
+      <origin xyz="-7.9138061576112e-08 -0.058269067728496 -0.00046696968374722" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_047_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
@@ -320,7 +324,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_050">
-      <origin xyz="-1.8220348840803e-11 -0.032765943703764 -2.6770721274647e-05" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
+      <origin xyz="2.6181937520797e-09 -0.03276594677005 -2.677765243439e-05" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_050_leg_spacer.stl" scale="1 1 1" />
       </geometry>
@@ -329,7 +333,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_105">
-      <origin xyz="9.9226182825873e-16 -2.092076512028e-15 0.02454727629532" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
+      <origin xyz="9.5062846483529009e-16 -2.6189987678559999e-15 0.024547276295320001" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_105_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
@@ -338,7 +342,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_106">
-      <origin xyz="-2.1233015345956e-15 2.9663771439203e-15 -0.024543460925039" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
+      <origin xyz="-2.0955459589799999e-15 2.4867261028127999e-15 -0.024543460925039" rpy="-1.5707963267947975 6.5281113847959205e-14 -7.4718009557273035e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_106_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
@@ -349,12 +353,12 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
   </link>
   <link name="knee_and_ankle_assembly_2">
     <inertial>
-      <origin xyz="-2.0262477805061e-07 -0.049877655603039001 0.00029589654951185998" rpy="0 0 0" />
-      <mass value="0.072686540614991996" />
-      <inertia ixx="4.459958821496902e-05" iyy="2.0470723747375567e-05" izz="2.9359809192761417e-05" ixy="6.0524524951468004e-11" ixz="-3.429057405350913e-10" iyz="-5.6954100424054634e-07" />
+      <origin xyz="-2.0240996699971861e-07 -0.049877660233495713 0.00029589602408940102" rpy="0 0 0" />
+      <mass value="0.072686521992733677" />
+      <inertia ixx="4.4599581387396258e-05" iyy="2.0470723031329519e-05" izz="2.9359803033546409e-05" ixy="6.0234304459174755e-11" ixz="-3.4288267090422764e-10" iyz="-5.6954033183907262e-07" />
     </inertial>
     <visual name="visual_016">
-      <origin xyz="-1.8202418738955e-11 -0.032765943714296 0.00014822927881744" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
+      <origin xyz="2.6182118625927999e-09 -0.032765946780586003 0.00014822234765875001" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_016_leg_spacer.stl" scale="1 1 1" />
       </geometry>
@@ -363,7 +367,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_017">
-      <origin xyz="-2.1863480928891e-06 -0.027395219696887 -0.026652602178033" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
+      <origin xyz="-2.186329741076e-06 -0.027395219701607999 -0.026652602182299999" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_017_left_knee_to_ankle_left_sheet.stl" scale="1 1 1" />
       </geometry>
@@ -372,7 +376,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_018">
-      <origin xyz="-7.9138041793325e-08 -0.058269067728562 -0.00029196968295934" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
+      <origin xyz="-7.9138041945981e-08 -0.058269067728525997 -0.00029196968365299998" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_018_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
@@ -381,7 +385,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_021">
-      <origin xyz="-2.8239263240304e-08 -0.030167863177151 0.026397379454732" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
+      <origin xyz="-2.8239835754562e-08 -0.030167863156865999 0.026397379457325999" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_021_left_knee_to_ankle_right_sheet.stl" scale="1 1 1" />
       </geometry>
@@ -390,7 +394,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_048">
-      <origin xyz="-2.5812685322535e-15 1.9984014443253e-15 -0.024543460925015" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
+      <origin xyz="-2.1024848528839001e-15 2.0261570199409e-15 -0.024543460925015002" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_048_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
@@ -399,7 +403,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_049">
-      <origin xyz="5.3429483060086e-16 -3.1363800445661e-15 0.024547276295296" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
+      <origin xyz="1.0269562977783e-15 -3.2612801348364001e-15 0.024547276295295999" rpy="-1.5707963267947975 6.5281113847959205e-14 -8.071321389024888e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_049_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
@@ -410,12 +414,12 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
   </link>
   <link name="foot_assembly">
     <inertial>
-      <origin xyz="0.010886770844138 -0.024986407711494001 0.00076873964850875998" rpy="0 0 0" />
-      <mass value="0.10029533290613001" />
-      <inertia ixx="3.7491074763990406e-05" iyy="0.00010225546800001465" izz="8.0909816022323045e-05" ixy="2.736637838890091e-06" ixz="-6.5950421133826425e-08" iyz="2.906464381851078e-07" />
+      <origin xyz="0.010890896807864621 -0.024987425497766069 0.00076900318817370804" rpy="0 0 0" />
+      <mass value="0.10030947384889143" />
+      <inertia ixx="3.7496692220707907e-05" iyy="0.00010228017081143634" izz="8.0933598219710699e-05" ixy="2.7416206189368034e-06" ixz="-6.5600709302057623e-08" iyz="2.9007090304784793e-07" />
     </inertial>
     <visual name="visual_019">
-      <origin xyz="-2.5535129566379e-15 -2.470246229791e-15 -0.024543460925015" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
+      <origin xyz="-2.1024848528839001e-15 -2.5257573810222e-15 -0.024543460925015002" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_019_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
@@ -424,7 +428,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_020">
-      <origin xyz="9.1593399531575e-16 -8.6319840164606e-15 0.024547276295298" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
+      <origin xyz="6.5225602696727996e-16 -9.1038288019262994e-15 0.024547276295298001" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_020_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
@@ -433,7 +437,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_041">
-      <origin xyz="0.013905392167883 -0.034230011239502 0.0011526586456942" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
+      <origin xyz="0.013919275764148 -0.034231447912525997 0.0011524346848877001" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_041_foot_bottom_tpu.stl" scale="1 1 1" />
       </geometry>
@@ -442,7 +446,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_042">
-      <origin xyz="0.0094708829291588 -0.019577641063586 0.024836838955001" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
+      <origin xyz="0.0094698471991444006 -0.019576462845704998 0.024836705098279999" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_042_foot_side.stl" scale="1 1 1" />
       </geometry>
@@ -451,7 +455,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_043">
-      <origin xyz="0.010769467317396 -0.020112351023661 -0.012830817185486" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
+      <origin xyz="0.010768971595561999 -0.020111852000855999 -0.0128298857266" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_043_foot_top.stl" scale="1 1 1" />
       </geometry>
@@ -460,7 +464,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_044">
-      <origin xyz="0.0097980381686823 -0.026404327323701 0.0015501355012648" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
+      <origin xyz="0.0097992804601114997 -0.026403987423408999 0.0015501355012643" rpy="-1.5707963267947977 6.5503158452884236e-14 -8.0602191587786365e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_044_foot_bottom_pla.stl" scale="1 1 1" />
       </geometry>
@@ -471,12 +475,12 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
   </link>
   <link name="neck_pitch_assembly">
     <inertial>
-      <origin xyz="1.9680875807963999e-07 0.048321537071226002 0.00068221397117793005" rpy="0 0 0" />
-      <mass value="0.068878972906324998" />
-      <inertia ixx="4.1676757719298017e-05" iyy="1.9791008641308003e-05" izz="2.6491317713957998e-05" ixy="6.21971419091512e-11" ixz="3.2667845413069656e-10" iyz="1.3236710661079978e-06" />
+      <origin xyz="1.96808757996373e-07 0.048321537071194937 0.0006822139706379875" rpy="0 0 0" />
+      <mass value="0.068878972906326011" />
+      <inertia ixx="4.1676757718817058e-05" iyy="1.9791008640974371e-05" izz="2.6491317713780626e-05" ixy="5.8567877148328677e-11" ixz="3.2736950428970729e-10" iyz="1.3236710664052962e-06" />
     </inertial>
     <visual name="visual_005">
-      <origin xyz="1.8310265757718e-06 0.026006330650996 -0.025945522263532" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
+      <origin xyz="1.8310265746009e-06 0.026006330650989999 -0.025945522263532" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_005_neck_left_sheet.stl" scale="1 1 1" />
       </geometry>
@@ -485,7 +489,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_006">
-      <origin xyz="2.1632001745431e-15 0.027992737167737 0.025458029767399" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
+      <origin xyz="2.5465740627340001e-15 0.027992737167739999 0.025458029767397999" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_006_neck_right_sheet.stl" scale="1 1 1" />
       </geometry>
@@ -494,7 +498,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_007">
-      <origin xyz="7.9138037487742e-08 0.055619067728551 -0.00039196968295354" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
+      <origin xyz="7.9138037456515996e-08 0.055619067728512002 -0.00039196968364704998" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_007_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
@@ -503,7 +507,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_099">
-      <origin xyz="4.4755865680202e-16 1.5265566588596e-16 0.024547276295318" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
+      <origin xyz="-1.0408340855861e-17 -1.3877787807814001e-17 0.024547276295317999" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_099_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
@@ -512,7 +516,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_100">
-      <origin xyz="4.6664061503776e-16 4.1633363423443e-17 -0.024543460925037" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
+      <origin xyz="-1.7347234759768e-18 0 -0.024543460925037001" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_100_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
@@ -523,12 +527,12 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
   </link>
   <link name="head_pitch_to_yaw">
     <inertial>
-      <origin xyz="-0.0051945883378819004 0.024320416237492998 0.00043705656593283002" rpy="0 0 0" />
-      <mass value="0.019610674563663999" />
-      <inertia ixx="1.7937208172040933e-05" iyy="7.7836536130664157e-06" izz="1.2997635239039455e-05" ixy="1.1892404442554744e-06" ixz="1.959361377735764e-09" iyz="-5.7822855914060733e-08" />
+      <origin xyz="-0.0051945883378537467 0.024320416236388757 0.00043705656616063504" rpy="0 0 0" />
+      <mass value="0.019610674565815531" />
+      <inertia ixx="1.7937208172355047e-05" iyy="7.7836536140697635e-06" izz="1.2997635238303095e-05" ixy="1.1892404438870047e-06" ixz="1.9593667475807798e-09" iyz="-5.7822902256923367e-08" />
     </inertial>
     <visual name="visual_004">
-      <origin xyz="-0.006932848893602 0.025619448385848 0.00036192134534301" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
+      <origin xyz="-0.0069328488933098004 0.025619448384184 0.00036192134565811999" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_004_head_pitch_to_yaw.stl" scale="1 1 1" />
       </geometry>
@@ -537,7 +541,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_008">
-      <origin xyz="4.3541559247018e-16 8.3266726846887e-16 0.024547276295318" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
+      <origin xyz="-1.0061396160665e-16 5.8286708792821004e-16 0.024547276295317999" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_008_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
@@ -546,7 +550,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_009">
-      <origin xyz="4.6837533851374e-16 5.5511151231258e-16 -0.024543460925037" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
+      <origin xyz="-1.7347234759768e-18 4.7184478546568995e-16 -0.024543460925037001" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_009_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
@@ -555,7 +559,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_034">
-      <origin xyz="3.9898639947467e-16 0.017027723704719 0.00062500000004743" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
+      <origin xyz="3.9725167599869001e-16 0.017027723704719 0.00062500000004698001" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_034_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
@@ -564,7 +568,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_035">
-      <origin xyz="4.3021142204225e-16 0.06611846092508 0.00062500000004747" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
+      <origin xyz="4.4235448637409e-16 0.066118460925080003 0.00062500000004699996" rpy="-1.5707963267948966 0 -2.2315482794965646e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_035_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
@@ -575,12 +579,12 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
   </link>
   <link name="neck_yaw_assembly">
     <inertial>
-      <origin xyz="0.011293260933733 -5.6375449111845996e-06 -0.0061309515453131999" rpy="0 0 0" />
-      <mass value="0.098223990685755005" />
-      <inertia ixx="4.9163044314879108e-05" iyy="7.980631437042203e-05" izz="8.6525841143256951e-05" ixy="1.2792776552538867e-08" ixz="-6.7640511515019743e-06" iyz="2.2857949610996216e-09" />
+      <origin xyz="0.011293198397505207 -5.571426604576755e-06 -0.0061309027098657735" rpy="0 0 0" />
+      <mass value="0.098224358842225204" />
+      <inertia ixx="4.9163238853329209e-05" iyy="7.9806584947790903e-05" izz="8.6526243389193597e-05" ixy="1.2873652833440016e-08" ixz="-6.7639674874669899e-06" iyz="2.1875692247155283e-09" />
     </inertial>
     <visual name="visual_033">
-      <origin xyz="0.010380932271439 -7.9138037068209e-08 0.0003919696829526" rpy="6.0508762607326939e-17 2.2426505097428162e-14 8.361832046355668e-17" />
+      <origin xyz="0.010380932271476 -7.9138037208437e-08 0.00039196968364659998" rpy="6.0508762607326939e-17 2.2426505097428162e-14 8.361832046355668e-17" />
       <geometry>
         <mesh filename="xmls/assets/current_033_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
@@ -589,7 +593,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_036">
-      <origin xyz="0.0092501868476958 -1.3014046717668e-05 -0.014717007519792" rpy="6.0508762607326939e-17 2.2426505097428162e-14 8.361832046355668e-17" />
+      <origin xyz="0.0092500591865050993 -1.2860174778126e-05 -0.014716819054989999" rpy="6.0508762607326939e-17 2.2426505097428162e-14 8.361832046355668e-17" />
       <geometry>
         <mesh filename="xmls/assets/current_036_head_yaw_to_roll.stl" scale="1 1 1" />
       </geometry>
@@ -598,7 +602,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_078">
-      <origin xyz="0.091493460925053 -8.8131054103852e-14 -0.00072500000005157" rpy="6.0508762607326939e-17 2.2426505097428162e-14 8.361832046355668e-17" />
+      <origin xyz="0.091493460925053005 -8.9031307825248003e-14 -0.00072500000005159995" rpy="6.0508762607326939e-17 2.2426505097428162e-14 8.361832046355668e-17" />
       <geometry>
         <mesh filename="xmls/assets/current_078_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
@@ -607,7 +611,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_079">
-      <origin xyz="0.042402723704692 -8.7142465010452e-14 -0.00072500000004994" rpy="6.0508762607326939e-17 2.2426505097428162e-14 8.361832046355668e-17" />
+      <origin xyz="0.042402723704692002 -8.8089949288986997e-14 -0.00072500000005019005" rpy="6.0508762607326939e-17 2.2426505097428162e-14 8.361832046355668e-17" />
       <geometry>
         <mesh filename="xmls/assets/current_079_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
@@ -618,12 +622,12 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
   </link>
   <link name="head_assembly">
     <inertial>
-      <origin xyz="0.0083679508842983003 0.00069557350027369996 0.033202548291667001" rpy="0 0 0" />
-      <mass value="0.35687953660748001" />
-      <inertia ixx="0.0019182352711186919" iyy="0.0013016406169839097" izz="0.00089022988090179972" ixy="-5.493550571254401e-06" ixz="6.4277459811456686e-05" iyz="2.4435645230811183e-05" />
+      <origin xyz="0.0083700735604772206 0.00069548078224546312 0.033204011278784445" rpy="0 0 0" />
+      <mass value="0.35686288943447636" />
+      <inertia ixx="0.001918259047046721" iyy="0.0013016414604436395" izz="0.00089020452162363916" ixy="-5.496186142807462e-06" ixz="6.4278220900230017e-05" iyz="2.4435855010180914e-05" />
     </inertial>
     <visual name="visual_057">
-      <origin xyz="0.031115401746721 0.047309289296027 0.032494014309843" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.031115401746720998 0.047309289296024001 0.03249401430986" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_057_RaspberryPiZeroW.stl" scale="1 1 1" />
       </geometry>
@@ -632,7 +636,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_058">
-      <origin xyz="0.015480302149879 0.087934960036703 -0.019555198392109" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.01548030214988 0.087934960036703994 -0.019555198392104001" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_058_flash_reflector_interface.stl" scale="1 1 1" />
       </geometry>
@@ -641,7 +645,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_059">
-      <origin xyz="0.0089234138311228 -0.061052130347606 0.0056437801550443" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.0089234140039604996 -0.061052130539448003 0.0056437793880978002" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_059_speaker_interface.stl" scale="1 1 1" />
       </geometry>
@@ -650,7 +654,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_060">
-      <origin xyz="2.5535129566379e-15 8.8060702935384e-14 0.11023571428572" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="2.4702462297910001e-15 8.8490805937208998e-14 0.11023571428572" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_060_roll_bearing.stl" scale="1 1 1" />
       </geometry>
@@ -659,16 +663,16 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_061">
-      <origin xyz="0.015228320161198 0.00085012312370085 0.046308222538746" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.015227907187020001 0.00085055419506552005 0.046311634958363997" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_061_head.stl" scale="1 1 1" />
       </geometry>
       <material name="visual_061_color">
-        <color rgba="1 1 1 0.35" />
+        <color rgba="1 1 1 1" />
       </material>
     </visual>
     <visual name="visual_062">
-      <origin xyz="0.010349999999985 0.040000000000049 -0.035052389907557" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.010349999999995 0.040000000000046998 -0.035052389907556998" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_062_left_eye.stl" scale="1 1 1" />
       </geometry>
@@ -677,7 +681,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_063">
-      <origin xyz="0.01035 -0.039999999999951 -0.03606326287174" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.010349999999999001 -0.039999999999950998 -0.036063262871739998" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_063_right_eye.stl" scale="1 1 1" />
       </geometry>
@@ -686,7 +690,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_064">
-      <origin xyz="0.028417419003479 -0.048639797834638 0.0081911815309417" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.028417419020015999 -0.048639797822456997 0.0081911814822202" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_064_speaker_stand.stl" scale="1 1 1" />
       </geometry>
@@ -695,7 +699,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_065">
-      <origin xyz="0.014802594354108 0.086072838039482 -0.010004697069625" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.014802417549776001 0.086072893196372 -0.010004748747802999" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_065_flash_light_module.stl" scale="1 1 1" />
       </geometry>
@@ -704,7 +708,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_066">
-      <origin xyz="0.010349999999999 -0.039999999999952 -0.040324999999991" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.010349999999999001 -0.039999999999951998 -0.040324999999991" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_066_glass.stl" scale="1 1 1" />
       </geometry>
@@ -713,7 +717,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_067">
-      <origin xyz="0.010349999999999 0.040000000000045 -0.036324999999991" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.010349999999999001 0.040000000000045 -0.036324999999991003" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_067_glass.stl" scale="1 1 1" />
       </geometry>
@@ -722,7 +726,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_068">
-      <origin xyz="-0.023470892755395 -0.00011413248543653 0.033457572739521" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="-0.023470843405933001 -0.00011655686544921 0.033457626286607998" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_068_head_bot_sheet.stl" scale="1 1 1" />
       </geometry>
@@ -731,7 +735,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_069">
-      <origin xyz="0.028109885340172 3.2653650102764e-07 -0.0013554245166428" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.028109885333656999 3.2653700017901002e-07 -0.0013554244974171999" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_069_head_roll_mount.stl" scale="1 1 1" />
       </geometry>
@@ -740,7 +744,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_070">
-      <origin xyz="-0.0003912124203537 0.04365449395286 0.1225243026201" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="-0.00039121242035613997 0.043654493952856997 0.12252430262008999" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_070_sg90.stl" scale="1 1 1" />
       </geometry>
@@ -749,7 +753,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_071">
-      <origin xyz="0.0092544757084878 -0.061915128977142 0.0044278905278421" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.0092537407464109 -0.061915457840102002 0.0044277467599665998" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_071_speaker_bottom.stl" scale="1 1 1" />
       </geometry>
@@ -758,7 +762,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_072">
-      <origin xyz="0.012688631117734 -0.071289730105132 0.0059500000001479" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.012688631117731001 -0.071289730105125002 0.0059500000001504998" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_072_speaker_top.stl" scale="1 1 1" />
       </geometry>
@@ -767,7 +771,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_073">
-      <origin xyz="0.023984302693565 -0.0021107571707095 -0.027241379688202" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.02398443903621 -0.0021110587409524 -0.027241367262770998" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_073_Cam.stl" scale="1 1 1" />
       </geometry>
@@ -776,7 +780,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_074">
-      <origin xyz="0.010349999999998 -0.039999999999952 -0.029081754098756" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.010349999999999001 -0.039999999999951998 -0.029081754098754999" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_074_bulb.stl" scale="1 1 1" />
       </geometry>
@@ -785,7 +789,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_075">
-      <origin xyz="0.010349999999998 0.040000000000045 -0.029081754098756" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.010349999999999001 0.040000000000045 -0.029081754098754999" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_075_bulb.stl" scale="1 1 1" />
       </geometry>
@@ -794,7 +798,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_076">
-      <origin xyz="0.010349999999999 -0.039999999999952 -0.038474999999991" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.010349999999999001 -0.039999999999951998 -0.038474999999991003" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_076_glass.stl" scale="1 1 1" />
       </geometry>
@@ -803,7 +807,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_077">
-      <origin xyz="0.010380932271155 7.9137992886144e-08 -0.00039196968464103" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.010380932270825 7.9136826055555005e-08 -0.00039196970090662" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_077_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
@@ -812,7 +816,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_080">
-      <origin xyz="0.010349999999999 0.040000000000045 -0.034474999999991" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="0.010349999999999001 0.040000000000045999 -0.034474999999990999" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_080_glass.stl" scale="1 1 1" />
       </geometry>
@@ -821,7 +825,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_081">
-      <origin xyz="-0.0003912124203512 -0.043654493952755 0.1225243026201" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
+      <origin xyz="-0.00039121242035009002 -0.043654493952752997 0.1225243026201" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
       <geometry>
         <mesh filename="xmls/assets/current_081_sg90.stl" scale="1 1 1" />
       </geometry>
@@ -832,12 +836,12 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
   </link>
   <link name="left_antenna_assembly">
     <inertial>
-      <origin xyz="-0.0053798117154303 -0.0010676421144501999 0.0081158593120987006" rpy="0 0 0" />
-      <mass value="0.0042163250055487003" />
-      <inertia ixx="3.6041951905924155e-06" iyy="3.6193217257640124e-06" izz="4.2690742287409996e-07" ixy="-1.7939306535160043e-08" ixz="-1.6218253181812295e-07" iyz="7.6663152259319368e-07" />
+      <origin xyz="-0.0053730896450021881 -0.0010683433926003336 0.0081335556414467158" rpy="0 0 0" />
+      <mass value="0.0042226774037480048" />
+      <inertia ixx="3.605067529219245e-06" iyy="3.6203192817107731e-06" izz="4.270368347568162e-07" ixy="-1.7925864684460399e-08" ixz="-1.6251429077311451e-07" iyz="7.6666469888711672e-07" />
     </inertial>
     <visual name="visual_002">
-      <origin xyz="-0.00092079309023957 -0.012179917566446 0.062023990522414" rpy="0 0 0" />
+      <origin xyz="-0.00092079309023955004 -0.012179917566447001 0.062023990522416" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_002_antenna.stl" scale="1 1 1" />
       </geometry>
@@ -846,7 +850,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_010">
-      <origin xyz="-0.0060390981725441 0.00057535903199725 0.00014529362876897" rpy="0 0 0" />
+      <origin xyz="-0.0060302457401898999 0.00057171777710380005 0.00017936226758818999" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_010_left_antenna_holder.stl" scale="1 1 1" />
       </geometry>
@@ -857,12 +861,12 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
   </link>
   <link name="right_antenna_assembly">
     <inertial>
-      <origin xyz="-0.0053798099550232004 0.0010999137637844999 0.0082436559524589996" rpy="0 0 0" />
-      <mass value="0.0042163228919289003" />
-      <inertia ixx="3.6658068959386737e-06" iyy="3.6778796386629375e-06" izz="4.2996085667376707e-07" ixy="1.7332557440928505e-08" ixz="-1.6458504588331208e-07" iyz="-7.8007141525384955e-07" />
+      <origin xyz="-0.0053730947287234654 0.0011005604784325371 0.0082611330489429369" rpy="0 0 0" />
+      <mass value="0.0042226824276090022" />
+      <inertia ixx="3.6666627052481456e-06" iyy="3.678861106115317e-06" izz="4.3009069364271127e-07" ixy="1.7320050038974446e-08" ixz="-1.6491353608408144e-07" iyz="-7.801024272551372e-07" />
     </inertial>
     <visual name="visual_001">
-      <origin xyz="-0.0060390965312176 -0.0005753590469688 0.00014529377030051" rpy="0 0 0" />
+      <origin xyz="-0.0060302506770284004 -0.00057172144994482995 0.00017934713105316" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_001_right_antenna_holder.stl" scale="1 1 1" />
       </geometry>
@@ -871,7 +875,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_011">
-      <origin xyz="-0.00092079309022003 0.012430448899832 0.063016094602689" rpy="0 0 0" />
+      <origin xyz="-0.00092079309022002995 0.012430448899832001 0.063016094602690004" rpy="0 0 0" />
       <geometry>
         <mesh filename="xmls/assets/current_011_antenna.stl" scale="1 1 1" />
       </geometry>
@@ -882,12 +886,12 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
   </link>
   <link name="hip_roll_assembly_2">
     <inertial>
-      <origin xyz="0.00066369247204260998 4.5658194590595997e-06 -0.049283995554749001" rpy="0 0 0" />
-      <mass value="0.060501056822018999" />
-      <inertia ixx="1.2187059936411598e-05" iyy="1.9008785424602155e-05" izz="1.0701982458989239e-05" ixy="5.7196336185790439e-09" ixz="1.2512515407968635e-07" iyz="-2.9866328732389318e-09" />
+      <origin xyz="0.00066369247262153806 4.5658194611586583e-06 -0.049283995554729704" rpy="0 0 0" />
+      <mass value="0.060501056821900705" />
+      <inertia ixx="1.2187059936231654e-05" iyy="1.9008785424008307e-05" izz="1.0701982458530692e-05" ixy="5.7196324726310043e-09" ixz="1.2512515421287265e-07" iyz="-2.9866329685244445e-09" />
     </inertial>
     <visual name="visual_012">
-      <origin xyz="0.0021781792219576 4.749306680845e-05 -0.046800879073577" rpy="2.9571647165837716e-16 2.2204460492503131e-14 1.2364106528994203e-14" />
+      <origin xyz="0.0021781792216256 4.7493066830171999e-05 -0.046800879073680003" rpy="2.9571647165837716e-16 2.2204460492503131e-14 1.2364106528994203e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_012_roll_motor_top_bottom.stl" scale="1 1 1" />
       </geometry>
@@ -896,7 +900,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_013">
-      <origin xyz="0.00051696968302297 7.9138109870813e-08 -0.050119067728522" rpy="2.9571647165837716e-16 2.2204460492503131e-14 1.2364106528994203e-14" />
+      <origin xyz="0.00051696968371600996 7.9138110013061002e-08 -0.050119067728483999" rpy="2.9571647165837716e-16 2.2204460492503131e-14 1.2364106528994203e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_013_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
@@ -905,7 +909,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_102">
-      <origin xyz="-4.9266146717741e-16 -9.5062846483529e-16 -0.02454346092504" rpy="2.9571647165837716e-16 2.2204460492503131e-14 1.2364106528994203e-14" />
+      <origin xyz="-4.9960036108132005e-16 -4.8919202022546e-16 -0.024543460925039999" rpy="2.9571647165837716e-16 2.2204460492503131e-14 1.2364106528994203e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_102_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
@@ -916,12 +920,12 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
   </link>
   <link name="right_roll_to_pitch_assembly">
     <inertial>
-      <origin xyz="-0.049828746515858002 -2.9839339020084998e-05 0.0029366967429346998" rpy="0 0 0" />
-      <mass value="0.076472926706915995" />
-      <inertia ixx="2.0828397501088859e-05" iyy="5.0338970166070105e-05" izz="3.6130516731863002e-05" ixy="4.8644792915667825e-08" ixz="2.4559778350771321e-06" iyz="2.8667837749874371e-08" />
+      <origin xyz="-0.048688897445283104 -2.9922212486932606e-05 0.0029463432754096002" rpy="0 0 0" />
+      <mass value="0.076201655158398163" />
+      <inertia ixx="2.0586418271273312e-05" iyy="4.9099096124633114e-05" izz="3.5093979909559363e-05" ixy="4.9101921429256164e-08" ixz="2.4117432741239855e-06" iyz="2.8647741334897448e-08" />
     </inertial>
     <visual name="visual_014">
-      <origin xyz="4.6802839381854e-15 -3.4560028450148e-15 0.02454727629532" rpy="1.5707963267947864 1.570796326794865 0" />
+      <origin xyz="4.2396641752873e-15 -3.5908775952720002e-15 0.024547276295317" rpy="1.5707963267947864 1.570796326794865 0" />
       <geometry>
         <mesh filename="xmls/assets/current_014_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
@@ -930,7 +934,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_015">
-      <origin xyz="-3.4174052476743e-15 3.4130684389844e-15 -0.024543460925034" rpy="1.5707963267947864 1.570796326794865 0" />
+      <origin xyz="-3.8823111392360998e-15 3.6975630890445998e-15 -0.024543460925034" rpy="1.5707963267947864 1.570796326794865 0" />
       <geometry>
         <mesh filename="xmls/assets/current_015_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
@@ -939,7 +943,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_037">
-      <origin xyz="-0.032959878141442 -0.00011166643585505 -0.0056009609938923" rpy="1.5707963267947864 1.570796326794865 0" />
+      <origin xyz="-0.032038272716890998 -0.00011307782806077999 -0.0056792190316371002" rpy="1.5707963267947864 1.570796326794865 0" />
       <geometry>
         <mesh filename="xmls/assets/current_037_right_roll_to_pitch.stl" scale="1 1 1" />
       </geometry>
@@ -948,7 +952,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_038">
-      <origin xyz="-0.058566969682959 7.9138032861668e-08 0.0063040677286099" rpy="1.5707963267947864 1.570796326794865 0" />
+      <origin xyz="-0.057206969683651 7.9138033267159e-08 0.0063040677285732" rpy="1.5707963267947864 1.570796326794865 0" />
       <geometry>
         <mesh filename="xmls/assets/current_038_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
@@ -959,12 +963,12 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
   </link>
   <link name="knee_and_ankle_assembly_3">
     <inertial>
-      <origin xyz="0.0044734802899627996 0.032642098032529002 -0.0086396796233400002" rpy="0 0 0" />
-      <mass value="0.11205902561448" />
-      <inertia ixx="0.00015791322484168824" iyy="7.7970413233374332e-05" izz="0.00015590590109460924" ixy="2.1780961332972419e-05" ixz="7.875300278936944e-06" iyz="-2.7985255789142668e-05" />
+      <origin xyz="0.0044734836384053454 0.032642098182478867 -0.0086396863861461191" rpy="0 0 0" />
+      <mass value="0.11205894172206245" />
+      <inertia ixx="0.0001579132143626947" iyy="7.7970401175814357e-05" izz="0.00015590589893915003" ixy="2.1780961456889708e-05" ixz="7.8752968756618084e-06" iyz="-2.7985255856553528e-05" />
     </inertial>
     <visual name="visual_003">
-      <origin xyz="0.012689528402896 0.00092145647593227 -0.024776545227686" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
+      <origin xyz="0.01268952839997 0.00092145647623407005 -0.024776545229113" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
       <geometry>
         <mesh filename="xmls/assets/current_003_right_cache.stl" scale="1 1 1" />
       </geometry>
@@ -973,7 +977,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_039">
-      <origin xyz="-8.0491169285324e-16 3.0704605524789e-16 0.024547276295253" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
+      <origin xyz="-8.8123952579621998e-16 -3.8250652645289001e-16 0.024547276295256" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
       <geometry>
         <mesh filename="xmls/assets/current_039_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
@@ -982,7 +986,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_040">
-      <origin xyz="-2.4286128663675e-16 5.6205040621649e-16 -0.024543460925028" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
+      <origin xyz="-2.1510571102112001e-16 4.6533957243077998e-16 -0.024543460924996" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
       <geometry>
         <mesh filename="xmls/assets/current_040_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
@@ -991,7 +995,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_107">
-      <origin xyz="2.1914028321551e-06 0.02741841337507 -0.026805684553102" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
+      <origin xyz="2.1913739677928e-06 0.027418413411842001 -0.026805684546259" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
       <geometry>
         <mesh filename="xmls/assets/current_107_left_knee_to_ankle_left_sheet.stl" scale="1 1 1" />
       </geometry>
@@ -1000,7 +1004,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_108">
-      <origin xyz="9.9615918980923e-05 0.029894108973933 0.026243133856854" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
+      <origin xyz="9.9615917759205994e-05 0.029894108961162 0.026243133858376001" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
       <geometry>
         <mesh filename="xmls/assets/current_108_left_knee_to_ankle_right_sheet.stl" scale="1 1 1" />
       </geometry>
@@ -1009,7 +1013,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_109">
-      <origin xyz="-1.8211897268028e-11 0.03276594370601 -2.6770723381309e-05" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
+      <origin xyz="-1.3373066543031999e-11 0.032765948360707002 -2.6776724870767e-05" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
       <geometry>
         <mesh filename="xmls/assets/current_109_leg_spacer.stl" scale="1 1 1" />
       </geometry>
@@ -1018,7 +1022,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_110">
-      <origin xyz="7.913802733267e-08 0.058269067728522 -0.00046696968310103" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
+      <origin xyz="7.9138027242465003e-08 0.058269067728484003 -0.00046696968376775002" rpy="1.5707963267947835 -1.1768364061026659e-14 -1.5254464358349651e-13" />
       <geometry>
         <mesh filename="xmls/assets/current_110_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
@@ -1029,12 +1033,12 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
   </link>
   <link name="knee_and_ankle_assembly_4">
     <inertial>
-      <origin xyz="2.0026417036084999e-07 -0.049877624753419003 -0.00029591302570442001" rpy="0 0 0" />
-      <mass value="0.072686580930858002" />
-      <inertia ixx="4.4599749229865009e-05" iyy="2.0470761329487001e-05" izz="2.9359936787274002e-05" ixy="-2.2329307682465748e-11" ixz="-3.4989143145400105e-10" iyz="5.6960763019324025e-07" />
+      <origin xyz="2.0026419106651567e-07 -0.049877644867286804 -0.00029591270528561898" rpy="0 0 0" />
+      <mass value="0.072686497055027222" />
+      <inertia ixx="4.4599720160802836e-05" iyy="2.0470757845110036e-05" izz="2.9359910780406356e-05" ixy="-5.1970291556222923e-11" ixz="-3.4799839076224699e-10" iyz="5.696072089922503e-07" />
     </inertial>
     <visual name="visual_051">
-      <origin xyz="2.4838534007365e-12 -0.03016762467505 -0.026397403182927" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
+      <origin xyz="6.3180016773856005e-13 -0.030167624648597999 -0.026397403184861001" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_051_left_knee_to_ankle_right_sheet.stl" scale="1 1 1" />
       </geometry>
@@ -1043,7 +1047,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_052">
-      <origin xyz="2.1863816521625e-06 -0.027395219898305 0.026652602163968" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
+      <origin xyz="2.186374750246e-06 -0.02739521980792 0.026652602170852" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_052_left_knee_to_ankle_left_sheet.stl" scale="1 1 1" />
       </geometry>
@@ -1052,7 +1056,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_053">
-      <origin xyz="-1.8195597806248e-11 -0.032765943716555 -0.00014822927675461" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
+      <origin xyz="-1.3356364625405001e-11 -0.032765948371252997 -0.00014822327523975" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_053_leg_spacer.stl" scale="1 1 1" />
       </geometry>
@@ -1061,7 +1065,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_054">
-      <origin xyz="7.9138044180305e-08 -0.058269067728545 0.00029196968296366" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
+      <origin xyz="7.9138043972137994e-08 -0.058269067728501003 0.00029196968365447" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_054_ZP10D_vendor_body.stl" scale="1 1 1" />
       </geometry>
@@ -1070,7 +1074,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_111">
-      <origin xyz="-3.9551695252271e-16 1.8041124150159e-15 -0.024547276295321" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
+      <origin xyz="-9.3675067702747997e-16 1.8873791418628e-15 -0.024547276295293002" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_111_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
@@ -1079,7 +1083,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_112">
-      <origin xyz="1.5959455978987e-16 -2.9976021664879e-15 0.02454346092504" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
+      <origin xyz="-3.1225022567583001e-16 -2.9282132274489001e-15 0.024543460925015002" rpy="-1.5707963267950098 1.1768364061026659e-14 9.758860386455126e-14" />
       <geometry>
         <mesh filename="xmls/assets/current_112_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
@@ -1090,12 +1094,12 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
   </link>
   <link name="foot_assembly_2">
     <inertial>
-      <origin xyz="0.010886666679152999 -0.024986402694212002 -0.00076890776603460997" rpy="0 0 0" />
-      <mass value="0.10029444256847" />
-      <inertia ixx="3.7490407984681448e-05" iyy="0.00010225420256439343" izz="8.0909178633909172e-05" ixy="2.7366472889305866e-06" ixz="6.6013979177031264e-08" iyz="-2.9069309134225844e-07" />
+      <origin xyz="0.010887613980667338 -0.024986306175068401 -0.00076921875445311436" rpy="0 0 0" />
+      <mass value="0.10030017269747732" />
+      <inertia ixx="3.7492786357348458e-05" iyy="0.00010226307618808905" izz="8.0918058260852157e-05" ixy="2.7377569488232758e-06" ixz="6.6135656004438241e-08" iyz="-2.9014563069217226e-07" />
     </inertial>
     <visual name="visual_055">
-      <origin xyz="-1.04777297949e-15 4.1605607847828e-14 -0.024547276295323" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
+      <origin xyz="-8.5348395018058998e-16 4.1244785364825001e-14 -0.024547276295295" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
       <geometry>
         <mesh filename="xmls/assets/current_055_ZP10D_vendor_passive_horn.stl" scale="1 1 1" />
       </geometry>
@@ -1104,7 +1108,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_056">
-      <origin xyz="1.5959455978987e-16 -3.6415315207705e-14 0.02454346092504" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
+      <origin xyz="-3.1225022567583001e-16 -3.6443070783320997e-14 0.024543460925015002" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
       <geometry>
         <mesh filename="xmls/assets/current_056_ZP10D_vendor_active_horn.stl" scale="1 1 1" />
       </geometry>
@@ -1113,7 +1117,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_082">
-      <origin xyz="0.0094705724842705 -0.019577655015364 -0.024836825341959" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
+      <origin xyz="0.0094704859421357 -0.019576341402949001 -0.024836589228486" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
       <geometry>
         <mesh filename="xmls/assets/current_082_foot_side.stl" scale="1 1 1" />
       </geometry>
@@ -1122,7 +1126,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_083">
-      <origin xyz="0.013905392167895 -0.03423001123955 -0.0011526586457108" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
+      <origin xyz="0.013907935984422 -0.034230766111897001 -0.0011529973289078001" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
       <geometry>
         <mesh filename="xmls/assets/current_083_foot_bottom_tpu.stl" scale="1 1 1" />
       </geometry>
@@ -1131,7 +1135,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_084">
-      <origin xyz="0.010769260014962 -0.02011217472592 0.012830453437346" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
+      <origin xyz="0.010768781067962 -0.020111819510755 0.0128298202145" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
       <geometry>
         <mesh filename="xmls/assets/current_084_foot_top.stl" scale="1 1 1" />
       </geometry>
@@ -1140,7 +1144,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
       </material>
     </visual>
     <visual name="visual_085">
-      <origin xyz="0.0097980381686872 -0.02640432732375 -0.0015501355012827" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
+      <origin xyz="0.0097992804601167004 -0.026403987423458002 -0.0015501355012604" rpy="-1.5707963267950096 1.2212453270876722e-14 1.1635137298071641e-13" />
       <geometry>
         <mesh filename="xmls/assets/current_085_foot_bottom_pla.stl" scale="1 1 1" />
       </geometry>
@@ -1161,31 +1165,31 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
     <parent link="trunk_assembly" />
     <child link="hip_roll_assembly" />
     <origin xyz="-0.018799999999991001 0.024799999999999999 0.064365938812333004" rpy="2.6666893439029517e-17 -2.2204460492503131e-14 7.9347606515728002e-14" />
-    <axis xyz="6.0505631430451996e-26 -8.7030463070926002e-29 1" />
+    <axis xyz="6.0631849175287002e-26 -8.7788509097036997e-29 1" />
     <limit lower="-0.52359877559830004" upper="0.52359877559830004" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="left_hip_roll" type="revolute">
     <parent link="hip_roll_assembly" />
     <child link="left_roll_to_pitch_assembly" />
-    <origin xyz="0.00012500000005768999 -7.5505574015366998e-14 -0.060499999999955999" rpy="-1.5707963267949467 1.099120794378905e-13 1.5707963267947465" />
-    <axis xyz="-1.3727907699495001e-13 -8.2878148788338996e-14 1" />
+    <origin xyz="0.00012500000005768999 -7.5509043462318005e-14 -0.060499999999955999" rpy="-1.5707963267949467 1.099120794378905e-13 1.5707963267947465" />
+    <axis xyz="-1.3405943022353001e-13 -9.1093799170571996e-14 1" />
     <limit lower="-0.43633231299858" upper="0.43633231299858" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="left_hip_pitch" type="revolute">
     <parent link="left_roll_to_pitch_assembly" />
     <child link="knee_and_ankle_assembly" />
-    <origin xyz="0.058175000000055002 -2.8813756935974999e-15 0.016685000000051999" rpy="3.1415926535897922 1.5707963267948908 0" />
-    <axis xyz="1.2886750138524001e-13 -7.6707917734760002e-14 1" />
+    <origin xyz="0.056815000000055002 -2.6229018956769e-15 0.016685000000051999" rpy="3.1415926535897922 1.5707963267948908 0" />
+    <axis xyz="1.2351720513578001e-13 -6.8379121733358995e-14 1" />
     <limit lower="-1.221730476396" upper="0.52359877559830004" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="left_knee" type="revolute">
     <parent link="knee_and_ankle_assembly" />
     <child link="knee_and_ankle_assembly_2" />
-    <origin xyz="-2.5146551507760001e-14 -0.068649999999971997 -7.5000000101522001e-05" rpy="-1.3820843059472127e-26 0 5.8022925530204003e-15" />
-    <axis xyz="1.2886750138591999e-13 -7.6707917734877006e-14 1" />
+    <origin xyz="-2.5132673719952e-14 -0.068649999999971997 -7.5000000101522001e-05" rpy="-1.3820843059472127e-26 0 5.8022925530204003e-15" />
+    <axis xyz="1.2351720513663001e-13 -6.8379121733506001e-14 1" />
     <limit lower="-1.5707963267949001" upper="1.5707963267949001" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
@@ -1193,7 +1197,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
     <parent link="knee_and_ankle_assembly_2" />
     <child link="foot_assembly" />
     <origin xyz="-5.5233595475102003e-15 -0.068650000000000003 9.9999999992981002e-05" rpy="-2.5111020334995248e-26 0 -8.3266725724457998e-17" />
-    <axis xyz="1.2886750138556e-13 -7.6707917735037e-14 1" />
+    <axis xyz="1.2351720513617999e-13 -6.8379121733706005e-14 1" />
     <limit lower="-1.5707963267949001" upper="1.5707963267949001" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
@@ -1201,31 +1205,31 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
     <parent link="trunk_assembly" />
     <child link="neck_pitch_assembly" />
     <origin xyz="0.0087999999999989996 0.00052500000004700002 0.090000938812376002" rpy="1.5707963267948966 -2.2204460492503131e-14 0" />
-    <axis xyz="6.9355831958548001e-27 5.0726598782180002e-16 1" />
+    <axis xyz="6.9817124818284999e-27 6.3408248477725002e-16 1" />
     <limit lower="-0.34906585039887" upper="0.68067840827779003" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="head_pitch" type="revolute">
     <parent link="neck_pitch_assembly" />
     <child link="head_pitch_to_yaw" />
-    <origin xyz="-5.3776427755281e-16 0.065999999999993994 -8.3483567281383995e-18" rpy="-1.8732529380344403e-16 0 5.5511151231680016e-17" />
-    <axis xyz="6.8655349640199006e-27 5.0726598782175998e-16 1" />
+    <origin xyz="-5.3429483060086004e-16 0.065999999999993994 -8.3483567281383995e-18" rpy="-1.8732529380344403e-16 0 5.5511151231680016e-17" />
+    <axis xyz="6.9091444696364005e-27 6.3408248477720999e-16 1" />
     <limit lower="-0.78539816339745006" upper="0.78539816339745006" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="head_yaw" type="revolute">
     <parent link="head_pitch_to_yaw" />
     <child link="neck_yaw_assembly" />
-    <origin xyz="4.2674197509029001e-16 0.041575000000039997 0.00062500000004699996" rpy="-1.5707963267948966 0 0" />
-    <axis xyz="-2.6821270777513998e-28 5.0726612427160002e-16 1" />
+    <origin xyz="4.2500725161432001e-16 0.041575000000039997 0.00062500000004699996" rpy="-1.5707963267948966 0 0" />
+    <axis xyz="-3.1112674101917e-27 6.3408265533951001e-16 1" />
     <limit lower="-1.7453292519943" upper="1.7453292519943" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="head_roll" type="revolute">
     <parent link="neck_yaw_assembly" />
     <child link="head_assembly" />
-    <origin xyz="0.066950000000012999 -8.8064795798586002e-14 -0.00072500000005142995" rpy="1.3476889525016614e-25 -1.5707963267948966 0" />
-    <axis xyz="4.4408920985504999e-16 -4.4408921038039004e-16 1" />
+    <origin xyz="0.066950000000012999 -8.8495562874241005e-14 -0.00072500000005142995" rpy="1.3476889525016614e-25 -1.5707963267948966 0" />
+    <axis xyz="5.5511151231603999e-16 -5.5511151297382998e-16 1" />
     <limit lower="-0.52359877559830004" upper="0.52359877559830004" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
@@ -1233,7 +1237,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
     <parent link="head_assembly" />
     <child link="left_antenna_assembly" />
     <origin xyz="-0.0012959305449672001 0.061662837687404 0.12758914929545001" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
-    <axis xyz="0.26308374005902002 -0.93540885354207004 -0.23621435695501999" />
+    <axis xyz="0.26308374005902002 -0.93540885354208003 -0.23621435695494999" />
     <limit lower="-1.5707963267949001" upper="1.5707963267949001" effort="0.1" velocity="5.24" />
     <dynamics damping="0.005" friction="0.001" />
   </joint>
@@ -1241,7 +1245,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
     <parent link="head_assembly" />
     <child link="right_antenna_assembly" />
     <origin xyz="-0.0012959305449672001 -0.061662837687301998 0.12758914929545001" rpy="6.0508762604140668e-17 1.5707963267948686 0" />
-    <axis xyz="0.26308374005902002 0.93540885354207004 -0.23621435695501999" />
+    <axis xyz="0.26308374005902002 0.93540885354208003 -0.23621435695494999" />
     <limit lower="-1.5707963267949001" upper="1.5707963267949001" effort="0.1" velocity="5.24" />
     <dynamics damping="0.005" friction="0.001" />
   </joint>
@@ -1249,7 +1253,7 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
     <parent link="trunk_assembly" />
     <child link="hip_roll_assembly_2" />
     <origin xyz="-0.018800000000001 -0.024799999999999999 0.064365938812334003" rpy="-2.9571647165810264e-16 -2.2204460492503131e-14 -1.2364106528994197e-14" />
-    <axis xyz="-4.1696032006362001e-26 -2.4001093041349002e-28 1" />
+    <axis xyz="-4.1620301359461002e-26 -2.4001093041349002e-28 1" />
     <limit lower="-0.52359877559830004" upper="0.52359877559830004" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
@@ -1257,31 +1261,31 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
     <parent link="hip_roll_assembly_2" />
     <child link="right_roll_to_pitch_assembly" />
     <origin xyz="0.00012500000006794999 6.5013966432659003e-14 -0.060499999999961002" rpy="-1.5707963267948966 -1.1990408665951691e-13 1.5707963267948966" />
-    <axis xyz="6.5210912690237004e-16 8.2744623730632997e-16 1" />
+    <axis xyz="8.1513640862652002e-16 1.0065522210068001e-15 1" />
     <limit lower="-0.43633231299858" upper="0.43633231299858" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="right_hip_pitch" type="revolute">
     <parent link="right_roll_to_pitch_assembly" />
     <child link="knee_and_ankle_assembly_3" />
-    <origin xyz="-0.058174999999978001 2.1974609631935999e-15 0.016685000000048002" rpy="-2.7755573644863539e-17 1.570796326794722 0" />
-    <axis xyz="9.7812093888138008e-16 7.9287056023623994e-14 1" />
+    <origin xyz="-0.056814999999978001 2.4108319507388e-15 0.016685000000048002" rpy="-2.7755573644863539e-17 1.570796326794722 0" />
+    <axis xyz="1.2365289614028e-15 6.9118920576821006e-14 1" />
     <limit lower="-0.52359877559830004" upper="1.221730476396" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="right_knee" type="revolute">
     <parent link="knee_and_ankle_assembly_3" />
     <child link="knee_and_ankle_assembly_4" />
-    <origin xyz="-9.5271013300645993e-15 0.068649999999957995 -7.5000000144654003e-05" rpy="-3.1415926535897931 0 -5.5067062021407764e-14" />
-    <axis xyz="-9.7812093887757008e-16 7.9287056023626998e-14 1" />
+    <origin xyz="-9.5132235422568006e-15 0.068649999999958994 -7.5000000119645999e-05" rpy="-3.1415926535897931 0 -5.5067062021407764e-14" />
+    <axis xyz="-1.2365289613997e-15 6.9118920576826004e-14 1" />
     <limit lower="-1.5707963267949001" upper="1.5707963267949001" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
   <joint name="right_ankle" type="revolute">
     <parent link="knee_and_ankle_assembly_4" />
     <child link="foot_assembly_2" />
-    <origin xyz="6.6960326172704998e-15 -0.068649999999954997 -9.9999999992466995e-05" rpy="4.2914033244023042e-28 0 -1.8840883528173e-14" />
-    <axis xyz="-9.7812093887906991e-16 7.9287056023626998e-14 1" />
+    <origin xyz="6.6960326172704998e-15 -0.068649999999954997 -9.9999999992480995e-05" rpy="4.2914033244023042e-28 0 -1.8840883528173e-14" />
+    <axis xyz="-1.2365289614011e-15 6.9118920576826004e-14 1" />
     <limit lower="-1.5707963267949001" upper="1.5707963267949001" effort="0.980665" velocity="5.24" />
     <dynamics damping="0.56" friction="0.068" />
   </joint>
@@ -1293,11 +1297,11 @@ This XML remains canonical; one-time computation helper is temporary scaffolding
   <joint name="left_foot_frame" type="fixed">
     <parent link="foot_assembly" />
     <child link="left_foot" />
-    <origin xyz="0.00049993414047563996 -0.038824999944429742 0.0014347171665382" rpy="-1.5707963267948966 0 0" />
+    <origin xyz="0.00051381773673978134 -0.038825000205604851 0.0014344932057315197" rpy="-1.5707963267948966 0 0" />
   </joint>
   <joint name="right_foot_frame" type="fixed">
     <parent link="foot_assembly_2" />
     <child link="right_foot" />
-    <origin xyz="0.00049993414045820003 -0.038824999944486065 -0.00087060012491927004" rpy="-1.5707963267948966 0 0" />
+    <origin xyz="0.00050247795698533677 -0.038825000029481707 -0.00087093880811597033" rpy="-1.5707963267948966 0 0" />
   </joint>
 </robot>
