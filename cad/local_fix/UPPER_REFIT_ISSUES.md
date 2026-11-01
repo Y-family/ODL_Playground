@@ -1,3 +1,9 @@
+## 2026-11-01 当前已验收 CAD 版本
+
+用户确认当前外观并要求提交。正式几何以同名 `open_duck_mini_upper_refit.step` 和 `solidworks/open_duck_mini_upper_refit.SLDPRT` 为准：每侧髋连接臂内收1.36 mm（两腿总间距减少2.72 mm），并补齐两腿后方底壳与背壳交界的长方形缺口。薄壁延续段为3 mm，后部接缝约0.2 mm，原固定孔保留。
+
+当前STEP SHA256 `91e610bc6e8640f1fc8698a5cfdc121c2be64f48ce824873e99b85a4ce08533e`，SLDPRT SHA256 `7b73a9553caa6f32b5771c25ecaf26e0d8c060e745c1976321a06509512cf289`。本轮局部静态及限位内单轴检查通过；组合运动不在本轮验收范围。髋部内收与补壳记录分别见 `HIP_ARM_SHORTENING_REVIEW.json`、`BODY_REAR_SEAM_REPAIR.json`；`BODY_BOTTOM_OPENING_REPAIR.json` 仅为已撤销错误位置方案的历史记录。动力学、训练模型和打印盘尚未同步本轮CAD。以下按日期保留历史诊断、候选及撤销记录，不能将旧哈希或旧待确认状态当作当前版本。
+
 <!-- CURRENT_LIFTOFF_REVALIDATION_START -->
 ## 2026-10-18 R15：按原项目参考步态与PPO流程适配中
 
@@ -1218,3 +1224,51 @@ CAD brief：在当前正式装配上缩短原有8块腿连接板与2个腿罩中
 
 CAD局部验证已通过并覆盖正式同名STEP（SHA256 `bb9c851dfcae554653981919bf69a950febc2730c4362e562f58a0a63f7ce740`）；力学模型同步进行中。髋侧1°抽样最小实体间隙0.279349 mm。旧双脚极限组合仍互碰，新动画首次交集阈值位置约0.62122，原用户对极限组合的处置不变。
 <!-- LEG_LINK_SHORTENING_END -->
+
+## 2026-10-31 髋橙色连接臂按 0.2 mm 最小间隙收窄并发布
+
+用户确认按最小间隙约 0.2 mm 收窄两侧橙色连接臂。本轮每侧向内收 **1.36 mm**，两腿总间距减少 **2.72 mm**；S02/S07 舵机本体、舵盘、输出轴、限位和未涉及零件保持不动，S03/S08 及其刚性连接的下游腿部随连接臂同步内收。未新增零件、垫块或夹板。
+
+候选几何先经过精确 B-Rep 扫描：S02 +25° 与右侧 `roll_motor_top_bottom` 最小间隙 **0.2066272 mm**；S07 −25° 与左侧对应件 **0.2066272 mm**；橙色件与 S02/S07 本体约 **0.5 mm**；S03/S08 被动/主动舵盘边界姿态与橙色件均无实体交集，关键局部最小间隙大于 0.2 mm。候选文件 `/tmp/open_duck_mini_hip_arm_136mm_candidate.step`，SHA256 `da77f8a151257da8499750b996b1dfb357961c36da347fe064ebc643a294a2a0`；扁平化 SolidWorks 导入文件 `/tmp/open_duck_mini_hip_arm_136mm_flat.step`，SHA256 `ad1ae138f6091887937100c521d49af37a7c9f92c71446f63164027e523466a6`。
+
+已通过 SolidWorks 2026 SP2.1 API 单窗口导入扁平 STEP，单文档原生检查回读 133 个实体，并保存覆盖 `cad/local_fix/solidworks/open_duck_mini_upper_refit.SLDPRT`；随后从该 SLDPRT 导出并覆盖正式 `cad/local_fix/open_duck_mini_upper_refit.step`。正式 STEP SHA256 `b9cda590decd26c5595d1e0d88893161471662983bf3e9c4b8f451df6985b81d`，SLDPRT SHA256 `5f0c6f6903cc44f5a0407630ac2e00ccad932e7310f7b8a821eebd6db35c5d4e`。SolidWorks 导出 STEP 回读为 135 个实体（导出器将两个候选实体拆分，关键包围盒/体积保持）。正式导出件关键 S02/S07 B-Rep 姿态回读仍为 0.2066272 mm、交集 0；S03/S08 舵盘局部边界姿态交集均为 0。
+
+SolidWorks 四视图证据位于 `cad/local_fix/solidworks/.collision_cache/hip_arm_136mm_review/`；CAD Viewer 已启动：`http://127.0.0.1:3245/?file=cad/local_fix/open_duck_mini_upper_refit.step`。本轮只验证局部髋连接与直接相连的单轴接口，未重复整机组合运动扫描；已有组合运动碰撞继续按登记保留。
+
+
+## 2026-11-01 身体底部靠近两腿的开口定位（仅诊断，未改几何）
+
+用户澄清“屁股缺一块”指身体底部靠近两腿的位置，对应 `body_middle_bottom` 中央底板两侧，不能用此前对 `body_back` 尾壳的检查替代。本轮通过正确的 Windows SolidWorks Python 虚拟环境连接原生整机，保持单文档；上下中壳、后壳和电池仓盖均可见，原生 Check2=0。原生底视图明确显示30 mm宽中央底板及其四孔仍在，两侧开口可见。
+
+10月26日 BODY_FLOOR_RAISE 记录说明：为避让橙色髋连接件，中央底板上抬6.94 mm，自由轮廓40→30 mm，保留5 mm斜过渡；该结构保留了中央底板两侧的腿部开口。本轮对内收前备份与正式 STEP 提取的底壳分别做相同实体点分类：X=0/Z=-22 mm、Y=0/±10/±14 mm有材料，Y=±16/±25 mm无材料；X=0、Y=±46/Z=20 mm侧窗无材料，两版结果一致。该处开口在本次每侧内收1.36 mm之前已经存在，不能归因于SolidWorks环境或误称本次新删掉。未修改CAD或执行新的运动/补壳验证。实际原生视图标注及探针证据为 `/tmp/bottom-shell-review/bottom_opening_marked.png` 和 `/tmp/bottom-shell-review/opening_verification.json`；正式STEP仍为 b9cda590decd26c5595d1e0d88893161471662983bf3e9c4b8f451df6985b81d。
+
+
+## 2026-11-01 身体底部多余缺口补齐（用户否定，已完整撤销；以下仅历史）
+
+用户要求消除身体底部靠近两腿的缺口，并确认对运动的影响。直接整片封底的试算在髋部约7°侧摆时与内侧腿板接触，未采用。正式修改仅延伸原 `body_middle_bottom` 底面，两侧延伸壁厚3 mm，活动口前端R3圆弧；原中央11.225 mm厚底板、四个固定孔、舵机/腿距/橙色件/轴位/限位保持，没有新增零件。两侧保留腿部穿出及侧摆必须的开口，不能称完全密封底壳。
+
+通过SolidWorks 2026 API在原生单文档内创建完全约束草图及合并拉伸：8个尺寸、48个关系、无Fix，草图被正式拉伸消费；底壳Check2=0，有效单实体。STEP回读169面、体积72893.708921 mm³，较修改前增加约13034.5 mm³。所有其他实体几何对比通过；原生133体、STEP135实体的既有导出拆分关系保持。
+
+本轮实际导出件的新增区域与两侧髋部直接邻件，每侧偏航−30…30°、侧摆−25…25°逐度精确B-Rep复核，共224个单轴姿态、1792次配对：S01/S06最小约3.000724 mm，S02/S07最小约2.583686 mm；前壳静态间隙0.2 mm、交集0。其他下游腿件作变换后保守包围盒筛选，无遗漏候选需精确复核。六个髋/膝/踝俯仰轴平行全局Y，单轴转动保持Y包络，当前腿件与改动底面的保守横向间隔至少2.0899996 mm。因此本轮局部单轴范围未发现新增干涉；不代表组合转动或整机连续运动验收。
+
+已覆盖同名正式STEP，SHA256 `f8c51d4ba98024f977f769a23d8fe33e0eb92ca85dfedde9a853a6e4f5728ff0`；同名SLDPRT SHA256 `dd05e80aa8f40f88a6142db3b7726a8b781de20fb19a201b9a3a45c115fcb1ed`。正式文件回读与被测候选几何指纹一致，四孔通道及周围材料探针通过；孔心X=−23.8/−13.8、Y=±10 mm。SolidWorks保持一个正式文档，当前显示底视图。证据：`BODY_BOTTOM_OPENING_REPAIR.json` 与 `solidworks/.collision_cache/body_bottom_opening/bottom.png`。动力学/训练网格/打印盘未同步。
+
+
+## 2026-11-01 用户纠正“屁股”缺口位置并还原
+
+用户明确目标是两腿后方、与背部衔接处的长方形缺口，并要求还原误改。已用补底前逐字节备份恢复同名STEP和SLDPRT，SHA256分别b9cda590decd26c5595d1e0d88893161471662983bf3e9c4b8f451df6985b81d、5f0c6f6903cc44f5a0407630ac2e00ccad932e7310f7b8a821eebd6db35c5d4e。错误的两侧3 mm补底/R3特征已撤回，不再作为正式几何或验收结论；SolidWorks重新打开恢复文件，原生133体、单文档，正式两文件哈希与备份一致。正确后部缺口待重新定位，不沿用上一两侧活动口的诊断/碰撞结果。
+
+正确缺口已在恢复后的整机原生后下视图标红：`solidworks/.collision_cache/body_bottom_opening/rear_gap.png`。局部实体剖面Y=0/20/35 mm均显示 `body_back` 下沿至X=−104 mm，而 `body_middle_bottom` 中央后底面材料从约X=−91.4167 mm才开始，二者之间有实际断开的后底壳区域；不是原先误改的两侧髋部活动口。本轮已还原并定位，未对该正确后部缺口再改几何，保留用户要求的恢复版本。
+
+
+## 2026-11-01 BODY_REAR_SEAM：两腿后方与背部交界长方形缺口修复
+
+用户确认后下视图标红位置并要求修改。本轮在已完整还原的基线 b9cda590 / 5f0c6f69 上，通过 SolidWorks API 仅延续原 `body_middle_bottom` 后底面与两侧斜壁：新增延续段沿原轮廓使用法向 3 mm 薄壁，两段相切圆弧平滑接回原底面，侧边裁到原斜面齐平；保留原中央 11.225 mm 承托底板和四个固定孔，不新增器件。`body_back`、电池盖、两侧腿部活动口、舵机、腿距、轴位、限位及其他零件保持本轮输入。旧两侧延伸翼错误方案仍为已撤销状态。
+
+正式 STEP 回读为有效单实体底壳，与预期局部 B-Rep 顶点距离小于 0.0001 mm，体积积分相差约 0.01775 mm³（容差 0.1 mm³）；其余 134 个 STEP 实体指纹通过，132 个其余原生实体包围盒和面数保持。原材料去除量小于 0.00001 mm³。缺口区域 625 条穿透采样均命中连续壳体，18 处法向薄壁探针及 60 处原孔道/周围材料探针通过。新增材料与其他 134 个静态实体无超过 0.00001 mm³ 的交叠，至背壳新接缝约 0.2 mm。
+
+S01～S10 按现有限位每 1° 检查 46 个能与现有动力学元数据匹配的运动实体：包围盒满足 0.2 mm 判据的姿态作保守排除，近界候选用 B-Rep 距离核验，未发现新增干涉。报告中的包围盒下界不是实际最近点距离。另从当前 SolidWorks 原生模型直接读取全部 8 个脚部实体，对整块底壳包围盒作同限位的单轴保守扫描，共 40 组，最小保守下界约 2.04 mm，通过；因此不依赖未匹配的旧脚部网格。本轮不是组合运动或连续扫掠认证，不覆盖其他既有碰撞。
+
+SLDPRT 保存重开后仍为 133 个原生实体，底壳 Check2=0，5 个草图全部完全约束、Fix=0，并被相应真实特征消费。SolidWorks 仅一个正式文档，从后下方整机视角核验长方形开口已补齐。CADgen 静态截图因 Chromium 缺少 libnspr4.so 未生成，使用实际 SolidWorks 原生截图和局部剖面完成外观复核；未为此改动系统依赖或放宽内存限制。几何与运动断言均完成后，JSON 输出遇到 numpy.bool_ 序列化错误；已从当次运行输出保存真实验证摘要并修正序列化，未把该报告格式错误当成几何失败或通过未运行的检查。
+
+同名正式 STEP SHA256 `91e610bc6e8640f1fc8698a5cfdc121c2be64f48ce824873e99b85a4ce08533e`；SLDPRT SHA256 `7b73a9553caa6f32b5771c25ecaf26e0d8c060e745c1976321a06509512cf289`，正式 STEP 与被测候选逐字节一致。证据：[BODY_REAR_SEAM_REPAIR.json](BODY_REAR_SEAM_REPAIR.json)、[整机前后对比](solidworks/.collision_cache/body_bottom_opening/rear_gap_comparison.png)、[修复后后下视图](solidworks/.collision_cache/body_bottom_opening/rear_gap_fixed.png)。用户已于2026-11-01确认“就这样吧”并要求提交当前版本；动力学、训练网格和打印盘未同步，后续重建须保留本轮原生修复。

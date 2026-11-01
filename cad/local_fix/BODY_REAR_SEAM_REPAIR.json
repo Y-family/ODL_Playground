@@ -1,0 +1,750 @@
+{
+  "id": "BODY_REAR_SEAM",
+  "date": "2026-11-01",
+  "status": "accepted_and_locally_verified",
+  "user_target": "两腿后方，背壳下沿与底壳交界的横向长方形缺口",
+  "baseline_step_sha256": "b9cda590decd26c5595d1e0d88893161471662983bf3e9c4b8f451df6985b81d",
+  "baseline_sldprt_sha256": "5f0c6f6903cc44f5a0407630ac2e00ccad932e7310f7b8a821eebd6db35c5d4e",
+  "modified_part": "body_middle_bottom",
+  "authoritative_native_source": "cad/local_fix/solidworks/open_duck_mini_upper_refit.SLDPRT",
+  "implementation": "SolidWorks API native sketches, merged extrusions and contour trims. Extend original bottom and both sloped sidewalls using their existing nominal 3 mm walls. Two tangent arcs join the rear outline to the existing underside; no extra mechanical part. Existing central support and fixing holes retained.",
+  "geometry_validation": {
+    "status": "validated",
+    "step_sha256": "91e610bc6e8640f1fc8698a5cfdc121c2be64f48ce824873e99b85a4ce08533e",
+    "body_valid": true,
+    "body_solids": 1,
+    "old_body_volume_mm3": 59859.20632893649,
+    "new_body_volume_mm3": 64954.82969535515,
+    "other_step_solids_unchanged": 134,
+    "max_other_fingerprint_error_below": 0.1,
+    "original_material_removed_mm3_below": 1e-05,
+    "native_vs_planned_volume_difference_mm3": 0.017746383986377623,
+    "geometry_vertex_distance_mm_below": 0.0001,
+    "static_checks": 134,
+    "static_overlaps_above_1e_5_mm3": 0,
+    "new_to_back_gap_mm": 0.19999999999424745,
+    "closure_rays": 625,
+    "nominal_wall_mm": 3,
+    "wall_probes": 18,
+    "fixing_material_and_bore_probes": 60,
+    "moving_parts_from_matching_breps": 46,
+    "joint_minima": [
+      {
+        "joint": "S01",
+        "angle_deg": -24,
+        "index": 131,
+        "label": "leg_spacer",
+        "gap_mm": 0.29234603630019507,
+        "gap_is_conservative_lower_bound": true
+      },
+      {
+        "joint": "S02",
+        "angle_deg": -25,
+        "index": 12,
+        "label": "right_cache",
+        "gap_mm": 9.886288268072528,
+        "gap_is_conservative_lower_bound": true
+      },
+      {
+        "joint": "S03",
+        "angle_deg": 59,
+        "index": 104,
+        "label": "foot_side",
+        "gap_mm": 9.504526086148923,
+        "gap_is_conservative_lower_bound": true
+      },
+      {
+        "joint": "S04",
+        "angle_deg": -90,
+        "index": 60,
+        "label": "foot_side",
+        "gap_mm": 8.692169243063777,
+        "gap_is_conservative_lower_bound": true
+      },
+      {
+        "joint": "S05",
+        "angle_deg": 72,
+        "index": 60,
+        "label": "foot_side",
+        "gap_mm": 45.90781464217522,
+        "gap_is_conservative_lower_bound": true
+      },
+      {
+        "joint": "S06",
+        "angle_deg": 24,
+        "index": 72,
+        "label": "leg_spacer",
+        "gap_mm": 0.29234603630019507,
+        "gap_is_conservative_lower_bound": true
+      },
+      {
+        "joint": "S07",
+        "angle_deg": 25,
+        "index": 0,
+        "label": "left_cache",
+        "gap_mm": 9.925544895125466,
+        "gap_is_conservative_lower_bound": true
+      },
+      {
+        "joint": "S08",
+        "angle_deg": -59,
+        "index": 60,
+        "label": "foot_side",
+        "gap_mm": 9.504505654682566,
+        "gap_is_conservative_lower_bound": true
+      },
+      {
+        "joint": "S09",
+        "angle_deg": -90,
+        "index": 104,
+        "label": "foot_side",
+        "gap_mm": 8.69216892272104,
+        "gap_is_conservative_lower_bound": true
+      },
+      {
+        "joint": "S10",
+        "angle_deg": 72,
+        "index": 104,
+        "label": "foot_side",
+        "gap_mm": 45.90790792362879,
+        "gap_is_conservative_lower_bound": true
+      }
+    ],
+    "scope": "Added rear-shell geometry only. Current limits, 1 degree single-axis samples; conservative bounding-box rejection and B-Rep candidate distances. Not combined motion or continuous sweep. Native foot-body sweep bounds checked separately before publishing.",
+    "report_recovery": "All assertions including ten joint scans completed. The original report serialization failed on numpy.bool_. This summary preserves the observed results without repeating completed geometry checks."
+  },
+  "native_validation": {
+    "native_body_count": 133,
+    "body_check": 0,
+    "qualities": [
+      {
+        "status": "pass",
+        "constrained_status": 3,
+        "dimension_count": 5,
+        "relation_count": 9,
+        "fix_count": 0,
+        "dimension_names": [
+          "D1@草图2",
+          "D2@草图2",
+          "D3@草图2",
+          "D4@草图2",
+          "D5@草图2"
+        ],
+        "errors": [],
+        "api_return": 0
+      },
+      {
+        "status": "pass",
+        "constrained_status": 3,
+        "dimension_count": 5,
+        "relation_count": 9,
+        "fix_count": 0,
+        "dimension_names": [
+          "D1@草图3",
+          "D2@草图3",
+          "D3@草图3",
+          "D4@草图3",
+          "D5@草图3"
+        ],
+        "errors": [],
+        "api_return": 0
+      },
+      {
+        "status": "pass",
+        "constrained_status": 3,
+        "dimension_count": 8,
+        "relation_count": 16,
+        "fix_count": 0,
+        "dimension_names": [
+          "D13@草图4",
+          "D1@草图4",
+          "D2@草图4",
+          "D3@草图4",
+          "D4@草图4",
+          "D5@草图4",
+          "D6@草图4",
+          "D7@草图4"
+        ],
+        "errors": [],
+        "api_return": 0
+      },
+      {
+        "status": "pass",
+        "constrained_status": 3,
+        "dimension_count": 6,
+        "relation_count": 26,
+        "fix_count": 0,
+        "dimension_names": [
+          "D1@草图5",
+          "D2@草图5",
+          "D3@草图5",
+          "D4@草图5",
+          "D5@草图5",
+          "D6@草图5"
+        ],
+        "errors": [],
+        "api_return": 0
+      }
+    ],
+    "sketches": {
+      "status": "pass",
+      "sketches": [
+        {
+          "status": "pass",
+          "constrained_status": 3,
+          "dimension_count": 9,
+          "relation_count": 22,
+          "fix_count": 0,
+          "dimension_names": [
+            "D1@草图1",
+            "D2@草图1",
+            "D3@草图1",
+            "D4@草图1",
+            "D5@草图1",
+            "D6@草图1",
+            "D7@草图1",
+            "D8@草图1",
+            "D9@草图1"
+          ],
+          "errors": [],
+          "name": "草图1",
+          "consumed_by": [
+            "Rear_bottom_continuous_shell_3mm"
+          ],
+          "dangling": false
+        },
+        {
+          "status": "pass",
+          "constrained_status": 3,
+          "dimension_count": 5,
+          "relation_count": 9,
+          "fix_count": 0,
+          "dimension_names": [
+            "D1@草图2",
+            "D2@草图2",
+            "D3@草图2",
+            "D4@草图2",
+            "D5@草图2"
+          ],
+          "errors": [],
+          "name": "草图2",
+          "consumed_by": [
+            "Rear_side_continuation_-1"
+          ],
+          "dangling": false
+        },
+        {
+          "status": "pass",
+          "constrained_status": 3,
+          "dimension_count": 5,
+          "relation_count": 9,
+          "fix_count": 0,
+          "dimension_names": [
+            "D1@草图3",
+            "D2@草图3",
+            "D3@草图3",
+            "D4@草图3",
+            "D5@草图3"
+          ],
+          "errors": [],
+          "name": "草图3",
+          "consumed_by": [
+            "Rear_side_continuation_1"
+          ],
+          "dangling": false
+        },
+        {
+          "status": "pass",
+          "constrained_status": 3,
+          "dimension_count": 8,
+          "relation_count": 16,
+          "fix_count": 0,
+          "dimension_names": [
+            "D13@草图4",
+            "D1@草图4",
+            "D2@草图4",
+            "D3@草图4",
+            "D4@草图4",
+            "D5@草图4",
+            "D6@草图4",
+            "D7@草图4"
+          ],
+          "errors": [],
+          "name": "草图4",
+          "consumed_by": [
+            "Rear_bottom_smooth_trim"
+          ],
+          "dangling": false
+        },
+        {
+          "status": "pass",
+          "constrained_status": 3,
+          "dimension_count": 6,
+          "relation_count": 26,
+          "fix_count": 0,
+          "dimension_names": [
+            "D1@草图5",
+            "D2@草图5",
+            "D3@草图5",
+            "D4@草图5",
+            "D5@草图5",
+            "D6@草图5"
+          ],
+          "errors": [],
+          "name": "草图5",
+          "consumed_by": [
+            "Rear_bottom_flush_sides"
+          ],
+          "dangling": false
+        }
+      ]
+    },
+    "unchanged_other_native_bodies": 132,
+    "documents": 1,
+    "isometric": "\\\\wsl.localhost\\Ubuntu\\tmp\\bottom-shell-review\\rear_fixed_isometric.bmp",
+    "back": "\\\\wsl.localhost\\Ubuntu\\tmp\\bottom-shell-review\\rear_fixed_back.bmp"
+  },
+  "published": {
+    "step_sha256": "91e610bc6e8640f1fc8698a5cfdc121c2be64f48ce824873e99b85a4ce08533e",
+    "sldprt_sha256": "7b73a9553caa6f32b5771c25ecaf26e0d8c060e745c1976321a06509512cf289",
+    "active_document": "\\\\wsl.localhost\\Ubuntu\\root\\work\\Open_Duck_Playground\\cad\\local_fix\\solidworks\\open_duck_mini_upper_refit.SLDPRT",
+    "documents": 1,
+    "native_bodies": 133,
+    "native_bottom_check": 0,
+    "native_foot_sweep_checks": [
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_tpu-51.step-1-solid1",
+        "joint": "S01",
+        "conservative_gap_mm": 135.53661375712392,
+        "angle_deg": 30
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_tpu-51.step-1-solid1",
+        "joint": "S02",
+        "conservative_gap_mm": 110.49975201516206,
+        "angle_deg": 25
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_tpu-51.step-1-solid1",
+        "joint": "S03",
+        "conservative_gap_mm": 45.69863226064622,
+        "angle_deg": 56
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_tpu-51.step-1-solid1",
+        "joint": "S09",
+        "conservative_gap_mm": 12.91221380304639,
+        "angle_deg": 72
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_tpu-51.step-1-solid1",
+        "joint": "S10",
+        "conservative_gap_mm": 41.054314157986816,
+        "angle_deg": 90
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_side_1.step-1-solid1",
+        "joint": "S06",
+        "conservative_gap_mm": 90.59400658457935,
+        "angle_deg": -30
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_side_1.step-1-solid1",
+        "joint": "S07",
+        "conservative_gap_mm": 80.51067546588521,
+        "angle_deg": -25
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_side_1.step-1-solid1",
+        "joint": "S08",
+        "conservative_gap_mm": 2.0408832322172294,
+        "angle_deg": -57
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_side_1.step-1-solid1",
+        "joint": "S04",
+        "conservative_gap_mm": 2.040000000090515,
+        "angle_deg": -90
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_side_1.step-1-solid1",
+        "joint": "S05",
+        "conservative_gap_mm": 39.73444264155576,
+        "angle_deg": 77
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_top-52.step-1-solid1",
+        "joint": "S01",
+        "conservative_gap_mm": 90.59400658457888,
+        "angle_deg": 30
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_top-52.step-1-solid1",
+        "joint": "S02",
+        "conservative_gap_mm": 77.22473275431854,
+        "angle_deg": 23
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_top-52.step-1-solid1",
+        "joint": "S03",
+        "conservative_gap_mm": 16.954604939438276,
+        "angle_deg": 57
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_top-52.step-1-solid1",
+        "joint": "S09",
+        "conservative_gap_mm": 16.954498645098084,
+        "angle_deg": -86
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_top-52.step-1-solid1",
+        "joint": "S10",
+        "conservative_gap_mm": 43.14926326970021,
+        "angle_deg": 77
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_tpu_1.step-1-solid1",
+        "joint": "S06",
+        "conservative_gap_mm": 135.5273441999287,
+        "angle_deg": -30
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_tpu_1.step-1-solid1",
+        "joint": "S07",
+        "conservative_gap_mm": 110.49081804860195,
+        "angle_deg": -25
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_tpu_1.step-1-solid1",
+        "joint": "S08",
+        "conservative_gap_mm": 45.654825610133685,
+        "angle_deg": -56
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_tpu_1.step-1-solid1",
+        "joint": "S04",
+        "conservative_gap_mm": 12.876194742855635,
+        "angle_deg": 72
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_tpu_1.step-1-solid1",
+        "joint": "S05",
+        "conservative_gap_mm": 41.009872260829766,
+        "angle_deg": 90
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_pla-53.step-1-solid1",
+        "joint": "S01",
+        "conservative_gap_mm": 128.089999999979,
+        "angle_deg": 30
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_pla-53.step-1-solid1",
+        "joint": "S02",
+        "conservative_gap_mm": 111.66958542236418,
+        "angle_deg": 25
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_pla-53.step-1-solid1",
+        "joint": "S03",
+        "conservative_gap_mm": 44.08387874810549,
+        "angle_deg": 56
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_pla-53.step-1-solid1",
+        "joint": "S09",
+        "conservative_gap_mm": 15.304400116323075,
+        "angle_deg": 76
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_pla-53.step-1-solid1",
+        "joint": "S10",
+        "conservative_gap_mm": 50.4338663872441,
+        "angle_deg": 90
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_top_1.step-1-solid1",
+        "joint": "S06",
+        "conservative_gap_mm": 90.59400658457882,
+        "angle_deg": -30
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_top_1.step-1-solid1",
+        "joint": "S07",
+        "conservative_gap_mm": 77.22473275430161,
+        "angle_deg": -23
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_top_1.step-1-solid1",
+        "joint": "S08",
+        "conservative_gap_mm": 16.954604939429647,
+        "angle_deg": -57
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_top_1.step-1-solid1",
+        "joint": "S04",
+        "conservative_gap_mm": 16.954498645090496,
+        "angle_deg": -90
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_top_1.step-1-solid1",
+        "joint": "S05",
+        "conservative_gap_mm": 43.149263269734284,
+        "angle_deg": 77
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_side-50.step-1-solid1",
+        "joint": "S01",
+        "conservative_gap_mm": 90.5940065845794,
+        "angle_deg": 29
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_side-50.step-1-solid1",
+        "joint": "S02",
+        "conservative_gap_mm": 80.5106754658895,
+        "angle_deg": 25
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_side-50.step-1-solid1",
+        "joint": "S03",
+        "conservative_gap_mm": 2.0408832322259762,
+        "angle_deg": 57
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_side-50.step-1-solid1",
+        "joint": "S09",
+        "conservative_gap_mm": 2.0400000000980896,
+        "angle_deg": -86
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_side-50.step-1-solid1",
+        "joint": "S10",
+        "conservative_gap_mm": 39.73444264151609,
+        "angle_deg": 77
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_pla_1.step-1-solid1",
+        "joint": "S06",
+        "conservative_gap_mm": 128.08999999997906,
+        "angle_deg": -30
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_pla_1.step-1-solid1",
+        "joint": "S07",
+        "conservative_gap_mm": 111.66958542240673,
+        "angle_deg": -25
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_pla_1.step-1-solid1",
+        "joint": "S08",
+        "conservative_gap_mm": 44.08387874812744,
+        "angle_deg": -56
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_pla_1.step-1-solid1",
+        "joint": "S04",
+        "conservative_gap_mm": 15.304400116386558,
+        "angle_deg": 76
+      },
+      {
+        "part": "open_duck_mini_hip_arm_136mm_flat.step-1/open_duck_mini_upper_refit.step-1/foot_bottom_pla_1.step-1-solid1",
+        "joint": "S05",
+        "conservative_gap_mm": 50.43386638731135,
+        "angle_deg": 90
+      }
+    ],
+    "sketches": {
+      "status": "pass",
+      "sketches": [
+        {
+          "status": "pass",
+          "constrained_status": 3,
+          "dimension_count": 9,
+          "relation_count": 22,
+          "fix_count": 0,
+          "dimension_names": [
+            "D1@草图1",
+            "D2@草图1",
+            "D3@草图1",
+            "D4@草图1",
+            "D5@草图1",
+            "D6@草图1",
+            "D7@草图1",
+            "D8@草图1",
+            "D9@草图1"
+          ],
+          "errors": [],
+          "name": "草图1",
+          "consumed_by": [
+            "Rear_bottom_continuous_shell_3mm"
+          ],
+          "dangling": false
+        },
+        {
+          "status": "pass",
+          "constrained_status": 3,
+          "dimension_count": 5,
+          "relation_count": 9,
+          "fix_count": 0,
+          "dimension_names": [
+            "D1@草图2",
+            "D2@草图2",
+            "D3@草图2",
+            "D4@草图2",
+            "D5@草图2"
+          ],
+          "errors": [],
+          "name": "草图2",
+          "consumed_by": [
+            "Rear_side_continuation_-1"
+          ],
+          "dangling": false
+        },
+        {
+          "status": "pass",
+          "constrained_status": 3,
+          "dimension_count": 5,
+          "relation_count": 9,
+          "fix_count": 0,
+          "dimension_names": [
+            "D1@草图3",
+            "D2@草图3",
+            "D3@草图3",
+            "D4@草图3",
+            "D5@草图3"
+          ],
+          "errors": [],
+          "name": "草图3",
+          "consumed_by": [
+            "Rear_side_continuation_1"
+          ],
+          "dangling": false
+        },
+        {
+          "status": "pass",
+          "constrained_status": 3,
+          "dimension_count": 8,
+          "relation_count": 16,
+          "fix_count": 0,
+          "dimension_names": [
+            "D13@草图4",
+            "D1@草图4",
+            "D2@草图4",
+            "D3@草图4",
+            "D4@草图4",
+            "D5@草图4",
+            "D6@草图4",
+            "D7@草图4"
+          ],
+          "errors": [],
+          "name": "草图4",
+          "consumed_by": [
+            "Rear_bottom_smooth_trim"
+          ],
+          "dangling": false
+        },
+        {
+          "status": "pass",
+          "constrained_status": 3,
+          "dimension_count": 6,
+          "relation_count": 26,
+          "fix_count": 0,
+          "dimension_names": [
+            "D1@草图5",
+            "D2@草图5",
+            "D3@草图5",
+            "D4@草图5",
+            "D5@草图5",
+            "D6@草图5"
+          ],
+          "errors": [],
+          "name": "草图5",
+          "consumed_by": [
+            "Rear_bottom_flush_sides"
+          ],
+          "dangling": false
+        }
+      ]
+    }
+  },
+  "profile_mm": {
+    "points": {
+      "A": [
+        -102.8,
+        -17.469061187620007
+      ],
+      "B": [
+        -70.0,
+        -23.369061187619998
+      ],
+      "C1": [
+        -81.65818527918788,
+        53.00365454842042
+      ],
+      "C2": [
+        -91.14181472081214,
+        -93.84177692366043
+      ],
+      "M": [
+        -86.4,
+        -20.419061187620006
+      ],
+      "Ai": [
+        -101.93795634330097,
+        -14.595582331956553
+      ],
+      "Bi": [
+        -69.13795634330097,
+        -20.495582331956545
+      ],
+      "Mi": [
+        -86.20665560855123,
+        -17.425298012902388
+      ],
+      "start": [
+        -103.8,
+        -17.169061187620006
+      ],
+      "stop": [
+        -69.0,
+        -23.66906118762
+      ],
+      "starti": [
+        -103.8,
+        -14.036969234946842
+      ],
+      "stopi": [
+        -69.0,
+        -20.536969234946834
+      ]
+    },
+    "radius": 73.57567527995859,
+    "width": 97,
+    "thickness": 3
+  },
+  "native_foot_sweep_min_bound_mm": 2.040000000090515,
+  "visual_review": {
+    "source": "SolidWorks saved native previews, opened and inspected",
+    "whole_robot_rear": "solidworks/.collision_cache/body_bottom_opening/rear_gap_fixed.png",
+    "comparison": "solidworks/.collision_cache/body_bottom_opening/rear_gap_comparison.png",
+    "sections": "solidworks/.collision_cache/body_bottom_opening/rear_gap_sections.png",
+    "cadgen_snapshot": "Attempted under existing hard cap; Chromium failed to launch because libnspr4.so is missing. Native SolidWorks whole-robot preview and geometric sections used for visual review."
+  },
+  "limitations": [
+    "Single-axis 1 degree samples and conservative bounds; not a combined-motion or continuous-sweep certificate.",
+    "Other pre-existing robot collision findings are not re-certified.",
+    "Dynamics, training meshes and printing plates are not regenerated in this CAD repair. Future rebuilding must preserve this native SLDPRT as the current geometry source."
+  ],
+  "resource_limits": {
+    "workspace_ram_bytes": 10000000000,
+    "cad_address_space_bytes": 4000000000,
+    "native_job_memory_bytes": 4000000000,
+    "serial": true,
+    "native_threads": 1
+  },
+  "rollback_of_prior_wrong_fix": "The old side-wing proposal remains reverted; BODY_BOTTOM_OPENING_REPAIR.json is historical and does not certify this repair.",
+  "user_acceptance": {
+    "date": "2026-11-01",
+    "instruction": "就这样吧，当前版本做个提交"
+  }
+}

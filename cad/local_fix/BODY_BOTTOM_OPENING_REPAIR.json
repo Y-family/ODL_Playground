@@ -1,0 +1,143 @@
+{
+  "task": "2026-11-01 身体底部靠近两腿的多余缺口补齐",
+  "status": "reverted_by_user_wrong_location",
+  "input_step_sha256": "b9cda590decd26c5595d1e0d88893161471662983bf3e9c4b8f451df6985b81d",
+  "design": {
+    "modified_part": "body_middle_bottom",
+    "method": "SolidWorks API sketch and merged boss, continuing existing underside",
+    "extension_thickness_mm": 3,
+    "inside_corner_radius_mm": 3,
+    "original_central_floor_thickness_mm": 11.225,
+    "retains_necessary_leg_motion_openings": true,
+    "retains_existing_four_screw_holes": true,
+    "added_parts": 0
+  },
+  "native": {
+    "native_body_count": 133,
+    "bottom_check": 0,
+    "sketches": {
+      "status": "pass",
+      "sketches": [
+        {
+          "status": "pass",
+          "constrained_status": 3,
+          "dimension_count": 8,
+          "relation_count": 48,
+          "fix_count": 0,
+          "dimension_names": [
+            "D1@草图1",
+            "D2@草图1",
+            "D3@草图1",
+            "D4@草图1",
+            "D5@草图1",
+            "D6@草图1",
+            "D7@草图1",
+            "D8@草图1"
+          ],
+          "errors": [],
+          "name": "草图1",
+          "consumed_by": [
+            "Bottom_shell_continuation_3mm_R3"
+          ],
+          "dangling": false
+        }
+      ]
+    },
+    "active_path": "\\\\wsl.localhost\\Ubuntu\\tmp\\bottom-shell-review\\bottom_candidate.SLDPRT",
+    "documents": 1,
+    "native_memory_limit": 4000000000,
+    "preview_isometric": "\\\\wsl.localhost\\Ubuntu\\tmp\\bottom-shell-review\\extended_isometric.bmp",
+    "preview_back": "\\\\wsl.localhost\\Ubuntu\\tmp\\bottom-shell-review\\extended_back.bmp"
+  },
+  "motion": {
+    "candidate_valid": true,
+    "candidate_solids": 1,
+    "before_volume_mm3": 59859.20632893649,
+    "after_volume_mm3": 72893.70892106951,
+    "added_volume_mm3": 13034.502592133023,
+    "minimum_per_axis": [
+      {
+        "joint": "S01",
+        "angle_deg": -30,
+        "part": 130,
+        "gap_mm": 3.0007241902595965
+      },
+      {
+        "joint": "S02",
+        "angle_deg": -25,
+        "part": 55,
+        "gap_mm": 2.5836856348085524
+      },
+      {
+        "joint": "S06",
+        "angle_deg": 30,
+        "part": 68,
+        "gap_mm": 3.0007241902862845
+      },
+      {
+        "joint": "S07",
+        "angle_deg": 25,
+        "part": 125,
+        "gap_mm": 2.5836856348052595
+      }
+    ],
+    "static": [
+      {
+        "part": 40,
+        "gap_mm": 0.20000000000000284,
+        "overlap_mm3": 0
+      }
+    ],
+    "scope": "Added underside material only; hip yaw/roll, one-degree samples, current limits; not combined-motion clearance certification.",
+    "step_sha256": "4785f58ecf848c3344937293053ed17db2ecfcc3bcb0e24cfc65e291fe0d0d78"
+  },
+  "published": {
+    "formal_step_sha256": "f8c51d4ba98024f977f769a23d8fe33e0eb92ca85dfedde9a853a6e4f5728ff0",
+    "formal_sldprt_sha256": "dd05e80aa8f40f88a6142db3b7726a8b781de20fb19a201b9a3a45c115fcb1ed",
+    "staged_step_sha256": "4785f58ecf848c3344937293053ed17db2ecfcc3bcb0e24cfc65e291fe0d0d78",
+    "documents": 1,
+    "active_document": "\\\\wsl.localhost\\Ubuntu\\root\\work\\Open_Duck_Playground\\cad\\local_fix\\solidworks\\open_duck_mini_upper_refit.SLDPRT"
+  },
+  "formal_verification": {
+    "formal_geometry_matches_validated_candidate": true,
+    "formal_solid_count": 135,
+    "max_fingerprint_roundtrip_difference": 0.0,
+    "bottom_valid": true,
+    "bottom_single_solid": true,
+    "retained_four_screw_hole_centres_xy_mm": [
+      [
+        -23.8,
+        -10
+      ],
+      [
+        -23.8,
+        10
+      ],
+      [
+        -13.8,
+        -10
+      ],
+      [
+        -13.8,
+        10
+      ]
+    ],
+    "additional_lower_leg_hip_checks": [],
+    "pitch_knee_ankle_single_axis_conservative_y_gap_mm": 2.0899995746504842,
+    "pitch_explanation": "All six pitch axes are parallel to global Y; at single-axis poses Y extents are unchanged, outside the modified floor. Does not apply to combined rotations."
+  },
+  "limitations": [
+    "Single-axis local underside clearance, not combined-motion or whole-robot certification.",
+    "Dynamics/training meshes and printing plates were not regenerated in this CAD-only task."
+  ],
+  "reverted_to": {
+    "step_sha256": "b9cda590decd26c5595d1e0d88893161471662983bf3e9c4b8f451df6985b81d",
+    "sldprt_sha256": "5f0c6f6903cc44f5a0407630ac2e00ccad932e7310f7b8a821eebd6db35c5d4e",
+    "documents": 1,
+    "removed_wrong_bottom_extension": true,
+    "preview_right": "\\\\wsl.localhost\\Ubuntu\\tmp\\bottom-shell-review\\restored_right.bmp",
+    "preview_left": "\\\\wsl.localhost\\Ubuntu\\tmp\\bottom-shell-review\\restored_left.bmp",
+    "preview_bottom": "\\\\wsl.localhost\\Ubuntu\\tmp\\bottom-shell-review\\restored_bottom.bmp"
+  },
+  "reason": "用户明确缺口为两腿后方与背部衔接处的长方形开口，不是中央底板两侧。上一补底方案已完整撤销。"
+}
